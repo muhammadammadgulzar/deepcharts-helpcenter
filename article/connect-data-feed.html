@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>How to Connect a Data Feed (Feed Settings) — DeepCharts Help Center</title>
+<meta name="description" content="Add a data feed connection in Feed Settings, connect it, and get live data on a chart.">
+<link rel="stylesheet" href="../assets/style.css">
+<script>window.HC_ROOT="../";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/quick-start-first-trade.html">Quick start</a><a href="../article/get-help.html">Get help</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Getting Started <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Welcome to DeepCharts: Platform Tour</a></li><li><a href="../article/system-requirements.html">System Requirements</a></li><li><a href="../article/install-deepcharts.html">How to Install DeepCharts and Activate Your License</a></li><li><a href="../article/free-delayed-data-feed.html">Use the Free 15-Minute Delayed Data Feed</a></li><li><a href="../article/buy-data-feed.html">How to Buy a Data Feed and Get Your Credentials</a></li><li><a href="../article/first-chart.html">Open Your First Chart</a></li><li><a href="../article/simulation-accounts.html">Trading Accounts and Simulation</a></li><li><a href="../article/quick-start-first-trade.html">Quick Start: From Install to Your First Trade</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connections &amp; Data Feeds <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Setup</li><li><a href="../article/compatibility-guide.html">Supported Brokers, Prop Firms and Data Feeds</a></li><li><a href="../article/connect-data-feed.html" class="active">How to Connect a Data Feed (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a></li><li><a href="../article/sign-market-data-agreement.html">Sign Your Market Data Agreement</a></li><li><a href="../article/connect-dxfeed.html">How to Connect a dxFeed Data Feed</a></li><li><a href="../article/connect-rithmic.html">How to Connect a Rithmic Data Feed</a></li><li><a href="../article/rtrader-pro-plugin.html">Connect Rithmic Using the RTrader Pro Plugin</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Connect Any Rithmic Prop-Firm Account (Server Table)</a></li><li><a href="../article/connect-apex.html">Connect Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connect a Prop-Firm dxFeed Account (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">How to Connect CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connect Interactive Brokers (Execution Only)</a></li><li><a href="../article/competition-connect.html">DeepCharts Competition: Join and Connect</a></li><li><a href="../article/end-of-day-data.html">Connect Historical Data (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Manage and Switch Between Feed Connections</a></li><li class="nav-sub">Troubleshooting</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: Live Feed Connected but Chart Is Not Moving</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Fix: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Fix: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Fix: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Fix: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Fix: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Fix: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Fix: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Fix: Connection Lost When Opening a Chart</a></li><li><a href="../article/symbol-subscription-issue.html">Fix: Symbol Subscription Issue</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: App Crashes When Saving Feed Settings</a></li><li><a href="../article/gaps-in-price.html">Fix: Gaps in Price on Charts</a></li><li><a href="../article/data-delayed-lagging.html">Fix: Charts Lagging or Data Delayed (Checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Charts &amp; Workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">The Chart Window</a></li><li><a href="../article/price-chart-settings.html">Price Chart Settings</a></li><li><a href="../article/chart-display-options.html">Chart Display Options (Bar Styles, Sessions, Countdown)</a></li><li><a href="../article/drawing-tools.html">Drawing Tools and Annotations</a></li><li><a href="../article/templates-workspaces.html">Templates and Workspaces</a></li><li><a href="../article/quick-chart-templates.html">Quick Chart Templates (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Link Windows with Color Groups</a></li><li><a href="../article/replay-data.html">Replay Market Data</a></li><li><a href="../article/customize-language-theme-sounds.html">Customize Language, Theme and Notification Sounds</a></li><li><a href="../article/keyboard-shortcuts.html">How to Configure Keyboard Shortcuts</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Keyboard Shortcuts Reference</a></li><li><a href="../article/multi-monitor-windows.html">Arrange Windows Across Monitors (and Recover Off-Screen Windows)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Platform Windows <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (The Tape)</a></li><li><a href="../article/advanced-dom.html">Advanced DOM Window</a></li><li><a href="../article/profile-chart-window.html">Profile Chart Window (TPO and Volume Profiles)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading &amp; Orders <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading from the Chart</a></li><li><a href="../article/trading-panel-reference.html">Trading Panel Reference: Every Button and Field</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading on the Chart (Click-Trading Ladder)</a></li><li><a href="../article/depth-of-market.html">Depth of Market (DOM) Indicator</a></li><li><a href="../article/oco-strategies.html">OCO (One-Cancels-the-Other) Strategies</a></li><li><a href="../article/orders-window.html">Orders Window</a></li><li><a href="../article/portfolio-wallet.html">Portfolio (Wallet)</a></li><li><a href="../article/risk-manager.html">Risk Manager</a></li><li><a href="../article/trade-copier.html">How to Set Up the Trade Copier</a></li><li><a href="../article/performance-analysis.html">Performance Analysis (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concepts <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a></li><li><a href="../article/understanding-volume-profile.html">Understanding Volume Profile: POC, Value Area, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Understanding Auction Theory: Imbalance, Unfinished Auctions, Absorption</a></li><li><a href="../article/understanding-icebergs-absorption.html">Understanding Icebergs and Absorption</a></li><li><a href="../article/understanding-vwap.html">Understanding VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Understanding Market Structure and Sessions (RTH/ETH, Rollover)</a></li><li><a href="../article/reading-a-footprint.html">Reading a Footprint: Worked Examples</a></li><li><a href="../article/glossary.html">Glossary of Orderflow and Platform Terms</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicators &amp; Analysis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Indicator Basics</li><li><a href="../article/different-types-of-input.html">Different Types of Input Data for Indicators</a></li><li><a href="../article/indicator-layout.html">How to Change the Layout of Indicators</a></li><li class="nav-sub">Deep Indicators</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Moving Average</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Linear Regression</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum &amp; Oscillators</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Stochastic Oscillator</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatility &amp; Bands</li><li><a href="../article/bollinger-bands.html">Bollinger Bands</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Standard Deviation</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume &amp; Delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Order Flow &amp; Auction</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Levels &amp; Patterns</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Important Levels</a></li><li><a href="../article/absolute-levels.html">Absolute Levels</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Chart Overlays</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Text on Chart</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Data &amp; Database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Symbol Rollover (Change Contract Month)</a></li><li><a href="../article/delete-market-data.html">Delete Market Data (In-App and Manual Methods)</a></li><li><a href="../article/download-data.html">Re-download Historical Data (Download Data Tool)</a></li><li><a href="../article/database-optimization.html">Database Optimization</a></li><li><a href="../article/database-problems.html">Fix: Database Problems</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Troubleshooting &amp; Support <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Fix: Installation Problems and Basic Requirements</a></li><li><a href="../article/installation-setup-failed.html">Fix: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: Application Control Policy Blocks DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Fix: Rectangle Drawing Tool Not Working</a></li><li><a href="../article/chart-zoom.html">Fix: Chart Zoom In and Out Not Working</a></li><li><a href="../article/license-issues.html">Fix: License and Activation Issues</a></li><li><a href="../article/diagnostic-report.html">Diagnostic Report: Before You Contact Support</a></li><li><a href="../article/get-help.html">How to Get Help (Chat, Diagnostic Report, Support)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account &amp; Billing <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Manage Your Subscriptions and Billing</a></li><li><a href="../article/move-to-new-computer.html">Move DeepCharts to a New Computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/connections-data-feeds.html">Connections &amp; Data Feeds</a> › Setup</div>
+<div class="article-head"><h1>How to Connect a Data Feed (Feed Settings)</h1>
+<p class="article-desc">Add a data feed connection in Feed Settings, connect it, and get live data on a chart.</p>
+<div class="meta-row">
+  <span class="badge b-beginner">Beginner</span>
+  <span class="badge">Howto</span>
+  <span class="badge">🕒 10 min to complete</span>
+  <a class="btn-pdf" href="../pdf/connect-data-feed.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>By the end you will have your data feed saved in Feed Settings, connected with a green dot, and a chart loading live data. This is the generic walkthrough that applies to every feed source — provider-specific guides (<a href="./connect-dxfeed.html">How to Connect a dxFeed Data Feed</a>, <a href="./connect-rithmic.html">How to Connect a Rithmic Data Feed</a>, <a href="./connect-cqg.html">How to Connect CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a> and others) follow the same shape with their exact values filled in.</p>
+<div class="widget-mount" data-widget="feed-navigator"></div><h2 id="before-you-start">Before you start</h2>
+<ul>
+<li>Your feed credentials (username and password issued for the feed — not your provider's website login). If you have no feed yet, see <a href="./buy-data-feed.html">How to Buy a Data Feed and Get Your Credentials</a> or start with the <a href="./free-delayed-data-feed.html">Use the Free 15-Minute Delayed Data Feed</a>.</li>
+<li>The market data agreement signed for your account type — see <a href="./sign-market-data-agreement.html">Sign Your Market Data Agreement</a>. Without it the connection stays red even with correct credentials.</li>
+<li>The exact <strong>Feed Source</strong> and <strong>Server</strong> values for your provider — look them up in <a href="./compatibility-guide.html">Supported Brokers, Prop Firms and Data Feeds</a>.</li>
+</ul>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>
+<p>In DeepCharts, click <strong>Select Connection</strong> in the main toolbar.</p>
+</li>
+<li>
+<p>Click <strong>Feed Settings</strong> at the bottom of the dropdown. The Feed Settings window opens.</p>
+</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">DeepCharts main toolbar with the Select Connection dropdown open and the Feed Settings entry at the bottom of the dropdown highlighted</div><div class="s-file">select-connection-feed-settings.png</div></div></div>
+<ol start="3">
+<li>
+<p>Click <strong>Add Connection</strong>. A form with several fields appears.</p>
+</li>
+<li>
+<p>In <strong>Name</strong>, type any name you will recognize later — for example &quot;Apex Eval&quot; or &quot;My dxFeed&quot;. This is only a label; it appears in the Select Connection dropdown.</p>
+</li>
+<li>
+<p>In <strong>Feed Source</strong>, pick the source that matches your account:</p>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Your account</th>
+<th>Feed Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dxFeed bought from the DeepCharts website or from dxfeed.com</td>
+<td>dxFeed</td>
+</tr>
+<tr>
+<td>dxFeed from a prop firm (MFF, Aqua, Goat...)</td>
+<td>dxFeed Prop</td>
+</tr>
+<tr>
+<td>Any Rithmic account (prop firm, broker, website purchase)</td>
+<td>Rithmic RAPI</td>
+</tr>
+<tr>
+<td>CQG account from a broker or directly from CQG</td>
+<td>CQG</td>
+</tr>
+<tr>
+<td>Free built-in delayed feed</td>
+<td>15 min delayed</td>
+</tr>
+<tr>
+<td>DeepCharts Competition account</td>
+<td>V-Sim</td>
+</tr>
+<tr>
+<td>Interactive Brokers</td>
+<td>IBKR (TWS API)</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-note">
+<p><strong>Note:</strong> The Rithmic dropdown entries are <strong>Rithmic RAPI</strong> and <strong>Rithmic Wss - beta</strong> — there is no plain &quot;Rithmic&quot; option. Pick <strong>Rithmic RAPI</strong>; it is the recommended source.</p>
+</blockquote>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Add Connection form in Feed Settings with the Feed Source dropdown open showing the full list of sources</div><div class="s-file">add-connection-feed-source.png</div></div></div>
+<ol start="6">
+<li>Enter your <strong>Username</strong> and <strong>Password</strong>.</li>
+</ol>
+<blockquote class="callout-warning">
+<p><strong>Warning:</strong> These are the credentials issued for the feed itself, usually delivered in a welcome email from your broker or prop firm. They are not the login for the provider's website or dashboard — using the website login is the single most common cause of a failed connection.</p>
+</blockquote>
+<ol start="7">
+<li>If a <strong>Server</strong> field appears, set it to the exact value for your provider from <a href="./compatibility-guide.html">Supported Brokers, Prop Firms and Data Feeds</a>. Rithmic prop firms each have a named entry (for example &quot;Apex&quot;); firms without one use &quot;Rithmic Paper Trading&quot;; broker Rithmic accounts use &quot;Rithmic 01&quot;; website-bought dxFeed uses &quot;Website Account&quot;. When Feed Source is <strong>dxFeed Prop</strong> no Server field exists — that is normal.</li>
+</ol>
+<h3 id="if-you-picked-rithmic-rapi">If you picked Rithmic RAPI</h3>
+<ul>
+<li>Set <strong>Gateway</strong> to the region closest to you. The options are Automatic, Chicago Area, Seoul, Mumbai, Hong Kong, Sao Paolo, Singapore, Sydney, Tokyo, Frankfurt, Europe, Cape Town, NYC Area and US West; the default is Automatic. A distant gateway still works but adds latency.</li>
+<li><strong>Include commissions</strong> is on by default — it shows commissions in your P/L.</li>
+<li>Enable <strong>Show only active accounts</strong> if old or expired prop accounts clutter your account list.</li>
+<li>Leave the <strong>Use R Trader</strong> button alone unless you want to run R Trader alongside DeepCharts on the same feed — that setup is covered in <a href="./rtrader-pro-plugin.html">Connect Rithmic Using the RTrader Pro Plugin</a>.</li>
+</ul>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Rithmic RAPI connection form filled in, with the Gateway dropdown open showing the region list and Automatic selected</div><div class="s-file">rithmic-rapi-gateway-options.png</div></div></div>
+<h3 id="if-you-picked-dxfeed-or-dxfeed-prop">If you picked dxFeed or dxFeed Prop</h3>
+<ul>
+<li>Set <strong>DOM Type</strong> to <strong>MBO</strong> or <strong>MBP</strong>. MBO delivers full market-by-order Level 2 depth (best for orderflow tools); MBP is much lighter data and is the right choice if your connection is slow or charts lag during busy periods.</li>
+</ul>
+<h3 id="if-you-picked-cqg">If you picked CQG</h3>
+<ul>
+<li>Enable <strong>Use demo credentials</strong> only if you have a CQG demo account; leave it off for a live account.</li>
+<li>Enable <strong>Connect on startup</strong> if you want this feed to connect automatically every time DeepCharts opens.</li>
+</ul>
+<ol start="8">
+<li>
+<p>Leave every other field at its default and click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Back in the main toolbar, click <strong>Select Connection</strong> again — your new feed now appears under the name you gave it. Click it to connect. Within about 10 seconds the connection indicator should turn green.</p>
+</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Select Connection dropdown showing the newly saved feed with a green status dot next to it</div><div class="s-file">feed-connected-green-dot.png</div></div></div>
+<ol start="10">
+<li>
+<p>Disconnect the feed (click it again), then set up your exchanges in <strong>Options → Symbol Manage</strong> — follow <a href="./symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a>. This step routes each exchange to your new feed; skipping it is the biggest cause of &quot;connected but charts not moving&quot; tickets.</p>
+</li>
+<li>
+<p>Reconnect the feed, then open a chart via <strong>New → Price Chart</strong> — see <a href="./first-chart.html">Open Your First Chart</a>.</p>
+</li>
+</ol>
+<h2 id="verify-it-worked">Verify it worked</h2>
+<ul>
+<li>The dot next to your connection in <strong>Select Connection</strong> is green.</li>
+<li>A chart opened on a subscribed exchange draws candles and the price updates (live, or with a 15-minute lag if you chose the delayed feed).</li>
+</ul>
+<h2 id="if-something-went-wrong">If something went wrong</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>See</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dot stays red — &quot;check username and password&quot;</td>
+<td><a href="./fix-username-password.html">Fix: Connection Failed — Check Username and Password</a></td>
+</tr>
+<tr>
+<td>Dot stays red — &quot;bad server&quot;</td>
+<td><a href="./fix-bad-server.html">Fix: Connection Failed — Bad Server</a></td>
+</tr>
+<tr>
+<td>Dot stays red — &quot;unable to establish connection&quot;</td>
+<td><a href="./fix-unable-to-establish-connection.html">Fix: Connection Failed — Unable to Establish Connection</a></td>
+</tr>
+<tr>
+<td>Rithmic asks you to log in using R Trader</td>
+<td><a href="./fix-log-in-using-rtrader.html">Fix: Please Log In Using R Trader or R Trader Pro</a></td>
+</tr>
+<tr>
+<td>Dot is green but the chart does not move</td>
+<td><a href="./feed-connected-chart-not-moving.html">Fix: Live Feed Connected but Chart Is Not Moving</a></td>
+</tr>
+<tr>
+<td>Charts lag behind during busy periods</td>
+<td><a href="./data-delayed-lagging.html">Fix: Charts Lagging or Data Delayed (Checklist)</a></td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-note">
+<p><strong>Note:</strong> If you also run DeepDom, both applications share one data bridge — a single connection serves both at the same time, but the feed settings must be entered identically in both applications. Mismatched settings in one application can stop the other from connecting.</p>
+</blockquote>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="./compatibility-guide.html">Supported Brokers, Prop Firms and Data Feeds</a></li>
+<li><a href="./sign-market-data-agreement.html">Sign Your Market Data Agreement</a></li>
+<li><a href="./symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a></li>
+<li><a href="./manage-feed-connections.html">Manage and Switch Between Feed Connections</a></li>
+<li><a href="./first-chart.html">Open Your First Chart</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./compatibility-guide.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Supported Brokers, Prop Firms and Data Feeds</div></a><a class="next" href="./symbol-manage.html"><div class="pn-lbl">Next →</div><div class="pn-title">Symbol Manage: Subscribe Exchanges and Map Your Feed</div></a></div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#before-you-start">Before you start</a></li><li class="lv2"><a href="#steps">Steps</a></li><li class="lv3"><a href="#if-you-picked-rithmic-rapi">If you picked Rithmic RAPI</a></li><li class="lv3"><a href="#if-you-picked-dxfeed-or-dxfeed-prop">If you picked dxFeed or dxFeed Prop</a></li><li class="lv3"><a href="#if-you-picked-cqg">If you picked CQG</a></li><li class="lv2"><a href="#verify-it-worked">Verify it worked</a></li><li class="lv2"><a href="#if-something-went-wrong">If something went wrong</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+<script src="../assets/widgets.js"></script>
+</body></html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Deep Stats — DeepCharts Help Center</title>
+<meta name="description" content="Per-bar orderflow statistics table that shows volumes, delta, COT values, ratios and effort metrics beneath your chart.">
+<link rel="stylesheet" href="../assets/style.css">
+<script>window.HC_ROOT="../";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/quick-start-first-trade.html">Quick start</a><a href="../article/get-help.html">Get help</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Getting Started <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Welcome to DeepCharts: Platform Tour</a></li><li><a href="../article/system-requirements.html">System Requirements</a></li><li><a href="../article/install-deepcharts.html">How to Install DeepCharts and Activate Your License</a></li><li><a href="../article/free-delayed-data-feed.html">Use the Free 15-Minute Delayed Data Feed</a></li><li><a href="../article/buy-data-feed.html">How to Buy a Data Feed and Get Your Credentials</a></li><li><a href="../article/first-chart.html">Open Your First Chart</a></li><li><a href="../article/simulation-accounts.html">Trading Accounts and Simulation</a></li><li><a href="../article/quick-start-first-trade.html">Quick Start: From Install to Your First Trade</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connections &amp; Data Feeds <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Setup</li><li><a href="../article/compatibility-guide.html">Supported Brokers, Prop Firms and Data Feeds</a></li><li><a href="../article/connect-data-feed.html">How to Connect a Data Feed (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a></li><li><a href="../article/sign-market-data-agreement.html">Sign Your Market Data Agreement</a></li><li><a href="../article/connect-dxfeed.html">How to Connect a dxFeed Data Feed</a></li><li><a href="../article/connect-rithmic.html">How to Connect a Rithmic Data Feed</a></li><li><a href="../article/rtrader-pro-plugin.html">Connect Rithmic Using the RTrader Pro Plugin</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Connect Any Rithmic Prop-Firm Account (Server Table)</a></li><li><a href="../article/connect-apex.html">Connect Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connect a Prop-Firm dxFeed Account (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">How to Connect CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connect Interactive Brokers (Execution Only)</a></li><li><a href="../article/competition-connect.html">DeepCharts Competition: Join and Connect</a></li><li><a href="../article/end-of-day-data.html">Connect Historical Data (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Manage and Switch Between Feed Connections</a></li><li class="nav-sub">Troubleshooting</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: Live Feed Connected but Chart Is Not Moving</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Fix: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Fix: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Fix: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Fix: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Fix: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Fix: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Fix: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Fix: Connection Lost When Opening a Chart</a></li><li><a href="../article/symbol-subscription-issue.html">Fix: Symbol Subscription Issue</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: App Crashes When Saving Feed Settings</a></li><li><a href="../article/gaps-in-price.html">Fix: Gaps in Price on Charts</a></li><li><a href="../article/data-delayed-lagging.html">Fix: Charts Lagging or Data Delayed (Checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Charts &amp; Workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">The Chart Window</a></li><li><a href="../article/price-chart-settings.html">Price Chart Settings</a></li><li><a href="../article/chart-display-options.html">Chart Display Options (Bar Styles, Sessions, Countdown)</a></li><li><a href="../article/drawing-tools.html">Drawing Tools and Annotations</a></li><li><a href="../article/templates-workspaces.html">Templates and Workspaces</a></li><li><a href="../article/quick-chart-templates.html">Quick Chart Templates (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Link Windows with Color Groups</a></li><li><a href="../article/replay-data.html">Replay Market Data</a></li><li><a href="../article/customize-language-theme-sounds.html">Customize Language, Theme and Notification Sounds</a></li><li><a href="../article/keyboard-shortcuts.html">How to Configure Keyboard Shortcuts</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Keyboard Shortcuts Reference</a></li><li><a href="../article/multi-monitor-windows.html">Arrange Windows Across Monitors (and Recover Off-Screen Windows)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Platform Windows <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (The Tape)</a></li><li><a href="../article/advanced-dom.html">Advanced DOM Window</a></li><li><a href="../article/profile-chart-window.html">Profile Chart Window (TPO and Volume Profiles)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading &amp; Orders <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading from the Chart</a></li><li><a href="../article/trading-panel-reference.html">Trading Panel Reference: Every Button and Field</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading on the Chart (Click-Trading Ladder)</a></li><li><a href="../article/depth-of-market.html">Depth of Market (DOM) Indicator</a></li><li><a href="../article/oco-strategies.html">OCO (One-Cancels-the-Other) Strategies</a></li><li><a href="../article/orders-window.html">Orders Window</a></li><li><a href="../article/portfolio-wallet.html">Portfolio (Wallet)</a></li><li><a href="../article/risk-manager.html">Risk Manager</a></li><li><a href="../article/trade-copier.html">How to Set Up the Trade Copier</a></li><li><a href="../article/performance-analysis.html">Performance Analysis (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concepts <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a></li><li><a href="../article/understanding-volume-profile.html">Understanding Volume Profile: POC, Value Area, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Understanding Auction Theory: Imbalance, Unfinished Auctions, Absorption</a></li><li><a href="../article/understanding-icebergs-absorption.html">Understanding Icebergs and Absorption</a></li><li><a href="../article/understanding-vwap.html">Understanding VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Understanding Market Structure and Sessions (RTH/ETH, Rollover)</a></li><li><a href="../article/reading-a-footprint.html">Reading a Footprint: Worked Examples</a></li><li><a href="../article/glossary.html">Glossary of Orderflow and Platform Terms</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicators &amp; Analysis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Indicator Basics</li><li><a href="../article/different-types-of-input.html">Different Types of Input Data for Indicators</a></li><li><a href="../article/indicator-layout.html">How to Change the Layout of Indicators</a></li><li class="nav-sub">Deep Indicators</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html" class="active">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Moving Average</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Linear Regression</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum &amp; Oscillators</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Stochastic Oscillator</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatility &amp; Bands</li><li><a href="../article/bollinger-bands.html">Bollinger Bands</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Standard Deviation</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume &amp; Delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Order Flow &amp; Auction</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Levels &amp; Patterns</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Important Levels</a></li><li><a href="../article/absolute-levels.html">Absolute Levels</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Chart Overlays</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Text on Chart</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Data &amp; Database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Symbol Rollover (Change Contract Month)</a></li><li><a href="../article/delete-market-data.html">Delete Market Data (In-App and Manual Methods)</a></li><li><a href="../article/download-data.html">Re-download Historical Data (Download Data Tool)</a></li><li><a href="../article/database-optimization.html">Database Optimization</a></li><li><a href="../article/database-problems.html">Fix: Database Problems</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Troubleshooting &amp; Support <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Fix: Installation Problems and Basic Requirements</a></li><li><a href="../article/installation-setup-failed.html">Fix: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: Application Control Policy Blocks DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Fix: Rectangle Drawing Tool Not Working</a></li><li><a href="../article/chart-zoom.html">Fix: Chart Zoom In and Out Not Working</a></li><li><a href="../article/license-issues.html">Fix: License and Activation Issues</a></li><li><a href="../article/diagnostic-report.html">Diagnostic Report: Before You Contact Support</a></li><li><a href="../article/get-help.html">How to Get Help (Chat, Diagnostic Report, Support)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account &amp; Billing <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Manage Your Subscriptions and Billing</a></li><li><a href="../article/move-to-new-computer.html">Move DeepCharts to a New Computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicators &amp; Analysis</a> › Deep Indicators</div>
+<div class="article-head"><h1>Deep Stats</h1>
+<p class="article-desc">Per-bar orderflow statistics table that shows volumes, delta, COT values, ratios and effort metrics beneath your chart.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 5 min read</span>
+  <a class="btn-pdf" href="../pdf/deep-stats.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Deep Stats displays a multi-level text table beneath your chart with one column per bar. Each row is an orderflow metric — total volume, delta, trade counts, COT values, ratios, effort — so you can read the numbers behind every candle instead of guessing from its shape.</p>
+<p>Where footprint tools show you where volume traded inside the bar, Deep Stats condenses each bar into a set of comparable numbers. It is the numeric X-ray of the candle.</p>
+<h2 id="what-it-is">What it is</h2>
+<p>Deep Stats is an orderflow statistics indicator that renders a text grid under the price chart. Every completed bar gets a column of values, and cell colors scale with statistical intensity so outliers stand out at a glance. It answers questions like &quot;how much delta did this bar really have?&quot;, &quot;was that push absorbed?&quot;, and &quot;is volume drying up at these highs?&quot;</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Chart window with Deep Stats applied — price candles on top and the multi-level Deep Stats text table in a panel beneath, with several metric rows (Tot Vol, Delta Vol, Delta %, COT Bar) visible and one strongly colored outlier cell</div><div class="s-file">deep-stats-chart-overview.png</div></div></div>
+<h2 id="when-to-use-it">When to use it</h2>
+<ul>
+<li>You want per-bar confirmation of what the candle shape suggests (real delta, trade counts, intensity) before acting on it.</li>
+<li>You are hunting absorption: high effort or contrarian COT readings while price barely moves.</li>
+<li>You want exhaustion clues at highs or lows via the High Ratio and Low Ratio columns.</li>
+<li>You track cumulative delta (CVD) numerically alongside price rather than as a separate plot.</li>
+</ul>
+<h2 id="quick-start">Quick start</h2>
+<ol>
+<li>Open the <strong>Indicator List</strong> on your chart.</li>
+<li>Find <strong>Deep Stats</strong> and click <strong>+</strong> to add it.</li>
+<li>Click the <strong>Settings</strong> icon next to Deep Stats.</li>
+<li>Under <strong>Data Settings</strong>, pick your <strong>Input Data</strong> (<strong>Volume</strong>, <strong>Order</strong> or <strong>Aggregate Trades</strong> — see <a href="./different-types-of-input.html">Different Types of Input Data for Indicators</a> for what each means). <strong>Volume</strong> is the natural starting point.</li>
+<li>In the <strong>Subgraphs</strong> section, set the <strong>Series style</strong> of every metric you do not need to <strong>Ignore</strong>. A compact starter set: <strong>Tot Vol</strong>, <strong>Delta Vol</strong>, <strong>Delta %</strong>, <strong>Delta Dly</strong>, <strong>COT Bar</strong>.</li>
+<li>Click apply/save and confirm the table renders under the chart.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Stats settings dialog open on the Data Settings section, showing the Input Data dropdown expanded with Volume, Order and Aggregate Trades options, plus the Min Filter and Max Filter fields</div><div class="s-file">deep-stats-settings-data.png</div></div></div>
+<h2 id="how-to-read-it">How to read it</h2>
+<p>Each column is a bar; each row is a metric. Cell color intensity is based on standard deviations, so a strongly colored cell means &quot;statistically unusual for this instrument right now.&quot;</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>What it tells you</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tot Vol / Bid Vol / Ask Vol / Delta Vol</strong></td>
+<td>The volume basics: total traded, sold at bid, bought at ask, and the net difference.</td>
+</tr>
+<tr>
+<td><strong>Max Delta Vol / Min Delta Vol</strong></td>
+<td>The delta extremes reached within the bar — a bar can close delta-flat after a violent internal swing.</td>
+</tr>
+<tr>
+<td><strong>Tot NT / Delta NT</strong></td>
+<td>Number of trades and the ask-vs-bid trade-count differential.</td>
+</tr>
+<tr>
+<td><strong>Delta HL</strong></td>
+<td>Ticks between the bar's high and low.</td>
+</tr>
+<tr>
+<td><strong>Delta %</strong></td>
+<td>Delta Vol as a percentage of Tot Vol: (Delta Vol / Tot Vol) × 100.</td>
+</tr>
+<tr>
+<td><strong>Delta Dly</strong></td>
+<td>Running cumulative volume delta (CVD).</td>
+</tr>
+<tr>
+<td><strong>Vol(s)</strong></td>
+<td>Volume per second — trading intensity.</td>
+</tr>
+<tr>
+<td><strong>COT H</strong></td>
+<td>Cumulative delta from the last low to the close. A negative COT H on a bearish bar is a bullish absorption signal.</td>
+</tr>
+<tr>
+<td><strong>COT L</strong></td>
+<td>Cumulative delta from the last high to the close. A positive COT L on a bullish bar is a bearish absorption signal.</td>
+</tr>
+<tr>
+<td><strong>COT Bar</strong></td>
+<td>Shows COT H on bullish bars and COT L on bearish bars automatically.</td>
+</tr>
+<tr>
+<td><strong>Time(s)</strong></td>
+<td>Bar duration in seconds — contextualizes the volume figures.</td>
+</tr>
+<tr>
+<td><strong>Bar Ratio / High Ratio / Low Ratio</strong></td>
+<td>Penultimate-to-final tick volume ratios. A low High Ratio flags buyer exhaustion at the highs; a low Low Ratio flags seller exhaustion at the lows.</td>
+</tr>
+<tr>
+<td><strong>Total Effort / Delta Effort</strong></td>
+<td>Volume (or delta) relative to bar width. High effort with little price movement points to absorption.</td>
+</tr>
+</tbody>
+</table>
+<p>Practical reads:</p>
+<ul>
+<li><strong>Absorption</strong>: COT H negative on bearish bars (buyers absorbing the selling), COT L positive on bullish bars (sellers absorbing the buying), or high Effort while price barely advances.</li>
+<li><strong>Exhaustion</strong>: a low High Ratio into resistance or a low Low Ratio into support suggests the aggressor is running out of orders.</li>
+<li><strong>Intensity shifts</strong>: Vol(s) jumping while Time(s) shrinks means participation is accelerating.</li>
+</ul>
+<h2 id="settings-reference">Settings reference</h2>
+<p>Grouped as in the settings dialog.</p>
+<h3 id="data-settings">Data Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Input Data</strong></td>
+<td>Data source for the calculations: <strong>Volume</strong>, <strong>Order</strong> or <strong>Aggregate Trades</strong>. See <a href="./different-types-of-input.html">Different Types of Input Data for Indicators</a>.</td>
+</tr>
+<tr>
+<td><strong>Min Filter</strong></td>
+<td>Minimum trade-size threshold; smaller trades are excluded from the statistics.</td>
+</tr>
+<tr>
+<td><strong>Max Filter</strong></td>
+<td>Maximum trade-size threshold; <strong>0</strong> means no maximum filter.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="plot-settings">Plot Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dev. std. for Coloring</strong></td>
+<td>Controls how aggressively cell colors scale with standard deviation, plus text size/color, number formatting (<strong>Auto Text Format</strong> compacts large numbers) and cell order.</td>
+</tr>
+<tr>
+<td><strong>Settings-Header</strong></td>
+<td>Header row visibility, colors and size.</td>
+</tr>
+<tr>
+<td><strong>Threshold</strong></td>
+<td>Highlights cells when the chosen metrics exceed thresholds you define.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="subgraphs">Subgraphs</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Series style</strong> (per metric)</td>
+<td><strong>Text</strong> shows the metric row; <strong>Ignore</strong> hides it.</td>
+</tr>
+<tr>
+<td><strong>Colors</strong> (per metric)</td>
+<td>Cell color used for that metric's row.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tips-and-common-mistakes">Tips and common mistakes</h2>
+<ul>
+<li><strong>Start minimal.</strong> Enabling all metrics buries the useful ones. Set everything you do not actively read to <strong>Ignore</strong>, then add rows back as you need them.</li>
+<li><strong>Use Auto Text Format</strong> if long numbers get clipped — it compacts values so columns stay readable.</li>
+<li><strong>Do not read COT H/COT L in isolation.</strong> They are absorption clues, not entry signals — confirm against structure and the tape (see <a href="./adv-time-and-sales.html">Advanced Time And Sales (The Tape)</a>).</li>
+<li><strong>Match the Min Filter to the instrument.</strong> A filter that isolates institutional size on one contract removes almost everything on a thinner one.</li>
+<li><strong>Threshold highlighting beats staring.</strong> If you only care about, say, outsized Delta %, set a Threshold so the table flags it for you.</li>
+</ul>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="./orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a></li>
+<li><a href="./different-types-of-input.html">Different Types of Input Data for Indicators</a></li>
+<li><a href="./indicator-layout.html">How to Change the Layout of Indicators</a></li>
+<li><a href="./deep-print.html">Deep Print (Footprint)</a></li>
+<li><a href="./deep-trades.html">Deep Trades</a></li>
+<li><a href="./on-candle-stats.html">On Candle Stats</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./deep-delta.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Deep Delta</div></a><a class="next" href="./deep-trades.html"><div class="pn-lbl">Next →</div><div class="pn-title">Deep Trades</div></a></div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#what-it-is">What it is</a></li><li class="lv2"><a href="#when-to-use-it">When to use it</a></li><li class="lv2"><a href="#quick-start">Quick start</a></li><li class="lv2"><a href="#how-to-read-it">How to read it</a></li><li class="lv2"><a href="#settings-reference">Settings reference</a></li><li class="lv3"><a href="#data-settings">Data Settings</a></li><li class="lv3"><a href="#plot-settings">Plot Settings</a></li><li class="lv3"><a href="#subgraphs">Subgraphs</a></li><li class="lv2"><a href="#tips-and-common-mistakes">Tips and common mistakes</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+<script src="../assets/widgets.js"></script>
+</body></html>
