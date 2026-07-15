@@ -30,9 +30,13 @@ A normal candle tells you where price went. Deep Print tells you what traded to 
 1. Open a chart and add **Deep Print** from the chart's **Indicators** button.
 2. Open the indicator settings.
 3. In **General settings**, set **Type** to the display you want (start with **Ask/Bid Split** or **Delta + Total Volume**) and **Mode** to **Profile**.
-4. Apply — every candle now shows its per-tick executed volume. Try the live footprint below: hover any cell and adjust the diagonal-imbalance ratio to see how the highlighting responds.
+4. Apply — every candle now shows its per-tick executed volume.
 
-[WIDGET: footprint-lab]
+### The Deep Print Studio
+
+Below is a full working editor for this indicator. Every setting group from the real dialog is live: switch the **Type** between all four displays, flip **Profile/Box** mode, tune the diagonal-imbalance thresholds, style the POC and value area, and watch the candles re-render as you type. Hover any cell to have it decode itself. When the footprint looks the way you want, press **⬇ Download my settings** — you get a file listing every choice, organized by the exact sections of the in-app dialog, ready to replicate in DeepCharts. Try **▶ Replay candles** to watch the prints build the candle, and **◇ 3D view** to tilt the stage.
+
+[WIDGET: deep-print-studio]
 
 ### Recommended starter configuration
 

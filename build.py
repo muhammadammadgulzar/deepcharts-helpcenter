@@ -182,7 +182,7 @@ KNOWN_WIDGETS = {
     "dom-ladder", "rsi-lab", "feed-navigator", "main-bar", "spec-check",
     "volume-profile-lab", "footprint-lab", "vwap-lab", "ma-lab", "macd-lab",
     "candle-anatomy", "tape-lab", "symbol-manage-mock",
-    "trading-panel-mock", "delta-lab", "tpo-lab", "link-groups-demo",
+    "trading-panel-mock", "delta-lab", "tpo-lab", "link-groups-demo", "deep-print-studio",
 }
 widget_uses = []   # (slug, name) for reporting
 bad_widgets = []
