@@ -1,0 +1,70 @@
+{
+ "batch": "indicators-10",
+ "notes": "Indicator reference articles (template 1). For EACH: fetch the live article at https://www.deepcharts.com/helpcenter/article/<old-slug> (from source LIVE:<old-slug>; percent-encode parentheses %28 %29 and the registered mark %C2%AE if the fetch fails) and rewrite to: What it is (2-3 plain sentences) / When to use it (3-4 bullets) / Quick start (add to chart + a sensible starter configuration) / How to read it (interpretation guidance!) / Settings reference (EVERY setting from the live article grouped as in the dialog - keep real setting names and any defaults the live article states; NEVER invent settings or defaults; if the live article omits a default just describe the setting) / Tips and common mistakes / Related articles. Add one screenshot placeholder showing the indicator on a chart and one of its settings dialog. Cross-link [[different-types-of-input]] and [[indicator-layout]] in Related, plus the family concept article ([[orderflow-101]] for delta tools, [[understanding-volume-profile]] for profile tools, [[understanding-auction-theory]] for auction tools).",
+ "articles": [
+  {
+   "slug": "bar-poc",
+   "title": "Bar POC",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:bar-poc-indicator",
+   "category": "Indicators & Analysis",
+   "subcategory": "Order Flow & Auction"
+  },
+  {
+   "slug": "stop-spotter",
+   "title": "Stop Spotter",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:stop-spotter",
+   "category": "Indicators & Analysis",
+   "subcategory": "Order Flow & Auction"
+  },
+  {
+   "slug": "ratio-highlight",
+   "title": "Ratio Highlight",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:ratio-highlight",
+   "category": "Indicators & Analysis",
+   "subcategory": "Order Flow & Auction"
+  },
+  {
+   "slug": "pivot-points",
+   "title": "Pivot Points",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:pivot-points",
+   "category": "Indicators & Analysis",
+   "subcategory": "Levels & Patterns"
+  },
+  {
+   "slug": "important-levels",
+   "title": "Important Levels",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:important-levels",
+   "category": "Indicators & Analysis",
+   "subcategory": "Levels & Patterns"
+  },
+  {
+   "slug": "absolute-levels",
+   "title": "Absolute Levels",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:absolute-levels-indicator",
+   "category": "Indicators & Analysis",
+   "subcategory": "Levels & Patterns"
+  },
+  {
+   "slug": "price-movement-levels",
+   "title": "Price Movement Levels",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:price-movement-levels",
+   "category": "Indicators & Analysis",
+   "subcategory": "Levels & Patterns"
+  }
+ ],
+ "id": "27-indicators-10"
+}

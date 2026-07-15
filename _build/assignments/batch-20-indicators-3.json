@@ -1,0 +1,70 @@
+{
+ "batch": "indicators-3",
+ "notes": "Indicator reference articles (template 1). For EACH: fetch the live article at https://www.deepcharts.com/helpcenter/article/<old-slug> (from source LIVE:<old-slug>; percent-encode parentheses %28 %29 and the registered mark %C2%AE if the fetch fails) and rewrite to: What it is (2-3 plain sentences) / When to use it (3-4 bullets) / Quick start (add to chart + a sensible starter configuration) / How to read it (interpretation guidance!) / Settings reference (EVERY setting from the live article grouped as in the dialog - keep real setting names and any defaults the live article states; NEVER invent settings or defaults; if the live article omits a default just describe the setting) / Tips and common mistakes / Related articles. Add one screenshot placeholder showing the indicator on a chart and one of its settings dialog. Cross-link [[different-types-of-input]] and [[indicator-layout]] in Related, plus the family concept article ([[orderflow-101]] for delta tools, [[understanding-volume-profile]] for profile tools, [[understanding-auction-theory]] for auction tools).",
+ "articles": [
+  {
+   "slug": "moving-average",
+   "title": "Moving Average",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:moving-average",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  },
+  {
+   "slug": "super-trend",
+   "title": "Super Trend",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:super-trend",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  },
+  {
+   "slug": "super-trend-difference",
+   "title": "Super Trend Difference",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:super-trend-difference",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  },
+  {
+   "slug": "parabolic-sar",
+   "title": "Parabolic SAR",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:parabolic-sar",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  },
+  {
+   "slug": "ichimoku",
+   "title": "Ichimoku",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:ichimoku-indicator",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  },
+  {
+   "slug": "linear-regression",
+   "title": "Linear Regression",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:linear-regression",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  },
+  {
+   "slug": "regression-channel",
+   "title": "Regression Channel",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:regression-channel",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  }
+ ],
+ "id": "20-indicators-3"
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Advanced Time And Sales (The Tape) — DeepCharts Help Center</title>
+<meta name="description" content="Read the DeepCharts tape: trade-by-trade prints with aggressor colors, side filters, and the Bid/Ask, Delta and book-imbalance bottom panels.">
+<link rel="stylesheet" href="../assets/style.css">
+<script>window.HC_ROOT="../";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/quick-start-first-trade.html">Quick start</a><a href="../article/get-help.html">Get help</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Getting Started <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Welcome to DeepCharts: Platform Tour</a></li><li><a href="../article/system-requirements.html">System Requirements</a></li><li><a href="../article/install-deepcharts.html">How to Install DeepCharts and Activate Your License</a></li><li><a href="../article/free-delayed-data-feed.html">Use the Free 15-Minute Delayed Data Feed</a></li><li><a href="../article/buy-data-feed.html">How to Buy a Data Feed and Get Your Credentials</a></li><li><a href="../article/first-chart.html">Open Your First Chart</a></li><li><a href="../article/simulation-accounts.html">Trading Accounts and Simulation</a></li><li><a href="../article/quick-start-first-trade.html">Quick Start: From Install to Your First Trade</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connections &amp; Data Feeds <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Setup</li><li><a href="../article/compatibility-guide.html">Supported Brokers, Prop Firms and Data Feeds</a></li><li><a href="../article/connect-data-feed.html">How to Connect a Data Feed (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a></li><li><a href="../article/sign-market-data-agreement.html">Sign Your Market Data Agreement</a></li><li><a href="../article/connect-dxfeed.html">How to Connect a dxFeed Data Feed</a></li><li><a href="../article/connect-rithmic.html">How to Connect a Rithmic Data Feed</a></li><li><a href="../article/rtrader-pro-plugin.html">Connect Rithmic Using the RTrader Pro Plugin</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Connect Any Rithmic Prop-Firm Account (Server Table)</a></li><li><a href="../article/connect-apex.html">Connect Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connect a Prop-Firm dxFeed Account (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">How to Connect CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connect Interactive Brokers (Execution Only)</a></li><li><a href="../article/competition-connect.html">DeepCharts Competition: Join and Connect</a></li><li><a href="../article/end-of-day-data.html">Connect Historical Data (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Manage and Switch Between Feed Connections</a></li><li class="nav-sub">Troubleshooting</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: Live Feed Connected but Chart Is Not Moving</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Fix: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Fix: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Fix: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Fix: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Fix: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Fix: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Fix: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Fix: Connection Lost When Opening a Chart</a></li><li><a href="../article/symbol-subscription-issue.html">Fix: Symbol Subscription Issue</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: App Crashes When Saving Feed Settings</a></li><li><a href="../article/gaps-in-price.html">Fix: Gaps in Price on Charts</a></li><li><a href="../article/data-delayed-lagging.html">Fix: Charts Lagging or Data Delayed (Checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Charts &amp; Workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">The Chart Window</a></li><li><a href="../article/price-chart-settings.html">Price Chart Settings</a></li><li><a href="../article/chart-display-options.html">Chart Display Options (Bar Styles, Sessions, Countdown)</a></li><li><a href="../article/drawing-tools.html">Drawing Tools and Annotations</a></li><li><a href="../article/templates-workspaces.html">Templates and Workspaces</a></li><li><a href="../article/quick-chart-templates.html">Quick Chart Templates (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Link Windows with Color Groups</a></li><li><a href="../article/replay-data.html">Replay Market Data</a></li><li><a href="../article/customize-language-theme-sounds.html">Customize Language, Theme and Notification Sounds</a></li><li><a href="../article/keyboard-shortcuts.html">How to Configure Keyboard Shortcuts</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Keyboard Shortcuts Reference</a></li><li><a href="../article/multi-monitor-windows.html">Arrange Windows Across Monitors (and Recover Off-Screen Windows)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Platform Windows <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html" class="active">Advanced Time And Sales (The Tape)</a></li><li><a href="../article/advanced-dom.html">Advanced DOM Window</a></li><li><a href="../article/profile-chart-window.html">Profile Chart Window (TPO and Volume Profiles)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading &amp; Orders <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading from the Chart</a></li><li><a href="../article/trading-panel-reference.html">Trading Panel Reference: Every Button and Field</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading on the Chart (Click-Trading Ladder)</a></li><li><a href="../article/depth-of-market.html">Depth of Market (DOM) Indicator</a></li><li><a href="../article/oco-strategies.html">OCO (One-Cancels-the-Other) Strategies</a></li><li><a href="../article/orders-window.html">Orders Window</a></li><li><a href="../article/portfolio-wallet.html">Portfolio (Wallet)</a></li><li><a href="../article/risk-manager.html">Risk Manager</a></li><li><a href="../article/trade-copier.html">How to Set Up the Trade Copier</a></li><li><a href="../article/performance-analysis.html">Performance Analysis (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concepts <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a></li><li><a href="../article/understanding-volume-profile.html">Understanding Volume Profile: POC, Value Area, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Understanding Auction Theory: Imbalance, Unfinished Auctions, Absorption</a></li><li><a href="../article/understanding-icebergs-absorption.html">Understanding Icebergs and Absorption</a></li><li><a href="../article/understanding-vwap.html">Understanding VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Understanding Market Structure and Sessions (RTH/ETH, Rollover)</a></li><li><a href="../article/reading-a-footprint.html">Reading a Footprint: Worked Examples</a></li><li><a href="../article/glossary.html">Glossary of Orderflow and Platform Terms</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicators &amp; Analysis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Indicator Basics</li><li><a href="../article/different-types-of-input.html">Different Types of Input Data for Indicators</a></li><li><a href="../article/indicator-layout.html">How to Change the Layout of Indicators</a></li><li class="nav-sub">Deep Indicators</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Moving Average</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Linear Regression</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum &amp; Oscillators</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Stochastic Oscillator</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatility &amp; Bands</li><li><a href="../article/bollinger-bands.html">Bollinger Bands</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Standard Deviation</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume &amp; Delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Order Flow &amp; Auction</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Levels &amp; Patterns</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Important Levels</a></li><li><a href="../article/absolute-levels.html">Absolute Levels</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Chart Overlays</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Text on Chart</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Data &amp; Database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Symbol Rollover (Change Contract Month)</a></li><li><a href="../article/delete-market-data.html">Delete Market Data (In-App and Manual Methods)</a></li><li><a href="../article/download-data.html">Re-download Historical Data (Download Data Tool)</a></li><li><a href="../article/database-optimization.html">Database Optimization</a></li><li><a href="../article/database-problems.html">Fix: Database Problems</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Troubleshooting &amp; Support <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Fix: Installation Problems and Basic Requirements</a></li><li><a href="../article/installation-setup-failed.html">Fix: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: Application Control Policy Blocks DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Fix: Rectangle Drawing Tool Not Working</a></li><li><a href="../article/chart-zoom.html">Fix: Chart Zoom In and Out Not Working</a></li><li><a href="../article/license-issues.html">Fix: License and Activation Issues</a></li><li><a href="../article/diagnostic-report.html">Diagnostic Report: Before You Contact Support</a></li><li><a href="../article/get-help.html">How to Get Help (Chat, Diagnostic Report, Support)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account &amp; Billing <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Manage Your Subscriptions and Billing</a></li><li><a href="../article/move-to-new-computer.html">Move DeepCharts to a New Computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/platform-windows.html">Platform Windows</a></div>
+<div class="article-head"><h1>Advanced Time And Sales (The Tape)</h1>
+<p class="article-desc">Read the DeepCharts tape: trade-by-trade prints with aggressor colors, side filters, and the Bid/Ask, Delta and book-imbalance bottom panels.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 12 min read</span>
+  <a class="btn-pdf" href="../pdf/adv-time-and-sales.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Advanced Time And Sales is the DeepCharts tape: a live list where every executed trade appears as one row the moment it prints. Where a chart compresses activity into bars, the tape shows you each individual transaction — its time, its size, and which side of the market was the aggressor.</p>
+<p>This article covers the window itself: how to open it, what the row colors mean, the three optional bottom panels (Bid/Ask, Delta, book imbalance), and every setting in the <strong>Chart Settings</strong> and <strong>TS Settings</strong> dialogs.</p>
+<h2 id="what-it-is">What it is</h2>
+<p>The window answers one question: who is trading right now, how much, and at what price. Each row is a single trade print with three columns — <strong>Time</strong>, <strong>Volume</strong> and <strong>Price</strong>. The price cell is color-coded by where the trade executed, so at a glance you can see whether buyers are lifting the ask or sellers are hitting the bid. Optional panels at the bottom of the window aggregate those prints into running per-side totals, a delta bar, or a live view of the resting order book.</p>
+<p>If you are new to aggressor-side logic (why a trade &quot;at the ask&quot; means an aggressive buyer), read <a href="./orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a> first — the tape makes much more sense with that model in mind.</p>
+<h2 id="when-to-use-it">When to use it</h2>
+<ul>
+<li>Confirming whether a fast move is backed by real aggressive volume or thin prints.</li>
+<li>Watching execution speed and print sizes around a level you care about — pairs well with <a href="./speed-of-tape.html">Speed of Tape</a> and <a href="./big-trades.html">Big Trades</a>.</li>
+<li>Monitoring one side only (all buys or all sells) with the trade-side filter.</li>
+<li>Keeping a compact running delta or bid/ask volume tally without opening a full chart.</li>
+<li>Watching resting-book pressure with the book-imbalance panel while you manage an entry on the <a href="./advanced-dom.html">Advanced DOM Window</a>.</li>
+</ul>
+<h2 id="quick-start">Quick start</h2>
+<ol>
+<li>In the main bar, open <strong>New → Adv. Time And Sales</strong>.</li>
+<li>In the <strong>Select Instrument</strong> window, pick your instrument (for example NQ) and confirm. Only exchanges you subscribed in <a href="./symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a> appear here — an empty picker means nothing is subscribed yet.</li>
+<li>The tape window opens and starts filling with live prints.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">The New menu open in the DeepCharts main bar with Adv. Time And Sales highlighted, and the Select Instrument dialog visible with NQ selected</div><div class="s-file">adv-ts-open-flow.png</div></div></div>
+<blockquote class="callout-note">
+<p><strong>Note:</strong> A freshly opened tape starts empty and fills only as new trades print. On video-verified behavior, duplicated and new Time And Sales windows showed no historical backfill — in a quiet market the window can stay sparse for a while. This appears to be by design, though exact backfill behavior is <span class="confirm-flag">CONFIRM: does a new/duplicated Adv. TS window intentionally load no trade history?</span>.</p>
+</blockquote>
+<h2 id="window-anatomy">Window anatomy</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Full Adv. Time And Sales window on NQ showing the title bar icons (logo, gear, link, minimize, close), the full-width symbol dropdown, and a mixed tape of green and pink price cells with blue volume numbers</div><div class="s-file">adv-ts-window-overview.png</div></div></div>
+<ul>
+<li><strong>Title bar</strong>, left to right: the DeepCharts logo, the <strong>gear</strong> icon (the settings hub — everything lives here), the square <strong>link</strong> icon, minimize and close. The link icon was not demonstrated in our source material; it is presumably the standard window-link color groups (see <a href="./link-windows.html">Link Windows with Color Groups</a>), but exact behavior may vary.</li>
+<li><strong>Symbol dropdown</strong> — full width, directly under the title bar (for example NQ-202609). Changing it switches the tape to another instrument.</li>
+<li><strong>The tape</strong> — columns <strong>Time | Volume | Price</strong>. Rows appear top-down as trades execute. Volume prints in blue text.</li>
+<li>The window is freely resizable; columns stretch with it.</li>
+</ul>
+<h2 id="how-to-read-it">How to read it</h2>
+<p>Each row's <strong>Price</strong> cell background encodes the aggressor side:</p>
+<table>
+<thead>
+<tr>
+<th>Color</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Green</td>
+<td>Trade executed at the ask — buy aggressor</td>
+</tr>
+<tr>
+<td>Pink</td>
+<td>Trade executed at the bid — sell aggressor</td>
+</tr>
+<tr>
+<td>Gray</td>
+<td>Unconfirmed — likely a trade executed between the bid and ask (inside the spread)</td>
+</tr>
+</tbody>
+</table>
+<p>The gray reading is an inference, not a confirmed fact: the <strong>TS Settings</strong> color fields include a <strong>Between Bid/Ask background</strong> that is gray by default, which strongly suggests gray rows are inside-spread prints — but this is pending confirmation, so treat it as likely rather than certain. The same color sets also include <strong>Below Bid</strong> and <strong>Above Ask</strong> backgrounds, meaning the tape can distinguish prints outside the quoted spread as well; when those colorings trigger is <span class="confirm-flag">CONFIRM: exact conditions for Below Bid / Above Ask row coloring</span>.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Close-up of tape rows showing green (ask-side) and pink (bid-side) price cells with a burst of gray price cells in between, volume values in blue</div><div class="s-file">adv-ts-row-colors.png</div></div></div>
+<p>A tape that is suddenly all one color usually is not the market — it is the trade-side filter (next section).</p>
+<h2 id="the-gear-menu">The gear menu</h2>
+<p>The gear icon opens the full menu: <strong>All Trades / Ask Trades / Bid Trades</strong> (a three-way filter), <strong>Enable Bid/Ask</strong>, <strong>Enable Delta</strong>, <strong>Chart Settings</strong>, <strong>Enable book imbalance</strong>, <strong>Book imbalance settings</strong>, <strong>Duplicate Adv. TS</strong>, <strong>Always on Top</strong>, <strong>Template</strong> (Load / Save As), <strong>Rebuild TS</strong>, <strong>Rename TS</strong> and <strong>Settings TS</strong>.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Adv. Time And Sales gear menu fully open showing all items: the All/Ask/Bid Trades filter with checkmark on All Trades, the Enable Bid/Ask, Enable Delta, Chart Settings, Enable book imbalance, Book imbalance settings, Duplicate Adv. TS, Always on Top, Template, Rebuild TS, Rename TS and Settings TS entries</div><div class="s-file">adv-ts-gear-menu.png</div></div></div>
+<h3 id="trade-side-filters">Trade-side filters</h3>
+<p><strong>All Trades</strong> (default) shows the mixed tape. <strong>Ask Trades</strong> shows only ask-side executions — every visible row turns green. <strong>Bid Trades</strong> shows only bid-side executions — all pink. The same choice also exists inside <strong>Settings TS</strong> as <strong>TS Mode</strong>; the two stay in step.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Tape with the Ask Trades filter active — every row green — and the gear menu open showing the checkmark moved to Ask Trades</div><div class="s-file">adv-ts-ask-filter.png</div></div></div>
+<h3 id="bid-ask-panel">Bid/Ask panel</h3>
+<p><strong>Enable Bid/Ask</strong> (off by default) adds a panel to the lower third of the window. It starts empty with a full-width green <strong>Reset</strong> button, then grows two boxes: purple on the left and green on the right, each with a count underneath. The boxes grow as trades print, and <strong>Reset</strong> zeroes both counters.</p>
+<p>Based on the tape's color convention, the purple box appears to track bid-side traded volume and the green box ask-side volume since the last reset — a reasonable reading, but the exact semantics are <span class="confirm-flag">CONFIRM: Bid/Ask panel — do the two counters equal cumulative contracts traded at bid vs at ask since last Reset?</span>.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Adv. Time And Sales with the Bid/Ask bottom panel enabled — purple box on the left, green box on the right, contract counts under each box and the full-width green Reset button</div><div class="s-file">adv-ts-bid-ask-panel.png</div></div></div>
+<h3 id="delta-panel">Delta panel</h3>
+<p><strong>Enable Delta</strong> (off by default) shows a single horizontal bar in the bottom panel: purple while the running delta is negative, green when positive, with two stacked numbers that grow as trades print (for example -5 / -3 growing to -14 / -12 during selling). <strong>Reset</strong> zeroes the bar.</p>
+<p>The <strong>Chart Settings</strong> text fields include separate colors for &quot;Delta Volume&quot; and &quot;Delta Trade&quot;, so the two numbers are most likely delta volume (top) and delta trade count (bottom) — exact mapping unconfirmed.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Delta bottom panel showing a purple negative delta bar with two stacked negative numbers, then the same panel green after delta turned positive</div><div class="s-file">adv-ts-delta-panel.png</div></div></div>
+<h3 id="book-imbalance-panel">Book imbalance panel</h3>
+<p><strong>Enable book imbalance</strong> (off by default) switches the bottom panel to a resting-book view: one number on the left (bid side) and one on the right (ask side). When both sides are equal, only plain numbers show. When one side dominates, that side grows a colored box sized by its share — a green box on the left when the bid book dominates, a red box on the right when the ask book dominates. The colors are confirmed by the <strong>Imbalance settings</strong> dialog (Bid Volume = green, Ask Volume = red).</p>
+<p>Unlike the other two panels this mode has no <strong>Reset</strong> button — it mirrors the current book rather than accumulating. What exactly the numbers sum (best bid/ask level only, or several book levels) is unconfirmed, as is whether the panel needs Level 2 depth data to populate.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Book imbalance bottom panel in two states — equal values shown as plain numbers, and a dominant bid side with a green box on the left sized proportionally</div><div class="s-file">adv-ts-book-imbalance.png</div></div></div>
+<h3 id="window-utilities">Window utilities</h3>
+<ul>
+<li><strong>Duplicate Adv. TS</strong> — opens a second tape window with the same symbol preselected. The duplicate starts with an empty tape and fresh panel counters, and each window keeps its own settings.</li>
+<li><strong>Always on Top</strong> — keeps the window above others; exact behavior was not demonstrated in our source material but the menu item matches the standard window option.</li>
+<li><strong>Template → Load / Save As</strong> — save or load a named Time And Sales configuration, the same pattern as chart and DOM templates (<a href="./templates-workspaces.html">Templates and Workspaces</a>).</li>
+<li><strong>Rebuild TS</strong> — clears and rebuilds the tape. Use it as a light first fix when the tape looks glitched or frozen. Panel counters reset to zero after a rebuild.</li>
+<li><strong>Rename TS</strong> — renames the window. <span class="confirm-flag">CONFIRM: Rename TS dialog contents — never opened in source material</span></li>
+</ul>
+<h2 id="settings-reference">Settings reference</h2>
+<h3 id="chart-settings-bid-ask-and-delta-panels">Chart Settings (Bid/Ask and Delta panels)</h3>
+<p><strong>Gear → Chart Settings</strong> controls how the two accumulating panels measure and display.</p>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GENERAL</td>
+<td><strong>Period Mode</strong></td>
+<td>Accumulation window. Default <strong>Resettable</strong> — accumulate until you press Reset. Other options: <strong>Fixed count</strong>, <strong>Fixed seconds</strong> — these appear to auto-reset using <strong>Period Length</strong> as the window, but exact behavior is unconfirmed.</td>
+</tr>
+<tr>
+<td>GENERAL</td>
+<td><strong>Period Length</strong></td>
+<td>Number used by the Fixed modes. Default 10.</td>
+</tr>
+<tr>
+<td>GENERAL</td>
+<td><strong>Visual Mode</strong></td>
+<td>Default <strong>Pos and neg</strong>. <span class="confirm-flag">CONFIRM: other Visual Mode options</span></td>
+</tr>
+<tr>
+<td>GENERAL</td>
+<td><strong>Enable Shortcut Reset</strong></td>
+<td>Off by default. <span class="confirm-flag">CONFIRM: which shortcut this binds</span></td>
+</tr>
+<tr>
+<td>COLOR SETTINGS</td>
+<td><strong>Bid Volume / Ask Volume / Bid Trades / Ask Trades</strong></td>
+<td>Color swatches for the panel boxes and delta bar (bid = purple, ask = green by default).</td>
+</tr>
+<tr>
+<td>COLOR SETTINGS</td>
+<td><strong>Color only dominant delta</strong></td>
+<td>Toggle affecting the delta bar coloring.</td>
+</tr>
+<tr>
+<td>TEXT SETTINGS</td>
+<td><strong>Text Size / Text Color</strong></td>
+<td>Panel text styling. Default size 14.</td>
+</tr>
+<tr>
+<td>TEXT SETTINGS</td>
+<td><strong>Pos./Neg. Delta Volume, Pos./Neg. Delta Trade</strong></td>
+<td>Separate color pickers for the two numbers printed on the delta bar, per sign.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Apply</strong> applies without closing; <strong>OK</strong> closes the dialog.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Chart Settings dialog open showing the GENERAL section with Period Mode dropdown expanded listing Resettable, Fixed count and Fixed seconds</div><div class="s-file">adv-ts-chart-settings.png</div></div></div>
+<h3 id="book-imbalance-settings">Book imbalance settings</h3>
+<p><strong>Gear → Book imbalance settings</strong> opens the <strong>Imbalance settings</strong> dialog: COLOR SETTINGS (<strong>Bid Volume</strong> = green, <strong>Ask Volume</strong> = red) and TEXT SETTINGS (<strong>Text Size</strong> default 14, <strong>Bid color</strong>, <strong>Ask color</strong>).</p>
+<h3 id="ts-settings-the-tape-itself">TS Settings (the tape itself)</h3>
+<p><strong>Gear → Settings TS</strong> opens the <strong>TS Settings</strong> dialog with five collapsible sections:</p>
+<table>
+<thead>
+<tr>
+<th>Section</th>
+<th>Settings</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GENERAL</td>
+<td><strong>Back color</strong>, <strong>Border color</strong>, <strong>Font color</strong>, <strong>Font size</strong> (default 12.00), <strong>Bold font</strong> (applies live on Apply), <strong>Input data</strong> (default <strong>Volume</strong>; switching to <strong>Order</strong> changes the middle column header — the tape then shows an order-related count per print instead of contract volume; exact semantics and any further options unconfirmed), <strong>Show milliseconds</strong> (Time column becomes e.g. 02:03:42.382), <strong>TS Mode</strong> (<strong>All trades / Ask trades / Bid trades</strong> — same as the gear filter).</td>
+</tr>
+<tr>
+<td>FILTER SETTINGS</td>
+<td><strong>Filter 1</strong> (number, default 0), <strong>Enable Filter 2</strong> (off), <strong>Filter 2</strong> (number, default 0). These look like minimum-size thresholds that gate the FILTER 1 / FILTER 2 color sets for highlighting larger prints — unconfirmed.</td>
+</tr>
+<tr>
+<td>FILTER 1</td>
+<td>Ten color fields: <strong>Bid</strong>, <strong>Below Bid</strong>, <strong>Between Bid/Ask</strong> (gray by default), <strong>Ask</strong>, <strong>Above Ask</strong> backgrounds plus the five matching text colors.</td>
+</tr>
+<tr>
+<td>FILTER 2</td>
+<td>The same ten fields with a second, more saturated color set.</td>
+</tr>
+<tr>
+<td>ALERT SOUND</td>
+<td><strong>Enable Filter 1</strong>, <strong>Bid Filter 1</strong> and <strong>Ask Filter 1</strong> sound dropdowns with play-preview buttons, <strong>Enable Filter 2</strong>, <strong>Bid/Ask Filter 2</strong>. Presumably plays the chosen sound when a print passes the filter on that side — trigger semantics unconfirmed.</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">TS Settings dialog open on the GENERAL section showing Back/Border/Font color swatches, Font size 12.00, Bold font toggle, Input data dropdown set to Volume, Show milliseconds toggle and TS Mode dropdown</div><div class="s-file">adv-ts-settings-general.png</div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">TS Settings dialog scrolled to FILTER SETTINGS and the expanded FILTER 1 section showing the Bid, Below Bid, Between Bid/Ask (gray), Ask and Above Ask background and text color fields</div><div class="s-file">adv-ts-settings-filters.png</div></div></div>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li><strong>Tape is empty or blank.</strong> New and duplicated windows start empty and fill only from live prints — wait for trades, confirm the feed is connected and the market is open, then try <strong>Gear → Rebuild TS</strong>. If the tape stays dead while charts tick, see <a href="./feed-connected-chart-not-moving.html">Fix: Live Feed Connected but Chart Is Not Moving</a>.</li>
+<li><strong>Only green rows / only pink rows.</strong> The trade-side filter is set to Ask Trades or Bid Trades. Switch back to <strong>All Trades</strong> (also check <strong>Settings TS → TS Mode</strong>).</li>
+<li><strong>Middle column says Order instead of Volume.</strong> <strong>Settings TS → GENERAL → Input data</strong> was switched — set it back to <strong>Volume</strong>.</li>
+<li><strong>Tape looks frozen or glitched.</strong> <strong>Gear → Rebuild TS</strong> first; if the whole feed is down, work through <a href="./data-delayed-lagging.html">Fix: Charts Lagging or Data Delayed (Checklist)</a>.</li>
+<li><strong>Numbers in the bottom panel will not reset.</strong> The book-imbalance mode has no Reset by design — it mirrors the current book. Only the Bid/Ask and Delta modes have the green Reset control.</li>
+</ul>
+<h2 id="tips-and-common-mistakes">Tips and common mistakes</h2>
+<ul>
+<li>The bottom panel shows one mode at a time — Bid/Ask, Delta, or book imbalance. If the panel does not look like you expect, check which of the three gear toggles is active.</li>
+<li>Use <strong>Duplicate Adv. TS</strong> plus the symbol dropdown to run two tapes side by side on different instruments; each window keeps independent filters, panels and settings.</li>
+<li>Save your configured tape as a template (<strong>Gear → Template → Save As</strong>) so you can rebuild your layout in seconds on a new workspace.</li>
+<li>Do not read the gray rows as a definitive signal — the inside-spread interpretation is likely but not confirmed. If your strategy depends on it, verify with support first (<a href="./get-help.html">How to Get Help (Chat, Diagnostic Report, Support)</a>).</li>
+<li>Milliseconds (<strong>Show milliseconds</strong>) are worth enabling when you study burst activity — same-second prints become distinguishable.</li>
+</ul>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="./orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a></li>
+<li><a href="./advanced-dom.html">Advanced DOM Window</a></li>
+<li><a href="./speed-of-tape.html">Speed of Tape</a></li>
+<li><a href="./big-trades.html">Big Trades</a></li>
+<li><a href="./deep-trades.html">Deep Trades</a></li>
+<li><a href="./symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./multi-monitor-windows.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Arrange Windows Across Monitors (and Recover Off-Screen Windows)</div></a><a class="next" href="./advanced-dom.html"><div class="pn-lbl">Next →</div><div class="pn-title">Advanced DOM Window</div></a></div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#what-it-is">What it is</a></li><li class="lv2"><a href="#when-to-use-it">When to use it</a></li><li class="lv2"><a href="#quick-start">Quick start</a></li><li class="lv2"><a href="#window-anatomy">Window anatomy</a></li><li class="lv2"><a href="#how-to-read-it">How to read it</a></li><li class="lv2"><a href="#the-gear-menu">The gear menu</a></li><li class="lv3"><a href="#trade-side-filters">Trade-side filters</a></li><li class="lv3"><a href="#bid-ask-panel">Bid/Ask panel</a></li><li class="lv3"><a href="#delta-panel">Delta panel</a></li><li class="lv3"><a href="#book-imbalance-panel">Book imbalance panel</a></li><li class="lv3"><a href="#window-utilities">Window utilities</a></li><li class="lv2"><a href="#settings-reference">Settings reference</a></li><li class="lv3"><a href="#chart-settings-bid-ask-and-delta-panels">Chart Settings (Bid/Ask and Delta panels)</a></li><li class="lv3"><a href="#book-imbalance-settings">Book imbalance settings</a></li><li class="lv3"><a href="#ts-settings-the-tape-itself">TS Settings (the tape itself)</a></li><li class="lv2"><a href="#troubleshooting">Troubleshooting</a></li><li class="lv2"><a href="#tips-and-common-mistakes">Tips and common mistakes</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+<script src="../assets/widgets.js"></script>
+</body></html>

@@ -1,0 +1,52 @@
+{
+ "batch": "connections-setup-1",
+ "notes": "Ground truth (READ THESE): /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/support_matrix.yaml (the verified broker/prop-firm matrix - server names, feed kinds, unsupported platforms), /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/connections/rithmic_apex.yaml, /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/agreements/rithmic_via_rtrader.md, /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/kinds/*.yaml if present. Key facts: Rithmic prop firms each pick their named Server in Feed Settings (Source=Rithmic RAPI); firms without a dedicated server use 'Rithmic Paper Trading'; R Trader Pro Preferences>Performance sliders (Quotes + Order Book) to max; dxFeed prop accounts use Source='dxFeed Prop' and have NO Server field; agreements: DeepCharts-website purchases sign in the dashboard ('Sign Market Data Contract'), ALL Rithmic accounts sign inside R Trader Pro, dxfeed.com purchases sign on dxFeed site, prop dxFeed signs on the prop dashboard; CQG only works when issued directly by CQG (never via Tradovate/NinjaTrader); IBKR is execution-only (aggregated data) and must be paired with a real feed via Symbol Manage; unsupported: TopStep, Tradovate, TradeStation, FTMO, FundedNext, CFD brokers. symbol-manage: Options > Symbol Manage, Subscribe List tab (Subscribe/Unsubscribe/chain-link change-feed), Symbol List tab, the rule that the instrument picker only shows subscribed exchanges. NEVER instruct users to edit Modify Exchange/Modify Symbol internals - say those are support-managed. manage-feed-connections: main-bar Feed selector (green dot), multiple saved connections, Connect on startup, and note DeepChart+DeepDom share ONE bridge (feed settings must match in both).",
+ "articles": [
+  {
+   "slug": "compatibility-guide",
+   "title": "Supported Brokers, Prop Firms and Data Feeds",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "NEW",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Setup"
+  },
+  {
+   "slug": "connect-data-feed",
+   "title": "How to Connect a Data Feed (Feed Settings)",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "LIVE:data-feed-setting",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Setup"
+  },
+  {
+   "slug": "symbol-manage",
+   "title": "Symbol Manage: Subscribe Exchanges and Map Your Feed",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "NEW",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Setup"
+  },
+  {
+   "slug": "sign-market-data-agreement",
+   "title": "Sign Your Market Data Agreement",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "NEW",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Setup"
+  },
+  {
+   "slug": "connect-dxfeed",
+   "title": "How to Connect a dxFeed Data Feed",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "LIVE:how-to-connect-deepcharts-dxfeed-datafeed",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Setup"
+  }
+ ],
+ "id": "03-connections-setup-1"
+}

@@ -1,0 +1,70 @@
+{
+ "batch": "indicators-1",
+ "notes": "Indicator reference articles (template 1). For EACH: fetch the live article at https://www.deepcharts.com/helpcenter/article/<old-slug> (from source LIVE:<old-slug>; percent-encode parentheses %28 %29 and the registered mark %C2%AE if the fetch fails) and rewrite to: What it is (2-3 plain sentences) / When to use it (3-4 bullets) / Quick start (add to chart + a sensible starter configuration) / How to read it (interpretation guidance!) / Settings reference (EVERY setting from the live article grouped as in the dialog - keep real setting names and any defaults the live article states; NEVER invent settings or defaults; if the live article omits a default just describe the setting) / Tips and common mistakes / Related articles. Add one screenshot placeholder showing the indicator on a chart and one of its settings dialog. Cross-link [[different-types-of-input]] and [[indicator-layout]] in Related, plus the family concept article ([[orderflow-101]] for delta tools, [[understanding-volume-profile]] for profile tools, [[understanding-auction-theory]] for auction tools). Deep-indicator extra ground truth: /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/deepchart_platform/deep_indicators/*.yaml and indicators/*.yaml - read the matching file when it exists. Deep Print and Deep Profile are long articles: keep ALL settings sections from the live article but reorganize under the template; write a 'Recommended starter configuration' subsection.",
+ "articles": [
+  {
+   "slug": "different-types-of-input",
+   "title": "Different Types of Input Data for Indicators",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:different-types-of-input",
+   "category": "Indicators & Analysis",
+   "subcategory": "Indicator Basics"
+  },
+  {
+   "slug": "indicator-layout",
+   "title": "How to Change the Layout of Indicators",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "LIVE:how-to-change-the-layout-of-indicators",
+   "category": "Indicators & Analysis",
+   "subcategory": "Indicator Basics"
+  },
+  {
+   "slug": "deep-print",
+   "title": "Deep Print (Footprint)",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:deep-print-(footprint\u00ae)",
+   "category": "Indicators & Analysis",
+   "subcategory": "Deep Indicators"
+  },
+  {
+   "slug": "deep-profile",
+   "title": "Deep Profile (Volume / Delta Profile)",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:deep-profile",
+   "category": "Indicators & Analysis",
+   "subcategory": "Deep Indicators"
+  },
+  {
+   "slug": "deep-profile-swing",
+   "title": "Deep Profile Swing",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:deep-profile-swing",
+   "category": "Indicators & Analysis",
+   "subcategory": "Deep Indicators"
+  },
+  {
+   "slug": "deep-profile-values",
+   "title": "Deep Profile Values",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:deep-profile-values",
+   "category": "Indicators & Analysis",
+   "subcategory": "Deep Indicators"
+  },
+  {
+   "slug": "deep-delta",
+   "title": "Deep Delta",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:deep-delta",
+   "category": "Indicators & Analysis",
+   "subcategory": "Deep Indicators"
+  }
+ ],
+ "id": "18-indicators-1"
+}

@@ -1,0 +1,43 @@
+{
+ "batch": "support-2",
+ "notes": "Troubleshooting/support articles: fetch live articles and rewrite to the troubleshooting template. get-help (NEW): how to reach support (in-app ? menu / Contact Support with diagnostic, website chat widget), what to include in a ticket (diagnostic report, screenshots, feed + firm name), expected hours; NO invented emails/SLAs - use '[CONFIRM: support email + hours]' placeholders. diagnostic-report: rewrite live article; position as 'before you contact support'.",
+ "articles": [
+  {
+   "slug": "chart-zoom",
+   "title": "Fix: Chart Zoom In and Out Not Working",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:chart-zoom",
+   "category": "Troubleshooting & Support",
+   "subcategory": ""
+  },
+  {
+   "slug": "license-issues",
+   "title": "Fix: License and Activation Issues",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:license-issues",
+   "category": "Troubleshooting & Support",
+   "subcategory": ""
+  },
+  {
+   "slug": "diagnostic-report",
+   "title": "Diagnostic Report: Before You Contact Support",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "LIVE:diagnostic-report-deepcharts",
+   "category": "Troubleshooting & Support",
+   "subcategory": ""
+  },
+  {
+   "slug": "get-help",
+   "title": "How to Get Help (Chat, Diagnostic Report, Support)",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "NEW",
+   "category": "Troubleshooting & Support",
+   "subcategory": ""
+  }
+ ],
+ "id": "32-support-2"
+}

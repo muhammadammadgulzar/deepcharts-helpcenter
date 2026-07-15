@@ -1,0 +1,52 @@
+{
+ "batch": "connections-setup-2",
+ "notes": "Ground truth (READ THESE): /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/support_matrix.yaml (the verified broker/prop-firm matrix - server names, feed kinds, unsupported platforms), /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/connections/rithmic_apex.yaml, /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/agreements/rithmic_via_rtrader.md, /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/kinds/*.yaml if present. Key facts: Rithmic prop firms each pick their named Server in Feed Settings (Source=Rithmic RAPI); firms without a dedicated server use 'Rithmic Paper Trading'; R Trader Pro Preferences>Performance sliders (Quotes + Order Book) to max; dxFeed prop accounts use Source='dxFeed Prop' and have NO Server field; agreements: DeepCharts-website purchases sign in the dashboard ('Sign Market Data Contract'), ALL Rithmic accounts sign inside R Trader Pro, dxfeed.com purchases sign on dxFeed site, prop dxFeed signs on the prop dashboard; CQG only works when issued directly by CQG (never via Tradovate/NinjaTrader); IBKR is execution-only (aggregated data) and must be paired with a real feed via Symbol Manage; unsupported: TopStep, Tradovate, TradeStation, FTMO, FundedNext, CFD brokers. symbol-manage: Options > Symbol Manage, Subscribe List tab (Subscribe/Unsubscribe/chain-link change-feed), Symbol List tab, the rule that the instrument picker only shows subscribed exchanges. NEVER instruct users to edit Modify Exchange/Modify Symbol internals - say those are support-managed. manage-feed-connections: main-bar Feed selector (green dot), multiple saved connections, Connect on startup, and note DeepChart+DeepDom share ONE bridge (feed settings must match in both).",
+ "articles": [
+  {
+   "slug": "connect-rithmic",
+   "title": "How to Connect a Rithmic Data Feed",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "LIVE:how-to-connect-deepcharts-rithmic-datafeed",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Setup"
+  },
+  {
+   "slug": "rtrader-pro-plugin",
+   "title": "Connect Rithmic Using the RTrader Pro Plugin",
+   "type": "howto",
+   "difficulty": "intermediate",
+   "source": "LIVE:connecting-rithmic-using-rtrader-pro-plugin",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Setup"
+  },
+  {
+   "slug": "connect-rithmic-prop-firm",
+   "title": "Connect Any Rithmic Prop-Firm Account (Server Table)",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "NEW",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Setup"
+  },
+  {
+   "slug": "connect-apex",
+   "title": "Connect Apex Trader Funding",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "NEW",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Setup"
+  },
+  {
+   "slug": "connect-dxfeed-prop-firm",
+   "title": "Connect a Prop-Firm dxFeed Account (MFF, Aqua, Goat...)",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "NEW",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Setup"
+  }
+ ],
+ "id": "04-connections-setup-2"
+}

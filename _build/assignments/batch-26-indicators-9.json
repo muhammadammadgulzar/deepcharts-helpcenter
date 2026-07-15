@@ -1,0 +1,70 @@
+{
+ "batch": "indicators-9",
+ "notes": "Indicator reference articles (template 1). For EACH: fetch the live article at https://www.deepcharts.com/helpcenter/article/<old-slug> (from source LIVE:<old-slug>; percent-encode parentheses %28 %29 and the registered mark %C2%AE if the fetch fails) and rewrite to: What it is (2-3 plain sentences) / When to use it (3-4 bullets) / Quick start (add to chart + a sensible starter configuration) / How to read it (interpretation guidance!) / Settings reference (EVERY setting from the live article grouped as in the dialog - keep real setting names and any defaults the live article states; NEVER invent settings or defaults; if the live article omits a default just describe the setting) / Tips and common mistakes / Related articles. Add one screenshot placeholder showing the indicator on a chart and one of its settings dialog. Cross-link [[different-types-of-input]] and [[indicator-layout]] in Related, plus the family concept article ([[orderflow-101]] for delta tools, [[understanding-volume-profile]] for profile tools, [[understanding-auction-theory]] for auction tools).",
+ "articles": [
+  {
+   "slug": "market-profile-tpo",
+   "title": "Market Profile (TPO)",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:market-profile",
+   "category": "Indicators & Analysis",
+   "subcategory": "Order Flow & Auction"
+  },
+  {
+   "slug": "imbalance-tracker",
+   "title": "Imbalance Tracker",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:imbalance-tracker",
+   "category": "Indicators & Analysis",
+   "subcategory": "Order Flow & Auction"
+  },
+  {
+   "slug": "imbalance-rejector",
+   "title": "Imbalance Rejector",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:imbalance-rejector",
+   "category": "Indicators & Analysis",
+   "subcategory": "Order Flow & Auction"
+  },
+  {
+   "slug": "session-imbalance",
+   "title": "Session Imbalance",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:session-imbalance",
+   "category": "Indicators & Analysis",
+   "subcategory": "Order Flow & Auction"
+  },
+  {
+   "slug": "unfinished-auction",
+   "title": "Unfinished Auction",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:unfinished-auction",
+   "category": "Indicators & Analysis",
+   "subcategory": "Order Flow & Auction"
+  },
+  {
+   "slug": "auction-gap-tracker",
+   "title": "Auction Gap Tracker",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:auction-gap-tracker",
+   "category": "Indicators & Analysis",
+   "subcategory": "Order Flow & Auction"
+  },
+  {
+   "slug": "dynamic-poc",
+   "title": "Dynamic POC",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:dynamic-poc",
+   "category": "Indicators & Analysis",
+   "subcategory": "Order Flow & Auction"
+  }
+ ],
+ "id": "26-indicators-9"
+}

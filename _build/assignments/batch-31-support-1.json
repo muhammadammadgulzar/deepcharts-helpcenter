@@ -1,0 +1,43 @@
+{
+ "batch": "support-1",
+ "notes": "Troubleshooting/support articles: fetch live articles and rewrite to the troubleshooting template. get-help (NEW): how to reach support (in-app ? menu / Contact Support with diagnostic, website chat widget), what to include in a ticket (diagnostic report, screenshots, feed + firm name), expected hours; NO invented emails/SLAs - use '[CONFIRM: support email + hours]' placeholders. diagnostic-report: rewrite live article; position as 'before you contact support'.",
+ "articles": [
+  {
+   "slug": "installation-problems",
+   "title": "Fix: Installation Problems and Basic Requirements",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:basic-requirements-installation-problem",
+   "category": "Troubleshooting & Support",
+   "subcategory": ""
+  },
+  {
+   "slug": "installation-setup-failed",
+   "title": "Fix: Installation Setup Failed",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:installation-setup-failed",
+   "category": "Troubleshooting & Support",
+   "subcategory": ""
+  },
+  {
+   "slug": "application-control-policy",
+   "title": "Fix: Application Control Policy Blocks DeepCharts",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:application-control-policy",
+   "category": "Troubleshooting & Support",
+   "subcategory": ""
+  },
+  {
+   "slug": "rectangle-drawing-tool",
+   "title": "Fix: Rectangle Drawing Tool Not Working",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:rectangle-drawing-tool",
+   "category": "Troubleshooting & Support",
+   "subcategory": ""
+  }
+ ],
+ "id": "31-support-1"
+}

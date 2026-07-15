@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DeepCharts Help Center — Live It</title>
+<style>
+/* ============ DEEPCHARTS IMMERSIVE — ebook × landing theme ============ */
+:root{
+  --bg:#060608; --bg2:#0b0b10; --panel:#101016; --panel2:#14141c;
+  --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.14);
+  --ink:#f2f4f8; --ink2:#9aa3b2; --ink3:#6b7484;
+  --green:#22e56a; --green-soft:rgba(34,229,106,.14);
+  --purple:#7c5cff; --purple-soft:rgba(124,92,255,.16);
+  --orange:#ff7a3d; --cyan:#38d6ff;
+  --ease:cubic-bezier(.22,.8,.22,1); --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:15.5px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,sans-serif;overflow-x:hidden}
+::selection{background:var(--purple);color:#fff}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer}
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* ---------- top bar ---------- */
+.bar{position:fixed;inset:0 0 auto;z-index:40;display:flex;align-items:center;gap:20px;padding:14px 26px;
+  background:rgba(6,6,8,.6);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.logo{font-weight:900;font-style:italic;letter-spacing:.4px;font-size:16px}
+.logo em{color:var(--green);font-style:italic}
+.bar nav{display:flex;gap:20px;margin-left:auto;font-size:13.5px;color:var(--ink2)}
+.bar nav a{transition:color .25s var(--ease)}
+.bar nav a:hover{color:var(--ink)}
+.bar .cta{background:var(--purple);color:#fff;padding:8px 16px;border-radius:10px;font-size:13px;font-weight:650;
+  box-shadow:0 0 24px rgba(124,92,255,.35);transition:transform .25s var(--ease),box-shadow .25s var(--ease)}
+.bar .cta:hover{transform:translateY(-1px);box-shadow:0 0 34px rgba(124,92,255,.55)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:92vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:120px 24px 60px;isolation:isolate}
+.hero h1{font-size:clamp(38px,6vw,72px);line-height:1.06;letter-spacing:-1.5px;font-weight:850}
+.hero h1 .g{color:var(--green);text-shadow:0 0 40px rgba(34,229,106,.45)}
+.hero h1 .p{color:var(--purple);text-shadow:0 0 40px rgba(124,92,255,.5)}
+.hero p.sub{margin-top:18px;color:var(--ink2);font-size:17px;max-width:560px}
+.searchpill{margin-top:34px;display:flex;align-items:center;gap:10px;width:min(560px,90vw);
+  background:var(--panel);border:1px solid var(--line2);border-radius:16px;padding:15px 20px;
+  transition:border-color .3s var(--ease),box-shadow .3s var(--ease)}
+.searchpill:focus-within{border-color:var(--green);box-shadow:0 0 0 4px var(--green-soft),0 20px 60px rgba(0,0,0,.5)}
+.searchpill input{flex:1;background:none;border:none;outline:none;color:var(--ink);font-size:15.5px}
+.searchpill kbd{font-size:11px;color:var(--ink3);border:1px solid var(--line2);border-radius:6px;padding:2px 7px}
+/* ambient candles */
+.candles{position:absolute;inset:0;z-index:-1;display:flex;align-items:center;justify-content:center;gap:26px;
+  opacity:.5;filter:blur(.3px);pointer-events:none;mask-image:radial-gradient(70% 60% at 50% 45%,#000 30%,transparent 75%)}
+.candle{width:34px;border-radius:6px;position:relative;animation:breathe 6s var(--ease) infinite}
+.candle::before{content:"";position:absolute;left:50%;translate:-50% 0;width:3px;border-radius:2px;background:inherit;
+  top:-26px;bottom:-26px;z-index:-1;opacity:.7}
+.candle.g{background:linear-gradient(180deg,#2ef575,#12b04a);box-shadow:0 0 46px rgba(34,229,106,.35)}
+.candle.p{background:linear-gradient(180deg,#8f6bff,#5c3fd6);box-shadow:0 0 46px rgba(124,92,255,.4)}
+@keyframes breathe{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.12)}}
+.scrollhint{position:absolute;bottom:26px;color:var(--ink3);font-size:12px;letter-spacing:2.5px;text-transform:uppercase;animation:hint 2.6s var(--ease) infinite}
+@keyframes hint{0%,100%{transform:translateY(0);opacity:.55}50%{transform:translateY(7px);opacity:1}}
+
+/* ---------- sections ---------- */
+section.block{max-width:1120px;margin:0 auto;padding:110px 26px}
+.kicker{font-size:12px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:var(--ink3);margin-bottom:14px}
+.kicker b{color:var(--orange)}
+h2.title{font-size:clamp(28px,3.6vw,44px);letter-spacing:-1px;line-height:1.12;font-weight:830;max-width:720px}
+h2.title .g{color:var(--green)}h2.title .p{color:var(--purple)}h2.title .o{color:var(--orange)}
+p.lead{color:var(--ink2);margin-top:14px;max-width:620px;font-size:16px}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- app window chrome ---------- */
+.window{background:linear-gradient(180deg,var(--panel),var(--bg2));border:1px solid var(--line2);border-radius:18px;
+  box-shadow:0 40px 120px rgba(0,0,0,.6),0 0 0 1px rgba(124,92,255,.06),0 0 80px rgba(124,92,255,.07);overflow:hidden}
+.win-head{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.02)}
+.dots{display:flex;gap:6px}.dots i{width:10px;height:10px;border-radius:50%;background:#2a2a33}
+.dots i:first-child{background:#3d3d47}
+.win-title{font-size:12.5px;color:var(--ink2);font-weight:650;letter-spacing:.3px}
+.win-head .live{margin-left:auto;font-size:10.5px;color:var(--green);border:1px solid rgba(34,229,106,.35);border-radius:99px;
+  padding:2px 9px;letter-spacing:1.5px;animation:pulse 2.2s ease infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(34,229,106,.25)}50%{box-shadow:0 0 0 6px rgba(34,229,106,0)}}
+
+/* ---------- feed settings navigator ---------- */
+.feedgrid{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;margin-top:52px;align-items:start}
+@media(max-width:920px){.feedgrid{grid-template-columns:1fr}}
+.field{margin:16px 18px}
+.field label{display:block;font-size:11.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--ink3);margin-bottom:7px}
+.select,.input{width:100%;background:var(--panel2);border:1px solid var(--line2);border-radius:11px;color:var(--ink);
+  padding:12px 14px;font-size:14.5px;position:relative;text-align:left;transition:border-color .3s var(--ease),box-shadow .3s var(--ease)}
+.select:hover,.select.open{border-color:var(--purple);box-shadow:0 0 0 4px var(--purple-soft)}
+.select::after{content:"▾";position:absolute;right:14px;color:var(--ink3);transition:transform .3s var(--ease)}
+.select.open::after{transform:rotate(180deg)}
+.menu{position:absolute;z-index:30;left:0;right:0;top:calc(100% + 8px);background:#15151d;border:1px solid var(--line2);
+  border-radius:13px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.65);opacity:0;transform:translateY(-8px) scale(.98);
+  pointer-events:none;transition:opacity .28s var(--ease),transform .28s var(--ease)}
+.select.open .menu{opacity:1;transform:none;pointer-events:auto}
+.menu button{display:flex;justify-content:space-between;width:100%;padding:11px 14px;font-size:14px;color:var(--ink2);
+  transition:background .2s,color .2s}
+.menu button:hover{background:var(--purple-soft);color:var(--ink)}
+.menu button small{color:var(--ink3);font-size:11.5px}
+.hintline{display:flex;gap:9px;margin:14px 18px 6px;padding:11px 13px;border-radius:11px;font-size:13px;color:var(--ink2);
+  background:var(--green-soft);border:1px solid rgba(34,229,106,.25);opacity:0;transform:translateY(6px);
+  transition:opacity .5s var(--ease),transform .5s var(--ease)}
+.hintline.show{opacity:1;transform:none}
+.gobtn{display:inline-flex;align-items:center;gap:9px;margin:16px 18px 20px;background:var(--green);color:#04140a;font-weight:750;
+  font-size:14px;padding:12px 20px;border-radius:12px;box-shadow:0 0 30px rgba(34,229,106,.35);
+  transition:transform .28s var(--ease),box-shadow .28s var(--ease)}
+.gobtn:hover{transform:translateY(-2px) scale(1.015);box-shadow:0 0 46px rgba(34,229,106,.55)}
+.gobtn span{transition:transform .28s var(--ease)}.gobtn:hover span{transform:translateX(4px)}
+/* tooltips */
+[data-tip]{position:relative}
+[data-tip]::after{content:attr(data-tip);position:absolute;left:50%;bottom:calc(100% + 10px);translate:-50% 4px;z-index:50;
+  width:max-content;max-width:260px;background:#1b1b25;border:1px solid var(--line2);color:var(--ink);font-size:12.5px;line-height:1.5;
+  padding:9px 12px;border-radius:10px;box-shadow:0 18px 50px rgba(0,0,0,.6);opacity:0;pointer-events:none;white-space:normal;
+  transition:opacity .25s var(--ease),translate .25s var(--ease)}
+[data-tip]:hover::after{opacity:1;translate:-50% 0}
+
+/* ---------- DOM ladder diagram ---------- */
+.ladder{padding:10px 22px 22px;display:flex;flex-direction:column;gap:5px}
+.row{display:grid;grid-template-columns:52px 1fr;gap:14px;align-items:center}
+.px{font-size:12.5px;color:var(--ink3);text-align:right;font-variant-numeric:tabular-nums}
+.px.last{color:var(--ink);font-weight:800;background:#fff;color:#000;border-radius:6px;padding:1px 6px}
+.lbar{height:22px;border-radius:6px;display:flex;align-items:center;padding:0 9px;font-size:11.5px;font-weight:700;
+  color:rgba(255,255,255,.92);width:var(--w);transform-origin:left;cursor:crosshair;position:relative;
+  transition:filter .25s var(--ease),transform .25s var(--ease);animation:grow .9s var(--ease) backwards}
+@keyframes grow{from{transform:scaleX(0)}}
+.lbar:hover{filter:brightness(1.3) saturate(1.2);transform:scaleX(1.02)}
+.lbar.sell{background:linear-gradient(90deg,#8f6bff,#5c3fd6);box-shadow:0 0 18px rgba(124,92,255,.3)}
+.lbar.buy{background:linear-gradient(90deg,#2ef575,#12b04a);box-shadow:0 0 18px rgba(34,229,106,.28);justify-self:start}
+.annot{font-size:12.5px;margin:2px 0 6px 66px;color:var(--purple);letter-spacing:.2px}
+.annot.b{color:var(--green)}
+.annot::before{content:"⤷ ";opacity:.8}
+.spread-note{margin:4px 0 4px 66px;font-size:11px;color:var(--orange);letter-spacing:1.5px;text-transform:uppercase}
+
+/* ---------- indicator lab ---------- */
+.lab{display:grid;grid-template-columns:1fr 300px;gap:0;margin-top:52px}
+@media(max-width:920px){.lab{grid-template-columns:1fr}}
+.lab .chartside{padding:18px 8px 8px 4px}
+svg text{font-family:inherit}
+.controls{border-left:1px solid var(--line);padding:22px;display:flex;flex-direction:column;gap:20px;background:rgba(255,255,255,.015)}
+@media(max-width:920px){.controls{border-left:none;border-top:1px solid var(--line)}}
+.ctl label{display:flex;justify-content:space-between;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink3);margin-bottom:9px}
+.ctl label output{color:var(--green);font-weight:800;font-size:13px;letter-spacing:0}
+input[type=range]{-webkit-appearance:none;width:100%;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--purple) var(--fill,50%),#23232d var(--fill,50%));outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:#fff;
+  border:4px solid var(--purple);box-shadow:0 0 16px rgba(124,92,255,.6);cursor:grab;transition:transform .2s var(--ease)}
+input[type=range]::-webkit-slider-thumb:hover{transform:scale(1.18)}
+.switch{display:flex;align-items:center;justify-content:space-between;font-size:13px;color:var(--ink2)}
+.tgl{width:42px;height:24px;border-radius:99px;background:#23232d;position:relative;transition:background .3s var(--ease)}
+.tgl::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:left .3s var(--ease)}
+.tgl.on{background:var(--green)}.tgl.on::after{left:21px}
+.readout{font-size:12.5px;color:var(--ink2);border-top:1px solid var(--line);padding-top:16px;line-height:1.8}
+.readout b{color:var(--ink)}
+.labtip{position:fixed;z-index:60;background:#1b1b25;border:1px solid var(--line2);border-radius:10px;padding:8px 12px;
+  font-size:12.5px;pointer-events:none;opacity:0;transition:opacity .2s;box-shadow:0 18px 50px rgba(0,0,0,.6);line-height:1.5}
+.labtip b{color:var(--green)}
+
+/* ---------- article flow (dxFeed) ---------- */
+.flow{display:grid;grid-template-columns:56px 1fr;gap:0 26px;margin-top:56px;position:relative}
+.rail{position:relative}
+.rail::before{content:"";position:absolute;left:26px;top:14px;bottom:14px;width:2px;background:#1d1d27}
+.rail::after{content:"";position:absolute;left:26px;top:14px;width:2px;height:var(--prog,0%);max-height:calc(100% - 28px);
+  background:linear-gradient(180deg,var(--green),var(--purple));box-shadow:0 0 12px rgba(34,229,106,.5);transition:height .2s linear}
+.step{display:contents}
+.stepdot{grid-column:1;width:24px;height:24px;border-radius:50%;background:var(--panel2);border:2px solid #2a2a35;z-index:1;
+  margin:34px 0 0 15px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:var(--ink3);
+  transition:border-color .4s var(--ease),color .4s,background .4s,box-shadow .4s}
+.stepbody{grid-column:2;padding:26px 0 26px}
+.step.done .stepdot{border-color:var(--green);color:#04140a;background:var(--green);box-shadow:0 0 20px rgba(34,229,106,.5)}
+.stepbody h3{font-size:19px;letter-spacing:-.3px;margin-bottom:8px}
+.stepbody p{color:var(--ink2);font-size:14.5px;max-width:640px}
+.stepbody .uip{display:inline-block;background:var(--panel2);border:1px solid var(--line2);border-radius:7px;padding:1px 8px;
+  font-size:13px;color:var(--cyan)}
+.check{display:flex;gap:10px;align-items:flex-start;margin-top:10px;color:var(--ink2);font-size:14px;cursor:pointer;user-select:none}
+.check i{width:19px;height:19px;border-radius:6px;border:1.5px solid #2e2e3a;flex:none;margin-top:2px;display:flex;align-items:center;
+  justify-content:center;font-size:12px;color:#04140a;transition:all .3s var(--ease)}
+.check.on i{background:var(--green);border-color:var(--green)}
+.check.on{color:var(--ink)}
+.verify{margin-top:36px;border:1px solid rgba(34,229,106,.3);background:var(--green-soft);border-radius:16px;padding:22px;
+  display:flex;gap:16px;align-items:center}
+.pulse-dot{width:14px;height:14px;border-radius:50%;background:var(--green);box-shadow:0 0 18px var(--green);animation:pulse 1.8s ease infinite;flex:none}
+.footer{padding:70px 26px;text-align:center;color:var(--ink3);font-size:13px;border-top:1px solid var(--line);margin-top:60px}
+.footer b{color:var(--ink2)}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="logo">𝕯 DEEPCHARTS <em>HELP</em></div>
+  <nav>
+    <a href="#connect">Connect a feed</a><a href="#dom">Read the DOM</a><a href="#lab">Indicator lab</a><a href="#guide-dxfeed">Guides</a>
+  </nav>
+  <a class="cta" href="#connect">Start living it ↗</a>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="candles" id="candles"></div>
+  <h1>Don't read the manual.<br><span class="g">Live</span> the <span class="p">platform</span>.</h1>
+  <p class="sub">Every article here is a working piece of DeepCharts — turn the dials, hover the ladders, and feel the answer before you read it.</p>
+  <div class="searchpill"><span>🔎</span><input placeholder="Ask anything… try “connect dxFeed” or “what is delta”"><kbd>/</kbd></div>
+  <div class="scrollhint">scroll — it gets alive</div>
+</section>
+
+<!-- ================= FEED SETTINGS NAVIGATOR ================= -->
+<section class="block" id="connect">
+  <div class="reveal">
+    <div class="kicker">Navigate by <b>doing</b></div>
+    <h2 class="title">This <span class="p">is</span> the Feed Settings window.<br>Pick a source — we fly you to its guide.</h2>
+    <p class="lead">The same dropdown you'll meet in the app. Hover any field to understand it; choose your data source and the help center reshapes itself around your setup.</p>
+  </div>
+  <div class="feedgrid">
+    <div class="window reveal" id="feedwin">
+      <div class="win-head"><div class="dots"><i></i><i></i><i></i></div><div class="win-title">Feed Settings</div><span class="live">LIVE MOCK</span></div>
+      <div class="field">
+        <label>Source</label>
+        <div class="select" id="srcSel" data-tip="Which company streams your market data. Your choice decides every field below — exactly like in DeepCharts.">
+          <span id="srcLabel">Select your data source…</span>
+          <div class="menu" id="srcMenu"></div>
+        </div>
+      </div>
+      <div class="field" id="serverField" style="display:none">
+        <label>Server</label>
+        <div class="input" id="serverVal" data-tip="Rithmic prop firms each have a named server entry. Picking the wrong one is the #1 login failure."></div>
+      </div>
+      <div class="field">
+        <label>Username</label>
+        <div class="input" data-tip="The credentials from your feed's welcome email — NOT your DeepCharts login.">you@futures.trading</div>
+      </div>
+      <div class="hintline" id="feedHint"><span>💡</span><span id="feedHintTxt"></span></div>
+      <a class="gobtn" id="feedGo" href="#guide-dxfeed" style="display:none">Open the full guide <span>→</span></a>
+    </div>
+    <div class="reveal" style="padding-top:8px">
+      <h3 style="font-size:20px;margin-bottom:12px">Why this beats a menu</h3>
+      <p style="color:var(--ink2);font-size:15px;margin-bottom:14px">You don't remember article titles — you remember <b style="color:var(--ink)">what the screen looked like</b>. So the help center starts from the screen. Every interactive mock is wired to the knowledge underneath it.</p>
+      <p style="color:var(--ink2);font-size:15px">Same idea everywhere: hover an indicator to meet it, drag a setting to learn it, click a DOM level to decode it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DOM LADDER ================= -->
+<section class="block" id="dom">
+  <div class="reveal">
+    <div class="kicker">Diagrams that <b>answer back</b></div>
+    <h2 class="title">Sell limits <span class="p">above</span>. Buy limits <span class="g">below</span>.<br>Hover a level — it explains itself.</h2>
+    <p class="lead">Straight from the DeepCharts playbook: the order book is intention, not history. This ladder is alive — touch it.</p>
+  </div>
+  <div class="window reveal" style="max-width:660px;margin-top:48px">
+    <div class="win-head"><div class="dots"><i></i><i></i><i></i></div><div class="win-title">Depth of Market — ES</div><span class="live">HOVER ME</span></div>
+    <div class="ladder" id="ladder"></div>
+  </div>
+</section>
+
+<!-- ================= INDICATOR LAB ================= -->
+<section class="block" id="lab">
+  <div class="reveal">
+    <div class="kicker">Settings you <b>feel</b></div>
+    <h2 class="title">The <span class="o">RSI</span> lab: drag the settings,<br>watch the indicator re-think live.</h2>
+    <p class="lead">No screenshots. This is the real math — Wilder's smoothing on a live series. Change the Length and watch the line breathe; move the bands and see signals appear and die.</p>
+  </div>
+  <div class="window reveal" style="margin-top:48px">
+    <div class="win-head"><div class="dots"><i></i><i></i><i></i></div><div class="win-title">Relative Strength Index — settings ⇄ chart</div><span class="live">REAL MATH</span></div>
+    <div class="lab">
+      <div class="chartside">
+        <svg id="labsvg" viewBox="0 0 760 380" width="100%" height="auto" role="img" aria-label="Interactive RSI chart"></svg>
+      </div>
+      <div class="controls">
+        <div class="ctl"><label>Length <output id="oLen">14</output></label>
+          <input type="range" id="rLen" min="2" max="50" value="14"></div>
+        <div class="ctl"><label>Overbought <output id="oOB">70</output></label>
+          <input type="range" id="rOB" min="55" max="95" value="70"></div>
+        <div class="ctl"><label>Oversold <output id="oOS">30</output></label>
+          <input type="range" id="rOS" min="5" max="45" value="30"></div>
+        <div class="switch"><span>Average line (EMA 20)</span><button class="tgl" id="tAvg" aria-pressed="false"></button></div>
+        <div class="readout" id="readout"></div>
+      </div>
+    </div>
+  </div>
+  <div class="labtip" id="labtip"></div>
+</section>
+
+<!-- ================= GUIDE: CONNECT DXFEED ================= -->
+<section class="block" id="guide-dxfeed">
+  <div class="reveal">
+    <div class="kicker">A guide that <b>walks with you</b></div>
+    <h2 class="title">Connect a <span class="g">dxFeed</span> data feed.</h2>
+    <p class="lead">The progress rail fills as you scroll; tick the checks as you go — the page remembers where you are. (Full article library ships alongside this experience.)</p>
+  </div>
+  <div class="flow">
+    <div class="rail" id="rail"></div>
+    <div style="display:contents" id="steps">
+      <div class="step"><div class="stepdot">1</div><div class="stepbody">
+        <h3>Sign your market data agreement</h3>
+        <p>Bought on the DeepCharts website? Sign in your dashboard — <span class="uip">Subscriptions → Sign Market Data Contract</span>. Nothing streams until this exists. Bought on dxfeed.com? Sign there, and make sure the platform selected is <span class="uip">DeepChart</span>.</p>
+        <div class="check"><i>✓</i>Agreement signed and confirmed</div>
+      </div></div>
+      <div class="step"><div class="stepdot">2</div><div class="stepbody">
+        <h3>Enter your credentials in Feed Settings</h3>
+        <p>Open <span class="uip">Feed Settings</span>, choose Source <span class="uip">dxFeed</span>, and paste the username and password from your dxFeed welcome email — not your DeepCharts account login.</p>
+        <div class="check"><i>✓</i>Credentials saved without errors</div>
+      </div></div>
+      <div class="step"><div class="stepdot">3</div><div class="stepbody">
+        <h3>Map your exchanges in Symbol Manage</h3>
+        <p><span class="uip">Options → Symbol Manage</span> decides which feed powers which exchange. The instrument picker only shows what you subscribe here — an empty picker means nothing is mapped.</p>
+        <div class="check"><i>✓</i>CME (or your exchange) mapped to dxFeed</div>
+      </div></div>
+      <div class="step"><div class="stepdot">4</div><div class="stepbody">
+        <h3>Connect and watch the dot</h3>
+        <p>Hit connect. The feed badge in the top bar turns <b style="color:var(--green)">green</b> when live. Red means disconnected; if charts still don't move, the market may be closed or the symbol unmapped.</p>
+        <div class="check"><i>✓</i>Green dot, ticks flowing</div>
+      </div></div>
+    </div>
+  </div>
+  <div class="verify reveal"><div class="pulse-dot"></div>
+    <div><b>Verified working:</b> a chart on ES prints live candles and the DOM ladder updates.
+    <span style="color:var(--ink2)">Something failed? The troubleshooting web catches every known dxFeed error — DLL, DATA_ACCESS_SUSPENDED, bad server — one link away.</span></div>
+  </div>
+</section>
+
+<div class="footer">DeepCharts Help Center — immersive prototype · built from the ebook + landing design language ·
+  <b>green = buyers · purple = sellers · orange = the truth</b></div>
+
+<script>
+/* ============ ambient hero candles ============ */
+(function(){
+  const c = document.getElementById('candles');
+  const seq = ['g','g','p','g','p','p','g','p','g','g','p','p'];
+  seq.forEach((k,i)=>{
+    const d = document.createElement('div');
+    d.className = 'candle ' + k;
+    d.style.height = (60 + Math.abs(Math.sin(i*1.7))*150) + 'px';
+    d.style.animationDelay = (i*0.35)+'s';
+    d.style.marginTop = (Math.sin(i*1.3)*120)+'px';
+    c.appendChild(d);
+  });
+})();
+
+/* ============ scroll reveal ============ */
+const io = new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+/* ============ feed settings navigator ============ */
+(function(){
+  const sources = [
+    {k:'dxFeed', tag:'website purchase', hint:'Credentials come from your dxFeed welcome email. Agreement signs in your DeepCharts dashboard.', server:null, go:'#guide-dxfeed'},
+    {k:'dxFeed Prop', tag:'MFF · Aqua · Goat…', hint:'Prop dxFeed accounts have NO Server field — that is normal. Sign the agreement on your prop firm’s dashboard.', server:null, go:'#guide-dxfeed'},
+    {k:'Rithmic RAPI', tag:'brokers + prop firms', hint:'Every Rithmic account signs its agreement inside R Trader Pro first. Prop firms pick their named server.', server:'Apex ▾  (16 prop servers)', go:'#guide-dxfeed'},
+    {k:'CQG', tag:'AMP · Optimus · Ironbeam', hint:'Works only when issued DIRECTLY by CQG — never via Tradovate or NinjaTrader.', server:null, go:'#guide-dxfeed'},
+    {k:'dxFeed — 15m delayed', tag:'free, no credentials', hint:'The free trial feed: no credentials, no agreement. Map exchanges in Symbol Manage and you’re live (delayed).', server:null, go:'#guide-dxfeed'},
+  ];
+  const sel = document.getElementById('srcSel'), menu = document.getElementById('srcMenu'),
+        lab = document.getElementById('srcLabel'), sf = document.getElementById('serverField'),
+        sv = document.getElementById('serverVal'), hint = document.getElementById('feedHint'),
+        ht = document.getElementById('feedHintTxt'), go = document.getElementById('feedGo');
+  sources.forEach(s=>{
+    const b = document.createElement('button');
+    b.innerHTML = `<span>${s.k}</span><small>${s.tag}</small>`;
+    b.onclick = ev=>{
+      ev.stopPropagation();
+      lab.textContent = s.k; sel.classList.remove('open');
+      sf.style.display = s.server ? '' : 'none';
+      if(s.server) sv.textContent = s.server;
+      hint.classList.remove('show'); void hint.offsetWidth;
+      ht.textContent = s.hint; hint.classList.add('show');
+      go.style.display = 'inline-flex';
+      go.firstChild.textContent = `Open the ${s.k} guide `;
+    };
+    menu.appendChild(b);
+  });
+  sel.addEventListener('click',()=>sel.classList.toggle('open'));
+  document.addEventListener('click',e=>{ if(!sel.contains(e.target)) sel.classList.remove('open'); });
+  /* fly-to: brief glow handoff on arrival */
+  go.addEventListener('click',()=>{
+    const t = document.querySelector('#guide-dxfeed .title');
+    setTimeout(()=>{ t.style.transition='text-shadow .6s'; t.style.textShadow='0 0 60px rgba(34,229,106,.6)';
+      setTimeout(()=>t.style.textShadow='none',1400); },600);
+  });
+})();
+
+/* ============ DOM ladder ============ */
+(function(){
+  const rows = [
+    {px:105, v:78, side:'sell'},{px:104, v:64, side:'sell'},{px:103, v:56, side:'sell'},
+    {px:102, v:42, side:'sell'},{px:101, v:33, side:'sell'},
+    {px:100, last:true},
+    {px:99, v:41, side:'buy'},{px:98, v:33, side:'buy'},{px:97, v:51, side:'buy'},
+    {px:96, v:60, side:'buy'},{px:95, v:72, side:'buy'},
+  ];
+  const max = 80, host = document.getElementById('ladder');
+  const annot1 = document.createElement('div'); annot1.className='annot'; annot1.textContent='participants willing to sell — resting limit orders, waiting'; host.appendChild(annot1);
+  rows.forEach((r,i)=>{
+    const row = document.createElement('div'); row.className='row';
+    if(r.last){
+      row.innerHTML = `<div class="px"><span class="px last">${r.px}</span></div><div class="spread-note">← last trade · the spread lives here</div>`;
+      host.appendChild(row);
+      const a2 = document.createElement('div'); a2.className='annot b'; a2.textContent='participants willing to buy — the bid side of the book'; host.appendChild(a2);
+      return;
+    }
+    const bar = document.createElement('div');
+    bar.className = 'lbar '+r.side; bar.style.setProperty('--w', (r.v/max*100)+'%');
+    bar.style.animationDelay = (i*0.07)+'s'; bar.textContent = r.v;
+    bar.dataset.tip = r.side==='sell'
+      ? `${r.v} contracts offered at ${r.px} — sellers waiting for an aggressive buyer to lift them. If price eats through this, the level was thinner than it looked.`
+      : `${r.v} contracts bid at ${r.px} — buyers defending this level. Watch it get pulled (fear) or stacked (conviction).`;
+    bar.setAttribute('data-tip', bar.dataset.tip);
+    row.innerHTML = `<div class="px">${r.px}</div>`;
+    row.appendChild(bar); host.appendChild(row);
+  });
+})();
+
+/* ============ RSI lab ============ */
+(function(){
+  const svg = document.getElementById('labsvg'), tip = document.getElementById('labtip');
+  /* deterministic synthetic series */
+  const N=180, price=[]; let p=4300, seed=42;
+  const rnd=()=> (seed=(seed*16807)%2147483647)/2147483647-0.5;
+  for(let i=0;i<N;i++){ p += rnd()*14 + Math.sin(i/14)*3.5 + (i>90&&i<110?-2.2:0) + (i>140?1.6:0); price.push(p); }
+  function rsi(len){
+    const out=Array(N).fill(null); let g=0,l=0;
+    for(let i=1;i<=len;i++){ const d=price[i]-price[i-1]; if(d>0)g+=d; else l-=d; }
+    let ag=g/len, al=l/len; out[len]=100-100/(1+(al===0?100:ag/al));
+    for(let i=len+1;i<N;i++){ const d=price[i]-price[i-1];
+      ag=(ag*(len-1)+Math.max(d,0))/len; al=(al*(len-1)+Math.max(-d,0))/len;
+      out[i]=100-100/(1+(al===0?100:ag/al)); }
+    return out;
+  }
+  function ema(arr,len){ const out=Array(N).fill(null); let e=null,k=2/(len+1);
+    for(let i=0;i<N;i++){ const v=arr[i]; if(v==null)continue; e = e==null? v : v*k+e*(1-k); out[i]=e; } return out; }
+  const W=760,H=380, PH=190, RY0=215, RH=150, X=i=>20+ i*(W-40)/(N-1);
+  const st={len:14,ob:70,os:30,avg:false};
+  let lastRSI=[];
+  function draw(){
+    const r=rsi(st.len); lastRSI=r;
+    const pmin=Math.min(...price),pmax=Math.max(...price);
+    const PY=v=>16+(1-(v-pmin)/(pmax-pmin))*(PH-26);
+    const RYv=v=>RY0+(1-(v/100))*RH;
+    let cross=0, path='',rpath='',apath='';
+    price.forEach((v,i)=>path+=(i?'L':'M')+X(i).toFixed(1)+' '+PY(v).toFixed(1));
+    r.forEach((v,i)=>{ if(v!=null) rpath+=(rpath?'L':'M')+X(i).toFixed(1)+' '+RYv(v).toFixed(1); });
+    if(st.avg){ ema(r,20).forEach((v,i)=>{ if(v!=null) apath+=(apath?'L':'M')+X(i).toFixed(1)+' '+RYv(v).toFixed(1); }); }
+    let dots='';
+    for(let i=1;i<N;i++){ const a=r[i-1],b=r[i]; if(a==null||b==null)continue;
+      if(a<st.ob&&b>=st.ob){dots+=`<circle cx="${X(i)}" cy="${RYv(b)}" r="4.5" fill="#8f6bff" opacity=".95"><title>crossed overbought</title></circle>`;cross++;}
+      if(a>st.os&&b<=st.os){dots+=`<circle cx="${X(i)}" cy="${RYv(b)}" r="4.5" fill="#2ef575" opacity=".95"><title>crossed oversold</title></circle>`;cross++;} }
+    svg.innerHTML = `
+      <defs>
+        <linearGradient id="pg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#38d6ff"/><stop offset="1" stop-color="#7c5cff"/></linearGradient>
+        <linearGradient id="zone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(143,107,255,.18)"/><stop offset="1" stop-color="rgba(143,107,255,.02)"/></linearGradient>
+        <linearGradient id="zone2" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="rgba(46,245,117,.16)"/><stop offset="1" stop-color="rgba(46,245,117,.02)"/></linearGradient>
+      </defs>
+      <text x="22" y="14" fill="#6b7484" font-size="10" letter-spacing="2">PRICE — ES (SIM)</text>
+      <path d="${path}" fill="none" stroke="url(#pg)" stroke-width="2" opacity=".9"/>
+      <text x="22" y="${RY0-6}" fill="#6b7484" font-size="10" letter-spacing="2">RSI ${st.len}</text>
+      <rect x="20" y="${RYv(100)}" width="${W-40}" height="${RYv(st.ob)-RYv(100)}" fill="url(#zone)"/>
+      <rect x="20" y="${RYv(st.os)}" width="${W-40}" height="${RYv(0)-RYv(st.os)}" fill="url(#zone2)"/>
+      <line x1="20" x2="${W-20}" y1="${RYv(st.ob)}" y2="${RYv(st.ob)}" stroke="#8f6bff" stroke-dasharray="5 5" stroke-width="1"/>
+      <line x1="20" x2="${W-20}" y1="${RYv(st.os)}" y2="${RYv(st.os)}" stroke="#2ef575" stroke-dasharray="5 5" stroke-width="1"/>
+      <text x="${W-24}" y="${RYv(st.ob)-5}" fill="#8f6bff" font-size="10" text-anchor="end">${st.ob} overbought</text>
+      <text x="${W-24}" y="${RYv(st.os)+13}" fill="#2ef575" font-size="10" text-anchor="end">${st.os} oversold</text>
+      ${st.avg?`<path d="${apath}" fill="none" stroke="#ff7a3d" stroke-width="1.4" opacity=".85"/>`:''}
+      <path d="${rpath}" fill="none" stroke="#f2f4f8" stroke-width="1.8"/>
+      ${dots}
+      <rect id="hit" x="20" y="${RY0}" width="${W-40}" height="${RH}" fill="transparent"/>`;
+    document.getElementById('readout').innerHTML =
+      `Signals in view: <b>${cross}</b><br>Shorter length ⇒ jumpier line, more (noisier) signals.<br>` +
+      `Wider bands ⇒ fewer, stronger signals.<br><b style="color:var(--orange)">Feel it — then read the full RSI article.</b>`;
+    const hit = svg.querySelector('#hit');
+    hit.addEventListener('mousemove',e=>{
+      const box = svg.getBoundingClientRect();
+      const i = Math.round(((e.clientX-box.left)/box.width*W-20)/((W-40)/(N-1)));
+      const v = lastRSI[Math.max(0,Math.min(N-1,i))];
+      if(v==null){tip.style.opacity=0;return}
+      tip.innerHTML = `RSI <b>${v.toFixed(1)}</b> — ${v>=st.ob?'overbought: buyers stretched, watch for exhaustion':v<=st.os?'oversold: sellers stretched, watch for a bounce':'neutral zone: momentum undecided'}`;
+      tip.style.opacity=1; tip.style.left=(e.clientX+16)+'px'; tip.style.top=(e.clientY-14)+'px';
+    });
+    hit.addEventListener('mouseleave',()=>tip.style.opacity=0);
+  }
+  const bind=(id,out,key)=>{const el=document.getElementById(id);
+    const upd=()=>{document.getElementById(out).textContent=el.value;st[key]=+el.value;
+      el.style.setProperty('--fill',((el.value-el.min)/(el.max-el.min)*100)+'%');draw();};
+    el.addEventListener('input',upd);upd();};
+  bind('rLen','oLen','len'); bind('rOB','oOB','ob'); bind('rOS','oOS','os');
+  const t=document.getElementById('tAvg');
+  t.addEventListener('click',()=>{st.avg=!st.avg;t.classList.toggle('on',st.avg);t.setAttribute('aria-pressed',st.avg);draw();});
+  draw();
+})();
+
+/* ============ guide: rail progress + checks ============ */
+(function(){
+  const rail=document.getElementById('rail'), flow=document.querySelector('.flow');
+  addEventListener('scroll',()=>{
+    const r=flow.getBoundingClientRect();
+    const done=Math.min(1,Math.max(0,(innerHeight*0.7-r.top)/r.height));
+    rail.style.setProperty('--prog',(done*100)+'%');
+  },{passive:true});
+  document.querySelectorAll('.check').forEach((c,i)=>{
+    const key='dc-check-'+i;
+    if(localStorage.getItem(key)) {c.classList.add('on'); c.closest('.stepbody').previousElementSibling?.classList?.add?.('done'); c.closest('.step')?.classList.add('done');}
+    c.addEventListener('click',()=>{
+      c.classList.toggle('on');
+      c.closest('.step')?.classList.toggle('done',c.classList.contains('on'));
+      c.classList.contains('on')?localStorage.setItem(key,'1'):localStorage.removeItem(key);
+    });
+  });
+})();
+</script>
+</body>
+</html>

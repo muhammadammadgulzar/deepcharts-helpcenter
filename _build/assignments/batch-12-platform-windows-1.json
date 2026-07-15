@@ -1,0 +1,34 @@
+{
+ "batch": "platform-windows-1",
+ "notes": "These five articles are NEW and must be built from the frame-verified repo sources - READ them fully first: adv-time-and-sales -> /Users/flutter/Desktop/ai-support-system/docs/ui-map-04-time-and-sales.csv + /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/deepchart_platform/mechanics/time_and_sales.yaml; advanced-dom -> /Users/flutter/Desktop/ai-support-system/docs/ui-map-03*.csv; profile-chart-window -> /Users/flutter/Desktop/ai-support-system/docs/ui-map-05-correlation-scanner-profile.csv + mechanics/profile_chart.yaml; scanner-window -> same CSV + mechanics/scanner.yaml; correlation-viewer -> same CSV + mechanics/correlation_viewer.yaml. CRITICAL: read /Users/flutter/Desktop/ai-support-system/docs/ui-maps-owner-answers-needed.csv - any P-row with an EMPTY your_answer is UNCONFIRMED: write around it (omit) or hedge explicitly ('exact behavior may vary'). Never present hedged bot-KB inferences as fact. Structure: What it is / Open it / Window anatomy / <feature sections> / Settings / Troubleshooting (window empty or blank cases!) / Related. Each article needs generous screenshot placeholders (window overview, menus open, each panel/dialog).",
+ "articles": [
+  {
+   "slug": "adv-time-and-sales",
+   "title": "Advanced Time And Sales (The Tape)",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "NEW",
+   "category": "Platform Windows",
+   "subcategory": ""
+  },
+  {
+   "slug": "advanced-dom",
+   "title": "Advanced DOM Window",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "NEW",
+   "category": "Platform Windows",
+   "subcategory": ""
+  },
+  {
+   "slug": "profile-chart-window",
+   "title": "Profile Chart Window (TPO and Volume Profiles)",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "NEW",
+   "category": "Platform Windows",
+   "subcategory": ""
+  }
+ ],
+ "id": "12-platform-windows-1"
+}

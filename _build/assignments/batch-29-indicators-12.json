@@ -1,0 +1,70 @@
+{
+ "batch": "indicators-12",
+ "notes": "Indicator reference articles (template 1). For EACH: fetch the live article at https://www.deepcharts.com/helpcenter/article/<old-slug> (from source LIVE:<old-slug>; percent-encode parentheses %28 %29 and the registered mark %C2%AE if the fetch fails) and rewrite to: What it is (2-3 plain sentences) / When to use it (3-4 bullets) / Quick start (add to chart + a sensible starter configuration) / How to read it (interpretation guidance!) / Settings reference (EVERY setting from the live article grouped as in the dialog - keep real setting names and any defaults the live article states; NEVER invent settings or defaults; if the live article omits a default just describe the setting) / Tips and common mistakes / Related articles. Add one screenshot placeholder showing the indicator on a chart and one of its settings dialog. Cross-link [[different-types-of-input]] and [[indicator-layout]] in Related, plus the family concept article ([[orderflow-101]] for delta tools, [[understanding-volume-profile]] for profile tools, [[understanding-auction-theory]] for auction tools).",
+ "articles": [
+  {
+   "slug": "overlay-chart",
+   "title": "Overlay Chart",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:overlay-chart",
+   "category": "Indicators & Analysis",
+   "subcategory": "Chart Overlays"
+  },
+  {
+   "slug": "overlay-symbol",
+   "title": "Overlay Symbol",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:overlay-symbol",
+   "category": "Indicators & Analysis",
+   "subcategory": "Chart Overlays"
+  },
+  {
+   "slug": "overlay-timeframe-candlestick",
+   "title": "Overlay Timeframe Candlestick",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:overlay-timeframe-candlestick",
+   "category": "Indicators & Analysis",
+   "subcategory": "Chart Overlays"
+  },
+  {
+   "slug": "overlay-timeframe-highlight",
+   "title": "Overlay Timeframe Highlight",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:overlay-timeframe-highlight",
+   "category": "Indicators & Analysis",
+   "subcategory": "Chart Overlays"
+  },
+  {
+   "slug": "shift-candle",
+   "title": "Shift Candle",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:shift-candle",
+   "category": "Indicators & Analysis",
+   "subcategory": "Chart Overlays"
+  },
+  {
+   "slug": "text-on-chart",
+   "title": "Text on Chart",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:text-on-chart",
+   "category": "Indicators & Analysis",
+   "subcategory": "Chart Overlays"
+  },
+  {
+   "slug": "annotations-overlay",
+   "title": "Annotations Overlay",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:annotations-overlay",
+   "category": "Indicators & Analysis",
+   "subcategory": "Chart Overlays"
+  }
+ ],
+ "id": "29-indicators-12"
+}

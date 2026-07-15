@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Bar POC — DeepCharts Help Center</title>
+<meta name="description" content="Marks the Point of Control — the highest-volume price — of each bar and can extend it to the right as a live reference level until price trades back through it.">
+<link rel="stylesheet" href="../assets/style.css">
+<script>window.HC_ROOT="../";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/quick-start-first-trade.html">Quick start</a><a href="../article/get-help.html">Get help</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Getting Started <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Welcome to DeepCharts: Platform Tour</a></li><li><a href="../article/system-requirements.html">System Requirements</a></li><li><a href="../article/install-deepcharts.html">How to Install DeepCharts and Activate Your License</a></li><li><a href="../article/free-delayed-data-feed.html">Use the Free 15-Minute Delayed Data Feed</a></li><li><a href="../article/buy-data-feed.html">How to Buy a Data Feed and Get Your Credentials</a></li><li><a href="../article/first-chart.html">Open Your First Chart</a></li><li><a href="../article/simulation-accounts.html">Trading Accounts and Simulation</a></li><li><a href="../article/quick-start-first-trade.html">Quick Start: From Install to Your First Trade</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connections &amp; Data Feeds <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Setup</li><li><a href="../article/compatibility-guide.html">Supported Brokers, Prop Firms and Data Feeds</a></li><li><a href="../article/connect-data-feed.html">How to Connect a Data Feed (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a></li><li><a href="../article/sign-market-data-agreement.html">Sign Your Market Data Agreement</a></li><li><a href="../article/connect-dxfeed.html">How to Connect a dxFeed Data Feed</a></li><li><a href="../article/connect-rithmic.html">How to Connect a Rithmic Data Feed</a></li><li><a href="../article/rtrader-pro-plugin.html">Connect Rithmic Using the RTrader Pro Plugin</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Connect Any Rithmic Prop-Firm Account (Server Table)</a></li><li><a href="../article/connect-apex.html">Connect Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connect a Prop-Firm dxFeed Account (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">How to Connect CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connect Interactive Brokers (Execution Only)</a></li><li><a href="../article/competition-connect.html">DeepCharts Competition: Join and Connect</a></li><li><a href="../article/end-of-day-data.html">Connect Historical Data (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Manage and Switch Between Feed Connections</a></li><li class="nav-sub">Troubleshooting</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: Live Feed Connected but Chart Is Not Moving</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Fix: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Fix: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Fix: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Fix: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Fix: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Fix: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Fix: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Fix: Connection Lost When Opening a Chart</a></li><li><a href="../article/symbol-subscription-issue.html">Fix: Symbol Subscription Issue</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: App Crashes When Saving Feed Settings</a></li><li><a href="../article/gaps-in-price.html">Fix: Gaps in Price on Charts</a></li><li><a href="../article/data-delayed-lagging.html">Fix: Charts Lagging or Data Delayed (Checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Charts &amp; Workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">The Chart Window</a></li><li><a href="../article/price-chart-settings.html">Price Chart Settings</a></li><li><a href="../article/chart-display-options.html">Chart Display Options (Bar Styles, Sessions, Countdown)</a></li><li><a href="../article/drawing-tools.html">Drawing Tools and Annotations</a></li><li><a href="../article/templates-workspaces.html">Templates and Workspaces</a></li><li><a href="../article/quick-chart-templates.html">Quick Chart Templates (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Link Windows with Color Groups</a></li><li><a href="../article/replay-data.html">Replay Market Data</a></li><li><a href="../article/customize-language-theme-sounds.html">Customize Language, Theme and Notification Sounds</a></li><li><a href="../article/keyboard-shortcuts.html">How to Configure Keyboard Shortcuts</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Keyboard Shortcuts Reference</a></li><li><a href="../article/multi-monitor-windows.html">Arrange Windows Across Monitors (and Recover Off-Screen Windows)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Platform Windows <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (The Tape)</a></li><li><a href="../article/advanced-dom.html">Advanced DOM Window</a></li><li><a href="../article/profile-chart-window.html">Profile Chart Window (TPO and Volume Profiles)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading &amp; Orders <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading from the Chart</a></li><li><a href="../article/trading-panel-reference.html">Trading Panel Reference: Every Button and Field</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading on the Chart (Click-Trading Ladder)</a></li><li><a href="../article/depth-of-market.html">Depth of Market (DOM) Indicator</a></li><li><a href="../article/oco-strategies.html">OCO (One-Cancels-the-Other) Strategies</a></li><li><a href="../article/orders-window.html">Orders Window</a></li><li><a href="../article/portfolio-wallet.html">Portfolio (Wallet)</a></li><li><a href="../article/risk-manager.html">Risk Manager</a></li><li><a href="../article/trade-copier.html">How to Set Up the Trade Copier</a></li><li><a href="../article/performance-analysis.html">Performance Analysis (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concepts <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a></li><li><a href="../article/understanding-volume-profile.html">Understanding Volume Profile: POC, Value Area, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Understanding Auction Theory: Imbalance, Unfinished Auctions, Absorption</a></li><li><a href="../article/understanding-icebergs-absorption.html">Understanding Icebergs and Absorption</a></li><li><a href="../article/understanding-vwap.html">Understanding VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Understanding Market Structure and Sessions (RTH/ETH, Rollover)</a></li><li><a href="../article/reading-a-footprint.html">Reading a Footprint: Worked Examples</a></li><li><a href="../article/glossary.html">Glossary of Orderflow and Platform Terms</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicators &amp; Analysis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Indicator Basics</li><li><a href="../article/different-types-of-input.html">Different Types of Input Data for Indicators</a></li><li><a href="../article/indicator-layout.html">How to Change the Layout of Indicators</a></li><li class="nav-sub">Deep Indicators</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Moving Average</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Linear Regression</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum &amp; Oscillators</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Stochastic Oscillator</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatility &amp; Bands</li><li><a href="../article/bollinger-bands.html">Bollinger Bands</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Standard Deviation</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume &amp; Delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Order Flow &amp; Auction</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html" class="active">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Levels &amp; Patterns</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Important Levels</a></li><li><a href="../article/absolute-levels.html">Absolute Levels</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Chart Overlays</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Text on Chart</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Data &amp; Database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Symbol Rollover (Change Contract Month)</a></li><li><a href="../article/delete-market-data.html">Delete Market Data (In-App and Manual Methods)</a></li><li><a href="../article/download-data.html">Re-download Historical Data (Download Data Tool)</a></li><li><a href="../article/database-optimization.html">Database Optimization</a></li><li><a href="../article/database-problems.html">Fix: Database Problems</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Troubleshooting &amp; Support <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Fix: Installation Problems and Basic Requirements</a></li><li><a href="../article/installation-setup-failed.html">Fix: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: Application Control Policy Blocks DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Fix: Rectangle Drawing Tool Not Working</a></li><li><a href="../article/chart-zoom.html">Fix: Chart Zoom In and Out Not Working</a></li><li><a href="../article/license-issues.html">Fix: License and Activation Issues</a></li><li><a href="../article/diagnostic-report.html">Diagnostic Report: Before You Contact Support</a></li><li><a href="../article/get-help.html">How to Get Help (Chat, Diagnostic Report, Support)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account &amp; Billing <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Manage Your Subscriptions and Billing</a></li><li><a href="../article/move-to-new-computer.html">Move DeepCharts to a New Computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicators &amp; Analysis</a> › Order Flow &amp; Auction</div>
+<div class="article-head"><h1>Bar POC</h1>
+<p class="article-desc">Marks the Point of Control — the highest-volume price — of each bar and can extend it to the right as a live reference level until price trades back through it.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 6 min read</span>
+  <a class="btn-pdf" href="../pdf/bar-poc.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>The Bar POC indicator finds the Point of Control (POC) of every bar — the single price where the most volume traded inside that bar — and highlights it directly on your candles. It can also extend each POC to the right as a horizontal line, turning the busiest price of a past bar into a live reference level that stays on your chart until price returns to it.</p>
+<p>Where a session profile gives you one POC per day, Bar POC gives you one per bar, which makes it a fast way to see exactly where the heaviest business was done inside each candle.</p>
+<h2 id="what-it-is">What it is</h2>
+<p>Bar POC is an orderflow level indicator. For each bar it locates the price level with the highest traded volume and marks it with a small highlight rectangle; optionally it draws an extension line from that POC toward the right edge of the chart. It answers the question &quot;at what price did most of this bar's volume actually change hands — and has the market tested that price since?&quot;</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Chart window with Bar POC applied — candles with small highlight rectangles on the highest-volume price of each bar, and two or three extended POC lines running to the right edge of the chart, one of them showing a duration label</div><div class="s-file">bar-poc-chart-overview.png</div></div></div>
+<h2 id="when-to-use-it">When to use it</h2>
+<ul>
+<li>You trade retests: untouched (extended) POCs are natural magnets and reaction levels because real volume was transacted there.</li>
+<li>You want to see whether a bar's business was done near its high, middle, or low — a quick read on acceptance versus rejection inside each candle.</li>
+<li>You use the aggression coloring to see whether buyers or sellers dominated the POC area of a key bar.</li>
+<li>You want automatically maintained intraday levels without drawing lines by hand.</li>
+</ul>
+<h2 id="quick-start">Quick start</h2>
+<ol>
+<li>Open the <strong>Indicator List</strong> on your chart.</li>
+<li>Find <strong>Bar POC</strong> and click <strong>+</strong> to add it.</li>
+<li>Click the <strong>Settings</strong> icon next to the indicator.</li>
+<li>Set <strong>Days to Load</strong> to cover the history you trade from — more days means more historical POCs and extensions.</li>
+<li>Set <strong>Filter Mode</strong> to <strong>Auto</strong> so the platform's internal algorithm highlights only the most relevant POCs instead of marking every bar.</li>
+<li>Under <strong>Extended POC</strong>, turn on <strong>Enable</strong> so unrevisited POCs project to the right as levels, then apply.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Bar POC settings dialog showing the General section with Days to Load, Input Data, Filter Mode dropdown open on Auto, Auto Std. Dev. and Manual Min. Vol. fields, and the Plot Settings groups (HighLight, Extended POC, Duration on Extension) below</div><div class="s-file">bar-poc-settings-dialog.png</div></div></div>
+<h2 id="how-to-read-it">How to read it</h2>
+<ul>
+<li><strong>POC position inside the bar.</strong> A POC near the top of an up bar means the market accepted higher prices and did business there; a POC left behind at the bottom of a long up bar means the move above it happened on comparatively little volume and may be fragile.</li>
+<li><strong>Extension lines are unfinished business.</strong> An extended POC is a price where heavy volume traded but which the market has not revisited. These levels often act as support or resistance on the first retest, so they are natural locations for entries, targets, and stop placement.</li>
+<li><strong>Aggression color.</strong> The <strong>Bid/Ask Color</strong> setting colors the highlight rectangle based on the sell/buy aggression in the POC area, so you can see at a glance which side was hitting the market at the bar's busiest price.</li>
+<li><strong>Filtering matters.</strong> With <strong>Filter Mode</strong> set to <strong>None</strong> every bar gets a POC and the chart becomes noise. Auto or manual filtering reduces the display to POCs backed by meaningful volume.</li>
+</ul>
+<h2 id="settings-reference">Settings reference</h2>
+<p>Grouped as in the settings dialog.</p>
+<h3 id="general-settings">General Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Days to Load</strong></td>
+<td>Defines the number of historical days loaded for the indicator.</td>
+</tr>
+<tr>
+<td><strong>Input Data</strong></td>
+<td>Selects the input data the calculation uses. See <a href="./different-types-of-input.html">Different Types of Input Data for Indicators</a> for the available types.</td>
+</tr>
+<tr>
+<td><strong>Min/Max Filter</strong></td>
+<td>Screens orders by contract size, so the POC calculation can ignore trades outside your chosen size range.</td>
+</tr>
+<tr>
+<td><strong>Filter Mode</strong></td>
+<td><strong>None</strong> — no filter is applied. <strong>Manual</strong> — applies a user-defined manual filter. <strong>Auto</strong> — applies an automatic filter using the platform's internal algorithms to highlight the most relevant POCs.</td>
+</tr>
+<tr>
+<td><strong>Auto Std. Dev.</strong></td>
+<td>Defines the standard deviation used by the automatic filter. Higher values keep only the most exceptional POCs.</td>
+</tr>
+<tr>
+<td><strong>Manual Min. Vol.</strong></td>
+<td>Defines the minimum volume required for a POC when using manual filtering.</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-note">
+<p><strong>Note:</strong> These settings can be configured separately for Regular Trading Hours (RTH), so you can filter the regular session differently from the overnight session.</p>
+</blockquote>
+<h3 id="plot-settings-highlight">Plot Settings — HighLight</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Show Rectangle</strong></td>
+<td>Toggles the rectangle that highlights the POC price inside the bar.</td>
+</tr>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>Thickness of the rectangle border.</td>
+</tr>
+<tr>
+<td><strong>Show Background</strong></td>
+<td>Toggles the rectangle's background fill.</td>
+</tr>
+<tr>
+<td><strong>Back Opacity</strong></td>
+<td>Transparency of the background fill.</td>
+</tr>
+<tr>
+<td><strong>Bid/Ask Color</strong></td>
+<td>Colors the rectangle based on the sell/buy aggression in the POC area.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="plot-settings-extended-poc">Plot Settings — Extended POC</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Extends a line from the POC toward the right edge of the chart until price interacts with it.</td>
+</tr>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>Thickness of the extension line.</td>
+</tr>
+<tr>
+<td><strong>Max Bar Extension</strong></td>
+<td>Maximum number of bars an extension may run. Set to <strong>0</strong> to extend to the end of the chart.</td>
+</tr>
+<tr>
+<td><strong>Reset Start Day</strong></td>
+<td>When enabled, restricts extensions to the current day only.</td>
+</tr>
+<tr>
+<td><strong>Remove Line On Shadow Triggered</strong></td>
+<td>Ends the extension the first time price touches the level (including with a wick) instead of waiting for a close-based breakout.</td>
+</tr>
+<tr>
+<td><strong>Tick Margin Breakout</strong></td>
+<td>Minimum number of ticks price must move through the level to confirm a breakout and remove the line.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="plot-settings-duration-on-extension">Plot Settings — Duration on Extension</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Shows the duration (days, hours, minutes) of the POC extension next to the line.</td>
+</tr>
+<tr>
+<td><strong>Text Size</strong></td>
+<td>Size of the duration text.</td>
+</tr>
+<tr>
+<td><strong>Text Color</strong></td>
+<td>Color of the duration text.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tips-and-common-mistakes">Tips and common mistakes</h2>
+<ul>
+<li><strong>Start with Auto filtering.</strong> Manually tuning <strong>Manual Min. Vol.</strong> per instrument is error-prone; the automatic filter adapts via its standard-deviation threshold and is the faster route to a clean chart.</li>
+<li><strong>Old extensions are stronger context than fresh ones.</strong> A POC that has survived many hours untested (visible with <strong>Duration on Extension</strong> enabled) carries more weight than one printed three bars ago.</li>
+<li><strong>Choose your touch rule deliberately.</strong> <strong>Remove Line On Shadow Triggered</strong> treats a single wick as a test; leaving it off requires a genuine breakout confirmed by <strong>Tick Margin Breakout</strong>. Scalpers usually want the wick rule, level traders the breakout rule.</li>
+<li><strong>Do not confuse Bar POC with the session POC.</strong> The session-wide Point of Control comes from a profile tool such as <a href="./deep-profile.html">Deep Profile (Volume / Delta Profile)</a>; Bar POC works at the resolution of a single candle. See <a href="./understanding-volume-profile.html">Understanding Volume Profile: POC, Value Area, HVN/LVN</a> for how POCs fit into the bigger auction picture.</li>
+</ul>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="./understanding-volume-profile.html">Understanding Volume Profile: POC, Value Area, HVN/LVN</a></li>
+<li><a href="./dynamic-poc.html">Dynamic POC</a></li>
+<li><a href="./deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li>
+<li><a href="./orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a></li>
+<li><a href="./different-types-of-input.html">Different Types of Input Data for Indicators</a></li>
+<li><a href="./indicator-layout.html">How to Change the Layout of Indicators</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./dynamic-poc.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Dynamic POC</div></a><a class="next" href="./stop-spotter.html"><div class="pn-lbl">Next →</div><div class="pn-title">Stop Spotter</div></a></div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#what-it-is">What it is</a></li><li class="lv2"><a href="#when-to-use-it">When to use it</a></li><li class="lv2"><a href="#quick-start">Quick start</a></li><li class="lv2"><a href="#how-to-read-it">How to read it</a></li><li class="lv2"><a href="#settings-reference">Settings reference</a></li><li class="lv3"><a href="#general-settings">General Settings</a></li><li class="lv3"><a href="#plot-settings-highlight">Plot Settings — HighLight</a></li><li class="lv3"><a href="#plot-settings-extended-poc">Plot Settings — Extended POC</a></li><li class="lv3"><a href="#plot-settings-duration-on-extension">Plot Settings — Duration on Extension</a></li><li class="lv2"><a href="#tips-and-common-mistakes">Tips and common mistakes</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+<script src="../assets/widgets.js"></script>
+</body></html>

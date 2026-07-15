@@ -1,0 +1,52 @@
+{
+ "batch": "trading-1",
+ "notes": "Ground truth: /Users/flutter/Desktop/ai-support-system/docs/ui-map-02*.csv (trading panel rows), /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/deepchart_platform/trading/trading_execution.yaml, risk_manager.yaml, sim_and_trade_copier.yaml. Verified trading-panel facts you may state: order grid MKT/BID/ASK/LMT/STP/STP LMT per side; BID/ASK place limit at best bid/ask offset by 'Ticks diff.'; Breakeven moves stop to entry +/- Breakeven-Ticks (Settings > Trading); Cancel = cancel pending orders, Flat = close position, Cancel and Flat = both - all scoped to the panel's symbol; OCO block SL/TP in ticks or money with BE/Trail; Server vs Client OCO (bracket lives serverside vs in-app; Rithmic + Trade Copier requires CLIENT); MULTI strategies via gear editor; red (!) means strategy qty != panel Qty (blocks execution); Link pending orders pairs an existing SL+TP into an OCO. dom-trading-chart: bottom-bar DOM Trading radio; green column click = BUY (LMT/STP auto by level), red = SELL, D: label = position P/L, CANCEL ALL / FLAT ALL; requires Trading Enabled. Check /Users/flutter/Desktop/ai-support-system/docs/ui-maps-owner-answers-needed.csv for unanswered rows (e.g. ALL-button scope) and hedge those. For LIVE rewrites fetch the live article too and keep its correct facts.",
+ "articles": [
+  {
+   "slug": "trading-from-chart",
+   "title": "Trading from the Chart",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "LIVE:trading-from-the-chart",
+   "category": "Trading & Orders",
+   "subcategory": ""
+  },
+  {
+   "slug": "trading-panel-reference",
+   "title": "Trading Panel Reference: Every Button and Field",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "NEW",
+   "category": "Trading & Orders",
+   "subcategory": ""
+  },
+  {
+   "slug": "dom-trading-chart",
+   "title": "DOM Trading on the Chart (Click-Trading Ladder)",
+   "type": "howto",
+   "difficulty": "intermediate",
+   "source": "NEW",
+   "category": "Trading & Orders",
+   "subcategory": ""
+  },
+  {
+   "slug": "depth-of-market",
+   "title": "Depth of Market (DOM) Indicator",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:depth-of-market",
+   "category": "Trading & Orders",
+   "subcategory": ""
+  },
+  {
+   "slug": "oco-strategies",
+   "title": "OCO (One-Cancels-the-Other) Strategies",
+   "type": "howto",
+   "difficulty": "intermediate",
+   "source": "LIVE:order-cancel-order",
+   "category": "Trading & Orders",
+   "subcategory": ""
+  }
+ ],
+ "id": "14-trading-1"
+}

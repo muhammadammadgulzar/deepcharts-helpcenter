@@ -1,0 +1,61 @@
+{
+ "batch": "data-database-1",
+ "notes": "Ground truth: fetch live articles; /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/deepchart_platform/mechanics/platform_maintenance.yaml. symbol-rollover: correct menu label is Options > Symbols Rollover; window 'Manage Rollover' has 'Contracts in Roll-window' and 'Contracts Rolled' panes plus Perform Rollover AND Perform Rollback (undo); link [[gaps-in-price]] and continuous-contract modes in [[price-chart-settings]]. delete-market-data: MERGE the two live methods into one article - Method 1 in-app (recommended), Method 2 manual folders - with a data-loss warning callout. download-data (NEW): Options > Download data - symbols, start date, Data Type Tick, 'Download From VolServer' toggle; pair with delete for the corrupt-data repair loop.",
+ "articles": [
+  {
+   "slug": "symbol-rollover",
+   "title": "Symbol Rollover (Change Contract Month)",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "LIVE:symbol-rollover",
+   "category": "Data & Database",
+   "subcategory": ""
+  },
+  {
+   "slug": "delete-market-data",
+   "title": "Delete Market Data (In-App and Manual Methods)",
+   "type": "howto",
+   "difficulty": "intermediate",
+   "source": "MERGE:how-to-delete-market-data+how-to-delete-market-data-from-deepcharts-database-folders-(manual-method)",
+   "category": "Data & Database",
+   "subcategory": ""
+  },
+  {
+   "slug": "download-data",
+   "title": "Re-download Historical Data (Download Data Tool)",
+   "type": "howto",
+   "difficulty": "intermediate",
+   "source": "NEW",
+   "category": "Data & Database",
+   "subcategory": ""
+  },
+  {
+   "slug": "database-optimization",
+   "title": "Database Optimization",
+   "type": "howto",
+   "difficulty": "advanced",
+   "source": "LIVE:database-optimization-deepcharts",
+   "category": "Data & Database",
+   "subcategory": ""
+  },
+  {
+   "slug": "database-problems",
+   "title": "Fix: Database Problems",
+   "type": "troubleshooting",
+   "difficulty": "intermediate",
+   "source": "LIVE:database-problems",
+   "category": "Data & Database",
+   "subcategory": ""
+  },
+  {
+   "slug": "fix-could-not-find-path",
+   "title": "Fix: Could Not Find a Part of the Path",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:error-could-not-find",
+   "category": "Data & Database",
+   "subcategory": ""
+  }
+ ],
+ "id": "30-data-database-1"
+}

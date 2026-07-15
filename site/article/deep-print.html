@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Deep Print (Footprint) — DeepCharts Help Center</title>
+<meta name="description" content="Complete reference for Deep Print, the DeepCharts footprint indicator: bid/ask split, delta, imbalances, POC, value area, clusters and multi-column layouts.">
+<link rel="stylesheet" href="../assets/style.css">
+<script>window.HC_ROOT="../";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/quick-start-first-trade.html">Quick start</a><a href="../article/get-help.html">Get help</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Getting Started <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Welcome to DeepCharts: Platform Tour</a></li><li><a href="../article/system-requirements.html">System Requirements</a></li><li><a href="../article/install-deepcharts.html">How to Install DeepCharts and Activate Your License</a></li><li><a href="../article/free-delayed-data-feed.html">Use the Free 15-Minute Delayed Data Feed</a></li><li><a href="../article/buy-data-feed.html">How to Buy a Data Feed and Get Your Credentials</a></li><li><a href="../article/first-chart.html">Open Your First Chart</a></li><li><a href="../article/simulation-accounts.html">Trading Accounts and Simulation</a></li><li><a href="../article/quick-start-first-trade.html">Quick Start: From Install to Your First Trade</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connections &amp; Data Feeds <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Setup</li><li><a href="../article/compatibility-guide.html">Supported Brokers, Prop Firms and Data Feeds</a></li><li><a href="../article/connect-data-feed.html">How to Connect a Data Feed (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a></li><li><a href="../article/sign-market-data-agreement.html">Sign Your Market Data Agreement</a></li><li><a href="../article/connect-dxfeed.html">How to Connect a dxFeed Data Feed</a></li><li><a href="../article/connect-rithmic.html">How to Connect a Rithmic Data Feed</a></li><li><a href="../article/rtrader-pro-plugin.html">Connect Rithmic Using the RTrader Pro Plugin</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Connect Any Rithmic Prop-Firm Account (Server Table)</a></li><li><a href="../article/connect-apex.html">Connect Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connect a Prop-Firm dxFeed Account (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">How to Connect CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connect Interactive Brokers (Execution Only)</a></li><li><a href="../article/competition-connect.html">DeepCharts Competition: Join and Connect</a></li><li><a href="../article/end-of-day-data.html">Connect Historical Data (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Manage and Switch Between Feed Connections</a></li><li class="nav-sub">Troubleshooting</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: Live Feed Connected but Chart Is Not Moving</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Fix: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Fix: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Fix: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Fix: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Fix: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Fix: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Fix: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Fix: Connection Lost When Opening a Chart</a></li><li><a href="../article/symbol-subscription-issue.html">Fix: Symbol Subscription Issue</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: App Crashes When Saving Feed Settings</a></li><li><a href="../article/gaps-in-price.html">Fix: Gaps in Price on Charts</a></li><li><a href="../article/data-delayed-lagging.html">Fix: Charts Lagging or Data Delayed (Checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Charts &amp; Workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">The Chart Window</a></li><li><a href="../article/price-chart-settings.html">Price Chart Settings</a></li><li><a href="../article/chart-display-options.html">Chart Display Options (Bar Styles, Sessions, Countdown)</a></li><li><a href="../article/drawing-tools.html">Drawing Tools and Annotations</a></li><li><a href="../article/templates-workspaces.html">Templates and Workspaces</a></li><li><a href="../article/quick-chart-templates.html">Quick Chart Templates (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Link Windows with Color Groups</a></li><li><a href="../article/replay-data.html">Replay Market Data</a></li><li><a href="../article/customize-language-theme-sounds.html">Customize Language, Theme and Notification Sounds</a></li><li><a href="../article/keyboard-shortcuts.html">How to Configure Keyboard Shortcuts</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Keyboard Shortcuts Reference</a></li><li><a href="../article/multi-monitor-windows.html">Arrange Windows Across Monitors (and Recover Off-Screen Windows)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Platform Windows <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (The Tape)</a></li><li><a href="../article/advanced-dom.html">Advanced DOM Window</a></li><li><a href="../article/profile-chart-window.html">Profile Chart Window (TPO and Volume Profiles)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading &amp; Orders <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading from the Chart</a></li><li><a href="../article/trading-panel-reference.html">Trading Panel Reference: Every Button and Field</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading on the Chart (Click-Trading Ladder)</a></li><li><a href="../article/depth-of-market.html">Depth of Market (DOM) Indicator</a></li><li><a href="../article/oco-strategies.html">OCO (One-Cancels-the-Other) Strategies</a></li><li><a href="../article/orders-window.html">Orders Window</a></li><li><a href="../article/portfolio-wallet.html">Portfolio (Wallet)</a></li><li><a href="../article/risk-manager.html">Risk Manager</a></li><li><a href="../article/trade-copier.html">How to Set Up the Trade Copier</a></li><li><a href="../article/performance-analysis.html">Performance Analysis (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concepts <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a></li><li><a href="../article/understanding-volume-profile.html">Understanding Volume Profile: POC, Value Area, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Understanding Auction Theory: Imbalance, Unfinished Auctions, Absorption</a></li><li><a href="../article/understanding-icebergs-absorption.html">Understanding Icebergs and Absorption</a></li><li><a href="../article/understanding-vwap.html">Understanding VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Understanding Market Structure and Sessions (RTH/ETH, Rollover)</a></li><li><a href="../article/reading-a-footprint.html">Reading a Footprint: Worked Examples</a></li><li><a href="../article/glossary.html">Glossary of Orderflow and Platform Terms</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicators &amp; Analysis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Indicator Basics</li><li><a href="../article/different-types-of-input.html">Different Types of Input Data for Indicators</a></li><li><a href="../article/indicator-layout.html">How to Change the Layout of Indicators</a></li><li class="nav-sub">Deep Indicators</li><li><a href="../article/deep-print.html" class="active">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Moving Average</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Linear Regression</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum &amp; Oscillators</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Stochastic Oscillator</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatility &amp; Bands</li><li><a href="../article/bollinger-bands.html">Bollinger Bands</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Standard Deviation</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume &amp; Delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Order Flow &amp; Auction</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Levels &amp; Patterns</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Important Levels</a></li><li><a href="../article/absolute-levels.html">Absolute Levels</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Chart Overlays</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Text on Chart</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Data &amp; Database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Symbol Rollover (Change Contract Month)</a></li><li><a href="../article/delete-market-data.html">Delete Market Data (In-App and Manual Methods)</a></li><li><a href="../article/download-data.html">Re-download Historical Data (Download Data Tool)</a></li><li><a href="../article/database-optimization.html">Database Optimization</a></li><li><a href="../article/database-problems.html">Fix: Database Problems</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Troubleshooting &amp; Support <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Fix: Installation Problems and Basic Requirements</a></li><li><a href="../article/installation-setup-failed.html">Fix: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: Application Control Policy Blocks DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Fix: Rectangle Drawing Tool Not Working</a></li><li><a href="../article/chart-zoom.html">Fix: Chart Zoom In and Out Not Working</a></li><li><a href="../article/license-issues.html">Fix: License and Activation Issues</a></li><li><a href="../article/diagnostic-report.html">Diagnostic Report: Before You Contact Support</a></li><li><a href="../article/get-help.html">How to Get Help (Chat, Diagnostic Report, Support)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account &amp; Billing <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Manage Your Subscriptions and Billing</a></li><li><a href="../article/move-to-new-computer.html">Move DeepCharts to a New Computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicators &amp; Analysis</a> › Deep Indicators</div>
+<div class="article-head"><h1>Deep Print (Footprint)</h1>
+<p class="article-desc">Complete reference for Deep Print, the DeepCharts footprint indicator: bid/ask split, delta, imbalances, POC, value area, clusters and multi-column layouts.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 10 min read</span>
+  <a class="btn-pdf" href="../pdf/deep-print.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Deep Print is the core volumetric analysis tool in DeepCharts — a footprint indicator (also known by the registered name Footprint®). It merges price, volume and orderflow into single candles, showing the executed orders at each price tick inside every bar instead of only the bar's open, high, low and close.</p>
+<p>Traders use it to spot buyer and seller acceleration, absorption, depletion and bid/ask dominance at each price level. It is fully customizable, from what it counts to how every cell is colored.</p>
+<h2 id="what-it-is">What it is</h2>
+<p>A normal candle tells you where price went. Deep Print tells you what traded to make it go there: at every price tick inside the candle you see the executed volume — total, split by bid and ask, or as delta (the difference between aggressive buying and selling). On top of that base display it can highlight imbalances, the candle's point of control, the value area, volume clusters, single prints, extreme-ratio levels and pullbacks.</p>
+<h2 id="when-to-use-it">When to use it</h2>
+<ul>
+<li>You trade orderflow and need to see who is aggressing at each price, not only where price closed.</li>
+<li>You want to identify absorption (heavy volume that fails to move price) and depletion at swing extremes.</li>
+<li>You want per-candle reference levels: volume POC, delta POC and value area.</li>
+<li>You want to monitor several readings at once — Deep Print supports up to 4 side-by-side columns per candle (for example Bid×Ask, Delta and Volume simultaneously).</li>
+</ul>
+<h2 id="quick-start">Quick start</h2>
+<ol>
+<li>Open a chart and add <strong>Deep Print</strong> from the chart's <strong>Indicators</strong> button.</li>
+<li>Open the indicator settings.</li>
+<li>In <strong>General settings</strong>, set <strong>Type</strong> to the display you want (start with <strong>Ask/Bid Split</strong> or <strong>Delta + Total Volume</strong>) and <strong>Mode</strong> to <strong>Profile</strong>.</li>
+<li>Apply — every candle now shows its per-tick executed volume.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">A futures chart with Deep Print active in Ask/Bid Split mode, several candles showing per-tick bid and ask volume cells with imbalance coloring visible</div><div class="s-file">deep-print-on-chart.png</div></div></div>
+<h3 id="recommended-starter-configuration">Recommended starter configuration</h3>
+<p>These are suggestions, not defaults — adjust to your market and style:</p>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Suggested start</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Type</strong></td>
+<td><strong>Delta + Total Volume</strong> — delta reading plus total activity in one view</td>
+</tr>
+<tr>
+<td><strong>Mode</strong></td>
+<td><strong>Profile</strong> — histogram-style cells are easier to scan than boxes at first</td>
+</tr>
+<tr>
+<td><strong>Input Type</strong></td>
+<td><strong>Volume</strong>; switch to <strong>Aggregate Volume</strong> when hunting split institutional orders (see <a href="./different-types-of-input.html">Different Types of Input Data for Indicators</a>)</td>
+</tr>
+<tr>
+<td><strong>Tick grouping</strong></td>
+<td><strong>Automatic</strong> to begin; set <strong>Auto Grouping</strong> to <strong>Manual</strong> with <strong>Manual Ticks</strong> = 1 if you want rows that never shift when zooming</td>
+</tr>
+<tr>
+<td><strong>POC</strong></td>
+<td>Enable the Volume POC so each candle's highest-volume price stands out</td>
+</tr>
+<tr>
+<td><strong>Value Area</strong></td>
+<td>Enable with <strong>% Value Area</strong> = 70%</td>
+</tr>
+<tr>
+<td><strong>Text Format</strong></td>
+<td><strong>K</strong> on high-volume instruments so 1,000 prints as 1K and cells stay readable</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-to-read-it">How to read it</h2>
+<ul>
+<li><strong>Cells</strong>: each row inside a candle is one price tick (or group of ticks) with its executed volume. In Ask/Bid Split mode the bid side records aggressive selling and the ask side aggressive buying.</li>
+<li><strong>Delta</strong>: ask volume minus bid volume at a level. Positive delta means aggressive buyers dominated there; negative means aggressive sellers did.</li>
+<li><strong>Volume POC</strong>: the highest-volume price of the candle — where the most business was done. <strong>Delta POC</strong> marks the level with the largest net delta.</li>
+<li><strong>Value area</strong>: the price band containing the configured percentage (for example 70%) of the candle's volume.</li>
+<li><strong>Imbalances</strong>: when the volume difference between bid and ask at a level exceeds your threshold, the cell is highlighted — one side clearly overpowered the other.</li>
+<li><strong>Absorption and depletion</strong>: heavy volume at a level with no price progress suggests passive orders absorbing the aggression; shrinking volume into an extreme suggests the move is running out of participants. For worked chart examples, see <a href="./reading-a-footprint.html">Reading a Footprint: Worked Examples</a>.</li>
+</ul>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Zoomed view of two or three Deep Print candles with the Volume POC border, the value area highlight and one stacked imbalance annotated</div><div class="s-file">deep-print-poc-value-area.png</div></div></div>
+<h2 id="settings-reference">Settings reference</h2>
+<p>Grouped exactly as in the indicator dialog.</p>
+<h3 id="general-settings-typology">General settings (Typology)</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Type</strong></td>
+<td>Display basis: <strong>Volume</strong> (total traded volume), <strong>Ask/Bid Split</strong> (buy vs sell volume compared), <strong>Delta</strong> (difference between ask and bid), <strong>Delta + Total Volume</strong> (combined view)</td>
+</tr>
+<tr>
+<td><strong>Mode</strong></td>
+<td><strong>Profile</strong> (histogram-style representation) or <strong>Box</strong> (compact boxed values)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-settings">Data settings</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Input Type</strong></td>
+<td>Data source: <strong>Volume</strong> (total traded volume per price), <strong>Aggregate Volume</strong> (aggregated trades), <strong>Order</strong> (order-book volume), <strong>Num Trades</strong> (number of executions per price). See <a href="./different-types-of-input.html">Different Types of Input Data for Indicators</a> for when each is right</td>
+</tr>
+<tr>
+<td><strong>Min/Max Filter</strong></td>
+<td>Excludes values outside the defined range — reduces noise from very small (or distorting very large) trades</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tick-grouping">Tick grouping</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Auto Grouping</strong></td>
+<td><strong>Automatic</strong> (platform optimizes the grouping) or <strong>Manual</strong> (you define it)</td>
+</tr>
+<tr>
+<td><strong>Auto Group Factor</strong></td>
+<td>Controls the tick aggregation level when Automatic is used</td>
+</tr>
+<tr>
+<td><strong>Manual Ticks</strong></td>
+<td>The grouping quantity when Manual is used</td>
+</tr>
+<tr>
+<td><strong>Group Mode</strong></td>
+<td><strong>Fixed</strong> (constant grouping) or <strong>Based on Open/Close</strong> (dynamic grouping per candle behavior)</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-note">
+<p><strong>Note:</strong> Tick grouping is a shared setting that appears in many DeepCharts indicators (Deep Print, Deep Profile and other profile-based tools) with the same fields. With <strong>Automatic</strong>, row levels can shift when you zoom the price scale — to freeze them, set <strong>Auto Grouping</strong> to <strong>Manual</strong> and <strong>Manual Ticks</strong> to 1.</p>
+</blockquote>
+<h3 id="plot-settings-bar-style">Plot settings (Bar Style)</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bar Marker Width</strong></td>
+<td>Thickness of the candle marker</td>
+</tr>
+<tr>
+<td><strong>Outside Bar Style</strong></td>
+<td>Bar (with shadows) or body-only style</td>
+</tr>
+<tr>
+<td><strong>Marker Alignment</strong></td>
+<td>Positions the marker to the right or center</td>
+</tr>
+<tr>
+<td><strong>Outer Edge Mode</strong></td>
+<td>Draws a border outlining the candle body</td>
+</tr>
+</tbody>
+</table>
+<h3 id="background-settings">Background settings</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Coloration</strong></td>
+<td>Customizes the visualization for volume, delta and market imbalances</td>
+</tr>
+<tr>
+<td><strong>Border Width</strong></td>
+<td>Edge thickness of the volume profile, in pixels</td>
+</tr>
+<tr>
+<td><strong>Opacity</strong></td>
+<td>Background transparency level</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text-settings">Text settings</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Font Size</strong></td>
+<td>Text size inside footprint cells</td>
+</tr>
+<tr>
+<td><strong>Text Format</strong></td>
+<td><strong>Automatic</strong> (context-adapted), <strong>Normal</strong> (full numbers, no abbreviation), <strong>K</strong> (thousands — 1K = 1,000)</td>
+</tr>
+<tr>
+<td><strong>Coloration</strong></td>
+<td>Customizes how the numbers are rendered for easier interpretation</td>
+</tr>
+<tr>
+<td><strong>Dynamic Text Size</strong></td>
+<td>Auto-scales text with volume/delta/imbalance amounts — big prints get big numbers</td>
+</tr>
+<tr>
+<td><strong>Increase Dynamic Text Size</strong></td>
+<td>Strengthens the dynamic sizing effect</td>
+</tr>
+<tr>
+<td><strong>Show Texts-by-Zeros</strong></td>
+<td>Displays zero-value cells instead of leaving them blank</td>
+</tr>
+</tbody>
+</table>
+<h3 id="background-coloration">Background coloration</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Color Mode</strong></td>
+<td><strong>None</strong>, <strong>Fixed</strong> (predefined colors, no gradients), <strong>Fading</strong> (gradient by intensity), <strong>More Colors</strong> (multiple user-defined colors — requires <strong>Range Definition</strong> = USER)</td>
+</tr>
+<tr>
+<td><strong>Color Calculation</strong></td>
+<td>What drives the color: <strong>Volume</strong>, <strong>Delta</strong>, <strong>Imbalance</strong>, <strong>Dominant Volume</strong> (largest side per price), <strong>Dominant Volume Delta</strong></td>
+</tr>
+<tr>
+<td><strong>Min. Vol. Diff. For Imbalance</strong></td>
+<td>Minimum bid/ask difference for a level to count as imbalanced</td>
+</tr>
+<tr>
+<td><strong>Include Zero on Imbalance</strong></td>
+<td>Includes levels with no volume on one side in imbalance analysis</td>
+</tr>
+<tr>
+<td><strong>Color Only Dominant Side</strong></td>
+<td>Colors only the dominant volume side of each level</td>
+</tr>
+<tr>
+<td><strong>Background Inferior Side</strong></td>
+<td>Background color of the non-dominant side</td>
+</tr>
+</tbody>
+</table>
+<h3 id="colors">Colors</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fixed-Volume Color</strong></td>
+<td>Single color for total volume</td>
+</tr>
+<tr>
+<td><strong>Fixed-Bid Color</strong></td>
+<td>Color for the bid (sell) volume</td>
+</tr>
+<tr>
+<td><strong>Fixed-Ask Color</strong></td>
+<td>Color for the ask (buy) volume</td>
+</tr>
+</tbody>
+</table>
+<h3 id="range">Range</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Range Definition</strong></td>
+<td><strong>Automatic</strong> (platform-defined) or USER (custom ranges)</td>
+</tr>
+<tr>
+<td><strong>Range (Show Settings)</strong></td>
+<td>Opens the custom value-range configuration</td>
+</tr>
+</tbody>
+</table>
+<h3 id="poc">POC</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong> (Volume POC)</td>
+<td>Shows the candle's highest-volume price</td>
+</tr>
+<tr>
+<td><strong>Border Color / Border Width</strong> (Volume POC)</td>
+<td>Highlight color and edge thickness of the Volume POC</td>
+</tr>
+<tr>
+<td><strong>Enable</strong> (Delta POC)</td>
+<td>Shows the level with the largest net delta</td>
+</tr>
+<tr>
+<td><strong>Minimum Delta</strong> (Delta POC)</td>
+<td>Minimum delta value required before the Delta POC displays</td>
+</tr>
+<tr>
+<td><strong>Ask Border Color / Bid Border Color</strong> (Delta POC)</td>
+<td>Border colors for ask-side and bid-side delta POCs</td>
+</tr>
+<tr>
+<td><strong>Border Width</strong> (Delta POC)</td>
+<td>Edge thickness of the Delta POC</td>
+</tr>
+</tbody>
+</table>
+<h3 id="value-area">Value Area</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Toggles the value area display</td>
+</tr>
+<tr>
+<td><strong>% Value Area</strong></td>
+<td>Percentage of total volume used for the calculation (e.g. 70%)</td>
+</tr>
+<tr>
+<td><strong>Highlight</strong></td>
+<td>Visually emphasizes the value area on the candles</td>
+</tr>
+<tr>
+<td><strong>Outside Color</strong></td>
+<td>Color for the area outside the value area</td>
+</tr>
+<tr>
+<td><strong>Show Line / Line Color / Line Width</strong></td>
+<td>Delimiting line of the value area and its styling</td>
+</tr>
+</tbody>
+</table>
+<h3 id="alerts">Alerts</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Sound / Alert Sound</strong></td>
+<td>Sound notification toggle and sound selection</td>
+</tr>
+<tr>
+<td><strong>Enable Message / Alert Message</strong></td>
+<td>Popup toggle and the custom message text shown</td>
+</tr>
+<tr>
+<td><strong>Alert Minimum Volume</strong></td>
+<td>Minimum volume threshold before an alert fires</td>
+</tr>
+</tbody>
+</table>
+<h3 id="single-print">Single Print</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Highlights price levels printed by a single order meeting the criteria</td>
+</tr>
+<tr>
+<td><strong>Single Print Min Value</strong></td>
+<td>Minimum volume for a single print to be relevant</td>
+</tr>
+<tr>
+<td><strong>Enable Only On High Or Low</strong></td>
+<td>Restricts highlighting to the candle's extreme prices</td>
+</tr>
+<tr>
+<td><strong>Border Width / Border Color</strong></td>
+<td>Styling of the single-print highlight</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ratio">Ratio</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enabled</strong></td>
+<td>Shows the bid/ask ratio at the bar extremes</td>
+</tr>
+<tr>
+<td><strong>Tick Offset</strong></td>
+<td>Position of the ratio text relative to the bar high/low</td>
+</tr>
+<tr>
+<td><strong>Text Color / Text Size</strong></td>
+<td>Ratio text styling</td>
+</tr>
+<tr>
+<td><strong>Min Ratio / Maximum Ratio</strong></td>
+<td>Minimum value for display and maximum value limit</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vol-cluster">Vol Cluster</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Highlights volume clusters</td>
+</tr>
+<tr>
+<td><strong>Min. Volume</strong></td>
+<td>Minimum volume for a cluster to count</td>
+</tr>
+<tr>
+<td><strong>Increase Volume Based on Tick Grouped</strong></td>
+<td>Sums volume across neighboring grouped ticks</td>
+</tr>
+<tr>
+<td><strong>Line Width / Back Color / Opacity</strong></td>
+<td>Cluster edge thickness, background color and its opacity</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pull-back">Pull Back</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Highlights retracement bars — a scalping aid</td>
+</tr>
+<tr>
+<td><strong>Pullback Min Source Bar Ticks</strong></td>
+<td>Minimum ticks in the source bar</td>
+</tr>
+<tr>
+<td><strong>Pullback Min Pullback Ticks</strong></td>
+<td>Minimum retracement distance in ticks</td>
+</tr>
+<tr>
+<td><strong>Bar Color</strong></td>
+<td>Highlight color of pullback bars</td>
+</tr>
+</tbody>
+</table>
+<h3 id="multi-column-layouts">Multi-column layouts</h3>
+<p>Deep Print supports up to 4 simultaneous columns per candle, each showing a different reading side by side — for example Bid×Ask, Delta and Volume at once. To set it up: add multiple Deep Print indicators to the chart, open each one's settings, go to <strong>Sizing → Multi Column</strong>, set the column quantity, assign each indicator a unique position, and customize each independently.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Print settings dialog open at the Sizing section with Multi Column configured, next to a chart showing a candle rendered as three side-by-side columns (Bid×Ask, Delta, Volume)</div><div class="s-file">deep-print-multi-column.png</div></div></div>
+<h2 id="tips-and-common-mistakes">Tips and common mistakes</h2>
+<ul>
+<li><strong>Numbers unreadable or cells too small?</strong> Raise <strong>Font Size</strong> or enable <strong>Dynamic Text Size</strong>; set <strong>Text Format</strong> to <strong>K</strong> to compact big numbers; widen <strong>Bar Marker Width</strong>; or use coarser tick grouping so cells are fewer and taller.</li>
+<li><strong>Too many imbalance highlights?</strong> Raise <strong>Min. Vol. Diff. For Imbalance</strong>, apply a <strong>Min Filter</strong> on the input data, or enable <strong>Color Only Dominant Side</strong>. Very fine tick grouping also multiplies noise.</li>
+<li><strong>Your rows don't match another trader's chart?</strong> Compare <strong>Input Type</strong>, tick grouping (Automatic vs Manual, group factor) and <strong>Group Mode</strong> — any of these changes the cells.</li>
+<li><strong>Want bid×ask numbers and delta at the same time?</strong> Either set <strong>Type</strong> to <strong>Delta + Total Volume</strong>, or build a multi-column layout.</li>
+<li><strong>POC or value area not visible?</strong> Each has its own <strong>Enable</strong> toggle; the Delta POC additionally requires its <strong>Minimum Delta</strong> threshold to be met.</li>
+<li><strong>Alert not firing?</strong> Check <strong>Alert Minimum Volume</strong> first — and note that the sound and message toggles are separate.</li>
+</ul>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="./reading-a-footprint.html">Reading a Footprint: Worked Examples</a></li>
+<li><a href="./orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a></li>
+<li><a href="./different-types-of-input.html">Different Types of Input Data for Indicators</a></li>
+<li><a href="./deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li>
+<li><a href="./deep-delta.html">Deep Delta</a></li>
+<li><a href="./indicator-layout.html">How to Change the Layout of Indicators</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./indicator-layout.html"><div class="pn-lbl">← Previous</div><div class="pn-title">How to Change the Layout of Indicators</div></a><a class="next" href="./deep-profile.html"><div class="pn-lbl">Next →</div><div class="pn-title">Deep Profile (Volume / Delta Profile)</div></a></div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#what-it-is">What it is</a></li><li class="lv2"><a href="#when-to-use-it">When to use it</a></li><li class="lv2"><a href="#quick-start">Quick start</a></li><li class="lv3"><a href="#recommended-starter-configuration">Recommended starter configuration</a></li><li class="lv2"><a href="#how-to-read-it">How to read it</a></li><li class="lv2"><a href="#settings-reference">Settings reference</a></li><li class="lv3"><a href="#general-settings-typology">General settings (Typology)</a></li><li class="lv3"><a href="#data-settings">Data settings</a></li><li class="lv3"><a href="#tick-grouping">Tick grouping</a></li><li class="lv3"><a href="#plot-settings-bar-style">Plot settings (Bar Style)</a></li><li class="lv3"><a href="#background-settings">Background settings</a></li><li class="lv3"><a href="#text-settings">Text settings</a></li><li class="lv3"><a href="#background-coloration">Background coloration</a></li><li class="lv3"><a href="#colors">Colors</a></li><li class="lv3"><a href="#range">Range</a></li><li class="lv3"><a href="#poc">POC</a></li><li class="lv3"><a href="#value-area">Value Area</a></li><li class="lv3"><a href="#alerts">Alerts</a></li><li class="lv3"><a href="#single-print">Single Print</a></li><li class="lv3"><a href="#ratio">Ratio</a></li><li class="lv3"><a href="#vol-cluster">Vol Cluster</a></li><li class="lv3"><a href="#pull-back">Pull Back</a></li><li class="lv3"><a href="#multi-column-layouts">Multi-column layouts</a></li><li class="lv2"><a href="#tips-and-common-mistakes">Tips and common mistakes</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+<script src="../assets/widgets.js"></script>
+</body></html>

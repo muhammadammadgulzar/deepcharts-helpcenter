@@ -1,0 +1,52 @@
+{
+ "batch": "connections-ts-3",
+ "notes": "Troubleshooting template articles. Ground truth: fetch the LIVE article for the real causes/fixes and rewrite to the template (Symptom / Most likely cause / Quick fix / If that didn't work / Still stuck / Prevent this). Order fixes least-destructive first. Every article: 'Still stuck' section links [[diagnostic-report]] and [[get-help]]; 'Prevent this' links its setup guide ([[connect-dxfeed]] for dxFeed errors, [[connect-rithmic]] / [[rtrader-pro-plugin]] for Rithmic errors, [[connect-data-feed]] generally, [[sign-market-data-agreement]] for agreement-related, [[symbol-manage]] where mapping is the cause). data-delayed-lagging is NEW - build the checklist from: /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/troubleshooting (if present) + these verified facts: confirm delay vs disconnect (feed dot, delayed banner), ? > Contact Support diagnostic ping/download speed per region, dxFeed DOM Type MBO->MBP on slow lines, Rithmic gateway selection by speed test, R Trader Pro performance sliders, LDT badge = loading from disk vs DWT = downloading.",
+ "articles": [
+  {
+   "slug": "connection-lost-opening-chart",
+   "title": "Fix: Connection Lost When Opening a Chart",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:connection-lost-when-opening-a-chart",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  },
+  {
+   "slug": "symbol-subscription-issue",
+   "title": "Fix: Symbol Subscription Issue",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:symbol-subscription-issue",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  },
+  {
+   "slug": "app-crashes-saving-feed",
+   "title": "Fix: App Crashes When Saving Feed Settings",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:app-crashes-when-saving",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  },
+  {
+   "slug": "gaps-in-price",
+   "title": "Fix: Gaps in Price on Charts",
+   "type": "troubleshooting",
+   "difficulty": "intermediate",
+   "source": "LIVE:gaps-in-price",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  },
+  {
+   "slug": "data-delayed-lagging",
+   "title": "Fix: Charts Lagging or Data Delayed (Checklist)",
+   "type": "troubleshooting",
+   "difficulty": "intermediate",
+   "source": "NEW",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  }
+ ],
+ "id": "08-connections-ts-3"
+}

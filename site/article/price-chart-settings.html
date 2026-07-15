@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Price Chart Settings — DeepCharts Help Center</title>
+<meta name="description" content="Reference for the Price Settings dialog: data parameters, every bar type, volume/delta candle modes, price line, countdown, sessions and subgraph styling.">
+<link rel="stylesheet" href="../assets/style.css">
+<script>window.HC_ROOT="../";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/quick-start-first-trade.html">Quick start</a><a href="../article/get-help.html">Get help</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Getting Started <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Welcome to DeepCharts: Platform Tour</a></li><li><a href="../article/system-requirements.html">System Requirements</a></li><li><a href="../article/install-deepcharts.html">How to Install DeepCharts and Activate Your License</a></li><li><a href="../article/free-delayed-data-feed.html">Use the Free 15-Minute Delayed Data Feed</a></li><li><a href="../article/buy-data-feed.html">How to Buy a Data Feed and Get Your Credentials</a></li><li><a href="../article/first-chart.html">Open Your First Chart</a></li><li><a href="../article/simulation-accounts.html">Trading Accounts and Simulation</a></li><li><a href="../article/quick-start-first-trade.html">Quick Start: From Install to Your First Trade</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connections &amp; Data Feeds <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Setup</li><li><a href="../article/compatibility-guide.html">Supported Brokers, Prop Firms and Data Feeds</a></li><li><a href="../article/connect-data-feed.html">How to Connect a Data Feed (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a></li><li><a href="../article/sign-market-data-agreement.html">Sign Your Market Data Agreement</a></li><li><a href="../article/connect-dxfeed.html">How to Connect a dxFeed Data Feed</a></li><li><a href="../article/connect-rithmic.html">How to Connect a Rithmic Data Feed</a></li><li><a href="../article/rtrader-pro-plugin.html">Connect Rithmic Using the RTrader Pro Plugin</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Connect Any Rithmic Prop-Firm Account (Server Table)</a></li><li><a href="../article/connect-apex.html">Connect Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connect a Prop-Firm dxFeed Account (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">How to Connect CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connect Interactive Brokers (Execution Only)</a></li><li><a href="../article/competition-connect.html">DeepCharts Competition: Join and Connect</a></li><li><a href="../article/end-of-day-data.html">Connect Historical Data (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Manage and Switch Between Feed Connections</a></li><li class="nav-sub">Troubleshooting</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: Live Feed Connected but Chart Is Not Moving</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Fix: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Fix: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Fix: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Fix: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Fix: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Fix: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Fix: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Fix: Connection Lost When Opening a Chart</a></li><li><a href="../article/symbol-subscription-issue.html">Fix: Symbol Subscription Issue</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: App Crashes When Saving Feed Settings</a></li><li><a href="../article/gaps-in-price.html">Fix: Gaps in Price on Charts</a></li><li><a href="../article/data-delayed-lagging.html">Fix: Charts Lagging or Data Delayed (Checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Charts &amp; Workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">The Chart Window</a></li><li><a href="../article/price-chart-settings.html" class="active">Price Chart Settings</a></li><li><a href="../article/chart-display-options.html">Chart Display Options (Bar Styles, Sessions, Countdown)</a></li><li><a href="../article/drawing-tools.html">Drawing Tools and Annotations</a></li><li><a href="../article/templates-workspaces.html">Templates and Workspaces</a></li><li><a href="../article/quick-chart-templates.html">Quick Chart Templates (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Link Windows with Color Groups</a></li><li><a href="../article/replay-data.html">Replay Market Data</a></li><li><a href="../article/customize-language-theme-sounds.html">Customize Language, Theme and Notification Sounds</a></li><li><a href="../article/keyboard-shortcuts.html">How to Configure Keyboard Shortcuts</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Keyboard Shortcuts Reference</a></li><li><a href="../article/multi-monitor-windows.html">Arrange Windows Across Monitors (and Recover Off-Screen Windows)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Platform Windows <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (The Tape)</a></li><li><a href="../article/advanced-dom.html">Advanced DOM Window</a></li><li><a href="../article/profile-chart-window.html">Profile Chart Window (TPO and Volume Profiles)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading &amp; Orders <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading from the Chart</a></li><li><a href="../article/trading-panel-reference.html">Trading Panel Reference: Every Button and Field</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading on the Chart (Click-Trading Ladder)</a></li><li><a href="../article/depth-of-market.html">Depth of Market (DOM) Indicator</a></li><li><a href="../article/oco-strategies.html">OCO (One-Cancels-the-Other) Strategies</a></li><li><a href="../article/orders-window.html">Orders Window</a></li><li><a href="../article/portfolio-wallet.html">Portfolio (Wallet)</a></li><li><a href="../article/risk-manager.html">Risk Manager</a></li><li><a href="../article/trade-copier.html">How to Set Up the Trade Copier</a></li><li><a href="../article/performance-analysis.html">Performance Analysis (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concepts <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a></li><li><a href="../article/understanding-volume-profile.html">Understanding Volume Profile: POC, Value Area, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Understanding Auction Theory: Imbalance, Unfinished Auctions, Absorption</a></li><li><a href="../article/understanding-icebergs-absorption.html">Understanding Icebergs and Absorption</a></li><li><a href="../article/understanding-vwap.html">Understanding VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Understanding Market Structure and Sessions (RTH/ETH, Rollover)</a></li><li><a href="../article/reading-a-footprint.html">Reading a Footprint: Worked Examples</a></li><li><a href="../article/glossary.html">Glossary of Orderflow and Platform Terms</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicators &amp; Analysis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Indicator Basics</li><li><a href="../article/different-types-of-input.html">Different Types of Input Data for Indicators</a></li><li><a href="../article/indicator-layout.html">How to Change the Layout of Indicators</a></li><li class="nav-sub">Deep Indicators</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Moving Average</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Linear Regression</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum &amp; Oscillators</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Stochastic Oscillator</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatility &amp; Bands</li><li><a href="../article/bollinger-bands.html">Bollinger Bands</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Standard Deviation</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume &amp; Delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Order Flow &amp; Auction</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Levels &amp; Patterns</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Important Levels</a></li><li><a href="../article/absolute-levels.html">Absolute Levels</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Chart Overlays</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Text on Chart</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Data &amp; Database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Symbol Rollover (Change Contract Month)</a></li><li><a href="../article/delete-market-data.html">Delete Market Data (In-App and Manual Methods)</a></li><li><a href="../article/download-data.html">Re-download Historical Data (Download Data Tool)</a></li><li><a href="../article/database-optimization.html">Database Optimization</a></li><li><a href="../article/database-problems.html">Fix: Database Problems</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Troubleshooting &amp; Support <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Fix: Installation Problems and Basic Requirements</a></li><li><a href="../article/installation-setup-failed.html">Fix: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: Application Control Policy Blocks DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Fix: Rectangle Drawing Tool Not Working</a></li><li><a href="../article/chart-zoom.html">Fix: Chart Zoom In and Out Not Working</a></li><li><a href="../article/license-issues.html">Fix: License and Activation Issues</a></li><li><a href="../article/diagnostic-report.html">Diagnostic Report: Before You Contact Support</a></li><li><a href="../article/get-help.html">How to Get Help (Chat, Diagnostic Report, Support)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account &amp; Billing <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Manage Your Subscriptions and Billing</a></li><li><a href="../article/move-to-new-computer.html">Move DeepCharts to a New Computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/charts-workspace.html">Charts &amp; Workspace</a></div>
+<div class="article-head"><h1>Price Chart Settings</h1>
+<p class="article-desc">Reference for the Price Settings dialog: data parameters, every bar type, volume/delta candle modes, price line, countdown, sessions and subgraph styling.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 10 min read</span>
+  <a class="btn-pdf" href="../pdf/price-chart-settings.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>The <strong>Price Settings</strong> dialog controls how the price series itself is built and drawn: how much history loads, what kind of bars form, whether candles encode volume and delta, and the extra elements layered on the chart such as the price line, countdown and session markers.</p>
+<p>This article covers the whole dialog, section by section, in the order it appears in the app. If you are looking for the quick display toggles (bar style, ETH session, countdown on/off), those live in the two-candle dropdown and are covered in <a href="./chart-display-options.html">Chart Display Options (Bar Styles, Sessions, Countdown)</a> — several of them are shortcuts to settings described here.</p>
+<h2 id="what-it-is">What it is</h2>
+<p>Price Settings is the configuration dialog of the base <strong>Price</strong> series — the candles themselves. It answers questions like &quot;how do I load more history&quot;, &quot;how do I switch to Renko or Range bars&quot;, &quot;why do my candles have different widths or colors&quot;, and &quot;how do I restrict the chart to a custom session&quot;.</p>
+<p>The chart visualizes the historical transactions of buyers and sellers based on the order book, and this dialog decides how those transactions are grouped into bars and rendered.</p>
+<h2 id="when-to-use-it">When to use it</h2>
+<ul>
+<li>Change how many days of data the chart loads, or switch between tick-based and minute-based history.</li>
+<li>Switch bar type: time bars, Range, Vol Bars, Volume, Trades, Renko, Point &amp; Figure, Delta.</li>
+<li>Enable volume-width or delta-colored candles (and fine-tune how they are colored).</li>
+<li>Configure the last-price line, bar-close countdown, daily % variation display, day-start line, or a custom session window.</li>
+<li>Control futures rollover stitching (<strong>Continuous Contract</strong>) and tick filtering.</li>
+</ul>
+<h2 id="quick-start">Quick start</h2>
+<ol>
+<li>Click the two-candle icon at the top left of the chart and choose <strong>⚙ Price Settings</strong> at the bottom of the dropdown. (Alternatively: bar-chart icon → gear on the <strong>Price</strong> row.)</li>
+<li>The dialog opens with two tabs: <strong>Parameters</strong> and <strong>Subgraphs</strong>. The left column of <strong>Parameters</strong> lists the sections: DATA, VOLUME/DELTA, PRICE LINE, COUNTDOWN, % VAR, LINE START DAY, CUSTOM TIME SESSION, DEEP RANGE.</li>
+<li>Make a change — for example set <strong>Days To Load</strong> to 30.</li>
+<li>Click <strong>Apply</strong> to see the result on the chart, then <strong>Save</strong>.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">The Price Settings dialog open on the Parameters tab, showing the left section list (DATA, VOLUME/DELTA, PRICE LINE, COUNTDOWN, % VAR, LINE START DAY, CUSTOM TIME SESSION, DEEP RANGE) and the GENERAL fields with Days To Load=10, Param Type=Minute, Param 1=5</div><div class="s-file">price-settings-parameters-tab.png</div></div></div>
+<blockquote class="callout-note">
+<p><strong>Note:</strong> Some changes (for example toggling <strong>Exclude Auction</strong>) rebuild the entire chart — the <strong>Building chart</strong> spinner while it reloads is normal.</p>
+</blockquote>
+<h2 id="how-to-read-it">How to read it</h2>
+<p>The data parameters mirror the chart's title bar: <strong>Days To Load</strong> is the same value as the data range dropdown (for example <strong>10D - BT</strong>, where BT = Based on Tick and BM = Based on Minute), and <strong>Param Type</strong> plus <strong>Param 1</strong> are the same as the timeframe dropdown (Param Type <strong>Minute</strong> with Param 1 <strong>5</strong> is a 5-minute chart). You can change these in either place — the dialog and the title bar stay in sync.</p>
+<h2 id="settings-reference">Settings reference</h2>
+<h3 id="parameters-tab-data-general">Parameters tab — DATA (GENERAL)</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Days To Load</strong></td>
+<td>Number of days of history to load into the chart. Mirrors the title-bar data range dropdown.</td>
+</tr>
+<tr>
+<td><strong>Param Type</strong></td>
+<td>The bar type — see the bar type table below.</td>
+</tr>
+<tr>
+<td><strong>Param 1</strong></td>
+<td>The bar parameter for the selected type (e.g. 5 for a 5-minute chart, ticks for Range).</td>
+</tr>
+<tr>
+<td><strong>Param 2</strong></td>
+<td>Second parameter, used by bar types that need two values — Vol Bars and Point &amp; Figure. <span class="confirm-flag">CONFIRM: whether Param 2 has any effect on other bar types</span></td>
+</tr>
+<tr>
+<td><strong>Based on minute data</strong></td>
+<td>Off by default: bars build from tick data for maximum accuracy. On: bars build from minute data. Long history ranges (3 months and up in the title-bar dropdown) use minute data.</td>
+</tr>
+<tr>
+<td><strong>Continuous Contract</strong></td>
+<td>How futures history stitches across contract months: <strong>None</strong>, <strong>Date</strong>, <strong>Volume</strong>, <strong>Adjusted Date</strong>, <strong>Adjusted Volume</strong>. Adjusted Date makes the rollover based on time expiration; the Adjusted modes remove the artificial price gap at rollover. See <a href="./symbol-rollover.html">Symbol Rollover (Change Contract Month)</a>.</td>
+</tr>
+<tr>
+<td><strong>Exclude Auction (Tick Data)</strong></td>
+<td>Default off. Removes opening/closing auction data from the chart's calculations — exact filtering behavior may vary <span class="confirm-flag">CONFIRM: precisely which auction prints are excluded</span>. Same setting as the <strong>Auction filter</strong> toggle in the two-candle dropdown; toggling it rebuilds the chart.</td>
+</tr>
+<tr>
+<td><strong>Filter Bad Ticks</strong></td>
+<td>Default on. Filters out bad ticks from the series <span class="confirm-flag">CONFIRM: what qualifies as a bad tick and when to disable</span>.</td>
+</tr>
+<tr>
+<td><strong>Trade Type</strong></td>
+<td>Default <strong>All</strong>. <span class="confirm-flag">CONFIRM: other Trade Type options and what each restricts</span></td>
+</tr>
+<tr>
+<td><strong>RTH - only</strong></td>
+<td>Default off. Restricts the chart to Regular Trading Hours — the inverse of the <strong>ETH Session</strong> toggle in the two-candle dropdown (same setting, two places).</td>
+</tr>
+<tr>
+<td><strong>Bid/Ask type</strong></td>
+<td>Default <strong>Bid ask</strong>. <span class="confirm-flag">CONFIRM: other options and their effect on the chart</span></td>
+</tr>
+</tbody>
+</table>
+<h4>Bar types (Param Type)</h4>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>How bars form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Second / Minute / Daily / Weekly / Monthly</strong></td>
+<td>Each bar covers a fixed time period.</td>
+</tr>
+<tr>
+<td><strong>Range</strong></td>
+<td>Not time-dependent — Param 1 defines the range in ticks of each individual bar (e.g. an 8-tick range triggers a new bar).</td>
+</tr>
+<tr>
+<td><strong>Vol Bars</strong></td>
+<td>Two parameters: <strong>Target</strong> — the minimum tick threshold the bar must reach — and <strong>Reverse</strong> — the opposite-direction ticks needed to start a new bar.</td>
+</tr>
+<tr>
+<td><strong>Volume</strong></td>
+<td>Each bar closes once a maximum volume threshold is reached — not based on time or price.</td>
+</tr>
+<tr>
+<td><strong>Trades</strong></td>
+<td>Based on the maximum number of transactions per bar, rather than contracts traded.</td>
+</tr>
+<tr>
+<td><strong>Renko</strong></td>
+<td>Like Range, but the move is measured from the body of the previous candle (e.g. a new bar when price moves 10 ticks from the previous body).</td>
+</tr>
+<tr>
+<td><strong>Point Figure</strong></td>
+<td>Two parameters: box size and reversal amount.</td>
+</tr>
+<tr>
+<td><strong>Delta</strong></td>
+<td>Each bar forms on the delta, in absolute value — the difference between aggressive buys and sells. See <a href="./orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a>.</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-tip">
+<p><strong>Tip:</strong> On non-time bar types, time-anchored features (session markers, time-based indicators) behave differently, and bar counts no longer correspond to clock time. Keep that in mind when comparing charts.</p>
+</blockquote>
+<h3 id="parameters-tab-data-tick-grouping-and-aggregated-trades">Parameters tab — DATA (TICK GROUPING and AGGREGATED TRADES)</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tick Grouping — Mode</strong></td>
+<td>Default <strong>Automatic</strong>; a <strong>Fixed value</strong> field (default 1) is used with the fixed mode. Groups incoming ticks before charting <span class="confirm-flag">CONFIRM: exact tick-grouping behavior and when a fixed value helps</span>.</td>
+</tr>
+<tr>
+<td><strong>Aggregated Trades — Price Mode</strong></td>
+<td>Default <strong>Last</strong>. <span class="confirm-flag">CONFIRM: available Price Mode options and their effect on aggregated trade pricing</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameters-tab-volume-delta">Parameters tab — VOLUME/DELTA</h3>
+<p>These settings power the volume-width and delta-colored candle modes. The <strong>Equi-Volume Bars</strong> and <strong>Delta-Volume Bars</strong> toggles in the two-candle dropdown are shortcuts to the two master switches here.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Width based volume</strong></td>
+<td>Candle width scales with the bar's volume relative to other candles — wider = more volume. Lets you see at a glance whether a move had real volume behind it or the book was thin.</td>
+</tr>
+<tr>
+<td><strong>% max width based volume</strong></td>
+<td>Maximum candle width used by the scaling (100 as configured in the dialog).</td>
+</tr>
+<tr>
+<td><strong>Color based on delta</strong></td>
+<td>Candle color varies with the bar's delta — low intensity = low delta, high intensity = high delta.</td>
+</tr>
+<tr>
+<td><strong>Border color mode</strong></td>
+<td><strong>Fixed delta</strong>, <strong>Fading delta</strong> or <strong>Bar direction</strong> — the border-coloring strategy <span class="confirm-flag">CONFIRM: per-option behavior</span>.</td>
+</tr>
+<tr>
+<td><strong>Delta input</strong></td>
+<td><strong>Volume</strong>, <strong>Trades</strong> or <strong>Delta volume</strong> — what feeds the delta coloring <span class="confirm-flag">CONFIRM: per-option behavior</span>.</td>
+</tr>
+<tr>
+<td><strong>Color mode</strong></td>
+<td><strong>Fixed</strong> or <strong>Fading color</strong> <span class="confirm-flag">CONFIRM: exact visual difference</span>.</td>
+</tr>
+<tr>
+<td><strong>Delta fading mode</strong></td>
+<td><strong>Delta volume</strong> or <strong>Delta percentual</strong> <span class="confirm-flag">CONFIRM: exact difference</span>.</td>
+</tr>
+<tr>
+<td><strong>Std dev for coloring</strong></td>
+<td>2.00 as configured <span class="confirm-flag">CONFIRM: how the standard deviation scales the coloring</span>.</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">A chart with both Width based volume and Color based on delta enabled — candles of visibly different widths and green/purple color intensities — next to the VOLUME/DELTA section of the Price Settings dialog</div><div class="s-file">price-settings-volume-delta.png</div></div></div>
+<h3 id="parameters-tab-price-line">Parameters tab — PRICE LINE</h3>
+<p>The dashed line marking the current price.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Shows the current price line. On by default.</td>
+</tr>
+<tr>
+<td><strong>Line Color / Line Style / Line Width</strong></td>
+<td>Styling. Styles: <strong>Solid, Dash, Dot, Dash dot, Dash dot dot</strong> (default Dash, width 1).</td>
+</tr>
+<tr>
+<td><strong>Extend line to left</strong></td>
+<td>Default off. When on, the line extends across the whole chart instead of only to the right of the last bar.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameters-tab-countdown">Parameters tab — COUNTDOWN</h3>
+<p>The box counting down to the current bar's close (a 5-minute chart counts down 5 minutes per candle).</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Shows the countdown box. Also toggled from the two-candle dropdown (<strong>Countdown timer</strong>).</td>
+</tr>
+<tr>
+<td><strong>Mode</strong></td>
+<td><strong>Axis</strong> — attached to the price scale — or <strong>Floating</strong> — a free box you drag anywhere on the chart.</td>
+</tr>
+<tr>
+<td><strong>Text Size / Text Color / BackColor</strong></td>
+<td>Styling (text size 18 as configured).</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-note">
+<p><strong>Note:</strong> On a delayed or idle feed the countdown can sit at 00:00 — the feed is not delivering live ticks; nothing is broken.</p>
+</blockquote>
+<h3 id="parameters-tab-var">Parameters tab — % VAR</h3>
+<p>Displays the percent variation from the previous session's closing price (the same daily %-change that the <strong>%V</strong> readout field reports).</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Default off. Shows the % variation element (moveable).</td>
+</tr>
+<tr>
+<td><strong>Text Size / Pos. Text Color / Neg. Text Color / BackColor</strong></td>
+<td>Styling — positive change in the positive color (green by default), negative in the negative color (red by default).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameters-tab-line-start-day">Parameters tab — LINE START DAY</h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Default off. Draws a vertical line at the start of each session/day, plotted at exchange time — on NQ that is 18:00 New York time; with a different chart timezone it still falls where 18:00 NY converts to.</td>
+</tr>
+<tr>
+<td><strong>Line Color / Line Style / Line Width</strong></td>
+<td>Styling (same five line styles as the price line).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="parameters-tab-custom-time-session-exchange-time-zone">Parameters tab — CUSTOM TIME SESSION (EXCHANGE TIME ZONE)</h3>
+<p>Restricts the chart to a user-defined session window — like the ETH/RTH switch, but with your own hours. Example: <strong>Ini Time</strong> 09:30:00 and <strong>End Time</strong> 11:30:00 shows only the first two hours after the open. Times are in the exchange's timezone.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Default off.</td>
+</tr>
+<tr>
+<td><strong>Ini Time / End Time</strong></td>
+<td>Session start and end boundaries.</td>
+</tr>
+<tr>
+<td><strong>Use ini time as base for minute tf.</strong></td>
+<td><span class="confirm-flag">CONFIRM: what this toggle changes about minute-bar anchoring</span></td>
+</tr>
+</tbody>
+</table>
+<p>See <a href="./understanding-market-structure-sessions.html">Understanding Market Structure and Sessions (RTH/ETH, Rollover)</a> for why session boundaries matter.</p>
+<h3 id="parameters-tab-deep-range">Parameters tab — DEEP RANGE</h3>
+<p>Bar filters for the Deep Range feature <span class="confirm-flag">CONFIRM: purpose and behavior of the DEEP RANGE section</span>. Fields as they appear: <strong>TIME/VOLUME</strong> — <strong>Mode</strong> (<strong>Disabled</strong>, <strong>Time and volume</strong>, <strong>Time or volume</strong>; default Disabled), <strong>Time-Minimum(s)</strong>, <strong>Time-Maximum(s)</strong>, <strong>Volume-Minimum</strong>, <strong>Volume-Maximum</strong>; <strong>WICK VOLUME</strong> — <strong>Custom mode</strong> (default None), <strong>Ticks</strong> (default 1), <strong>Minimum volume</strong> (default 1.00).</p>
+<h3 id="subgraphs-tab">Subgraphs tab</h3>
+<p>Controls how the price series itself is drawn and labeled on the axis.</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bull/Bear Border and Fill colors</strong></td>
+<td>The candle colors for up and down bars.</td>
+</tr>
+<tr>
+<td><strong>Subgraph Style</strong></td>
+<td><strong>Line</strong>, <strong>Candlestick</strong> (default), <strong>OHLC</strong>, <strong>Hidden</strong>, <strong>CandleBody</strong> <span class="confirm-flag">CONFIRM: how CandleBody differs from Candlestick</span>.</td>
+</tr>
+<tr>
+<td><strong>Auto Color</strong></td>
+<td><strong>None</strong> (default), <strong>Slope</strong>, <strong>+/-</strong> — automatic coloring rules <span class="confirm-flag">CONFIRM: exact behavior of Slope and +/- modes</span>.</td>
+</tr>
+<tr>
+<td><strong>Line Style / Line Width</strong></td>
+<td><strong>Solid</strong> (default) or <strong>Dash</strong>, width 1 — used when the style is Line.</td>
+</tr>
+<tr>
+<td><strong>Short Name</strong></td>
+<td>Label text for the series.</td>
+</tr>
+<tr>
+<td><strong>Name Label / Value Label</strong></td>
+<td>Show the series name / current value on the axis (defaults: name off, value on).</td>
+</tr>
+<tr>
+<td><strong>Name Background / Value Background</strong></td>
+<td>Background fill behind those labels (defaults: name off, value on).</td>
+</tr>
+<tr>
+<td><strong>Chart color for marker</strong></td>
+<td>Default off <span class="confirm-flag">CONFIRM: exact effect</span>.</td>
+</tr>
+<tr>
+<td><strong>Include on Auto Center</strong></td>
+<td>Default on — whether this series is considered when the chart auto-centers the visible price range <span class="confirm-flag">CONFIRM: exact Auto Center behavior</span>.</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">The Price Settings dialog on the Subgraphs tab showing the Price row selected, the Bull/Bear color swatches, Subgraph Style dropdown open with Line / Candlestick / OHLC / Hidden / CandleBody visible</div><div class="s-file">price-settings-subgraphs-tab.png</div></div></div>
+<h3 id="dialog-footer">Dialog footer</h3>
+<ul>
+<li><strong>Chart area</strong> selector (top): which chart area the series renders in.</li>
+<li><strong>Indicator Template</strong> — save or load this configuration for reuse on other charts.</li>
+<li><strong>Protected</strong> toggle <span class="confirm-flag">CONFIRM: what the Protected toggle protects</span>.</li>
+<li><strong>Apply</strong> / <strong>Save</strong> — Apply shows the changes on the chart; Save stores them <span class="confirm-flag">CONFIRM: exact difference between Apply and Save</span>.</li>
+</ul>
+<h2 id="tips-and-common-mistakes">Tips and common mistakes</h2>
+<ul>
+<li><strong>Chart rebuilds after a change are normal.</strong> Data-level settings (Exclude Auction, bar type, days to load) trigger the <strong>Building chart</strong> spinner — wait for it to finish.</li>
+<li><strong>Different chart than a colleague's?</strong> Compare <strong>RTH - only</strong> / ETH session state, bar type, and <strong>Days To Load</strong> before anything else.</li>
+<li><strong>Price jumps at contract rollover on long histories</strong> — switch <strong>Continuous Contract</strong> to an Adjusted mode to remove the artificial gap.</li>
+<li><strong>Candles suddenly have odd widths or washed-out colors</strong> — <strong>Width based volume</strong> or <strong>Color based on delta</strong> is on (possibly toggled from the two-candle dropdown as Equi-Volume/Delta-Volume Bars).</li>
+<li><strong>Loading years of history?</strong> Ranges of 3 months and longer are minute-based (BM). Tick-level detail is only available on the shorter tick-based ranges.</li>
+<li>Settings changed here affect this chart only. To reuse a configuration, save it via <strong>Indicator Template</strong> or save the whole chart as a template — see <a href="./templates-workspaces.html">Templates and Workspaces</a>.</li>
+</ul>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="./chart-window.html">The Chart Window</a></li>
+<li><a href="./chart-display-options.html">Chart Display Options (Bar Styles, Sessions, Countdown)</a></li>
+<li><a href="./understanding-market-structure-sessions.html">Understanding Market Structure and Sessions (RTH/ETH, Rollover)</a></li>
+<li><a href="./symbol-rollover.html">Symbol Rollover (Change Contract Month)</a></li>
+<li><a href="./orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a></li>
+<li><a href="./different-types-of-input.html">Different Types of Input Data for Indicators</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./chart-window.html"><div class="pn-lbl">← Previous</div><div class="pn-title">The Chart Window</div></a><a class="next" href="./chart-display-options.html"><div class="pn-lbl">Next →</div><div class="pn-title">Chart Display Options (Bar Styles, Sessions, Countdown)</div></a></div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#what-it-is">What it is</a></li><li class="lv2"><a href="#when-to-use-it">When to use it</a></li><li class="lv2"><a href="#quick-start">Quick start</a></li><li class="lv2"><a href="#how-to-read-it">How to read it</a></li><li class="lv2"><a href="#settings-reference">Settings reference</a></li><li class="lv3"><a href="#parameters-tab-data-general">Parameters tab — DATA (GENERAL)</a></li><li class="lv3"><a href="#parameters-tab-data-tick-grouping-and-aggregated-trades">Parameters tab — DATA (TICK GROUPING and AGGREGATED TRADES)</a></li><li class="lv3"><a href="#parameters-tab-volume-delta">Parameters tab — VOLUME/DELTA</a></li><li class="lv3"><a href="#parameters-tab-price-line">Parameters tab — PRICE LINE</a></li><li class="lv3"><a href="#parameters-tab-countdown">Parameters tab — COUNTDOWN</a></li><li class="lv3"><a href="#parameters-tab-var">Parameters tab — % VAR</a></li><li class="lv3"><a href="#parameters-tab-line-start-day">Parameters tab — LINE START DAY</a></li><li class="lv3"><a href="#parameters-tab-custom-time-session-exchange-time-zone">Parameters tab — CUSTOM TIME SESSION (EXCHANGE TIME ZONE)</a></li><li class="lv3"><a href="#parameters-tab-deep-range">Parameters tab — DEEP RANGE</a></li><li class="lv3"><a href="#subgraphs-tab">Subgraphs tab</a></li><li class="lv3"><a href="#dialog-footer">Dialog footer</a></li><li class="lv2"><a href="#tips-and-common-mistakes">Tips and common mistakes</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+<script src="../assets/widgets.js"></script>
+</body></html>

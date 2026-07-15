@@ -1,0 +1,70 @@
+{
+ "batch": "indicators-4",
+ "notes": "Indicator reference articles (template 1). For EACH: fetch the live article at https://www.deepcharts.com/helpcenter/article/<old-slug> (from source LIVE:<old-slug>; percent-encode parentheses %28 %29 and the registered mark %C2%AE if the fetch fails) and rewrite to: What it is (2-3 plain sentences) / When to use it (3-4 bullets) / Quick start (add to chart + a sensible starter configuration) / How to read it (interpretation guidance!) / Settings reference (EVERY setting from the live article grouped as in the dialog - keep real setting names and any defaults the live article states; NEVER invent settings or defaults; if the live article omits a default just describe the setting) / Tips and common mistakes / Related articles. Add one screenshot placeholder showing the indicator on a chart and one of its settings dialog. Cross-link [[different-types-of-input]] and [[indicator-layout]] in Related, plus the family concept article ([[orderflow-101]] for delta tools, [[understanding-volume-profile]] for profile tools, [[understanding-auction-theory]] for auction tools).",
+ "articles": [
+  {
+   "slug": "tillson-t3",
+   "title": "Tillson T3",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:tillson-t3",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  },
+  {
+   "slug": "zig-zag",
+   "title": "Zig Zag",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:zig-zag",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  },
+  {
+   "slug": "donchian-channel",
+   "title": "Donchian Channel",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:donchian-channel",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  },
+  {
+   "slug": "adx",
+   "title": "Average Directional Index (ADX)",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:average-directional-index",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  },
+  {
+   "slug": "aroon-up-down",
+   "title": "Aroon Up/Down",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:aroon-up-down",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  },
+  {
+   "slug": "aroon-oscillator",
+   "title": "Aroon Oscillator",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:aroon-oscillator",
+   "category": "Indicators & Analysis",
+   "subcategory": "Trend"
+  },
+  {
+   "slug": "rsi",
+   "title": "Relative Strength Index (RSI)",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:relative-strength-index",
+   "category": "Indicators & Analysis",
+   "subcategory": "Momentum & Oscillators"
+  }
+ ],
+ "id": "21-indicators-4"
+}

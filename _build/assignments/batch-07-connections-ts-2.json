@@ -1,0 +1,52 @@
+{
+ "batch": "connections-ts-2",
+ "notes": "Troubleshooting template articles. Ground truth: fetch the LIVE article for the real causes/fixes and rewrite to the template (Symptom / Most likely cause / Quick fix / If that didn't work / Still stuck / Prevent this). Order fixes least-destructive first. Every article: 'Still stuck' section links [[diagnostic-report]] and [[get-help]]; 'Prevent this' links its setup guide ([[connect-dxfeed]] for dxFeed errors, [[connect-rithmic]] / [[rtrader-pro-plugin]] for Rithmic errors, [[connect-data-feed]] generally, [[sign-market-data-agreement]] for agreement-related, [[symbol-manage]] where mapping is the cause). data-delayed-lagging is NEW - build the checklist from: /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/troubleshooting (if present) + these verified facts: confirm delay vs disconnect (feed dot, delayed banner), ? > Contact Support diagnostic ping/download speed per region, dxFeed DOM Type MBO->MBP on slow lines, Rithmic gateway selection by speed test, R Trader Pro performance sliders, LDT badge = loading from disk vs DWT = downloading.",
+ "articles": [
+  {
+   "slug": "fix-rithmic-expert-not-attached",
+   "title": "Fix: Rithmic \u2014 Expert Not Attached",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:rithmic-expert-not-attached",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  },
+  {
+   "slug": "fix-dxfeed-dll",
+   "title": "Fix: Unable to Load DLL DXFeed_64.dll",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:unable-to-load",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  },
+  {
+   "slug": "fix-data-access-suspended",
+   "title": "Fix: dxFeed DATA_ACCESS_SUSPENDED",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:error-dxfeed-data-access-suspended",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  },
+  {
+   "slug": "fix-myfundedfutures-failed",
+   "title": "Fix: dxfeed.myfundedfutures.com Failed",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:you-need-to-sign-the-datafeed",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  },
+  {
+   "slug": "fix-system-cannot-find-file",
+   "title": "Fix: The System Cannot Find the File Specified",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:system-cannot-find",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  }
+ ],
+ "id": "07-connections-ts-2"
+}

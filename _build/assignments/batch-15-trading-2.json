@@ -1,0 +1,52 @@
+{
+ "batch": "trading-2",
+ "notes": "Ground truth: /Users/flutter/Desktop/ai-support-system/docs/ui-map-02*.csv (trading panel rows), /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/deepchart_platform/trading/trading_execution.yaml, risk_manager.yaml, sim_and_trade_copier.yaml. Verified trading-panel facts you may state: order grid MKT/BID/ASK/LMT/STP/STP LMT per side; BID/ASK place limit at best bid/ask offset by 'Ticks diff.'; Breakeven moves stop to entry +/- Breakeven-Ticks (Settings > Trading); Cancel = cancel pending orders, Flat = close position, Cancel and Flat = both - all scoped to the panel's symbol; OCO block SL/TP in ticks or money with BE/Trail; Server vs Client OCO (bracket lives serverside vs in-app; Rithmic + Trade Copier requires CLIENT); MULTI strategies via gear editor; red (!) means strategy qty != panel Qty (blocks execution); Link pending orders pairs an existing SL+TP into an OCO. dom-trading-chart: bottom-bar DOM Trading radio; green column click = BUY (LMT/STP auto by level), red = SELL, D: label = position P/L, CANCEL ALL / FLAT ALL; requires Trading Enabled. Check /Users/flutter/Desktop/ai-support-system/docs/ui-maps-owner-answers-needed.csv for unanswered rows (e.g. ALL-button scope) and hedge those. For LIVE rewrites fetch the live article too and keep its correct facts.",
+ "articles": [
+  {
+   "slug": "orders-window",
+   "title": "Orders Window",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:orders-window",
+   "category": "Trading & Orders",
+   "subcategory": ""
+  },
+  {
+   "slug": "portfolio-wallet",
+   "title": "Portfolio (Wallet)",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:portfolio",
+   "category": "Trading & Orders",
+   "subcategory": ""
+  },
+  {
+   "slug": "risk-manager",
+   "title": "Risk Manager",
+   "type": "howto",
+   "difficulty": "intermediate",
+   "source": "LIVE:risk-manager",
+   "category": "Trading & Orders",
+   "subcategory": ""
+  },
+  {
+   "slug": "trade-copier",
+   "title": "How to Set Up the Trade Copier",
+   "type": "howto",
+   "difficulty": "advanced",
+   "source": "LIVE:how-to-setup-deepcharts-trade-copier",
+   "category": "Trading & Orders",
+   "subcategory": ""
+  },
+  {
+   "slug": "performance-analysis",
+   "title": "Performance Analysis (Signal Performance)",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:performance-analysis",
+   "category": "Trading & Orders",
+   "subcategory": ""
+  }
+ ],
+ "id": "15-trading-2"
+}

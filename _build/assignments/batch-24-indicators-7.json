@@ -1,0 +1,70 @@
+{
+ "batch": "indicators-7",
+ "notes": "Indicator reference articles (template 1). For EACH: fetch the live article at https://www.deepcharts.com/helpcenter/article/<old-slug> (from source LIVE:<old-slug>; percent-encode parentheses %28 %29 and the registered mark %C2%AE if the fetch fails) and rewrite to: What it is (2-3 plain sentences) / When to use it (3-4 bullets) / Quick start (add to chart + a sensible starter configuration) / How to read it (interpretation guidance!) / Settings reference (EVERY setting from the live article grouped as in the dialog - keep real setting names and any defaults the live article states; NEVER invent settings or defaults; if the live article omits a default just describe the setting) / Tips and common mistakes / Related articles. Add one screenshot placeholder showing the indicator on a chart and one of its settings dialog. Cross-link [[different-types-of-input]] and [[indicator-layout]] in Related, plus the family concept article ([[orderflow-101]] for delta tools, [[understanding-volume-profile]] for profile tools, [[understanding-auction-theory]] for auction tools).",
+ "articles": [
+  {
+   "slug": "adr-target",
+   "title": "Average Daily Range Target (ADR Target)",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:average-daily-range-target-(adr-target)",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volatility & Bands"
+  },
+  {
+   "slug": "volume",
+   "title": "Volume",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:volume",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  },
+  {
+   "slug": "delta-bar",
+   "title": "Delta Bar",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:delta-bar",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  },
+  {
+   "slug": "delta-highlight",
+   "title": "Delta % Highlight",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:delta-highlight",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  },
+  {
+   "slug": "delta-cumulative-candlestick",
+   "title": "Delta Cumulative Candlestick",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:delta-cumulative-candlestick",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  },
+  {
+   "slug": "delta-cumulative-histogram",
+   "title": "Delta Cumulative Histogram",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:delta-cumulative-histogram",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  },
+  {
+   "slug": "volume-swing",
+   "title": "Volume Swing",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:volume-swing",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  }
+ ],
+ "id": "24-indicators-7"
+}

@@ -1,0 +1,70 @@
+{
+ "batch": "indicators-8",
+ "notes": "Indicator reference articles (template 1). For EACH: fetch the live article at https://www.deepcharts.com/helpcenter/article/<old-slug> (from source LIVE:<old-slug>; percent-encode parentheses %28 %29 and the registered mark %C2%AE if the fetch fails) and rewrite to: What it is (2-3 plain sentences) / When to use it (3-4 bullets) / Quick start (add to chart + a sensible starter configuration) / How to read it (interpretation guidance!) / Settings reference (EVERY setting from the live article grouped as in the dialog - keep real setting names and any defaults the live article states; NEVER invent settings or defaults; if the live article omits a default just describe the setting) / Tips and common mistakes / Related articles. Add one screenshot placeholder showing the indicator on a chart and one of its settings dialog. Cross-link [[different-types-of-input]] and [[indicator-layout]] in Related, plus the family concept article ([[orderflow-101]] for delta tools, [[understanding-volume-profile]] for profile tools, [[understanding-auction-theory]] for auction tools).",
+ "articles": [
+  {
+   "slug": "volume-delta-sprint",
+   "title": "Volume/Delta Sprint",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:volume-delta-sprint",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  },
+  {
+   "slug": "chaikin-ad",
+   "title": "Chaikin Accumulation/Distribution",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:chaikin-accumulation-distribution",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  },
+  {
+   "slug": "big-trades",
+   "title": "Big Trades",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:big-trades",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  },
+  {
+   "slug": "speed-of-tape",
+   "title": "Speed of Tape",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:speed-of-tape",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  },
+  {
+   "slug": "speed-of-tape-instant",
+   "title": "Speed of Tape (Instant)",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:speed-of-tape-(instant)",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  },
+  {
+   "slug": "market-statistics",
+   "title": "Market Statistics",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:market-statistics",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  },
+  {
+   "slug": "on-candle-stats",
+   "title": "On Candle Stats",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:on-candle-stats",
+   "category": "Indicators & Analysis",
+   "subcategory": "Volume & Delta"
+  }
+ ],
+ "id": "25-indicators-8"
+}

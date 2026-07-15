@@ -1,0 +1,43 @@
+{
+ "batch": "getting-started-2",
+ "notes": "Ground truth: /Users/flutter/Desktop/ai-support-system/docs/ui-map-01-menus.csv (if present, else docs/ui-map-01*.csv) for menus; /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/deepchart_platform/mechanics/setup_and_customization.yaml and data_loading_and_chart_basics.yaml; /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/support_matrix.yaml for feed options. welcome-to-deepcharts: friendly product tour of the main bar (New/Options/Trading/Window/About us menus), what each window type is for, and where to go next. system-requirements: Windows 10/11 64-bit, .NET, RAM/CPU/disk guidance, antivirus notes - if exact specs are unknown write reasonable requirements WITH a placeholder note '[CONFIRM: exact minimum specs with team]'. free-delayed-data-feed: the startup-wizard '15 minutes delayed data powered by dxFeed' option, adding it later via Feed Settings source 'dxFeed - 15m delayed', no credentials/agreement needed, map exchanges in Symbol Manage, the delayed banner, limitations vs live. quick-start-first-trade: capstone walking install -> license -> wizard -> feed -> Symbol Manage -> first chart -> first indicator -> enable trading panel Broker=SIM -> place first bracket order; link out at each step.",
+ "articles": [
+  {
+   "slug": "buy-data-feed",
+   "title": "How to Buy a Data Feed and Get Your Credentials",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "LIVE:buying-data-feed",
+   "category": "Getting Started",
+   "subcategory": ""
+  },
+  {
+   "slug": "first-chart",
+   "title": "Open Your First Chart",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "LIVE:open-a-new-price-chart",
+   "category": "Getting Started",
+   "subcategory": ""
+  },
+  {
+   "slug": "simulation-accounts",
+   "title": "Trading Accounts and Simulation",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "LIVE:trading-accounts-simulation",
+   "category": "Getting Started",
+   "subcategory": ""
+  },
+  {
+   "slug": "quick-start-first-trade",
+   "title": "Quick Start: From Install to Your First Trade",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "NEW",
+   "category": "Getting Started",
+   "subcategory": ""
+  }
+ ],
+ "id": "02-getting-started-2"
+}

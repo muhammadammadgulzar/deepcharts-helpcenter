@@ -1,0 +1,1394 @@
+{
+ "site": {
+  "name": "DeepCharts Help Center",
+  "tagline": "Everything you need to master DeepCharts \u2014 from first install to advanced orderflow."
+ },
+ "categories": [
+  {
+   "name": "Getting Started",
+   "slug": "getting-started",
+   "icon": "\ud83d\ude80",
+   "description": "Install DeepCharts, connect data, and make your first trade.",
+   "subcategories": [
+    {
+     "name": "",
+     "articles": [
+      {
+       "slug": "welcome-to-deepcharts",
+       "title": "Welcome to DeepCharts: Platform Tour",
+       "type": "concept",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "system-requirements",
+       "title": "System Requirements",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "install-deepcharts",
+       "title": "How to Install DeepCharts and Activate Your License",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:installation-and-first-configuration"
+      },
+      {
+       "slug": "free-delayed-data-feed",
+       "title": "Use the Free 15-Minute Delayed Data Feed",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "buy-data-feed",
+       "title": "How to Buy a Data Feed and Get Your Credentials",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:buying-data-feed"
+      },
+      {
+       "slug": "first-chart",
+       "title": "Open Your First Chart",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:open-a-new-price-chart"
+      },
+      {
+       "slug": "simulation-accounts",
+       "title": "Trading Accounts and Simulation",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:trading-accounts-simulation"
+      },
+      {
+       "slug": "quick-start-first-trade",
+       "title": "Quick Start: From Install to Your First Trade",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "NEW"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Connections & Data Feeds",
+   "slug": "connections-data-feeds",
+   "icon": "\ud83d\udd0c",
+   "description": "Connect every supported broker, prop firm and data feed \u2014 and fix connection problems.",
+   "subcategories": [
+    {
+     "name": "Setup",
+     "articles": [
+      {
+       "slug": "compatibility-guide",
+       "title": "Supported Brokers, Prop Firms and Data Feeds",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "connect-data-feed",
+       "title": "How to Connect a Data Feed (Feed Settings)",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:data-feed-setting"
+      },
+      {
+       "slug": "symbol-manage",
+       "title": "Symbol Manage: Subscribe Exchanges and Map Your Feed",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "sign-market-data-agreement",
+       "title": "Sign Your Market Data Agreement",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "connect-dxfeed",
+       "title": "How to Connect a dxFeed Data Feed",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:how-to-connect-deepcharts-dxfeed-datafeed"
+      },
+      {
+       "slug": "connect-rithmic",
+       "title": "How to Connect a Rithmic Data Feed",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:how-to-connect-deepcharts-rithmic-datafeed"
+      },
+      {
+       "slug": "rtrader-pro-plugin",
+       "title": "Connect Rithmic Using the RTrader Pro Plugin",
+       "type": "howto",
+       "difficulty": "intermediate",
+       "source": "LIVE:connecting-rithmic-using-rtrader-pro-plugin"
+      },
+      {
+       "slug": "connect-rithmic-prop-firm",
+       "title": "Connect Any Rithmic Prop-Firm Account (Server Table)",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "connect-apex",
+       "title": "Connect Apex Trader Funding",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "connect-dxfeed-prop-firm",
+       "title": "Connect a Prop-Firm dxFeed Account (MFF, Aqua, Goat...)",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "connect-cqg",
+       "title": "How to Connect CQG (AMP, Optimus, EdgeClear, Ironbeam...)",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "connect-interactive-brokers",
+       "title": "Connect Interactive Brokers (Execution Only)",
+       "type": "howto",
+       "difficulty": "intermediate",
+       "source": "LIVE:interactive-brokers"
+      },
+      {
+       "slug": "competition-connect",
+       "title": "DeepCharts Competition: Join and Connect",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:deepcharts-competition-how-to-join-connect"
+      },
+      {
+       "slug": "end-of-day-data",
+       "title": "Connect Historical Data (End of Day)",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:end-of-day-data"
+      },
+      {
+       "slug": "manage-feed-connections",
+       "title": "Manage and Switch Between Feed Connections",
+       "type": "howto",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      }
+     ]
+    },
+    {
+     "name": "Troubleshooting",
+     "articles": [
+      {
+       "slug": "feed-connected-chart-not-moving",
+       "title": "Fix: Live Feed Connected but Chart Is Not Moving",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:live-feed-connected-but-price-chart-is-not-moving"
+      },
+      {
+       "slug": "fix-unable-to-establish-connection",
+       "title": "Fix: Connection Failed \u2014 Unable to Establish Connection",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:connection-failed-unable-to-establish-connection"
+      },
+      {
+       "slug": "fix-username-password",
+       "title": "Fix: Connection Failed \u2014 Check Username and Password",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:connection-failed-please-make-sure-you-entered"
+      },
+      {
+       "slug": "fix-bad-server",
+       "title": "Fix: Connection Failed \u2014 Bad Server",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:connection-failed-bad-server"
+      },
+      {
+       "slug": "fix-log-in-using-rtrader",
+       "title": "Fix: Please Log In Using R Trader or R Trader Pro",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:connection-failed-please-log-in-using"
+      },
+      {
+       "slug": "fix-rithmic-expert-not-attached",
+       "title": "Fix: Rithmic \u2014 Expert Not Attached",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:rithmic-expert-not-attached"
+      },
+      {
+       "slug": "fix-dxfeed-dll",
+       "title": "Fix: Unable to Load DLL DXFeed_64.dll",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:unable-to-load"
+      },
+      {
+       "slug": "fix-data-access-suspended",
+       "title": "Fix: dxFeed DATA_ACCESS_SUSPENDED",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:error-dxfeed-data-access-suspended"
+      },
+      {
+       "slug": "fix-myfundedfutures-failed",
+       "title": "Fix: dxfeed.myfundedfutures.com Failed",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:you-need-to-sign-the-datafeed"
+      },
+      {
+       "slug": "fix-system-cannot-find-file",
+       "title": "Fix: The System Cannot Find the File Specified",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:system-cannot-find"
+      },
+      {
+       "slug": "connection-lost-opening-chart",
+       "title": "Fix: Connection Lost When Opening a Chart",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:connection-lost-when-opening-a-chart"
+      },
+      {
+       "slug": "symbol-subscription-issue",
+       "title": "Fix: Symbol Subscription Issue",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:symbol-subscription-issue"
+      },
+      {
+       "slug": "app-crashes-saving-feed",
+       "title": "Fix: App Crashes When Saving Feed Settings",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:app-crashes-when-saving"
+      },
+      {
+       "slug": "gaps-in-price",
+       "title": "Fix: Gaps in Price on Charts",
+       "type": "troubleshooting",
+       "difficulty": "intermediate",
+       "source": "LIVE:gaps-in-price"
+      },
+      {
+       "slug": "data-delayed-lagging",
+       "title": "Fix: Charts Lagging or Data Delayed (Checklist)",
+       "type": "troubleshooting",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Charts & Workspace",
+   "slug": "charts-workspace",
+   "icon": "\ud83d\udcca",
+   "description": "Master the chart window, templates, drawing tools and your workspace.",
+   "subcategories": [
+    {
+     "name": "",
+     "articles": [
+      {
+       "slug": "chart-window",
+       "title": "The Chart Window",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:chart-window"
+      },
+      {
+       "slug": "price-chart-settings",
+       "title": "Price Chart Settings",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "MERGE:price-settings+price-chart-settings"
+      },
+      {
+       "slug": "chart-display-options",
+       "title": "Chart Display Options (Bar Styles, Sessions, Countdown)",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "drawing-tools",
+       "title": "Drawing Tools and Annotations",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "templates-workspaces",
+       "title": "Templates and Workspaces",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:templates-and-workspaces"
+      },
+      {
+       "slug": "quick-chart-templates",
+       "title": "Quick Chart Templates (OF-VP, D-VP, W-VP...)",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "link-windows",
+       "title": "Link Windows with Color Groups",
+       "type": "howto",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "replay-data",
+       "title": "Replay Market Data",
+       "type": "howto",
+       "difficulty": "intermediate",
+       "source": "LIVE:replay-data"
+      },
+      {
+       "slug": "customize-language-theme-sounds",
+       "title": "Customize Language, Theme and Notification Sounds",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:how-to-customize-language"
+      },
+      {
+       "slug": "keyboard-shortcuts",
+       "title": "How to Configure Keyboard Shortcuts",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:configure-keyboard-shortcuts"
+      },
+      {
+       "slug": "keyboard-shortcuts-reference",
+       "title": "Keyboard Shortcuts Reference",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "multi-monitor-windows",
+       "title": "Arrange Windows Across Monitors (and Recover Off-Screen Windows)",
+       "type": "howto",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Platform Windows",
+   "slug": "platform-windows",
+   "icon": "\ud83e\ude9f",
+   "description": "The dedicated analysis windows: Time & Sales, DOM, profiles, scanner and correlation.",
+   "subcategories": [
+    {
+     "name": "",
+     "articles": [
+      {
+       "slug": "adv-time-and-sales",
+       "title": "Advanced Time And Sales (The Tape)",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "advanced-dom",
+       "title": "Advanced DOM Window",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "profile-chart-window",
+       "title": "Profile Chart Window (TPO and Volume Profiles)",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "scanner-window",
+       "title": "Market Scanner",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "correlation-viewer",
+       "title": "Correlation Viewer",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Trading & Orders",
+   "slug": "trading-orders",
+   "icon": "\ud83d\udcb9",
+   "description": "Trade from the chart and the DOM, manage orders, risk and performance.",
+   "subcategories": [
+    {
+     "name": "",
+     "articles": [
+      {
+       "slug": "trading-from-chart",
+       "title": "Trading from the Chart",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:trading-from-the-chart"
+      },
+      {
+       "slug": "trading-panel-reference",
+       "title": "Trading Panel Reference: Every Button and Field",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "dom-trading-chart",
+       "title": "DOM Trading on the Chart (Click-Trading Ladder)",
+       "type": "howto",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "depth-of-market",
+       "title": "Depth of Market (DOM) Indicator",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:depth-of-market"
+      },
+      {
+       "slug": "oco-strategies",
+       "title": "OCO (One-Cancels-the-Other) Strategies",
+       "type": "howto",
+       "difficulty": "intermediate",
+       "source": "LIVE:order-cancel-order"
+      },
+      {
+       "slug": "orders-window",
+       "title": "Orders Window",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:orders-window"
+      },
+      {
+       "slug": "portfolio-wallet",
+       "title": "Portfolio (Wallet)",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:portfolio"
+      },
+      {
+       "slug": "risk-manager",
+       "title": "Risk Manager",
+       "type": "howto",
+       "difficulty": "intermediate",
+       "source": "LIVE:risk-manager"
+      },
+      {
+       "slug": "trade-copier",
+       "title": "How to Set Up the Trade Copier",
+       "type": "howto",
+       "difficulty": "advanced",
+       "source": "LIVE:how-to-setup-deepcharts-trade-copier"
+      },
+      {
+       "slug": "performance-analysis",
+       "title": "Performance Analysis (Signal Performance)",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:performance-analysis"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Concepts",
+   "slug": "concepts",
+   "icon": "\ud83c\udf93",
+   "description": "Learn the orderflow ideas behind the tools \u2014 from delta to auction theory.",
+   "subcategories": [
+    {
+     "name": "",
+     "articles": [
+      {
+       "slug": "orderflow-101",
+       "title": "Orderflow 101: Bid, Ask, Aggressor and Delta",
+       "type": "concept",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "understanding-volume-profile",
+       "title": "Understanding Volume Profile: POC, Value Area, HVN/LVN",
+       "type": "concept",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "understanding-auction-theory",
+       "title": "Understanding Auction Theory: Imbalance, Unfinished Auctions, Absorption",
+       "type": "concept",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "understanding-icebergs-absorption",
+       "title": "Understanding Icebergs and Absorption",
+       "type": "concept",
+       "difficulty": "advanced",
+       "source": "NEW"
+      },
+      {
+       "slug": "understanding-vwap",
+       "title": "Understanding VWAP",
+       "type": "concept",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "understanding-market-structure-sessions",
+       "title": "Understanding Market Structure and Sessions (RTH/ETH, Rollover)",
+       "type": "concept",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "reading-a-footprint",
+       "title": "Reading a Footprint: Worked Examples",
+       "type": "concept",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "glossary",
+       "title": "Glossary of Orderflow and Platform Terms",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "NEW"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Indicators & Analysis",
+   "slug": "indicators-analysis",
+   "icon": "\ud83d\udcc8",
+   "description": "Every indicator \u2014 proprietary Deep tools and the full standard library.",
+   "subcategories": [
+    {
+     "name": "Indicator Basics",
+     "articles": [
+      {
+       "slug": "different-types-of-input",
+       "title": "Different Types of Input Data for Indicators",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:different-types-of-input"
+      },
+      {
+       "slug": "indicator-layout",
+       "title": "How to Change the Layout of Indicators",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:how-to-change-the-layout-of-indicators"
+      }
+     ]
+    },
+    {
+     "name": "Deep Indicators",
+     "articles": [
+      {
+       "slug": "deep-print",
+       "title": "Deep Print (Footprint)",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:deep-print-(footprint\u00ae)"
+      },
+      {
+       "slug": "deep-profile",
+       "title": "Deep Profile (Volume / Delta Profile)",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:deep-profile"
+      },
+      {
+       "slug": "deep-profile-swing",
+       "title": "Deep Profile Swing",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:deep-profile-swing"
+      },
+      {
+       "slug": "deep-profile-values",
+       "title": "Deep Profile Values",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:deep-profile-values"
+      },
+      {
+       "slug": "deep-delta",
+       "title": "Deep Delta",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:deep-delta"
+      },
+      {
+       "slug": "deep-stats",
+       "title": "Deep Stats",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:deep-stats"
+      },
+      {
+       "slug": "deep-trades",
+       "title": "Deep Trades",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:deep-trades-deepchart"
+      },
+      {
+       "slug": "deep-wall",
+       "title": "Deep Wall",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:deep-wall"
+      },
+      {
+       "slug": "deep-v-tracker",
+       "title": "Deep V-Tracker",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:deep-v-tracker"
+      },
+      {
+       "slug": "deep-m-ivb",
+       "title": "Deep-M IVB",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:deep-m-ivb"
+      },
+      {
+       "slug": "deep-m-effort",
+       "title": "Deep-M Effort (NQ)",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:deep-m-effort-(nq)"
+      },
+      {
+       "slug": "deep-pattern-builder",
+       "title": "Deep Pattern Builder",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:deep-pattern-builder"
+      }
+     ]
+    },
+    {
+     "name": "Trend",
+     "articles": [
+      {
+       "slug": "moving-average",
+       "title": "Moving Average",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:moving-average"
+      },
+      {
+       "slug": "super-trend",
+       "title": "Super Trend",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:super-trend"
+      },
+      {
+       "slug": "super-trend-difference",
+       "title": "Super Trend Difference",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:super-trend-difference"
+      },
+      {
+       "slug": "parabolic-sar",
+       "title": "Parabolic SAR",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:parabolic-sar"
+      },
+      {
+       "slug": "ichimoku",
+       "title": "Ichimoku",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:ichimoku-indicator"
+      },
+      {
+       "slug": "linear-regression",
+       "title": "Linear Regression",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:linear-regression"
+      },
+      {
+       "slug": "regression-channel",
+       "title": "Regression Channel",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:regression-channel"
+      },
+      {
+       "slug": "tillson-t3",
+       "title": "Tillson T3",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:tillson-t3"
+      },
+      {
+       "slug": "zig-zag",
+       "title": "Zig Zag",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:zig-zag"
+      },
+      {
+       "slug": "donchian-channel",
+       "title": "Donchian Channel",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:donchian-channel"
+      },
+      {
+       "slug": "adx",
+       "title": "Average Directional Index (ADX)",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:average-directional-index"
+      },
+      {
+       "slug": "aroon-up-down",
+       "title": "Aroon Up/Down",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:aroon-up-down"
+      },
+      {
+       "slug": "aroon-oscillator",
+       "title": "Aroon Oscillator",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:aroon-oscillator"
+      }
+     ]
+    },
+    {
+     "name": "Momentum & Oscillators",
+     "articles": [
+      {
+       "slug": "rsi",
+       "title": "Relative Strength Index (RSI)",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:relative-strength-index"
+      },
+      {
+       "slug": "macd",
+       "title": "MACD",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:macd-indicator"
+      },
+      {
+       "slug": "stochastic-oscillator",
+       "title": "Stochastic Oscillator",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:stochastic-oscillator"
+      },
+      {
+       "slug": "momentum",
+       "title": "Momentum",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:momentum-indicator"
+      },
+      {
+       "slug": "rate-of-change",
+       "title": "Rate of Change (ROC)",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:rate-of-change"
+      },
+      {
+       "slug": "cci",
+       "title": "Commodity Channel Index (CCI)",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:commodity-channel-index"
+      },
+      {
+       "slug": "williams-r",
+       "title": "Williams %R",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:william-r"
+      },
+      {
+       "slug": "awesome-oscillator",
+       "title": "Awesome Oscillator",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:awesome-oscillator"
+      },
+      {
+       "slug": "inverse-cyber-cycle",
+       "title": "Inverse Cyber Cycle",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:inverse-cyber-cycle"
+      },
+      {
+       "slug": "know-sure-thing",
+       "title": "Know Sure Thing (KST)",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:know-sure-thing"
+      }
+     ]
+    },
+    {
+     "name": "Volatility & Bands",
+     "articles": [
+      {
+       "slug": "bollinger-bands",
+       "title": "Bollinger Bands",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:bollinger-bands"
+      },
+      {
+       "slug": "keltner-channel",
+       "title": "Keltner Channel",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:keltner-channel"
+      },
+      {
+       "slug": "atr",
+       "title": "Average True Range (ATR)",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:average-true-range"
+      },
+      {
+       "slug": "standard-deviation",
+       "title": "Standard Deviation",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:standard-deviation"
+      },
+      {
+       "slug": "vwap-envelopes",
+       "title": "VWAP Envelopes",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:vwap-envelopes"
+      },
+      {
+       "slug": "adr-target",
+       "title": "Average Daily Range Target (ADR Target)",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:average-daily-range-target-(adr-target)"
+      }
+     ]
+    },
+    {
+     "name": "Volume & Delta",
+     "articles": [
+      {
+       "slug": "volume",
+       "title": "Volume",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:volume"
+      },
+      {
+       "slug": "delta-bar",
+       "title": "Delta Bar",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:delta-bar"
+      },
+      {
+       "slug": "delta-highlight",
+       "title": "Delta % Highlight",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:delta-highlight"
+      },
+      {
+       "slug": "delta-cumulative-candlestick",
+       "title": "Delta Cumulative Candlestick",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:delta-cumulative-candlestick"
+      },
+      {
+       "slug": "delta-cumulative-histogram",
+       "title": "Delta Cumulative Histogram",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:delta-cumulative-histogram"
+      },
+      {
+       "slug": "volume-swing",
+       "title": "Volume Swing",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:volume-swing"
+      },
+      {
+       "slug": "volume-delta-sprint",
+       "title": "Volume/Delta Sprint",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:volume-delta-sprint"
+      },
+      {
+       "slug": "chaikin-ad",
+       "title": "Chaikin Accumulation/Distribution",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:chaikin-accumulation-distribution"
+      },
+      {
+       "slug": "big-trades",
+       "title": "Big Trades",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:big-trades"
+      },
+      {
+       "slug": "speed-of-tape",
+       "title": "Speed of Tape",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:speed-of-tape"
+      },
+      {
+       "slug": "speed-of-tape-instant",
+       "title": "Speed of Tape (Instant)",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:speed-of-tape-(instant)"
+      },
+      {
+       "slug": "market-statistics",
+       "title": "Market Statistics",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:market-statistics"
+      },
+      {
+       "slug": "on-candle-stats",
+       "title": "On Candle Stats",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:on-candle-stats"
+      }
+     ]
+    },
+    {
+     "name": "Order Flow & Auction",
+     "articles": [
+      {
+       "slug": "market-profile-tpo",
+       "title": "Market Profile (TPO)",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:market-profile"
+      },
+      {
+       "slug": "imbalance-tracker",
+       "title": "Imbalance Tracker",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:imbalance-tracker"
+      },
+      {
+       "slug": "imbalance-rejector",
+       "title": "Imbalance Rejector",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:imbalance-rejector"
+      },
+      {
+       "slug": "session-imbalance",
+       "title": "Session Imbalance",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:session-imbalance"
+      },
+      {
+       "slug": "unfinished-auction",
+       "title": "Unfinished Auction",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:unfinished-auction"
+      },
+      {
+       "slug": "auction-gap-tracker",
+       "title": "Auction Gap Tracker",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:auction-gap-tracker"
+      },
+      {
+       "slug": "dynamic-poc",
+       "title": "Dynamic POC",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:dynamic-poc"
+      },
+      {
+       "slug": "bar-poc",
+       "title": "Bar POC",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:bar-poc-indicator"
+      },
+      {
+       "slug": "stop-spotter",
+       "title": "Stop Spotter",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:stop-spotter"
+      },
+      {
+       "slug": "ratio-highlight",
+       "title": "Ratio Highlight",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:ratio-highlight"
+      }
+     ]
+    },
+    {
+     "name": "Levels & Patterns",
+     "articles": [
+      {
+       "slug": "pivot-points",
+       "title": "Pivot Points",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:pivot-points"
+      },
+      {
+       "slug": "important-levels",
+       "title": "Important Levels",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:important-levels"
+      },
+      {
+       "slug": "absolute-levels",
+       "title": "Absolute Levels",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:absolute-levels-indicator"
+      },
+      {
+       "slug": "price-movement-levels",
+       "title": "Price Movement Levels",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:price-movement-levels"
+      },
+      {
+       "slug": "session-marker",
+       "title": "Session Marker",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:session-marker"
+      },
+      {
+       "slug": "swing-point",
+       "title": "Swing Point",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:swing-point"
+      },
+      {
+       "slug": "gap-detector",
+       "title": "Gap Detector",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:gap-detector"
+      },
+      {
+       "slug": "fvg-identifier",
+       "title": "FVG Identifier",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:fvg-identifier"
+      },
+      {
+       "slug": "divergence-detector",
+       "title": "Divergence Detector",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:divergence-detector"
+      },
+      {
+       "slug": "confluence-identifier",
+       "title": "Confluence Identifier",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:confluence-identifier"
+      }
+     ]
+    },
+    {
+     "name": "Chart Overlays",
+     "articles": [
+      {
+       "slug": "candlestick-bar",
+       "title": "Candlestick Bar",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:candlestick-bar"
+      },
+      {
+       "slug": "overlay-chart",
+       "title": "Overlay Chart",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:overlay-chart"
+      },
+      {
+       "slug": "overlay-symbol",
+       "title": "Overlay Symbol",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:overlay-symbol"
+      },
+      {
+       "slug": "overlay-timeframe-candlestick",
+       "title": "Overlay Timeframe Candlestick",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:overlay-timeframe-candlestick"
+      },
+      {
+       "slug": "overlay-timeframe-highlight",
+       "title": "Overlay Timeframe Highlight",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:overlay-timeframe-highlight"
+      },
+      {
+       "slug": "shift-candle",
+       "title": "Shift Candle",
+       "type": "reference",
+       "difficulty": "advanced",
+       "source": "LIVE:shift-candle"
+      },
+      {
+       "slug": "text-on-chart",
+       "title": "Text on Chart",
+       "type": "reference",
+       "difficulty": "beginner",
+       "source": "LIVE:text-on-chart"
+      },
+      {
+       "slug": "annotations-overlay",
+       "title": "Annotations Overlay",
+       "type": "reference",
+       "difficulty": "intermediate",
+       "source": "LIVE:annotations-overlay"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Data & Database",
+   "slug": "data-database",
+   "icon": "\ud83d\uddc4\ufe0f",
+   "description": "Keep your local market-data database healthy: rollover, cleanup, repair.",
+   "subcategories": [
+    {
+     "name": "",
+     "articles": [
+      {
+       "slug": "symbol-rollover",
+       "title": "Symbol Rollover (Change Contract Month)",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:symbol-rollover"
+      },
+      {
+       "slug": "delete-market-data",
+       "title": "Delete Market Data (In-App and Manual Methods)",
+       "type": "howto",
+       "difficulty": "intermediate",
+       "source": "MERGE:how-to-delete-market-data+how-to-delete-market-data-from-deepcharts-database-folders-(manual-method)"
+      },
+      {
+       "slug": "download-data",
+       "title": "Re-download Historical Data (Download Data Tool)",
+       "type": "howto",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      },
+      {
+       "slug": "database-optimization",
+       "title": "Database Optimization",
+       "type": "howto",
+       "difficulty": "advanced",
+       "source": "LIVE:database-optimization-deepcharts"
+      },
+      {
+       "slug": "database-problems",
+       "title": "Fix: Database Problems",
+       "type": "troubleshooting",
+       "difficulty": "intermediate",
+       "source": "LIVE:database-problems"
+      },
+      {
+       "slug": "fix-could-not-find-path",
+       "title": "Fix: Could Not Find a Part of the Path",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:error-could-not-find"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Troubleshooting & Support",
+   "slug": "troubleshooting-support",
+   "icon": "\ud83d\udedf",
+   "description": "Installation, licensing and UI problems \u2014 and how to reach support the fast way.",
+   "subcategories": [
+    {
+     "name": "",
+     "articles": [
+      {
+       "slug": "installation-problems",
+       "title": "Fix: Installation Problems and Basic Requirements",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:basic-requirements-installation-problem"
+      },
+      {
+       "slug": "installation-setup-failed",
+       "title": "Fix: Installation Setup Failed",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:installation-setup-failed"
+      },
+      {
+       "slug": "application-control-policy",
+       "title": "Fix: Application Control Policy Blocks DeepCharts",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:application-control-policy"
+      },
+      {
+       "slug": "rectangle-drawing-tool",
+       "title": "Fix: Rectangle Drawing Tool Not Working",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:rectangle-drawing-tool"
+      },
+      {
+       "slug": "chart-zoom",
+       "title": "Fix: Chart Zoom In and Out Not Working",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:chart-zoom"
+      },
+      {
+       "slug": "license-issues",
+       "title": "Fix: License and Activation Issues",
+       "type": "troubleshooting",
+       "difficulty": "beginner",
+       "source": "LIVE:license-issues"
+      },
+      {
+       "slug": "diagnostic-report",
+       "title": "Diagnostic Report: Before You Contact Support",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "LIVE:diagnostic-report-deepcharts"
+      },
+      {
+       "slug": "get-help",
+       "title": "How to Get Help (Chat, Diagnostic Report, Support)",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "NEW"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "Account & Billing",
+   "slug": "account-billing",
+   "icon": "\ud83d\udc64",
+   "description": "Subscriptions, licenses and moving between machines.",
+   "subcategories": [
+    {
+     "name": "",
+     "articles": [
+      {
+       "slug": "manage-subscriptions",
+       "title": "Manage Your Subscriptions and Billing",
+       "type": "howto",
+       "difficulty": "beginner",
+       "source": "NEW"
+      },
+      {
+       "slug": "move-to-new-computer",
+       "title": "Move DeepCharts to a New Computer",
+       "type": "howto",
+       "difficulty": "intermediate",
+       "source": "NEW"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

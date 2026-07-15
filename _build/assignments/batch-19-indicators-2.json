@@ -1,0 +1,70 @@
+{
+ "batch": "indicators-2",
+ "notes": "Indicator reference articles (template 1). For EACH: fetch the live article at https://www.deepcharts.com/helpcenter/article/<old-slug> (from source LIVE:<old-slug>; percent-encode parentheses %28 %29 and the registered mark %C2%AE if the fetch fails) and rewrite to: What it is (2-3 plain sentences) / When to use it (3-4 bullets) / Quick start (add to chart + a sensible starter configuration) / How to read it (interpretation guidance!) / Settings reference (EVERY setting from the live article grouped as in the dialog - keep real setting names and any defaults the live article states; NEVER invent settings or defaults; if the live article omits a default just describe the setting) / Tips and common mistakes / Related articles. Add one screenshot placeholder showing the indicator on a chart and one of its settings dialog. Cross-link [[different-types-of-input]] and [[indicator-layout]] in Related, plus the family concept article ([[orderflow-101]] for delta tools, [[understanding-volume-profile]] for profile tools, [[understanding-auction-theory]] for auction tools). Deep-indicator extra ground truth: /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/deepchart_platform/deep_indicators/*.yaml and indicators/*.yaml - read the matching file when it exists. Deep Print and Deep Profile are long articles: keep ALL settings sections from the live article but reorganize under the template; write a 'Recommended starter configuration' subsection.",
+ "articles": [
+  {
+   "slug": "deep-stats",
+   "title": "Deep Stats",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:deep-stats",
+   "category": "Indicators & Analysis",
+   "subcategory": "Deep Indicators"
+  },
+  {
+   "slug": "deep-trades",
+   "title": "Deep Trades",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:deep-trades-deepchart",
+   "category": "Indicators & Analysis",
+   "subcategory": "Deep Indicators"
+  },
+  {
+   "slug": "deep-wall",
+   "title": "Deep Wall",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:deep-wall",
+   "category": "Indicators & Analysis",
+   "subcategory": "Deep Indicators"
+  },
+  {
+   "slug": "deep-v-tracker",
+   "title": "Deep V-Tracker",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:deep-v-tracker",
+   "category": "Indicators & Analysis",
+   "subcategory": "Deep Indicators"
+  },
+  {
+   "slug": "deep-m-ivb",
+   "title": "Deep-M IVB",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:deep-m-ivb",
+   "category": "Indicators & Analysis",
+   "subcategory": "Deep Indicators"
+  },
+  {
+   "slug": "deep-m-effort",
+   "title": "Deep-M Effort (NQ)",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:deep-m-effort-(nq)",
+   "category": "Indicators & Analysis",
+   "subcategory": "Deep Indicators"
+  },
+  {
+   "slug": "deep-pattern-builder",
+   "title": "Deep Pattern Builder",
+   "type": "reference",
+   "difficulty": "advanced",
+   "source": "LIVE:deep-pattern-builder",
+   "category": "Indicators & Analysis",
+   "subcategory": "Deep Indicators"
+  }
+ ],
+ "id": "19-indicators-2"
+}

@@ -1,0 +1,25 @@
+{
+ "batch": "account-billing-1",
+ "notes": "Account & Billing (both NEW). manage-subscriptions: my.deepcharts.com dashboard > Subscriptions - view platform license + data products, renewal, changing data products means re-signing the market data contract, cancel data feed vs cancel platform, '[CONFIRM: refund policy link]' placeholder; NEVER state prices or specific offers. move-to-new-computer: save workspaces/templates to Cloud (tied to license) or copy Documents/deepchart folders; reinstall + license activation on the new PC ('[CONFIRM: whether old machine must be deactivated first]'); re-enter feed credentials (never migrated); redo Symbol Manage or load a Cloud workspace; optional Database Folder move.",
+ "articles": [
+  {
+   "slug": "manage-subscriptions",
+   "title": "Manage Your Subscriptions and Billing",
+   "type": "howto",
+   "difficulty": "beginner",
+   "source": "NEW",
+   "category": "Account & Billing",
+   "subcategory": ""
+  },
+  {
+   "slug": "move-to-new-computer",
+   "title": "Move DeepCharts to a New Computer",
+   "type": "howto",
+   "difficulty": "intermediate",
+   "source": "NEW",
+   "category": "Account & Billing",
+   "subcategory": ""
+  }
+ ],
+ "id": "33-account-billing-1"
+}

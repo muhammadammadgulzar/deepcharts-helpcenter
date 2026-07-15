@@ -1,0 +1,43 @@
+{
+ "batch": "charts-workspace-1",
+ "notes": "Ground truth: /Users/flutter/Desktop/ai-support-system/docs/ui-map-02*.csv (chart window frame map), /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/deepchart_platform/mechanics/chart_window_ui.yaml, price_chart_types.yaml, input_types_and_templates.yaml, setup_and_customization.yaml. IMPORTANT hedging: read /Users/flutter/Desktop/ai-support-system/docs/ui-maps-owner-answers-needed.csv - any row whose your_answer field is EMPTY is unconfirmed; do not state those semantics as fact (omit or hedge). quick-chart-templates: bottom-bar radios are built-in non-editable presets - OF-VP = Deep Print profile style, OF-B/A = Deep Print bid/ask columns with imbalance prints, D-VP/D-DP = Deep Profile daily volume/delta, D-VL = daily VWAP with 3 standard-deviation bands, W-VP/W-DP = weekly, C-VP = composite of all loaded data; Templates button = shortcut to right-click > Template > Load; picker tabs Local (Documents/deepchart/Template|Workspace), Cloud (tied to license, cross-PC), Shared (READ-ONLY team uploads). link-windows: link icon color groups 1-8 sync SYMBOL ONLY (not timeframe/drawings). keyboard-shortcuts-reference: build the default table from the ui-map/keyboard rows you find; unknown bindings get '[CONFIRM]' markers rather than invented keys.",
+ "articles": [
+  {
+   "slug": "chart-window",
+   "title": "The Chart Window",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:chart-window",
+   "category": "Charts & Workspace",
+   "subcategory": ""
+  },
+  {
+   "slug": "price-chart-settings",
+   "title": "Price Chart Settings",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "MERGE:price-settings+price-chart-settings",
+   "category": "Charts & Workspace",
+   "subcategory": ""
+  },
+  {
+   "slug": "chart-display-options",
+   "title": "Chart Display Options (Bar Styles, Sessions, Countdown)",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "NEW",
+   "category": "Charts & Workspace",
+   "subcategory": ""
+  },
+  {
+   "slug": "drawing-tools",
+   "title": "Drawing Tools and Annotations",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "NEW",
+   "category": "Charts & Workspace",
+   "subcategory": ""
+  }
+ ],
+ "id": "09-charts-workspace-1"
+}

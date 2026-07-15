@@ -1,0 +1,43 @@
+{
+ "batch": "concepts-1",
+ "notes": "Concept-teaching articles (template 4): The idea in one paragraph (plain English + real-market analogy, zero UI) / Why traders care / How it works (annotated-chart placeholder; math in a clearly-marked optional block) / See it in DeepCharts (link the indicators that visualize the concept) / Worked example / Common misreadings / Go deeper. Write for a smart beginner; no invented statistics; keep examples generic (ES/NQ futures). glossary: 30+ terms, each 1-2 sentences with [[links]] to the relevant concept/indicator article. Terms: delta, cumulative delta, bid/ask, aggressor, footprint, POC, value area/VAH/VAL, HVN/LVN, single print, TPO, imbalance, stacked imbalance, unfinished auction, absorption, iceberg, sweep, exhaustion, initiative vs responsive, speed of tape, DOM/depth, liquidity, front month, rollover, EOD data, tick/volume/range bars, RTH/ETH, workspace, template, sim account, prop firm, level 1 vs level 2 / MBO vs MBP, VWAP, orderflow.",
+ "articles": [
+  {
+   "slug": "orderflow-101",
+   "title": "Orderflow 101: Bid, Ask, Aggressor and Delta",
+   "type": "concept",
+   "difficulty": "beginner",
+   "source": "NEW",
+   "category": "Concepts",
+   "subcategory": ""
+  },
+  {
+   "slug": "understanding-volume-profile",
+   "title": "Understanding Volume Profile: POC, Value Area, HVN/LVN",
+   "type": "concept",
+   "difficulty": "intermediate",
+   "source": "NEW",
+   "category": "Concepts",
+   "subcategory": ""
+  },
+  {
+   "slug": "understanding-auction-theory",
+   "title": "Understanding Auction Theory: Imbalance, Unfinished Auctions, Absorption",
+   "type": "concept",
+   "difficulty": "intermediate",
+   "source": "NEW",
+   "category": "Concepts",
+   "subcategory": ""
+  },
+  {
+   "slug": "understanding-icebergs-absorption",
+   "title": "Understanding Icebergs and Absorption",
+   "type": "concept",
+   "difficulty": "advanced",
+   "source": "NEW",
+   "category": "Concepts",
+   "subcategory": ""
+  }
+ ],
+ "id": "16-concepts-1"
+}

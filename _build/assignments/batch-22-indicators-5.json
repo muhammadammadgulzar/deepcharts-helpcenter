@@ -1,0 +1,70 @@
+{
+ "batch": "indicators-5",
+ "notes": "Indicator reference articles (template 1). For EACH: fetch the live article at https://www.deepcharts.com/helpcenter/article/<old-slug> (from source LIVE:<old-slug>; percent-encode parentheses %28 %29 and the registered mark %C2%AE if the fetch fails) and rewrite to: What it is (2-3 plain sentences) / When to use it (3-4 bullets) / Quick start (add to chart + a sensible starter configuration) / How to read it (interpretation guidance!) / Settings reference (EVERY setting from the live article grouped as in the dialog - keep real setting names and any defaults the live article states; NEVER invent settings or defaults; if the live article omits a default just describe the setting) / Tips and common mistakes / Related articles. Add one screenshot placeholder showing the indicator on a chart and one of its settings dialog. Cross-link [[different-types-of-input]] and [[indicator-layout]] in Related, plus the family concept article ([[orderflow-101]] for delta tools, [[understanding-volume-profile]] for profile tools, [[understanding-auction-theory]] for auction tools).",
+ "articles": [
+  {
+   "slug": "macd",
+   "title": "MACD",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:macd-indicator",
+   "category": "Indicators & Analysis",
+   "subcategory": "Momentum & Oscillators"
+  },
+  {
+   "slug": "stochastic-oscillator",
+   "title": "Stochastic Oscillator",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:stochastic-oscillator",
+   "category": "Indicators & Analysis",
+   "subcategory": "Momentum & Oscillators"
+  },
+  {
+   "slug": "momentum",
+   "title": "Momentum",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:momentum-indicator",
+   "category": "Indicators & Analysis",
+   "subcategory": "Momentum & Oscillators"
+  },
+  {
+   "slug": "rate-of-change",
+   "title": "Rate of Change (ROC)",
+   "type": "reference",
+   "difficulty": "beginner",
+   "source": "LIVE:rate-of-change",
+   "category": "Indicators & Analysis",
+   "subcategory": "Momentum & Oscillators"
+  },
+  {
+   "slug": "cci",
+   "title": "Commodity Channel Index (CCI)",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:commodity-channel-index",
+   "category": "Indicators & Analysis",
+   "subcategory": "Momentum & Oscillators"
+  },
+  {
+   "slug": "williams-r",
+   "title": "Williams %R",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:william-r",
+   "category": "Indicators & Analysis",
+   "subcategory": "Momentum & Oscillators"
+  },
+  {
+   "slug": "awesome-oscillator",
+   "title": "Awesome Oscillator",
+   "type": "reference",
+   "difficulty": "intermediate",
+   "source": "LIVE:awesome-oscillator",
+   "category": "Indicators & Analysis",
+   "subcategory": "Momentum & Oscillators"
+  }
+ ],
+ "id": "22-indicators-5"
+}

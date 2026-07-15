@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Open Your First Chart — DeepCharts Help Center</title>
+<meta name="description" content="Open a new price chart, pick an instrument, and understand what the chart is doing while it loads.">
+<link rel="stylesheet" href="../assets/style.css">
+<script>window.HC_ROOT="../";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/quick-start-first-trade.html">Quick start</a><a href="../article/get-help.html">Get help</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Getting Started <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Welcome to DeepCharts: Platform Tour</a></li><li><a href="../article/system-requirements.html">System Requirements</a></li><li><a href="../article/install-deepcharts.html">How to Install DeepCharts and Activate Your License</a></li><li><a href="../article/free-delayed-data-feed.html">Use the Free 15-Minute Delayed Data Feed</a></li><li><a href="../article/buy-data-feed.html">How to Buy a Data Feed and Get Your Credentials</a></li><li><a href="../article/first-chart.html" class="active">Open Your First Chart</a></li><li><a href="../article/simulation-accounts.html">Trading Accounts and Simulation</a></li><li><a href="../article/quick-start-first-trade.html">Quick Start: From Install to Your First Trade</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connections &amp; Data Feeds <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Setup</li><li><a href="../article/compatibility-guide.html">Supported Brokers, Prop Firms and Data Feeds</a></li><li><a href="../article/connect-data-feed.html">How to Connect a Data Feed (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a></li><li><a href="../article/sign-market-data-agreement.html">Sign Your Market Data Agreement</a></li><li><a href="../article/connect-dxfeed.html">How to Connect a dxFeed Data Feed</a></li><li><a href="../article/connect-rithmic.html">How to Connect a Rithmic Data Feed</a></li><li><a href="../article/rtrader-pro-plugin.html">Connect Rithmic Using the RTrader Pro Plugin</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Connect Any Rithmic Prop-Firm Account (Server Table)</a></li><li><a href="../article/connect-apex.html">Connect Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connect a Prop-Firm dxFeed Account (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">How to Connect CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connect Interactive Brokers (Execution Only)</a></li><li><a href="../article/competition-connect.html">DeepCharts Competition: Join and Connect</a></li><li><a href="../article/end-of-day-data.html">Connect Historical Data (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Manage and Switch Between Feed Connections</a></li><li class="nav-sub">Troubleshooting</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: Live Feed Connected but Chart Is Not Moving</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Fix: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Fix: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Fix: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Fix: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Fix: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Fix: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Fix: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Fix: Connection Lost When Opening a Chart</a></li><li><a href="../article/symbol-subscription-issue.html">Fix: Symbol Subscription Issue</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: App Crashes When Saving Feed Settings</a></li><li><a href="../article/gaps-in-price.html">Fix: Gaps in Price on Charts</a></li><li><a href="../article/data-delayed-lagging.html">Fix: Charts Lagging or Data Delayed (Checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Charts &amp; Workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">The Chart Window</a></li><li><a href="../article/price-chart-settings.html">Price Chart Settings</a></li><li><a href="../article/chart-display-options.html">Chart Display Options (Bar Styles, Sessions, Countdown)</a></li><li><a href="../article/drawing-tools.html">Drawing Tools and Annotations</a></li><li><a href="../article/templates-workspaces.html">Templates and Workspaces</a></li><li><a href="../article/quick-chart-templates.html">Quick Chart Templates (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Link Windows with Color Groups</a></li><li><a href="../article/replay-data.html">Replay Market Data</a></li><li><a href="../article/customize-language-theme-sounds.html">Customize Language, Theme and Notification Sounds</a></li><li><a href="../article/keyboard-shortcuts.html">How to Configure Keyboard Shortcuts</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Keyboard Shortcuts Reference</a></li><li><a href="../article/multi-monitor-windows.html">Arrange Windows Across Monitors (and Recover Off-Screen Windows)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Platform Windows <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (The Tape)</a></li><li><a href="../article/advanced-dom.html">Advanced DOM Window</a></li><li><a href="../article/profile-chart-window.html">Profile Chart Window (TPO and Volume Profiles)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading &amp; Orders <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading from the Chart</a></li><li><a href="../article/trading-panel-reference.html">Trading Panel Reference: Every Button and Field</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading on the Chart (Click-Trading Ladder)</a></li><li><a href="../article/depth-of-market.html">Depth of Market (DOM) Indicator</a></li><li><a href="../article/oco-strategies.html">OCO (One-Cancels-the-Other) Strategies</a></li><li><a href="../article/orders-window.html">Orders Window</a></li><li><a href="../article/portfolio-wallet.html">Portfolio (Wallet)</a></li><li><a href="../article/risk-manager.html">Risk Manager</a></li><li><a href="../article/trade-copier.html">How to Set Up the Trade Copier</a></li><li><a href="../article/performance-analysis.html">Performance Analysis (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concepts <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a></li><li><a href="../article/understanding-volume-profile.html">Understanding Volume Profile: POC, Value Area, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Understanding Auction Theory: Imbalance, Unfinished Auctions, Absorption</a></li><li><a href="../article/understanding-icebergs-absorption.html">Understanding Icebergs and Absorption</a></li><li><a href="../article/understanding-vwap.html">Understanding VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Understanding Market Structure and Sessions (RTH/ETH, Rollover)</a></li><li><a href="../article/reading-a-footprint.html">Reading a Footprint: Worked Examples</a></li><li><a href="../article/glossary.html">Glossary of Orderflow and Platform Terms</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicators &amp; Analysis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Indicator Basics</li><li><a href="../article/different-types-of-input.html">Different Types of Input Data for Indicators</a></li><li><a href="../article/indicator-layout.html">How to Change the Layout of Indicators</a></li><li class="nav-sub">Deep Indicators</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Moving Average</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Linear Regression</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum &amp; Oscillators</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Stochastic Oscillator</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatility &amp; Bands</li><li><a href="../article/bollinger-bands.html">Bollinger Bands</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Standard Deviation</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume &amp; Delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Order Flow &amp; Auction</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Levels &amp; Patterns</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Important Levels</a></li><li><a href="../article/absolute-levels.html">Absolute Levels</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Chart Overlays</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Text on Chart</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Data &amp; Database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Symbol Rollover (Change Contract Month)</a></li><li><a href="../article/delete-market-data.html">Delete Market Data (In-App and Manual Methods)</a></li><li><a href="../article/download-data.html">Re-download Historical Data (Download Data Tool)</a></li><li><a href="../article/database-optimization.html">Database Optimization</a></li><li><a href="../article/database-problems.html">Fix: Database Problems</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Troubleshooting &amp; Support <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Fix: Installation Problems and Basic Requirements</a></li><li><a href="../article/installation-setup-failed.html">Fix: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: Application Control Policy Blocks DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Fix: Rectangle Drawing Tool Not Working</a></li><li><a href="../article/chart-zoom.html">Fix: Chart Zoom In and Out Not Working</a></li><li><a href="../article/license-issues.html">Fix: License and Activation Issues</a></li><li><a href="../article/diagnostic-report.html">Diagnostic Report: Before You Contact Support</a></li><li><a href="../article/get-help.html">How to Get Help (Chat, Diagnostic Report, Support)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account &amp; Billing <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Manage Your Subscriptions and Billing</a></li><li><a href="../article/move-to-new-computer.html">Move DeepCharts to a New Computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/getting-started.html">Getting Started</a></div>
+<div class="article-head"><h1>Open Your First Chart</h1>
+<p class="article-desc">Open a new price chart, pick an instrument, and understand what the chart is doing while it loads.</p>
+<div class="meta-row">
+  <span class="badge b-beginner">Beginner</span>
+  <span class="badge">Howto</span>
+  <span class="badge">🕒 5 min to complete</span>
+  <a class="btn-pdf" href="../pdf/first-chart.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>By the end you will have a live price chart open, updating, and set to the timeframe you want.</p>
+<p>Opening a chart in DeepCharts takes two clicks, but the first time you do it there are a few things worth understanding: where the instrument list comes from, why the chart takes a few seconds to build, and what the three dropdowns in the chart's title bar control.</p>
+<h2 id="before-you-start">Before you start</h2>
+<ul>
+<li>DeepCharts installed and activated — <a href="./install-deepcharts.html">How to Install DeepCharts and Activate Your License</a></li>
+<li>A data feed connected — <a href="./connect-data-feed.html">How to Connect a Data Feed (Feed Settings)</a>, or the <a href="./free-delayed-data-feed.html">free 15-minute delayed feed</a> if you have no credentials yet. (Charts also work with recorded data via <a href="./replay-data.html">Replay Market Data</a>.)</li>
+<li>The exchanges you trade mapped to your feed — the startup wizard normally does this for you; <a href="./symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a> covers it in detail</li>
+</ul>
+<h2 id="steps">Steps</h2>
+<ol>
+<li>Check that your feed is connected: the feed selector at the top right of the main bar shows your connection name with a <strong>green dot</strong>. If it reads <strong>Select a connection</strong>, open the dropdown and click your saved connection.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">The main bar feed selector at top right showing a connected feed name with a green status dot, with the dropdown open listing saved connections and the Feed Settings item</div><div class="s-file">main-bar-feed-selector-connected.png</div></div></div>
+<ol start="2">
+<li>Click <strong>New → Price Chart</strong> in the main bar.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">The New menu open on the main bar with Price Chart highlighted (other items visible: Adv. Time And Sales, Book, Correlation Viewer, Profile Chart, Scanner)</div><div class="s-file">new-menu-price-chart.png</div></div></div>
+<ol start="3">
+<li>The <strong>Select Instrument</strong> dialog opens. Pick an exchange in the left sidebar (for example <strong>CME</strong>), or use the <strong>Type to filter</strong> box to search. Click your symbol — for example <strong>NQ</strong> (MINI NASDAQ) — then click <strong>Select</strong>.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">The Select Instrument dialog with the CME exchange selected in the sidebar, the symbol list showing NQ MINI NASDAQ highlighted, and the Type to filter box and Select button visible</div><div class="s-file">select-instrument-cme-nq.png</div></div></div>
+<blockquote class="callout-note">
+<p><strong>Note:</strong> The dialog only lists exchanges that are subscribed in <strong>Options → Symbol Manage</strong>. If the list is empty or your exchange is missing, fix it there — see <a href="./symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a>.</p>
+</blockquote>
+<ol start="4">
+<li>Wait while the chart builds. A <strong>Building chart</strong> spinner shows for a few seconds, and a status badge appears in the main bar telling you where the data is coming from: <strong>LDT</strong> means it is loading from your disk, <strong>DWT</strong> means it is downloading from the feed server.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">A new chart window showing the Building chart spinner, with the LDT/DWT status badge visible in the main bar</div><div class="s-file">building-chart-status-badge.png</div></div></div>
+<ol start="5">
+<li>The chart opens. The title bar has three dropdowns that control what you are looking at:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Example</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Symbol</td>
+<td><strong>NQ-202609</strong></td>
+<td>Opens Select Instrument to switch the chart to another contract</td>
+</tr>
+<tr>
+<td>Data-load range</td>
+<td><strong>10D - BT</strong></td>
+<td>How much history is loaded — &quot;10 Days, Based on Tick&quot; (BM = Based on Minute)</td>
+</tr>
+<tr>
+<td>Timeframe</td>
+<td><strong>5 Minute</strong></td>
+<td>The bar type and size the chart draws</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">A finished price chart with the three title-bar dropdowns (symbol, 10D - BT range, 5 Minute timeframe) annotated</div><div class="s-file">chart-title-bar-dropdowns.png</div></div></div>
+<h3 id="if-you-want-a-different-timeframe">If you want a different timeframe</h3>
+<p>Click the timeframe dropdown. Every bar type has its own row with quick presets: <strong>Second</strong>, <strong>Minute</strong>, <strong>Time</strong> (daily/weekly/monthly), <strong>Vol Bars</strong>, <strong>Range</strong>, <strong>Volume</strong>, <strong>Trade</strong>, <strong>Renko</strong>, <strong>P/F</strong> and <strong>Delta</strong>. Click a preset to rebuild the chart with it.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">The timeframe dropdown open showing all bar-type rows (Second, Minute, Time, Vol Bars, Range, Volume, Trade, Renko, P/F, Delta) with their quick presets</div><div class="s-file">timeframe-dropdown-bar-types.png</div></div></div>
+<h3 id="if-you-want-more-history-on-the-chart">If you want more history on the chart</h3>
+<p>Click the data-load range dropdown. Short ranges load tick data (5/10/15/30/60 days); long ranges load minute data (3/6 months, 1/2/5/10 years); <strong>Custom</strong> opens a dialog where you set any day count plus a <strong>Based on minute</strong> checkbox. The default is 5 days.</p>
+<blockquote class="callout-warning">
+<p><strong>Warning:</strong> Loading many more days makes the chart heavier — more RAM and CPU, slower loading. Increase gradually, and prefer minute-based data for multi-month ranges. Every indicator can only compute on the days the chart has loaded.</p>
+</blockquote>
+<h2 id="verify-it-worked">Verify it worked</h2>
+<p>Candles are drawn and the last price is moving. The readout in the top-left corner shows O/H/L/C values when you hover a bar. If you are on the free delayed feed, an orange banner notes the data is delayed — that is normal, prices update with a 15-minute lag (see <a href="./free-delayed-data-feed.html">Use the Free 15-Minute Delayed Data Feed</a>).</p>
+<h2 id="if-something-went-wrong">If something went wrong</h2>
+<table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Select Instrument dialog is empty</td>
+<td>Nothing is subscribed in Symbol Manage — <a href="./symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a></td>
+</tr>
+<tr>
+<td>Chart opens but price does not move</td>
+<td><a href="./feed-connected-chart-not-moving.html">Fix: Live Feed Connected but Chart Is Not Moving</a></td>
+</tr>
+<tr>
+<td>&quot;Connection lost&quot; appears when opening the chart</td>
+<td><a href="./connection-lost-opening-chart.html">Fix: Connection Lost When Opening a Chart</a></td>
+</tr>
+<tr>
+<td>Chart stuck on Building chart / loads very slowly</td>
+<td><a href="./data-delayed-lagging.html">Fix: Charts Lagging or Data Delayed (Checklist)</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="related-articles">Related articles</h2>
+<ul>
+<li><a href="./chart-window.html">The Chart Window</a></li>
+<li><a href="./connect-data-feed.html">How to Connect a Data Feed (Feed Settings)</a></li>
+<li><a href="./symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a></li>
+<li><a href="./free-delayed-data-feed.html">Use the Free 15-Minute Delayed Data Feed</a></li>
+<li><a href="./chart-display-options.html">Chart Display Options (Bar Styles, Sessions, Countdown)</a></li>
+<li><a href="./quick-chart-templates.html">Quick Chart Templates (OF-VP, D-VP, W-VP...)</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./buy-data-feed.html"><div class="pn-lbl">← Previous</div><div class="pn-title">How to Buy a Data Feed and Get Your Credentials</div></a><a class="next" href="./simulation-accounts.html"><div class="pn-lbl">Next →</div><div class="pn-title">Trading Accounts and Simulation</div></a></div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#before-you-start">Before you start</a></li><li class="lv2"><a href="#steps">Steps</a></li><li class="lv3"><a href="#if-you-want-a-different-timeframe">If you want a different timeframe</a></li><li class="lv3"><a href="#if-you-want-more-history-on-the-chart">If you want more history on the chart</a></li><li class="lv2"><a href="#verify-it-worked">Verify it worked</a></li><li class="lv2"><a href="#if-something-went-wrong">If something went wrong</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+<script src="../assets/widgets.js"></script>
+</body></html>

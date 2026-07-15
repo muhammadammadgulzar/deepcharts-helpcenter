@@ -1,0 +1,52 @@
+{
+ "batch": "connections-ts-1",
+ "notes": "Troubleshooting template articles. Ground truth: fetch the LIVE article for the real causes/fixes and rewrite to the template (Symptom / Most likely cause / Quick fix / If that didn't work / Still stuck / Prevent this). Order fixes least-destructive first. Every article: 'Still stuck' section links [[diagnostic-report]] and [[get-help]]; 'Prevent this' links its setup guide ([[connect-dxfeed]] for dxFeed errors, [[connect-rithmic]] / [[rtrader-pro-plugin]] for Rithmic errors, [[connect-data-feed]] generally, [[sign-market-data-agreement]] for agreement-related, [[symbol-manage]] where mapping is the cause). data-delayed-lagging is NEW - build the checklist from: /Users/flutter/Desktop/ai-support-system/knowledge/playbooks/troubleshooting (if present) + these verified facts: confirm delay vs disconnect (feed dot, delayed banner), ? > Contact Support diagnostic ping/download speed per region, dxFeed DOM Type MBO->MBP on slow lines, Rithmic gateway selection by speed test, R Trader Pro performance sliders, LDT badge = loading from disk vs DWT = downloading.",
+ "articles": [
+  {
+   "slug": "feed-connected-chart-not-moving",
+   "title": "Fix: Live Feed Connected but Chart Is Not Moving",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:live-feed-connected-but-price-chart-is-not-moving",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  },
+  {
+   "slug": "fix-unable-to-establish-connection",
+   "title": "Fix: Connection Failed \u2014 Unable to Establish Connection",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:connection-failed-unable-to-establish-connection",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  },
+  {
+   "slug": "fix-username-password",
+   "title": "Fix: Connection Failed \u2014 Check Username and Password",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:connection-failed-please-make-sure-you-entered",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  },
+  {
+   "slug": "fix-bad-server",
+   "title": "Fix: Connection Failed \u2014 Bad Server",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:connection-failed-bad-server",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  },
+  {
+   "slug": "fix-log-in-using-rtrader",
+   "title": "Fix: Please Log In Using R Trader or R Trader Pro",
+   "type": "troubleshooting",
+   "difficulty": "beginner",
+   "source": "LIVE:connection-failed-please-log-in-using",
+   "category": "Connections & Data Feeds",
+   "subcategory": "Troubleshooting"
+  }
+ ],
+ "id": "06-connections-ts-1"
+}
