@@ -28,7 +28,9 @@ Every trade in a futures market is a match between someone willing to wait and s
 
 ### Bid, ask and the spread
 
-At any moment the order book has two front prices. The **bid** is the highest price at which resting buyers are willing to buy. The **ask** (also called the offer) is the lowest price at which resting sellers are willing to sell. The gap between them is the spread — in liquid futures such as ES it is usually one tick. Behind those front prices sit queues of further limit orders at every level; that stack of resting orders is the market depth (see [[depth-of-market]] and [[advanced-dom]]).
+At any moment the order book has two front prices. The **bid** is the highest price at which resting buyers are willing to buy. The **ask** (also called the offer) is the lowest price at which resting sellers are willing to sell. The gap between them is the spread — in liquid futures such as ES it is usually one tick. Behind those front prices sit queues of further limit orders at every level; that stack of resting orders is the market depth (see [[depth-of-market]] and [[advanced-dom]]). Hover the live ladder below to see what each resting level means — sell limits stacked above the spread, buy limits below.
+
+[WIDGET: dom-ladder]
 
 ### The aggressor
 
@@ -49,7 +51,9 @@ Delta condenses the aggressor tally into one number per bar:
 
 Positive delta means buyers were the more aggressive side during that bar; negative delta means sellers were. **Cumulative delta** adds each bar's delta to a running total across the session, so you can compare the trend of aggression against the trend of price. When price makes a new high but cumulative delta does not (or the reverse at lows), that disagreement is called a delta divergence and is worth attention.
 
-[SCREENSHOT: A price chart of an ES futures session with a cumulative delta panel below it, annotated with arrows marking (1) a rally where price and cumulative delta rise together and (2) a later new price high where cumulative delta makes a lower high, labelled "delta divergence" | orderflow-101-cumulative-delta-divergence.png]
+Watch it work in the live panel below — hover each bar to see how its delta feeds the cumulative line.
+
+[WIDGET: delta-lab]
 
 ### The math (optional)
 

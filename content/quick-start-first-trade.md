@@ -45,15 +45,15 @@ After activation a three-step wizard runs:
 
 ### 3. Connect the feed
 
-Open the feed selector at the top right of the main bar and click your connection. Wait for the **green dot** — that means data is flowing.
+Open the feed selector at the top right of the main bar and click your connection. Wait for the **green dot** — that means data is flowing. Curious what a connection looks like under the hood? Explore the Feed Settings mock below — the source dropdown changes which fields each provider needs.
 
-[SCREENSHOT: The main bar feed selector dropdown with the delayed-feed connection selected and a green status dot showing | quick-start-feed-green-dot.png]
+[WIDGET: feed-navigator]
 
 ### 4. Check Symbol Manage
 
-Open **Options → Symbol Manage**. Each exchange row's **Data Feed** column should show your connection. If an exchange you want is missing, click **Subscribe** and add it. Details: [[symbol-manage]].
+Open **Options → Symbol Manage**. Each exchange row's **Data Feed** column should show your connection. If an exchange you want is missing, click **Subscribe** and add it. Try it in the mock below — subscribe an exchange and use the chain-link icon to change its feed. Details: [[symbol-manage]].
 
-[SCREENSHOT: The Symbol Manage window showing the exchange mapping table with the Data Feed column populated by the delayed feed connection | quick-start-symbol-manage.png]
+[WIDGET: symbol-manage-mock]
 
 ### 5. Open your first chart
 

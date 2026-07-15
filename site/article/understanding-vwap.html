@@ -42,7 +42,8 @@
 <p>VWAP is always computed <em>from an anchor</em>. The most common anchor is the start of the trading day, so the line resets every session and early prints dominate at first. That reset matters: minutes after the open, VWAP is built from very little volume and swings with every burst of trade; by mid-session it has so much volume behind it that it barely moves. Treat early-session VWAP as provisional and late-session VWAP as heavy.</p>
 <h3 id="the-bands">The bands</h3>
 <p>Because VWAP is an average, price naturally oscillates around it. Standard-deviation bands quantify that oscillation: the first band contains &quot;normal&quot; wandering, while the second and third mark statistically stretched prices for <em>this</em> day's distribution. Traders use the outer bands two ways — as fade zones on rotation days (price stretched from a flat VWAP tends to revert) and as trend confirmation on drive days (price riding an outer band with the VWAP sloping steeply is strength, not an automatic short).</p>
-<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">An ES intraday chart with session VWAP and three standard-deviation bands above and below, annotated with (1) the morning open where the bands are tight and unstable, (2) a midday pullback that holds the VWAP line, and (3) an afternoon push riding the first upper band with the VWAP visibly rising</div><div class="s-file">understanding-vwap-bands-annotated.png</div></div></div>
+<p>Try it below — adjust the sigma bands and hover the chart for a live reading of how stretched price is from the average.</p>
+<div class="widget-mount" data-widget="vwap-lab"></div>
 <h3 id="the-math-optional">The math (optional)</h3>
 <p>After <em>n</em> trades (or bars), with price <em>P</em> and volume <em>V</em>:</p>
 <pre><code>VWAP = Σ(Pi × Vi) / Σ(Vi)
@@ -82,7 +83,7 @@
 </ul>
 </article>
 <div class="pn"><a class="prev" href="./understanding-icebergs-absorption.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Understanding Icebergs and Absorption</div></a><a class="next" href="./understanding-market-structure-sessions.html"><div class="pn-lbl">Next →</div><div class="pn-title">Understanding Market Structure and Sessions (RTH/ETH, Rollover)</div></a></div>
-    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 16, 2026 · screenshots pending capture (see placeholders)</div>
   </main>
   <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#the-idea-in-one-paragraph">The idea in one paragraph</a></li><li class="lv2"><a href="#why-traders-care">Why traders care</a></li><li class="lv2"><a href="#how-it-works">How it works</a></li><li class="lv3"><a href="#anchoring-and-the-session-reset">Anchoring and the session reset</a></li><li class="lv3"><a href="#the-bands">The bands</a></li><li class="lv3"><a href="#the-math-optional">The math (optional)</a></li><li class="lv2"><a href="#see-it-in-deepcharts">See it in DeepCharts</a></li><li class="lv2"><a href="#worked-example">Worked example</a></li><li class="lv2"><a href="#common-misreadings">Common misreadings</a></li><li class="lv2"><a href="#go-deeper">Go deeper</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
 </div>

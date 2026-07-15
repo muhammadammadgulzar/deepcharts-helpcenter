@@ -18,6 +18,10 @@ This article maps the whole window: anatomy, every ladder column, the gear menu,
 
 A DOM (Depth of Market) shows the resting order book as a vertical price ladder: bid sizes stacked below and around the current price on one side, ask sizes on the other. The Advanced DOM window adds trading columns (click a level to work an order there), a per-level projected profit/loss column for your open position, per-level traded-volume counters, and volume profiles built from executed trades.
 
+If the ladder idea is new to you, explore the living order book below — hover any level to see what the resting size there means.
+
+[WIDGET: dom-ladder]
+
 > **Note:** Depth display depends on your data feed. With Level 1 data only the best bid/ask is available; the full ladder of resting sizes needs Level 2 depth data.
 
 ## When to use it

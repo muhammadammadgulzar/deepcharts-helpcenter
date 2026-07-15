@@ -33,7 +33,9 @@ Delta is aggressive buying volume minus aggressive selling volume. Classic delta
 4. Set **Input Data** to **Aggregate Trades** so split executions are recombined before filtering — otherwise a large order counted as many small fills lands in the wrong range.
 5. Apply, and give each range a distinct color in the **Subgraph** section.
 
-[SCREENSHOT: Chart with Deep Delta in Multi-Range mode below the price panel, two colored delta series showing small-size and large-size delta diverging on the same candles | deep-delta-multi-range-chart.png]
+The live demo below shows the underlying reading — per-bar delta with the cumulative delta line. Hover any bar for its story.
+
+[WIDGET: delta-lab]
 
 ## How to read it
 

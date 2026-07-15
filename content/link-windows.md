@@ -30,9 +30,9 @@ This is the fastest way to run a multi-timeframe workspace: one 1-minute chart, 
 
 3. On the second chart, open the same link menu and select **Link 1** as well. Both charts now belong to the same color group.
 
-4. Change the symbol on either chart: click the symbol dropdown in the chart title bar and pick a new instrument in the **Select Instrument** dialog.
+4. Change the symbol on either chart: click the symbol dropdown in the chart title bar and pick a new instrument in the **Select Instrument** dialog. You can rehearse the whole flow live below — set both mini charts to the same link color, then switch the symbol on one and watch the other follow with a flash.
 
-[SCREENSHOT: Two linked charts side by side, the Select Instrument dialog open on the left chart with a new symbol selected | linked-charts-symbol-change.png]
+[WIDGET: link-groups-demo]
 
 5. Confirm the selection — every chart sharing that link color switches to the new symbol.
 

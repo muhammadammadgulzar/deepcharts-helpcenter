@@ -34,7 +34,9 @@ Take every trade in a chosen period — a session, a week, a swing — and bucke
 - **Value Area (VA):** the price band around the POC containing a set percentage of the period's total volume — by convention usually about 70%. Its edges are the **VAH** (Value Area High) and **VAL** (Value Area Low).
 - **HVNs and LVNs:** high volume nodes are secondary volume peaks — prices the market kept returning to; low volume nodes are the valleys between them — prices the market rejected.
 
-[SCREENSHOT: A session volume profile beside an ES price chart, annotated with callouts on the POC (longest row), the shaded value area with VAH and VAL boundary lines, one HVN bulge and one LVN gap between volume clusters | volume-profile-anatomy-annotated.png]
+Explore all three in the live profile below — drag the Value Area % and hover the rows to see the POC, VAH and VAL move.
+
+[WIDGET: volume-profile-lab]
 
 ### How each structure trades
 

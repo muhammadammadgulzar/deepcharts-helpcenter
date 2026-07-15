@@ -11,7 +11,9 @@ keywords: ["buy data feed", "buying data feed", "data feed subscription", "getti
 ---
 By the end you will have an active data feed subscription and the username and password DeepCharts needs to connect to live market data.
 
-DeepCharts draws its charts from a real-time market data feed. If you do not already have feed credentials from a broker or a prop firm, you can buy a feed subscription directly from your account dashboard at my.deepcharts.com — the credentials are issued right there once the market data contract is signed.
+DeepCharts draws its charts from a real-time market data feed. If you do not already have feed credentials from a broker or a prop firm, you can buy a feed subscription directly from your account dashboard at my.deepcharts.com — the credentials are issued right there once the market data contract is signed. Here is where those credentials end up — the Feed Settings window inside DeepCharts. Pick a source in the mock below to see which fields each provider asks for:
+
+[WIDGET: feed-navigator]
 
 ## Before you start
 

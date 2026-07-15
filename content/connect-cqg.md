@@ -29,9 +29,9 @@ One compatibility rule matters before you begin: DeepCharts can only connect CQG
 
 3. In **Name**, type a label you will recognize later, for example "AMP CQG".
 
-4. In **Feed Source**, select **CQG**.
+4. In **Feed Source**, select **CQG**. You can explore how the Feed Settings form behaves in the interactive mock below — changing the Feed Source changes which fields appear:
 
-[SCREENSHOT: Feed Settings dialog with the Feed Source dropdown open and CQG highlighted, Name field filled in as "AMP CQG" | feed-settings-cqg-source.png]
+[WIDGET: feed-navigator]
 
 5. Enter your CQG **Username** and **Password**. These are the CQG credentials from your broker, not your login for the broker's website.
 
@@ -47,9 +47,9 @@ One compatibility rule matters before you begin: DeepCharts can only connect CQG
 
 [SCREENSHOT: Select Connection dropdown showing the new CQG feed with a green status dot | cqg-connected-green-dot.png]
 
-10. Open **Options → Symbol Manage** and route the exchanges you trade to this CQG feed. This step is required — without it charts show no data. See [[symbol-manage]] for the full walkthrough.
+10. Open **Options → Symbol Manage** and route the exchanges you trade to this CQG feed. This step is required — without it charts show no data. Try the interactive mock below — click the chain-link icon on a row to change its feed. See [[symbol-manage]] for the full walkthrough.
 
-[SCREENSHOT: Symbol Manage window with an exchange row showing the Data Feed column set to the CQG connection | symbol-manage-cqg-routing.png]
+[WIDGET: symbol-manage-mock]
 
 11. Open a chart to confirm data is flowing — see [[first-chart]].
 

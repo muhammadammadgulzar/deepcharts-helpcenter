@@ -14,6 +14,10 @@ Big Trades visualizes large, aggressive market orders in real time, highlighting
 
 The indicator can filter manually by trade size or use the built-in **Big Trades Analysis** algorithm to work out sensible thresholds for your symbol automatically.
 
+Before tuning any filter, watch the live tape below — the oversized prints that stand out from the flow are exactly what Big Trades marks on your chart. Hover a print to see why it matters.
+
+[WIDGET: tape-lab]
+
 ## What it is
 
 Big Trades plots a marker (circle, square, diamond, or text) every time a trade passes your size filter. Marker color separates aggressive buyers (**Ask Color**) from aggressive sellers (**Bid Color**), and marker size scales with trade size. Because large orders often define support and resistance, the indicator can also draw zones from those prices and extend them forward a set number of bars.

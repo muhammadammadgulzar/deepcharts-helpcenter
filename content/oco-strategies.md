@@ -13,6 +13,10 @@ By the end you will have automatic stop-loss and take-profit brackets attached t
 
 An OCO (One-Cancels-the-Other) strategy attaches two exit orders to a position: a limit order that takes profit and a stop order that limits the loss. When either one executes, the other is cancelled automatically — you can never be left with a stray exit working against a position that no longer exists.
 
+The bracket controls live on the chart trading panel — get familiar with it below; hover the OCO control and the exit buttons to see how they interact.
+
+[WIDGET: trading-panel-mock]
+
 ## Before you start
 
 - Chart trading armed and the trading panel open — [[trading-from-chart]]

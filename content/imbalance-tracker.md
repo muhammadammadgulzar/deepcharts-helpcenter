@@ -41,7 +41,9 @@ A buy-side zone marks levels where aggressive buyers overwhelmed sellers; in ord
 
 The zone state carries information too. A **Fresh Zone** is untested — the market has not yet returned to check whether the aggressive side will defend it. Once price crosses into the area it becomes a **Triggered Zone** and is recolored, telling you the level has already been consumed at least once. With **Trigger Only Touch** enabled, the triggered display is limited to zones price has retested at least once.
 
-For the underlying theory of aggressive buyers, sellers and delta, see [[orderflow-101]]; for how imbalances look inside individual bars, see [[reading-a-footprint]].
+For the underlying theory of aggressive buyers, sellers and delta, see [[orderflow-101]]; for how imbalances look inside individual bars, see [[reading-a-footprint]] — or explore it directly below by adjusting the diagonal-imbalance ratio and watching which bid×ask pairs light up:
+
+[WIDGET: footprint-lab]
 
 ## Settings reference
 

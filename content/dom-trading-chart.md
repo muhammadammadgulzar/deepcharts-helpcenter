@@ -39,7 +39,9 @@ By the end you will have the click-trading ladder active on your chart and know 
 
 To sell, do the same in the **red** column. This auto-selection means the order always lands on the correct side of the market.
 
-[SCREENSHOT: Close-up of the DOM ladder with the cursor over the green column below the current price, and a working Buy Limit order marker visible at a level where a click was made | dom-ladder-click-buy-limit.png]
+Get a feel for the level logic on the live ladder below — sell limits sit violet above the market, buy limits green below it; hover any level to see why that side gets that order type.
+
+[WIDGET: dom-ladder]
 
 4. To trade at market, **right-click** in the column: right-click in the green column sends a Buy Market order, right-click in the red column sends a Sell Market order, regardless of the level (default behavior).
 

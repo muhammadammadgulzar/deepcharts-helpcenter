@@ -32,9 +32,9 @@ Because it is built entirely from moving averages, MACD is a lagging indicator: 
 1. Open a chart and press **Ctrl I** — or click the bar-chart icon in the chart toolbar, then **Indicators** — to open the **Indicator List**.
 2. Type "MACD" in the search box and click **+** next to the indicator. MACD renders in its own chart area below the price bars (see [[indicator-layout]] to move or resize it).
 3. Click the gear icon on the indicator's row to open its settings.
-4. For a first configuration, keep the defaults: **Fast EMA Period** 12, **Slow EMA Period** 26 and **Input Data** set to Close.
+4. For a first configuration, keep the defaults: **Fast EMA Period** 12, **Slow EMA Period** 26 and **Input Data** set to Close. You can try those choices in the live MACD below — drag the fast, slow and signal sliders and watch how the histogram and crossover count respond.
 
-[SCREENSHOT: A futures chart with the MACD indicator in its own area below the price bars — MACD line, signal line and histogram all visible, with at least one clear signal-line crossover on screen | macd-on-chart.png]
+[WIDGET: macd-lab]
 
 ## How to read it
 

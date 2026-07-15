@@ -29,9 +29,10 @@
 <article class="article-body"><p>The Depth of Market (DOM) is the price-ladder view of the order book: a vertical column of prices with the resting buy liquidity (bids) on one side and the resting sell liquidity (asks) on the other. In DeepCharts the full-featured DOM is the <strong>Advanced DOM</strong> window, and a compact version can be overlaid directly on the chart.</p>
 <p>This article is the reference for the DOM interface — its columns, click rules and settings. For the complete window walkthrough see <a href="./advanced-dom.html">Advanced DOM Window</a>; for the on-chart ladder see <a href="./dom-trading-chart.html">DOM Trading on the Chart (Click-Trading Ladder)</a>.</p>
 <p><span class="confirm-flag">CONFIRM: whether &quot;Depth of Market&quot; also exists as a standalone chart indicator in the Indicator List, separate from the Advanced DOM window and the on-chart DOM Trading mode — adjust the intro if so</span></p>
-<div class="widget-mount" data-widget="dom-ladder"></div><h2 id="what-it-is">What it is</h2>
+<h2 id="what-it-is">What it is</h2>
 <p>The DOM answers the question: who is waiting to buy and sell at each price, and how do I trade against that? Each row is one price level. Bid quantities stack below the market, ask quantities above it, and the display updates in real time as orders are added, pulled and filled. Because orders are placed by clicking directly on a price row, the DOM is the tool of choice for traders who care about exact entry levels and queue position rather than chart-based entries.</p>
-<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Advanced DOM window on ES with the default columns labeled left to right — P&amp;L, B, Bid, Price, Ask, S, VP — and the header showing instrument, broker, account, open position and daily P&amp;L</div><div class="s-file">adv-dom-default-layout.png</div></div></div>
+<p>Watch a live ladder in action below — buy liquidity stacks green below the market, sell liquidity violet above it; hover any row to see what that level is telling you.</p>
+<div class="widget-mount" data-widget="dom-ladder"></div>
 <h2 id="when-to-use-it">When to use it</h2>
 <ul>
 <li>Scalping or short-term trading where the exact tick of entry matters.</li>
@@ -196,7 +197,7 @@
 </ul>
 </article>
 <div class="pn"><a class="prev" href="./dom-trading-chart.html"><div class="pn-lbl">← Previous</div><div class="pn-title">DOM Trading on the Chart (Click-Trading Ladder)</div></a><a class="next" href="./oco-strategies.html"><div class="pn-lbl">Next →</div><div class="pn-title">OCO (One-Cancels-the-Other) Strategies</div></a></div>
-    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 16, 2026 · screenshots pending capture (see placeholders)</div>
   </main>
   <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#what-it-is">What it is</a></li><li class="lv2"><a href="#when-to-use-it">When to use it</a></li><li class="lv2"><a href="#quick-start">Quick start</a></li><li class="lv2"><a href="#how-to-read-it">How to read it</a></li><li class="lv3"><a href="#optional-analysis-columns">Optional analysis columns</a></li><li class="lv3"><a href="#profiles">Profiles</a></li><li class="lv2"><a href="#settings-reference">Settings reference</a></li><li class="lv2"><a href="#tips-and-common-mistakes">Tips and common mistakes</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
 </div>

@@ -30,9 +30,9 @@ Deep Profile builds histograms of executed volume per price level over a period 
 1. Open a chart and add **Deep Profile** from the chart's **Indicators** button (or click one of the profile buttons — they are presets of this indicator).
 2. Open the settings and set **VBP Type** to **Volume Profile**.
 3. Set **VBP Period** to **Multiple** with **Length Type** = Days and a **Length Value** of 1 for one profile per day.
-4. Apply — each day now shows its own volume histogram.
+4. Apply — each day now shows its own volume histogram. Try the live profile below: hover the rows and drag the Value Area % to see how the POC and the VAH/VAL boundaries respond.
 
-[SCREENSHOT: A futures chart with Deep Profile in Multiple mode showing one volume histogram per day, POC highlighted on each profile | deep-profile-daily-profiles.png]
+[WIDGET: volume-profile-lab]
 
 ### Recommended starter configuration
 

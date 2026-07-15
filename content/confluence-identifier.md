@@ -24,6 +24,10 @@ The Confluence Identifier detects confluence areas from three families of eviden
 
 When enough of these elements land within a defined price range (your tick sensitivity), the indicator highlights that range as a potential support or resistance zone. Zones backed by more confluences are visually emphasized as stronger.
 
+If the profile levels are the least familiar family, try the interactive volume profile below — hover the rows and drag the Value Area percentage to see where the POC, VAH and VAL come from:
+
+[WIDGET: volume-profile-lab]
+
 ## When to use it
 
 - To build an objective level map: instead of hand-picking levels, you define the evidence and the indicator scores every price by how much evidence stacks there.

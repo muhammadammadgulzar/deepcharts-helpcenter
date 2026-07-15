@@ -49,15 +49,15 @@ A migration has two halves: things that follow your account automatically (your 
 
 [SCREENSHOT: License Key activation window on the new PC with the E-mail and License fields filled and the Login button visible | new-pc-license-activation.png]
 
-7. Reconnect your data feed. Open **Feed Settings**, create the connection for your provider and enter the username and password you collected in step 3 — credentials always have to be re-entered on a new installation. Provider-specific steps: [[connect-data-feed]].
+7. Reconnect your data feed. Open **Feed Settings**, create the connection for your provider and enter the username and password you collected in step 3 — credentials always have to be re-entered on a new installation. Try it in the Feed Settings window below: pick your source and watch the fields change per provider. Provider-specific steps: [[connect-data-feed]].
 
-[SCREENSHOT: Feed Settings dialog on the new PC with a connection being created and the Username and Password fields highlighted | new-pc-feed-settings-credentials.png]
+[WIDGET: feed-navigator]
 
 > **Note:** Your market data agreement is tied to your feed account, not to the computer — you do not need to sign it again for a machine change. If the connection is refused anyway, see [[fix-username-password]].
 
-8. Map your exchanges to the new connection in **Options → Symbol Manage**, the same way the first-run wizard did on the old machine — see [[symbol-manage]]. If you load a Cloud workspace in the next step, check the mapping afterwards anyway: the feed connection itself is part of the new install, not of the workspace.
+8. Map your exchanges to the new connection in **Options → Symbol Manage**, the same way the first-run wizard did on the old machine — see [[symbol-manage]]. Practice the mapping in the mock below: click the chain link to cycle which feed an exchange is mapped to. If you load a Cloud workspace in the next step, check the mapping afterwards anyway: the feed connection itself is part of the new install, not of the workspace.
 
-[SCREENSHOT: Symbol Manage window on the new PC showing exchanges mapped to the newly created feed connection | new-pc-symbol-manage-mapping.png]
+[WIDGET: symbol-manage-mock]
 
 9. Restore your layout: open the **Workspace** selector, choose the load option and pick your workspace from the **Cloud** tab. If you backed up files instead, copy them into **Documents → deepchart → Workspace** and **Template** on the new PC first, then load from the **Local** tab.
 

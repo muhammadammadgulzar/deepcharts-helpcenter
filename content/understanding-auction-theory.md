@@ -15,7 +15,9 @@ This article assumes you know what an aggressor and delta are — if not, start 
 
 ## The idea in one paragraph
 
-A market works like an auctioneer who cannot stop talking: price moves up until buyers refuse to pay more, then down until sellers refuse to accept less, endlessly probing both directions for the edges of fair value. Picture a livestock auction — the auctioneer raises the price while hands keep going up, and the lot is not done until the raises are met by silence. Every market move is that same process: an advance is "finished" when buying interest is exhausted at the top, and a decline is "finished" when selling interest is exhausted at the bottom. Imbalance shows where one side is overwhelming the other, an unfinished auction is a move that ended before exhaustion was proven, and absorption is the moment a patient counterparty silences the aggressive side without price moving at all.
+A market works like an auctioneer who cannot stop talking: price moves up until buyers refuse to pay more, then down until sellers refuse to accept less, endlessly probing both directions for the edges of fair value. Picture a livestock auction — the auctioneer raises the price while hands keep going up, and the lot is not done until the raises are met by silence. Every market move is that same process: an advance is "finished" when buying interest is exhausted at the top, and a decline is "finished" when selling interest is exhausted at the bottom. Imbalance shows where one side is overwhelming the other, an unfinished auction is a move that ended before exhaustion was proven, and absorption is the moment a patient counterparty silences the aggressive side without price moving at all. You can watch that two-way auction live in the ladder below — hover each level to see its role.
+
+[WIDGET: dom-ladder]
 
 ## Why traders care
 
@@ -30,7 +32,9 @@ A market works like an auctioneer who cannot stop talking: price moves up until 
 
 On a footprint chart, each price shows volume traded at the bid and at the ask. Because market buys lift the ask at one price while market sells hit the bid one tick lower, footprint imbalances are compared diagonally: ask volume at one price against bid volume one tick below. When one side exceeds the other by a large multiple — a common convention is 3:1 (300%), though the threshold is configurable in most tools — that price pair is marked as a buying or selling imbalance. A single imbalance is noise; three or more consecutive imbalances on the same side, called stacked imbalances, indicate that one side ran over the other across a whole zone, and that zone often gets defended when price returns to it.
 
-[SCREENSHOT: A footprint bar with the diagonal bid/ask comparison drawn as arrows between price levels, one 3:1 buying imbalance highlighted, and a separate bar showing three stacked buying imbalances boxed with the caption "stacked imbalances = support zone on retest" | auction-theory-diagonal-imbalance.png]
+Try it below — adjust the diagonal-imbalance ratio and hover the cells to see which diagonal pairs qualify.
+
+[WIDGET: footprint-lab]
 
 ### Unfinished auctions
 

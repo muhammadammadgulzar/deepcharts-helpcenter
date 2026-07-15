@@ -54,9 +54,9 @@ The single most important thing to understand: IBKR delivers **aggregated** mark
 
 [SCREENSHOT: Select Connection dropdown showing both the IBKR connection and a Rithmic or dxFeed connection, each with a green status dot | ibkr-plus-datafeed-connected.png]
 
-9. Open **Options → Symbol Manage** and set the Data Feed for every exchange to your **Rithmic or dxFeed feed — never to IBKR**. If an exchange is routed to IBKR, its charts will be built from aggregated data and will look wrong. See [[symbol-manage]].
+9. Open **Options → Symbol Manage** and set the Data Feed for every exchange to your **Rithmic or dxFeed feed — never to IBKR**. If an exchange is routed to IBKR, its charts will be built from aggregated data and will look wrong. Practice in the interactive mock below — the chain-link icon on a row cycles its mapped feed. See [[symbol-manage]].
 
-[SCREENSHOT: Symbol Manage window showing exchange rows with the Data Feed column set to the dxFeed/Rithmic connection, not IBKR | symbol-manage-route-datafeed-not-ibkr.png]
+[WIDGET: symbol-manage-mock]
 
 10. Open a chart, then open the **Trading Panel** (bottom-right of the chart). In the **Broker** field select **Interactive Brokers**, then select your IBKR trading account. Orders you place now route to TWS for execution while the chart keeps loading from your data feed. See [[trading-from-chart]].
 

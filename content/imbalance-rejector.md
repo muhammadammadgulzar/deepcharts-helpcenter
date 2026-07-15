@@ -18,6 +18,10 @@ Because it works with diagonal Bid/Ask comparisons at bar extremes, this indicat
 
 At the high of a bearish candle or the low of a bullish candle, the indicator compares volume diagonally between the Ask and Bid columns of neighboring price ticks. When the imbalance percentage at that extreme exceeds your minimum — and the extreme qualifies as a swing point over your lookback period — a marker is plotted a configurable number of ticks away from the high or low.
 
+The diagonal comparison is easiest to understand by doing it: in the interactive footprint below, adjust the imbalance ratio and hover the bid×ask cells to see which diagonal pairs qualify.
+
+[WIDGET: footprint-lab]
+
 ## When to use it
 
 - To spot potential reversal points where an extreme printed a strong imbalance.

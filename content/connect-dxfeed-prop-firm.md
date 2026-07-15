@@ -46,9 +46,9 @@ The setup differs from a regular dxFeed connection in two ways: you select **dxF
 | **Password** | The dxFeed password that came with it. |
 | **DOM Type** | **MBO** or **MBP** — see the note below. |
 
-Leave the other fields at their defaults.
+Leave the other fields at their defaults. See it for yourself in the interactive Feed Settings mock below — switch the Feed Source to dxFeed Prop and notice there is no Server field:
 
-[SCREENSHOT: Feed Settings dialog with Feed Source=dxFeed Prop selected, showing the form without any Server field, DOM Type dropdown open with MBO and MBP options | feed-settings-dxfeed-prop-dom-type.png]
+[WIDGET: feed-navigator]
 
 > **Note:** There is no **Server** field when the Feed Source is **dxFeed Prop** — do not look for one. (A Server field only appears with the plain **dxFeed** source used for direct data-feed accounts.) Routing is automatic: dxFeed sends you to the nearest of its two servers, Frankfurt (EU) or Virginia (US), and you cannot choose.
 
@@ -58,9 +58,9 @@ Leave the other fields at their defaults.
 
 6. Back in the main toolbar, click **Select Connection** again and click your new feed to connect.
 
-7. Route your exchanges to the feed: open **Options → Symbol Manage** and confirm the exchanges you trade are subscribed and mapped to this connection (the chain-link icon on a row changes its feed). The instrument picker only shows exchanges you have subscribed. Full walkthrough in [[symbol-manage]].
+7. Route your exchanges to the feed: open **Options → Symbol Manage** and confirm the exchanges you trade are subscribed and mapped to this connection (the chain-link icon on a row changes its feed). The instrument picker only shows exchanges you have subscribed. Try it in the mock below — subscribe an exchange and click the chain-link icon to cycle its feed. Full walkthrough in [[symbol-manage]].
 
-[SCREENSHOT: Symbol Manage window with CME subscribed and mapped to the dxFeed Prop connection, chain-link icon highlighted | symbol-manage-dxfeed-prop.png]
+[WIDGET: symbol-manage-mock]
 
 ### If you picked an unrelated platform at checkout
 

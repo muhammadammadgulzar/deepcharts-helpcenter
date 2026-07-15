@@ -16,6 +16,10 @@ Shift Candle identifies reversal "Shift" candles using Trinity logic and optiona
 
 The indicator scans for candles where the market shifts direction under specific structural and order-flow conditions — the Trinity criteria — such as a minimum tick breakout beyond prior structure, a minimum delta difference between compared bars and a maximum distance from the bar's point of control. When a candle qualifies, Shift Candle plots a marker at it. An optional imbalance filter requires stacked bid/ask imbalances to confirm the signal, and confirmed fresh imbalance zones can be drawn as colored areas that act as reference zones on later revisits.
 
+Stacked diagonal imbalances are the confirmation layer here — to get a feel for what one looks like in the bid×ask data, adjust the imbalance ratio and hover the highlighted cells in the footprint below.
+
+[WIDGET: footprint-lab]
+
 ## When to use it
 
 - You trade reversals and want candidates filtered by order-flow conditions rather than shape alone.

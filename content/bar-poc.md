@@ -18,6 +18,10 @@ Where a session profile gives you one POC per day, Bar POC gives you one per bar
 
 Bar POC is an orderflow level indicator. For each bar it locates the price level with the highest traded volume and marks it with a small highlight rectangle; optionally it draws an extension line from that POC toward the right edge of the chart. It answers the question "at what price did most of this bar's volume actually change hands — and has the market tested that price since?"
 
+Bar POC applies the same logic as a volume profile, one bar at a time — hover the rows in the interactive profile below to see how the highest-volume price (the magenta POC row) stands out from the rest:
+
+[WIDGET: volume-profile-lab]
+
 [SCREENSHOT: Chart window with Bar POC applied — candles with small highlight rectangles on the highest-volume price of each bar, and two or three extended POC lines running to the right edge of the chart, one of them showing a duration label | bar-poc-chart-overview.png]
 
 ## When to use it

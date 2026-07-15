@@ -18,6 +18,10 @@ Where a session profile gives you one static POC per period, Dynamic POC answers
 
 At every moment the indicator builds a volume distribution over your chosen reference period and marks its point of control — the single price level with the maximum traded volume in that window. As new data arrives and old data rolls out of the window, the POC updates, producing a line that follows the market's shifting center of volume. The envelope section adds percentage-based bands above and below the POC that act as volatility deviations.
 
+For a hands-on feel of how a volume distribution produces its point of control, hover the rows in the interactive profile below — the POC is the magenta row:
+
+[WIDGET: volume-profile-lab]
+
 ## When to use it
 
 - To track the market's current volume anchor intraday without managing profile periods manually.

@@ -14,6 +14,10 @@ Speed of Tape (Instant) measures instantaneous trade execution speed — how muc
 
 Where the standard [[speed-of-tape]] indicator plots pace as a historical series, the Instant variant keeps you focused on the last few readings, making it a real-time urgency gauge for active trading.
 
+The streaming tape below is the raw flow this indicator distills — watch the buy/sell/delta counters shift as prints roll in, and filter by All/Ask/Bid to isolate one side.
+
+[WIDGET: tape-lab]
+
 ## What it is
 
 The indicator analyzes volume flow over a configurable window (**Number of seconds**, default **10**) and draws the result as colored bars: green/teal bars mark positive-delta periods where buying pressure dominates, red/pink bars mark negative-delta periods where selling pressure dominates, and bar height reflects trading velocity intensity. By default only the most recent readings are shown (**Bars to show**, default **3**), keeping the display anchored to the present.

@@ -33,9 +33,9 @@ The exchange for your symbol is not routed to the connected feed in Symbol Manag
 1. First, confirm the market is actually open — it is not a weekend or a market holiday. Prices do not update when the market is closed.
 2. In DeepCharts, open **Options → Symbol Manage**.
 3. Find the row for your symbol's exchange (for example CME for NQ/ES/MNQ/MES, COMEX for GC/SI, NYMEX for CL/NG).
-4. Check the **Data Feed** column on that row. It must show the feed you are currently connected to.
+4. Check the **Data Feed** column on that row. It must show the feed you are currently connected to. Try it in the interactive mock below — click the chain-link icon on a row to change the mapped feed.
 
-[SCREENSHOT: Symbol Manage window with the exchange table visible and the Data Feed column highlighted, one row showing a wrong/blank feed assignment | symbol-manage-data-feed-column.png]
+[WIDGET: symbol-manage-mock]
 
 5. If the value is wrong or blank, click the **link icon** on that row (next to the delete icon) and pick the correct feed from your connected feeds.
 

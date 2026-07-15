@@ -18,7 +18,9 @@ It is the most direct way to compare aggression bar by bar, and the natural comp
 
 Delta Bar is a per-candle aggression gauge drawn in its own panel under the chart. Positive delta means more aggressive buying than selling in that candle; negative delta means the opposite. With the candlestick-style subgraph options, each delta bar can also reflect the range delta covered inside the bar — not only where it closed, but the extremes it reached along the way.
 
-[SCREENSHOT: Chart window with the Delta Bar indicator in a footer panel — price candles above and per-bar delta values below, with a clear mix of positive (bull-colored) and negative (bear-colored) delta bars | delta-bar-chart-overview.png]
+Try it live below — hover any delta bar to see which side was pushing in that candle, and watch how the running total keeps score.
+
+[WIDGET: delta-lab]
 
 ## When to use it
 

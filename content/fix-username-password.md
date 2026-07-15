@@ -34,9 +34,9 @@ The username or password is incorrect — most commonly because prop-firm trader
 1. Locate your actual Rithmic credentials. Prop-firm traders (Apex and others): your firm issues two sets of credentials — the website login for the firm's dashboard, and separate Rithmic credentials for the data feed. DeepCharts needs the **Rithmic** ones, which arrive in the firm's welcome email. Search your inbox for "Rithmic" if you are unsure.
 2. Copy and paste the username and password rather than typing them manually.
 3. Make sure no extra spaces were copied before or after either value — a trailing space is invisible but fails authentication.
-4. In **Feed Settings**, edit the connection, re-enter both fields, save, and try connecting again.
+4. In **Feed Settings**, edit the connection, re-enter both fields, save, and try connecting again. The interactive mock below shows the form — pick **Rithmic** as the source to see the exact fields you need to fill.
 
-[SCREENSHOT: The Feed Settings connection form with the Username and Password fields visible and filled (password masked), Save button in view | feed-settings-rithmic-credentials.png]
+[WIDGET: feed-navigator]
 
 ## If that didn't work
 

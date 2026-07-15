@@ -51,9 +51,9 @@ Click the trash icon on the account's row, then **Save Settings**.
 
 2. In the trading panel, set **Broker** to **SIM**.
 
-3. Pick your simulation account in the **Account** dropdown.
+3. Pick your simulation account in the **Account** dropdown. The interactive trading panel below shows what you get — hover any button for what it does, and click the SIM position to watch live P/L and flatten it.
 
-[SCREENSHOT: The trading panel with Broker set to SIM and the Account dropdown open showing the created simulation accounts | trading-panel-broker-sim.png]
+[WIDGET: trading-panel-mock]
 
 4. Place a test order — for example set the quantity to 1 and click **BUY MKT**. [[trading-from-chart]] walks through every order type.
 

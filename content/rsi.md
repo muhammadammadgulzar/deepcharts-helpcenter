@@ -34,9 +34,9 @@ The DeepCharts version adds an optional smoothed **Average** line on top of the 
 3. Search for "Relative Strength Index" and click **+** to add it — it plots in its own panel below the price chart.
 4. Click the gear icon next to the indicator to open its settings.
 
-The defaults are the textbook configuration: **Length** 14 with the **Overbought Level** at 70 and the **Oversold Level** at 30. Leave them as they are while you learn the indicator; they are also what most other traders are watching, which matters for levels that act partly by consensus.
+The defaults are the textbook configuration: **Length** 14 with the **Overbought Level** at 70 and the **Oversold Level** at 30. Leave them as they are while you learn the indicator; they are also what most other traders are watching, which matters for levels that act partly by consensus. Try it live below — drag the Length and level sliders, hover the curve for readings, and watch how the signal dots move.
 
-[SCREENSHOT: A price chart with the RSI indicator in a lower panel — the RSI curve oscillating between the 70 and 30 level lines, with a recent excursion above 70 highlighted | rsi-on-chart.png]
+[WIDGET: rsi-lab]
 
 ## How to read it
 

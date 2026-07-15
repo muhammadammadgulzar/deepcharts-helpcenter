@@ -43,6 +43,10 @@ The bar style dropdown is the chart's quick display menu. It answers "how do I s
 
 **Bar values readout:** the top-left **O: H: L: C:** fields plus **%V** (percent change from the previous day's close), **ΣV** and **ΔV** (the bar's volume figures [CONFIRM: exact definitions of ΣV and ΔV]). Values populate for the hovered bar, or the last bar when the cursor is off the chart.
 
+New to reading O, H, L and C on a candle? Hover the candle below — each zone explains itself, and you can flip it between bull and bear.
+
+[WIDGET: candle-anatomy]
+
 [SCREENSHOT: Side-by-side comparison of the same price move as standard candlesticks vs with Equi-Volume + Delta-Volume enabled, showing variable candle widths and green/purple intensity differences | display-options-equi-delta-compare.png]
 
 ## Settings reference

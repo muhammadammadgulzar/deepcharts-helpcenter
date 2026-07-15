@@ -57,6 +57,10 @@ Each preset is a view of the same underlying orderflow data at a different aggre
 | **W-DP** | Weekly delta profile | [[deep-profile]] |
 | **C-VP** | Composite profile of all the data loaded in the chart | [[deep-profile]] |
 
+The **OF-** presets turn each candle into a per-bar orderflow view — try the footprint below: hover the bid×ask cells and adjust the imbalance ratio to see what OF-B/A highlights in bold.
+
+[WIDGET: footprint-lab]
+
 Reading pointers:
 
 - The **OF-** presets are per-bar orderflow views. Start with [[reading-a-footprint]] to interpret the bid/ask columns and imbalance prints, and [[orderflow-101]] for the underlying concepts.
@@ -64,7 +68,9 @@ Reading pointers:
 - **D-VL** is the exception: instead of a profile it plots the daily VWAP with three standard-deviation bands on each side — see [[understanding-vwap]] for how traders use those bands.
 - **C-VP** builds a single profile from everything currently loaded in the chart, so its shape changes if you change how much history the chart loads.
 
-[SCREENSHOT: Side-by-side comparison of the same instrument with D-VP (daily volume profile) and D-DP (daily delta profile) applied, profiles visibly different | quick-template-dvp-vs-ddp.png]
+Practice reading the profile presets on the live profile below — drag the Value Area % and hover the rows to see how POC, VAH and VAL work in D-VP, W-VP and C-VP.
+
+[WIDGET: volume-profile-lab]
 
 ## Settings reference
 

@@ -79,9 +79,9 @@ Select **Rithmic Paper Trading** — that is Rithmic's default server for data-f
 | **Server** | Your firm's value from the table in step 1 — exactly as written. |
 | **Gateway** | **Automatic** (default), or the region nearest to you for lower latency. |
 
-Leave all other fields as they are.
+Leave all other fields as they are. Try the interactive Feed Settings mock below — switch the Feed Source to Rithmic and watch the Server field appear:
 
-[SCREENSHOT: DeepCharts Feed Settings dialog with a prop-firm Rithmic connection filled in, the Server dropdown open showing the list of prop-firm entries | feed-settings-prop-server-dropdown.png]
+[WIDGET: feed-navigator]
 
 > **Tip:** If old or expired prop accounts clutter your account list, enable the **Show only active accounts** toggle in the LOGIN INFO section of Feed Settings.
 
@@ -89,9 +89,9 @@ Leave all other fields as they are.
 
 7. Click **Select Connection** again and click your new feed to connect.
 
-8. Route your exchanges to the feed: open **Options → Symbol Manage** and confirm the exchanges you trade are subscribed and mapped to this connection (the chain-link icon on a row changes its feed). Full walkthrough in [[symbol-manage]].
+8. Route your exchanges to the feed: open **Options → Symbol Manage** and confirm the exchanges you trade are subscribed and mapped to this connection (the chain-link icon on a row changes its feed). Try it in the mock below — click the chain-link icon on a row to cycle its mapped feed. Full walkthrough in [[symbol-manage]].
 
-[SCREENSHOT: Symbol Manage window with the CME exchange row mapped to the new prop-firm Rithmic feed, chain-link icon highlighted | symbol-manage-prop-firm-feed.png]
+[WIDGET: symbol-manage-mock]
 
 ## Verify it worked
 

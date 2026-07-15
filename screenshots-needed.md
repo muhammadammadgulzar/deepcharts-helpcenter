@@ -1,4 +1,4 @@
-# Screenshots to capture — 498 placeholders
+# Screenshots to capture — 443 placeholders
 
 Save each capture as `site/assets/img/<filename>` and replace the placeholder in the matching content/*.md file with a normal image tag, then rebuild.
 
@@ -17,8 +17,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 - **wizard-delayed-feed-selected.png** — Startup Wizard datafeed step with the radio option I want to use 15 minutes delayed data powered by dxFeed for the moment selected
 - **wizard-symbol-manage-delayed.png** — Startup Wizard Symbol Manage step showing the Exchange, Description and Data Feed columns with rows mapped to the delayed dxFeed connection
 - **feed-selector-feed-settings.png** — Feed selector dropdown on the main bar with the Feed Settings item highlighted
-- **feed-settings-delayed-source.png** — Feed Settings dialog with the Feed Source dropdown open and dxFeed - 15m delayed highlighted in the source list
-- **symbol-manage-delayed-mapping.png** — Symbol Manage window with the Subscribe List tab showing exchanges mapped to the dxFeed - 15m delayed connection in the Data Feed column, with the Subscribe and Change connection buttons visible
 - **delayed-feed-chart-running.png** — A price chart receiving data from the delayed feed with the delayed-data indication visible and the green feed dot in the main bar
 
 ## How to Buy a Data Feed and Get Your Credentials  (`content/buy-data-feed.md`)
@@ -43,34 +41,25 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 - **general-settings-sim-account-tab.png** — The General Settings window on the Sim Account tab showing the accounts table with Name and Balance columns, a SIM account row, the per-row trash icon and the Add button
 - **add-sim-account-dialog.png** — The Add Sim Account dialog with the Name field filled in and the Balance field showing the default 10000, Cancel and Add buttons visible
 - **chart-trading-panel-toggle.png** — A price chart with the bottom-bar Trading panel toggle highlighted and the trading panel open on the right side
-- **trading-panel-broker-sim.png** — The trading panel with Broker set to SIM and the Account dropdown open showing the created simulation accounts
 
 ## Quick Start: From Install to Your First Trade  (`content/quick-start-first-trade.md`)
 
 - **license-activation-dialog.png** — The DeepCharts License Key dialog on first launch with the Email and License fields visible and the version number in the footer
 - **startup-wizard-feed-choice.png** — Startup wizard step 1 with the 15 minutes delayed data powered by dxFeed radio option selected
-- **quick-start-feed-green-dot.png** — The main bar feed selector dropdown with the delayed-feed connection selected and a green status dot showing
-- **quick-start-symbol-manage.png** — The Symbol Manage window showing the exchange mapping table with the Data Feed column populated by the delayed feed connection
 - **quick-start-select-instrument.png** — The Select Instrument dialog with CME selected and MES MICRO SP highlighted
 - **quick-start-add-volume-indicator.png** — The Indicator List window with the search box showing Volume and the + icon next to the Volume indicator highlighted
 - **quick-start-trading-panel-sim.png** — The chart trading panel with Broker set to SIM, an account selected, and quantity set to 1
 - **quick-start-bracket-order.png** — The trading panel with OCO Strategy enabled, Mode set to SL/TP, SL and TP tick values entered, and the BUY MKT button highlighted
 
-## Supported Brokers, Prop Firms and Data Feeds  (`content/compatibility-guide.md`)
-
-- **feed-source-dropdown-all-options.png** — Feed Settings dialog with the Feed Source dropdown open, showing the available sources including dxFeed, dxFeed Prop, Rithmic RAPI, Rithmic Wss - beta, CQG and 15 min delayed
-
 ## How to Connect a Data Feed (Feed Settings)  (`content/connect-data-feed.md`)
 
 - **select-connection-feed-settings.png** — DeepCharts main toolbar with the Select Connection dropdown open and the Feed Settings entry at the bottom of the dropdown highlighted
-- **add-connection-feed-source.png** — Add Connection form in Feed Settings with the Feed Source dropdown open showing the full list of sources
 - **rithmic-rapi-gateway-options.png** — Rithmic RAPI connection form filled in, with the Gateway dropdown open showing the region list and Automatic selected
 - **feed-connected-green-dot.png** — Select Connection dropdown showing the newly saved feed with a green status dot next to it
 
 ## Symbol Manage: Subscribe Exchanges and Map Your Feed  (`content/symbol-manage.md`)
 
 - **options-menu-symbol-manage.png** — Options menu open in the DeepCharts main bar with the Symbol Manage entry highlighted
-- **symbol-manage-subscribe-list.png** — Symbol Manage window on the Subscribe List tab showing subscribed exchanges with their Data Feed column, and the Subscribe, Unsubscribe and chain-link icons visible
 - **symbol-manage-change-feed.png** — Subscribe List row with the chain-link change-feed icon clicked and the list of saved feed connections open for selection
 - **instrument-picker-subscribed-exchanges.png** — New Price Chart instrument picker showing only the subscribed exchanges, with a symbol selected
 
@@ -83,7 +72,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 ## How to Connect a dxFeed Data Feed  (`content/connect-dxfeed.md`)
 
 - **dxfeed-open-feed-settings.png** — Main toolbar with the Select Connection dropdown open and Feed Settings highlighted at the bottom
-- **dxfeed-connection-form-website-account.png** — Add Connection form with Feed Source set to dxFeed, Server set to Website Account and the DOM Type field visible with MBO selected
 - **dxfeed-connected-green.png** — Select Connection dropdown with the dxFeed profile connected and its status circle green
 
 ## How to Connect a Rithmic Data Feed  (`content/connect-rithmic.md`)
@@ -92,8 +80,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 - **rtrader-login-paper-trading.png** — R Trader Pro login screen showing the two side-by-side login forms, both filled identically, with System set to Rithmic Paper Trading and the Gateway dropdown visible
 - **rtrader-performance-sliders-max.png** — R Trader Pro Preferences window on the Performance tab with the Quotes and Order Book sliders both dragged to the maximum position
 - **select-connection-feed-settings.png** — DeepCharts main toolbar with the Select Connection dropdown open and the Feed Settings entry at the bottom highlighted
-- **feed-settings-rithmic-rapi-filled.png** — Feed Settings dialog with a new Rithmic connection form filled in — Feed Source=Rithmic RAPI, Server=Rithmic Paper Trading, Gateway=Automatic — credentials blurred
-- **symbol-manage-rithmic-mapping.png** — Symbol Manage window, Subscribe List tab, showing subscribed exchanges with the data-feed column pointing at the new Rithmic connection and the chain-link icon highlighted on one row
 - **rithmic-connected-green-dot.png** — DeepCharts main toolbar showing the green connection indicator next to the Rithmic feed name, with a live ES chart updating in the background
 
 ## Connect Rithmic Using the RTrader Pro Plugin  (`content/rtrader-pro-plugin.md`)
@@ -107,8 +93,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 - **rtrader-login-prop-firm-system.png** — R Trader Pro login screen with both forms filled, the System dropdown open showing prop-firm server entries, and the Gateway field visible
 - **rtrader-performance-max-prop.png** — R Trader Pro Preferences Performance tab with both Quotes and Order Book sliders at maximum
-- **feed-settings-prop-server-dropdown.png** — DeepCharts Feed Settings dialog with a prop-firm Rithmic connection filled in, the Server dropdown open showing the list of prop-firm entries
-- **symbol-manage-prop-firm-feed.png** — Symbol Manage window with the CME exchange row mapped to the new prop-firm Rithmic feed, chain-link icon highlighted
 
 ## Connect Apex Trader Funding  (`content/connect-apex.md`)
 
@@ -116,23 +100,17 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 - **rtrader-apex-agreement-prompt.png** — R Trader Pro market data agreement prompt after login, with the accept button visible
 - **rtrader-apex-performance-sliders.png** — R Trader Pro Preferences window, Performance tab, Quotes and Order Book sliders both at maximum
 - **apex-select-connection-menu.png** — DeepCharts top toolbar with the Select Connection dropdown open and Feed Settings highlighted at the bottom
-- **feed-settings-apex-server.png** — Feed Settings dialog with the Apex connection filled in — Feed Source=Rithmic RAPI, Server=Apex highlighted in the Server dropdown, credentials blurred
-- **symbol-manage-apex-feed.png** — Symbol Manage window with CME subscribed and its data feed set to the Apex connection, chain-link icon highlighted
 
 ## Connect a Prop-Firm dxFeed Account (MFF, Aqua, Goat...)  (`content/connect-dxfeed-prop-firm.md`)
 
 - **prop-dashboard-sign-agreement.png** — A prop-firm dashboard (example layout) with the market data agreement signing button highlighted
 - **dxfeed-prop-select-connection.png** — DeepCharts top toolbar with the Select Connection dropdown open and Feed Settings highlighted
-- **feed-settings-dxfeed-prop-dom-type.png** — Feed Settings dialog with Feed Source=dxFeed Prop selected, showing the form without any Server field, DOM Type dropdown open with MBO and MBP options
-- **symbol-manage-dxfeed-prop.png** — Symbol Manage window with CME subscribed and mapped to the dxFeed Prop connection, chain-link icon highlighted
 
 ## How to Connect CQG (AMP, Optimus, EdgeClear, Ironbeam...)  (`content/connect-cqg.md`)
 
 - **feed-settings-menu-cqg.png** — DeepCharts main bar with the Select Connection dropdown open and the Feed Settings entry highlighted
-- **feed-settings-cqg-source.png** — Feed Settings dialog with the Feed Source dropdown open and CQG highlighted, Name field filled in as "AMP CQG"
 - **feed-settings-cqg-complete.png** — Completed CQG connection form showing Name, Feed Source=CQG, Username filled, Use demo credentials unchecked, Connect on startup visible, with the Save button highlighted
 - **cqg-connected-green-dot.png** — Select Connection dropdown showing the new CQG feed with a green status dot
-- **symbol-manage-cqg-routing.png** — Symbol Manage window with an exchange row showing the Data Feed column set to the CQG connection
 
 ## Connect Interactive Brokers (Execution Only)  (`content/connect-interactive-brokers.md`)
 
@@ -140,7 +118,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 - **tws-trusted-ips.png** — TWS API settings Trusted IPs section showing 127.0.0.1 added to the list and the Allow connections from localhost only checkbox checked
 - **feed-settings-ibkr.png** — DeepCharts Feed Settings dialog with Feed Source set to Interactive Brokers, Host 127.0.0.1, Port and Client ID fields filled
 - **ibkr-plus-datafeed-connected.png** — Select Connection dropdown showing both the IBKR connection and a Rithmic or dxFeed connection, each with a green status dot
-- **symbol-manage-route-datafeed-not-ibkr.png** — Symbol Manage window showing exchange rows with the Data Feed column set to the dxFeed/Rithmic connection, not IBKR
 - **trading-panel-ibkr-broker.png** — Trading Panel at the bottom-right of a chart with the Broker field set to Interactive Brokers and an account selected
 
 ## DeepCharts Competition: Join and Connect  (`content/competition-connect.md`)
@@ -149,25 +126,20 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 - **contest-credentials.png** — Contest page after joining, showing the See Credentials button and the credentials panel with username, password, feed source V-Sim and account ID visible (values redacted)
 - **feed-settings-vsim.png** — Feed Settings dialog with Feed Source set to V-Sim and the contest username entered
 - **contest-and-datafeed-green.png** — Select Connection dropdown with both the V-Sim contest connection and a live data feed connection showing green dots
-- **trading-panel-vsim-contest.png** — Trading Panel with Broker set to V-Sim, the competition account selected and the $50,000 starting balance visible
 
 ## Connect Historical Data (End of Day)  (`content/end-of-day-data.md`)
 
 - **feed-settings-menu-historical.png** — DeepCharts main bar with the Select Connection dropdown open and Feed Settings highlighted
 - **feed-settings-historical-source.png** — Feed Settings dialog with the Feed Source dropdown open and Historical highlighted, Name filled in as "End of Day"
-- **symbol-manage-historical-routing.png** — Symbol Manage window with an exchange row whose Data Feed column is set to the "End of Day" Historical profile
 - **chart-end-of-day-data.png** — A price chart displaying end-of-day historical data loaded from the Historical feed profile
 
 ## Manage and Switch Between Feed Connections  (`content/manage-feed-connections.md`)
 
 - **feed-selector-multiple-connections.png** — DeepCharts main bar with the Select Connection dropdown open, listing several saved connections, one with a green dot and the others disconnected
-- **feed-settings-add-remove-save.png** — Feed Settings dialog showing the list of saved connections on one side and the Add Connection, Remove and Save buttons visible
-- **symbol-manage-switch-feed.png** — Symbol Manage window with the chain-link icon highlighted on an exchange row and the feed-selection choices visible
 
 ## Fix: Live Feed Connected but Chart Is Not Moving  (`content/feed-connected-chart-not-moving.md`)
 
 - **green-dot-chart-frozen.png** — DeepCharts main toolbar with the connection dot green, next to an open price chart that is visibly stale (last candle timestamp from a previous session highlighted)
-- **symbol-manage-data-feed-column.png** — Symbol Manage window with the exchange table visible and the Data Feed column highlighted, one row showing a wrong/blank feed assignment
 - **symbol-manage-link-feed.png** — The feed-selection dialog that opens from the link icon in Symbol Manage, with the connected feed highlighted before confirming
 - **symbol-manage-subscribe-exchange.png** — The Subscribe dialog reached from Export Mode, with a data feed chosen and one exchange selected, Select button visible
 
@@ -181,7 +153,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 ## Fix: Connection Failed — Check Username and Password  (`content/fix-username-password.md`)
 
 - **rithmic-username-password-error.png** — The connection error dialog showing the "Please make sure you entered the username and password correctly" message after a failed Rithmic connection
-- **feed-settings-rithmic-credentials.png** — The Feed Settings connection form with the Username and Password fields visible and filled (password masked), Save button in view
 - **feed-settings-server-dropdown.png** — Feed Settings with the Server dropdown open, showing entries such as Apex and Paper Trading, with the correct one highlighted
 
 ## Fix: Connection Failed — Bad Server  (`content/fix-bad-server.md`)
@@ -231,12 +202,10 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 - **symbol-subscription-issue-message.png** — DeepCharts showing the symbol subscription issue message when opening a chart, with the affected symbol visible
 - **feed-bar-green-indicator.png** — DeepCharts feed bar with the green connection indicator visible next to the active feed name
-- **symbol-manage-connection-names.png** — Symbol Manage window listing subscribed markets with the connection name column visible, one market highlighted showing a wrong or empty connection
 - **symbol-manage-reassign-connection.png** — Symbol Manage window with the right-click dropdown open on a market row, showing the list of available connections to assign
 
 ## Fix: App Crashes When Saving Feed Settings  (`content/app-crashes-saving-feed.md`)
 
-- **feed-settings-before-save-crash.png** — Feed Settings dialog filled in with a connection, cursor on the Save button — the state immediately before the crash occurs
 - **run-deepcharts-as-administrator.png** — Windows Explorer context menu on DeepChart.exe with "Run as administrator" highlighted
 - **file-explorer-show-hidden-items.png** — File Explorer View menu open with Show > Hidden items checked, in the user profile folder
 - **appdata-deepcharts-folder.png** — AppData folder in File Explorer with the DeepCharts application folder selected before deletion
@@ -251,7 +220,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 ## Fix: Charts Lagging or Data Delayed (Checklist)  (`content/data-delayed-lagging.md`)
 
 - **chart-red-delay-label.png** — A chart with the red delay label visible in the top-left corner showing a delay value in seconds
-- **symbol-manage-delayed-to-live.png** — Symbol Manage window showing an exchange routed to the delayed dxFeed entry, with the control used to switch it to the live feed highlighted
 - **diagnostic-tools-network-test-results.png** — Diagnostic Tools window after the network test has completed, showing ping and download speed results per region with the copy-to-clipboard button visible
 - **dxfeed-dom-type-mbp.png** — dxFeed feed settings with the DOM Type field open showing the MBO and MBP options, MBP selected
 - **rtrader-performance-sliders-max.png** — R Trader Pro Preferences Performance tab with both Quotes and Order Book sliders dragged to maximum
@@ -294,13 +262,11 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 - **chart-bottom-bar-quick-templates.png** — Bottom bar of a price chart showing the Templates button followed by the OF-VP, OF-B/A, D-VP, D-DP, D-VL, W-VP, W-DP and C-VP radio buttons, with the DOM Trading radio and Trading panel toggle at the right end
 - **quick-template-of-vp-applied.png** — Price chart immediately after clicking OF-VP, with the OF-VP radio selected in the bottom bar and each candle rendered as a per-bar volume profile
-- **quick-template-dvp-vs-ddp.png** — Side-by-side comparison of the same instrument with D-VP (daily volume profile) and D-DP (daily delta profile) applied, profiles visibly different
 
 ## Link Windows with Color Groups  (`content/link-windows.md`)
 
 - **chart-link-icon-titlebar.png** — Top-right corner of a chart window with the square link icon highlighted, left of the minimize/maximize/close buttons
 - **chart-link-menu-options.png** — Chart link menu open showing None link, the eight colored Link entries and the $ Link Trading Symbol option, with Link 1 highlighted
-- **linked-charts-symbol-change.png** — Two linked charts side by side, the Select Instrument dialog open on the left chart with a new symbol selected
 
 ## Replay Market Data  (`content/replay-data.md`)
 
@@ -318,7 +284,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 - **adv-ts-open-flow.png** — The New menu open in the DeepCharts main bar with Adv. Time And Sales highlighted, and the Select Instrument dialog visible with NQ selected
 - **adv-ts-window-overview.png** — Full Adv. Time And Sales window on NQ showing the title bar icons (logo, gear, link, minimize, close), the full-width symbol dropdown, and a mixed tape of green and pink price cells with blue volume numbers
-- **adv-ts-row-colors.png** — Close-up of tape rows showing green (ask-side) and pink (bid-side) price cells with a burst of gray price cells in between, volume values in blue
 - **adv-ts-gear-menu.png** — Adv. Time And Sales gear menu fully open showing all items: the All/Ask/Bid Trades filter with checkmark on All Trades, the Enable Bid/Ask, Enable Delta, Chart Settings, Enable book imbalance, Book imbalance settings, Duplicate Adv. TS, Always on Top, Template, Rebuild TS, Rename TS and Settings TS entries
 - **adv-ts-ask-filter.png** — Tape with the Ask Trades filter active — every row green — and the gear menu open showing the checkmark moved to Ask Trades
 - **adv-ts-bid-ask-panel.png** — Adv. Time And Sales with the Bid/Ask bottom panel enabled — purple box on the left, green box on the right, contract counts under each box and the full-width green Reset button
@@ -347,7 +312,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 - **profile-chart-ticks-grouping.png** — The ticks-grouping dropdown open showing the 1 T, 20 T and 100 T presets, with the Set Ticks Grouping dialog open showing the numeric field and Cancel, Apply and Set buttons
 - **profile-chart-multi-overlays.png** — Profile Chart with several toggles enabled at once — TPO letters plus daily volume-profile bars per session in the main area, and three vertical areas labeled W-VP, W-DP and C-VP at the right edge each holding a full-height histogram
 - **profile-chart-indicators-panel.png** — Indicators panel open over the Profile Chart listing Chart Area 1 with Price and several DT and DP: Vol instances, plus Vertical Chart Areas 1-3 each holding one weekly or composite instance, with the trash, eye and gear icons visible per row
-- **profile-chart-tpo-closeup.png** — Close-up of one session's TPO letter profile at 100 T grouping showing letter columns, the magenta POC row, dashed value-area boundary lines and the green/purple/yellow vertical bars at the session edges
 - **profile-chart-trading-panel.png** — Profile Chart with the trading panel docked on the right showing the Qty field, MKT/BID-ASK/LMT/STP/STP LMT grid, Breakeven and Cancel and Flat buttons and the OCO block, with the $ toolbar icon green
 
 ## Market Scanner  (`content/scanner-window.md`)
@@ -378,24 +342,20 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 - **chart-dollar-icon-trading-enabled.png** — Chart top-left icon row with the dollar icon highlighted in its green (armed) state, next to the toolbar, bar-style, indicator, gear and camera icons
 - **chart-trading-panel-open.png** — Price chart with the trading panel open on the right side, showing the symbol dropdown, Open Qty / Open P/L / Daily P/L readouts, Qty selector, Broker and Account dropdowns, and the BUY/SELL button grid
 - **trading-panel-select-instrument.png** — Trading panel symbol dropdown open showing the Select Instrument dialog with the exchange sidebar and filter box
-- **trading-panel-button-grid.png** — The trading panel BUY/SELL button grid with the MKT, BID/ASK, LMT, STP and STP LMT rows visible, plus the Cancel, Breakeven and Cancel and Flat buttons below
 - **chart-drag-working-order.png** — A working buy limit order shown on the chart being dragged to a new price level with the cursor visible
 
 ## Trading Panel Reference: Every Button and Field  (`content/trading-panel-reference.md`)
 
-- **trading-panel-full-annotated.png** — Full trading panel on the right edge of a chart, annotated in three zones from top to bottom: header readouts, account and quantity row, order button grid with exit buttons, OCO Strategy block
 - **trading-panel-oco-red-exclamation.png** — Trading panel OCO block in MULTI mode showing the red exclamation icon next to the Mode dropdown, with the panel Qty field visible showing a mismatching value
 
 ## DOM Trading on the Chart (Click-Trading Ladder)  (`content/dom-trading-chart.md`)
 
 - **dom-trading-ladder-enabled.png** — Price chart with DOM Trading enabled — green buy column and red sell column at the right edge, the D: 0.00 $ label at the top of the ladder and the orange CANCEL ALL and FLAT ALL buttons at the bottom, with the bottom-bar DOM Trading radio highlighted
-- **dom-ladder-click-buy-limit.png** — Close-up of the DOM ladder with the cursor over the green column below the current price, and a working Buy Limit order marker visible at a level where a click was made
 - **dom-ladder-level2-liquidity.png** — DOM ladder zoomed in on a Level 2 feed showing resting liquidity quantities in the price levels of the green and red columns
 - **dom-trading-dropdown-options.png** — The DOM Trading dropdown menu open in the chart bottom bar showing Enable Chart Trading, Chart Trading Width, Trading Colors, Line Bid/Ask, DOM Settings and Text Settings
 
 ## Depth of Market (DOM) Indicator  (`content/depth-of-market.md`)
 
-- **adv-dom-default-layout.png** — Advanced DOM window on ES with the default columns labeled left to right — P&L, B, Bid, Price, Ask, S, VP — and the header showing instrument, broker, account, open position and daily P&L
 - **new-book-adv-dom.png** — New menu open with Book submenu and ADV DOM highlighted, Select Instrument dialog visible behind it
 - **adv-dom-drag-order.png** — DOM ladder with a working buy limit order in the B column being dragged to a lower price row, cursor visible mid-drag
 - **adv-dom-column-menu.png** — Column header right-click menu open over the Advanced DOM showing the list of additional columns including Pull/Stack, Trades and Offers with checkmarks
@@ -441,17 +401,14 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 ## Orderflow 101: Bid, Ask, Aggressor and Delta  (`content/orderflow-101.md`)
 
-- **orderflow-101-cumulative-delta-divergence.png** — A price chart of an ES futures session with a cumulative delta panel below it, annotated with arrows marking (1) a rally where price and cumulative delta rise together and (2) a later new price high where cumulative delta makes a lower high, labelled "delta divergence"
 - **orderflow-101-worked-example-absorption.png** — Two consecutive footprint bars annotated side by side — first bar with strongly positive delta closing on its high, second bar with similar positive delta but a flat close, annotation text "same buying effort, no result = absorption"
 
 ## Understanding Volume Profile: POC, Value Area, HVN/LVN  (`content/understanding-volume-profile.md`)
 
-- **volume-profile-anatomy-annotated.png** — A session volume profile beside an ES price chart, annotated with callouts on the POC (longest row), the shaded value area with VAH and VAL boundary lines, one HVN bulge and one LVN gap between volume clusters
 - **volume-profile-worked-example-va-rotation.png** — Intraday ES chart with yesterday's profile overlaid, annotated with the open above VAH, the re-entry into value, and an arrow path toward the POC labelled with the rotation logic
 
 ## Understanding Auction Theory: Imbalance, Unfinished Auctions, Absorption  (`content/understanding-auction-theory.md`)
 
-- **auction-theory-diagonal-imbalance.png** — A footprint bar with the diagonal bid/ask comparison drawn as arrows between price levels, one 3:1 buying imbalance highlighted, and a separate bar showing three stacked buying imbalances boxed with the caption "stacked imbalances = support zone on retest"
 - **auction-theory-worked-example-nq.png** — An NQ footprint sequence annotated in three stages — stacked buying imbalances during the rally, an absorption bar at the prior-day high with high volume and flat price, and the untapered top tick circled as a potential unfinished auction
 
 ## Understanding Icebergs and Absorption  (`content/understanding-icebergs-absorption.md`)
@@ -461,7 +418,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 ## Understanding VWAP  (`content/understanding-vwap.md`)
 
-- **understanding-vwap-bands-annotated.png** — An ES intraday chart with session VWAP and three standard-deviation bands above and below, annotated with (1) the morning open where the bands are tight and unstable, (2) a midday pullback that holds the VWAP line, and (3) an afternoon push riding the first upper band with the VWAP visibly rising
 - **understanding-vwap-worked-example.png** — The worked example as an annotated ES chart — morning drive above VWAP, first pullback touch labelled "decision point", the failed retest from below labelled "support becomes resistance", and the afternoon rotation between the bands with arrows
 
 ## Understanding Market Structure and Sessions (RTH/ETH, Rollover)  (`content/understanding-market-structure-sessions.md`)
@@ -471,7 +427,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 ## Reading a Footprint: Worked Examples  (`content/reading-a-footprint.md`)
 
-- **footprint-anatomy-annotated.png** — A single footprint bar magnified and annotated — left bid column and right ask column labelled, one heavy row highlighted, the bar's total volume and delta readouts below, and a callout explaining the bid x ask notation
 - **footprint-example-stacked-imbalances.png** — Footprint bars around a breakout with four stacked buy imbalances highlighted on consecutive diagonal cells, positive delta readout below the bar, and the stacked zone marked as future support
 - **footprint-example-unfinished-auction.png** — A swing low footprint with the extreme price row showing volume on both bid and ask, annotated "unfinished auction — no zero print", plus a later revisit of the same price marked with an arrow
 
@@ -486,13 +441,11 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 ## Deep Print (Footprint)  (`content/deep-print.md`)
 
-- **deep-print-on-chart.png** — A futures chart with Deep Print active in Ask/Bid Split mode, several candles showing per-tick bid and ask volume cells with imbalance coloring visible
 - **deep-print-poc-value-area.png** — Zoomed view of two or three Deep Print candles with the Volume POC border, the value area highlight and one stacked imbalance annotated
 - **deep-print-multi-column.png** — Deep Print settings dialog open at the Sizing section with Multi Column configured, next to a chart showing a candle rendered as three side-by-side columns (Bid×Ask, Delta, Volume)
 
 ## Deep Profile (Volume / Delta Profile)  (`content/deep-profile.md`)
 
-- **deep-profile-daily-profiles.png** — A futures chart with Deep Profile in Multiple mode showing one volume histogram per day, POC highlighted on each profile
 - **deep-profile-settings-general.png** — Deep Profile settings dialog open at the General settings section showing the VBP Type and VBP Period dropdowns
 - **deep-profile-merge-split-menu.png** — Right-click context menu on a profile showing the merge, split and reset options
 
@@ -508,7 +461,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 ## Deep Delta  (`content/deep-delta.md`)
 
-- **deep-delta-multi-range-chart.png** — Chart with Deep Delta in Multi-Range mode below the price panel, two colored delta series showing small-size and large-size delta diverging on the same candles
 - **deep-delta-settings-ranges.png** — Deep Delta settings dialog open at the Parameters section showing Delta Mode set to Multi-Range and the four range rows with Min/Max filters
 
 ## Deep Stats  (`content/deep-stats.md`)
@@ -549,7 +501,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 ## Moving Average  (`content/moving-average.md`)
 
-- **moving-average-on-chart.png** — A candlestick chart with a Moving Average line plotted over price, showing price trending above a rising average; indicator name and value visible in the chart legend
 - **moving-average-settings.png** — Moving Average settings dialog open, showing the Parameters section with Input, Length set to 21 and the Type Average dropdown expanded listing Simple, Exponential, Triangular and Weighted
 
 ## Super Trend  (`content/super-trend.md`)
@@ -614,12 +565,10 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 ## Relative Strength Index (RSI)  (`content/rsi.md`)
 
-- **rsi-on-chart.png** — A price chart with the RSI indicator in a lower panel — the RSI curve oscillating between the 70 and 30 level lines, with a recent excursion above 70 highlighted
 - **rsi-settings.png** — The RSI settings dialog showing the General group (Input data, Length 14), the Average group (Enable, Average Type, Length 20) and the Level settings group (Overbought 70, Oversold 30)
 
 ## MACD  (`content/macd.md`)
 
-- **macd-on-chart.png** — A futures chart with the MACD indicator in its own area below the price bars — MACD line, signal line and histogram all visible, with at least one clear signal-line crossover on screen
 - **macd-histogram-crossover.png** — Close-up of the MACD chart area showing the histogram shrinking into a signal-line crossover, with the crossover bar highlighted
 - **macd-settings-parameters.png** — The MACD settings dialog open on the Parameters section, showing Fast EMA Period 12, Slow EMA Period 26, the Input Data dropdown and the Smooth option
 
@@ -686,7 +635,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 ## VWAP Envelopes  (`content/vwap-envelopes.md`)
 
-- **vwap-envelopes-on-chart.png** — Intraday candlestick chart with VWAP Envelopes overlaid — the central VWAP line with 1st, 2nd and 3rd standard-deviation bands above and below, price rejecting the 2nd band and returning toward VWAP
 - **vwap-envelopes-settings.png** — VWAP Envelopes settings dialog open showing Period Mode (Daily/Minutes), Period Value, Envelope Mode (Standard Deviation / Price Percentage) and the 1st/2nd/3rd Standard band parameters
 
 ## Average Daily Range Target (ADR Target)  (`content/adr-target.md`)
@@ -701,7 +649,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 ## Delta Bar  (`content/delta-bar.md`)
 
-- **delta-bar-chart-overview.png** — Chart window with the Delta Bar indicator in a footer panel — price candles above and per-bar delta values below, with a clear mix of positive (bull-colored) and negative (bear-colored) delta bars
 - **delta-bar-settings-dialog.png** — Delta Bar settings dialog showing the data setting section with the input options (Volume, Order, Trades, Aggregate Volume, Aggregate Trades) and the Subgraphs section with the style dropdown open on Candlestick, OHLC, CandleBody
 
 ## Delta % Highlight  (`content/delta-highlight.md`)
@@ -711,12 +658,10 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 ## Delta Cumulative Candlestick  (`content/delta-cumulative-candlestick.md`)
 
-- **delta-cumulative-candlestick-overview.png** — Chart window with Delta Cumulative Candlestick in a panel beneath price — the cumulative delta candlestick series trending upward together with price, zero line visible in the panel
 - **delta-cumulative-candlestick-settings.png** — Delta Cumulative Candlestick settings dialog showing the Input Data dropdown open with Volumes, Order and Aggregates Trades options, plus Filter Min, Filter Max, Reset to Start Session, Average and Zero Line settings
 
 ## Delta Cumulative Histogram  (`content/delta-cumulative-histogram.md`)
 
-- **delta-cumulative-histogram-overview.png** — Chart window with Delta Cumulative Histogram at the base — green cumulative bars rising during a rally, then flattening while price keeps pushing, illustrating a divergence
 - **delta-cumulative-histogram-settings.png** — Delta Cumulative Histogram settings dialog showing Input Data options (Volumes, Trades), Filter Min and Filter Max fields, the Restore at Start Session toggle, and the Subgraphs style options Bars / Line
 
 ## Volume Swing  (`content/volume-swing.md`)
@@ -762,7 +707,6 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 
 ## Market Profile (TPO)  (`content/market-profile-tpo.md`)
 
-- **market-profile-tpo-blocks-chart.png** — A chart with the Market Profile indicator applied in Blocks mode, showing lettered TPO stacks for one full session with the POC line and Value Area visible
 - **market-profile-tpo-settings-general.png** — The Market Profile settings dialog open on the General section, showing TPO Base Minute, TPO Type and Period options
 
 ## Imbalance Tracker  (`content/imbalance-tracker.md`)
@@ -997,7 +941,5 @@ Save each capture as `site/assets/img/<filename>` and replace the placeholder in
 - **workspace-save-cloud-before-migration.png** — Workspace save dialog with the Cloud destination selected and a workspace name entered, illustrating a cloud backup before migration
 - **documents-deepchart-template-workspace-folders.png** — Windows Explorer showing the Documents\deepchart folder with the Template and Workspace subfolders highlighted for copying
 - **new-pc-license-activation.png** — License Key activation window on the new PC with the E-mail and License fields filled and the Login button visible
-- **new-pc-feed-settings-credentials.png** — Feed Settings dialog on the new PC with a connection being created and the Username and Password fields highlighted
-- **new-pc-symbol-manage-mapping.png** — Symbol Manage window on the new PC showing exchanges mapped to the newly created feed connection
 - **new-pc-load-cloud-workspace.png** — Workspace file picker on the new PC with the Cloud tab selected and the migrated workspace visible in the list
 - **database-folder-setting-migration.png** — Options → Settings → General with the Various section visible and the Database folder location setting highlighted

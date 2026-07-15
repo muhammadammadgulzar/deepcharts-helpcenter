@@ -18,6 +18,10 @@ This article covers the window: opening it, the header controls, the profile-typ
 
 Instead of asking "where did price go over time" (a candle chart), a profile chart asks "how much time and volume did the market spend at each price". Each session renders as a distribution: TPO letters mark which time periods touched each price, and volume-profile bars show how many contracts traded there. The window can layer several profile types side by side per session — for example TPO letters plus a daily volume profile — and adds weekly and composite profiles in their own areas at the right edge.
 
+To get a feel for the volume side, try the interactive profile below — drag the Value Area % and watch the VAH/VAL lines and the magenta POC respond, or hover the rows for per-level volume.
+
+[WIDGET: volume-profile-lab]
+
 ## When to use it
 
 - Reading session structure: value areas, points of control, single prints and unfinished business ([[understanding-auction-theory]]).
@@ -78,7 +82,9 @@ In TPO mode each session draws as a letter profile: every letter marks a time pe
 
 Several visual details of this window are not yet documented and their exact meaning may vary: the letter color groups, the underlined rows, and the green, purple and yellow vertical bars flanking each session. The same applies to the heat-style colors (yellow/orange/red/green/magenta) on volume-profile bars. Describe levels by their structure (POC, value area, singles) rather than relying on these colors until they are confirmed. [CONFIRM: legend for TPO letter colors, underlined rows, per-session vertical range bars, and volume-profile heat colors]
 
-[SCREENSHOT: Close-up of one session's TPO letter profile at 100 T grouping showing letter columns, the magenta POC row, dashed value-area boundary lines and the green/purple/yellow vertical bars at the session edges | profile-chart-tpo-closeup.png]
+Press play on the interactive profile below to watch a session's letters stack period by period — hover any row to see which periods touched that price, and watch the POC and value area form.
+
+[WIDGET: tpo-lab]
 
 ## Trading from the Profile Chart
 

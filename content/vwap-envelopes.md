@@ -21,7 +21,9 @@ Because VWAP weights every price by the volume traded there, it represents the a
 
 > **Note:** The VWAP calculated by this indicator aligns with the Daily Volume Profile VWAP only at the end of the session. Intraday, the continuous calculation and a session-anchored VWAP will differ.
 
-[SCREENSHOT: Intraday candlestick chart with VWAP Envelopes overlaid — the central VWAP line with 1st, 2nd and 3rd standard-deviation bands above and below, price rejecting the 2nd band and returning toward VWAP | vwap-envelopes-on-chart.png]
+The live model below shows the idea — adjust the sigma bands around VWAP and hover the chart for a z-score reading of how stretched price is.
+
+[WIDGET: vwap-lab]
 
 ## When to use it
 

@@ -28,7 +28,7 @@
 </div></div>
 <article class="article-body"><p>DeepCharts connects to live market data through a small set of feed technologies — Rithmic, dxFeed, CQG and the Interactive Brokers TWS API — but dozens of brokers and prop firms issue accounts on top of those technologies. This page is the master list: who is supported, which <strong>Feed Source</strong> to pick, and which <strong>Server</strong> value belongs to each provider.</p>
 <p>If your provider is listed here, the connection takes a few minutes in <a href="./connect-data-feed.html">Feed Settings</a>. If it is in the unsupported table at the bottom, DeepCharts cannot connect to it directly — but you can still chart on a supported feed and execute trades on the provider's own platform.</p>
-<div class="widget-mount" data-widget="feed-navigator"></div><h2 id="what-it-is">What it is</h2>
+<h2 id="what-it-is">What it is</h2>
 <p>A compatibility matrix. It answers three questions before you touch any settings: &quot;Can my account connect to DeepCharts at all?&quot;, &quot;Which Feed Source do I select?&quot;, and &quot;What exactly goes in the Server field?&quot; Wrong answers to the last two are the most common causes of a connection that stays red, so treat the tables below as the reference of record.</p>
 <h2 id="when-to-use-it">When to use it</h2>
 <ul>
@@ -45,7 +45,8 @@
 <li>Enter the values in <strong>Select Connection → Feed Settings</strong> — see <a href="./connect-data-feed.html">How to Connect a Data Feed (Feed Settings)</a>.</li>
 <li>Route your exchanges to the new feed in <strong>Options → Symbol Manage</strong> — see <a href="./symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a>.</li>
 </ol>
-<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Feed Settings dialog with the Feed Source dropdown open, showing the available sources including dxFeed, dxFeed Prop, Rithmic RAPI, Rithmic Wss - beta, CQG and 15 min delayed</div><div class="s-file">feed-source-dropdown-all-options.png</div></div></div>
+<p>Try the live Feed Settings mock below — open the Feed Source dropdown and watch the fields change for each source.</p>
+<div class="widget-mount" data-widget="feed-navigator"></div>
 <h2 id="how-to-read-it">How to read it</h2>
 <ul>
 <li><strong>Feed Source</strong> is the dropdown value in Feed Settings. Note that Rithmic appears as <strong>Rithmic RAPI</strong> and <strong>Rithmic Wss - beta</strong> — there is no plain &quot;Rithmic&quot; entry. Pick <strong>Rithmic RAPI</strong>; it is the recommended source.</li>
@@ -385,7 +386,7 @@
 </ul>
 </article>
 <div class="pn"><a class="prev" href="./quick-start-first-trade.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Quick Start: From Install to Your First Trade</div></a><a class="next" href="./connect-data-feed.html"><div class="pn-lbl">Next →</div><div class="pn-title">How to Connect a Data Feed (Feed Settings)</div></a></div>
-    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 16, 2026 · screenshots pending capture (see placeholders)</div>
   </main>
   <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#what-it-is">What it is</a></li><li class="lv2"><a href="#when-to-use-it">When to use it</a></li><li class="lv2"><a href="#quick-start">Quick start</a></li><li class="lv2"><a href="#how-to-read-it">How to read it</a></li><li class="lv2"><a href="#settings-reference">Settings reference</a></li><li class="lv3"><a href="#prop-firms-rithmic-accounts">Prop firms — Rithmic accounts</a></li><li class="lv3"><a href="#prop-firms-dxfeed-accounts">Prop firms — dxFeed accounts</a></li><li class="lv3"><a href="#futures-brokers">Futures brokers</a></li><li class="lv3"><a href="#direct-data-feeds-no-broker-or-prop-firm">Direct data feeds (no broker or prop firm)</a></li><li class="lv3"><a href="#market-depth-by-feed">Market depth by feed</a></li><li class="lv3"><a href="#not-supported">Not supported</a></li><li class="lv2"><a href="#tips-and-common-mistakes">Tips and common mistakes</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
 </div>

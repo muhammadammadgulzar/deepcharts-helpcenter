@@ -37,7 +37,9 @@ By the end you will have your dxFeed account connected with a green dot and a ch
 | **Server** | **Website Account** if bought on the DeepCharts website; **dxFeed Account** if bought on dxfeed.com |
 | **DOM Type** | MBO or MBP — see below |
 
-[SCREENSHOT: Add Connection form with Feed Source set to dxFeed, Server set to Website Account and the DOM Type field visible with MBO selected | dxfeed-connection-form-website-account.png]
+Try the form live below — pick dxFeed as the Feed Source and see which fields it asks for.
+
+[WIDGET: feed-navigator]
 
 > **Note:** **DOM Type** controls the Level 2 depth format. dxFeed's CME Group Level 2 data is MBO (market-by-order) — pick **MBO** for full per-order depth, which is best for the DOM and orderflow indicators. **MBP** is much lighter data; choose it if your connection is slow or charts lag during high-volume periods.
 

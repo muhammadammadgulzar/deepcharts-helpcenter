@@ -68,9 +68,9 @@ The Rithmic market data agreement must be signed before DeepCharts can connect. 
 | **Server** | **Apex** — not Paper Trading or any other entry. |
 | **Gateway** | The location nearest to you (for example Chicago Area, Europe, Singapore). |
 
-Leave all other fields in the form as they are.
+Leave all other fields in the form as they are. Use the interactive Feed Settings mock below to see how the form works — pick Rithmic as the Feed Source and the Server field appears:
 
-[SCREENSHOT: Feed Settings dialog with the Apex connection filled in — Feed Source=Rithmic RAPI, Server=Apex highlighted in the Server dropdown, credentials blurred | feed-settings-apex-server.png]
+[WIDGET: feed-navigator]
 
 > **Warning:** The Server dropdown contains multiple options including `Paper Trading`. For Apex it must be exactly **Apex** — selecting Paper Trading here is the second most common cause of a red connection dot, right after wrong credentials.
 
@@ -78,9 +78,9 @@ Leave all other fields in the form as they are.
 
 10. Back in the main toolbar, click **Select Connection** again. Your new Apex feed appears in the dropdown under the name you gave it — click it to connect.
 
-11. Route your exchanges to the feed: open **Options → Symbol Manage** and make sure the exchanges you trade (for example CME for ES and NQ) are subscribed and mapped to the Apex connection — the chain-link icon on a row changes which feed it loads from. If this step is skipped, charts either show no data or load old cached data and appear frozen, which is the single biggest cause of "charts not moving" reports. Full walkthrough in [[symbol-manage]].
+11. Route your exchanges to the feed: open **Options → Symbol Manage** and make sure the exchanges you trade (for example CME for ES and NQ) are subscribed and mapped to the Apex connection — the chain-link icon on a row changes which feed it loads from. If this step is skipped, charts either show no data or load old cached data and appear frozen, which is the single biggest cause of "charts not moving" reports. Try it in the interactive mock below — click the chain-link icon to cycle a row's feed. Full walkthrough in [[symbol-manage]].
 
-[SCREENSHOT: Symbol Manage window with CME subscribed and its data feed set to the Apex connection, chain-link icon highlighted | symbol-manage-apex-feed.png]
+[WIDGET: symbol-manage-mock]
 
 ## Verify it worked
 

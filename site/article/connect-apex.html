@@ -118,8 +118,8 @@
 </tr>
 </tbody>
 </table>
-<p>Leave all other fields in the form as they are.</p>
-<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Feed Settings dialog with the Apex connection filled in — Feed Source=Rithmic RAPI, Server=Apex highlighted in the Server dropdown, credentials blurred</div><div class="s-file">feed-settings-apex-server.png</div></div></div>
+<p>Leave all other fields in the form as they are. Use the interactive Feed Settings mock below to see how the form works — pick Rithmic as the Feed Source and the Server field appears:</p>
+<div class="widget-mount" data-widget="feed-navigator"></div>
 <blockquote class="callout-warning">
 <p><strong>Warning:</strong> The Server dropdown contains multiple options including <code>Paper Trading</code>. For Apex it must be exactly <strong>Apex</strong> — selecting Paper Trading here is the second most common cause of a red connection dot, right after wrong credentials.</p>
 </blockquote>
@@ -131,10 +131,10 @@
 <p>Back in the main toolbar, click <strong>Select Connection</strong> again. Your new Apex feed appears in the dropdown under the name you gave it — click it to connect.</p>
 </li>
 <li>
-<p>Route your exchanges to the feed: open <strong>Options → Symbol Manage</strong> and make sure the exchanges you trade (for example CME for ES and NQ) are subscribed and mapped to the Apex connection — the chain-link icon on a row changes which feed it loads from. If this step is skipped, charts either show no data or load old cached data and appear frozen, which is the single biggest cause of &quot;charts not moving&quot; reports. Full walkthrough in <a href="./symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a>.</p>
+<p>Route your exchanges to the feed: open <strong>Options → Symbol Manage</strong> and make sure the exchanges you trade (for example CME for ES and NQ) are subscribed and mapped to the Apex connection — the chain-link icon on a row changes which feed it loads from. If this step is skipped, charts either show no data or load old cached data and appear frozen, which is the single biggest cause of &quot;charts not moving&quot; reports. Try it in the interactive mock below — click the chain-link icon to cycle a row's feed. Full walkthrough in <a href="./symbol-manage.html">Symbol Manage: Subscribe Exchanges and Map Your Feed</a>.</p>
 </li>
 </ol>
-<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Symbol Manage window with CME subscribed and its data feed set to the Apex connection, chain-link icon highlighted</div><div class="s-file">symbol-manage-apex-feed.png</div></div></div>
+<div class="widget-mount" data-widget="symbol-manage-mock"></div>
 <h2 id="verify-it-worked">Verify it worked</h2>
 <ul>
 <li>Within about 10 seconds of connecting, the connection dot turns <strong>green</strong>.</li>
@@ -167,7 +167,7 @@
 </ul>
 </article>
 <div class="pn"><a class="prev" href="./connect-rithmic-prop-firm.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Connect Any Rithmic Prop-Firm Account (Server Table)</div></a><a class="next" href="./connect-dxfeed-prop-firm.html"><div class="pn-lbl">Next →</div><div class="pn-title">Connect a Prop-Firm dxFeed Account (MFF, Aqua, Goat...)</div></a></div>
-    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 16, 2026 · screenshots pending capture (see placeholders)</div>
   </main>
   <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#before-you-start">Before you start</a></li><li class="lv2"><a href="#steps">Steps</a></li><li class="lv3"><a href="#part-a-sign-the-agreement-in-r-trader-pro">Part A — Sign the agreement in R Trader Pro</a></li><li class="lv3"><a href="#part-b-connect-in-deepcharts">Part B — Connect in DeepCharts</a></li><li class="lv2"><a href="#verify-it-worked">Verify it worked</a></li><li class="lv2"><a href="#if-something-went-wrong">If something went wrong</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
 </div>

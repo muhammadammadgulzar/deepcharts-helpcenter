@@ -38,9 +38,9 @@ The market (exchange) is not listed in **Symbol Manage**, or it is assigned to t
 3. Remove the check mark next to your data feed in the connection list to take it offline while you edit the mapping. [CONFIRM: original article says "Connect the data feed and remove the check mark" — verify whether the feed must be connected or disconnected while remapping symbols]
 4. Close all workspaces.
 5. Go to **Options → Symbol Manage**.
-6. Verify that the markets you trade are listed and that each shows the correct connection name next to it.
+6. Verify that the markets you trade are listed and that each shows the correct connection name next to it — the interactive Symbol Manage mock below shows exactly what to look for; click the chain-link icon to cycle a market's mapped feed.
 
-[SCREENSHOT: Symbol Manage window listing subscribed markets with the connection name column visible, one market highlighted showing a wrong or empty connection | symbol-manage-connection-names.png]
+[WIDGET: symbol-manage-mock]
 
 7. If a market shows the wrong connection (or none), right-click the market and choose the correct connection from the dropdown menu.
 

@@ -14,6 +14,10 @@ Deep Wall is a specialized indicator developed by the DeepCharts team specifical
 
 It is deliberately a low-frequency tool. Signals appear only a few times per week or even per month, mostly in low-liquidity environments such as the London session. If it has been quiet for days, that is normal behavior, not a malfunction.
 
+A wall is simply outsized passive liquidity resting in the order book. Hover the live ladder below to see how sell limits stack above price and buy limits below — the resting orders a wall is made of.
+
+[WIDGET: dom-ladder]
+
 ## What it is
 
 Deep Wall answers one question: "did a large passive player defend this price?" When aggressive orders repeatedly hit a level and the resting liquidity there keeps absorbing them until price rejects, Deep Wall marks the event. Because that pattern typically comes from iceberg orders — large orders shown to the market in small slices — the signal points at hidden institutional liquidity.

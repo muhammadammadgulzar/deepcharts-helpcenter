@@ -55,6 +55,10 @@ Markers are colored by side (**Ask Color** for buy aggression, **Bid Color** for
 
 Reading priority: diamonds first (two large players disagreeing about price), then squares (aggression meeting a wall — potential absorption), then circles (composition detail on the aggressive side). A cluster of squares or diamonds that fails to move price is classic absorption; the same cluster followed by continuation tells you the wall broke.
 
+Every marker starts life as prints on the tape. Watch the live Time & Sales below and filter by Ask or Bid to get a feel for the aggressive executions Deep Trades is sizing up.
+
+[WIDGET: tape-lab]
+
 ## Settings reference
 
 Grouped as in the settings dialog.

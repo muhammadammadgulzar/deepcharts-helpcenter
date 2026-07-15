@@ -33,7 +33,9 @@ Read the red delay label — it tells you which problem you have:
 1. If the label reads exactly **900 seconds** (15 minutes), the exchange is routed to the [[free-delayed-data-feed|free delayed feed]], not your live subscription. Open **Options → Symbol Manage**, re-map that exchange to your live feed connection (see [[symbol-manage]]), then reopen the chart.
 2. If the label fluctuates randomly (3s, 15s, 20s...), it is a live-feed performance issue — continue with the checklist below.
 
-[SCREENSHOT: Symbol Manage window showing an exchange routed to the delayed dxFeed entry, with the control used to switch it to the live feed highlighted | symbol-manage-delayed-to-live.png]
+The interactive Symbol Manage mock below shows how the remap works — click the chain-link icon on an exchange to cycle which feed it is mapped to.
+
+[WIDGET: symbol-manage-mock]
 
 ## If that didn't work
 

@@ -65,6 +65,10 @@ Click the data-load range dropdown. Short ranges load tick data (5/10/15/30/60 d
 
 Candles are drawn and the last price is moving. The readout in the top-left corner shows O/H/L/C values when you hover a bar. If you are on the free delayed feed, an orange banner notes the data is delayed — that is normal, prices update with a 15-minute lag (see [[free-delayed-data-feed]]).
 
+Not sure what those O/H/L/C values mean on a candle? Hover the anatomy below — each zone explains itself, and you can flip it between bull and bear.
+
+[WIDGET: candle-anatomy]
+
 ## If something went wrong
 
 | Symptom | What to do |

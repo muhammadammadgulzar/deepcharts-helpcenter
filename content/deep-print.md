@@ -30,9 +30,9 @@ A normal candle tells you where price went. Deep Print tells you what traded to 
 1. Open a chart and add **Deep Print** from the chart's **Indicators** button.
 2. Open the indicator settings.
 3. In **General settings**, set **Type** to the display you want (start with **Ask/Bid Split** or **Delta + Total Volume**) and **Mode** to **Profile**.
-4. Apply — every candle now shows its per-tick executed volume.
+4. Apply — every candle now shows its per-tick executed volume. Try the live footprint below: hover any cell and adjust the diagonal-imbalance ratio to see how the highlighting responds.
 
-[SCREENSHOT: A futures chart with Deep Print active in Ask/Bid Split mode, several candles showing per-tick bid and ask volume cells with imbalance coloring visible | deep-print-on-chart.png]
+[WIDGET: footprint-lab]
 
 ### Recommended starter configuration
 

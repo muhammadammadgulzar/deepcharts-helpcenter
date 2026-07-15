@@ -18,6 +18,10 @@ That makes it a structural tool: it shows you how volume was distributed inside 
 
 The indicator detects swings using one of four methods (bar-count, new extremes, absolute reversal or tick reversal), then builds a profile — volume, ask/bid, delta, delta plus volume, or delta percentage — over each detected swing. It can also compute a VWAP per swing. Separate, independent stop criteria control when a swing is considered terminated.
 
+If profile anatomy is new to you, explore the live histogram below first — hover the rows and note the POC and value area, the same structures every swing profile carries.
+
+[WIDGET: volume-profile-lab]
+
 ## When to use it
 
 - You trade market structure and want to see the volume that built each leg, not only the leg's shape.

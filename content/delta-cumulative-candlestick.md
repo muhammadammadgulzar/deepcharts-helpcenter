@@ -18,7 +18,9 @@ Because the cumulative delta is drawn as candlesticks rather than a single line,
 
 The indicator visualizes the cumulative delta summation of each candlestick. Every new bar adds its delta to the running total: sustained aggressive buying tilts the series upward, sustained selling tilts it down. Traders commonly call this cumulative volume delta (CVD). Its main use is comparing the shape of the delta series with the shape of price — agreements confirm the move, divergences warn about it.
 
-[SCREENSHOT: Chart window with Delta Cumulative Candlestick in a panel beneath price — the cumulative delta candlestick series trending upward together with price, zero line visible in the panel | delta-cumulative-candlestick-overview.png]
+Explore the running total below — hover the bars to see each candle's delta being added to the cumulative line.
+
+[WIDGET: delta-lab]
 
 ## When to use it
 

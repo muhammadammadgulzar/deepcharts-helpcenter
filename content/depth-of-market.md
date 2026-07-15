@@ -19,7 +19,9 @@ This article is the reference for the DOM interface — its columns, click rules
 
 The DOM answers the question: who is waiting to buy and sell at each price, and how do I trade against that? Each row is one price level. Bid quantities stack below the market, ask quantities above it, and the display updates in real time as orders are added, pulled and filled. Because orders are placed by clicking directly on a price row, the DOM is the tool of choice for traders who care about exact entry levels and queue position rather than chart-based entries.
 
-[SCREENSHOT: Advanced DOM window on ES with the default columns labeled left to right — P&L, B, Bid, Price, Ask, S, VP — and the header showing instrument, broker, account, open position and daily P&L | adv-dom-default-layout.png]
+Watch a live ladder in action below — buy liquidity stacks green below the market, sell liquidity violet above it; hover any row to see what that level is telling you.
+
+[WIDGET: dom-ladder]
 
 ## When to use it
 

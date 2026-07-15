@@ -50,7 +50,9 @@ Every price chart in DeepCharts can double as an order-entry screen. Two separat
 | **STP** | Stop order that triggers a market order — buy above the market, sell below it |
 | **STP LMT** | Stop-limit order — avoids slippage, with the risk of not being executed |
 
-[SCREENSHOT: The trading panel BUY/SELL button grid with the MKT, BID/ASK, LMT, STP and STP LMT rows visible, plus the Cancel, Breakeven and Cancel and Flat buttons below | trading-panel-button-grid.png]
+Try the live panel below — hover any button to see exactly what it places, and click the SIM position to watch the P/L update.
+
+[WIDGET: trading-panel-mock]
 
 > **Warning:** A buy limit placed above the market (or a sell limit below it) executes immediately as a market order — the book only has sell liquidity above price and buy liquidity below. Stops are the mirror image. If you place at the wrong side, expect an instant fill.
 

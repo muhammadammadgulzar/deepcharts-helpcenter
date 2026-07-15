@@ -20,6 +20,10 @@ Ratio Highlight is an orderflow exhaustion detector. For each bar it evaluates t
 
 [CONFIRM: the exact Ratio High / Ratio Low formula — which consecutive price levels of the bar are compared and in which direction the ratio is taken]
 
+The ratios it scores come straight from footprint cells like the ones below — hover the bid×ask pairs at the top and bottom of each bar to see the raw numbers behind a Ratio High or Ratio Low:
+
+[WIDGET: footprint-lab]
+
 [SCREENSHOT: Chart window with Ratio Highlight applied — a swing high where a bearish bar carries an Ask Absorption marker at its top, and a swing low where a bullish bar carries a Bid Absorption marker, both colors clearly distinguishable | ratio-highlight-chart-overview.png]
 
 ## When to use it

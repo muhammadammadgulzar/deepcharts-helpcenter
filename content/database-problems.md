@@ -77,6 +77,10 @@ If the problem is missing live data rather than corrupt history, check the symbo
 5. Click **Select** to save the changes.
 6. Reconnect the data feed and open a new chart.
 
+You can rehearse the mapping fix in the mock below — click the chain-link icon to cycle which feed a market is mapped to.
+
+[WIDGET: symbol-manage-mock]
+
 See [[symbol-manage]] for the full window reference, and [[symbol-subscription-issue]] if a subscription error is shown.
 
 ### Cause: Missing Visual C++ runtime (data feed connection failed)

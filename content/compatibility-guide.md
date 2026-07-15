@@ -33,7 +33,9 @@ A compatibility matrix. It answers three questions before you touch any settings
 4. Enter the values in **Select Connection → Feed Settings** — see [[connect-data-feed]].
 5. Route your exchanges to the new feed in **Options → Symbol Manage** — see [[symbol-manage]].
 
-[SCREENSHOT: Feed Settings dialog with the Feed Source dropdown open, showing the available sources including dxFeed, dxFeed Prop, Rithmic RAPI, Rithmic Wss - beta, CQG and 15 min delayed | feed-source-dropdown-all-options.png]
+Try the live Feed Settings mock below — open the Feed Source dropdown and watch the fields change for each source.
+
+[WIDGET: feed-navigator]
 
 ## How to read it
 

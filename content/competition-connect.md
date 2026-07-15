@@ -52,11 +52,13 @@ Because V-Sim executes trades against real-time market conditions, the free 15-m
 
 [SCREENSHOT: Select Connection dropdown with both the V-Sim contest connection and a live data feed connection showing green dots | contest-and-datafeed-green.png]
 
-10. Open **Options → Symbol Manage** and confirm every exchange is routed to your **data feed, not the V-Sim contest account**. If Symbol Manage points at V-Sim, charts show no data because the contest account carries none. See [[symbol-manage]].
+10. Open **Options → Symbol Manage** and confirm every exchange is routed to your **data feed, not the V-Sim contest account**. If Symbol Manage points at V-Sim, charts show no data because the contest account carries none. Try the interactive mock below — click the chain-link icon on a row to cycle its mapped feed. See [[symbol-manage]].
 
-11. Open a price chart. In the **Trading Panel** (right side of the chart), set the **Broker** field to **V-Sim** and choose your competition account from the dropdown. The starting balance displays $50,000.
+[WIDGET: symbol-manage-mock]
 
-[SCREENSHOT: Trading Panel with Broker set to V-Sim, the competition account selected and the $50,000 starting balance visible | trading-panel-vsim-contest.png]
+11. Open a price chart. In the **Trading Panel** (right side of the chart), set the **Broker** field to **V-Sim** and choose your competition account from the dropdown. The starting balance displays $50,000. Explore the panel in the interactive mock below — hover any button to see what it does, and click the SIM position to watch live P/L:
+
+[WIDGET: trading-panel-mock]
 
 ### If you want to reset your account
 

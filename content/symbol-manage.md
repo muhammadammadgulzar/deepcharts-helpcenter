@@ -27,7 +27,9 @@ By the end you will have every exchange you trade subscribed in Symbol Manage an
 
 3. Open the **Subscribe List** tab. It lists the exchanges you are subscribed to, each with a **Data Feed** column showing which feed delivers it.
 
-[SCREENSHOT: Symbol Manage window on the Subscribe List tab showing subscribed exchanges with their Data Feed column, and the Subscribe, Unsubscribe and chain-link icons visible | symbol-manage-subscribe-list.png]
+Try it live below — subscribe or unsubscribe an exchange, and click the chain-link icon to change which feed delivers it.
+
+[WIDGET: symbol-manage-mock]
 
 ### If your exchange is already listed
 

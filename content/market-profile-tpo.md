@@ -35,7 +35,9 @@ DeepCharts can draw the result either as classic lettered **Blocks** or as a con
 4. Enable the **POC** and **Value Area** features so the highest-activity level and the fair-value zone are marked on each profile.
 5. Leave **Tick Grouping** on automatic until you know the instrument — you can tighten it later.
 
-[SCREENSHOT: A chart with the Market Profile indicator applied in Blocks mode, showing lettered TPO stacks for one full session with the POC line and Value Area visible | market-profile-tpo-blocks-chart.png]
+Watch a TPO profile build itself below — press play to see the letters stack into a distribution, and hover the rows to inspect which periods traded at each price:
+
+[WIDGET: tpo-lab]
 
 ## How to read it
 

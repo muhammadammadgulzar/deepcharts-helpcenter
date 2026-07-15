@@ -61,6 +61,10 @@ The chart window is the container for one or more price charts. It answers the q
 | Green **+** | Adds a new chart tab (opens **Select Instrument** first). |
 | Link icon (square, left of minimize) | Chart link menu: **None link**, **Link 1–8** (color groups) and **$ Link Trading Symbol**. Charts sharing a color follow each other's symbol changes — symbol only, not timeframe. See [[link-windows]]. |
 
+Try link groups live below — set both mini charts to the same color, change the symbol on one, and watch the other follow.
+
+[WIDGET: link-groups-demo]
+
 ### Top-left icon row
 
 | Icon | What it does |

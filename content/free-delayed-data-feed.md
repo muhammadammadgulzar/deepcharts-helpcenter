@@ -42,17 +42,17 @@ You are done — skip to Verify it worked below.
 
 3. In **Name**, type a display name for the connection — for example `dxFeed - 15m`.
 
-4. In **Feed Source**, select **dxFeed - 15m delayed**. No username or password is required for this source.
+4. In **Feed Source**, select **dxFeed - 15m delayed**. No username or password is required for this source. Try it in the interactive Feed Settings window below — the Feed Source dropdown changes which fields each source asks for.
 
-[SCREENSHOT: Feed Settings dialog with the Feed Source dropdown open and dxFeed - 15m delayed highlighted in the source list | feed-settings-delayed-source.png]
+[WIDGET: feed-navigator]
 
 5. Click **Save** and wait for the saving confirmation.
 
 6. Open the **Feed** selector on the main bar again and select your new connection. The status dot turns **green** when connected.
 
-7. Open **Options → Symbol Manage** and make sure the exchanges you want are mapped to your delayed connection in the **Data Feed** column. To add one, click **Subscribe**, pick your delayed connection in the **Data feed source** dropdown, and select the exchanges. To re-point an existing row, use its chain-link (**Change connection**) icon. Full reference: [[symbol-manage]].
+7. Open **Options → Symbol Manage** and make sure the exchanges you want are mapped to your delayed connection in the **Data Feed** column. To add one, click **Subscribe**, pick your delayed connection in the **Data feed source** dropdown, and select the exchanges. To re-point an existing row, use its chain-link (**Change connection**) icon. Try both in the live mock below. Full reference: [[symbol-manage]].
 
-[SCREENSHOT: Symbol Manage window with the Subscribe List tab showing exchanges mapped to the dxFeed - 15m delayed connection in the Data Feed column, with the Subscribe and Change connection buttons visible | symbol-manage-delayed-mapping.png]
+[WIDGET: symbol-manage-mock]
 
 8. Open your first chart: **New → Price Chart** — see [[first-chart]].
 

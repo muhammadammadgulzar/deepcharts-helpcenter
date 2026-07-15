@@ -59,7 +59,9 @@ Each row's **Price** cell background encodes the aggressor side:
 
 The gray reading is an inference, not a confirmed fact: the **TS Settings** color fields include a **Between Bid/Ask background** that is gray by default, which strongly suggests gray rows are inside-spread prints — but this is pending confirmation, so treat it as likely rather than certain. The same color sets also include **Below Bid** and **Above Ask** backgrounds, meaning the tape can distinguish prints outside the quoted spread as well; when those colorings trigger is [CONFIRM: exact conditions for Below Bid / Above Ask row coloring].
 
-[SCREENSHOT: Close-up of tape rows showing green (ask-side) and pink (bid-side) price cells with a burst of gray price cells in between, volume values in blue | adv-ts-row-colors.png]
+Try it on the live tape below — hover any print to pause the stream and see why it is green or pink, and switch the All/Ask/Bid filters to watch the tape turn one color.
+
+[WIDGET: tape-lab]
 
 A tape that is suddenly all one color usually is not the market — it is the trade-side filter (next section).
 

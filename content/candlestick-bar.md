@@ -39,6 +39,10 @@ Because the overlay is independent of the base chart's bar type, it belongs to t
 
 ## How to read it
 
+New to reading Japanese candles, or want a quick refresher? Hover the interactive candle below — each zone (body, wicks, open, high, low, close) explains itself, and you can flip it between bull and bear — then apply the same read to every overlay candle.
+
+[WIDGET: candle-anatomy]
+
 - **Each overlay candle summarizes several base bars** (or a volume/range quantum of trade) as one open-high-low-close unit — read it exactly as you would any Japanese candle: body direction for control, wicks for rejection.
 - **Overlay-versus-base disagreement is information.** When the fast base bars whipsaw but the overlay candles stay one-directional, the noise is below your overlay's resolution; when both align, moves tend to be cleaner.
 - **Volume-built candles equalize activity.** With **Vol Bars**, each candle closes after a target amount of volume, so quiet periods compress and busy periods expand — candle-to-candle comparisons become activity-normalized.

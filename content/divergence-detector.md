@@ -22,7 +22,9 @@ The Divergence Detector compares price extremes against the volume and delta tha
 - **DV** — delta divergence only.
 - **VDD** — both volume and delta divergence, with the most significant divergence prioritized.
 
-Delta here is the difference between aggressive buying and aggressive selling — if that concept is new, read [[orderflow-101]] first.
+Delta here is the difference between aggressive buying and aggressive selling — if that concept is new, read [[orderflow-101]] first. You can build an intuition for it below: hover the bars in this interactive delta histogram and watch how per-bar delta and the cumulative line behave as price pushes to new extremes.
+
+[WIDGET: delta-lab]
 
 ## When to use it
 

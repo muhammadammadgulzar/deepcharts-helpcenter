@@ -16,7 +16,9 @@ If you already use a standard [[moving-average|Moving Average]] and find it eith
 
 ## What it is
 
-The T3 answers the question "which way is price really going once the noise is stripped out?" It plots a single smoothed line on the price chart. Because of its construction, the line turns with price sooner than a conventional moving average of comparable smoothness — that lag reduction is the whole point of the indicator.
+The T3 answers the question "which way is price really going once the noise is stripped out?" It plots a single smoothed line on the price chart. Because of its construction, the line turns with price sooner than a conventional moving average of comparable smoothness — that lag reduction is the whole point of the indicator. To feel the lag trade-off the T3 improves on, toggle between SMA and EMA and drag the length slider in the demo below.
+
+[WIDGET: ma-lab]
 
 A **Volume Factor** setting controls the balance between responsiveness and smoothness, so one indicator can be tuned from "fast signal line" to "slow trend filter" without changing its length.
 

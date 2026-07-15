@@ -55,7 +55,9 @@ Make sure you have:
 
 Leave every other field as it is. The **Include commissions** option is on by default — it shows commissions in your P/L.
 
-[SCREENSHOT: Feed Settings dialog with a new Rithmic connection form filled in — Feed Source=Rithmic RAPI, Server=Rithmic Paper Trading, Gateway=Automatic — credentials blurred | feed-settings-rithmic-rapi-filled.png]
+Try the form live below — set Feed Source to Rithmic RAPI and watch the Server and Gateway fields appear.
+
+[WIDGET: feed-navigator]
 
 > **Note:** The Feed Source dropdown shows **Rithmic RAPI** and **Rithmic Wss - beta** — there is no plain "Rithmic" option anymore, so if an older guide mentions one, pick **Rithmic RAPI**. If charts ever feel delayed or flaky, verify you are on RAPI and not the Wss beta.
 
@@ -83,7 +85,9 @@ Follow [[connect-rithmic-prop-firm]] — each firm uses its own named Server val
 
 8. Route your exchanges to the new feed: open **Options → Symbol Manage** and make sure the exchanges you trade are subscribed and mapped to this Rithmic connection (the chain-link icon on a row changes which feed that exchange loads from). The instrument picker only shows exchanges you have subscribed. Full details in [[symbol-manage]].
 
-[SCREENSHOT: Symbol Manage window, Subscribe List tab, showing subscribed exchanges with the data-feed column pointing at the new Rithmic connection and the chain-link icon highlighted on one row | symbol-manage-rithmic-mapping.png]
+Try the mapping below — click the chain-link icon on a row to cycle which feed the exchange loads from.
+
+[WIDGET: symbol-manage-mock]
 
 9. Open a chart: click **New** in the top menu, then **Price Chart**, select an instrument (for example ES or NQ) and confirm.
 

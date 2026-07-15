@@ -44,7 +44,9 @@ By the end you will have your data feed saved in Feed Settings, connected with a
 
 > **Note:** The Rithmic dropdown entries are **Rithmic RAPI** and **Rithmic Wss - beta** — there is no plain "Rithmic" option. Pick **Rithmic RAPI**; it is the recommended source.
 
-[SCREENSHOT: Add Connection form in Feed Settings with the Feed Source dropdown open showing the full list of sources | add-connection-feed-source.png]
+Try the same form live below — pick each Feed Source and watch the fields morph to match it.
+
+[WIDGET: feed-navigator]
 
 6. Enter your **Username** and **Password**.
 

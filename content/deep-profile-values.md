@@ -18,6 +18,10 @@ Where [[deep-profile]] shows the full histogram, this indicator extracts only it
 
 The indicator computes a volume profile over a period you define (composite, multiples, visible or personalized) and then draws only the resulting reference levels as lines: the point of control, the value area boundaries, the VWAP and its deviation bands, and high/low-volume nodes. Each line family has its own display, extension and styling controls, plus an optional per-profile data summary.
 
+The live profile below shows where those levels come from — the POC and the value area boundaries sit on the histogram they are computed from. Drag the Value Area % to watch VAH and VAL move.
+
+[WIDGET: volume-profile-lab]
+
 ## When to use it
 
 - You trade off profile levels (POC, VAH/VAL, VWAP) but want candles readable — no histogram overlay.

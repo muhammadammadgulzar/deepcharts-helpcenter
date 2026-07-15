@@ -40,6 +40,10 @@ Common triggers are a newly created account, market data that was never activate
 4. Wait for the activation confirmation. Activation can take anywhere from a few minutes to a few hours.
 5. Restart DeepCharts and reconnect the data feed.
 
+If you need to re-enter the connection details while reconnecting, try the live Feed Settings mock below — pick **dxFeed Prop** as the source and note that there is no server field to fill in.
+
+[WIDGET: feed-navigator]
+
 [SCREENSHOT: The feed connection showing a successful (green) status after the agreement was activated and DeepCharts was restarted | myfundedfutures-feed-connected-green.png]
 
 ## If that didn't work

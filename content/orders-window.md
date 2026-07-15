@@ -69,6 +69,10 @@ The window has no settings dialog; its controls are the filters at the top.
 - **Submitted is not a problem state** — a resting limit far from price is Submitted by design. The question is whether you *intended* it to still be working.
 - **OCO pairs** — when one side of an OCO fills, the other is cancelled automatically; you will see one Executed and one Cancelled entry. See [[oco-strategies]].
 
+Not sure what the panel's cancel buttons actually touch? Hover them on the live panel below — then prove the result here with the **Submitted** filter.
+
+[WIDGET: trading-panel-mock]
+
 ## Related articles
 
 - [[trading-panel-reference]]

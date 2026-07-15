@@ -49,6 +49,10 @@ You rarely see an iceberg directly; you infer it. The strongest tells, in rough 
 3. **Delta divergence:** cumulative delta falls hard while price holds (hidden buyer), or rises hard while price stalls (hidden seller) — see [[delta-cumulative-candlestick]].
 4. **Time:** genuine absorption takes repeated hits over time; a single large print proves nothing.
 
+The first two tells live on the tape — practice reading raw prints in the live Time & Sales below; hover any print to pause the stream and decode it.
+
+[WIDGET: tape-lab]
+
 > **Note:** Detection quality depends on your market data. Order-by-order (MBO) depth data lets tools track individual order refills; aggregated depth makes iceberg inference less precise, and top-of-book (Level 1) data supports only the delta-divergence style of read. See [[compatibility-guide]] for what each feed supplies.
 
 ### The math (optional)

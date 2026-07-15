@@ -86,7 +86,11 @@ def transform_md(slug, body):
                 f'<div class="s-desc">{html.escape(desc)}</div>'
                 f'<div class="s-file">{html.escape(fname)}</div></div></div>')
     body = SHOT_RE.sub(shot_sub, body)
-    body = WIDGET_RE.sub(lambda m: f'<div class="widget-mount" data-widget="{m.group(1)}"></div>', body)
+    def widget_sub(m):
+        name = m.group(1)
+        (widget_uses if name in KNOWN_WIDGETS else bad_widgets).append((slug, name))
+        return f'<div class="widget-mount" data-widget="{name}"></div>'
+    body = WIDGET_RE.sub(widget_sub, body)
 
     def link_sub(m):
         target, text = m.group(1), m.group(2)
@@ -172,29 +176,16 @@ def page(root, title, body, active_slug=None, toc_html="", desc=""):
 <script src="{root}assets/widgets.js"></script>
 </body></html>'''
 
-# ---------------- live widget injection ----------------
-# slug -> widget name; the widget mounts right after the article intro (first <h2>)
-WIDGET_MAP = {
-    "rsi": "rsi-lab",
-    "advanced-dom": "dom-ladder",
-    "depth-of-market": "dom-ladder",
-    "orderflow-101": "dom-ladder",
-    "dom-trading-chart": "dom-ladder",
-    "understanding-auction-theory": "dom-ladder",
-    "connect-data-feed": "feed-navigator",
-    "compatibility-guide": "feed-navigator",
-    "manage-feed-connections": "feed-navigator",
-    "buy-data-feed": "feed-navigator",
-    "quick-start-first-trade": "feed-navigator",
+# ---------------- live widgets ----------------
+# Widgets are declared inline in markdown via [WIDGET: name]; this list validates names.
+KNOWN_WIDGETS = {
+    "dom-ladder", "rsi-lab", "feed-navigator", "main-bar", "spec-check",
+    "volume-profile-lab", "footprint-lab", "vwap-lab", "ma-lab", "macd-lab",
+    "candle-anatomy", "tape-lab", "symbol-manage-mock",
+    "trading-panel-mock", "delta-lab", "tpo-lab", "link-groups-demo",
 }
-
-def inject_widget(rendered, slug):
-    w = WIDGET_MAP.get(slug)
-    if not w:
-        return rendered
-    mount = f'<div class="widget-mount" data-widget="{w}"></div>'
-    i = rendered.find("<h2")
-    return (rendered[:i] + mount + rendered[i:]) if i != -1 else mount + rendered
+widget_uses = []   # (slug, name) for reporting
+bad_widgets = []
 
 # ---------------- build article pages ----------------
 os.makedirs(os.path.join(SITE, "article"), exist_ok=True)
@@ -213,7 +204,6 @@ for idx, slug in enumerate(linear):
     rendered = md.render(body_md)
     rendered = callout_pass(rendered)
     rendered, toc = heading_anchor_pass(rendered)
-    rendered = inject_widget(rendered, slug)
 
     toc_html = ""
     if toc:
@@ -433,7 +423,12 @@ with open(os.path.join(ROOT, "screenshots-needed.md"), "w", encoding="utf-8") as
         f.write(f"- **{fname}** — {desc}\n")
 
 print(f"\nbuilt: {len(linear)} articles, {len(manifest['categories'])} categories, "
-      f"{len(shots)} screenshot placeholders, {len(linear) - len(pdf_fail)} PDFs")
+      f"{len(shots)} screenshot placeholders, {len(widget_uses)} live widgets in "
+      f"{len(set(s for s, _ in widget_uses))} articles, {len(linear) - len(pdf_fail)} PDFs")
+if bad_widgets:
+    print("UNKNOWN WIDGETS:")
+    for s, n in bad_widgets:
+        print(f"   {s} -> [WIDGET: {n}]")
 if pdf_fail:
     print("PDF FAILURES:")
     for s, e in pdf_fail:
@@ -443,4 +438,4 @@ if badlinks:
     print(f"BAD [[links]] ({len(uniq)}):")
     for s, t in uniq:
         print(f"   {s} -> [[{t}]]")
-sys.exit(1 if (missing or pdf_fail) else 0)
+sys.exit(1 if (missing or pdf_fail or bad_widgets) else 0)

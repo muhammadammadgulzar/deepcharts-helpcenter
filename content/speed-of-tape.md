@@ -14,6 +14,10 @@ Speed of Tape monitors the intensity of market activity — how much volume, how
 
 It is a pace gauge rather than a direction gauge: it tells you how hard the market is working, and its candle-style coloring hints at which side is doing the work.
 
+Get a feel for pace on the live tape below — let it run, then hover to pause and inspect individual prints while the buy/sell counters keep ticking.
+
+[WIDGET: tape-lab]
+
 ## What it is
 
 The indicator measures activity per time interval — the **Number Seconds** window — using your choice of volume, orders, or executed trades as the input. The result plots as candlestick-style bars in a separate panel, with bull and bear coloring reflecting strong buyer or strong seller participation. Filters and a standard-deviation option let you keep only the statistically unusual readings.

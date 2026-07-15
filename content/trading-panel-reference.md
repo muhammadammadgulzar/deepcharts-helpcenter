@@ -17,7 +17,9 @@ If you have never traded from a chart before, start with the walkthrough in [[tr
 
 The trading panel answers one question: how do I send, protect and close orders on a specific instrument without leaving the chart? It bundles instrument selection, position readouts, an order-type button grid, one-click exit buttons and an OCO bracket block into a single column. It appears when **Trading panel** is toggled in the chart's bottom bar (or right-click → **Show Trading Panel**, **Ctrl Alt P**) and requires **Trading Enabled** (the green **$** icon) — disabling the $ icon hides the panel automatically.
 
-[SCREENSHOT: Full trading panel on the right edge of a chart, annotated in three zones from top to bottom: header readouts, account and quantity row, order button grid with exit buttons, OCO Strategy block | trading-panel-full-annotated.png]
+Explore the live panel below — hover every button and readout to see what it does, and click the SIM position to watch the P/L update.
+
+[WIDGET: trading-panel-mock]
 
 ## When to use it
 

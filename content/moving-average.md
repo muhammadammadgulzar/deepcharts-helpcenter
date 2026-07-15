@@ -15,9 +15,9 @@ In DeepCharts you can choose which price the average is built from, how many per
 
 ## What it is
 
-A moving average answers the question: where has price been trading, on average, over the last N bars? Because each new bar pushes the oldest one out of the calculation, the line "moves" with the market. Traders use it to analyze trends, identify potential price reversals, and create buy or sell signals — for example when price crosses the line, or when a fast average crosses a slow one.
+A moving average answers the question: where has price been trading, on average, over the last N bars? Because each new bar pushes the oldest one out of the calculation, the line "moves" with the market. Traders use it to analyze trends, identify potential price reversals, and create buy or sell signals — for example when price crosses the line, or when a fast average crosses a slow one. Try it live below — toggle between Simple and Exponential and drag the length slider to see how the line trades responsiveness for smoothness.
 
-[SCREENSHOT: A candlestick chart with a Moving Average line plotted over price, showing price trending above a rising average; indicator name and value visible in the chart legend | moving-average-on-chart.png]
+[WIDGET: ma-lab]
 
 ## When to use it
 

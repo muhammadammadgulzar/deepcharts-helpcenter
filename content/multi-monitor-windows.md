@@ -41,7 +41,9 @@ DeepCharts windows (charts, DOMs, Time and Sales, Scanner and the rest) are free
 
    ### If you want charts on different monitors to follow one symbol
 
-   Use link color groups: click the square link icon at each chart's top-right (left of minimize) and give the charts the same **Link** color (1–8). Changing the symbol on one chart then changes it on all charts in the group — the link syncs the symbol only, not the timeframe or drawings. See [[link-windows]].
+   Use link color groups: click the square link icon at each chart's top-right (left of minimize) and give the charts the same **Link** color (1–8). Changing the symbol on one chart then changes it on all charts in the group — the link syncs the symbol only, not the timeframe or drawings. Try it below: give both mini charts the same color and change the symbol on one. See [[link-windows]].
+
+[WIDGET: link-groups-demo]
 
    ### If you want a window to stay visible over other applications
 

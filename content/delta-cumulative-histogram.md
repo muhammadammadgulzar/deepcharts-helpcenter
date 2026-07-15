@@ -18,7 +18,9 @@ It is the compact sibling of [[delta-cumulative-candlestick]]: the same running 
 
 Each bar's delta is added to a running total. Positive cumulative delta (drawn green) means buyer aggression leads; negative cumulative delta (drawn red) means seller aggression leads. Because it lives in a slim panel at the chart's base, it works well as an always-on companion to any chart layout without taking the space of a full CVD candlestick panel.
 
-[SCREENSHOT: Chart window with Delta Cumulative Histogram at the base — green cumulative bars rising during a rally, then flattening while price keeps pushing, illustrating a divergence | delta-cumulative-histogram-overview.png]
+Try it below — hover along the histogram to follow how each bar's delta feeds the running total, and watch for the moment the total flattens while price keeps pushing.
+
+[WIDGET: delta-lab]
 
 ## When to use it
 

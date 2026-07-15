@@ -30,7 +30,9 @@ A candlestick is the final score of a battle; a footprint is the play-by-play. F
 
 Each price row in a bid/ask footprint shows `bid volume × ask volume` — contracts that traded at the bid (aggressive selling) on the left, contracts that traded at the ask (aggressive buying) on the right. Under or beside the bar you typically find the bar's totals: volume and delta (ask-traded minus bid-traded volume). Color intensity usually scales with size, so heavy rows stand out at a glance.
 
-[SCREENSHOT: A single footprint bar magnified and annotated — left bid column and right ask column labelled, one heavy row highlighted, the bar's total volume and delta readouts below, and a callout explaining the bid x ask notation | footprint-anatomy-annotated.png]
+Explore a live bar below — hover any bid × ask cell to decode it, and watch the per-bar delta readout as you go.
+
+[WIDGET: footprint-lab]
 
 ### Diagonal imbalances
 

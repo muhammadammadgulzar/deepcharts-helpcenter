@@ -34,7 +34,9 @@ VWAP is always computed *from an anchor*. The most common anchor is the start of
 
 Because VWAP is an average, price naturally oscillates around it. Standard-deviation bands quantify that oscillation: the first band contains "normal" wandering, while the second and third mark statistically stretched prices for *this* day's distribution. Traders use the outer bands two ways — as fade zones on rotation days (price stretched from a flat VWAP tends to revert) and as trend confirmation on drive days (price riding an outer band with the VWAP sloping steeply is strength, not an automatic short).
 
-[SCREENSHOT: An ES intraday chart with session VWAP and three standard-deviation bands above and below, annotated with (1) the morning open where the bands are tight and unstable, (2) a midday pullback that holds the VWAP line, and (3) an afternoon push riding the first upper band with the VWAP visibly rising | understanding-vwap-bands-annotated.png]
+Try it below — adjust the sigma bands and hover the chart for a live reading of how stretched price is from the average.
+
+[WIDGET: vwap-lab]
 
 ### The math (optional)
 

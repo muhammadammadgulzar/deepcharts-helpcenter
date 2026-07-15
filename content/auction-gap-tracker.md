@@ -18,6 +18,10 @@ This is an advanced order-flow tool: it assumes you understand aggressive buying
 
 At price levels where one side of the tape traded nothing (a zero print) or almost nothing, the auction skipped a step — participation was missing. The Auction Gap Tracker scans for runs of such levels and, when enough consecutive ones appear, draws a rectangle marking the buy-side or sell-side gap. When price later crosses a highlighted level, the opacity of the highlight decreases, indicating the level has been crossed.
 
+To see what a zero print looks like inside a bar, hover the bid×ask cells in the interactive footprint below:
+
+[WIDGET: footprint-lab]
+
 ## When to use it
 
 - To map low-participation areas that price may revisit to complete the auction.

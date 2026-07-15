@@ -19,7 +19,9 @@ You fill in your feed details, click **Save** in **Feed Settings** — and DeepC
 
 The exact cause is usually visible in the latest application log file — look for the most recently created file following the `DPC_Log_Date.txt` naming pattern. [CONFIRM: exact folder where DPC_Log files are stored]
 
-[SCREENSHOT: Feed Settings dialog filled in with a connection, cursor on the Save button — the state immediately before the crash occurs | feed-settings-before-save-crash.png]
+This is the window where the crash happens — the interactive mock below shows the same Feed Settings fields you were filling in before clicking **Save**.
+
+[WIDGET: feed-navigator]
 
 ## Most likely cause
 

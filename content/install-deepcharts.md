@@ -67,7 +67,9 @@ Choose the delayed-data option in the wizard — it needs no username, password 
 
 ### If you already have feed credentials
 
-Choose "I have a datafeed and I want to configure and connect it" and enter your connection details: a **Name** for the connection, the **Feed Source** (your provider), and your **Username** and **Password** from the data provider. Save and wait for the connection indicator to turn green. Details per provider: [[connect-data-feed]] and [[compatibility-guide]].
+Choose "I have a datafeed and I want to configure and connect it" and enter your connection details: a **Name** for the connection, the **Feed Source** (your provider), and your **Username** and **Password** from the data provider. Save and wait for the connection indicator to turn green. The interactive Feed Settings window below shows those same fields — switch the Feed Source dropdown to see what each provider asks for. Details per provider: [[connect-data-feed]] and [[compatibility-guide]].
+
+[WIDGET: feed-navigator]
 
 ### If your license came from a prop firm
 

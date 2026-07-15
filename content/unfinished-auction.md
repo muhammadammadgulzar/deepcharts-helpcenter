@@ -20,6 +20,10 @@ A finished auction occurs when price reaches an extreme where both aggressive bu
 
 Technically, the indicator hunts for anomalies at bar extremes. Normally a candle's high shows 0 Bid with Ask contracts, and its low shows Bid contracts with 0 Ask. When this pattern breaks — Bid contracts printing at a high, or Ask contracts printing at a low — the indicator displays a rectangle at the anomaly.
 
+Hover the bid×ask cells in the interactive footprint below to see that structure for yourself — note how a bar's extremes normally print zero on one side:
+
+[WIDGET: footprint-lab]
+
 ## When to use it
 
 - To build a map of unfinished highs and lows that may act as magnets for future price revisits.

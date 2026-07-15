@@ -32,9 +32,9 @@ DeepCharts stores every connection you create in **Feed Settings** as a separate
 
 2. Click **Select Connection** → **Feed Settings**.
 
-3. Click **Add Connection**, fill in the form for the new feed source and click **Save**. Each source has its own required fields — follow the matching guide ([[connect-rithmic]], [[connect-dxfeed]], [[connect-cqg]], [[connect-interactive-brokers]], [[competition-connect]], [[end-of-day-data]]).
+3. Click **Add Connection**, fill in the form for the new feed source and click **Save**. Each source has its own required fields — try it in the interactive Feed Settings mock below: switch the Feed Source and watch the fields change, then follow the matching guide ([[connect-rithmic]], [[connect-dxfeed]], [[connect-cqg]], [[connect-interactive-brokers]], [[competition-connect]], [[end-of-day-data]]).
 
-[SCREENSHOT: Feed Settings dialog showing the list of saved connections on one side and the Add Connection, Remove and Save buttons visible | feed-settings-add-remove-save.png]
+[WIDGET: feed-navigator]
 
 Some feed sources expose extra convenience options on their form:
 
@@ -49,9 +49,9 @@ Some feed sources expose extra convenience options on their form:
 
 4. Click **Select Connection** and click the feed you want. Wait for its dot to turn green.
 
-5. Open **Options → Symbol Manage** and re-point your exchanges to the feed you switched to (chain-link icon on each exchange row). Charts keep reading from whatever feed their exchange is routed to — if that feed is now disconnected, they show no data. See [[symbol-manage]].
+5. Open **Options → Symbol Manage** and re-point your exchanges to the feed you switched to (chain-link icon on each exchange row). Charts keep reading from whatever feed their exchange is routed to — if that feed is now disconnected, they show no data. Click the chain-link icon in the interactive mock below to see the feed cycle. See [[symbol-manage]].
 
-[SCREENSHOT: Symbol Manage window with the chain-link icon highlighted on an exchange row and the feed-selection choices visible | symbol-manage-switch-feed.png]
+[WIDGET: symbol-manage-mock]
 
 6. If a chart was already open, it may refresh on its own within a few seconds. If not, close it and reopen it so it loads from the newly routed feed.
 

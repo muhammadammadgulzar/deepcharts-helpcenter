@@ -42,9 +42,9 @@ The setup follows the same pattern as every other feed in DeepCharts: create the
    - find the exchange you want and change its **Data Feed** to the new Historical profile (the chain-link icon on the row changes the feed), or
    - add a new exchange and set its data feed to the Historical profile.
 
-   See [[symbol-manage]] for the full walkthrough of every Symbol Manage state.
+   See [[symbol-manage]] for the full walkthrough of every Symbol Manage state, or try the interactive mock below — click the chain-link icon on a row to cycle its mapped feed.
 
-[SCREENSHOT: Symbol Manage window with an exchange row whose Data Feed column is set to the "End of Day" Historical profile | symbol-manage-historical-routing.png]
+[WIDGET: symbol-manage-mock]
 
 8. Open a new chart on that exchange — it loads the historical data. See [[first-chart]].
 

@@ -20,6 +20,10 @@ Understanding the input types takes five minutes and will save you hours of conf
 
 The choice matters because exchanges do not report trades the way most people imagine. When one buyer takes 30 contracts that were offered by three separate sellers of 10 contracts each, the raw feed records three separate transactions of 10 — not one trade of 30.
 
+You can watch this raw execution stream live below — every print is one recorded transaction, exactly what the **Volume** input type counts.
+
+[WIDGET: tape-lab]
+
 ## When to use it
 
 - An indicator "missed" an obviously large trade — the order was probably split across executions and each piece fell below your threshold.
