@@ -28,7 +28,7 @@
 </div></div>
 <article class="article-body"><p>A candlestick tells you what price did. Orderflow tells you who made it happen and how hard they pushed. Once you can read the bid, the ask, the aggressor and delta, every advanced tool in DeepCharts — footprints, delta charts, the DOM, the tape — becomes a variation on the same four ideas.</p>
 <p>This article is the foundation for the rest of the Concepts section. Read it before <a href="./reading-a-footprint.html">Reading a Footprint: Worked Examples</a> or <a href="./understanding-auction-theory.html">Understanding Auction Theory: Imbalance, Unfinished Auctions, Absorption</a>.</p>
-<div class="widget-mount" data-widget="dom-ladder"></div><h2 id="the-idea-in-one-paragraph">The idea in one paragraph</h2>
+<h2 id="the-idea-in-one-paragraph">The idea in one paragraph</h2>
 <p>Every trade in a futures market is a match between someone willing to wait and someone who is not. Patient traders post limit orders — &quot;I will buy at this price or better&quot; — and those orders sit in the book at the bid and the ask. Impatient traders send market orders that hit whatever is resting there. The impatient side is called the aggressor, and it decides where the trade prints: a market buy fills against the ask, a market sell fills against the bid. Think of a fish market: stall owners post their prices (limit orders); a customer who pays the asking price without haggling is an aggressive buyer; a fisherman who dumps his catch at whatever buyers will pay is an aggressive seller. Count the aggressive buys, subtract the aggressive sells, and you have delta — a running score of which side is more urgent.</p>
 <h2 id="why-traders-care">Why traders care</h2>
 <ul>
@@ -39,7 +39,8 @@
 </ul>
 <h2 id="how-it-works">How it works</h2>
 <h3 id="bid-ask-and-the-spread">Bid, ask and the spread</h3>
-<p>At any moment the order book has two front prices. The <strong>bid</strong> is the highest price at which resting buyers are willing to buy. The <strong>ask</strong> (also called the offer) is the lowest price at which resting sellers are willing to sell. The gap between them is the spread — in liquid futures such as ES it is usually one tick. Behind those front prices sit queues of further limit orders at every level; that stack of resting orders is the market depth (see <a href="./depth-of-market.html">Depth of Market (DOM) Indicator</a> and <a href="./advanced-dom.html">Advanced DOM Window</a>).</p>
+<p>At any moment the order book has two front prices. The <strong>bid</strong> is the highest price at which resting buyers are willing to buy. The <strong>ask</strong> (also called the offer) is the lowest price at which resting sellers are willing to sell. The gap between them is the spread — in liquid futures such as ES it is usually one tick. Behind those front prices sit queues of further limit orders at every level; that stack of resting orders is the market depth (see <a href="./depth-of-market.html">Depth of Market (DOM) Indicator</a> and <a href="./advanced-dom.html">Advanced DOM Window</a>). Hover the live ladder below to see what each resting level means — sell limits stacked above the spread, buy limits below.</p>
+<div class="widget-mount" data-widget="dom-ladder"></div>
 <h3 id="the-aggressor">The aggressor</h3>
 <p>Resting orders do not trade with each other — someone has to cross the spread. A market order (or an aggressive limit order priced through the spread) does exactly that:</p>
 <ul>
@@ -55,7 +56,8 @@
 <li><strong>Delta = ask-traded volume − bid-traded volume.</strong></li>
 </ul>
 <p>Positive delta means buyers were the more aggressive side during that bar; negative delta means sellers were. <strong>Cumulative delta</strong> adds each bar's delta to a running total across the session, so you can compare the trend of aggression against the trend of price. When price makes a new high but cumulative delta does not (or the reverse at lows), that disagreement is called a delta divergence and is worth attention.</p>
-<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">A price chart of an ES futures session with a cumulative delta panel below it, annotated with arrows marking (1) a rally where price and cumulative delta rise together and (2) a later new price high where cumulative delta makes a lower high, labelled &quot;delta divergence&quot;</div><div class="s-file">orderflow-101-cumulative-delta-divergence.png</div></div></div>
+<p>Watch it work in the live panel below — hover each bar to see how its delta feeds the cumulative line.</p>
+<div class="widget-mount" data-widget="delta-lab"></div>
 <h3 id="the-math-optional">The math (optional)</h3>
 <p>For a single bar:</p>
 <pre><code>delta        = volume_at_ask − volume_at_bid
@@ -100,7 +102,7 @@ total volume = volume_at_ask + volume_at_bid
 </ul>
 </article>
 <div class="pn"><a class="prev" href="./performance-analysis.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Performance Analysis (Signal Performance)</div></a><a class="next" href="./understanding-volume-profile.html"><div class="pn-lbl">Next →</div><div class="pn-title">Understanding Volume Profile: POC, Value Area, HVN/LVN</div></a></div>
-    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 16, 2026 · screenshots pending capture (see placeholders)</div>
   </main>
   <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#the-idea-in-one-paragraph">The idea in one paragraph</a></li><li class="lv2"><a href="#why-traders-care">Why traders care</a></li><li class="lv2"><a href="#how-it-works">How it works</a></li><li class="lv3"><a href="#bid-ask-and-the-spread">Bid, ask and the spread</a></li><li class="lv3"><a href="#the-aggressor">The aggressor</a></li><li class="lv3"><a href="#delta">Delta</a></li><li class="lv3"><a href="#the-math-optional">The math (optional)</a></li><li class="lv2"><a href="#see-it-in-deepcharts">See it in DeepCharts</a></li><li class="lv2"><a href="#worked-example">Worked example</a></li><li class="lv2"><a href="#common-misreadings">Common misreadings</a></li><li class="lv2"><a href="#go-deeper">Go deeper</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
 </div>

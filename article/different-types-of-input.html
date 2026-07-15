@@ -31,6 +31,8 @@
 <h2 id="what-it-is">What it is</h2>
 <p><strong>Input Data</strong> selects the source data an indicator is built from. The same candle can be measured as raw exchange transactions (<strong>Volume</strong>), as order-book events (<strong>Order</strong>), or as trades reconstructed by DeepCharts into their original size (<strong>Aggregate</strong>). Many indicators also offer <strong>Number of Trades</strong>, which counts executions instead of contracts.</p>
 <p>The choice matters because exchanges do not report trades the way most people imagine. When one buyer takes 30 contracts that were offered by three separate sellers of 10 contracts each, the raw feed records three separate transactions of 10 — not one trade of 30.</p>
+<p>You can watch this raw execution stream live below — every print is one recorded transaction, exactly what the <strong>Volume</strong> input type counts.</p>
+<div class="widget-mount" data-widget="tape-lab"></div>
 <h2 id="when-to-use-it">When to use it</h2>
 <ul>
 <li>An indicator &quot;missed&quot; an obviously large trade — the order was probably split across executions and each piece fell below your threshold.</li>
@@ -106,7 +108,7 @@
 </ul>
 </article>
 <div class="pn"><a class="prev" href="./glossary.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Glossary of Orderflow and Platform Terms</div></a><a class="next" href="./indicator-layout.html"><div class="pn-lbl">Next →</div><div class="pn-title">How to Change the Layout of Indicators</div></a></div>
-    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 16, 2026 · screenshots pending capture (see placeholders)</div>
   </main>
   <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#what-it-is">What it is</a></li><li class="lv2"><a href="#when-to-use-it">When to use it</a></li><li class="lv2"><a href="#quick-start">Quick start</a></li><li class="lv2"><a href="#how-to-read-it">How to read it</a></li><li class="lv2"><a href="#settings-reference">Settings reference</a></li><li class="lv2"><a href="#tips-and-common-mistakes">Tips and common mistakes</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
 </div>

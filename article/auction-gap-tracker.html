@@ -30,6 +30,8 @@
 <p>This is an advanced order-flow tool: it assumes you understand aggressive buying and selling at the Bid and Ask. If you need the foundations, start with <a href="./orderflow-101.html">Orderflow 101: Bid, Ask, Aggressor and Delta</a> and <a href="./understanding-auction-theory.html">Understanding Auction Theory: Imbalance, Unfinished Auctions, Absorption</a>.</p>
 <h2 id="what-it-is">What it is</h2>
 <p>At price levels where one side of the tape traded nothing (a zero print) or almost nothing, the auction skipped a step — participation was missing. The Auction Gap Tracker scans for runs of such levels and, when enough consecutive ones appear, draws a rectangle marking the buy-side or sell-side gap. When price later crosses a highlighted level, the opacity of the highlight decreases, indicating the level has been crossed.</p>
+<p>To see what a zero print looks like inside a bar, hover the bid×ask cells in the interactive footprint below:</p>
+<div class="widget-mount" data-widget="footprint-lab"></div>
 <h2 id="when-to-use-it">When to use it</h2>
 <ul>
 <li>To map low-participation areas that price may revisit to complete the auction.</li>
@@ -133,7 +135,7 @@
 </ul>
 </article>
 <div class="pn"><a class="prev" href="./unfinished-auction.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Unfinished Auction</div></a><a class="next" href="./dynamic-poc.html"><div class="pn-lbl">Next →</div><div class="pn-title">Dynamic POC</div></a></div>
-    <div class="footer">DeepCharts Help Center · rebuilt July 15, 2026 · screenshots pending capture (see placeholders)</div>
+    <div class="footer">DeepCharts Help Center · rebuilt July 16, 2026 · screenshots pending capture (see placeholders)</div>
   </main>
   <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#what-it-is">What it is</a></li><li class="lv2"><a href="#when-to-use-it">When to use it</a></li><li class="lv2"><a href="#quick-start">Quick start</a></li><li class="lv2"><a href="#how-to-read-it">How to read it</a></li><li class="lv2"><a href="#settings-reference">Settings reference</a></li><li class="lv3"><a href="#unfinished-settings">Unfinished Settings</a></li><li class="lv3"><a href="#plot-settings">Plot Settings</a></li><li class="lv3"><a href="#alert-settings">Alert Settings</a></li><li class="lv2"><a href="#tips-and-common-mistakes">Tips and common mistakes</a></li><li class="lv2"><a href="#related-articles">Related articles</a></li></ul></aside>
 </div>
