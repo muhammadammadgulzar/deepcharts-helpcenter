@@ -174,6 +174,7 @@ def page(root, title, body, active_slug=None, toc_html="", desc=""):
 <script src="{root}assets/search-index.js"></script>
 <script src="{root}assets/app.js"></script>
 <script src="{root}assets/widgets.js"></script>
+<script src="{root}assets/deep-print-studio.js"></script>
 </body></html>'''
 
 # ---------------- live widgets ----------------
