@@ -161,6 +161,7 @@ def page(root, title, body, active_slug=None, toc_html="", desc=""):
 <title>{html.escape(title)} — {SITE_NAME}</title>
 <meta name="description" content="{html.escape(desc)}">
 <link rel="stylesheet" href="{root}assets/style.css">
+<link rel="stylesheet" href="{root}assets/review.css">
 <script>window.HC_ROOT="{root}";</script>
 </head><body>
 {header_html(root)}
@@ -175,6 +176,7 @@ def page(root, title, body, active_slug=None, toc_html="", desc=""):
 <script src="{root}assets/app.js"></script>
 <script src="{root}assets/widgets.js"></script>
 <script src="{root}assets/deep-print-studio.js"></script>
+<script type="module" src="{root}assets/review.js"></script>
 </body></html>'''
 
 # ---------------- live widgets ----------------
