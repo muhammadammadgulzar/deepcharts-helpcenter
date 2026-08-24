@@ -145,7 +145,9 @@ async function api(path, opts = {}, _retried) {
   try {
     res = await fetch(API_BASE + API_PREFIX + path, Object.assign({}, opts, { headers }));
   } catch (netErr) {
-    if (!_retried) {
+    // Retry only idempotent GETs: a POST/PATCH/DELETE whose response was lost
+    // may already have been processed — re-sending would duplicate the remark.
+    if (!_retried && (!opts.method || opts.method === "GET")) {
       // Render free tier cold start: be honest, wait, retry once.
       toast("Connecting to review server (it may be waking up)…", false, 3200);
       await sleep(3000);

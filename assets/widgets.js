@@ -173,7 +173,7 @@
         srv.style.display = s.server ? "" : "none"; if (s.server) srvV.textContent = s.server;
         hint.style.display = "flex"; hint.innerHTML = "<span>💡</span><span>" + s.hint + "</span>";
         go.style.display = "inline-flex"; go.textContent = "Open the " + s.k + " guide →";
-        go.href = (window.HC_ROOT || "../") + "article/" + s.go + ".html";
+        go.href = (window.KB_ROOT !== undefined ? window.KB_ROOT : (window.HC_ROOT || "../")) + "article/" + s.go + ".html";
       };
       menu.appendChild(b);
     });
@@ -193,7 +193,7 @@
   /* ================= MAIN BAR EXPLORER ================= */
   function mainBar(mount) {
     var body = chrome(mount, "The DeepCharts main bar — click the menus, everything answers", "LIVE MOCK");
-    var A = (window.HC_ROOT || "../") + "article/";
+    var A = (window.KB_ROOT !== undefined ? window.KB_ROOT : (window.HC_ROOT || "../")) + "article/";
     var MENUS = [
       { label: "New", items: [
         { t: "Adv. Time And Sales", tip: "The tape — every executed trade as it prints, with aggressor colors.", go: "adv-time-and-sales" },
