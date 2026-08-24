@@ -17,7 +17,7 @@ SAR stands for "stop and reverse" — the dots trail price at an accelerating pa
 
 Parabolic SAR answers the question: where is my trailing stop, and has the trend reversed? This indicator is similar to the moving average, the only difference being that the Parabolic SAR moves at a more accelerated pace and can change its position relative to price. The longer a trend runs, the faster the dots close in on price — which is what gives the trail its parabolic shape and forces an eventual exit.
 
-[SCREENSHOT: A candlestick chart with Parabolic SAR dots below price during an uptrend, flipping above price after a reversal; the flip point clearly visible | parabolic-sar-on-chart.png]
+[SCREENSHOT: A candlestick chart with Parabolic SAR dots below price during an uptrend, flipping above price after a reversal; the flip point clearly visible | dc-en-parabolic-sar-01.png]
 
 ## When to use it
 
@@ -34,7 +34,7 @@ Parabolic SAR answers the question: where is my trailing stop, and has the trend
 4. Click the gear icon to open its settings.
 5. Starter configuration: keep **Step** at the default 0.02 and **Maximum** at the default 0.20 — Wilder's original values, and the standard starting point on any timeframe.
 
-[SCREENSHOT: Parabolic SAR settings dialog showing the Parameters section with Step = 0.02 and Maximum = 0.20, and the Subgraph styling section below | parabolic-sar-settings.png]
+[SCREENSHOT: Parabolic SAR settings dialog showing the Parameters section with Step = 0.02 and Maximum = 0.20, and the Subgraph styling section below | dc-en-parabolic-sar-02.png]
 
 ## How to read it
 

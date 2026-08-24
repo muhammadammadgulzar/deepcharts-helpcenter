@@ -11,7 +11,7 @@ keywords: ["deep reload", "deepdom deep reload", "deepdom", "deep indicators"]
 ---
 Deep Reload (Fresh Liquidity Detector) scans the order book in real time to find moments when *fresh resting liquidity* suddenly appears near the current price. Instead of watching every Level 2 update, you get clear horizontal bands showing where new size has just been added on the bid (potential support) or ask (potential cap), helping you see when larger participants step in to defend a level or assist a breakout.
 
-[SCREENSHOT: Deep Reload — overview (DeepDOM) | deep-reload-01.png]
+[SCREENSHOT: Deep Reload — overview (DeepDOM) | dd-en-deep-reload-01.png]
 
 ## How to Set Up the Deep Reload
 
@@ -23,7 +23,7 @@ Find Deep Reload in the list and click + to add it.
 
 Click the settings icon on the indicator to open its configuration window.
 
-[SCREENSHOT: Deep Reload — How to Set Up the Deep Reload (DeepDOM) | deep-reload-02.png]
+[SCREENSHOT: Deep Reload — How to Set Up the Deep Reload (DeepDOM) | dd-en-deep-reload-02.png]
 
 ## 1. Concept: Fresh Resting Liquidity
 
@@ -35,7 +35,7 @@ The goal of Deep Reload is not to show all book changes, but to highlight *only 
 
 ## 2. General Settings
 
-[SCREENSHOT: Deep Reload — 2. General Settings (DeepDOM) | deep-reload-03.png]
+[SCREENSHOT: Deep Reload — 2. General Settings (DeepDOM) | dd-en-deep-reload-03.png]
 
 ### 2.1 Value Type
 
@@ -65,7 +65,7 @@ Smaller values focus the detector very close to the inside market; larger values
 
 ## 3. Plot Settings
 
-[SCREENSHOT: Deep Reload — 3. Plot Settings (DeepDOM) | deep-reload-04.png]
+[SCREENSHOT: Deep Reload — 3. Plot Settings (DeepDOM) | dd-en-deep-reload-04.png]
 
 The Plot Settings section defines how fresh‑liquidity zones appear visually on the chart.
 
@@ -87,7 +87,7 @@ Plot max ticks limits the vertical height of each zone in price ticks. When fres
 
 ## 4. Trend Filter
 
-[SCREENSHOT: Deep Reload — 4. Trend Filter (DeepDOM) | deep-reload-05.png]
+[SCREENSHOT: Deep Reload — 4. Trend Filter (DeepDOM) | dd-en-deep-reload-05.png]
 
 The optional Trend Filter restricts signals to those that align with a short‑term trend over a configurable lookback period.
 
@@ -99,7 +99,7 @@ With the filter enabled, you can choose to focus only on fresh liquidity that *s
 
 ## 5. Alerts
 
-[SCREENSHOT: Deep Reload — 5. Alerts (DeepDOM) | deep-reload-06.png]
+[SCREENSHOT: Deep Reload — 5. Alerts (DeepDOM) | dd-en-deep-reload-06.png]
 
 You have also the possibility to set an alert for the indicator signals
 

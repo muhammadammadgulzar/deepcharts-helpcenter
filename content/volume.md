@@ -18,7 +18,7 @@ If you are new to orderflow, this is the first indicator to learn — nearly eve
 
 Volume is a per-bar activity meter. Each histogram bar answers "how much traded here?", and the optional delta coloring answers "who was more aggressive — buyers or sellers?" With markers enabled it also answers "did an unusually large effort get absorbed?"
 
-[SCREENSHOT: Chart window with the Volume indicator in a panel beneath the price candles — histogram bars visible with a delta-based background coloring and one bar flagged with an absorption marker | volume-indicator-chart-overview.png]
+[SCREENSHOT: Chart window with the Volume indicator in a panel beneath the price candles — histogram bars visible with a delta-based background coloring and one bar flagged with an absorption marker | dc-en-volume-01.png]
 
 ## When to use it
 
@@ -38,7 +38,7 @@ Volume is a per-bar activity meter. Each histogram bar answers "how much traded 
 6. Enable **Average Volume** and set a number of days so you can compare current bars against the recent norm.
 7. Apply and confirm the histogram renders beneath the chart.
 
-[SCREENSHOT: Volume indicator settings dialog open at the data section, showing the Input data dropdown expanded with Volume, Order and Aggregate Trade entries and the Filter Min / Filter Max fields below | volume-settings-input-data.png]
+[SCREENSHOT: Volume indicator settings dialog open at the data section, showing the Input data dropdown expanded with Volume, Order and Aggregate Trade entries and the Filter Min / Filter Max fields below | dc-en-volume-02.png]
 
 ## How to read it
 

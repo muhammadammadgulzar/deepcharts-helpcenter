@@ -16,7 +16,7 @@ The **Rithmic: Expert not attached** error appears when DeepCharts is waiting fo
 - You connect a Rithmic data feed and the connection indicator turns **yellow** — and stays yellow instead of turning green.
 - The error message **Rithmic: Expert not attached** is shown.
 
-[SCREENSHOT: Rithmic feed connection showing the yellow status indicator together with the "Rithmic: Expert not attached" error message | rithmic-expert-not-attached-yellow.png]
+[SCREENSHOT: Rithmic feed connection showing the yellow status indicator together with the "Rithmic: Expert not attached" error message | dc-en-fix-rithmic-expert-not-attached-01.png]
 
 A yellow indicator means the connection is waiting or only partially established; green confirms a successful data feed connection.
 
@@ -39,7 +39,7 @@ Disabling **Use R|Trader** is the simplest approach and resolves the issue for m
 3. Find the **Use R|Trader** option.
 4. Untick (disable) the option.
 
-[SCREENSHOT: Rithmic Feed Settings dialog with the Use R|Trader checkbox visible and highlighted in its unchecked state | feed-settings-use-rtrader-unchecked.png]
+[SCREENSHOT: Rithmic Feed Settings dialog with the Use R|Trader checkbox visible and highlighted in its unchecked state | dc-en-fix-rithmic-expert-not-attached-02.png]
 
 5. Click **Save**.
 6. Restart DeepCharts.

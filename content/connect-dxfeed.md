@@ -22,7 +22,7 @@ By the end you will have your dxFeed account connected with a green dot and a ch
 
 1. In DeepCharts, click **Select Connection** in the main toolbar, then click **Feed Settings** at the bottom of the dropdown.
 
-[SCREENSHOT: Main toolbar with the Select Connection dropdown open and Feed Settings highlighted at the bottom | dxfeed-open-feed-settings.png]
+[SCREENSHOT: Main toolbar with the Select Connection dropdown open and Feed Settings highlighted at the bottom | dc-en-connect-dxfeed-01.png]
 
 2. In the Feed Settings window, click **Add Connection**.
 
@@ -47,7 +47,7 @@ Try the form live below — pick dxFeed as the Feed Source and see which fields 
 
 5. Click **Select Connection** again and click your new dxFeed profile to connect. The circle next to it should turn green within about 10 seconds.
 
-[SCREENSHOT: Select Connection dropdown with the dxFeed profile connected and its status circle green | dxfeed-connected-green.png]
+[SCREENSHOT: Select Connection dropdown with the dxFeed profile connected and its status circle green | dc-en-connect-dxfeed-02.png]
 
 6. Disconnect the feed (click it again), then open **Options → Symbol Manage** and route your exchanges to this feed — the full walkthrough is in [[symbol-manage]]. In short: if your exchange is listed, make sure its **Data Feed** column points at the dxFeed profile (chain-link icon to change it); if it is not listed, click **Subscribe**, find the exchange and assign the dxFeed profile.
 

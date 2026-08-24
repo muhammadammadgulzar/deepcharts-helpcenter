@@ -27,7 +27,7 @@ The single most important thing to understand: IBKR delivers **aggregated** mark
 
 3. Enable **Enable ActiveX and Socket Clients**. Note the socket port shown in these settings — by default TWS uses 7496 for a live login and 7497 for a paper login.
 
-[SCREENSHOT: TWS Global Configuration window, API > Settings page, with Enable ActiveX and Socket Clients checked and the Socket port field visible | tws-api-settings.png]
+[SCREENSHOT: TWS Global Configuration window, API > Settings page, with Enable ActiveX and Socket Clients checked and the Socket port field visible | dc-en-connect-interactive-brokers-01.png]
 
 4. Configure the trusted IP so TWS accepts the local connection:
    - Uncheck **Allow connections from localhost only**.
@@ -35,7 +35,7 @@ The single most important thing to understand: IBKR delivers **aggregated** mark
    - Re-check **Allow connections from localhost only**.
    - Click **Apply**, then **Yes**, then **OK**.
 
-[SCREENSHOT: TWS API settings Trusted IPs section showing 127.0.0.1 added to the list and the Allow connections from localhost only checkbox checked | tws-trusted-ips.png]
+[SCREENSHOT: TWS API settings Trusted IPs section showing 127.0.0.1 added to the list and the Allow connections from localhost only checkbox checked | dc-en-connect-interactive-brokers-02.png]
 
 5. In DeepCharts, click **Select Connection** → **Feed Settings**, then click **Add Connection**.
 
@@ -46,13 +46,13 @@ The single most important thing to understand: IBKR delivers **aggregated** mark
    - **Port** — 7496 for a live TWS login, 7497 for a paper TWS login. This must match the socket port from step 3.
    - **Client ID** — any unique integer (for example 1). No other app connected to TWS may use the same ID.
 
-[SCREENSHOT: DeepCharts Feed Settings dialog with Feed Source set to Interactive Brokers, Host 127.0.0.1, Port and Client ID fields filled | feed-settings-ibkr.png]
+[SCREENSHOT: DeepCharts Feed Settings dialog with Feed Source set to Interactive Brokers, Host 127.0.0.1, Port and Client ID fields filled | dc-en-connect-interactive-brokers-03.png]
 
 7. Click **Save**.
 
 8. In **Select Connection**, connect the IBKR feed **and** your data feed. Both must show a green dot at the same time — IBKR for orders, the data feed for charts.
 
-[SCREENSHOT: Select Connection dropdown showing both the IBKR connection and a Rithmic or dxFeed connection, each with a green status dot | ibkr-plus-datafeed-connected.png]
+[SCREENSHOT: Select Connection dropdown showing both the IBKR connection and a Rithmic or dxFeed connection, each with a green status dot | dc-en-connect-interactive-brokers-04.png]
 
 9. Open **Options → Symbol Manage** and set the Data Feed for every exchange to your **Rithmic or dxFeed feed — never to IBKR**. If an exchange is routed to IBKR, its charts will be built from aggregated data and will look wrong. Practice in the interactive mock below — the chain-link icon on a row cycles its mapped feed. See [[symbol-manage]].
 
@@ -60,7 +60,7 @@ The single most important thing to understand: IBKR delivers **aggregated** mark
 
 10. Open a chart, then open the **Trading Panel** (bottom-right of the chart). In the **Broker** field select **Interactive Brokers**, then select your IBKR trading account. Orders you place now route to TWS for execution while the chart keeps loading from your data feed. See [[trading-from-chart]].
 
-[SCREENSHOT: Trading Panel at the bottom-right of a chart with the Broker field set to Interactive Brokers and an account selected | trading-panel-ibkr-broker.png]
+[SCREENSHOT: Trading Panel at the bottom-right of a chart with the Broker field set to Interactive Brokers and an account selected | dc-en-connect-interactive-brokers-05.png]
 
 ### If you do not have a real data feed yet
 

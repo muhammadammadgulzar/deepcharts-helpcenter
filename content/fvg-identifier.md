@@ -35,7 +35,7 @@ FVGs are commonly read as footprints of one-sided, aggressive order flow: the ma
 4. Click the gear icon next to the indicator to open its settings. Set **Min num ticks** high enough that routine bar-to-bar noise is excluded on your timeframe — start small and raise it until only clean zones remain.
 5. Choose whether zones should disappear on a wick touch (**Remove Line On Shadow Triggered**) or only after a percentage fill (**% breakout**), depending on how strict your definition of mitigation is.
 
-[SCREENSHOT: A price chart with the FVG Identifier active — two shaded FVG zones extending right from impulsive moves, one still open and one about to be tagged by a pullback | fvg-identifier-on-chart.png]
+[SCREENSHOT: A price chart with the FVG Identifier active — two shaded FVG zones extending right from impulsive moves, one still open and one about to be tagged by a pullback | dc-en-fvg-identifier-01.png]
 
 ## How to read it
 
@@ -78,7 +78,7 @@ FVGs are commonly read as footprints of one-sided, aggressive order flow: the ma
 | **Max bars extension** | Limits how many bars a zone extends forward. 0 = extends indefinitely. |
 | **% breakout** | The percentage of the gap that must be filled for the zone to count as mitigated. |
 
-[SCREENSHOT: The FVG Identifier settings dialog showing the General Parameters (Min num ticks, Max num ticks), Plot Settings and the Extension group with Reset Start Day, Remove Line On Shadow Triggered, Max bars extension and % breakout | fvg-identifier-settings.png]
+[SCREENSHOT: The FVG Identifier settings dialog showing the General Parameters (Min num ticks, Max num ticks), Plot Settings and the Extension group with Reset Start Day, Remove Line On Shadow Triggered, Max bars extension and % breakout | dc-en-fvg-identifier-02.png]
 
 ## Tips and common mistakes
 

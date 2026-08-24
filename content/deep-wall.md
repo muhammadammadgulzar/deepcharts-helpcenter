@@ -24,7 +24,7 @@ Deep Wall answers one question: "did a large passive player defend this price?" 
 
 > **Warning:** Deep Wall is built for **ES** charts specifically. Applying it to other instruments will not give meaningful signals.
 
-[SCREENSHOT: ES chart with a Deep Wall detection visible — the marked level where price repeatedly hit resting liquidity and rejected, with the Deep Wall signal highlighted | deep-wall-es-signal.png]
+[SCREENSHOT: ES chart with a Deep Wall detection visible — the marked level where price repeatedly hit resting liquidity and rejected, with the Deep Wall signal highlighted | dc-en-deep-wall-01.png]
 
 ## When to use it
 
@@ -40,7 +40,7 @@ Deep Wall answers one question: "did a large passive player defend this price?" 
 3. Click the **Settings** icon next to Deep Wall.
 4. Set up an alert so you do not miss the rare detections: go to **Options → Settings → Add Alert** and configure the **Alert Sound** and **Message Popup** for Deep Wall events.
 
-[SCREENSHOT: Deep Wall settings dialog together with the Options → Settings → Add Alert screen showing an alert configured with Alert Sound and Message Popup enabled for Deep Wall | deep-wall-settings-alert.png]
+[SCREENSHOT: Deep Wall settings dialog together with the Options → Settings → Add Alert screen showing an alert configured with Alert Sound and Message Popup enabled for Deep Wall | dc-en-deep-wall-02.png]
 
 ## How to read it
 

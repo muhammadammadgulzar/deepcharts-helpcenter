@@ -30,13 +30,13 @@ In this mode R Trader Pro works as a data gateway: it holds the connection to Ri
 
 2. Before logging in, enable the **Allow Plugins** toggle on the login form. This is the switch that lets DeepCharts attach to R Trader Pro — without it, the DeepCharts connection stays yellow and never turns green.
 
-[SCREENSHOT: R Trader Pro login screen with both forms filled identically and the Allow Plugins toggle enabled and highlighted | rtrader-login-allow-plugins.png]
+[SCREENSHOT: R Trader Pro login screen with both forms filled identically and the Allow Plugins toggle enabled and highlighted | dc-en-rtrader-pro-plugin-01.png]
 
 3. Click **Login** and leave R Trader Pro running in the background.
 
 4. Remove Rithmic's data-receive limits: open **Window → Preferences** and go to the **Performance** tab. Under **Max Market Data Updates/Second**, drag both the **Quotes** and **Order Book** sliders to the maximum (**No Max**), confirm the **Adjust to keep up with market data inflow** checkbox is enabled, then click **Apply** and **OK**.
 
-[SCREENSHOT: R Trader Pro Preferences window, Performance tab, with Quotes and Order Book sliders at No Max and the "Adjust to keep up with market data inflow" checkbox ticked | rtrader-preferences-no-max.png]
+[SCREENSHOT: R Trader Pro Preferences window, Performance tab, with Quotes and Order Book sliders at No Max and the "Adjust to keep up with market data inflow" checkbox ticked | dc-en-rtrader-pro-plugin-02.png]
 
 > **Warning:** Keep the sliders at maximum permanently. With a lower limit set, Rithmic caps how much data reaches you per second, and charts fall behind during high-volatility periods when data inflow spikes.
 
@@ -52,7 +52,7 @@ In this mode R Trader Pro works as a data gateway: it holds the connection to Ri
 
 9. Enable the **Use R|Trader** option in the connection form (some versions label it **Use RTrader Pro Plugin**, in the Advanced section).
 
-[SCREENSHOT: DeepCharts Feed Settings dialog with Feed Source=Rithmic RAPI, Server and Gateway matching R Trader Pro, and the Use R|Trader option enabled and highlighted | feed-settings-use-rtrader-enabled.png]
+[SCREENSHOT: DeepCharts Feed Settings dialog with Feed Source=Rithmic RAPI, Server and Gateway matching R Trader Pro, and the Use R|Trader option enabled and highlighted | dc-en-rtrader-pro-plugin-03.png]
 
 10. Click **Save**, then connect the feed from the **Select Connection** dropdown.
 
@@ -64,7 +64,7 @@ In this mode R Trader Pro works as a data gateway: it holds the connection to Ri
 - Open a chart via **New → Price Chart** — the price updates live.
 - R Trader Pro is still running in the background.
 
-[SCREENSHOT: DeepCharts with a green connection dot and a live chart, with R Trader Pro visible running in the background | rtrader-plugin-connected-green.png]
+[SCREENSHOT: DeepCharts with a green connection dot and a live chart, with R Trader Pro visible running in the background | dc-en-rtrader-pro-plugin-04.png]
 
 ## If something went wrong
 

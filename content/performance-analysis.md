@@ -17,7 +17,7 @@ One naming quirk up front: you open it from the menu as **Strategy Report**, but
 
 A report generator for any connected account (including SIM). You pick the broker, account, date range and symbols, click **Generate Report**, and get five sections of analysis over exactly those trades. Because it works per account, it is equally useful for reviewing a live prop account and for measuring a strategy you have been testing on SIM.
 
-[SCREENSHOT: The Signal Performance window opened via Trading → Strategy Report, showing the Broker and Account selectors, the date range and symbol filters in the top-right, and the Generate Report button | signal-performance-window.png]
+[SCREENSHOT: The Signal Performance window opened via Trading → Strategy Report, showing the Broker and Account selectors, the date range and symbol filters in the top-right, and the Generate Report button | dc-en-performance-analysis-01.png]
 
 ## When to use it
 
@@ -34,7 +34,7 @@ A report generator for any connected account (including SIM). You pick the broke
 4. Click **Generate Report**.
 5. To take the data elsewhere (spreadsheet, journal), click **Export CSV**.
 
-[SCREENSHOT: The top-right filter area of the Signal Performance window with the date range and symbol selection controls visible | signal-performance-filters.png]
+[SCREENSHOT: The top-right filter area of the Signal Performance window with the date range and symbol selection controls visible | dc-en-performance-analysis-02.png]
 
 ## How to read it
 
@@ -44,7 +44,7 @@ The generated report is organized in five sections:
 
 The summary of the period: **Balance**, **Profit** made, **Losses** made, number of trades executed, **Commissions** (when commission tracking is enabled [CONFIRM: where commissions are configured]), **DrawDown** and **Run-up**, and the percentage of winning trades. The figures are split into **Long Executes**, **Short Executes** and **All Executes** — so you can see immediately whether one direction is carrying the account.
 
-[SCREENSHOT: The Strategy Performance section of a generated report showing Balance, Profit, Losses, trade count, DrawDown, Run-up and win percentage split into Long/Short/All Executes columns | strategy-performance-summary.png]
+[SCREENSHOT: The Strategy Performance section of a generated report showing Balance, Profit, Losses, trade count, DrawDown, Run-up and win percentage split into Long/Short/All Executes columns | dc-en-performance-analysis-03.png]
 
 ### Trade List
 
@@ -58,13 +58,13 @@ The balance per symbol traded during the period — the fastest way to identify 
 
 Visual analysis of the same data: the **equity curve**, the **drawdown** chart, and views of individual trades.
 
-[SCREENSHOT: The Chart section of a report showing the equity curve with the drawdown chart below it | signal-performance-equity-curve.png]
+[SCREENSHOT: The Chart section of a report showing the equity curve with the drawdown chart below it | dc-en-performance-analysis-04.png]
 
 ### Time Analysis
 
 Profitability by hour of the day — which hours are the most and least favorable — with daily, monthly and annual views as well. Use it to adjust when you trade, for example by avoiding your consistently low-performing hours.
 
-[SCREENSHOT: The Time Analysis section showing the profitability-by-hour histogram with clearly profitable and unprofitable hours | signal-performance-time-analysis.png]
+[SCREENSHOT: The Time Analysis section showing the profitability-by-hour histogram with clearly profitable and unprofitable hours | dc-en-performance-analysis-05.png]
 
 ## Settings reference
 

@@ -38,7 +38,7 @@ For CME equity index futures such as ES and NQ, the electronic week opens Sunday
 
 One consequence surprises almost everyone: the exchange's trading day does not start at midnight — it starts at 18:00 the *previous* evening. Monday's "day" of trading began Sunday night. Daily bars, day-start lines and session statistics anchored to the exchange day therefore reset in the evening, not at 00:00.
 
-[SCREENSHOT: An NQ chart spanning two full days with the overnight (ETH-only) portion visually distinguished from the RTH portion, annotated with the 18:00 New York session start, the 09:30 RTH open, the overnight high and low, and the 17:00–18:00 daily pause | market-structure-sessions-annotated.png]
+[SCREENSHOT: An NQ chart spanning two full days with the overnight (ETH-only) portion visually distinguished from the RTH portion, annotated with the 18:00 New York session start, the 09:30 RTH open, the overnight high and low, and the 17:00–18:00 daily pause | dc-en-understanding-market-structure-sessions-01.png]
 
 ### Rollover and contract months
 
@@ -66,7 +66,7 @@ There is no heavy math here, only one adjustment idea: when stitching contract m
 
 Suppose NQ closes its regular session at 18,500.00, then grinds up overnight to 18,590.00 on light volume (numbers illustrative). At 09:30 New York time the RTH open prints 18,575.00 and heavy two-sided volume arrives. Within the first hour, price breaks below the overnight low of 18,540.00 and cannot reclaim it. The session-structure read: the overnight markup was an advertisement made by a thin crowd, and the full RTH crowd rejected it — a materially more bearish fact than the same break happening at 3 a.m. A trader using session structure now watches the prior RTH close at 18,500.00 as the next decision level, and weighs every level test by *which session built the level and which session is testing it*.
 
-[SCREENSHOT: Intraday NQ chart of the worked example with the overnight range shaded, annotations on the RTH open, the failed overnight-high extension, the break of the overnight low with a volume surge, and the prior RTH close marked as the next reference | market-structure-worked-example-onl-break.png]
+[SCREENSHOT: Intraday NQ chart of the worked example with the overnight range shaded, annotations on the RTH open, the failed overnight-high extension, the break of the overnight low with a volume surge, and the prior RTH close marked as the next reference | dc-en-understanding-market-structure-sessions-02.png]
 
 ## Common misreadings
 

@@ -17,21 +17,21 @@ Click Options in the top menu bar.
 
 Select Settings from the dropdown menu.
 
-[SCREENSHOT: General Settings — How to Open General Settings (DeepDOM) | general-settings-01.png]
+[SCREENSHOT: General Settings — How to Open General Settings (DeepDOM) | dd-en-general-settings-01.png]
 
 The General Settings window will open with five tabs — General, Alert, Sim Account, Trading Quantity, and Shortcuts .
 
-[SCREENSHOT: General Settings — How to Open General Settings (DeepDOM) | general-settings-02.png]
+[SCREENSHOT: General Settings — How to Open General Settings (DeepDOM) | dd-en-general-settings-02.png]
 
 ## Tab 1 — General
 
 This tab contains all the core platform-wide settings organized into four sections.
 
-[SCREENSHOT: General Settings — Tab 1 — General (DeepDOM) | general-settings-03.png]
+[SCREENSHOT: General Settings — Tab 1 — General (DeepDOM) | dd-en-general-settings-03.png]
 
 ### General
 
-[SCREENSHOT: General Settings — General (DeepDOM) | general-settings-04.png]
+[SCREENSHOT: General Settings — General (DeepDOM) | dd-en-general-settings-04.png]
 
 Language Sets the display language of the platform. Available options:
 
@@ -75,7 +75,7 @@ Always on Top When enabled, the DeepDom window will always remain on top of all 
 
 ### Refresh Time (MS)
 
-[SCREENSHOT: General Settings — Refresh Time (MS) (DeepDOM) | general-settings-05.png]
+[SCREENSHOT: General Settings — Refresh Time (MS) (DeepDOM) | dd-en-general-settings-05.png]
 
 This section controls how frequently the platform refreshes its data displays. The values are in milliseconds — the lower the number, the faster the refresh rate.
 
@@ -85,7 +85,7 @@ Time Sales Sets how frequently the Time and Sales panel refreshes. The default i
 
 Note: Lowering refresh times increases platform responsiveness but also increases CPU and memory usage. If your system is running slowly, try raising these values slightly.
 
-[SCREENSHOT: General Settings — Refresh Time (MS) (DeepDOM) | general-settings-06.png]
+[SCREENSHOT: General Settings — Refresh Time (MS) (DeepDOM) | dd-en-general-settings-06.png]
 
 Daily P/L — Display Mode Sets how your daily profit and loss is displayed on the trading panel. Available options:
 
@@ -109,7 +109,7 @@ Trading Panel — Show Equity When enabled, your account equity is displayed on 
 
 ### Various
 
-[SCREENSHOT: General Settings — Various (DeepDOM) | general-settings-07.png]
+[SCREENSHOT: General Settings — Various (DeepDOM) | dd-en-general-settings-07.png]
 
 ​Simulation — Stop Order Condition Defines how stop orders are triggered in simulation mode. This setting exists because some data feeds may have issues with historical Bid/Ask data — having two options allows you to avoid incorrect order fills depending on the quality of your data feed. Available options:
 
@@ -139,7 +139,7 @@ Check Real Time Delay When enabled, DeepDom monitors the delay between your data
 
 This section controls which trading events trigger audio alerts and which sound is used for each.
 
-[SCREENSHOT: General Settings — Alert Trading (DeepDOM) | general-settings-08.png]
+[SCREENSHOT: General Settings — Alert Trading (DeepDOM) | dd-en-general-settings-08.png]
 
 Enable Order Submitted: When enabled, an audio alert plays every time an order is successfully submitted to the market.
 
@@ -165,7 +165,7 @@ This tab manages the custom alert sounds available across the platform. Before y
 
 DeepDom comes with a set of default pre-loaded alert sounds ready to use. You can also add your own custom sounds at any time.
 
-[SCREENSHOT: General Settings — Tab 2 — Alert (DeepDOM) | general-settings-09.png]
+[SCREENSHOT: General Settings — Tab 2 — Alert (DeepDOM) | dd-en-general-settings-09.png]
 
 Each alert in the list shows its Name and the file path of the sound file on your computer.
 
@@ -179,13 +179,13 @@ Click Add to add a new custom sound file from your computer.
 
 Note: DeepDom supports .wav audio files. If you want to use a custom sound for any alert in the platform, add it here first — it will then appear as an option wherever sounds can be assigned. To receive any alerts, make sure alert types are enabled by going to Options → Alerts and ensuring that Alert Sound , Message Popup , Webinar , and Trading Sound are checked. For a full step-by-step guide on setting up sound notifications, refer to the dedicated article: How to Insert Sound Notifications
 
-[SCREENSHOT: General Settings — Tab 2 — Alert (DeepDOM) | general-settings-10.png]
+[SCREENSHOT: General Settings — Tab 2 — Alert (DeepDOM) | dd-en-general-settings-10.png]
 
 ## Tab 3 — Sim Account
 
 The Sim Account tab allows you to create and manage paper trading simulation accounts. Simulation accounts let you practice trading in DeepDom using real live market data without risking any real money.
 
-[SCREENSHOT: General Settings — Tab 3 — Sim Account (DeepDOM) | general-settings-11.png]
+[SCREENSHOT: General Settings — Tab 3 — Sim Account (DeepDOM) | dd-en-general-settings-11.png]
 
 How to add a Sim Account:
 
@@ -205,7 +205,7 @@ Note: For a full guide on using the simulation environment in DeepDom, refer to 
 
 The Trading Quantity tab allows you to set default order quantities for each instrument you trade. This saves time during live trading by pre-filling your order size automatically when you switch to a specific symbol.
 
-[SCREENSHOT: General Settings — Tab 4 — Trading Quantity (DeepDOM) | general-settings-12.png]
+[SCREENSHOT: General Settings — Tab 4 — Trading Quantity (DeepDOM) | dd-en-general-settings-12.png]
 
 How to add a Trading Quantity:
 
@@ -223,7 +223,7 @@ Click OK to save.
 
 Once you have saved your settings, you will need to restart the platform for the changes to take effect.
 
-[SCREENSHOT: General Settings — Tab 4 — Trading Quantity (DeepDOM) | general-settings-13.png]
+[SCREENSHOT: General Settings — Tab 4 — Trading Quantity (DeepDOM) | dd-en-general-settings-13.png]
 
 This is especially useful for traders who switch between multiple instruments with different default sizes — instead of manually adjusting the quantity every time, it is set automatically when you select the symbol.
 
@@ -231,7 +231,7 @@ This is especially useful for traders who switch between multiple instruments wi
 
 The Shortcuts tab gives you a full list of all keyboard shortcuts available in DeepDom, organized by category and type. You can record new combinations or remove existing ones to match your personal workflow.
 
-[SCREENSHOT: General Settings — Tab 5 — Shortcuts (DeepDOM) | general-settings-14.png]
+[SCREENSHOT: General Settings — Tab 5 — Shortcuts (DeepDOM) | dd-en-general-settings-14.png]
 
 General
 
@@ -371,7 +371,7 @@ Click the Record icon to assign or change the key combination for that shortcut.
 
 Click the Delete icon to remove the assigned combination from that shortcut.
 
-[SCREENSHOT: General Settings — Tab 5 — Shortcuts (DeepDOM) | general-settings-15.png]
+[SCREENSHOT: General Settings — Tab 5 — Shortcuts (DeepDOM) | dd-en-general-settings-15.png]
 
 Note: For a full step-by-step guide on setting up and customizing keyboard shortcuts, refer to the dedicated article: How to Set Up Keyboard Shortcuts
 

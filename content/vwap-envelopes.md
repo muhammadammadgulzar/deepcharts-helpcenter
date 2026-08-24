@@ -41,7 +41,7 @@ The live model below shows the idea — adjust the sigma bands around VWAP and h
 4. Click the gear icon to open its settings.
 5. As a starting configuration, set **Period Mode** to **Daily** with a **Period Value** of 1 for a rolling one-day view, keep **Envelope Mode** on **Standard Deviation**, and enable the 1st and 2nd bands. Exact rolling behavior relative to your session times may vary — verify on your instrument before relying on the levels.
 
-[SCREENSHOT: VWAP Envelopes settings dialog open showing Period Mode (Daily/Minutes), Period Value, Envelope Mode (Standard Deviation / Price Percentage) and the 1st/2nd/3rd Standard band parameters | vwap-envelopes-settings.png]
+[SCREENSHOT: VWAP Envelopes settings dialog open showing Period Mode (Daily/Minutes), Period Value, Envelope Mode (Standard Deviation / Price Percentage) and the 1st/2nd/3rd Standard band parameters | dc-en-vwap-envelopes-01.png]
 
 ## How to read it
 

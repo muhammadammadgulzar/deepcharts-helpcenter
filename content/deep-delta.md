@@ -73,7 +73,7 @@ Grouped as in the indicator dialog.
 | **Maximum Positive/Negative Delta shadows** | Shadow colors marking each bar's delta extremes |
 | **Line Thickness** | Adjusts the delta range body and shadow appearance |
 
-[SCREENSHOT: Deep Delta settings dialog open at the Parameters section showing Delta Mode set to Multi-Range and the four range rows with Min/Max filters | deep-delta-settings-ranges.png]
+[SCREENSHOT: Deep Delta settings dialog open at the Parameters section showing Delta Mode set to Multi-Range and the four range rows with Min/Max filters | dc-en-deep-delta-01.png]
 
 ## Tips and common mistakes
 

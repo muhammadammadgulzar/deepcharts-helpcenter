@@ -38,7 +38,7 @@ Hover the bid×ask cells in the interactive footprint below to see that structur
 3. Keep **Show rectangle** enabled and pick distinct colors for **Color Bad High** and **Color Bad Low** so the two anomaly types are easy to separate.
 4. If the chart gets busy, use the filter settings in manual mode to require a minimum volume before an anomaly is highlighted.
 
-[SCREENSHOT: A futures chart with the Unfinished Auction indicator showing a rectangle at a swing high marked as a bad high, in a contrasting color to a bad-low rectangle at a swing low below | unfinished-auction-rectangles-chart.png]
+[SCREENSHOT: A futures chart with the Unfinished Auction indicator showing a rectangle at a swing high marked as a bad high, in a contrasting color to a bad-low rectangle at a swing low below | dc-en-unfinished-auction-01.png]
 
 ## How to read it
 
@@ -71,7 +71,7 @@ Controls line extension from detected anomalies:
 - Daily reset options stop extensions at the end of the day.
 - Candle shadow intersection controls decide how a touch by a candle's wick interacts with (and terminates) the extended line.
 
-[SCREENSHOT: The Unfinished Auction settings dialog showing the General section with Days to Load, Line Width, Color Bad High, Color Bad Low, Show rectangle, Show background and Opacity | unfinished-auction-settings-dialog.png]
+[SCREENSHOT: The Unfinished Auction settings dialog showing the General section with Days to Load, Line Width, Color Bad High, Color Bad Low, Show rectangle, Show background and Opacity | dc-en-unfinished-auction-02.png]
 
 ## Tips and common mistakes
 

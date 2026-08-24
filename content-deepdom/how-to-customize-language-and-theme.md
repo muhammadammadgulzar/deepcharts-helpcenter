@@ -13,12 +13,12 @@ You can tailor the interface language, time zone, and visual theme of DeepDom fr
 
 ## Access General Settings
 
-[SCREENSHOT: How to Customize Language and Theme — Access General Settings (DeepDOM) | how-to-customize-language-and-theme-01.png]
+[SCREENSHOT: How to Customize Language and Theme — Access General Settings (DeepDOM) | dd-en-how-to-customize-language-and-theme-01.png]
 
 1. Open Options in the DeepDom menu bar.
 2. Click Settings .
 
-[SCREENSHOT: How to Customize Language and Theme — Access General Settings (DeepDOM) | how-to-customize-language-and-theme-02.png]
+[SCREENSHOT: How to Customize Language and Theme — Access General Settings (DeepDOM) | dd-en-how-to-customize-language-and-theme-02.png]
 
 3. In the left column, select the General section. Here you can configure:
 

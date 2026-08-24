@@ -18,7 +18,7 @@ Several of these toggles are shortcuts to settings that also live in the **Price
 
 The bar style dropdown is the chart's quick display menu. It answers "how do I switch to a line chart", "why are my candles different widths or strange colors", "how do I hide overnight data", and "how do I get a countdown to the bar close" — all without opening a settings dialog.
 
-[SCREENSHOT: The two-candle icon dropdown open on a chart, showing Candlestick highlighted as active, Line, OHLC, the Equi-Volume Bars and Delta-Volume Bars checkboxes, ETH Session checked, Auction filter, Bar values checked, Countdown timer, and the Price Settings entry at the bottom | display-options-dropdown.png]
+[SCREENSHOT: The two-candle icon dropdown open on a chart, showing Candlestick highlighted as active, Line, OHLC, the Equi-Volume Bars and Delta-Volume Bars checkboxes, ETH Session checked, Auction filter, Bar values checked, Countdown timer, and the Price Settings entry at the bottom | dc-en-chart-display-options-01.png]
 
 ## When to use it
 
@@ -47,7 +47,7 @@ New to reading O, H, L and C on a candle? Hover the candle below — each zone e
 
 [WIDGET: candle-anatomy]
 
-[SCREENSHOT: Side-by-side comparison of the same price move as standard candlesticks vs with Equi-Volume + Delta-Volume enabled, showing variable candle widths and green/purple intensity differences | display-options-equi-delta-compare.png]
+[SCREENSHOT: Side-by-side comparison of the same price move as standard candlesticks vs with Equi-Volume + Delta-Volume enabled, showing variable candle widths and green/purple intensity differences | dc-en-chart-display-options-02.png]
 
 ## Settings reference
 

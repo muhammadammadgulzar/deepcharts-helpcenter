@@ -11,7 +11,7 @@ keywords: ["important levels", "deepdom important levels", "deepdom", "indicator
 ---
 The Important Levels indicator draws dashed horizontal lines at the current session's high, low, and opening price, giving you a quick visual reference for key intraday levels.
 
-[SCREENSHOT: Important Levels — overview (DeepDOM) | important-levels-deepdom-01.png]
+[SCREENSHOT: Important Levels — overview (DeepDOM) | dd-en-important-levels-deepdom-01.png]
 
 ## What the Indicator Draws
 
@@ -31,11 +31,11 @@ Search for the desired indicator and add it to your workspace by clicking the "+
 
 Open the indicator's settings panel, customize the parameters according to your preferences, and confirm the changes by clicking Save.
 
-[SCREENSHOT: Important Levels — Settings of Use (DeepDOM) | important-levels-deepdom-02.png]
+[SCREENSHOT: Important Levels — Settings of Use (DeepDOM) | dd-en-important-levels-deepdom-02.png]
 
 ## Plot Settings
 
-[SCREENSHOT: Important Levels — Plot Settings (DeepDOM) | important-levels-deepdom-03.png]
+[SCREENSHOT: Important Levels — Plot Settings (DeepDOM) | dd-en-important-levels-deepdom-03.png]
 
 Font size – changes the size of the labels printed next to each level.
 
@@ -49,7 +49,7 @@ Line thickness – controls the thickness of the horizontal lines.
 
 ## High / Low / Open
 
-[SCREENSHOT: Important Levels — High / Low / Open (DeepDOM) | important-levels-deepdom-04.png]
+[SCREENSHOT: Important Levels — High / Low / Open (DeepDOM) | dd-en-important-levels-deepdom-04.png]
 
 Use these options to enable or disable each level and customize its appearance:
 

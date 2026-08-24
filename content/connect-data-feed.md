@@ -24,7 +24,7 @@ By the end you will have your data feed saved in Feed Settings, connected with a
 
 2. Click **Feed Settings** at the bottom of the dropdown. The Feed Settings window opens.
 
-[SCREENSHOT: DeepCharts main toolbar with the Select Connection dropdown open and the Feed Settings entry at the bottom of the dropdown highlighted | select-connection-feed-settings.png]
+[SCREENSHOT: DeepCharts main toolbar with the Select Connection dropdown open and the Feed Settings entry at the bottom of the dropdown highlighted | dc-en-connect-data-feed-01.png]
 
 3. Click **Add Connection**. A form with several fields appears.
 
@@ -61,7 +61,7 @@ Try the same form live below — pick each Feed Source and watch the fields morp
 - Enable **Show only active accounts** if old or expired prop accounts clutter your account list.
 - Leave the **Use R Trader** button alone unless you want to run R Trader alongside DeepCharts on the same feed — that setup is covered in [[rtrader-pro-plugin]].
 
-[SCREENSHOT: Rithmic RAPI connection form filled in, with the Gateway dropdown open showing the region list and Automatic selected | rithmic-rapi-gateway-options.png]
+[SCREENSHOT: Rithmic RAPI connection form filled in, with the Gateway dropdown open showing the region list and Automatic selected | dc-en-connect-data-feed-02.png]
 
 ### If you picked dxFeed or dxFeed Prop
 
@@ -76,7 +76,7 @@ Try the same form live below — pick each Feed Source and watch the fields morp
 
 9. Back in the main toolbar, click **Select Connection** again — your new feed now appears under the name you gave it. Click it to connect. Within about 10 seconds the connection indicator should turn green.
 
-[SCREENSHOT: Select Connection dropdown showing the newly saved feed with a green status dot next to it | feed-connected-green-dot.png]
+[SCREENSHOT: Select Connection dropdown showing the newly saved feed with a green status dot next to it | dc-en-connect-data-feed-03.png]
 
 10. Disconnect the feed (click it again), then set up your exchanges in **Options → Symbol Manage** — follow [[symbol-manage]]. This step routes each exchange to your new feed; skipping it is the biggest cause of "connected but charts not moving" tickets.
 

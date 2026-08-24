@@ -17,7 +17,7 @@ Because its distance from price is derived from the Average True Range (ATR), th
 
 Super Trend answers the question: which side of the market am I on, and where is the level that would invalidate that view? It combines an ATR volatility measure (**Length**) with a **Multiplier** that sets how far from price the line is drawn. While price stays on one side of the line the trend is considered intact; a close through the line flips the indicator to the other side.
 
-[SCREENSHOT: A candlestick chart with the Super Trend line plotted below price in an uptrend, then flipping above price after a reversal; both line colors visible across the flip | super-trend-on-chart.png]
+[SCREENSHOT: A candlestick chart with the Super Trend line plotted below price in an uptrend, then flipping above price after a reversal; both line colors visible across the flip | dc-en-super-trend-01.png]
 
 ## When to use it
 
@@ -34,7 +34,7 @@ Super Trend answers the question: which side of the market am I on, and where is
 4. Click the gear icon to open its settings.
 5. Starter configuration: keep **Length** at the default 10 and **Multiplier** at the default 3.00. These defaults suit most timeframes; widen the multiplier if you get whipsawed, shorten the length if the line reacts too slowly.
 
-[SCREENSHOT: Super Trend settings dialog showing the General section with Length = 10 and Multiplier = 3.00, plus the Chart Settings and Alert sections visible below | super-trend-settings.png]
+[SCREENSHOT: Super Trend settings dialog showing the General section with Length = 10 and Multiplier = 3.00, plus the Chart Settings and Alert sections visible below | dc-en-super-trend-02.png]
 
 ## How to read it
 

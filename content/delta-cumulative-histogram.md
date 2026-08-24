@@ -38,7 +38,7 @@ Try it below — hover along the histogram to follow how each bar's delta feeds 
 5. Enable **Restore at Start Session** so the total resets at each session's beginning rather than accumulating indefinitely.
 6. Under **Subgraphs**, pick **Bars** or **Line**, set the colors, and apply.
 
-[SCREENSHOT: Delta Cumulative Histogram settings dialog showing Input Data options (Volumes, Trades), Filter Min and Filter Max fields, the Restore at Start Session toggle, and the Subgraphs style options Bars / Line | delta-cumulative-histogram-settings.png]
+[SCREENSHOT: Delta Cumulative Histogram settings dialog showing Input Data options (Volumes, Trades), Filter Min and Filter Max fields, the Restore at Start Session toggle, and the Subgraphs style options Bars / Line | dc-en-delta-cumulative-histogram-01.png]
 
 ## How to read it
 

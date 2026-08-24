@@ -35,7 +35,7 @@ Run DeepCharts as administrator:
 2. Locate `DeepChart.exe` on your system.
 3. Right-click it and select **Run as administrator**.
 
-[SCREENSHOT: Windows Explorer context menu on DeepChart.exe with "Run as administrator" highlighted | run-deepcharts-as-administrator.png]
+[SCREENSHOT: Windows Explorer context menu on DeepChart.exe with "Run as administrator" highlighted | dc-en-app-crashes-saving-feed-01.png]
 
 4. Open **Feed Settings** again and click **Save**.
 
@@ -60,11 +60,11 @@ If `config.settings` or `connProp.settings` are corrupted, the app crashes whene
 1. Open File Explorer and go to **Local Disk (C:) → Users → [your user folder]**.
 2. Enable hidden files: **View → Show → Hidden items**.
 
-[SCREENSHOT: File Explorer View menu open with Show > Hidden items checked, in the user profile folder | file-explorer-show-hidden-items.png]
+[SCREENSHOT: File Explorer View menu open with Show > Hidden items checked, in the user profile folder | dc-en-app-crashes-saving-feed-02.png]
 
 3. Open the **AppData** location and delete the DeepCharts application folder. [CONFIRM: exact AppData subpath (Local or Roaming) and exact folder name]
 
-[SCREENSHOT: AppData folder in File Explorer with the DeepCharts application folder selected before deletion | appdata-deepcharts-folder.png]
+[SCREENSHOT: AppData folder in File Explorer with the DeepCharts application folder selected before deletion | dc-en-app-crashes-saving-feed-03.png]
 
 4. Relaunch DeepCharts as administrator and configure your feed settings again.
 

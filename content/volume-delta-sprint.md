@@ -18,7 +18,7 @@ It is an advanced tool: it rewards traders who already read delta and volume ind
 
 The indicator sums volume or delta over a configurable lookback window (**Length**, default **10** bars) and plots the result as histogram bars. Positive readings show the window was dominated by buying pressure, negative readings by selling pressure. The **Delta Color Mode** can shade each bar by the magnitude of that pressure, so a fading gradient tells you at a glance whether aggression is intensifying or draining away.
 
-[SCREENSHOT: Chart window with the Volume/Delta Sprint indicator in a separate footer panel — price candles above, Sprint histogram below showing a cluster of tall positive (buy-colored) bars during a rally followed by shrinking bars as the move stalls | volume-delta-sprint-chart-overview.png]
+[SCREENSHOT: Chart window with the Volume/Delta Sprint indicator in a separate footer panel — price candles above, Sprint histogram below showing a cluster of tall positive (buy-colored) bars during a rally followed by shrinking bars as the move stalls | dc-en-volume-delta-sprint-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ The indicator sums volume or delta over a configurable lookback window (**Length
 5. Set **Delta Color Mode** to **Fading** so bar color intensity reflects delta magnitude.
 6. Leave **Filter Min** and **Filter Max** untouched at first — add filters once you know the typical trade sizes on your symbol.
 
-[SCREENSHOT: Volume/Delta Sprint settings dialog open on the General section, showing Input Data, Filter Min, Filter Max, Length = 10 and Delta Color Mode visible | volume-delta-sprint-settings-general.png]
+[SCREENSHOT: Volume/Delta Sprint settings dialog open on the General section, showing Input Data, Filter Min, Filter Max, Length = 10 and Delta Color Mode visible | dc-en-volume-delta-sprint-02.png]
 
 ## How to read it
 

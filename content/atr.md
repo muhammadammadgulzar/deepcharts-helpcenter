@@ -17,7 +17,7 @@ ATR says nothing about direction. A rising ATR means bigger bars (in either dire
 
 ATR answers the question: how much does this market actually move right now? It averages the "true range" of each bar — a range measure that also accounts for gaps between bars, not only the bar's own high-to-low span — over a chosen number of periods, and plots the result as a line in a panel below the price chart.
 
-[SCREENSHOT: Price chart with the ATR indicator in a lower panel, ATR line rising sharply during a volatile sell-off and drifting lower during quiet consolidation | atr-on-chart.png]
+[SCREENSHOT: Price chart with the ATR indicator in a lower panel, ATR line rising sharply during a volatile sell-off and drifting lower during quiet consolidation | dc-en-atr-01.png]
 
 ## When to use it
 
@@ -34,7 +34,7 @@ ATR answers the question: how much does this market actually move right now? It 
 4. Click the gear icon to open its settings.
 5. Wilder's classic lookback of 14 periods is the conventional starting point; shorten it for a faster read on current conditions, lengthen it for a smoother baseline.
 
-[SCREENSHOT: ATR settings dialog open showing the Display Mode selection (Tick or Periods), the periods field, and the Subgraph styling options below | atr-settings-dialog.png]
+[SCREENSHOT: ATR settings dialog open showing the Display Mode selection (Tick or Periods), the periods field, and the Subgraph styling options below | dc-en-atr-02.png]
 
 ## How to read it
 

@@ -18,7 +18,7 @@ It is a screening tool: it does not calculate anything new, it makes the extreme
 
 The indicator highlights candles where the percentage of delta meets your criteria. A candle where nearly all volume was aggressive buying gets marked in the **Ask Color**; a candle dominated by aggressive selling gets marked in the **Bid Color**. Everything in between stays unmarked, keeping your chart clean.
 
-[SCREENSHOT: Chart window with Delta % Highlight applied — a series of ordinary candles with two or three candles visibly tinted in the Ask color and one in the Bid color, showing how extreme-delta candles stand out | delta-highlight-chart-overview.png]
+[SCREENSHOT: Chart window with Delta % Highlight applied — a series of ordinary candles with two or three candles visibly tinted in the Ask color and one in the Bid color, showing how extreme-delta candles stand out | dc-en-delta-highlight-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ The indicator highlights candles where the percentage of delta meets your criter
 5. Leave **Max Value** at **0** to disable the maximum filter, so every candle above the minimum is marked.
 6. Pick a **Bid Color** and **Ask Color** that contrast with your regular candles, and set **Opacity** so the highlight is visible without hiding the candle underneath.
 
-[SCREENSHOT: Delta % Highlight settings dialog showing Min Value and Max Value fields, the Bid Color and Ask Color pickers, and the Opacity control | delta-highlight-settings-dialog.png]
+[SCREENSHOT: Delta % Highlight settings dialog showing Min Value and Max Value fields, the Bid Color and Ask Color pickers, and the Opacity control | dc-en-delta-highlight-02.png]
 
 ## How to read it
 

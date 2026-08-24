@@ -22,17 +22,17 @@ By defining strict risk management rules, traders can enforce discipline in real
 1. Go to Trading in the main navigation bar.
 2. Click Show Portfolio .
 
-[SCREENSHOT: Portfolio-Risk Manager — 1. How to Access Risk Manager (DeepDOM) | portfolio-risk-manager-01.png]
+[SCREENSHOT: Portfolio-Risk Manager — 1. How to Access Risk Manager (DeepDOM) | dd-en-portfolio-risk-manager-01.png]
 
 ## 2. Overview Section
 
 In the Overview tab, you can see all accounts connected to Deepdom.
 
-[SCREENSHOT: Portfolio-Risk Manager — 2. Overview Section (DeepDOM) | portfolio-risk-manager-02.png]
+[SCREENSHOT: Portfolio-Risk Manager — 2. Overview Section (DeepDOM) | dd-en-portfolio-risk-manager-02.png]
 
 You will see one main card per connection (for example: SIM, Rithmic, Dxfeed).
 
-[SCREENSHOT: Portfolio-Risk Manager — 2. Overview Section (DeepDOM) | portfolio-risk-manager-03.png]
+[SCREENSHOT: Portfolio-Risk Manager — 2. Overview Section (DeepDOM) | dd-en-portfolio-risk-manager-03.png]
 
 #### Connection Card Information
 
@@ -42,7 +42,7 @@ Daily Profit – Total daily PnL across all accounts under that connection
 
 Open Profit – Current unrealized PnL
 
-[SCREENSHOT: Portfolio-Risk Manager — Connection Card Information (DeepDOM) | portfolio-risk-manager-04.png]
+[SCREENSHOT: Portfolio-Risk Manager — Connection Card Information (DeepDOM) | dd-en-portfolio-risk-manager-04.png]
 
 #### Connection-Level Controls
 
@@ -70,7 +70,7 @@ All accounts under the connection are locked
 
 A countdown timer shows when trading will resume
 
-[SCREENSHOT: Portfolio-Risk Manager — When paused: (DeepDOM) | portfolio-risk-manager-05.png]
+[SCREENSHOT: Portfolio-Risk Manager — When paused: (DeepDOM) | dd-en-portfolio-risk-manager-05.png]
 
 #### Close Button
 
@@ -80,7 +80,7 @@ Closes (flattens) all open positions across every account under that connection 
 
 Each account under a connection has its own control panel.
 
-[SCREENSHOT: Portfolio-Risk Manager — 3. Individual Account Cards (DeepDOM) | portfolio-risk-manager-06.png]
+[SCREENSHOT: Portfolio-Risk Manager — 3. Individual Account Cards (DeepDOM) | dd-en-portfolio-risk-manager-06.png]
 
 #### Account-Level Buttons
 
@@ -108,13 +108,13 @@ You will be prompted to choose:
 
 • Connection-level settings
 
-[SCREENSHOT: Portfolio-Risk Manager — 4. Money Management Settings (Client Side) (DeepDOM) | portfolio-risk-manager-07.png]
+[SCREENSHOT: Portfolio-Risk Manager — 4. Money Management Settings (Client Side) (DeepDOM) | dd-en-portfolio-risk-manager-07.png]
 
 Important: The Risk Manager operates on the client side. If the platform is closed, the money manager will not function.
 
 ## 5. General Settings
 
-[SCREENSHOT: Portfolio-Risk Manager — 5. General Settings (DeepDOM) | portfolio-risk-manager-08.png]
+[SCREENSHOT: Portfolio-Risk Manager — 5. General Settings (DeepDOM) | dd-en-portfolio-risk-manager-08.png]
 
 #### Enable
 
@@ -128,7 +128,7 @@ Example: If you want to avoid accidentally trading the Mini instead of the Micro
 
 ## 6. Daily Loss Limit
 
-[SCREENSHOT: Portfolio-Risk Manager — 6. Daily Loss Limit (DeepDOM) | portfolio-risk-manager-09.png]
+[SCREENSHOT: Portfolio-Risk Manager — 6. Daily Loss Limit (DeepDOM) | dd-en-portfolio-risk-manager-09.png]
 
 • Enable – Activate daily loss protection
 
@@ -140,7 +140,7 @@ Once breached, the selected action will be triggered.
 
 ## 7. Daily Profit Limit
 
-[SCREENSHOT: Portfolio-Risk Manager — 7. Daily Profit Limit (DeepDOM) | portfolio-risk-manager-10.png]
+[SCREENSHOT: Portfolio-Risk Manager — 7. Daily Profit Limit (DeepDOM) | dd-en-portfolio-risk-manager-10.png]
 
 • Enable: Activate daily Profit protection
 
@@ -158,13 +158,13 @@ Activate trailing limit.
 
 #### Action Options:
 
-[SCREENSHOT: Portfolio-Risk Manager — Action Options: (DeepDOM) | portfolio-risk-manager-11.png]
+[SCREENSHOT: Portfolio-Risk Manager — Action Options: (DeepDOM) | dd-en-portfolio-risk-manager-11.png]
 
 • Daily Pause – Lock account for the session
 
 • Time Pause – Lock account for selected minutes
 
-[SCREENSHOT: Portfolio-Risk Manager — Action Options: (DeepDOM) | portfolio-risk-manager-12.png]
+[SCREENSHOT: Portfolio-Risk Manager — Action Options: (DeepDOM) | dd-en-portfolio-risk-manager-12.png]
 
 • Flat – Close positions but do not lock
 
@@ -184,7 +184,7 @@ Example: If open profit retraces more than the trailing limit, the system trigge
 
 Controls total loss across all open positions (e.g., ES + NQ combined).
 
-[SCREENSHOT: Portfolio-Risk Manager — Portfolio Loss Limit (DeepDOM) | portfolio-risk-manager-13.png]
+[SCREENSHOT: Portfolio-Risk Manager — Portfolio Loss Limit (DeepDOM) | dd-en-portfolio-risk-manager-13.png]
 
 #### Same configuration options:
 
@@ -200,7 +200,7 @@ Controls total loss across all open positions (e.g., ES + NQ combined).
 
 Same logic as Daily Profit Limit but applied across the entire portfolio.
 
-[SCREENSHOT: Portfolio-Risk Manager — Portfolio Profit Limit (DeepDOM) | portfolio-risk-manager-14.png]
+[SCREENSHOT: Portfolio-Risk Manager — Portfolio Profit Limit (DeepDOM) | dd-en-portfolio-risk-manager-14.png]
 
 ## 10. Position-Based Limits
 
@@ -212,11 +212,11 @@ Applies to individual trades. If exceeded, the position is automatically flatten
 
 Same logic but for profit targets on individual positions.
 
-[SCREENSHOT: Portfolio-Risk Manager — Position Profit Limit (DeepDOM) | portfolio-risk-manager-15.png]
+[SCREENSHOT: Portfolio-Risk Manager — Position Profit Limit (DeepDOM) | dd-en-portfolio-risk-manager-15.png]
 
 ## 11. Limit Trading Hours (EST Timezone)
 
-[SCREENSHOT: Portfolio-Risk Manager — 11. Limit Trading Hours (EST Timezone) (DeepDOM) | portfolio-risk-manager-16.png]
+[SCREENSHOT: Portfolio-Risk Manager — 11. Limit Trading Hours (EST Timezone) (DeepDOM) | dd-en-portfolio-risk-manager-16.png]
 
 You can restrict trading to specific time windows.
 
@@ -234,7 +234,7 @@ You can restrict trading to specific time windows.
 
 ## 12. Add Symbol
 
-[SCREENSHOT: Portfolio-Risk Manager — 12. Add Symbol (DeepDOM) | portfolio-risk-manager-17.png]
+[SCREENSHOT: Portfolio-Risk Manager — 12. Add Symbol (DeepDOM) | dd-en-portfolio-risk-manager-17.png]
 
 Add or remove symbols allowed for trading.
 
@@ -242,7 +242,7 @@ If Symbol – Exclude Not Listed is enabled, only added symbols can be traded.
 
 ## 13. Inhibit Changes Until Next Session
 
-[SCREENSHOT: Portfolio-Risk Manager — 13. Inhibit Changes Until Next Session (DeepDOM) | portfolio-risk-manager-18.png]
+[SCREENSHOT: Portfolio-Risk Manager — 13. Inhibit Changes Until Next Session (DeepDOM) | dd-en-portfolio-risk-manager-18.png]
 
 If enabled:
 
@@ -254,7 +254,7 @@ Status may show:
 
 Lockout – The account is locked due to rule violation. A countdown timer shows when trading will resume.
 
-[SCREENSHOT: Portfolio-Risk Manager — 14. Status (DeepDOM) | portfolio-risk-manager-19.png]
+[SCREENSHOT: Portfolio-Risk Manager — 14. Status (DeepDOM) | dd-en-portfolio-risk-manager-19.png]
 
 ## 15. Detailed Account View
 
@@ -270,7 +270,7 @@ The Risk Manager follows CME timezone (EST) for daily resets.
 
 • The only way to unlock the account after the timeout of Risk Manager is triggered is to ask the Deepdom Support team to unlock it from the backend, and it can take some time.
 
-[SCREENSHOT: Portfolio-Risk Manager — If locked for the day: (DeepDOM) | portfolio-risk-manager-20.png]
+[SCREENSHOT: Portfolio-Risk Manager — If locked for the day: (DeepDOM) | dd-en-portfolio-risk-manager-20.png]
 
 ## Summary
 

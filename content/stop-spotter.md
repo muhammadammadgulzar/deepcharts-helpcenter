@@ -18,7 +18,7 @@ Because a genuine stop run leaves a very specific footprint (a sudden volume spi
 
 Stop Spotter is a multi-condition orderflow signal indicator. Each of its main parameters is a minimum threshold — for delta percentage, total volume, volume increase, body size, price movement, horizontal delta, and imbalance count and size — and a bar is marked only when every enabled condition is satisfied. It answers the question "did this bar behave like a stop cascade, or is it just a normal push?"
 
-[SCREENSHOT: Chart window with Stop Spotter applied — a fast directional candle breaking a recent swing low with a square marker printed on it, surrounding bars unmarked, showing that only the stop-run candidate is flagged | stop-spotter-chart-overview.png]
+[SCREENSHOT: Chart window with Stop Spotter applied — a fast directional candle breaking a recent swing low with a square marker printed on it, surrounding bars unmarked, showing that only the stop-run candidate is flagged | dc-en-stop-spotter-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ Stop Spotter is a multi-condition orderflow signal indicator. Each of its main p
 5. If markers are too frequent, raise **Min. volume** and **Min. % imbalance** first; if they are too rare, lower **Min. body ticks**.
 6. Optionally enable the alert sound and message popup in the alert options so signals reach you when you are not watching the chart.
 
-[SCREENSHOT: Stop Spotter settings dialog showing the main parameters list — Min. delta %, Min. volume, Min. volume increase, Min. body ticks, Min price ticks increase, Min. horizontal delta, Min. % imbalance, Min. number imbalance, Calculation Mode and Seconds To Close — with their default values visible | stop-spotter-settings-dialog.png]
+[SCREENSHOT: Stop Spotter settings dialog showing the main parameters list — Min. delta %, Min. volume, Min. volume increase, Min. body ticks, Min price ticks increase, Min. horizontal delta, Min. % imbalance, Min. number imbalance, Calculation Mode and Seconds To Close — with their default values visible | dc-en-stop-spotter-02.png]
 
 > **Note:** The defaults are calibrated thresholds, not universal truths. Volume-based minimums in particular (**Min. volume**, **Min. volume increase**) depend heavily on the instrument and session you trade, so expect to tune them.
 

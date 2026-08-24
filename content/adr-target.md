@@ -18,7 +18,7 @@ That makes it a volatility ruler: when price has already covered its typical dai
 
 ADR Target is a statistical level indicator. It averages the high-to-low range of the last N periods (daily bars by default, with weekly and monthly options) and draws that expected range on your chart as labeled target levels. It answers the questions "how far does this market usually move in a day?" and "how much of that move has already happened?"
 
-[SCREENSHOT: Chart window with ADR Target applied — intraday price candles with the projected ADR target levels and their text labels visible on the chart, price trading roughly midway to the upper target | adr-target-chart-overview.png]
+[SCREENSHOT: Chart window with ADR Target applied — intraday price candles with the projected ADR target levels and their text labels visible on the chart, price trading roughly midway to the upper target | dc-en-adr-target-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ ADR Target is a statistical level indicator. It averages the high-to-low range o
 5. Set **Length** to **10** so the average uses the last 10 trading days.
 6. Adjust **Font Size**, **Text Align**, **Background** and **Text Color** under the plot settings until the labels are readable on your color scheme, then apply.
 
-[SCREENSHOT: ADR Target settings dialog showing the Length Type dropdown open with Daily, Weekly and Monthly options, the Length field set to 10, and the plot settings (Font Size, Text Align, Background, Text Color) below | adr-target-settings-dialog.png]
+[SCREENSHOT: ADR Target settings dialog showing the Length Type dropdown open with Daily, Weekly and Monthly options, the Length field set to 10, and the plot settings (Font Size, Text Align, Background, Text Color) below | dc-en-adr-target-02.png]
 
 ## How to read it
 

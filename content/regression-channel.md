@@ -17,7 +17,7 @@ Where the [[linear-regression]] indicator plots a single rolling line, the Regre
 
 The Regression Channel answers the question: what is the current trend, and how far from it is price allowed to wander before that means something? The center line is the best-fit regression through the lookback window; the bands sit a configurable number of standard deviations above and below it. Price near the center line is at the trend's fair value; price at a band is statistically stretched, favoring either a reversion toward the center or — if it breaks and holds — a change in trend.
 
-[SCREENSHOT: A candlestick chart with the Regression Channel applied — upward-sloping center line with upper and lower deviation bands containing the trend, price tagging the lower band and reverting to the center | regression-channel-on-chart.png]
+[SCREENSHOT: A candlestick chart with the Regression Channel applied — upward-sloping center line with upper and lower deviation bands containing the trend, price tagging the lower band and reverting to the center | dc-en-regression-channel-01.png]
 
 ## When to use it
 
@@ -34,7 +34,7 @@ The Regression Channel answers the question: what is the current trend, and how 
 4. Click the gear icon to open its settings.
 5. Starter configuration: keep **Bars** at the default 100 and **Value Dev. Std.** at the default 1.00. Widen the deviation (for example toward 2.00) if you want the bands to contain more of the price action and flag only larger stretches.
 
-[SCREENSHOT: Regression Channel settings dialog showing the General section with Mode, Value Dev. Std. = 1.00 and Bars = 100, plus the Zig Zag section and the MID/UP/DN plot sections below | regression-channel-settings.png]
+[SCREENSHOT: Regression Channel settings dialog showing the General section with Mode, Value Dev. Std. = 1.00 and Bars = 100, plus the Zig Zag section and the MID/UP/DN plot sections below | dc-en-regression-channel-02.png]
 
 ## How to read it
 

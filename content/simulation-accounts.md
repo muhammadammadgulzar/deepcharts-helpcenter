@@ -27,11 +27,11 @@ DeepCharts includes a built-in **SIM** broker that fills your orders against the
 
 2. Select the **Sim Account** tab. Existing simulation accounts are listed with their **Name** and **Balance**.
 
-[SCREENSHOT: The General Settings window on the Sim Account tab showing the accounts table with Name and Balance columns, a SIM account row, the per-row trash icon and the Add button | general-settings-sim-account-tab.png]
+[SCREENSHOT: The General Settings window on the Sim Account tab showing the accounts table with Name and Balance columns, a SIM account row, the per-row trash icon and the Add button | dc-en-simulation-accounts-01.png]
 
 3. Click **Add**. In the **Add Sim Account** dialog enter a **Name** and a starting **Balance** (default 10000), then click **Add**.
 
-[SCREENSHOT: The Add Sim Account dialog with the Name field filled in and the Balance field showing the default 10000, Cancel and Add buttons visible | add-sim-account-dialog.png]
+[SCREENSHOT: The Add Sim Account dialog with the Name field filled in and the Balance field showing the default 10000, Cancel and Add buttons visible | dc-en-simulation-accounts-02.png]
 
 4. Click **Save Settings** at the bottom of the window.
 
@@ -47,7 +47,7 @@ Click the trash icon on the account's row, then **Save Settings**.
 
 1. On an open chart, enable the **Trading panel** toggle in the chart's bottom bar. The trading panel opens on the right side of the chart. (You can also right-click the chart and choose **Show Trading Panel**.)
 
-[SCREENSHOT: A price chart with the bottom-bar Trading panel toggle highlighted and the trading panel open on the right side | chart-trading-panel-toggle.png]
+[SCREENSHOT: A price chart with the bottom-bar Trading panel toggle highlighted and the trading panel open on the right side | dc-en-simulation-accounts-03.png]
 
 2. In the trading panel, set **Broker** to **SIM**.
 

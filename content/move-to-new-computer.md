@@ -29,11 +29,11 @@ A migration has two halves: things that follow your account automatically (your 
 
 1. Open DeepCharts on the old machine and save your current layout as a **Workspace**, choosing **Cloud** as the destination. Cloud saves are tied to your account and license, so they appear automatically on any machine running the same license — the easiest migration path. Do the same for any chart **Templates** you want to keep (right-click the chart → **Template → Save As** → **Cloud**). Full walkthrough: [[templates-workspaces]].
 
-[SCREENSHOT: Workspace save dialog with the Cloud destination selected and a workspace name entered, illustrating a cloud backup before migration | workspace-save-cloud-before-migration.png]
+[SCREENSHOT: Workspace save dialog with the Cloud destination selected and a workspace name entered, illustrating a cloud backup before migration | dc-en-move-to-new-computer-01.png]
 
 2. If you prefer file copies (or have no cloud saves), copy the **Template** and **Workspace** folders from **Documents → deepchart** on the old PC to a USB drive or cloud drive. These folders hold every locally saved template and workspace.
 
-[SCREENSHOT: Windows Explorer showing the Documents\deepchart folder with the Template and Workspace subfolders highlighted for copying | documents-deepchart-template-workspace-folders.png]
+[SCREENSHOT: Windows Explorer showing the Documents\deepchart folder with the Template and Workspace subfolders highlighted for copying | dc-en-move-to-new-computer-02.png]
 
 > **Warning:** DeepCharts does not auto-save layouts. Anything you configured but never saved as a Workspace or Template exists nowhere and cannot be migrated — save it now, before touching the old installation.
 
@@ -47,7 +47,7 @@ A migration has two halves: things that follow your account automatically (your 
 
 6. Install and activate, following [[install-deepcharts]]: temporarily disable the antivirus during installation, run the installer, then activate with your registered email and license key (paste both with no leading or trailing spaces).
 
-[SCREENSHOT: License Key activation window on the new PC with the E-mail and License fields filled and the Login button visible | new-pc-license-activation.png]
+[SCREENSHOT: License Key activation window on the new PC with the E-mail and License fields filled and the Login button visible | dc-en-move-to-new-computer-03.png]
 
 7. Reconnect your data feed. Open **Feed Settings**, create the connection for your provider and enter the username and password you collected in step 3 — credentials always have to be re-entered on a new installation. Try it in the Feed Settings window below: pick your source and watch the fields change per provider. Provider-specific steps: [[connect-data-feed]].
 
@@ -61,13 +61,13 @@ A migration has two halves: things that follow your account automatically (your 
 
 9. Restore your layout: open the **Workspace** selector, choose the load option and pick your workspace from the **Cloud** tab. If you backed up files instead, copy them into **Documents → deepchart → Workspace** and **Template** on the new PC first, then load from the **Local** tab.
 
-[SCREENSHOT: Workspace file picker on the new PC with the Cloud tab selected and the migrated workspace visible in the list | new-pc-load-cloud-workspace.png]
+[SCREENSHOT: Workspace file picker on the new PC with the Cloud tab selected and the migrated workspace visible in the list | dc-en-move-to-new-computer-04.png]
 
 ### If you want to move your market data database (optional)
 
 Historical chart data is stored in a local database and re-downloads automatically on the new machine as you open charts, so most users skip this. If you have a large database you would rather not re-download, the database location is configurable under **Options → Settings → General**, in the **Various** section (**Database folder**). You can copy the old machine's database folder to the new one and point this setting at it. Exact behavior when swapping database folders between installations may vary — if the copied database misbehaves, clear it and let the platform re-download ([[download-data]]).
 
-[SCREENSHOT: Options → Settings → General with the Various section visible and the Database folder location setting highlighted | database-folder-setting-migration.png]
+[SCREENSHOT: Options → Settings → General with the Various section visible and the Database folder location setting highlighted | dc-en-move-to-new-computer-05.png]
 
 ## Verify it worked
 

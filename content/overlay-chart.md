@@ -35,7 +35,7 @@ Because the overlaid series can use a different scale than your main instrument,
 6. If the two instruments trade at different price levels, enable **Use Secondary Axis** so the overlay gets its own scale.
 7. Apply the settings.
 
-[SCREENSHOT: Main chart of one futures instrument with Overlay Chart active showing a second instrument's candlesticks rendered in Chart Area 1 on a secondary axis, both series clearly distinguishable by color | overlay-chart-two-instruments.png]
+[SCREENSHOT: Main chart of one futures instrument with Overlay Chart active showing a second instrument's candlesticks rendered in Chart Area 1 on a secondary axis, both series clearly distinguishable by color | dc-en-overlay-chart-01.png]
 
 ## How to read it
 
@@ -49,7 +49,7 @@ If you enable **Delta-based Color**, the overlaid candles are colored by their d
 
 ## Settings reference
 
-[SCREENSHOT: Overlay Chart settings dialog open, showing the General parameters section with Select Symbol, Parameter Type dropdown expanded listing Minutes, Days, Weekly, Monthly, Vol Bars, Range, Volume, Trade, Renko, Seconds, Point Figure and Delta | overlay-chart-settings-general.png]
+[SCREENSHOT: Overlay Chart settings dialog open, showing the General parameters section with Select Symbol, Parameter Type dropdown expanded listing Minutes, Days, Weekly, Monthly, Vol Bars, Range, Volume, Trade, Renko, Seconds, Point Figure and Delta | dc-en-overlay-chart-02.png]
 
 ### General
 

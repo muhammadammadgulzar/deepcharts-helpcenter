@@ -17,7 +17,7 @@ When connecting a dxFeed data feed, the connection fails with:
 
 **Connection Failed: Bad Server**
 
-[SCREENSHOT: The connection error dialog showing the "Bad Server" message after a failed dxFeed connection attempt | dxfeed-bad-server-error.png]
+[SCREENSHOT: The connection error dialog showing the "Bad Server" message after a failed dxFeed connection attempt | dc-en-fix-bad-server-01.png]
 
 Not to be confused with:
 
@@ -49,7 +49,7 @@ dxFeed blocks access until the Market Data Agreement for the account has been si
 1. Log into your data provider's portal.
 2. Sign the Market Data Agreement, selecting **Non-Professional** status when applicable.
 
-[SCREENSHOT: The data provider portal page showing the Market Data Agreement with the Non-Professional status option selected | dxfeed-agreement-non-professional.png]
+[SCREENSHOT: The data provider portal page showing the Market Data Agreement with the Non-Professional status option selected | dc-en-fix-bad-server-02.png]
 
 The full walkthrough is in [[sign-market-data-agreement]].
 

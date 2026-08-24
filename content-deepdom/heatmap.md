@@ -15,7 +15,7 @@ Most traders look at a price chart and see what already happened. The Heatmap le
 
 What makes it uniquely powerful is that it combines two completely different data streams into one view — executed market order data from Time and Sales, and live limit order data from the DOM. This means you are not just seeing where price has been or where orders are waiting. You are seeing both at the same time, which allows you to understand how price is interacting with liquidity as it happens .
 
-[SCREENSHOT: Heatmap — overview (DeepDOM) | heatmap-01.png]
+[SCREENSHOT: Heatmap — overview (DeepDOM) | dd-en-heatmap-01.png]
 
 The color intensity is a direct measure of order concentration. Red means the heaviest liquidity, orange the second highest, and as colors move toward yellow, white, blue, and black, the liquidity becomes progressively thinner. When a thick red or orange band forms at a level, price will almost always react when it gets there. The Heatmap lets you see these zones forming in advance — often minutes before price even gets close.
 
@@ -27,7 +27,7 @@ After connecting your data feed, follow these steps to open a new chart:
 
 Connect the datafeed first, make sure its green (connect), If the connection - Yellow (Still Looking for the connections), and Red (Connection is disconnected)
 
-[SCREENSHOT: Heatmap — Opening a Heatmap (DeepDOM) | heatmap-02.png]
+[SCREENSHOT: Heatmap — Opening a Heatmap (DeepDOM) | dd-en-heatmap-02.png]
 
 Click New in DeepDom
 
@@ -35,7 +35,7 @@ Select the financial instrument you want to display from your list of subscribed
 
 Click Select at the bottom right to confirm
 
-[SCREENSHOT: Heatmap — Opening a Heatmap (DeepDOM) | heatmap-03.png]
+[SCREENSHOT: Heatmap — Opening a Heatmap (DeepDOM) | dd-en-heatmap-03.png]
 
 ## Configuring MBO / MBP Data Source
 
@@ -43,7 +43,7 @@ Source Settings allows you to configure the data source for each individual char
 
 To access Source Settings, right-click anywhere on the chart and select Source Settings from the menu.
 
-[SCREENSHOT: Heatmap — Configuring MBO / MBP Data Source (DeepDOM) | heatmap-04.png]
+[SCREENSHOT: Heatmap — Configuring MBO / MBP Data Source (DeepDOM) | dd-en-heatmap-04.png]
 
 #### What is MBP and MBO?
 
@@ -71,7 +71,7 @@ MBP — uses Market By Price data. Standard market depth showing combined volume
 
 MBO — uses Market By Order data. Granular order-level data that enables advanced features like Iceberg order detection
 
-[SCREENSHOT: Heatmap — General (DeepDOM) | heatmap-05.png]
+[SCREENSHOT: Heatmap — General (DeepDOM) | dd-en-heatmap-05.png]
 
 Switch to MBO if your data feed supports it and you want to use DeepDom's full suite of order flow tools.
 
@@ -85,7 +85,7 @@ Min. Volume Sets the minimum volume an individual order must have to be included
 
 Exclude Market Maker When enabled, orders identified as coming from market makers are excluded from the MBO analysis. Market makers constantly place and cancel orders as part of their normal activity — this can create a lot of noise in the data. Excluding them helps you focus on genuine institutional and trader activity rather than routine market making.
 
-[SCREENSHOT: Heatmap — MBO Filters (DeepDOM) | heatmap-06.png]
+[SCREENSHOT: Heatmap — MBO Filters (DeepDOM) | dd-en-heatmap-06.png]
 
 Notes - If you are unsure which to use: Start with MBP — it works with all data feeds and covers the majority of trading scenarios. Switch to MBO only when you specifically want to use the advanced order flow features that require it, and only if your data feed supports it.
 
@@ -99,7 +99,7 @@ Sell Limit orders - Purple
 
 Buy Limit orders - Green
 
-[SCREENSHOT: Heatmap — Understanding Liquidity (DeepDOM) | heatmap-07.png]
+[SCREENSHOT: Heatmap — Understanding Liquidity (DeepDOM) | dd-en-heatmap-07.png]
 
 The Heatmap doesn't just show current limit orders — it saves and plots this information over time, so you can see how liquidity has built up, increased, decreased, or been cleared at any price level. This matters because a limit order that has been sitting at a level for a long time is far more significant than one that just appeared — it tells you that someone is genuinely committed to that price.
 
@@ -119,7 +119,7 @@ The separation of green (Buy Limit) and violet (Sell Limit) orders is equally im
 
 Either outcome is tradeable information.
 
-[SCREENSHOT: Heatmap — How to read Buy and Sell limits: (DeepDOM) | heatmap-08.png]
+[SCREENSHOT: Heatmap — How to read Buy and Sell limits: (DeepDOM) | dd-en-heatmap-08.png]
 
 #### How to read Fresh vs. Persistent Liquidity:
 
@@ -129,9 +129,9 @@ Fresh liquidity refers to limit orders that have just appeared in the book. Thes
 
 Persistent liquidity refers to limit orders that have been sitting in the book for a significant amount of time without being cancelled or filled. These are resting, committed orders — traders who placed their order at a specific price and have held it there through multiple price movements and market conditions. Persistent liquidity is far more significant because it tells you that someone genuinely believes that price level is worth defending . They have had multiple opportunities to cancel or move their order and have chosen not to. When price finally reaches a zone of persistent liquidity, the reaction is far more likely to be strong and sustained.
 
-[SCREENSHOT: Heatmap — How to read Fresh vs. Persistent Liquidity: (DeepDOM) | heatmap-09.png]
+[SCREENSHOT: Heatmap — How to read Fresh vs. Persistent Liquidity: (DeepDOM) | dd-en-heatmap-09.png]
 
-[SCREENSHOT: Heatmap — How to read Fresh vs. Persistent Liquidity: (DeepDOM) | heatmap-10.png]
+[SCREENSHOT: Heatmap — How to read Fresh vs. Persistent Liquidity: (DeepDOM) | dd-en-heatmap-10.png]
 
 #### How to use both together:
 

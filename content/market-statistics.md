@@ -18,7 +18,7 @@ The live documentation describes its purpose directly: obtaining useful statisti
 
 The indicator scans a dataset you define — trade sizes, order counts, or per-bar values such as POC volume or delta — and identifies the most frequent and least frequent values in it. Results are grouped into ranges you control (**Initial Range**, **End Range**, **Step Range**) and each grouping is reported with **AVG** (average) and **Dev** (deviation). For example, a "300–350" range showing **AVG: 9** and **Dev: 17** describes how often values in that range occur.
 
-[SCREENSHOT: Chart with the Market Statistics indicator output displayed — a table/graph of value ranges with AVG and Dev figures per range, on an active futures symbol | market-statistics-output-overview.png]
+[SCREENSHOT: Chart with the Market Statistics indicator output displayed — a table/graph of value ranges with AVG and Dev figures per range, on an active futures symbol | dc-en-market-statistics-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ The indicator scans a dataset you define — trade sizes, order counts, or per-b
 5. In **Range Trade Settings**, set an **Initial Range**, **End Range** and **Step Range** that cover the sizes you care about — for example stepping through size buckets from small retail prints up to large blocks.
 6. Read the **AVG** and **Dev** per range, and use the ranges that occur rarely as candidate thresholds for your other tools.
 
-[SCREENSHOT: Market Statistics settings dialog — Stat Mode, Font Size and % Dev. Std. in General, with the Data, Range Trade, Bar and Time sections visible | market-statistics-settings-dialog.png]
+[SCREENSHOT: Market Statistics settings dialog — Stat Mode, Font Size and % Dev. Std. in General, with the Data, Range Trade, Bar and Time sections visible | dc-en-market-statistics-02.png]
 
 ## How to read it
 

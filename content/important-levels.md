@@ -18,7 +18,7 @@ These are the prices most participants watch — prior day high and low, last we
 
 Important Levels is an automated multi-timeframe levels indicator designed for intraday charts. For each enabled period (day, week, month) it plots the prior period's key statistics as labeled lines and keeps them current as new periods begin. It answers the question "where are the reference prices from higher timeframes sitting relative to price right now?"
 
-[SCREENSHOT: Intraday chart with Important Levels applied — labeled horizontal lines for the previous day's high, low, close, POC and VWAP in distinct colors, with price trading between the prior day POC and high | important-levels-chart-overview.png]
+[SCREENSHOT: Intraday chart with Important Levels applied — labeled horizontal lines for the previous day's high, low, close, POC and VWAP in distinct colors, with price trading between the prior day POC and high | dc-en-important-levels-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ Important Levels is an automated multi-timeframe levels indicator designed for i
 5. In the enabled-levels section, start with **High**, **Low**, **Close** and **POC** for the daily period only; add weekly and monthly levels once the chart still reads clean.
 6. Set **Plot Type** to **Label and Line** so every line carries a name, choose distinct colors per level type, then apply.
 
-[SCREENSHOT: Important Levels settings dialog showing the Length section (Days, Weeks, Months, Skip Last), Plot Settings with the Plot Type dropdown open (Label, Line, Label and Line), the per-period level toggles (Average Value, Low, High, Open, Close, POC, Value Area, VWAP), the color settings, and the Filter Time dropdown | important-levels-settings-dialog.png]
+[SCREENSHOT: Important Levels settings dialog showing the Length section (Days, Weeks, Months, Skip Last), Plot Settings with the Plot Type dropdown open (Label, Line, Label and Line), the per-period level toggles (Average Value, Low, High, Open, Close, POC, Value Area, VWAP), the color settings, and the Filter Time dropdown | dc-en-important-levels-02.png]
 
 ## How to read it
 

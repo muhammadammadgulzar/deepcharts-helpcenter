@@ -28,11 +28,11 @@ The rule of thumb: one chart's setup (indicators, styles, settings) → save a *
 
 2. Right-click anywhere on the chart and choose **Template → Save As**.
 
-[SCREENSHOT: Chart right-click context menu open with the Template submenu expanded showing Load and Save As, Save As highlighted | chart-template-save-as-menu.png]
+[SCREENSHOT: Chart right-click context menu open with the Template submenu expanded showing Load and Save As, Save As highlighted | dc-en-templates-workspaces-01.png]
 
 3. Choose where to store it — **Local** (this PC) or **Cloud** (your DeepCharts account, available on any PC where you activate the same license) — and give the template a clear name, for example the strategy or layout it belongs to.
 
-[SCREENSHOT: Template save dialog/file picker showing the Local and Cloud source options with a template name being entered | template-save-picker-local-cloud.png]
+[SCREENSHOT: Template save dialog/file picker showing the Local and Cloud source options with a template name being entered | dc-en-templates-workspaces-02.png]
 
 ### Load a Template
 
@@ -43,7 +43,7 @@ The rule of thumb: one chart's setup (indicators, styles, settings) → save a *
    - **Cloud** — templates saved to the DeepCharts server, tied to your account and license. Use the same license on another PC (for example while traveling) and your cloud templates appear here too.
    - **Shared** — a read-only area curated by the DeepCharts team, including the templates used in the educational videos. You can load from Shared, but you can never upload to it.
 
-[SCREENSHOT: Template file picker with the Local, Cloud and Shared source tabs visible, a template selected, and the preview pane showing its preview | template-picker-local-cloud-shared.png]
+[SCREENSHOT: Template file picker with the Local, Cloud and Shared source tabs visible, a template selected, and the preview pane showing its preview | dc-en-templates-workspaces-03.png]
 
 3. Select the template and load it. The chart redraws with the saved configuration.
 
@@ -55,7 +55,7 @@ The rule of thumb: one chart's setup (indicators, styles, settings) → save a *
 
 2. In the main bar, open the **Workspace** selector — it shows the name of the current workspace (for example **Untitled**) — and choose the save option. [CONFIRM: exact item labels in the Workspace menu (Save as / Load / New)]
 
-[SCREENSHOT: DeepCharts main bar with the Workspace dropdown open showing the current workspace name and the save/load options | workspace-dropdown-main-bar.png]
+[SCREENSHOT: DeepCharts main bar with the Workspace dropdown open showing the current workspace name and the save/load options | dc-en-templates-workspaces-04.png]
 
 3. Pick **Local** or **Cloud** and name the workspace. Local workspaces live in **Documents → deepchart → Workspace** on this PC; cloud workspaces follow your license to any machine.
 
@@ -65,7 +65,7 @@ The rule of thumb: one chart's setup (indicators, styles, settings) → save a *
 
 2. Pick the source (**Local**, **Cloud** or **Shared**) and select the workspace. The entire layout is restored.
 
-[SCREENSHOT: Workspace file picker showing a saved workspace selected in the Local tab with the preview pane visible | workspace-picker-load.png]
+[SCREENSHOT: Workspace file picker showing a saved workspace selected in the Local tab with the preview pane visible | dc-en-templates-workspaces-05.png]
 
 ### If you work on more than one PC
 

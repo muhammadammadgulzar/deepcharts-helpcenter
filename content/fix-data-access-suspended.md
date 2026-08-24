@@ -18,7 +18,7 @@ This is a compliance-related issue, not a software bug — the suspension decisi
 - Your dxFeed data feed stops connecting, or market data stops arriving.
 - The error **Dxfeed: DATA_ACCESS_SUSPENDED** is shown.
 
-[SCREENSHOT: The feed connection error showing the exact "Dxfeed: DATA_ACCESS_SUSPENDED" message text | dxfeed-data-access-suspended-error.png]
+[SCREENSHOT: The feed connection error showing the exact "Dxfeed: DATA_ACCESS_SUSPENDED" message text | dc-en-fix-data-access-suspended-01.png]
 
 Not to be confused with:
 

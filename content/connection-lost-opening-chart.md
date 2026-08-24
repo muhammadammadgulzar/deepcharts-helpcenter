@@ -17,7 +17,7 @@ Your data feed connects without any problem — but the moment you open a chart,
 - The data feed connects successfully and the connection indicator looks normal.
 - As soon as you open a chart — specifically when the chart data starts loading — the connection drops and one or more warnings or error messages appear.
 
-[SCREENSHOT: DeepCharts main window at the moment the connection drops after opening a chart, with the disconnect warning or error message visible on screen | connection-lost-opening-chart-error.png]
+[SCREENSHOT: DeepCharts main window at the moment the connection drops after opening a chart, with the disconnect warning or error message visible on screen | dc-en-connection-lost-opening-chart-01.png]
 
 Not to be confused with:
 
@@ -47,11 +47,11 @@ The data feed and charting components require an English display language and US
 
 1. Open **Windows Settings → Time & Language → Language** and set the Windows display language to **English**.
 
-[SCREENSHOT: Windows Settings, Time & Language, Language page with the Windows display language dropdown open and English selected | windows-display-language-english.png]
+[SCREENSHOT: Windows Settings, Time & Language, Language page with the Windows display language dropdown open and English selected | dc-en-connection-lost-opening-chart-02.png]
 
 2. Open **Windows Settings → Time & Language → Region** and set **Country or region** to **United States** (or another English-supported region).
 
-[SCREENSHOT: Windows Settings, Time & Language, Region page with Country or region set to United States | windows-region-united-states.png]
+[SCREENSHOT: Windows Settings, Time & Language, Region page with Country or region set to United States | dc-en-connection-lost-opening-chart-03.png]
 
 3. Restart your computer.
 4. Launch DeepCharts, connect the data feed and open the chart again.

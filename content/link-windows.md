@@ -22,11 +22,11 @@ This is the fastest way to run a multi-timeframe workspace: one 1-minute chart, 
 
 1. On the first chart, click the square **link** icon at the top-right of the window title bar, to the left of the minimize button.
 
-[SCREENSHOT: Top-right corner of a chart window with the square link icon highlighted, left of the minimize/maximize/close buttons | chart-link-icon-titlebar.png]
+[SCREENSHOT: Top-right corner of a chart window with the square link icon highlighted, left of the minimize/maximize/close buttons | dc-en-link-windows-01.png]
 
 2. The link menu opens with these options: **None link**, **Link 1** through **Link 8** (each with its own color — Link 1 red, Link 2 green, Link 3 blue, Link 4 magenta, Link 5 purple, Link 6 yellow, Link 7 cyan, Link 8 pink), and **$ Link Trading Symbol**. Select **Link 1**.
 
-[SCREENSHOT: Chart link menu open showing None link, the eight colored Link entries and the $ Link Trading Symbol option, with Link 1 highlighted | chart-link-menu-options.png]
+[SCREENSHOT: Chart link menu open showing None link, the eight colored Link entries and the $ Link Trading Symbol option, with Link 1 highlighted | dc-en-link-windows-02.png]
 
 3. On the second chart, open the same link menu and select **Link 1** as well. Both charts now belong to the same color group.
 

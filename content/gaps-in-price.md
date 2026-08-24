@@ -17,7 +17,7 @@ Gaps in your price history have three possible origins: corrupted data in the lo
 - A chart shows a gap: missing candles or a hole in the price history where data should be.
 - The gap persists after scrolling away and back, or reappears on new charts of the same symbol.
 
-[SCREENSHOT: A price chart with a visible gap in the candle history — missing bars in the middle of a session, gap area highlighted | gaps-in-price-example.png]
+[SCREENSHOT: A price chart with a visible gap in the candle history — missing bars in the middle of a session, gap area highlighted | dc-en-gaps-in-price-01.png]
 
 Not to be confused with [[feed-connected-chart-not-moving]] — there the chart stops updating entirely; here history is loaded but has holes in it.
 
@@ -37,7 +37,7 @@ If neither applies, delete the affected symbol's stored data so DeepCharts re-do
 3. Use the in-app delete tool (**Options → Delete data**): pick the affected symbol and a date range covering the gap. This removes only that slice of data — the full walkthrough is in [[delete-market-data]].
 4. Restart DeepCharts and open the chart again. The software automatically downloads fresh data for the deleted range.
 
-[SCREENSHOT: In-app delete data dialog with a symbol selected and a date range covering the gap | delete-data-symbol-date-range.png]
+[SCREENSHOT: In-app delete data dialog with a symbol selected and a date range covering the gap | dc-en-gaps-in-price-02.png]
 
 ## If that didn't work
 
@@ -47,14 +47,14 @@ If the gap survives an in-app delete, remove the symbol's entire data folder man
 
 1. Open **General Settings** and locate the **Database Folder Path**.
 
-[SCREENSHOT: General Settings dialog with the Database Folder Path field highlighted | general-settings-database-folder-path.png]
+[SCREENSHOT: General Settings dialog with the Database Folder Path field highlighted | dc-en-gaps-in-price-03.png]
 
 2. Navigate to that folder in File Explorer.
 3. Delete only the affected symbol's folder.
 
 > **Warning:** Always delete only the affected symbol's folder — never the entire database. Deleting everything wipes the stored history for all symbols.
 
-[SCREENSHOT: File Explorer inside the database folder with a single symbol's subfolder selected for deletion, other symbol folders visible untouched | database-folder-delete-symbol.png]
+[SCREENSHOT: File Explorer inside the database folder with a single symbol's subfolder selected for deletion, other symbol folders visible untouched | dc-en-gaps-in-price-04.png]
 
 4. Restart DeepCharts. It automatically downloads fresh data for that symbol.
 

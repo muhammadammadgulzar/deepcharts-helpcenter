@@ -22,7 +22,7 @@ Before tuning any filter, watch the live tape below — the oversized prints tha
 
 Big Trades plots a marker (circle, square, diamond, or text) every time a trade passes your size filter. Marker color separates aggressive buyers (**Ask Color**) from aggressive sellers (**Bid Color**), and marker size scales with trade size. Because large orders often define support and resistance, the indicator can also draw zones from those prices and extend them forward a set number of bars.
 
-[SCREENSHOT: Chart window with the Big Trades indicator active — circular markers of varying size on several candles, ask-colored markers on up-moves and bid-colored on down-moves, with one horizontal zone extending right from a large trade | big-trades-chart-overview.png]
+[SCREENSHOT: Chart window with the Big Trades indicator active — circular markers of varying size on several candles, ask-colored markers on up-moves and bid-colored on down-moves, with one horizontal zone extending right from a large trade | dc-en-big-trades-01.png]
 
 ## When to use it
 
@@ -40,7 +40,7 @@ Big Trades plots a marker (circle, square, diamond, or text) every time a trade 
 5. Confirm **Ask Color** and **Bid Color** are easy to tell apart against your chart background.
 6. Once comfortable, switch **Filter Mode** to **Automatic** and run the analysis (see below) so thresholds adapt to the symbol.
 
-[SCREENSHOT: Big Trades settings dialog open on Data Settings — Days to Load, Input Type, Filter Mode set to Manual, and the Min/Max manual filter fields visible | big-trades-settings-data.png]
+[SCREENSHOT: Big Trades settings dialog open on Data Settings — Days to Load, Input Type, Filter Mode set to Manual, and the Min/Max manual filter fields visible | dc-en-big-trades-02.png]
 
 ## How to read it
 
@@ -102,7 +102,7 @@ To use it:
 
 The indicator then automatically applies the optimized thresholds to your charts.
 
-[SCREENSHOT: Options menu expanded showing Tools → Big Trades Analysis, with the analysis tool window open ready to run | big-trades-analysis-tool.png]
+[SCREENSHOT: Options menu expanded showing Tools → Big Trades Analysis, with the analysis tool window open ready to run | dc-en-big-trades-03.png]
 
 ## Tips and common mistakes
 

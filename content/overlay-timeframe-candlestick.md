@@ -34,7 +34,7 @@ It answers the question every multi-timeframe trader asks constantly: "where are
 5. Optionally enable **Show vertical line on close** in the Plot group to mark each higher timeframe candle close on your chart.
 6. Adjust **Opacity** so the overlay sits visibly behind your main candles without hiding them, then apply.
 
-[SCREENSHOT: A 5-minute chart with Overlay Timeframe Candlestick drawing semi-transparent 30-minute candles behind the price bars, one higher timeframe candle still forming at the right edge | overlay-timeframe-candlestick-chart.png]
+[SCREENSHOT: A 5-minute chart with Overlay Timeframe Candlestick drawing semi-transparent 30-minute candles behind the price bars, one higher timeframe candle still forming at the right edge | dc-en-overlay-timeframe-candlestick-01.png]
 
 ## How to read it
 
@@ -47,7 +47,7 @@ The indicator works best combined with structure and liquidity level analysis â€
 
 ## Settings reference
 
-[SCREENSHOT: Overlay Timeframe Candlestick settings dialog showing the Chart Area, General, Color and Plot groups with Param type, Param 1, Param 2, Up bar, Down bar, Show filled bar, Candle width, Border width, Opacity and Show vertical line on close visible | overlay-timeframe-candlestick-settings.png]
+[SCREENSHOT: Overlay Timeframe Candlestick settings dialog showing the Chart Area, General, Color and Plot groups with Param type, Param 1, Param 2, Up bar, Down bar, Show filled bar, Candle width, Border width, Opacity and Show vertical line on close visible | dc-en-overlay-timeframe-candlestick-02.png]
 
 ### Chart Area
 

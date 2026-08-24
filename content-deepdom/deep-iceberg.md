@@ -11,7 +11,7 @@ keywords: ["deep iceberg iceberg detector", "deepdom deep iceberg iceberg detect
 ---
 The Deep Iceberg indicator highlights hidden institutional liquidity by detecting iceberg orders – large limit orders where only a small portion is visible in the DOM at any time while the rest remains hidden.
 
-[SCREENSHOT: Deep Iceberg (Iceberg Detector) — overview (DeepDOM) | deep-iceberg-01.png]
+[SCREENSHOT: Deep Iceberg (Iceberg Detector) — overview (DeepDOM) | dd-en-deep-iceberg-01.png]
 
 ## 1. What Is an Iceberg Order?
 
@@ -39,7 +39,7 @@ This makes it possible to see where a large participant is accumulating or distr
 
 Each detected iceberg is drawn as a marker at the price where the hidden liquidity traded. The label next to the marker shows two values:
 
-[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 3. Visualisation on the Chart (DeepDOM) | deep-iceberg-02.png]
+[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 3. Visualisation on the Chart (DeepDOM) | dd-en-deep-iceberg-02.png]
 
 Total executed iceberg volume – The total contracts traded as part of the iceberg at that price (for example, 1,000 contracts).
 
@@ -49,7 +49,7 @@ When you enable active iceberg lines , a horizontal line is drawn through the ma
 
 ## 4. Data Settings
 
-[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 4. Data Settings (DeepDOM) | deep-iceberg-03.png]
+[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 4. Data Settings (DeepDOM) | dd-en-deep-iceberg-03.png]
 
 The Data Settings group lets you control which iceberg events are displayed and how sensitive the detector is:
 
@@ -59,7 +59,7 @@ Iceberg timeout seconds – how long Deep Iceberg continues to treat ongoing act
 
 ## 5. Plot Settings
 
-[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 5. Plot Settings (DeepDOM) | deep-iceberg-04.png]
+[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 5. Plot Settings (DeepDOM) | dd-en-deep-iceberg-04.png]
 
 The Plot Settings section controls how iceberg markers appear on the chart:
 
@@ -79,7 +79,7 @@ Ask color / Bid color – colors used for sell-side and buy-side icebergs.
 
 ## 6. Active Icebergs
 
-[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 6. Active Icebergs (DeepDOM) | deep-iceberg-05.png]
+[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 6. Active Icebergs (DeepDOM) | dd-en-deep-iceberg-05.png]
 
 The Active Icebergs section manages horizontal lines for icebergs that are still resting on the book:
 
@@ -99,13 +99,13 @@ A continuous line tells you that the large participant is still quoting at that 
 
 ## 7. Plot Settings
 
-[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 7. Plot Settings (DeepDOM) | deep-iceberg-06.png]
+[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 7. Plot Settings (DeepDOM) | dd-en-deep-iceberg-06.png]
 
 Minimum size / Maximum size – set the smallest and largest marker size that Deep Iceberg will use when drawing iceberg events. Use a narrow range if you prefer a more uniform look, or a wider range so that very large icebergs stand out with larger markers.
 
 ## 8. Text Settings
 
-[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 8. Text Settings (DeepDOM) | deep-iceberg-07.png]
+[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 8. Text Settings (DeepDOM) | dd-en-deep-iceberg-07.png]
 
 Use the Text Settings group to control the labels attached to iceberg markers:
 
@@ -119,7 +119,7 @@ The label format is designed to make the iceberg structure easy to read at a gla
 
 ## 9. Alert Iceberg
 
-[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 9. Alert Iceberg (DeepDOM) | deep-iceberg-08.png]
+[SCREENSHOT: Deep Iceberg (Iceberg Detector) — 9. Alert Iceberg (DeepDOM) | dd-en-deep-iceberg-08.png]
 
 The Alert Iceberg section lets you trigger alerts when especially large icebergs are detected:
 

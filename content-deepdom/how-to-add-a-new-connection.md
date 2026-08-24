@@ -17,7 +17,7 @@ Use the Select a Connection item in the DeepDom menu bar to choose which data fe
 
 ## Open Data Feed Settings
 
-[SCREENSHOT: How to Add a New Connection — Open Data Feed Settings (DeepDOM) | how-to-add-a-new-connection-01.png]
+[SCREENSHOT: How to Add a New Connection — Open Data Feed Settings (DeepDOM) | dd-en-how-to-add-a-new-connection-01.png]
 
 1. In the main toolbar, open the Feed menu.
 2. Click Settings to open the Data Feed Settings window.
@@ -30,7 +30,7 @@ Connection Information – displays details for the selected connection or an ac
 
 ## Adding a New Connection
 
-[SCREENSHOT: How to Add a New Connection — Adding a New Connection (DeepDOM) | how-to-add-a-new-connection-02.png]
+[SCREENSHOT: How to Add a New Connection — Adding a New Connection (DeepDOM) | dd-en-how-to-add-a-new-connection-02.png]
 
 Click Add Connection at the bottom of the Data Feed Settings window.
 

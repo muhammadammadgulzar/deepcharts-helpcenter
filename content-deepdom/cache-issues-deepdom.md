@@ -25,7 +25,7 @@ In these cases, some cached files may become corrupted or incomplete, and the sa
 
 ## Step‑by‑Step – Remove Cache Folder
 
-[SCREENSHOT: Cache Issues — Step‑by‑Step – Remove Cache Folder (DeepDOM) | cache-issues-deepdom-01.png]
+[SCREENSHOT: Cache Issues — Step‑by‑Step – Remove Cache Folder (DeepDOM) | dd-en-cache-issues-deepdom-01.png]
 
 ### 1. Open the Database Folder Path
 
@@ -41,7 +41,7 @@ In these cases, some cached files may become corrupted or incomplete, and the sa
 
 ### 3. Delete the Local Database Folder
 
-[SCREENSHOT: Cache Issues — 3. Delete the Local Database Folder (DeepDOM) | cache-issues-deepdom-02.png]
+[SCREENSHOT: Cache Issues — 3. Delete the Local Database Folder (DeepDOM) | dd-en-cache-issues-deepdom-02.png]
 
 1. Open Windows Explorer (File Explorer).
 2. Click in the address bar and paste the previously copied Database Folder path, then press Enter .

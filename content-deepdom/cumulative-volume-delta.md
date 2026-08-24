@@ -11,7 +11,7 @@ keywords: ["cumulative volume delta", "deepdom cumulative volume delta", "deepdo
 ---
 Cumulative Volume Delta (CVD) shows tick‑by‑tick cumulative delta over a user‑defined period, measuring the difference between buy‑market and sell‑market volume to reveal sustained buying or selling pressure.
 
-[SCREENSHOT: Cumulative Volume Delta — overview (DeepDOM) | cumulative-volume-delta-01.png]
+[SCREENSHOT: Cumulative Volume Delta — overview (DeepDOM) | dd-en-cumulative-volume-delta-01.png]
 
 ## Settings of Use
 
@@ -21,11 +21,11 @@ Search for the desired indicator and add it to your workspace by clicking the "+
 
 Open the indicator's settings panel, customize the parameters according to your preferences, and confirm the changes by clicking Save.
 
-[SCREENSHOT: Cumulative Volume Delta — Settings of Use (DeepDOM) | cumulative-volume-delta-02.png]
+[SCREENSHOT: Cumulative Volume Delta — Settings of Use (DeepDOM) | dd-en-cumulative-volume-delta-02.png]
 
 ## General Settings
 
-[SCREENSHOT: Cumulative Volume Delta — General Settings (DeepDOM) | cumulative-volume-delta-03.png]
+[SCREENSHOT: Cumulative Volume Delta — General Settings (DeepDOM) | dd-en-cumulative-volume-delta-03.png]
 
 #### Period Mode and Value
 
@@ -39,7 +39,7 @@ Enable this option to display, in addition to the CVD line, separate lines for v
 
 ## Plot Settings
 
-[SCREENSHOT: Cumulative Volume Delta — Plot Settings (DeepDOM) | cumulative-volume-delta-04.png]
+[SCREENSHOT: Cumulative Volume Delta — Plot Settings (DeepDOM) | dd-en-cumulative-volume-delta-04.png]
 
 Customize the appearance of the CVD and volume lines:
 
@@ -51,7 +51,7 @@ Adjust the line thickness to improve readability.
 
 ## Filtered CVD
 
-[SCREENSHOT: Cumulative Volume Delta — Filtered CVD (DeepDOM) | cumulative-volume-delta-05.png]
+[SCREENSHOT: Cumulative Volume Delta — Filtered CVD (DeepDOM) | dd-en-cumulative-volume-delta-05.png]
 
 #### Enable Filtered CVD
 

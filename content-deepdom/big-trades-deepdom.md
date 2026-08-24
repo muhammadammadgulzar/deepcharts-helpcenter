@@ -11,17 +11,17 @@ keywords: ["big trades", "deepdom big trades", "deepdom", "indicators"]
 ---
 The Big Trades indicator highlights aggregated large orders on the chart using visual markers, making it easy to see where the largest buy and sell transactions occurred.
 
-[SCREENSHOT: Big Trades — overview (DeepDOM) | big-trades-deepdom-01.png]
+[SCREENSHOT: Big Trades — overview (DeepDOM) | dd-en-big-trades-deepdom-01.png]
 
 ## Settings of Use
 
 Open the indicator configuration by clicking its settings icon. The window collects all display options and level controls.
 
-[SCREENSHOT: Big Trades — Settings of Use (DeepDOM) | big-trades-deepdom-02.png]
+[SCREENSHOT: Big Trades — Settings of Use (DeepDOM) | dd-en-big-trades-deepdom-02.png]
 
 ## Data Settings
 
-[SCREENSHOT: Big Trades — Data Settings (DeepDOM) | big-trades-deepdom-03.png]
+[SCREENSHOT: Big Trades — Data Settings (DeepDOM) | dd-en-big-trades-deepdom-03.png]
 
 #### Input data
 
@@ -43,7 +43,7 @@ Max Filter – sets the maximum size. Leaving this at 0 disables the maximum fil
 
 ## Plot Settings
 
-[SCREENSHOT: Big Trades — Plot Settings (DeepDOM) | big-trades-deepdom-04.png]
+[SCREENSHOT: Big Trades — Plot Settings (DeepDOM) | dd-en-big-trades-deepdom-04.png]
 
 Dev. standard – standard deviation parameter used to scale the marker size according to trade magnitude.
 
@@ -57,7 +57,7 @@ Hollow fill – when enabled, removes the marker background, leaving only the ou
 
 ### Marker and Text Settings
 
-[SCREENSHOT: Big Trades — Marker and Text Settings (DeepDOM) | big-trades-deepdom-05.png]
+[SCREENSHOT: Big Trades — Marker and Text Settings (DeepDOM) | dd-en-big-trades-deepdom-05.png]
 
 Marker Settings – define minimum and maximum marker sizes to increase the bubble Size
 

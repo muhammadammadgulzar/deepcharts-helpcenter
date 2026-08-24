@@ -17,7 +17,7 @@ It is the statistical engine behind several other tools — [[bollinger-bands]] 
 
 Standard Deviation answers the question: how scattered has price been around its own average lately? Statistically, it is the square root of the average squared distance between each price and the mean of the lookback window. The result plots as a single line in a panel below the price chart — always positive, rising as price disperses and falling as it clusters.
 
-[SCREENSHOT: Price chart with the Standard Deviation indicator in a lower panel, the line spiking during a fast breakout and decaying back toward its base during sideways consolidation | standard-deviation-on-chart.png]
+[SCREENSHOT: Price chart with the Standard Deviation indicator in a lower panel, the line spiking during a fast breakout and decaying back toward its base during sideways consolidation | dc-en-standard-deviation-01.png]
 
 ## When to use it
 
@@ -34,7 +34,7 @@ Standard Deviation answers the question: how scattered has price been around its
 4. Click the indicator settings icon to open its configuration window.
 5. The default of 14 periods is a balanced starting point — long enough to be stable, short enough to react within a session.
 
-[SCREENSHOT: Standard Deviation configuration window open showing the Periods field set to 14 and the Subgraphs section with Std. Dev Color, Subgraph Style, Line Style and Line Width options | standard-deviation-settings.png]
+[SCREENSHOT: Standard Deviation configuration window open showing the Periods field set to 14 and the Subgraphs section with Std. Dev Color, Subgraph Style, Line Style and Line Width options | dc-en-standard-deviation-02.png]
 
 ## How to read it
 

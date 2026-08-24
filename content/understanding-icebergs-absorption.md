@@ -38,7 +38,7 @@ Absorption is the market-level effect: heavy aggressive volume into a price, str
 - **On the DOM:** the level's visible size takes hit after hit but keeps refilling to a similar number instead of shrinking to zero.
 - **On the footprint:** an outsized volume cell at the extreme of the move with no follow-through beyond it, and delta pushing hard in a direction price refuses to go.
 
-[SCREENSHOT: A composite annotated view of the same moment in three panels — tape showing repeated sell prints at one price, DOM showing the bid at that price refilling to a similar size after each hit, and a footprint bar with a huge bid-volume cell at the low and no lower prices printed, captioned "one iceberg, three views" | icebergs-absorption-three-views.png]
+[SCREENSHOT: A composite annotated view of the same moment in three panels — tape showing repeated sell prints at one price, DOM showing the bid at that price refilling to a similar size after each hit, and a footprint bar with a huge bid-volume cell at the low and no lower prices printed, captioned "one iceberg, three views" | dc-en-understanding-icebergs-absorption-01.png]
 
 ### Detection in practice
 
@@ -79,7 +79,7 @@ There is no magic threshold, but the higher the multiple (and the shorter the ti
 
 ES sells off into 5,270.00 (illustrative), a level with no obvious chart significance. The DOM shows a bid of about 60 contracts there. Over the next four minutes the tape prints roughly 2,400 contracts sold at 5,270.00 — forty times the displayed size — and after every flurry the bid re-displays near 60. Cumulative delta drops sharply; price does not make a single new low. This is a textbook hidden buyer: sellers are pouring effort into a level and getting nothing. When the selling waves visibly shorten and the first aggressive buying appears, the absorbed shorts are trapped below a proven buyer — fuel for the bounce. Had 5,270.00 instead broken after all that defence, the same logic would flip: the big player is done or overwhelmed, and the move through the level tends to be fast.
 
-[SCREENSHOT: ES chart of the worked example annotated with the 5,270.00 level line, a cumulative delta panel below falling sharply while price holds flat at the level, and a callout reading "2,400 sold into a 60-lot bid — hidden buyer" | icebergs-absorption-worked-example-es.png]
+[SCREENSHOT: ES chart of the worked example annotated with the 5,270.00 level line, a cumulative delta panel below falling sharply while price holds flat at the level, and a callout reading "2,400 sold into a 60-lot bid — hidden buyer" | dc-en-understanding-icebergs-absorption-02.png]
 
 ## Common misreadings
 

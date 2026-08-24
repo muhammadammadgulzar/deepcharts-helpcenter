@@ -17,17 +17,17 @@ You do not need an active data feed to use this feature. To get started:
 
 Make sure the feed is disconnected, if not then disconnect the feed before using replay tool
 
-[SCREENSHOT: Replay Tick Data — How to Access Tick Data Replay (DeepDOM) | replay-tick-data-01.png]
+[SCREENSHOT: Replay Tick Data — How to Access Tick Data Replay (DeepDOM) | dd-en-replay-tick-data-01.png]
 
 Click on Options
 
 Select Tick Data Replay from the menu
 
-[SCREENSHOT: Replay Tick Data — How to Access Tick Data Replay (DeepDOM) | replay-tick-data-02.png]
+[SCREENSHOT: Replay Tick Data — How to Access Tick Data Replay (DeepDOM) | dd-en-replay-tick-data-02.png]
 
 The Replay Management panel will open
 
-[SCREENSHOT: Replay Tick Data — How to Access Tick Data Replay (DeepDOM) | replay-tick-data-03.png]
+[SCREENSHOT: Replay Tick Data — How to Access Tick Data Replay (DeepDOM) | dd-en-replay-tick-data-03.png]
 
 ## Managing the Replay
 
@@ -35,25 +35,25 @@ The Replay Management panel will open
 
 In the Replay Management panel, click Select Symbols
 
-[SCREENSHOT: Replay Tick Data — Step 1 – Select Your Symbol (DeepDOM) | replay-tick-data-04.png]
+[SCREENSHOT: Replay Tick Data — Step 1 – Select Your Symbol (DeepDOM) | dd-en-replay-tick-data-04.png]
 
 Choose the financial instrument you want to replay
 
-[SCREENSHOT: Replay Tick Data — Step 1 – Select Your Symbol (DeepDOM) | replay-tick-data-05.png]
+[SCREENSHOT: Replay Tick Data — Step 1 – Select Your Symbol (DeepDOM) | dd-en-replay-tick-data-05.png]
 
 Hold Ctrl while clicking to select multiple instruments and run several replays at the same time (Make-sure if you do this, if you are viewing a Symbol Heatmap and want to place a trade over other Symbol from Trading Panel. For Example - Viewing NQ Heatmap and placing trade over MNQ from trading panel)
 
-[SCREENSHOT: Replay Tick Data — Step 1 – Select Your Symbol (DeepDOM) | replay-tick-data-06.png]
+[SCREENSHOT: Replay Tick Data — Step 1 – Select Your Symbol (DeepDOM) | dd-en-replay-tick-data-06.png]
 
 Once selected, open the workspace with the charts for your chosen instrument
 
-[SCREENSHOT: Replay Tick Data — Step 1 – Select Your Symbol (DeepDOM) | replay-tick-data-07.png]
+[SCREENSHOT: Replay Tick Data — Step 1 – Select Your Symbol (DeepDOM) | dd-en-replay-tick-data-07.png]
 
 ### Step 2 – Set the Start Date
 
 Click Start Date to choose the date and time from which you want the replay to begin
 
-[SCREENSHOT: Replay Tick Data — Step 2 – Set the Start Date (DeepDOM) | replay-tick-data-08.png]
+[SCREENSHOT: Replay Tick Data — Step 2 – Set the Start Date (DeepDOM) | dd-en-replay-tick-data-08.png]
 
 Note: Replay is only available for previous sessions. The current trading day's session is not available for replay. You can replay any session from yesterday or earlier.
 
@@ -63,7 +63,7 @@ Once everything is configured:
 
 Click Set — the platform will load the selected session
 
-[SCREENSHOT: Replay Tick Data — Step 3 – Start the Replay (DeepDOM) | replay-tick-data-09.png]
+[SCREENSHOT: Replay Tick Data — Step 3 – Start the Replay (DeepDOM) | dd-en-replay-tick-data-09.png]
 
 Click Play to begin playback
 
@@ -83,7 +83,7 @@ Place orders in simulated mode directly on the chart
 
 The simulation behaves like a live session, allowing you to test strategies without any real risk
 
-[SCREENSHOT: Replay Tick Data — Simulated Trading (DeepDOM) | replay-tick-data-10.png]
+[SCREENSHOT: Replay Tick Data — Simulated Trading (DeepDOM) | dd-en-replay-tick-data-10.png]
 
 ## Conclusion
 

@@ -41,7 +41,7 @@ Delta here is the difference between aggressive buying and aggressive selling �
 4. Click the gear icon next to the indicator to open its settings. Set **Calculation Mode (1)** to **Volume and delta** so you see the full picture (VDD labels), and start with **Calculation Mode (2)** = **Close** so signals only print on completed candles.
 5. Tune the Zig Zag settings so swings match the structure you actually trade — if labels appear on every minor wiggle, the reversal parameter is too small.
 
-[SCREENSHOT: A futures chart with the Divergence Detector active — a new swing high tagged with a VDD label above the candle, showing price making a higher high while participation faded | divergence-detector-on-chart.png]
+[SCREENSHOT: A futures chart with the Divergence Detector active — a new swing high tagged with a VDD label above the candle, showing price making a higher high while participation faded | dc-en-divergence-detector-01.png]
 
 ## How to read it
 
@@ -85,7 +85,7 @@ The swing highs and lows the detector compares against are found by an internal 
 | **Alert Sound** | Enables a sound notification when a divergence is detected. |
 | **Subgraphs** | Customizes the label background and text colors. |
 
-[SCREENSHOT: The Divergence Detector settings dialog showing Calculation Mode (1) and Calculation Mode (2) dropdowns, Maximum Seconds To Close, and the Zig Zag Settings group with the three reversal modes | divergence-detector-settings.png]
+[SCREENSHOT: The Divergence Detector settings dialog showing Calculation Mode (1) and Calculation Mode (2) dropdowns, Maximum Seconds To Close, and the Zig Zag Settings group with the three reversal modes | dc-en-divergence-detector-02.png]
 
 ## Tips and common mistakes
 

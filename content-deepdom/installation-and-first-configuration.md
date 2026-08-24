@@ -27,19 +27,19 @@ Administrator access on your Windows PC
 
 Step 1 – Log in to Your Personal Area Go to www.deepcharts.com and sign in with your registered email and password. Once inside, navigate to the downloads section.
 
-[SCREENSHOT: Installation and First Configuration — Part 1 – Downloading DeepDom (DeepDOM) | installation-and-first-configuration-01.png]
+[SCREENSHOT: Installation and First Configuration — Part 1 – Downloading DeepDom (DeepDOM) | dd-en-installation-and-first-configuration-01.png]
 
 #### Step 2 – Download the Installer
 
 Once inside, navigate to the Subscription section and then download the DeepDom Installer.
 
-[SCREENSHOT: Installation and First Configuration — Step 2 – Download the Installer (DeepDOM) | installation-and-first-configuration-02.png]
+[SCREENSHOT: Installation and First Configuration — Step 2 – Download the Installer (DeepDOM) | dd-en-installation-and-first-configuration-02.png]
 
 #### Step 3 – Extract the ZIP File
 
 Locate and download the file named DeepDominstaller.zip. Save it somewhere easy to find, like your Desktop or Downloads folder. Right-click on DeepDominstaller.zip and select "Extract All." This unpacks the files needed for installation. Do not run the installer directly from inside the ZIP — always extract first.
 
-[SCREENSHOT: Installation and First Configuration — Step 3 – Extract the ZIP File (DeepDOM) | installation-and-first-configuration-03.png]
+[SCREENSHOT: Installation and First Configuration — Step 3 – Extract the ZIP File (DeepDOM) | dd-en-installation-and-first-configuration-03.png]
 
 ## Part 2 – Installing DeepDom
 
@@ -61,7 +61,7 @@ Click Install and wait for the process to finish
 
 Restart your PC if prompted — this is required to complete the setup
 
-[SCREENSHOT: Installation and First Configuration — Step 6 – Complete the Installation (DeepDOM) | installation-and-first-configuration-04.png]
+[SCREENSHOT: Installation and First Configuration — Step 6 – Complete the Installation (DeepDOM) | dd-en-installation-and-first-configuration-04.png]
 
 ## Part 3 - First-Time Configuration
 
@@ -77,43 +77,43 @@ Email Address — the email you registered with at www.deepcharts.com
 
 License Key — the alphanumeric code found in your Personal Area
 
-[SCREENSHOT: Installation and First Configuration — Step 8 – Enter Your License Details (DeepDOM) | installation-and-first-configuration-05.png]
+[SCREENSHOT: Installation and First Configuration — Step 8 – Enter Your License Details (DeepDOM) | dd-en-installation-and-first-configuration-05.png]
 
 *Tip: Copy and paste the license key directly from the website to avoid typos.*
 
-[SCREENSHOT: Installation and First Configuration — Step 8 – Enter Your License Details (DeepDOM) | installation-and-first-configuration-06.png]
+[SCREENSHOT: Installation and First Configuration — Step 8 – Enter Your License Details (DeepDOM) | dd-en-installation-and-first-configuration-06.png]
 
 #### Step 9 – Create Your First Data Connection
 
 If you want to use the 15‑minute delayed data feed, you can select it. Otherwise, you can add your own data feed here.
 
-[SCREENSHOT: Installation and First Configuration — Step 9 – Create Your First Data Connection (DeepDOM) | installation-and-first-configuration-07.png]
+[SCREENSHOT: Installation and First Configuration — Step 9 – Create Your First Data Connection (DeepDOM) | dd-en-installation-and-first-configuration-07.png]
 
 Enter your Market Depth / Level 2 data feed, provided by your broker or data vendor
 
-[SCREENSHOT: Installation and First Configuration — Step 9 – Create Your First Data Connection (DeepDOM) | installation-and-first-configuration-08.png]
+[SCREENSHOT: Installation and First Configuration — Step 9 – Create Your First Data Connection (DeepDOM) | dd-en-installation-and-first-configuration-08.png]
 
 #### Step 10 – Symbol Manage
 
 From Symbol Manager, you can map the data feed provider to your connection in order to receive market data. Select the markets you want to associate with this connection from the list shown
 
-[SCREENSHOT: Installation and First Configuration — Step 10 – Symbol Manage (DeepDOM) | installation-and-first-configuration-09.png]
+[SCREENSHOT: Installation and First Configuration — Step 10 – Symbol Manage (DeepDOM) | dd-en-installation-and-first-configuration-09.png]
 
 #### Step 11 – Choose Your Theme
 
 Select a visual theme for the platform. This sets the color scheme of the interface. You can always change this later in Settings.
 
-[SCREENSHOT: Installation and First Configuration — Step 11 – Choose Your Theme (DeepDOM) | installation-and-first-configuration-10.png]
+[SCREENSHOT: Installation and First Configuration — Step 11 – Choose Your Theme (DeepDOM) | dd-en-installation-and-first-configuration-10.png]
 
 #### Step 12 – Connecting Feed: This connects DeepDom to your live market data feed:
 
 Click Connect
 
-[SCREENSHOT: Installation and First Configuration — Step 12 – Connecting Feed: This connects DeepDom to your live market data feed: (DeepDOM) | installation-and-first-configuration-11.png]
+[SCREENSHOT: Installation and First Configuration — Step 12 – Connecting Feed: This connects DeepDom to your live market data feed: (DeepDOM) | dd-en-installation-and-first-configuration-11.png]
 
 Wait until the indicator turns green — this means your data feed is live and working
 
-[SCREENSHOT: Installation and First Configuration — Step 12 – Connecting Feed: This connects DeepDom to your live market data feed: (DeepDOM) | installation-and-first-configuration-12.png]
+[SCREENSHOT: Installation and First Configuration — Step 12 – Connecting Feed: This connects DeepDom to your live market data feed: (DeepDOM) | dd-en-installation-and-first-configuration-12.png]
 
 #### Step 13 – Open Your First Heatmap
 
@@ -123,11 +123,11 @@ Go to New
 
 Select an Instrument from the list
 
-[SCREENSHOT: Installation and First Configuration — Step 13 – Open Your First Heatmap (DeepDOM) | installation-and-first-configuration-13.png]
+[SCREENSHOT: Installation and First Configuration — Step 13 – Open Your First Heatmap (DeepDOM) | dd-en-installation-and-first-configuration-13.png]
 
 Your Heatmap will open and begin displaying live data
 
-[SCREENSHOT: Installation and First Configuration — Step 13 – Open Your First Heatmap (DeepDOM) | installation-and-first-configuration-14.png]
+[SCREENSHOT: Installation and First Configuration — Step 13 – Open Your First Heatmap (DeepDOM) | dd-en-installation-and-first-configuration-14.png]
 
 ## Conclusion
 

@@ -61,7 +61,7 @@ These are suggestions, not defaults — adjust to your market and style:
 - **Imbalances**: when the volume difference between bid and ask at a level exceeds your threshold, the cell is highlighted — one side clearly overpowered the other.
 - **Absorption and depletion**: heavy volume at a level with no price progress suggests passive orders absorbing the aggression; shrinking volume into an extreme suggests the move is running out of participants. For worked chart examples, see [[reading-a-footprint]].
 
-[SCREENSHOT: Zoomed view of two or three Deep Print candles with the Volume POC border, the value area highlight and one stacked imbalance annotated | deep-print-poc-value-area.png]
+[SCREENSHOT: Zoomed view of two or three Deep Print candles with the Volume POC border, the value area highlight and one stacked imbalance annotated | dc-en-deep-print-01.png]
 
 ## Settings reference
 
@@ -215,7 +215,7 @@ Grouped exactly as in the indicator dialog.
 
 Deep Print supports up to 4 simultaneous columns per candle, each showing a different reading side by side — for example Bid×Ask, Delta and Volume at once. To set it up: add multiple Deep Print indicators to the chart, open each one's settings, go to **Sizing → Multi Column**, set the column quantity, assign each indicator a unique position, and customize each independently.
 
-[SCREENSHOT: Deep Print settings dialog open at the Sizing section with Multi Column configured, next to a chart showing a candle rendered as three side-by-side columns (Bid×Ask, Delta, Volume) | deep-print-multi-column.png]
+[SCREENSHOT: Deep Print settings dialog open at the Sizing section with Multi Column configured, next to a chart showing a candle rendered as three side-by-side columns (Bid×Ask, Delta, Volume) | dc-en-deep-print-02.png]
 
 ## Tips and common mistakes
 

@@ -28,16 +28,16 @@ If you are not sure why contracts roll in the first place, read [[understanding-
 2. Disconnect from your data feed.
 3. Go to **Options → Symbols Rollover**.
 
-[SCREENSHOT: The Options menu open on the main DeepCharts bar with the Symbols Rollover entry highlighted | options-menu-symbols-rollover.png]
+[SCREENSHOT: The Options menu open on the main DeepCharts bar with the Symbols Rollover entry highlighted | dc-en-symbol-rollover-01.png]
 
 4. The **Manage Rollover** window opens. It has two panes: **Contracts in Roll-window** (symbols that are due to roll) and **Contracts Rolled** (symbols that have already been rolled).
 
-[SCREENSHOT: The Manage Rollover window showing both panes — Contracts in Roll-window with at least one symbol listed, and Contracts Rolled — with the Perform Rollover and Perform Rollback buttons visible | manage-rollover-window.png]
+[SCREENSHOT: The Manage Rollover window showing both panes — Contracts in Roll-window with at least one symbol listed, and Contracts Rolled — with the Perform Rollover and Perform Rollback buttons visible | dc-en-symbol-rollover-02.png]
 
 5. Click the symbol you want to roll in the **Contracts in Roll-window** pane.
 6. Press **Perform Rollover**. The symbol moves to the new contract month.
 
-[SCREENSHOT: The Manage Rollover window immediately after a rollover, with the rolled symbol now listed in the Contracts Rolled pane | manage-rollover-after-rollover.png]
+[SCREENSHOT: The Manage Rollover window immediately after a rollover, with the rolled symbol now listed in the Contracts Rolled pane | dc-en-symbol-rollover-03.png]
 
 ### If you rolled the wrong symbol
 

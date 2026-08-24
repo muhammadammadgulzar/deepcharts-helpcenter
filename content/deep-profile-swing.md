@@ -37,7 +37,7 @@ If profile anatomy is new to you, explore the live histogram below first — hov
 4. In **General settings**, set **VBP Type** to **Volume** and **Display Mode** to **Profile And Lines**.
 5. Apply — each detected swing now carries its own profile.
 
-[SCREENSHOT: Chart with Deep Profile Swing active showing separate volume histograms drawn over three consecutive price swings, with swing level lines extending right | deep-profile-swing-on-chart.png]
+[SCREENSHOT: Chart with Deep Profile Swing active showing separate volume histograms drawn over three consecutive price swings, with swing level lines extending right | dc-en-deep-profile-swing-01.png]
 
 If the chart gets crowded, switch **Display Mode** to **Lines Only** — you keep the key levels and lose the histograms.
 
@@ -88,7 +88,7 @@ Applied when **Length Type** = **VWAP**:
 | **Swing Max Ticks** | Maximum ticks before the current swing closes and a new one starts — prevents one enormous move being treated as a single swing |
 | **VWAP Break Ticks** | Ticks needed to confirm a VWAP break within the swing; once exceeded, the current swing VWAP stops plotting |
 
-[SCREENSHOT: Deep Profile Swing settings dialog open at Main Swing Settings with the Swing Type dropdown expanded showing the four detection methods | deep-profile-swing-settings.png]
+[SCREENSHOT: Deep Profile Swing settings dialog open at Main Swing Settings with the Swing Type dropdown expanded showing the four detection methods | dc-en-deep-profile-swing-02.png]
 
 ## Tips and common mistakes
 

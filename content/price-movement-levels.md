@@ -18,7 +18,7 @@ It turns "the market is up a lot today" into a measurable statement: price is at
 
 Price Movement Levels is a grid-based levels indicator. It selects a reference price, then calculates levels above and below it using your chosen spacing — percentage-based (**Percentual** mode) or fixed value steps. Levels above the base plot as resistance, levels below as support, and a zero line marks the reference anchor itself. It answers the question "how far has price moved from its reference, and where are the next structured levels?"
 
-[SCREENSHOT: Intraday chart with Price Movement Levels applied — the zero line at the session's reference price with percentage-labeled levels stacked above (resistance color) and below (support color), price trading between the first and second upper levels | price-movement-levels-chart-overview.png]
+[SCREENSHOT: Intraday chart with Price Movement Levels applied — the zero line at the session's reference price with percentage-labeled levels stacked above (resistance color) and below (support color), price trading between the first and second upper levels | dc-en-price-movement-levels-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ Price Movement Levels is a grid-based levels indicator. It selects a reference p
 5. Set **Step mode** to **Percentual** and choose a **Step value** that gives usable spacing on your instrument; widen the step if the grid crowds your chart.
 6. Give the **Support Line**, **Resistance Line** and **Zero Line** distinct colors so the three roles read instantly, then apply.
 
-[SCREENSHOT: Price Movement Levels settings dialog showing the Chart Area options, General settings (Days to load, Level based on, Step mode, Step value, Font size, Text color, Minimum levels), and the Support Line, Resistance Line, Zero Line and Custom Time Session groups | price-movement-levels-settings-dialog.png]
+[SCREENSHOT: Price Movement Levels settings dialog showing the Chart Area options, General settings (Days to load, Level based on, Step mode, Step value, Font size, Text color, Minimum levels), and the Support Line, Resistance Line, Zero Line and Custom Time Session groups | dc-en-price-movement-levels-02.png]
 
 ## How to read it
 

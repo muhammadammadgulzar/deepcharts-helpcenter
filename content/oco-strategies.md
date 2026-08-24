@@ -30,7 +30,7 @@ The bracket controls live on the chart trading panel — get familiar with it be
 
 2. Enable the **OCO Strategy** checkbox. The OCO block below it becomes active.
 
-[SCREENSHOT: Trading panel with the OCO Strategy checkbox enabled, showing the Mode dropdown, SL and TP tick fields, BE and Trail toggles, and the Server/Client radio buttons | oco-block-enabled.png]
+[SCREENSHOT: Trading panel with the OCO Strategy checkbox enabled, showing the Mode dropdown, SL and TP tick fields, BE and Trail toggles, and the Server/Client radio buttons | dc-en-oco-strategies-01.png]
 
 3. Pick a mode in the **Mode** dropdown. **SL/TP** covers simple, single-contract exits; **MULTI** builds named multi-bracket strategies for scaling out. The steps below cover SL/TP; the Multi workflow is in the branch further down.
 
@@ -46,7 +46,7 @@ The bracket controls live on the chart trading panel — get familiar with it be
 
 6. Place your entry order as usual (button grid or the [[dom-trading-chart|on-chart DOM ladder]]). The stop and target are attached automatically; when one fills, the other cancels.
 
-[SCREENSHOT: Chart showing a filled entry with its attached OCO bracket — stop order below and target limit above the position price | oco-bracket-on-chart.png]
+[SCREENSHOT: Chart showing a filled entry with its attached OCO bracket — stop order below and target limit above the position price | dc-en-oco-strategies-02.png]
 
 ### If you scale out with multiple contracts (Multi mode)
 
@@ -58,7 +58,7 @@ The bracket controls live on the chart trading panel — get familiar with it be
 
 Worked example — three contracts: one Stop at 12 ticks covering the full position, three Targets at 8, 12 and 20 ticks (one contract each), with the stop moving to breakeven after Target 2 fills.
 
-[SCREENSHOT: The Oco Strategy editor showing a named three-contract strategy with one Stop bracket at 12 ticks and three Target brackets at 8, 12 and 20 ticks, the Move BE option set on the second target, and the Add bracket and Save buttons | oco-multi-strategy-editor.png]
+[SCREENSHOT: The Oco Strategy editor showing a named three-contract strategy with one Stop bracket at 12 ticks and three Target brackets at 8, 12 and 20 ticks, the Move BE option set on the second target, and the Add bracket and Save buttons | dc-en-oco-strategies-03.png]
 
 > **Note:** A **green checkmark** next to the selected strategy means its total quantity matches the panel's **Qty** field. A **red (!)** means they differ — execution is blocked until you change the panel Qty or edit the strategy so they match.
 
@@ -70,7 +70,7 @@ Open positions display interactive **Stop Loss (SL)** and **Target Price (TP)** 
 
 Click **Link pending orders** at the bottom of the OCO block. A window opens where you select the two pending orders — your take-profit and your stop — and links them retroactively into an OCO pair, so one cancels the other.
 
-[SCREENSHOT: The Link pending orders window listing the account's pending orders with a take-profit limit and a stop order selected for linking | oco-link-pending-orders.png]
+[SCREENSHOT: The Link pending orders window listing the account's pending orders with a take-profit limit and a stop order selected for linking | dc-en-oco-strategies-04.png]
 
 ## Verify it worked
 

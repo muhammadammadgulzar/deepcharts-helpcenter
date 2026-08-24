@@ -24,11 +24,11 @@ Two different things live under "subscriptions", and they behave differently: yo
 
 2. Open the **Subscriptions** page. It lists everything your account owns: your DeepCharts platform license, any courses or bootcamps, and a **Data Feeds** section with a card for each feed provider (dxFeed and Rithmic).
 
-[SCREENSHOT: my.deepcharts.com Subscriptions page after login showing the platform license entry and the Data Feeds section with the dxFeed and Rithmic cards | dashboard-subscriptions-overview.png]
+[SCREENSHOT: my.deepcharts.com Subscriptions page after login showing the platform license entry and the Data Feeds section with the dxFeed and Rithmic cards | dc-en-manage-subscriptions-01.png]
 
 3. Review each entry. Each data feed card shows your feed **username and password** (the credentials you enter in DeepCharts — see [[connect-data-feed]]), an **Add Exchange** button, and the subscription status controls.
 
-[SCREENSHOT: A data feed card on the Subscriptions page with the username/password fields (values redacted), the Add Exchange button and the subscription status control all visible | dashboard-feed-card-controls.png]
+[SCREENSHOT: A data feed card on the Subscriptions page with the username/password fields (values redacted), the Add Exchange button and the subscription status control all visible | dc-en-manage-subscriptions-02.png]
 
 > **Note:** The dashboard interface is currently available in English and Italian — the language switch is at the bottom of the page.
 
@@ -36,7 +36,7 @@ Two different things live under "subscriptions", and they behave differently: yo
 
 1. On the feed card, click **Add Exchange**. A list of purchasable data products opens — each exchange is offered as **Top of Book** or **Market Depth**, and a CME bundle is available. Current prices are shown live on that page, so it is always the authoritative place to check what a product costs.
 
-[SCREENSHOT: The Add Exchange page opened from a feed card, showing the list of exchanges with Top of Book and Market Depth options and the CME bundle entry | dashboard-add-exchange-list.png]
+[SCREENSHOT: The Add Exchange page opened from a feed card, showing the list of exchanges with Top of Book and Market Depth options and the CME bundle entry | dc-en-manage-subscriptions-03.png]
 
 2. Select the products you need and complete the payment — [[buy-data-feed]] explains how to choose between Top of Book and Market Depth.
 
@@ -46,7 +46,7 @@ Two different things live under "subscriptions", and they behave differently: yo
 
 1. On the feed card, set the subscription status to **Pending Cancel**.
 
-[SCREENSHOT: A data feed card with the status control open and Pending Cancel selected | dashboard-feed-pending-cancel.png]
+[SCREENSHOT: A data feed card with the status control open and Pending Cancel selected | dc-en-manage-subscriptions-04.png]
 
 2. Understand what the two statuses mean:
 
@@ -69,7 +69,7 @@ Platform licenses do not auto-renew, so there is no cancellation switch to flip.
 
 1. On the Subscriptions page, click **Edit data**. This form holds the billing information that is sent to the data feed provider to run your feed account: name, phone, address, country, postal code, date of birth, and the **Company** and **Professional user** checkboxes.
 
-[SCREENSHOT: The Edit data form on the Subscriptions page showing the personal/billing fields and the Professional user checkbox | dashboard-edit-data-form.png]
+[SCREENSHOT: The Edit data form on the Subscriptions page showing the personal/billing fields and the Professional user checkbox | dc-en-manage-subscriptions-05.png]
 
 > **Warning:** Leave **Professional user** unchecked unless you genuinely qualify as a professional (you trade other people's funds, work as a trader for an institution, or represent an investment firm). Professional classification makes the same market data substantially more expensive, and switching back takes effect only after the current feed period expires.
 

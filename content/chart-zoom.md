@@ -38,12 +38,12 @@ By default, Windows only delivers mouse-wheel events to the window that currentl
 1. Open **Windows Settings → Bluetooth & devices → Mouse**.
 2. Turn on **Scroll inactive windows when hovering over them**.
 
-[SCREENSHOT: Windows Settings, Bluetooth & devices > Mouse page with the "Scroll inactive windows when hovering over them" toggle switched On and highlighted | windows-mouse-scroll-inactive-windows.png]
+[SCREENSHOT: Windows Settings, Bluetooth & devices > Mouse page with the "Scroll inactive windows when hovering over them" toggle switched On and highlighted | dc-en-chart-zoom-01.png]
 
 3. Restart DeepCharts.
 4. Hover the mouse over a chart and scroll — the time scale should zoom. Hold **Alt** and scroll to confirm the price scale zooms too.
 
-[SCREENSHOT: DeepCharts chart window mid-zoom, with the cursor over the candles and the time axis visibly compressed compared to a second state — before/after of a mouse-wheel zoom | chart-mouse-wheel-zoom.png]
+[SCREENSHOT: DeepCharts chart window mid-zoom, with the cursor over the candles and the time axis visibly compressed compared to a second state — before/after of a mouse-wheel zoom | dc-en-chart-zoom-02.png]
 
 ## If that didn't work
 
@@ -54,7 +54,7 @@ If the time axis zooms but the price axis does not respond (or snaps back), the 
 1. Right-click the price scale (the Y-axis on the right edge of the chart).
 2. Review the scale options in the menu and confirm the scale mode is correct for how you want the chart to behave. [CONFIRM: exact price-scale right-click option names that affect zoom behavior]
 
-[SCREENSHOT: Right-click context menu open on the chart's Y-axis price scale showing the available scale options | price-scale-right-click-menu.png]
+[SCREENSHOT: Right-click context menu open on the chart's Y-axis price scale showing the available scale options | dc-en-chart-zoom-03.png]
 
 See [[price-chart-settings]] for the full chart settings reference.
 

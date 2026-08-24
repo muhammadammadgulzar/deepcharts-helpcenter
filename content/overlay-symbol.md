@@ -34,7 +34,7 @@ If you need the overlaid instrument on a *different* timeframe or chart type tha
 5. If the two instruments trade at different price levels, enable **Use sec. axis** so the overlay gets its own price scale.
 6. Apply the settings. Changing the main chart's timeframe now updates the overlay automatically.
 
-[SCREENSHOT: Main chart with Overlay Symbol active — a second instrument's candles rendered in chart area 1 on a secondary axis, timeframe matching the main chart | overlay-symbol-on-chart.png]
+[SCREENSHOT: Main chart with Overlay Symbol active — a second instrument's candles rendered in chart area 1 on a secondary axis, timeframe matching the main chart | dc-en-overlay-symbol-01.png]
 
 ## How to read it
 
@@ -48,7 +48,7 @@ With **Color based on Delta** enabled, the overlay candles are colored by net ag
 
 ## Settings reference
 
-[SCREENSHOT: Overlay Symbol settings window showing the General section with the Select field and the Volume/Delta section with Width based on volume, Color based on Delta, % Max Width Based on Volume, Border based on Open/close, Delta input, Color mode and Std. dev. for coloring | overlay-symbol-settings.png]
+[SCREENSHOT: Overlay Symbol settings window showing the General section with the Select field and the Volume/Delta section with Width based on volume, Color based on Delta, % Max Width Based on Volume, Border based on Open/close, Delta input, Color mode and Std. dev. for coloring | dc-en-overlay-symbol-02.png]
 
 ### General
 

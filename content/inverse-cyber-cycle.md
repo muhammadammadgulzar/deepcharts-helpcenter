@@ -22,7 +22,7 @@ The indicator answers the question: where is price within its current cycle, and
 
 Both lines oscillate around a configurable middle level (typically zero), with upper and lower threshold levels marking extreme positive and extreme negative cycle conditions.
 
-[SCREENSHOT: Price chart with the Inverse Cyber Cycle in a lower panel, showing Cycle A and Cycle B in contrasting colors crossing near a swing low, with the middle, high and low level lines visible | inverse-cyber-cycle-on-chart.png]
+[SCREENSHOT: Price chart with the Inverse Cyber Cycle in a lower panel, showing Cycle A and Cycle B in contrasting colors crossing near a swing low, with the middle, high and low level lines visible | dc-en-inverse-cyber-cycle-01.png]
 
 ## When to use it
 
@@ -39,7 +39,7 @@ Both lines oscillate around a configurable middle level (typically zero), with u
 4. Click the gear icon next to the indicator to open its settings.
 5. As a starting point, keep the default cycle lengths and smoothing, and set the **High Level** and **Low Level** symmetrically around the middle line so extremes are flagged on both sides.
 
-[SCREENSHOT: Inverse Cyber Cycle settings dialog open, showing the Smoothing Alpha field, Cycle A Length and Cycle B Length parameters, and the Middle/Low/High level settings | inverse-cyber-cycle-settings.png]
+[SCREENSHOT: Inverse Cyber Cycle settings dialog open, showing the Smoothing Alpha field, Cycle A Length and Cycle B Length parameters, and the Middle/Low/High level settings | dc-en-inverse-cyber-cycle-02.png]
 
 ## How to read it
 

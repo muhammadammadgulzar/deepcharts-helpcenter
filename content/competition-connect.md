@@ -25,7 +25,7 @@ Because V-Sim executes trades against real-time market conditions, the free 15-m
 
 2. Select **Contest** in the sidebar.
 
-[SCREENSHOT: DeepCharts dashboard with the Contest entry highlighted in the sidebar and an active competition card visible | dashboard-contest-tab.png]
+[SCREENSHOT: DeepCharts dashboard with the Contest entry highlighted in the sidebar and an active competition card visible | dc-en-competition-connect-01.png]
 
 3. Find the active competition and click **Join Competition**. You can review the competition rules first via the rules link on the same page.
 
@@ -33,7 +33,7 @@ Because V-Sim executes trades against real-time market conditions, the free 15-m
 
 5. Click **See Credentials**. Note the four values shown: **Username**, **Password**, **Feed Source** (V-Sim) and your competition **Account ID**.
 
-[SCREENSHOT: Contest page after joining, showing the See Credentials button and the credentials panel with username, password, feed source V-Sim and account ID visible (values redacted) | contest-credentials.png]
+[SCREENSHOT: Contest page after joining, showing the See Credentials button and the credentials panel with username, password, feed source V-Sim and account ID visible (values redacted) | dc-en-competition-connect-02.png]
 
 > **Note:** Credentials appear only once the competition has started. If you registered but see no credentials yet, wait for the start date.
 
@@ -44,13 +44,13 @@ Because V-Sim executes trades against real-time market conditions, the free 15-m
    - **Feed Source** — select **V-Sim**. This is the critical field; V-Sim sits in the same dropdown as Rithmic and dxFeed.
    - **Username** and **Password** — from the credentials panel in step 5.
 
-[SCREENSHOT: Feed Settings dialog with Feed Source set to V-Sim and the contest username entered | feed-settings-vsim.png]
+[SCREENSHOT: Feed Settings dialog with Feed Source set to V-Sim and the contest username entered | dc-en-competition-connect-03.png]
 
 8. Click **Save** and close the Feed Settings window.
 
 9. In **Select Connection**, connect the contest feed — and make sure your data feed is **also** connected. Both must show green dots at the same time; you can hold multiple connections simultaneously (see [[manage-feed-connections]]).
 
-[SCREENSHOT: Select Connection dropdown with both the V-Sim contest connection and a live data feed connection showing green dots | contest-and-datafeed-green.png]
+[SCREENSHOT: Select Connection dropdown with both the V-Sim contest connection and a live data feed connection showing green dots | dc-en-competition-connect-04.png]
 
 10. Open **Options → Symbol Manage** and confirm every exchange is routed to your **data feed, not the V-Sim contest account**. If Symbol Manage points at V-Sim, charts show no data because the contest account carries none. Try the interactive mock below — click the chain-link icon on a row to cycle its mapped feed. See [[symbol-manage]].
 

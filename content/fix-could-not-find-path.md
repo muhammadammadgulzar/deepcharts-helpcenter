@@ -30,7 +30,7 @@ Restart DeepCharts completely so it regenerates the missing directories:
 1. Close DeepCharts.
 2. Verify no DeepCharts process is still running in the background: open **Task Manager**, look for DeepCharts in the process list, and if it is there, right-click it and choose **End Task**.
 
-[SCREENSHOT: Windows Task Manager processes list with the DeepCharts process selected and the right-click End Task option visible | task-manager-end-task-deepcharts.png]
+[SCREENSHOT: Windows Task Manager processes list with the DeepCharts process selected and the right-click End Task option visible | dc-en-fix-could-not-find-path-01.png]
 
 3. Reopen DeepCharts — it automatically regenerates the required directories on startup.
 4. Load the affected chart again. The error should now be resolved.

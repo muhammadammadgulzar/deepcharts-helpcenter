@@ -17,7 +17,7 @@ While installing DeepCharts on Windows, some users hit an error dialog that read
 - The DeepCharts installer stops with an **Installation Setup Failed** error window.
 - The error window includes a **Log File** button that opens a detailed log of what failed.
 
-[SCREENSHOT: The Installation Setup Failed error dialog during DeepCharts installation with the Log File button visible and highlighted | installation-setup-failed-dialog.png]
+[SCREENSHOT: The Installation Setup Failed error dialog during DeepCharts installation with the Log File button visible and highlighted | dc-en-installation-setup-failed-01.png]
 
 Not to be confused with:
 
@@ -32,7 +32,7 @@ A required system component is missing or incompatible — most commonly the Mic
 
 1. Click the **Log File** button in the installation error window and review the logged details — they identify the cause of the failure. Keep this file; support will ask for it if you need help later.
 
-[SCREENSHOT: The installer log file open in Notepad with the failure lines near the end of the log visible | installer-log-file-notepad.png]
+[SCREENSHOT: The installer log file open in Notepad with the failure lines near the end of the log visible | dc-en-installation-setup-failed-02.png]
 
 2. Download and install the latest **Microsoft Visual C++ Redistributable** for your system architecture — DeepCharts requires the latest version to function correctly:
 
@@ -53,7 +53,7 @@ DeepCharts and its dependencies require the Windows system language to be set to
 
 1. Open **Windows Settings → Time & Language → Language** and set the Windows display and system language to **English**.
 
-[SCREENSHOT: Windows Settings Time & Language page with the Windows display language dropdown open and English selected | windows-language-english-setup.png]
+[SCREENSHOT: Windows Settings Time & Language page with the Windows display language dropdown open and English selected | dc-en-installation-setup-failed-03.png]
 
 2. Restart your PC.
 3. Run the DeepCharts installer again.

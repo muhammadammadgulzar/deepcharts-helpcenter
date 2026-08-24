@@ -19,9 +19,9 @@ Select Show Orders from the dropdown menu
 
 The Orders Window will open, displaying your current orders
 
-[SCREENSHOT: Orders Window — How to Open the Orders Window (DeepDOM) | orders-window-deepdom-01.png]
+[SCREENSHOT: Orders Window — How to Open the Orders Window (DeepDOM) | dd-en-orders-window-deepdom-01.png]
 
-[SCREENSHOT: Orders Window — How to Open the Orders Window (DeepDOM) | orders-window-deepdom-02.png]
+[SCREENSHOT: Orders Window — How to Open the Orders Window (DeepDOM) | dd-en-orders-window-deepdom-02.png]
 
 ## Conclusion
 

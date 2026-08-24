@@ -38,7 +38,7 @@ Watch a live ladder in action below — buy liquidity stacks green below the mar
 4. Set the order quantity in the field at the bottom of the DOM.
 5. Set the order-type menu (the **A** menu) to **Automatic** — order types are then chosen by where you click (see the table below).
 
-[SCREENSHOT: New menu open with Book submenu and ADV DOM highlighted, Select Instrument dialog visible behind it | new-book-adv-dom.png]
+[SCREENSHOT: New menu open with Book submenu and ADV DOM highlighted, Select Instrument dialog visible behind it | dc-en-depth-of-market-01.png]
 
 > **Note:** The DOM needs Level 2 (depth) data from your feed to populate the bid and ask ladders. With Level 1 data only the best bid/ask is available.
 
@@ -71,7 +71,7 @@ With **Automatic** selected in the **A** menu, click position decides the order 
 
 Working orders are managed on the ladder itself: **left-click and drag** to move an order, **right-click** to delete it, **double left-click** to modify its quantity.
 
-[SCREENSHOT: DOM ladder with a working buy limit order in the B column being dragged to a lower price row, cursor visible mid-drag | adv-dom-drag-order.png]
+[SCREENSHOT: DOM ladder with a working buy limit order in the B column being dragged to a lower price row, cursor visible mid-drag | dc-en-depth-of-market-02.png]
 
 ### Optional analysis columns
 
@@ -81,7 +81,7 @@ Right-click the column header row to enable more columns (or auto-resize the exi
 - **Trades** (**BT** / **AT**) — executed volume per level: BT is volume sold at market (hitting the bid), AT is volume bought at market (lifting the ask).
 - **Offers** — the count of individual orders resting at each bid and ask level.
 
-[SCREENSHOT: Column header right-click menu open over the Advanced DOM showing the list of additional columns including Pull/Stack, Trades and Offers with checkmarks | adv-dom-column-menu.png]
+[SCREENSHOT: Column header right-click menu open over the Advanced DOM showing the list of additional columns including Pull/Stack, Trades and Offers with checkmarks | dc-en-depth-of-market-03.png]
 
 ### Profiles
 

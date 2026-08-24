@@ -38,7 +38,7 @@ Explore the running total below — hover the bars to see each candle's delta be
 5. Enable **Reset to Start Session** so the accumulation restarts each trading session and today's reading is not polluted by yesterday's total.
 6. Under **Subgraphs**, choose the **Candlestick** style and colors that match your chart, then apply.
 
-[SCREENSHOT: Delta Cumulative Candlestick settings dialog showing the Input Data dropdown open with Volumes, Order and Aggregates Trades options, plus Filter Min, Filter Max, Reset to Start Session, Average and Zero Line settings | delta-cumulative-candlestick-settings.png]
+[SCREENSHOT: Delta Cumulative Candlestick settings dialog showing the Input Data dropdown open with Volumes, Order and Aggregates Trades options, plus Filter Min, Filter Max, Reset to Start Session, Average and Zero Line settings | dc-en-delta-cumulative-candlestick-01.png]
 
 ## How to read it
 

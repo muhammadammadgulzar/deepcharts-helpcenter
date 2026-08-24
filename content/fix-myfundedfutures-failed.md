@@ -17,7 +17,7 @@ When connecting your prop-firm dxFeed account, the connection fails with:
 
 **dxfeed.myfundedfutures.com failed: You need to sign the datafeed**
 
-[SCREENSHOT: The connection error dialog showing the full "dxfeed.myfundedfutures.com failed: You need to sign the datafeed" message | myfundedfutures-sign-datafeed-error.png]
+[SCREENSHOT: The connection error dialog showing the full "dxfeed.myfundedfutures.com failed: You need to sign the datafeed" message | dc-en-fix-myfundedfutures-failed-01.png]
 
 The hostname in this example belongs to MyFundedFutures; if your account is with a different dxFeed prop firm, the hostname in the message may differ, but the meaning and the fix are the same.
 
@@ -44,7 +44,7 @@ If you need to re-enter the connection details while reconnecting, try the live 
 
 [WIDGET: feed-navigator]
 
-[SCREENSHOT: The feed connection showing a successful (green) status after the agreement was activated and DeepCharts was restarted | myfundedfutures-feed-connected-green.png]
+[SCREENSHOT: The feed connection showing a successful (green) status after the agreement was activated and DeepCharts was restarted | dc-en-fix-myfundedfutures-failed-02.png]
 
 ## If that didn't work
 

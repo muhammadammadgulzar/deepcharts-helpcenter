@@ -18,7 +18,7 @@ The idea is Wyckoff's effort versus result made mechanical — every leg of the 
 
 Volume Swing is a comprehensive volume-and-structure tool. The ZigZag identifies swings (by absolute price reversal or by tick reversal), and up to four configurable labels per swing show metrics such as volume, delta volume, delta trade, volume per tick and extension. Two markers are calculated automatically: **NOE** (No Effort — a move lacking the volume to support it) and **NOR** (No Result — heavy volume that failed to move price). A trend detector adds colored background bands at your chosen sensitivity.
 
-[SCREENSHOT: Chart window with Volume Swing applied — ZigZag lines connecting swing highs and lows, per-swing labels showing volume and delta values, one swing tagged NOE and another tagged NOR, with trend background bands visible | volume-swing-chart-overview.png]
+[SCREENSHOT: Chart window with Volume Swing applied — ZigZag lines connecting swing highs and lows, per-swing labels showing volume and delta values, one swing tagged NOE and another tagged NOR, with trend background bands visible | dc-en-volume-swing-01.png]
 
 ## When to use it
 
@@ -37,7 +37,7 @@ Volume Swing is a comprehensive volume-and-structure tool. The ZigZag identifies
 6. In **Label Settings**, enable the **First Label** with **Volume** and the **Second Label** with **Delta volume** — two metrics per swing is plenty while learning.
 7. Optionally enable the **Trend Detector** on **Medium** sensitivity, then apply.
 
-[SCREENSHOT: Volume Swing settings dialog open at the ZigZag Settings section — ZigZag Mode dropdown showing Absolute Reversal and Tick Reversal, with the Zig Zag Rev. & Absolute and Zig Zag Tick Rev. fields plus Color Up/Down and Line Width below | volume-swing-settings-zigzag.png]
+[SCREENSHOT: Volume Swing settings dialog open at the ZigZag Settings section — ZigZag Mode dropdown showing Absolute Reversal and Tick Reversal, with the Zig Zag Rev. & Absolute and Zig Zag Tick Rev. fields plus Color Up/Down and Line Width below | dc-en-volume-swing-02.png]
 
 ## How to read it
 

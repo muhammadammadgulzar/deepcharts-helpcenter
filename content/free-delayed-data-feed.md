@@ -24,11 +24,11 @@ Everything you see on this feed is 15 minutes behind the live market. That makes
 
 1. On the wizard's datafeed step, select **I want to use 15 minutes delayed data powered by dxFeed for the moment** and click **Next**.
 
-[SCREENSHOT: Startup Wizard datafeed step with the radio option I want to use 15 minutes delayed data powered by dxFeed for the moment selected | wizard-delayed-feed-selected.png]
+[SCREENSHOT: Startup Wizard datafeed step with the radio option I want to use 15 minutes delayed data powered by dxFeed for the moment selected | dc-en-free-delayed-data-feed-01.png]
 
 2. On the **Symbol Manage** step, review the table mapping each exchange to the delayed feed. The wizard pre-maps the main futures exchanges (CME, CBOT, COMEX, EUREX, NYMEX and others) for you — you can leave it as is. Click **Next**, finish the customize step, and click **Done**.
 
-[SCREENSHOT: Startup Wizard Symbol Manage step showing the Exchange, Description and Data Feed columns with rows mapped to the delayed dxFeed connection | wizard-symbol-manage-delayed.png]
+[SCREENSHOT: Startup Wizard Symbol Manage step showing the Exchange, Description and Data Feed columns with rows mapped to the delayed dxFeed connection | dc-en-free-delayed-data-feed-02.png]
 
 You are done — skip to Verify it worked below.
 
@@ -36,7 +36,7 @@ You are done — skip to Verify it worked below.
 
 1. Click the **Feed** selector on the main bar and choose **Feed Settings**.
 
-[SCREENSHOT: Feed selector dropdown on the main bar with the Feed Settings item highlighted | feed-selector-feed-settings.png]
+[SCREENSHOT: Feed selector dropdown on the main bar with the Feed Settings item highlighted | dc-en-free-delayed-data-feed-03.png]
 
 2. Click **Add Connection**.
 
@@ -61,7 +61,7 @@ You are done — skip to Verify it worked below.
 - The **Feed** selector shows your delayed connection with a **green** dot.
 - A price chart builds and updates — during market hours the prices you see are roughly 15 minutes behind the live market, and the platform flags the data as delayed rather than real time. [CONFIRM: exact wording and placement of the delayed-data banner shown with the 15-minute feed]
 
-[SCREENSHOT: A price chart receiving data from the delayed feed with the delayed-data indication visible and the green feed dot in the main bar | delayed-feed-chart-running.png]
+[SCREENSHOT: A price chart receiving data from the delayed feed with the delayed-data indication visible and the green feed dot in the main bar | dc-en-free-delayed-data-feed-04.png]
 
 > **Note:** What you give up versus a live feed: every price, DOM level and tape print arrives 15 minutes late, so timing-sensitive work (scalping practice against the current market, live trade decisions) is off the table. What still works fully: every window and indicator, chart layouts, replay, and paper trading on a SIM account — see [[simulation-accounts]]. When you outgrow it, a live feed drops in through the same Feed Settings dialog: [[buy-data-feed]].
 

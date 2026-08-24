@@ -35,7 +35,7 @@ It answers "which bigger candle does this price action belong to, where are that
 6. Optionally switch on **Target enabled** in the Range Target group to project each candle's high/low as lines, and **Enable Summary** to print per-candle volume data.
 7. Apply the settings.
 
-[SCREENSHOT: A 5-minute chart with Overlay Timeframe Highlight shading alternating hourly segments, projected high/low target lines extending right from the last completed hourly candle, and a volume summary printed above each segment | overlay-timeframe-highlight-chart.png]
+[SCREENSHOT: A 5-minute chart with Overlay Timeframe Highlight shading alternating hourly segments, projected high/low target lines extending right from the last completed hourly candle, and a volume summary printed above each segment | dc-en-overlay-timeframe-highlight-01.png]
 
 ## How to read it
 
@@ -46,7 +46,7 @@ It answers "which bigger candle does this price action belong to, where are that
 
 ## Settings reference
 
-[SCREENSHOT: Overlay Timeframe Highlight settings dialog showing all groups — Chart Area, General, Color, Plot, Range Target and Summary — with Target enabled and Enable Summary switched on | overlay-timeframe-highlight-settings.png]
+[SCREENSHOT: Overlay Timeframe Highlight settings dialog showing all groups — Chart Area, General, Color, Plot, Range Target and Summary — with Target enabled and Enable Summary switched on | dc-en-overlay-timeframe-highlight-02.png]
 
 ### Chart Area
 

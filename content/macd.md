@@ -43,7 +43,7 @@ Because it is built entirely from moving averages, MACD is a lagging indicator: 
 - **Histogram.** Each bar is the distance between the MACD and signal lines. Shrinking bars mean the move is losing momentum, and often precede a crossover by a few bars.
 - **Divergence.** Price prints a new high while MACD prints a lower high (or the mirror image at lows) — the move is running on less momentum and is more vulnerable to a reversal.
 
-[SCREENSHOT: Close-up of the MACD chart area showing the histogram shrinking into a signal-line crossover, with the crossover bar highlighted | macd-histogram-crossover.png]
+[SCREENSHOT: Close-up of the MACD chart area showing the histogram shrinking into a signal-line crossover, with the crossover bar highlighted | dc-en-macd-01.png]
 
 ## Settings reference
 
@@ -73,7 +73,7 @@ Open the dialog from the gear icon on the indicator's row in the **Indicators** 
 | **Line width** | Thickness of the lines. |
 | **Use secondary axis** | Plots the indicator against a secondary value axis. |
 
-[SCREENSHOT: The MACD settings dialog open on the Parameters section, showing Fast EMA Period 12, Slow EMA Period 26, the Input Data dropdown and the Smooth option | macd-settings-parameters.png]
+[SCREENSHOT: The MACD settings dialog open on the Parameters section, showing Fast EMA Period 12, Slow EMA Period 26, the Input Data dropdown and the Smooth option | dc-en-macd-02.png]
 
 ## Tips and common mistakes
 

@@ -20,7 +20,7 @@ Pivot Points is a classic levels indicator. At the start of each period it compu
 
 [CONFIRM: which pivot calculation variant DeepCharts uses to derive the pivot, R1/R2 and S1/S2 from the previous period's high, low and close]
 
-[SCREENSHOT: Intraday chart with Pivot Points applied — the central pivot line with R1 and R2 above and S1 and S2 below, each line labeled and in a distinct color, with price reacting near R1 | pivot-points-chart-overview.png]
+[SCREENSHOT: Intraday chart with Pivot Points applied — the central pivot line with R1 and R2 above and S1 and S2 below, each line labeled and in a distinct color, with price reacting near R1 | dc-en-pivot-points-01.png]
 
 ## When to use it
 
@@ -38,7 +38,7 @@ Pivot Points is a classic levels indicator. At the start of each period it compu
 5. Give the pivot, resistance and support lines distinct colors under the color settings, so you can tell R-levels from S-levels at a glance.
 6. Adjust **Font Size** (default 12.00) and **Line Width** (default 1.00) to taste, then apply.
 
-[SCREENSHOT: Pivot Points settings dialog showing Plot Settings (Font Size 12.00, Line Width 1.00, Line Style, Label Align, Period to Show 1), the Custom Reference - Timeframe section, the color settings for Pivot Point, R1, R2, S1, S2, and the Custom Time - Market Timezone section | pivot-points-settings-dialog.png]
+[SCREENSHOT: Pivot Points settings dialog showing Plot Settings (Font Size 12.00, Line Width 1.00, Line Style, Label Align, Period to Show 1), the Custom Reference - Timeframe section, the color settings for Pivot Point, R1, R2, S1, S2, and the Custom Time - Market Timezone section | dc-en-pivot-points-02.png]
 
 ## How to read it
 

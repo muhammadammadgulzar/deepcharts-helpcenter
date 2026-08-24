@@ -22,7 +22,7 @@ KST answers the question: is momentum turning across multiple timeframes at once
 
 The zero line separates bullish from bearish momentum bias. The indicator is widely credited to Martin Pring.
 
-[SCREENSHOT: Price chart with the KST indicator in a lower panel, KST and Signal lines in contrasting colors, a bullish KST-over-Signal crossover below the zero line highlighted | kst-on-chart.png]
+[SCREENSHOT: Price chart with the KST indicator in a lower panel, KST and Signal lines in contrasting colors, a bullish KST-over-Signal crossover below the zero line highlighted | dc-en-know-sure-thing-01.png]
 
 ## When to use it
 
@@ -39,7 +39,7 @@ The zero line separates bullish from bearish momentum bias. The indicator is wid
 4. Click the gear icon to open its settings.
 5. A widely used starting configuration is Martin Pring's classic setup: ROC lengths of 10, 15, 20 and 30, average lengths of 10, 10, 10 and 15, and a signal period of 9. Adjust from there for your timeframe.
 
-[SCREENSHOT: KST settings dialog open showing the General group with Use percent, the Average group with Average Type, Avg Length 1-4 and Signal Period, and the ROC group with ROC Length 1-4 | kst-settings-dialog.png]
+[SCREENSHOT: KST settings dialog open showing the General group with Use percent, the Average group with Average Type, Avg Length 1-4 and Signal Period, and the ROC group with ROC Length 1-4 | dc-en-know-sure-thing-02.png]
 
 ## How to read it
 

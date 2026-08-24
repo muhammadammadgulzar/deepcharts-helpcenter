@@ -17,7 +17,7 @@ The result is a smooth curve that hugs the trend more closely than a moving aver
 
 Linear Regression answers the question: if the last N bars were summarized by one straight line, where would that line be right now? Each bar, the indicator re-fits a least-squares line through the lookback window and plots its endpoint. Because the fit reacts to the trend's slope rather than lagging behind an average, the line turns faster at reversals while still smoothing bar-to-bar noise.
 
-[SCREENSHOT: A candlestick chart with the Linear Regression line plotted over price, tracking closely along an uptrend and curling over at the reversal | linear-regression-on-chart.png]
+[SCREENSHOT: A candlestick chart with the Linear Regression line plotted over price, tracking closely along an uptrend and curling over at the reversal | dc-en-linear-regression-01.png]
 
 ## When to use it
 
@@ -34,7 +34,7 @@ Linear Regression answers the question: if the last N bars were summarized by on
 4. Click the gear icon to open its settings.
 5. Starter configuration: leave **Input Data** on Close and **Length** at the default 21. Raise the length for a smoother, slower fit; lower it to track short swings.
 
-[SCREENSHOT: Linear Regression settings dialog showing the Parameters section with Input Data set to Close and Length = 21, and the Subgraph styling section below | linear-regression-settings.png]
+[SCREENSHOT: Linear Regression settings dialog showing the Parameters section with Input Data set to Close and Length = 21, and the Subgraph styling section below | dc-en-linear-regression-02.png]
 
 ## How to read it
 

@@ -17,7 +17,7 @@ You open it from the main bar: **Trading → Show Orders**.
 
 A single table of your orders per broker, with filters for order state. While the trading panel shows what is happening on one symbol right now, the Orders window shows everything the connection has done — which makes it the place to audit fills, review cancellations, and above all find working orders you may have forgotten about.
 
-[SCREENSHOT: The Orders window opened via Trading → Show Orders, showing the Broker dropdown at the top and a populated order list with a mix of executed and submitted orders | orders-window-overview.png]
+[SCREENSHOT: The Orders window opened via Trading → Show Orders, showing the Broker dropdown at the top and a populated order list with a mix of executed and submitted orders | dc-en-orders-window-01.png]
 
 ## When to use it
 
@@ -33,7 +33,7 @@ A single table of your orders per broker, with filters for order state. While th
 3. Pick a filter view: **Placed**, **Executed**, **Cancelled**, or **All**.
 4. To see only orders that are still active and unfilled, go to the **Status** section and choose **Submitted**.
 
-[SCREENSHOT: The Orders window with the Status filter set to Submitted, showing only active unfilled working orders in the list | orders-window-status-submitted.png]
+[SCREENSHOT: The Orders window with the Status filter set to Submitted, showing only active unfilled working orders in the list | dc-en-orders-window-02.png]
 
 ## How to read it
 

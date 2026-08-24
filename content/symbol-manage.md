@@ -23,7 +23,7 @@ By the end you will have every exchange you trade subscribed in Symbol Manage an
 
 2. Open **Options → Symbol Manage**.
 
-[SCREENSHOT: Options menu open in the DeepCharts main bar with the Symbol Manage entry highlighted | options-menu-symbol-manage.png]
+[SCREENSHOT: Options menu open in the DeepCharts main bar with the Symbol Manage entry highlighted | dc-en-symbol-manage-01.png]
 
 3. Open the **Subscribe List** tab. It lists the exchanges you are subscribed to, each with a **Data Feed** column showing which feed delivers it.
 
@@ -36,7 +36,7 @@ Try it live below — subscribe or unsubscribe an exchange, and click the chain-
 1. Check its **Data Feed** column. It must show the feed you want charts to load from.
 2. If it shows the wrong feed (or is blank), click the chain-link icon on that row and pick the correct feed from your saved connections.
 
-[SCREENSHOT: Subscribe List row with the chain-link change-feed icon clicked and the list of saved feed connections open for selection | symbol-manage-change-feed.png]
+[SCREENSHOT: Subscribe List row with the chain-link change-feed icon clicked and the list of saved feed connections open for selection | dc-en-symbol-manage-02.png]
 
 ### If your exchange is not listed
 
@@ -65,7 +65,7 @@ Select it in the Subscribe List and click **Unsubscribe**.
 - Open **New → Price Chart**. The instrument picker shows the exchanges you subscribed — it only ever lists subscribed exchanges, so if an exchange is missing here, it is not subscribed yet.
 - Pick a symbol from your feed's exchange: the chart draws candles and the price moves.
 
-[SCREENSHOT: New Price Chart instrument picker showing only the subscribed exchanges, with a symbol selected | instrument-picker-subscribed-exchanges.png]
+[SCREENSHOT: New Price Chart instrument picker showing only the subscribed exchanges, with a symbol selected | dc-en-symbol-manage-03.png]
 
 ## If something went wrong
 

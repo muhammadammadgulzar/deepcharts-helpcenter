@@ -42,7 +42,7 @@ The DeepCharts chart window divides itself into sections based on the number of 
 
 Assign both indicators the **same** area number. Any two or more indicators that share an area number render together in that pane. A common example is displaying Price and a Moving Average together in chart area 1, so the average draws directly on the price candles.
 
-[SCREENSHOT: Price chart with a Moving Average merged into chart area 1, drawn over the candles instead of in a separate pane | moving-average-merged-price.png]
+[SCREENSHOT: Price chart with a Moving Average merged into chart area 1, drawn over the candles instead of in a separate pane | dc-en-indicator-layout-01.png]
 
 ### If you want an indicator back in its own pane
 

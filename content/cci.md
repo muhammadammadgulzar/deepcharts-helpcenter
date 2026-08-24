@@ -32,7 +32,7 @@ CCI answers: is price unusually stretched away from its own average? A strongly 
 3. Click the gear icon on the indicator's row to open its settings.
 4. Set **Input Data** to Close and pick a **Period** — 14 or 20 are the common textbook starting points. Set the overbought and oversold levels to match your extreme zone; +100 and −100 are the classic convention.
 
-[SCREENSHOT: A chart with the CCI indicator in its own area below price, the line spiking above the overbought threshold line and rotating back toward zero | cci-on-chart.png]
+[SCREENSHOT: A chart with the CCI indicator in its own area below price, the line spiking above the overbought threshold line and rotating back toward zero | dc-en-cci-01.png]
 
 ## How to read it
 
@@ -79,7 +79,7 @@ Open the dialog from the gear icon on the indicator's row in the **Indicators** 
 | **Line style / Line width** | Rendering style and thickness of the lines. |
 | **Use secondary axis** | Plots the indicator against a secondary value axis. |
 
-[SCREENSHOT: The CCI settings dialog showing the General parameters with Input Data and Period, the Average section, and the Levels section with overbought, oversold and zero-line options | cci-settings-dialog.png]
+[SCREENSHOT: The CCI settings dialog showing the General parameters with Input Data and Period, the Average section, and the Levels section with overbought, oversold and zero-line options | dc-en-cci-02.png]
 
 ## Tips and common mistakes
 

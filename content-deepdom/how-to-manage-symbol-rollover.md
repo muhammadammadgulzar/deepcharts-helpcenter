@@ -25,13 +25,13 @@ The volume rollover happens earlier, when trading volume on the next contract ex
 
 ## Procedure to Perform Rollover in DeepDom
 
-[SCREENSHOT: How to Manage Symbol Rollover — Procedure to Perform Rollover in DeepDom (DeepDOM) | how-to-manage-symbol-rollover-01.png]
+[SCREENSHOT: How to Manage Symbol Rollover — Procedure to Perform Rollover in DeepDom (DeepDOM) | dd-en-how-to-manage-symbol-rollover-01.png]
 
 Go to Options > Symbol Rollover .
 
 Perform the rollover only for markets highlighted in the Symbol Rollover
 
-[SCREENSHOT: How to Manage Symbol Rollover — Procedure to Perform Rollover in DeepDom (DeepDOM) | how-to-manage-symbol-rollover-02.png]
+[SCREENSHOT: How to Manage Symbol Rollover — Procedure to Perform Rollover in DeepDom (DeepDOM) | dd-en-how-to-manage-symbol-rollover-02.png]
 
 Execute rollover for all related markets, including minor contracts such as MINI and MICRO .
 
@@ -41,7 +41,7 @@ After these steps, the contract expiration used by DeepDom for the selected symb
 
 ### Restoring a Previous Expiration
 
-[SCREENSHOT: How to Manage Symbol Rollover — Restoring a Previous Expiration (DeepDOM) | how-to-manage-symbol-rollover-03.png]
+[SCREENSHOT: How to Manage Symbol Rollover — Restoring a Previous Expiration (DeepDOM) | dd-en-how-to-manage-symbol-rollover-03.png]
 
 Disconnect your Feed and Close the Workspace
 
@@ -49,11 +49,11 @@ Go to Options > Symbol Management .
 
 Click the Expert Mode .
 
-[SCREENSHOT: How to Manage Symbol Rollover — Restoring a Previous Expiration (DeepDOM) | how-to-manage-symbol-rollover-04.png]
+[SCREENSHOT: How to Manage Symbol Rollover — Restoring a Previous Expiration (DeepDOM) | dd-en-how-to-manage-symbol-rollover-04.png]
 
 In the Symbol List (middle column), locate the markets with the incorrect expiration (MAJOR, MINI, MICRO).
 
-[SCREENSHOT: How to Manage Symbol Rollover — Restoring a Previous Expiration (DeepDOM) | how-to-manage-symbol-rollover-05.png]
+[SCREENSHOT: How to Manage Symbol Rollover — Restoring a Previous Expiration (DeepDOM) | dd-en-how-to-manage-symbol-rollover-05.png]
 
 Select the instrument with the wrong expiration and click Modify .
 

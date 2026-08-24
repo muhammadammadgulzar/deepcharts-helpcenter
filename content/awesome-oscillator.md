@@ -32,7 +32,7 @@ AO answers: which way is momentum leaning, and is it accelerating or fading? Whe
 3. Click the gear icon on the indicator's row to open its settings.
 4. Keep the defaults to start: **Average Type** Simple, **AO Length 1** 5, **AO Length 2** 34. Leave the slope-based auto-coloring on so rising and falling bars are colored differently.
 
-[SCREENSHOT: A chart with the Awesome Oscillator histogram in its own area below price, bars colored by slope, crossing from below to above the zero line during a rally | awesome-oscillator-on-chart.png]
+[SCREENSHOT: A chart with the Awesome Oscillator histogram in its own area below price, bars colored by slope, crossing from below to above the zero line during a rally | dc-en-awesome-oscillator-01.png]
 
 ## How to read it
 
@@ -41,7 +41,7 @@ AO answers: which way is momentum leaning, and is it accelerating or fading? Whe
 - **Twin peaks.** Two histogram peaks on the same side of zero, the second shallower than the first, warn that the push is weakening — a classic AO divergence pattern.
 - **Saucer.** A brief dip of falling bars followed by a resumption of rising bars, all on one side of zero, is a continuation cue in the direction of the prevailing momentum.
 
-[SCREENSHOT: Close-up of the AO chart area showing a twin-peaks pattern — two peaks above zero with the second one lower, followed by a cross under the zero line | awesome-oscillator-twin-peaks.png]
+[SCREENSHOT: Close-up of the AO chart area showing a twin-peaks pattern — two peaks above zero with the second one lower, followed by a cross under the zero line | dc-en-awesome-oscillator-02.png]
 
 ## Settings reference
 
@@ -81,7 +81,7 @@ Level line colors and width are customizable. AO values are measured in price un
 | **Background settings** | Background styling for the indicator's chart area. |
 | **Auto-center** | Includes the indicator in automatic centering of the chart area. |
 
-[SCREENSHOT: The Awesome Oscillator settings dialog showing Average Type Simple, AO Length 1 = 5, AO Length 2 = 34, and the subgraph section with the histogram style and slope auto-color option | awesome-oscillator-settings-dialog.png]
+[SCREENSHOT: The Awesome Oscillator settings dialog showing Average Type Simple, AO Length 1 = 5, AO Length 2 = 34, and the subgraph section with the histogram style and slope auto-color option | dc-en-awesome-oscillator-03.png]
 
 ## Tips and common mistakes
 

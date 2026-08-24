@@ -33,7 +33,7 @@ At each price level the indicator compares aggressive buying against aggressive 
 4. In the plot settings, pick distinct **Buy Color** and **Sell Color** values so buy-side and sell-side zones are unmistakable.
 5. Optionally enable alerts so new zones notify you with a sound and popup.
 
-[SCREENSHOT: A candlestick chart with the Imbalance Tracker active, showing a fresh buy-side imbalance zone extending right from a bullish impulse and a faded triggered zone above it | imbalance-tracker-zones-chart.png]
+[SCREENSHOT: A candlestick chart with the Imbalance Tracker active, showing a fresh buy-side imbalance zone extending right from a bullish impulse and a faded triggered zone above it | dc-en-imbalance-tracker-01.png]
 
 ## How to read it
 
@@ -73,7 +73,7 @@ For the underlying theory of aggressive buyers, sellers and delta, see [[orderfl
 | **Alert-Name** | Selects which notification sound plays. |
 | **Popup-message** | Customizes the text shown in the popup. |
 
-[SCREENSHOT: The Imbalance Tracker settings dialog showing the Imbalance Settings group with Minimum Imbalance %, Minimum Volume Diff, Include zero on imbalance and Min. Num. Of Consecutive Imb | imbalance-tracker-settings-dialog.png]
+[SCREENSHOT: The Imbalance Tracker settings dialog showing the Imbalance Settings group with Minimum Imbalance %, Minimum Volume Diff, Include zero on imbalance and Min. Num. Of Consecutive Imb | dc-en-imbalance-tracker-02.png]
 
 ## Tips and common mistakes
 

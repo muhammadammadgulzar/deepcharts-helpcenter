@@ -21,7 +21,7 @@ The Keltner Channel answers the question: how far is price from its volatility-a
 - **Keltner Up** — the upper band, the center line plus ATR multiplied by the ATR Multiplier.
 - **Keltner Down** — the lower band, the center line minus the same distance.
 
-[SCREENSHOT: Candlestick chart with the Keltner Channel overlaid, center EMA line with upper and lower bands, price trending along the upper band with pullbacks holding the center line | keltner-channel-on-chart.png]
+[SCREENSHOT: Candlestick chart with the Keltner Channel overlaid, center EMA line with upper and lower bands, price trending along the upper band with pullbacks holding the center line | dc-en-keltner-channel-01.png]
 
 ## When to use it
 
@@ -38,7 +38,7 @@ The Keltner Channel answers the question: how far is price from its volatility-a
 4. Click the gear icon to open the indicator configuration window.
 5. The defaults — **Length** 21 and **ATR Multiplier Value** 2.00 — are a sound starting configuration; widen the multiplier if your instrument tags the bands too often for your style.
 
-[SCREENSHOT: Keltner Channel configuration window open showing the ATR Multiplier Value field set to 2.00, the Input dropdown, and the Length field set to 21, with the Subgraphs color options below | keltner-channel-settings.png]
+[SCREENSHOT: Keltner Channel configuration window open showing the ATR Multiplier Value field set to 2.00, the Input dropdown, and the Length field set to 21, with the Subgraphs color options below | dc-en-keltner-channel-02.png]
 
 ## How to read it
 

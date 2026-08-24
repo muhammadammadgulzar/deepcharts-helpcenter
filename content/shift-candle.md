@@ -38,7 +38,7 @@ Stacked diagonal imbalances are the confirmation layer here — to get a feel fo
 
 Because thresholds are instrument-specific (a sensible tick breakout on one contract is noise on another), expect to iterate on the Trinity values while observing signals on your market.
 
-[SCREENSHOT: A futures chart with Shift Candle active — a reversal marker plotted below a qualifying bullish reversal bar and a colored fresh imbalance zone extending to the right from the signal candle | shift-candle-signal-on-chart.png]
+[SCREENSHOT: A futures chart with Shift Candle active — a reversal marker plotted below a qualifying bullish reversal bar and a colored fresh imbalance zone extending to the right from the signal candle | dc-en-shift-candle-01.png]
 
 ## How to read it
 
@@ -49,7 +49,7 @@ Because thresholds are instrument-specific (a sensible tick breakout on one cont
 
 ## Settings reference
 
-[SCREENSHOT: Shift Candle settings dialog showing the Trinity Settings, Marker Settings, Imbalance Settings, Imbalance Fresh Zone and Alert sections | shift-candle-settings-dialog.png]
+[SCREENSHOT: Shift Candle settings dialog showing the Trinity Settings, Marker Settings, Imbalance Settings, Imbalance Fresh Zone and Alert sections | dc-en-shift-candle-02.png]
 
 ### Trinity Settings
 

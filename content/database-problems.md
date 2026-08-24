@@ -41,7 +41,7 @@ Delete the corrupted range in-app and let DeepCharts re-download it:
 4. Select the **Tick and Minute** data types.
 5. Choose the symbol (or symbols) with the corrupted history.
 
-[SCREENSHOT: The Delete Data panel with the date set 15+ days back, Tick and Minute selected, and an affected symbol chosen | delete-data-panel-db-corruption.png]
+[SCREENSHOT: The Delete Data panel with the date set 15+ days back, Tick and Minute selected, and an affected symbol chosen | dc-en-database-problems-01.png]
 
 6. Click **Delete** and wait for it to finish.
 7. Close the platform, wait 30 seconds, then restart DeepCharts.
@@ -57,7 +57,7 @@ If problems affect many symbols or persist after targeted deletes, remove the en
 
 1. Go to **Options → Settings → Various** and copy the **Database Folder** path.
 
-[SCREENSHOT: The Settings dialog on the Various tab with the Database Folder path highlighted | settings-various-database-folder-path.png]
+[SCREENSHOT: The Settings dialog on the Various tab with the Database Folder path highlighted | dc-en-database-problems-02.png]
 
 2. Disconnect the data feed, close all workspaces, and exit DeepCharts completely.
 3. Open Windows Explorer and paste the copied path into the address bar.

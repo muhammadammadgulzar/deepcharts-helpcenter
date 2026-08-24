@@ -36,7 +36,7 @@ The diagonal comparison is easiest to understand by doing it: in the interactive
 3. Set the **Lookback Period** to define how many bars to the left must confirm a high or low as a swing point.
 4. In the subgraph options, choose different colors and marker shapes for bullish and bearish signals so you can read them at a glance.
 
-[SCREENSHOT: A chart with the Imbalance Rejector active, showing a bearish marker plotted a few ticks above a swing high and a bullish marker below a swing low, in contrasting colors | imbalance-rejector-markers-chart.png]
+[SCREENSHOT: A chart with the Imbalance Rejector active, showing a bearish marker plotted a few ticks above a swing high and a bullish marker below a swing low, in contrasting colors | dc-en-imbalance-rejector-01.png]
 
 ## How to read it
 
@@ -61,7 +61,7 @@ Markers are context, not commands. The lookback filter already demands that the 
 - **Marker shape** — square, circle, diamond, triangle or cross.
 - **Thickness** — size/weight of the plotted markers.
 
-[SCREENSHOT: The Imbalance Rejector settings dialog showing the Settings Imbalance group with % Min. Imbalance, Minimum Diagonal Comparison, Lookback Period and Tick Offset | imbalance-rejector-settings-dialog.png]
+[SCREENSHOT: The Imbalance Rejector settings dialog showing the Settings Imbalance group with % Min. Imbalance, Minimum Diagonal Comparison, Lookback Period and Tick Offset | dc-en-imbalance-rejector-02.png]
 
 ## Tips and common mistakes
 

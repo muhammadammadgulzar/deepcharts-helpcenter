@@ -1,15 +1,24 @@
 #!/usr/bin/env python3
-"""DeepCharts + DeepDOM Help Center static-site builder.
+"""DeepCharts + DeepDOM Help Center static-site builder — multi-language.
 
-Builds TWO knowledge bases into one site:
-  site/                       DeepCharts KB (173 articles) — index, category/, article/, pdf/
-  site/deepdom/               DeepDOM KB (39 articles)     — index, category/, article/, pdf/
-  site/assets/*               shared css/js + per-KB search indexes + kb-map.js
-  screenshots-needed.md       every placeholder from BOTH KBs, for the capture pass
+Builds a (language × knowledge-base) matrix into one site:
 
-Sources:
-  manifest.json          + content/*.md           -> DeepCharts KB
-  manifest-deepdom.json  + content-deepdom/*.md   -> DeepDOM KB
+  site/                        DeepCharts KB, English      (LIVE root)
+  site/deepdom/                DeepDOM KB, English
+  site/<lang>/                 DeepCharts KB, <lang>       (it / es / fr / de)
+  site/<lang>/deepdom/         DeepDOM KB, <lang>
+  site/assets/*                shared css/js + per-(lang,kb) search indexes
+  site/assets/shots-status.json  machine-readable screenshot coverage
+  screenshots-needed.md        every placeholder, all languages/KBs
+
+A language is built when BOTH its manifests and content dirs exist:
+  en:  manifest.json + content/          manifest-deepdom.json + content-deepdom/
+  it:  manifest-it.json + content-it/    manifest-it-deepdom.json + content-it-deepdom/
+  (same pattern for es / fr / de — created by scripts/translate_sync.py --init)
+
+Screenshot placeholders carry a unique language-aware ID as their filename:
+  {kb}-{lang}-{article-slug}-{NN}.png    e.g. dc-en-connect-cqg-03.png
+The build FAILS on malformed, duplicated, or wrong-language/kb/slug IDs.
 
 Run:  python3 build.py
 """
@@ -25,13 +34,51 @@ ASSETS = os.path.join(ROOT, "assets")
 md = MarkdownIt("commonmark", {"html": True}).enable("table").enable("strikethrough")
 TODAY = datetime.date.today().strftime("%B %d, %Y")
 
-# ---------------- knowledge bases ----------------
-KBS = [
-    {"key": "",        "brand": "DeepCharts", "manifest": "manifest.json",
-     "content": "content", "sub": "", "search_js": "search-index.js"},
-    {"key": "deepdom", "brand": "DeepDOM",    "manifest": "manifest-deepdom.json",
-     "content": "content-deepdom", "sub": "deepdom", "search_js": "search-index-deepdom.js"},
-]
+# ---------------- languages × knowledge bases ----------------
+LANGS = [
+    ("en", "English", False),
+    ("it", "Italiano", True),
+    ("es", "Español", True),
+    ("fr", "Français", True),
+    ("de", "Deutsch", True),
+]   # (code, label, beta-badge)
+
+def kb_defs(lang):
+    sfx = "" if lang == "en" else f"-{lang}"
+    return [
+        {"key": "",        "shot_kb": "dc", "brand": "DeepCharts",
+         "manifest": f"manifest{sfx}.json", "content": f"content{sfx or ''}" if lang != "en" else "content",
+         "sub": "", "search_js": f"search-index{sfx}.js"},
+        {"key": "deepdom", "shot_kb": "dd", "brand": "DeepDOM",
+         "manifest": f"manifest{sfx}-deepdom.json", "content": f"content{sfx}-deepdom",
+         "sub": "deepdom", "search_js": f"search-index{sfx}-deepdom.js"},
+    ]
+
+def lang_available(lang):
+    return all(os.path.exists(os.path.join(ROOT, kb["manifest"]))
+               and os.path.isdir(os.path.join(ROOT, kb["content"]))
+               for kb in kb_defs(lang))
+
+ENABLED_LANGS = [l for l in LANGS if lang_available(l[0])]
+
+# The few chrome strings that appear on generated non-article UI.
+UI_STR = {
+    "en": {"new_here": "New here?", "browse": "Browse the library",
+           "search_ph": "Search the knowledge base...  ( / )",
+           "beta_note": ""},
+    "it": {"new_here": "Prima volta qui?", "browse": "Sfoglia la libreria",
+           "search_ph": "Cerca nella knowledge base...  ( / )",
+           "beta_note": "Questa lingua è in beta — alcune pagine possono essere tradotte automaticamente."},
+    "es": {"new_here": "¿Primera vez aquí?", "browse": "Explora la biblioteca",
+           "search_ph": "Buscar en la base de conocimientos...  ( / )",
+           "beta_note": "Este idioma está en beta — algunas páginas pueden estar traducidas automáticamente."},
+    "fr": {"new_here": "Nouveau ici ?", "browse": "Parcourir la bibliothèque",
+           "search_ph": "Rechercher dans la base de connaissances...  ( / )",
+           "beta_note": "Cette langue est en bêta — certaines pages peuvent être traduites automatiquement."},
+    "de": {"new_here": "Neu hier?", "browse": "Bibliothek durchsuchen",
+           "search_ph": "Wissensdatenbank durchsuchen...  ( / )",
+           "beta_note": "Diese Sprache ist in der Beta — einige Seiten können maschinell übersetzt sein."},
+}
 
 # ---------------- load articles ----------------
 def parse_frontmatter(text, path):
@@ -42,7 +89,7 @@ def parse_frontmatter(text, path):
     return meta, text[m.end():]
 
 
-def load_kb(kb):
+def load_kb(lang, kb):
     content_dir = os.path.join(ROOT, kb["content"])
     man = json.load(open(os.path.join(ROOT, kb["manifest"])))
     arts = {}
@@ -70,7 +117,7 @@ def load_kb(kb):
 
     miss = [sl for sl, _, _ in ordr if sl not in arts]
     extr = [sl for sl in arts if sl not in catof]
-    print(f"[{kb['brand']}] content files: {len(arts)} | manifest: {len(ordr)} | "
+    print(f"[{lang}/{kb['brand']}] content files: {len(arts)} | manifest: {len(ordr)} | "
           f"missing: {len(miss)} | extra: {len(extr)}")
     if miss:
         print("MISSING:", ", ".join(miss))
@@ -81,32 +128,56 @@ def load_kb(kb):
     return {"manifest": man, "articles": arts, "order": ordr, "cat_of": catof,
             "missing": miss, "errors": errs}
 
-# per-KB globals (assigned by build_kb; helpers below read them)
-KB = KBS[0]
+# per-build globals (assigned by build_kb; helpers below read them)
+LANG = "en"
+LANG_PREFIX = ""            # "" for en, "it/" etc.
+KB = kb_defs("en")[0]
 manifest = None
 articles = {}
 cat_of = {}
 order = []
 SITE_NAME = ""
 TAGLINE = ""
+LANG_SLUGS = {}             # lang -> kbkey -> {"articles": set, "categories": set}
 
 # ---------------- markdown transforms ----------------
 SHOT_RE = re.compile(r"^\[SCREENSHOT:\s*(.+?)\s*\|\s*([\w.\-]+)\s*\][ \t]*$", re.M)
+SHOT_ID_RE = re.compile(r"^(dc|dd)-(en|it|es|fr|de)-([a-z0-9][a-z0-9\-]*)-(\d{2})\.(png|jpg|jpeg|webp)$")
+IMG_RE = re.compile(r"!\[[^\]]*\]\([^)\s]*assets/img/([^)\s]+)\)")
 WIDGET_RE = re.compile(r"^\[WIDGET:\s*([\w\-]+)\s*\][ \t]*$", re.M)
 LINK_RE = re.compile(r"\[\[([\w\-]+)(?:\|([^\]]+))?\]\]")
 CONFIRM_RE = re.compile(r"\[CONFIRM:([^\]]+)\]")
 
-shots = []   # (content_dir, slug, title, filename, desc)
+shots = []        # (content_dir, slug, title, filename, desc)
 badlinks = []
+bad_shots = []    # (lang, kb, slug, filename, reason)
+seen_shot_ids = {}   # filename -> (lang, kb, slug)
+missing_imgs = []    # (content_dir, slug, img)
 
 def transform_md(slug, body):
     def shot_sub(m):
         desc, fname = m.group(1), m.group(2)
+        mid = SHOT_ID_RE.match(fname)
+        if not mid:
+            bad_shots.append((LANG, KB["shot_kb"], slug, fname,
+                              "ID must look like {kb}-{lang}-{slug}-{NN}.png"))
+        else:
+            if mid.group(1) != KB["shot_kb"]:
+                bad_shots.append((LANG, KB["shot_kb"], slug, fname, f"kb token should be '{KB['shot_kb']}'"))
+            if mid.group(2) != LANG:
+                bad_shots.append((LANG, KB["shot_kb"], slug, fname, f"language token should be '{LANG}'"))
+            if mid.group(3) != slug:
+                bad_shots.append((LANG, KB["shot_kb"], slug, fname, f"slug token should be '{slug}'"))
+            if fname in seen_shot_ids:
+                bad_shots.append((LANG, KB["shot_kb"], slug, fname,
+                                  f"duplicate ID (also in {seen_shot_ids[fname]})"))
+            seen_shot_ids[fname] = (LANG, KB["shot_kb"], slug)
         shots.append((KB["content"], slug, articles[slug]["meta"]["title"], fname, desc))
+        sid = html.escape(fname.rsplit(".", 1)[0])
         return ('<div class="shot"><div class="cam">📷</div><div>'
                 '<div class="s-label">Screenshot placeholder</div>'
                 f'<div class="s-desc">{html.escape(desc)}</div>'
-                f'<div class="s-file">{html.escape(fname)}</div></div></div>')
+                f'<div class="s-file">ID: <b class="s-id">{sid}</b> · save as <code>{html.escape(fname)}</code></div></div></div>')
     body = SHOT_RE.sub(shot_sub, body)
     def widget_sub(m):
         name = m.group(1)
@@ -144,10 +215,19 @@ def heading_anchor_pass(rendered):
     rendered = re.sub(r"<h([23])>(.*?)</h\1>", repl, rendered, flags=re.S)
     return rendered, toc
 
+# callout labels per language (translations may use localized labels;
+# the English tokens always work in every language)
+CALLOUT_LABELS = {
+    "callout-tip":     ["Tip", "Suggerimento", "Consejo", "Astuce", "Tipp"],
+    "callout-warning": ["Warning", "Attenzione", "Avvertenza", "Advertencia", "Avertissement", "Warnung", "Achtung"],
+    "callout-note":    ["Note", "Nota", "Remarque", "Hinweis"],
+}
+
 def callout_pass(rendered):
-    for label, cls in (("Tip", "callout-tip"), ("Warning", "callout-warning"), ("Note", "callout-note")):
-        rendered = rendered.replace(f"<blockquote>\n<p><strong>{label}:</strong>",
-                                    f'<blockquote class="{cls}">\n<p><strong>{label}:</strong>')
+    for cls, labels in CALLOUT_LABELS.items():
+        for label in labels:
+            rendered = rendered.replace(f"<blockquote>\n<p><strong>{label}:</strong>",
+                                        f'<blockquote class="{cls}">\n<p><strong>{label}:</strong>')
     return rendered
 
 # ---------------- html shell ----------------
@@ -165,30 +245,62 @@ def sidebar_html(kbroot, active_slug=None):
         out.append("</ul></div>")
     return "".join(out)
 
-def header_html(root, kbroot):
+
+def lang_href(root, target_lang, loc):
+    """Best link into target_lang for the current page location."""
+    prefix = "" if target_lang == "en" else f"{target_lang}/"
+    kbseg = "deepdom/" if KB["key"] == "deepdom" else ""
+    base = f"{root}{prefix}{kbseg}"
+    known = LANG_SLUGS.get(target_lang, {}).get(KB["key"], {"articles": set(), "categories": set()})
+    if loc["kind"] == "article" and loc["slug"] in known["articles"]:
+        return f'{base}article/{loc["slug"]}.html'
+    if loc["kind"] == "category" and loc["slug"] in known["categories"]:
+        return f'{base}category/{loc["slug"]}.html'
+    return f"{base}index.html"
+
+
+def lang_dropdown(root, loc):
+    items = []
+    enabled = {c for c, _, _ in ENABLED_LANGS}
+    for code, label, beta in LANGS:
+        badge = ' <em class="beta">BETA</em>' if beta else ""
+        if code == LANG:
+            items.append(f'<span class="lang-item cur">{label}{badge}</span>')
+        elif code in enabled:
+            items.append(f'<a class="lang-item" href="{lang_href(root, code, loc)}">{label}{badge}</a>')
+        else:
+            items.append(f'<span class="lang-item soon">{label}{badge} <em class="soonlbl">soon</em></span>')
+    return (f'<div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 {LANG.upper()} ▾</button>'
+            f'<div class="lang-menu">{"".join(items)}</div></div>')
+
+
+def header_html(root, kbroot, loc):
+    langroot = f"{root}{LANG_PREFIX}"
     if KB["key"] == "deepdom":
         brand = 'DeepDOM <span class="hc">Help Center</span>'
-        switch = f'<a class="kb-switch" href="{root}index.html" title="Switch knowledge base">⇄ DeepCharts KB</a>'
+        switch = f'<a class="kb-switch" href="{langroot}index.html" title="Switch knowledge base">⇄ DeepCharts KB</a>'
         links = (f'<a href="{kbroot}index.html">All articles</a>'
                  f'<a href="{kbroot}article/installation-and-first-configuration.html">Get started</a>'
-                 f'<a href="{root}article/get-help.html">Get help</a>')
+                 f'<a href="{langroot}article/get-help.html">Get help</a>')
     else:
         brand = 'DeepCharts <span class="hc">Help Center</span>'
-        switch = f'<a class="kb-switch" href="{root}deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a>'
+        switch = f'<a class="kb-switch" href="{langroot}deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a>'
         links = (f'<a href="{kbroot}index.html">All articles</a>'
                  f'<a href="{kbroot}article/quick-start-first-trade.html">Quick start</a>'
                  f'<a href="{kbroot}article/get-help.html">Get help</a>')
+    ph = UI_STR.get(LANG, UI_STR["en"])["search_ph"]
     return f'''<header class="site-header">
   <div class="logo"><a href="{kbroot}index.html">{brand}</a></div>
   <div class="searchbox" data-search><span class="mag">🔎</span>
-    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <input type="text" placeholder="{html.escape(ph)}" autocomplete="off">
     <div class="search-results"></div></div>
-  <nav class="header-links">{links}{switch}</nav>
+  <nav class="header-links">{links}{switch}{lang_dropdown(root, loc)}</nav>
 </header>'''
 
-def page(root, kbroot, title, body, active_slug=None, toc_html="", desc=""):
+
+def page(root, kbroot, title, body, loc, active_slug=None, toc_html="", desc=""):
     return f'''<!DOCTYPE html>
-<html lang="en"><head>
+<html lang="{LANG}"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 
@@ -196,9 +308,9 @@ def page(root, kbroot, title, body, active_slug=None, toc_html="", desc=""):
 <meta name="description" content="{html.escape(desc)}">
 <link rel="stylesheet" href="{root}assets/style.css">
 <link rel="stylesheet" href="{root}assets/review.css">
-<script>window.HC_ROOT="{root}";window.KB_ROOT="{kbroot}";window.HC_KB="{KB["key"]}";</script>
+<script>window.HC_ROOT="{root}";window.KB_ROOT="{kbroot}";window.HC_KB="{KB["key"]}";window.HC_LANG="{LANG}";</script>
 </head><body>
-{header_html(root, kbroot)}
+{header_html(root, kbroot, loc)}
 <div class="layout">
   <nav class="sidebar">{sidebar_html(kbroot, active_slug)}</nav>
   <main class="content">{body}
@@ -319,9 +431,11 @@ def md_to_flowables(body, meta):
     flush_para(); flush_bullets()
     return flows
 
-# ---------------- per-KB build ----------------
-def build_kb(kb, data):
-    global KB, manifest, articles, cat_of, order, SITE_NAME, TAGLINE
+# ---------------- per-(lang,kb) build ----------------
+def build_kb(lang, kb, data):
+    global LANG, LANG_PREFIX, KB, manifest, articles, cat_of, order, SITE_NAME, TAGLINE
+    LANG = lang
+    LANG_PREFIX = "" if lang == "en" else f"{lang}/"
     KB = kb
     manifest = data["manifest"]
     articles = data["articles"]
@@ -329,25 +443,39 @@ def build_kb(kb, data):
     order = data["order"]
     SITE_NAME = manifest["site"]["name"]
     TAGLINE = manifest["site"]["tagline"]
+    S = UI_STR.get(lang, UI_STR["en"])
 
-    out_base = os.path.join(SITE, kb["sub"]) if kb["sub"] else SITE
+    out_base = os.path.join(SITE, LANG_PREFIX, kb["sub"]).rstrip("/")
     os.makedirs(os.path.join(out_base, "article"), exist_ok=True)
     os.makedirs(os.path.join(out_base, "category"), exist_ok=True)
     os.makedirs(os.path.join(out_base, "pdf"), exist_ok=True)
 
     # path prefixes: root -> site root (assets), kbroot -> this KB's root
-    depth1 = "../../" if kb["sub"] else "../"     # from article/ or category/ pages
-    kb1 = "../"                                    # KB root from its own subpages
-    root0 = "../" if kb["sub"] else ""             # site root from the KB's index page
-    kb0 = ""                                       # KB root from its own index page
+    depth_sub = 1 + (1 if kb["sub"] else 0) + (1 if LANG_PREFIX else 0)
+    depth1 = "../" * depth_sub                 # from article/ or category/ pages
+    kb1 = "../"                                # KB root from its own subpages
+    root0 = "../" * (depth_sub - 1)            # site root from the KB's index page
+    kb0 = ""                                   # KB root from its own index page
 
     search_index = []
+    status_articles = []
     linear = [sl for sl, _, _ in order if sl in articles]
 
     for idx, slug in enumerate(linear):
         art = articles[slug]
         meta = art["meta"]
         c, sub, _ = cat_of[slug]
+
+        # screenshot coverage bookkeeping (from the raw body, pre-transform)
+        ph_ids = [f for _, f in SHOT_RE.findall(art["body"])]
+        img_files = IMG_RE.findall(art["body"])
+        for imgf in img_files:
+            if not os.path.exists(os.path.join(ASSETS, "img", imgf)):
+                missing_imgs.append((kb["content"], slug, imgf))
+        if ph_ids or img_files:
+            status_articles.append({"slug": slug, "title": meta["title"],
+                                    "placeholders": ph_ids, "images": len(img_files)})
+
         body_md = transform_md(slug, art["body"])
         rendered = md.render(body_md)
         rendered = callout_pass(rendered)
@@ -384,7 +512,8 @@ def build_kb(kb, data):
 <div class="pn">{prev_a}{next_a}</div>'''
 
         open(os.path.join(out_base, "article", f"{slug}.html"), "w", encoding="utf-8").write(
-            page(depth1, kb1, meta["title"], body_html, active_slug=slug, toc_html=toc_html, desc=meta.get("description","")))
+            page(depth1, kb1, meta["title"], body_html, {"kind": "article", "slug": slug},
+                 active_slug=slug, toc_html=toc_html, desc=meta.get("description","")))
 
         search_index.append({"s": slug, "t": meta["title"], "d": meta.get("description",""),
                              "c": c["name"], "sub": sub, "dif": dif,
@@ -408,7 +537,8 @@ def build_kb(kb, data):
                              f'<div class="d"><span class="badge b-{dif}">{dif}</span></div></a></li>')
             parts.append("</ul>")
         open(os.path.join(out_base, "category", f'{c["slug"]}.html'), "w", encoding="utf-8").write(
-            page(depth1, kb1, c["name"], "".join(parts), desc=c["description"]))
+            page(depth1, kb1, c["name"], "".join(parts),
+                 {"kind": "category", "slug": c["slug"]}, desc=c["description"]))
 
     # ---------------- home page ----------------
     total = len(linear)
@@ -418,22 +548,38 @@ def build_kb(kb, data):
         cards.append(f'<a class="cat-card" href="category/{c["slug"]}.html"><div class="c-ico">{c["icon"]}</div>'
                      f'<h3>{html.escape(c["name"])}</h3><p>{html.escape(c["description"])}</p>'
                      f'<div class="c-count">{cnt} articles →</div></a>')
+    beta_note = (f'<p style="margin-top:14px;color:var(--orange);font-size:13.5px">{html.escape(S["beta_note"])}</p>'
+                 if lang != "en" and S["beta_note"] else "")
 
     if kb["key"] == "deepdom":
         home = f'''<div class="hero home-hero">
 <h1>The <span class="hp">DeepDOM</span> knowledge base.</h1>
-<p>{html.escape(TAGLINE)} Every guide from installation to the Deep indicator series — searchable, printable, and kept current.</p>
+<p>{html.escape(TAGLINE)}</p>
 <div class="hero-search searchbox" data-search><span class="mag">🔎</span>
-<input type="text" placeholder="Search {total} DeepDOM articles… try “heatmap” or “iceberg”" autocomplete="off"><div class="search-results"></div></div>
-<div class="start-strip"><span style="color:var(--green);font-size:13px;align-self:center;font-weight:700">New here?</span>
-<a href="article/installation-and-first-configuration.html">🚀 Install &amp; first configuration</a>
-<a href="article/general-settings.html">General settings</a>
-<a href="article/heatmap.html">The Heatmap</a>
-<a href="article/deep-iceberg.html">Deep Iceberg</a></div></div>
-<div class="sec-h">Browse the library</div>
+<input type="text" placeholder="Search {total} DeepDOM articles…" autocomplete="off"><div class="search-results"></div></div>
+<div class="start-strip"><span style="color:var(--green);font-size:13px;align-self:center;font-weight:700">{html.escape(S["new_here"])}</span>
+<a href="article/installation-and-first-configuration.html">🚀 {html.escape(articles.get("installation-and-first-configuration",{}).get("meta",{}).get("title","Installation"))}</a>
+<a href="article/general-settings.html">{html.escape(articles.get("general-settings",{}).get("meta",{}).get("title","General settings"))}</a>
+<a href="article/heatmap.html">{html.escape(articles.get("heatmap",{}).get("meta",{}).get("title","Heatmap"))}</a>
+<a href="article/deep-iceberg.html">{html.escape(articles.get("deep-iceberg",{}).get("meta",{}).get("title","Deep Iceberg"))}</a></div>
+{beta_note}</div>
+<div class="sec-h">{html.escape(S["browse"])}</div>
 <div class="cat-grid">{''.join(cards)}</div>
-<p style="margin-top:28px;color:var(--ink2);font-size:14px">Looking for the charting platform instead?
-<a href="../index.html"><b>Switch to the DeepCharts Help Center →</b></a></p>'''
+<p style="margin-top:28px;color:var(--ink2);font-size:14px">
+<a href="../index.html"><b>⇄ DeepCharts Help Center →</b></a></p>'''
+    elif lang != "en":
+        home = f'''<div class="hero home-hero">
+<h1>DeepCharts <span class="hg">Help Center</span></h1>
+<p>{html.escape(TAGLINE)}</p>
+<div class="hero-search searchbox" data-search><span class="mag">🔎</span>
+<input type="text" placeholder="{html.escape(S["search_ph"])}" autocomplete="off"><div class="search-results"></div></div>
+{beta_note}</div>
+<div class="sec-h">{html.escape(S["browse"])}</div>
+<div class="cat-grid">{''.join(cards)}</div>
+<div class="sec-h">DeepDOM</div>
+<a class="cat-card" href="deepdom/index.html" style="max-width:420px"><div class="c-ico">🧊</div>
+<h3>DeepDOM Help Center</h3><p></p>
+<div class="c-count">→</div></a>'''
     else:
         candles = "".join(
             f'<div class="candle {k}" style="height:{h}px;margin-top:{m}px;animation-delay:{i*0.35:.2f}s"></div>'
@@ -466,7 +612,7 @@ def build_kb(kb, data):
 <div class="c-count">Open the DeepDOM KB →</div></a>'''
 
     open(os.path.join(out_base, "index.html"), "w", encoding="utf-8").write(
-        page(root0, kb0, "Home", home, desc=TAGLINE))
+        page(root0, kb0, "Home", home, {"kind": "index", "slug": ""}, desc=TAGLINE))
 
     # ---------------- search index ----------------
     open(os.path.join(SITE, "assets", kb["search_js"]), "w", encoding="utf-8").write(
@@ -489,28 +635,59 @@ def build_kb(kb, data):
         except Exception as e:
             pdf_fail.append((slug, str(e)[:120]))
 
-    return {"linear": linear, "pdf_fail": pdf_fail, "n_cats": len(manifest["categories"])}
+    return {"linear": linear, "pdf_fail": pdf_fail,
+            "n_cats": len(manifest["categories"]), "status_articles": status_articles}
 
 # ---------------- main ----------------
 os.makedirs(os.path.join(SITE, "assets"), exist_ok=True)
 shutil.copytree(ASSETS, os.path.join(SITE, "assets"), dirs_exist_ok=True)
 
-loaded = [(kb, load_kb(kb)) for kb in KBS]
+# load everything first (lang deep-links need every language's slug catalog)
+loaded = []   # (lang, kb, data)
+for code, label, beta in ENABLED_LANGS:
+    for kb in kb_defs(code):
+        data = load_kb(code, kb)
+        loaded.append((code, kb, data))
+        LANG_SLUGS.setdefault(code, {})[kb["key"]] = {
+            "articles": {sl for sl, _, _ in data["order"]},
+            "categories": {c["slug"] for c in data["manifest"]["categories"]},
+        }
 
-# kb-map.js: which article slugs belong to the DeepDOM KB (used by review.js + app.js)
-dd_slugs = [sl for sl, _, _ in loaded[1][1]["order"]]
+# kb-map.js: which article slugs belong to the DeepDOM KB (used by review.js)
+dd_en = next(d for c, k, d in loaded if c == "en" and k["key"] == "deepdom")
 open(os.path.join(SITE, "assets", "kb-map.js"), "w", encoding="utf-8").write(
-    "window.DEEPDOM_SLUGS=" + json.dumps(dd_slugs) + ";")
+    "window.DEEPDOM_SLUGS=" + json.dumps([sl for sl, _, _ in dd_en["order"]]) + ";")
 
 results = []
-for kb, data in loaded:
-    results.append((kb, data, build_kb(kb, data)))
+for code, kb, data in loaded:
+    results.append((code, kb, data, build_kb(code, kb, data)))
+
+# ---------------- screenshots status (for the admin panel) ----------------
+status = {"generated": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+          "languages": {}}
+for code, kb, data, r in results:
+    kbkey = kb["shot_kb"]
+    arts = r["status_articles"]
+    tot_ph = sum(len(a["placeholders"]) for a in arts)
+    tot_img = sum(a["images"] for a in arts)
+    status["languages"].setdefault(code, {})[kbkey] = {
+        "brand": kb["brand"],
+        "articles_total": len(r["linear"]),
+        "articles_with_placeholders": sum(1 for a in arts if a["placeholders"]),
+        "articles_complete": sum(1 for a in arts if not a["placeholders"] and a["images"]),
+        "placeholders_total": tot_ph,
+        "images_total": tot_img,
+        "articles": arts,
+    }
+open(os.path.join(SITE, "assets", "shots-status.json"), "w", encoding="utf-8").write(
+    json.dumps(status, ensure_ascii=False))
 
 # ---------------- screenshots manifest ----------------
 with open(os.path.join(ROOT, "screenshots-needed.md"), "w", encoding="utf-8") as f:
     f.write(f"# Screenshots to capture — {len(shots)} placeholders\n\n")
-    f.write("Save each capture as `assets/img/<filename>` and replace the placeholder in the matching "
-            "content file with a normal image tag, then rebuild.\n"
+    f.write("Every placeholder has a unique ID = its filename ({kb}-{lang}-{slug}-{NN}.png).\n"
+            "Capture pass: save each file named exactly by its ID into one folder, then run\n"
+            "`python3 scripts/apply_screenshots.py <folder>` — it inserts them all at once.\n"
             "DeepDOM placeholders list their original old-site image in `deepdom-source-images.csv`.\n\n")
     cur = None
     for cdir, slug, title, fname, desc in shots:
@@ -520,10 +697,10 @@ with open(os.path.join(ROOT, "screenshots-needed.md"), "w", encoding="utf-8") as
         f.write(f"- **{fname}** — {desc}\n")
 
 # ---------------- report ----------------
-any_missing = any(data["missing"] for _, data, _ in results)
-any_pdf_fail = any(r["pdf_fail"] for _, _, r in results)
-for kb, data, r in results:
-    print(f"[{kb['brand']}] built: {len(r['linear'])} articles, {r['n_cats']} categories, "
+any_missing = any(data["missing"] for _, _, data, _ in results)
+any_pdf_fail = any(r["pdf_fail"] for _, _, _, r in results)
+for code, kb, data, r in results:
+    print(f"[{code}/{kb['brand']}] built: {len(r['linear'])} articles, {r['n_cats']} categories, "
           f"{len(r['linear']) - len(r['pdf_fail'])} PDFs")
     if r["pdf_fail"]:
         print("PDF FAILURES:")
@@ -531,6 +708,14 @@ for kb, data, r in results:
             print("  ", s, "->", e)
 print(f"total screenshot placeholders: {len(shots)} | live widgets: {len(widget_uses)} in "
       f"{len(set(s for s, _ in widget_uses))} articles")
+if missing_imgs:
+    print(f"WARNING — {len(missing_imgs)} referenced images missing from assets/img/:")
+    for cdir, s, i in missing_imgs[:20]:
+        print(f"   {cdir}/{s}.md -> {i}")
+if bad_shots:
+    print(f"BAD SCREENSHOT IDs ({len(bad_shots)}):")
+    for lang, kbk, s, fn, reason in bad_shots[:40]:
+        print(f"   [{lang}/{kbk}] {s}: {fn} — {reason}")
 if bad_widgets:
     print("UNKNOWN WIDGETS:")
     for s, n in bad_widgets:
@@ -540,4 +725,4 @@ if badlinks:
     print(f"BAD [[links]] ({len(uniq)}):")
     for s, t in uniq:
         print(f"   {s} -> [[{t}]]")
-sys.exit(1 if (any_missing or any_pdf_fail or bad_widgets) else 0)
+sys.exit(1 if (any_missing or any_pdf_fail or bad_widgets or bad_shots) else 0)

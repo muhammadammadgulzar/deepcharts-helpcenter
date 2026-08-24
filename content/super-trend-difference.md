@@ -17,7 +17,7 @@ It uses the same ATR-based calculation as [[super-trend]], so the two indicators
 
 The indicator answers the question: is the trend gaining or losing steam? Each bar of the histogram is the difference between price and the Super Trend line. Positive bars mean price is above the line (bullish state); negative bars mean price is below it (bearish state). Growing bars show price pulling away from the trend line; shrinking bars show price closing back in on it — often the first hint of a stall or reversal before the Super Trend line itself flips.
 
-[SCREENSHOT: A candlestick chart with Super Trend on price and the Super Trend Difference histogram in a panel below, showing positive green bars shrinking toward zero ahead of a trend flip | super-trend-difference-on-chart.png]
+[SCREENSHOT: A candlestick chart with Super Trend on price and the Super Trend Difference histogram in a panel below, showing positive green bars shrinking toward zero ahead of a trend flip | dc-en-super-trend-difference-01.png]
 
 ## When to use it
 
@@ -34,7 +34,7 @@ The indicator answers the question: is the trend gaining or losing steam? Each b
 4. Click the gear icon to open its settings.
 5. Starter configuration: keep **Length** at 10 and **Multiplier** at 3.00 — and if you run [[super-trend]] on the same chart, use identical values on both so the histogram matches the line you see on price.
 
-[SCREENSHOT: Super Trend Difference settings dialog showing General parameters Length = 10 and Multiplier = 3.00, with the Subgraphs section showing Auto Color +/- and Line Width 4 | super-trend-difference-settings.png]
+[SCREENSHOT: Super Trend Difference settings dialog showing General parameters Length = 10 and Multiplier = 3.00, with the Subgraphs section showing Auto Color +/- and Line Width 4 | dc-en-super-trend-difference-02.png]
 
 ## How to read it
 

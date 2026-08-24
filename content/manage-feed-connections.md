@@ -24,7 +24,7 @@ DeepCharts stores every connection you create in **Feed Settings** as a separate
 
 1. Look at the **Select Connection** control in the main bar. It shows your connections and a status dot for each — green means connected.
 
-[SCREENSHOT: DeepCharts main bar with the Select Connection dropdown open, listing several saved connections, one with a green dot and the others disconnected | feed-selector-multiple-connections.png]
+[SCREENSHOT: DeepCharts main bar with the Select Connection dropdown open, listing several saved connections, one with a green dot and the others disconnected | dc-en-manage-feed-connections-01.png]
 
 > **Note:** A yellow dot on a Rithmic connection that uses the R Trader plugin means DeepCharts is waiting for R Trader — see [[rtrader-pro-plugin]].
 

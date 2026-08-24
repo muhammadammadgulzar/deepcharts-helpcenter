@@ -59,22 +59,28 @@ const state = {
 function detectSlug() {
   const p = location.pathname;
   const kb = window.HC_KB === "deepdom" ? "deepdom--" : "";
+  // non-English pages get a language prefix so remarks on e.g. the Italian
+  // version of an article stay separate from remarks on the English one
+  const lang = (window.HC_LANG && window.HC_LANG !== "en") ? window.HC_LANG + "--" : "";
   let m = p.match(/\/article\/([^\/]+)\.html?$/);
-  if (m) return decodeURIComponent(m[1]);           // article slugs are globally unique
+  if (m) return lang + decodeURIComponent(m[1]);    // article slugs are unique per language
   m = p.match(/\/category\/([^\/]+)\.html?$/);
-  if (m) return "category--" + kb + decodeURIComponent(m[1]);
-  return kb ? "deepdom-home" : "home";
+  if (m) return lang + "category--" + kb + decodeURIComponent(m[1]);
+  return lang + (kb ? "deepdom-home" : "home");
 }
 
 function slugToHref(slug) {
   const root = window.HC_ROOT || "";
-  if (slug === "home") return root + "index.html";
-  if (slug === "deepdom-home") return root + "deepdom/index.html";
-  if (slug.startsWith("category--deepdom--")) return root + "deepdom/category/" + slug.slice(19) + ".html";
-  if (slug.startsWith("category--")) return root + "category/" + slug.slice(10) + ".html";
+  let langSeg = "";
+  const lm = slug.match(/^(it|es|fr|de)--(.*)$/);
+  if (lm) { langSeg = lm[1] + "/"; slug = lm[2]; }
+  if (slug === "home") return root + langSeg + "index.html";
+  if (slug === "deepdom-home") return root + langSeg + "deepdom/index.html";
+  if (slug.startsWith("category--deepdom--")) return root + langSeg + "deepdom/category/" + slug.slice(19) + ".html";
+  if (slug.startsWith("category--")) return root + langSeg + "category/" + slug.slice(10) + ".html";
   const dd = window.DEEPDOM_SLUGS || [];
-  if (dd.indexOf(slug) !== -1) return root + "deepdom/article/" + slug + ".html";
-  return root + "article/" + slug + ".html";
+  if (dd.indexOf(slug) !== -1) return root + langSeg + "deepdom/article/" + slug + ".html";
+  return root + langSeg + "article/" + slug + ".html";
 }
 
 function pageUrl() { return location.href.split("#")[0]; }

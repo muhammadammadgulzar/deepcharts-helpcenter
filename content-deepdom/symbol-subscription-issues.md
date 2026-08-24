@@ -13,13 +13,13 @@ This guide helps you resolve missing real‑time data or unavailable instruments
 
 ### Step 1 – Confirm Data Feed Connection
 
-[SCREENSHOT: Symbol Subscription Issues — Step 1 – Confirm Data Feed Connection (DeepDOM) | symbol-subscription-issues-01.png]
+[SCREENSHOT: Symbol Subscription Issues — Step 1 – Confirm Data Feed Connection (DeepDOM) | dd-en-symbol-subscription-issues-01.png]
 
 Make sure your data stream is correctly connected (the connection indicator in the DeepDom toolbar should be green). Also verify that you have purchased the correct data package for the markets you want to analyze, including Market Depth / Level 2 if required.
 
 ### Step 2 – Check Symbol Subscription
 
-[SCREENSHOT: Symbol Subscription Issues — Step 2 – Check Symbol Subscription (DeepDOM) | symbol-subscription-issues-02.png]
+[SCREENSHOT: Symbol Subscription Issues — Step 2 – Check Symbol Subscription (DeepDOM) | dd-en-symbol-subscription-issues-02.png]
 
 If the feed is connected but some instruments still show no data, check that the corresponding markets are correctly subscribed with your data provider and linked to the proper connection inside DeepDom.
 

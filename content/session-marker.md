@@ -39,7 +39,7 @@ The Session Marker displays the different market sessions (Asian, European and U
 4. Click the gear icon next to the indicator to open its settings, enable the sessions you trade, and check each session's start time against your market. The USA session defaults to a start time of **15:30:00**. [CONFIRM: which time zone session start times are interpreted in]
 5. Pick contrasting background colors per session so the three blocks are easy to tell apart.
 
-[SCREENSHOT: A 5-minute futures chart with the Session Marker active — three color-shaded session blocks (Asian, European, USA) visible across the day, with session high/low lines and the imbalance range highlighted inside the USA session | session-marker-on-chart.png]
+[SCREENSHOT: A 5-minute futures chart with the Session Marker active — three color-shaded session blocks (Asian, European, USA) visible across the day, with session high/low lines and the imbalance range highlighted inside the USA session | dc-en-session-marker-01.png]
 
 ## How to read it
 
@@ -83,7 +83,7 @@ Each of the three sessions has an identical settings block:
 | **Positive marker color** | Color used for the bullish case. |
 | **Negative marker color** | Color used for the bearish case. |
 
-[SCREENSHOT: The Session Marker settings dialog showing the General group (Imbalance Minutes, Line Width, Line Style, Extended, Text Size, Text Color) with the Asian, European and USA session groups collapsed below it | session-marker-settings.png]
+[SCREENSHOT: The Session Marker settings dialog showing the General group (Imbalance Minutes, Line Width, Line Style, Extended, Text Size, Text Color) with the Asian, European and USA session groups collapsed below it | dc-en-session-marker-02.png]
 
 ## Tips and common mistakes
 

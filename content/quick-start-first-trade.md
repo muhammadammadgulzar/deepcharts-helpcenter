@@ -29,7 +29,7 @@ This is the capstone of the Getting Started series. Each step is short and links
 
 Full detail: [[install-deepcharts]]. Activation trouble: [[license-issues]].
 
-[SCREENSHOT: The DeepCharts License Key dialog on first launch with the Email and License fields visible and the version number in the footer | license-activation-dialog.png]
+[SCREENSHOT: The DeepCharts License Key dialog on first launch with the Email and License fields visible and the version number in the footer | dc-en-quick-start-first-trade-01.png]
 
 ### 2. Run the startup wizard
 
@@ -39,7 +39,7 @@ After activation a three-step wizard runs:
 2. **Symbol Manage** — the wizard pre-maps the main exchanges (CME, CBOT, COMEX, EUREX, NYMEX) to your chosen feed. Leave the defaults and click **Next**.
 3. **Customize experience** — pick a **Theme** and an **Alert sound profile**, then click **Done**.
 
-[SCREENSHOT: Startup wizard step 1 with the 15 minutes delayed data powered by dxFeed radio option selected | startup-wizard-feed-choice.png]
+[SCREENSHOT: Startup wizard step 1 with the 15 minutes delayed data powered by dxFeed radio option selected | dc-en-quick-start-first-trade-02.png]
 
 > **Note:** Skipped or misclicked the wizard? Nothing is lost — Feed Settings, **Options → Symbol Manage** and **Options → Settings** cover the same ground later. See [[free-delayed-data-feed]].
 
@@ -59,7 +59,7 @@ Open **Options → Symbol Manage**. Each exchange row's **Data Feed** column sho
 
 Click **New → Price Chart**, pick **CME** in the Select Instrument dialog, choose a symbol — **MES** (Micro S&P) or **MNQ** (Micro Nasdaq) are good beginner contracts — and click **Select**. Wait a few seconds while the chart builds. Full walkthrough: [[first-chart]].
 
-[SCREENSHOT: The Select Instrument dialog with CME selected and MES MICRO SP highlighted | quick-start-select-instrument.png]
+[SCREENSHOT: The Select Instrument dialog with CME selected and MES MICRO SP highlighted | dc-en-quick-start-first-trade-03.png]
 
 ### 6. Add your first indicator
 
@@ -67,7 +67,7 @@ Click **New → Price Chart**, pick **CME** in the Select Instrument dialog, cho
 2. Click the green **Indicators** button. The Indicator List opens with category tabs (All, Volume, Statistics, Oscillator, Overlay, Utility, Third) and a search box.
 3. Search for **Volume** and click the **+** icon next to it. The indicator appears under the chart.
 
-[SCREENSHOT: The Indicator List window with the search box showing Volume and the + icon next to the Volume indicator highlighted | quick-start-add-volume-indicator.png]
+[SCREENSHOT: The Indicator List window with the search box showing Volume and the + icon next to the Volume indicator highlighted | dc-en-quick-start-first-trade-04.png]
 
 How indicators are arranged and configured: [[indicator-layout]] and [[volume]].
 
@@ -76,7 +76,7 @@ How indicators are arranged and configured: [[indicator-layout]] and [[volume]].
 1. Enable the **Trading panel** toggle in the chart's bottom bar. The panel opens on the right side of the chart.
 2. Set **Broker** to **SIM** and pick a simulation account in **Account**. If none exists, create one in **Options → Settings → Sim Account** — see [[simulation-accounts]].
 
-[SCREENSHOT: The chart trading panel with Broker set to SIM, an account selected, and quantity set to 1 | quick-start-trading-panel-sim.png]
+[SCREENSHOT: The chart trading panel with Broker set to SIM, an account selected, and quantity set to 1 | dc-en-quick-start-first-trade-05.png]
 
 ### 8. Place your first bracket order
 
@@ -85,7 +85,7 @@ How indicators are arranged and configured: [[indicator-layout]] and [[volume]].
 3. Enter the **SL** (stop loss) and **TP** (take profit) distances in ticks — start wide while you are learning.
 4. Click **BUY MKT**. Your entry fills on the SIM account and the stop-loss and take-profit orders are attached as a bracket — when one fills, the other is cancelled.
 
-[SCREENSHOT: The trading panel with OCO Strategy enabled, Mode set to SL/TP, SL and TP tick values entered, and the BUY MKT button highlighted | quick-start-bracket-order.png]
+[SCREENSHOT: The trading panel with OCO Strategy enabled, Mode set to SL/TP, SL and TP tick values entered, and the BUY MKT button highlighted | dc-en-quick-start-first-trade-06.png]
 
 > **Note:** On the free delayed feed your fills are based on prices 15 minutes behind the live market — fine for learning the platform, not for judging a strategy. See [[oco-strategies]] for what every bracket setting does, and [[trading-from-chart]] for placing orders directly on the chart.
 

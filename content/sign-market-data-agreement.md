@@ -27,7 +27,7 @@ By the end you will have the market data agreement signed for your account, whic
 2. Find your dxFeed subscription and click **Sign Market Data Contract** next to it.
 3. Read and accept the agreement. Your feed username and password remain hidden in the dashboard until the agreement is signed — once you sign, they become visible. Record them for [[connect-dxfeed|the connection step]].
 
-[SCREENSHOT: DeepCharts dashboard Subscriptions page with a dxFeed subscription row and the Sign Market Data Contract button highlighted | dashboard-sign-market-data-contract.png]
+[SCREENSHOT: DeepCharts dashboard Subscriptions page with a dxFeed subscription row and the Sign Market Data Contract button highlighted | dc-en-sign-market-data-agreement-01.png]
 
 ### If you have any Rithmic account (prop firm, broker, or website purchase)
 
@@ -40,11 +40,11 @@ All Rithmic agreements are signed inside R Trader Pro — Rithmic's own applicat
    - **Gateway** — the location nearest to you (Chicago, Europe, Singapore...). A distant gateway works but adds latency.
    - **Username / Password** — the Rithmic credentials from your provider's welcome email.
 
-[SCREENSHOT: R Trader Pro login screen showing the two side-by-side login forms, both filled, with the System dropdown open on the prop-firm server list | rtrader-pro-two-login-forms.png]
+[SCREENSHOT: R Trader Pro login screen showing the two side-by-side login forms, both filled, with the System dropdown open on the prop-firm server list | dc-en-sign-market-data-agreement-02.png]
 
 4. Click **Login**. R Trader Pro prompts you with the market data agreement — read and accept it.
 
-[SCREENSHOT: R Trader Pro market data agreement prompt shown after login, with the accept action visible | rtrader-pro-agreement-prompt.png]
+[SCREENSHOT: R Trader Pro market data agreement prompt shown after login, with the accept action visible | dc-en-sign-market-data-agreement-03.png]
 
 5. Close R Trader Pro. The agreement is now recorded on Rithmic's side and you can connect in DeepCharts.
 

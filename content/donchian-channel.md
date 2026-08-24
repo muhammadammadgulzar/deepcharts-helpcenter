@@ -37,7 +37,7 @@ When price touches or exceeds the upper line, it is making a new high for the pe
 3. Search for "Donchian Channel" and click **+** to add it.
 4. Click the gear icon next to the indicator to open its settings and set **Length** to the lookback you want to trade against — a shorter length hugs price for short-term signals, a longer one defines the bigger structure.
 
-[SCREENSHOT: A price chart with the Donchian Channel plotted — upper and lower lines stepping around the candles, with a recent breakout candle closing above the upper line | donchian-channel-on-chart.png]
+[SCREENSHOT: A price chart with the Donchian Channel plotted — upper and lower lines stepping around the candles, with a recent breakout candle closing above the upper line | dc-en-donchian-channel-01.png]
 
 ## How to read it
 
@@ -66,7 +66,7 @@ When price touches or exceeds the upper line, it is making a new high for the pe
 
 Each subgraph also exposes display options: **Name Label**, **Value Label**, **Name Background**, **Value Background**, **Include on Auto Center**, and **Chart color for marker** — these control how the line is labeled and whether it influences the chart's auto-centering.
 
-[SCREENSHOT: The Donchian Channel settings dialog showing the Length parameter and the subgraph rows for Donchian_Channel, +DI (Upper Line) and -DI (Lower Line) with their display options | donchian-channel-settings.png]
+[SCREENSHOT: The Donchian Channel settings dialog showing the Length parameter and the subgraph rows for Donchian_Channel, +DI (Upper Line) and -DI (Lower Line) with their display options | dc-en-donchian-channel-02.png]
 
 ## Tips and common mistakes
 

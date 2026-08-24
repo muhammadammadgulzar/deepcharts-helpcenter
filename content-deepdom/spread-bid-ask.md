@@ -11,7 +11,7 @@ keywords: ["spread bid ask", "deepdom spread bid ask", "deepdom", "indicators"]
 ---
 The Spread Bid/Ask indicator measures and plots the distance between the best bid and best ask prices (the bid–ask spread) in ticks. It helps you see when liquidity conditions change – for example, when spreads suddenly widen during low liquidity or high volatility and can generate alerts when the spread exceeds a level you define.
 
-[SCREENSHOT: Spread Bid/Ask — overview (DeepDOM) | spread-bid-ask-01.png]
+[SCREENSHOT: Spread Bid/Ask — overview (DeepDOM) | dd-en-spread-bid-ask-01.png]
 
 ## 1. Concept: Bid–Ask Spread
 
@@ -29,7 +29,7 @@ You can use this visual to quickly answer questions such as: "Did spreads blow o
 
 ## 3. Alert Settings
 
-[SCREENSHOT: Spread Bid/Ask — 3. Alert Settings (DeepDOM) | spread-bid-ask-02.png]
+[SCREENSHOT: Spread Bid/Ask — 3. Alert Settings (DeepDOM) | dd-en-spread-bid-ask-02.png]
 
 The Spread Bid/Ask settings window focuses on simple but powerful alert logic.
 

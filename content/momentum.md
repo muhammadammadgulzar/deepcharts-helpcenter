@@ -32,7 +32,7 @@ Momentum answers: is this move speeding up or slowing down? The indicator evalua
 3. Click the gear icon on the indicator's row to open its settings.
 4. Keep the defaults to start: **Input Data** Close, **Length** 14. If the line is too jumpy for your timeframe, switch to the **Average** section, enable the average line and leave it at Simple with 20 periods.
 
-[SCREENSHOT: A chart with the Momentum indicator in its own area below price, the momentum line rising steeply during a price advance and its optional average line enabled | momentum-on-chart.png]
+[SCREENSHOT: A chart with the Momentum indicator in its own area below price, the momentum line rising steeply during a price advance and its optional average line enabled | dc-en-momentum-01.png]
 
 ## How to read it
 
@@ -71,7 +71,7 @@ Open the dialog from the gear icon on the indicator's row in the **Indicators** 
 | **Line style / Line width** | Rendering style and thickness of the lines. |
 | **Use secondary axis** | Plots the indicator against a secondary value axis. |
 
-[SCREENSHOT: The Momentum settings dialog showing Input Data set to Close, Length 14, and the Average section with Average Type and Periods 20 | momentum-settings-dialog.png]
+[SCREENSHOT: The Momentum settings dialog showing Input Data set to Close, Length 14, and the Average section with Average Type and Periods 20 | dc-en-momentum-02.png]
 
 ## Tips and common mistakes
 

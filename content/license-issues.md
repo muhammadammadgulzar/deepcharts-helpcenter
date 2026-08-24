@@ -20,7 +20,7 @@ DeepCharts activates with two values: the email registered at my.deepcharts.com 
 - DeepCharts asks for the license again after previously working.
 - License validation errors appear while the platform is running.
 
-[SCREENSHOT: DeepCharts License Key activation window with the E-mail and License fields visible and an Invalid License error state shown | license-key-invalid-license.png]
+[SCREENSHOT: DeepCharts License Key activation window with the E-mail and License fields visible and an Invalid License error state shown | dc-en-license-issues-01.png]
 
 ## Most likely cause
 
@@ -30,7 +30,7 @@ Stray whitespace in the pasted credentials. Copy-pasting the email or license ke
 
 1. Log in to your my.deepcharts.com account (or your prop firm's dashboard) and locate your exact registered email and license key.
 
-[SCREENSHOT: my.deepcharts.com account dashboard with the license key section visible, key partially blurred | mydeepcharts-license-key.png]
+[SCREENSHOT: my.deepcharts.com account dashboard with the license key section visible, key partially blurred | dc-en-license-issues-02.png]
 
 2. Copy each value and paste it into the **License Key** window. Copy-paste rather than typing by hand — but check that no space was carried along at the start or end of either field.
 3. Click **Login** and wait while the key is verified.

@@ -19,7 +19,7 @@ High Volume Nodes (HVN) — price levels with heavy activity, often acting as su
 
 Low Volume Nodes (LVN) — price levels with little activity, often allowing fast price movement through them
 
-[SCREENSHOT: Volume Profile — overview (DeepDOM) | volume-profile-deepdom-01.png]
+[SCREENSHOT: Volume Profile — overview (DeepDOM) | dd-en-volume-profile-deepdom-01.png]
 
 ### How to Add the Volume Profile to Your Chart
 
@@ -29,7 +29,7 @@ Search for the desired indicator and add it to your workspace by clicking the "+
 
 Open the indicator's settings panel, customize the parameters according to your preferences, and confirm the changes by clicking Save.
 
-[SCREENSHOT: Volume Profile — How to Add the Volume Profile to Your Chart (DeepDOM) | volume-profile-deepdom-02.png]
+[SCREENSHOT: Volume Profile — How to Add the Volume Profile to Your Chart (DeepDOM) | dd-en-volume-profile-deepdom-02.png]
 
 ## General Settings
 
@@ -53,7 +53,7 @@ Auto Group Factor When using Automatic grouping, this defines how aggressively t
 
 Manual Ticks When using Manual grouping, this sets the exact number of ticks to group together, giving you precise control over the granularity of the profile.
 
-[SCREENSHOT: Volume Profile — General Settings (DeepDOM) | volume-profile-deepdom-03.png]
+[SCREENSHOT: Volume Profile — General Settings (DeepDOM) | dd-en-volume-profile-deepdom-03.png]
 
 ## Plot Settings
 
@@ -83,13 +83,13 @@ Automatic — uses platform default ranges
 
 User — lets you define custom value ranges
 
-[SCREENSHOT: Volume Profile — Plot Settings (DeepDOM) | volume-profile-deepdom-04.png]
+[SCREENSHOT: Volume Profile — Plot Settings (DeepDOM) | dd-en-volume-profile-deepdom-04.png]
 
 Show Text When enabled, displays the total volume traded at each tick or price level directly on the profile bars.
 
 Text Settings Lets you customize the color of the Bid, Ask, and Total Volume labels, as well as the font size.
 
-[SCREENSHOT: Volume Profile — Plot Settings (DeepDOM) | volume-profile-deepdom-05.png]
+[SCREENSHOT: Volume Profile — Plot Settings (DeepDOM) | dd-en-volume-profile-deepdom-05.png]
 
 ## POC (Point of Control)
 
@@ -107,7 +107,7 @@ Line Color — set the color of the POC line
 
 Line Width — set the thickness of the POC line
 
-[SCREENSHOT: Volume Profile — POC (Point of Control) (DeepDOM) | volume-profile-deepdom-06.png]
+[SCREENSHOT: Volume Profile — POC (Point of Control) (DeepDOM) | dd-en-volume-profile-deepdom-06.png]
 
 ## Value Area
 
@@ -127,7 +127,7 @@ Line Color — set the color of the Value Area boundary lines
 
 Line Width — set the thickness of the Value Area boundary lines
 
-[SCREENSHOT: Volume Profile — Value Area (DeepDOM) | volume-profile-deepdom-07.png]
+[SCREENSHOT: Volume Profile — Value Area (DeepDOM) | dd-en-volume-profile-deepdom-07.png]
 
 ## Peaks and Valleys
 
@@ -167,7 +167,7 @@ Line Width — set the thickness of the valley line
 
 Line Color — set the color of the valley line
 
-[SCREENSHOT: Volume Profile — Peaks and Valleys (DeepDOM) | volume-profile-deepdom-08.png]
+[SCREENSHOT: Volume Profile — Peaks and Valleys (DeepDOM) | dd-en-volume-profile-deepdom-08.png]
 
 ## Summary
 
@@ -181,7 +181,7 @@ Ask Color — set the color representing Ask volume in the summary
 
 Bid Color — set the color representing Bid volume in the summary
 
-[SCREENSHOT: Volume Profile — Summary (DeepDOM) | volume-profile-deepdom-09.png]
+[SCREENSHOT: Volume Profile — Summary (DeepDOM) | dd-en-volume-profile-deepdom-09.png]
 
 ## Labels on Line
 
@@ -189,7 +189,7 @@ Text Color — edit the color of the lines
 
 Text on Line — enables labels on lines derived from the Volume Profile, such as the VPOC and Value Area High/Low labels
 
-[SCREENSHOT: Volume Profile — Labels on Line (DeepDOM) | volume-profile-deepdom-10.png]
+[SCREENSHOT: Volume Profile — Labels on Line (DeepDOM) | dd-en-volume-profile-deepdom-10.png]
 
 ## Conclusion
 

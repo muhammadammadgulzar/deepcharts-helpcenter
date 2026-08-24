@@ -38,18 +38,18 @@ Reset the drawing tool configuration:
 Documents → DeepChart → Settings
 ```
 
-[SCREENSHOT: File Explorer showing the Settings folder inside the DeepChart folder in Documents, with the folder path visible in the address bar | deepchart-settings-folder.png]
+[SCREENSHOT: File Explorer showing the Settings folder inside the DeepChart folder in Documents, with the folder path visible in the address bar | dc-en-rectangle-drawing-tool-01.png]
 
 4. Locate the file named `tool_config` and **delete** it.
 
-[SCREENSHOT: File Explorer inside the Settings folder with the tool_config file selected and the right-click context menu open on Delete | delete-tool-config-file.png]
+[SCREENSHOT: File Explorer inside the Settings folder with the tool_config file selected and the right-click context menu open on Delete | dc-en-rectangle-drawing-tool-02.png]
 
 > **Warning:** This file stores your drawing tool settings, so deleting it resets those settings to their defaults. It does not affect your market data, charts, or account settings.
 
 5. Launch DeepCharts again — the application automatically generates a new `tool_config` file.
 6. Test the **Rectangle** drawing tool on a chart. It should now work correctly.
 
-[SCREENSHOT: A DeepCharts chart with the Rectangle drawing tool selected and a rectangle successfully drawn over a price area | rectangle-tool-working.png]
+[SCREENSHOT: A DeepCharts chart with the Rectangle drawing tool selected and a rectangle successfully drawn over a price area | dc-en-rectangle-drawing-tool-03.png]
 
 ## If that didn't work
 

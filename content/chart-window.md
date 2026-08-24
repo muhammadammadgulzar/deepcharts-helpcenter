@@ -18,7 +18,7 @@ This article maps out every area of the chart window so you know what each icon,
 
 The chart window is the container for one or more price charts. It answers the question "where do I change X on my chart?" — the symbol and timeframe live in the title bar, display and indicator controls live in the top-left icon row, drawing tools live in the left toolbar, and quick templates plus trading toggles live in the bottom bar.
 
-[SCREENSHOT: A full chart window with a candlestick chart loaded (e.g. NQ, 5 Minute), annotated with callouts for the title bar, top-left icon row, OHLC readout, left drawing toolbar, and bottom bar | chart-window-overview.png]
+[SCREENSHOT: A full chart window with a candlestick chart loaded (e.g. NQ, 5 Minute), annotated with callouts for the title bar, top-left icon row, OHLC readout, left drawing toolbar, and bottom bar | dc-en-chart-window-01.png]
 
 ## When to use it
 
@@ -34,7 +34,7 @@ The chart window is the container for one or more price charts. It answers the q
 3. Wait while the **Building chart** progress bar finishes — DeepCharts is loading or downloading the tick data.
 4. Use the three title-bar dropdowns to adjust the chart: the symbol (opens the same instrument picker), the data range (for example **10D - BT**) and the timeframe (for example **5 Minute**).
 
-[SCREENSHOT: The Select Instrument dialog with the exchange sidebar on the left, CME selected, the symbol list showing NQ highlighted, and the New / Cancel / Select buttons visible | chart-window-select-instrument.png]
+[SCREENSHOT: The Select Instrument dialog with the exchange sidebar on the left, CME selected, the symbol list showing NQ highlighted, and the New / Cancel / Select buttons visible | dc-en-chart-window-02.png]
 
 > **Note:** The instrument picker only lists exchanges you have subscribed in **Options → Symbol Manage**. If the picker looks empty, subscribe an exchange first — see [[symbol-manage]].
 
@@ -46,7 +46,7 @@ The chart window is the container for one or more price charts. It answers the q
 
 **The delayed-data banner.** An orange banner such as "Connect dxFeed - 15m to see delayed data" means the chart has no live connection and is using the delayed feed — see [[free-delayed-data-feed]].
 
-[SCREENSHOT: Top-left corner of a chart zoomed in, showing the OHLC readout with real values (O H L C, %V, ΣV, ΔV) while hovering a candle | chart-window-ohlc-readout.png]
+[SCREENSHOT: Top-left corner of a chart zoomed in, showing the OHLC readout with real values (O H L C, %V, ΣV, ΔV) while hovering a candle | dc-en-chart-window-03.png]
 
 ## Settings reference
 
@@ -76,7 +76,7 @@ Try link groups live below — set both mini charts to the same color, change th
 | **$** | **Trading Enabled** toggle (Ctrl Alt T). Turns green when armed. Disabling it also hides the trading panel. See [[trading-from-chart]]. |
 | Camera | Takes a chart screenshot. Behavior follows **Options → Settings → General → Various → Screenshot Mode**: **Auto Save** (saves to the configured folder), **Save Dialog** (asks where), **Copy** (to clipboard), or **Copy and Auto Save**. |
 
-[SCREENSHOT: The six top-left chart icons zoomed in, in order: hamburger, two-candle, bar-chart, gear, dollar sign (green/armed state), camera | chart-window-topleft-icons.png]
+[SCREENSHOT: The six top-left chart icons zoomed in, in order: hamburger, two-candle, bar-chart, gear, dollar sign (green/armed state), camera | dc-en-chart-window-04.png]
 
 ### Managing indicators
 
@@ -84,7 +84,7 @@ Click the bar-chart icon to open the **Indicators** panel. Each active indicator
 
 Click the **Indicators** button in that panel to open the full **Indicator List**: category tabs on the left (**All, Volume, Statistics, Oscillator, Overlay, Utility, Third**), a search box, **+** to add and **−** to remove, a gear for settings, and a three-line drag handle to reorder. See [[indicator-layout]] for arranging indicators across chart areas.
 
-[SCREENSHOT: The Indicator List window with the category tabs on the left, the search box at the top, the scrollable indicator list with + icons, and the right panel showing active indicators | chart-window-indicator-list.png]
+[SCREENSHOT: The Indicator List window with the category tabs on the left, the search box at the top, the scrollable indicator list with + icons, and the right panel showing active indicators | dc-en-chart-window-05.png]
 
 ### Chart tabs (Compact View and Group Mode)
 
@@ -95,7 +95,7 @@ DeepCharts offers two ways to manage multiple charts, switched at **Options → 
 
 Each tab keeps its own trading panel and DOM Trading state. Closing a detached chart window asks "Are you sure to close the window?" before closing.
 
-[SCREENSHOT: A chart window in compact tab mode with two tabs ("NQ 5 m" active in green, second tab inactive) and the tab popover open showing the three dropdowns plus Detach and Close buttons | chart-window-tabs-popover.png]
+[SCREENSHOT: A chart window in compact tab mode with two tabs ("NQ 5 m" active in green, second tab inactive) and the tab popover open showing the three dropdowns plus Detach and Close buttons | dc-en-chart-window-06.png]
 
 ### Bottom bar
 
