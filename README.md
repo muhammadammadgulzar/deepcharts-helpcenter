@@ -76,19 +76,21 @@ admin panel's screenshot-coverage view.
 ## Languages
 
 English is the source of truth. The header has a language dropdown (Italiano, Español,
-Français, Deutsch — BETA). A language goes live once bootstrapped:
+Français, Deutsch — BETA). **Translations are written by the team's AI assistants
+(Claude Code), not by an API** — `scripts/translate_sync.py` provides the rails:
 
 ```bash
-OPENAI_API_KEY=... python3 scripts/translate_sync.py --init it
+python3 scripts/translate_sync.py --todo        # what needs translating + the rules
+python3 scripts/translate_sync.py --finalize <files>   # validate/stamp AI-written drafts
+python3 scripts/translate_sync.py --enable it   # go live once everything is translated
+python3 scripts/translate_sync.py --status      # staleness report
 ```
 
-That creates `manifest-it(.deepdom).json` + `content-it(/-deepdom)/` with translated
-articles (marked `machine_translated: true`) and the site builds `site/it/…` automatically.
-From then on, `.github/workflows/translate.yml` re-translates any English article the team
-changes on `test` (needs the repo secret `OPENAI_API_KEY`). Screenshot IDs are per-language
-(`dc-it-…`), and a language's article shows a placeholder until its localized capture is
-added — so the coverage report tracks every language separately.
-`python3 scripts/translate_sync.py --status` shows staleness without API calls.
+Every finalized translation records the `source_hash` of the English version it mirrors,
+so staleness is machine-checkable: CI (`translations-check.yml`) marks pushes red when a
+translation lags, and the admin panel shows per-language sync state. Screenshot IDs are
+per-language (`dc-it-…`); a translated article shows a placeholder until its localized
+capture is added, so coverage is tracked per language too.
 
 ## Things awaiting confirmation
 

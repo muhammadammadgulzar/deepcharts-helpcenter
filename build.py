@@ -22,7 +22,7 @@ The build FAILS on malformed, duplicated, or wrong-language/kb/slug IDs.
 
 Run:  python3 build.py
 """
-import json, os, re, html, shutil, sys, datetime
+import hashlib, json, os, re, html, shutil, sys, datetime
 
 import yaml
 from markdown_it import MarkdownIt
@@ -99,11 +99,13 @@ def load_kb(lang, kb):
             continue
         path = os.path.join(content_dir, fn)
         try:
-            meta, body = parse_frontmatter(open(path, encoding="utf-8").read(), fn)
+            raw = open(path, encoding="utf-8").read()
+            meta, body = parse_frontmatter(raw, fn)
             slug = meta.get("slug") or fn[:-3]
             if fn[:-3] != slug:
                 errs.append(f"{fn}: filename != slug '{slug}'")
-            arts[slug] = {"meta": meta, "body": body}
+            arts[slug] = {"meta": meta, "body": body,
+                          "raw_hash": hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]}
         except Exception as e:
             errs.append(f"{fn}: {e}")
 
@@ -679,6 +681,27 @@ for code, kb, data, r in results:
         "placeholders_total": tot_ph,
         "images_total": tot_img,
         "articles": arts,
+    }
+# translation staleness: every non-EN article records the source_hash of the
+# English file it was translated from (stamped by translate_sync.py --finalize)
+en_data = {kb["key"]: data for code, kb, data in loaded if code == "en"}
+status["translations"] = {}
+for code, kb, data, r in results:
+    if code == "en":
+        continue
+    en_arts = en_data[kb["key"]]["articles"]
+    stale, missing_tr = [], []
+    for slug, en_art in en_arts.items():
+        tr = data["articles"].get(slug)
+        if tr is None:
+            missing_tr.append(slug)
+        elif str(tr["meta"].get("source_hash", "")) != en_art["raw_hash"]:
+            stale.append(slug)
+    status["translations"].setdefault(code, {})[kb["shot_kb"]] = {
+        "brand": kb["brand"],
+        "up_to_date": len(en_arts) - len(stale) - len(missing_tr),
+        "stale": len(stale), "missing": len(missing_tr),
+        "stale_slugs": stale[:50], "missing_slugs": missing_tr[:50],
     }
 open(os.path.join(SITE, "assets", "shots-status.json"), "w", encoding="utf-8").write(
     json.dumps(status, ensure_ascii=False))
