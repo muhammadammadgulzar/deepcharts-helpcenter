@@ -1,0 +1,894 @@
+{
+  "site": {
+    "name": "Centro de Ayuda de DeepCharts",
+    "tagline": "Todo lo que necesita para dominar DeepCharts: desde la primera instalación hasta el flujo de órdenes avanzado."
+  },
+  "categories": [
+    {
+      "slug": "getting-started",
+      "name": "Primeros pasos",
+      "icon": "🚀",
+      "description": "Instale DeepCharts, conecte los datos y realice su primera operación.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "welcome-to-deepcharts",
+              "title": "Bienvenido a DeepCharts: recorrido por la plataforma"
+            },
+            {
+              "slug": "system-requirements",
+              "title": "Requisitos del sistema"
+            },
+            {
+              "slug": "install-deepcharts",
+              "title": "Cómo instalar DeepCharts y activar su licencia"
+            },
+            {
+              "slug": "free-delayed-data-feed",
+              "title": "Cómo usar la fuente de datos gratuita con 15 minutos de retraso"
+            },
+            {
+              "slug": "buy-data-feed",
+              "title": "Cómo comprar una fuente de datos y obtener sus credenciales"
+            },
+            {
+              "slug": "first-chart",
+              "title": "Abra su primer gráfico"
+            },
+            {
+              "slug": "simulation-accounts",
+              "title": "Cuentas de trading y simulación"
+            },
+            {
+              "slug": "quick-start-first-trade",
+              "title": "Inicio rápido: de la instalación a su primera operación"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "connections-data-feeds",
+      "name": "Conexiones y fuentes de datos",
+      "icon": "🔌",
+      "description": "Conecte todos los brókeres, empresas prop y fuentes de datos compatibles, y solucione los problemas de conexión.",
+      "subcategories": [
+        {
+          "name": "Configuración inicial",
+          "en_name": "Setup",
+          "articles": [
+            {
+              "slug": "compatibility-guide",
+              "title": "Brókers, empresas prop y fuentes de datos compatibles"
+            },
+            {
+              "slug": "connect-data-feed",
+              "title": "Cómo conectar una fuente de datos (Feed Settings)"
+            },
+            {
+              "slug": "symbol-manage",
+              "title": "Symbol Manage: suscribir bolsas y asignar su fuente de datos"
+            },
+            {
+              "slug": "sign-market-data-agreement",
+              "title": "Firme su acuerdo de datos de mercado"
+            },
+            {
+              "slug": "connect-dxfeed",
+              "title": "Cómo conectar una fuente de datos dxFeed"
+            },
+            {
+              "slug": "connect-rithmic",
+              "title": "Cómo conectar una fuente de datos de Rithmic"
+            },
+            {
+              "slug": "rtrader-pro-plugin",
+              "title": "Conectar Rithmic mediante el plugin de RTrader Pro"
+            },
+            {
+              "slug": "connect-rithmic-prop-firm",
+              "title": "Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)"
+            },
+            {
+              "slug": "connect-apex",
+              "title": "Cómo conectar Apex Trader Funding"
+            },
+            {
+              "slug": "connect-dxfeed-prop-firm",
+              "title": "Cómo conectar una cuenta dxFeed de empresa prop (MFF, Aqua, Goat...)"
+            },
+            {
+              "slug": "connect-cqg",
+              "title": "Cómo conectar CQG (AMP, Optimus, EdgeClear, Ironbeam...)"
+            },
+            {
+              "slug": "connect-interactive-brokers",
+              "title": "Cómo conectar Interactive Brokers (solo ejecución)"
+            },
+            {
+              "slug": "competition-connect",
+              "title": "Competición de DeepCharts: únase y conéctese"
+            },
+            {
+              "slug": "end-of-day-data",
+              "title": "Conectar datos históricos (fin de día)"
+            },
+            {
+              "slug": "manage-feed-connections",
+              "title": "Administrar y cambiar entre conexiones de fuente de datos"
+            }
+          ]
+        },
+        {
+          "name": "Solución de problemas",
+          "en_name": "Troubleshooting",
+          "articles": [
+            {
+              "slug": "feed-connected-chart-not-moving",
+              "title": "Solución: fuente en vivo conectada pero el gráfico no se mueve"
+            },
+            {
+              "slug": "fix-unable-to-establish-connection",
+              "title": "Solución: Connection Failed — Unable to Establish Connection"
+            },
+            {
+              "slug": "fix-username-password",
+              "title": "Solución: Connection Failed — Verifique el nombre de usuario y la contraseña"
+            },
+            {
+              "slug": "fix-bad-server",
+              "title": "Solución: Connection Failed — Bad Server"
+            },
+            {
+              "slug": "fix-log-in-using-rtrader",
+              "title": "Solución: Please Log In Using R Trader or R Trader Pro"
+            },
+            {
+              "slug": "fix-rithmic-expert-not-attached",
+              "title": "Solución: Rithmic — Expert Not Attached"
+            },
+            {
+              "slug": "fix-dxfeed-dll",
+              "title": "Solución: No se puede cargar la DLL DXFeed_64.dll"
+            },
+            {
+              "slug": "fix-data-access-suspended",
+              "title": "Solución: dxFeed DATA_ACCESS_SUSPENDED"
+            },
+            {
+              "slug": "fix-myfundedfutures-failed",
+              "title": "Solución: dxfeed.myfundedfutures.com Failed"
+            },
+            {
+              "slug": "fix-system-cannot-find-file",
+              "title": "Solución: The System Cannot Find the File Specified"
+            },
+            {
+              "slug": "connection-lost-opening-chart",
+              "title": "Solución: conexión perdida al abrir un gráfico"
+            },
+            {
+              "slug": "symbol-subscription-issue",
+              "title": "Solución: Problema de suscripción de símbolo"
+            },
+            {
+              "slug": "app-crashes-saving-feed",
+              "title": "Solución: la aplicación se cierra al guardar la configuración de la fuente"
+            },
+            {
+              "slug": "gaps-in-price",
+              "title": "Solución: gaps de precio en los gráficos"
+            },
+            {
+              "slug": "data-delayed-lagging",
+              "title": "Solución: gráficos con retraso o datos demorados (lista de verificación)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "charts-workspace",
+      "name": "Gráficos y espacio de trabajo",
+      "icon": "📊",
+      "description": "Domine la ventana de gráficos, las plantillas, las herramientas de dibujo y su espacio de trabajo.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "chart-window",
+              "title": "La ventana de gráfico"
+            },
+            {
+              "slug": "price-chart-settings",
+              "title": "Configuración del gráfico de precios"
+            },
+            {
+              "slug": "chart-display-options",
+              "title": "Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)"
+            },
+            {
+              "slug": "drawing-tools",
+              "title": "Herramientas de dibujo y anotaciones"
+            },
+            {
+              "slug": "templates-workspaces",
+              "title": "Plantillas y espacios de trabajo"
+            },
+            {
+              "slug": "quick-chart-templates",
+              "title": "Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)"
+            },
+            {
+              "slug": "link-windows",
+              "title": "Vincular ventanas con grupos de color"
+            },
+            {
+              "slug": "replay-data",
+              "title": "Reproducir datos de mercado"
+            },
+            {
+              "slug": "customize-language-theme-sounds",
+              "title": "Personalice el idioma, el tema y los sonidos de notificación"
+            },
+            {
+              "slug": "keyboard-shortcuts",
+              "title": "Cómo configurar atajos de teclado"
+            },
+            {
+              "slug": "keyboard-shortcuts-reference",
+              "title": "Referencia de atajos de teclado"
+            },
+            {
+              "slug": "multi-monitor-windows",
+              "title": "Organizar ventanas en varios monitores (y recuperar ventanas fuera de pantalla)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "platform-windows",
+      "name": "Ventanas de la plataforma",
+      "icon": "🪟",
+      "description": "Las ventanas de análisis dedicadas: Time & Sales, DOM, perfiles, escáner y correlación.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "adv-time-and-sales",
+              "title": "Advanced Time And Sales (la cinta)"
+            },
+            {
+              "slug": "advanced-dom",
+              "title": "Ventana Advanced DOM"
+            },
+            {
+              "slug": "profile-chart-window",
+              "title": "Ventana de gráfico de perfil (perfiles TPO y de volumen)"
+            },
+            {
+              "slug": "scanner-window",
+              "title": "Escáner de mercado"
+            },
+            {
+              "slug": "correlation-viewer",
+              "title": "Visor de correlación"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "trading-orders",
+      "name": "Trading y órdenes",
+      "icon": "💹",
+      "description": "Opere desde el gráfico y el DOM, y gestione sus órdenes, el riesgo y el rendimiento.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "trading-from-chart",
+              "title": "Operar desde el gráfico"
+            },
+            {
+              "slug": "trading-panel-reference",
+              "title": "Referencia del panel de trading: cada botón y campo"
+            },
+            {
+              "slug": "dom-trading-chart",
+              "title": "DOM Trading en el gráfico (escalera de trading con clics)"
+            },
+            {
+              "slug": "depth-of-market",
+              "title": "Indicador de profundidad de mercado (DOM)"
+            },
+            {
+              "slug": "oco-strategies",
+              "title": "Estrategias OCO (One-Cancels-the-Other)"
+            },
+            {
+              "slug": "orders-window",
+              "title": "Ventana de órdenes"
+            },
+            {
+              "slug": "portfolio-wallet",
+              "title": "Cartera (Wallet)"
+            },
+            {
+              "slug": "risk-manager",
+              "title": "Gestor de riesgos"
+            },
+            {
+              "slug": "trade-copier",
+              "title": "Cómo configurar el Trade Copier"
+            },
+            {
+              "slug": "performance-analysis",
+              "title": "Análisis de rendimiento (Signal Performance)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "concepts",
+      "name": "Conceptos",
+      "icon": "🎓",
+      "description": "Aprenda las ideas de flujo de órdenes detrás de las herramientas: desde el delta hasta la teoría de subastas.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "orderflow-101",
+              "title": "Flujo de órdenes 101: bid, ask, agresor y delta"
+            },
+            {
+              "slug": "understanding-volume-profile",
+              "title": "Entender el perfil de volumen: POC, área de valor, HVN/LVN"
+            },
+            {
+              "slug": "understanding-auction-theory",
+              "title": "Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción"
+            },
+            {
+              "slug": "understanding-icebergs-absorption",
+              "title": "Entender los icebergs y la absorción"
+            },
+            {
+              "slug": "understanding-vwap",
+              "title": "Entender el VWAP"
+            },
+            {
+              "slug": "understanding-market-structure-sessions",
+              "title": "Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)"
+            },
+            {
+              "slug": "reading-a-footprint",
+              "title": "Cómo leer un footprint: ejemplos prácticos"
+            },
+            {
+              "slug": "glossary",
+              "title": "Glosario de términos de flujo de órdenes y de la plataforma"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "indicators-analysis",
+      "name": "Indicadores y análisis",
+      "icon": "📈",
+      "description": "Todos los indicadores: las herramientas propietarias Deep y la biblioteca estándar completa.",
+      "subcategories": [
+        {
+          "name": "Fundamentos de indicadores",
+          "en_name": "Indicator Basics",
+          "articles": [
+            {
+              "slug": "different-types-of-input",
+              "title": "Diferentes tipos de datos de entrada para indicadores"
+            },
+            {
+              "slug": "indicator-layout",
+              "title": "Cómo cambiar la disposición de los indicadores"
+            }
+          ]
+        },
+        {
+          "name": "Indicadores profundos",
+          "en_name": "Deep Indicators",
+          "articles": [
+            {
+              "slug": "deep-print",
+              "title": "Deep Print (Footprint)"
+            },
+            {
+              "slug": "deep-profile",
+              "title": "Deep Profile (Perfil de volumen / delta)"
+            },
+            {
+              "slug": "deep-profile-swing",
+              "title": "Deep Profile Swing"
+            },
+            {
+              "slug": "deep-profile-values",
+              "title": "Deep Profile Values"
+            },
+            {
+              "slug": "deep-delta",
+              "title": "Deep Delta"
+            },
+            {
+              "slug": "deep-stats",
+              "title": "Deep Stats"
+            },
+            {
+              "slug": "deep-trades",
+              "title": "Deep Trades"
+            },
+            {
+              "slug": "deep-wall",
+              "title": "Deep Wall"
+            },
+            {
+              "slug": "deep-v-tracker",
+              "title": "Deep V-Tracker"
+            },
+            {
+              "slug": "deep-m-ivb",
+              "title": "Deep-M IVB"
+            },
+            {
+              "slug": "deep-m-effort",
+              "title": "Deep-M Effort (NQ)"
+            },
+            {
+              "slug": "deep-pattern-builder",
+              "title": "Deep Pattern Builder"
+            }
+          ]
+        },
+        {
+          "name": "Tendencia",
+          "en_name": "Trend",
+          "articles": [
+            {
+              "slug": "moving-average",
+              "title": "Media móvil"
+            },
+            {
+              "slug": "super-trend",
+              "title": "Super Trend"
+            },
+            {
+              "slug": "super-trend-difference",
+              "title": "Super Trend Difference"
+            },
+            {
+              "slug": "parabolic-sar",
+              "title": "SAR Parabólico"
+            },
+            {
+              "slug": "ichimoku",
+              "title": "Ichimoku"
+            },
+            {
+              "slug": "linear-regression",
+              "title": "Regresión lineal"
+            },
+            {
+              "slug": "regression-channel",
+              "title": "Canal de regresión"
+            },
+            {
+              "slug": "tillson-t3",
+              "title": "Tillson T3"
+            },
+            {
+              "slug": "zig-zag",
+              "title": "Zig Zag"
+            },
+            {
+              "slug": "donchian-channel",
+              "title": "Canal de Donchian"
+            },
+            {
+              "slug": "adx",
+              "title": "Índice direccional promedio (ADX)"
+            },
+            {
+              "slug": "aroon-up-down",
+              "title": "Aroon Up/Down"
+            },
+            {
+              "slug": "aroon-oscillator",
+              "title": "Oscilador Aroon"
+            }
+          ]
+        },
+        {
+          "name": "Momentum y osciladores",
+          "en_name": "Momentum & Oscillators",
+          "articles": [
+            {
+              "slug": "rsi",
+              "title": "Índice de fuerza relativa (RSI)"
+            },
+            {
+              "slug": "macd",
+              "title": "MACD"
+            },
+            {
+              "slug": "stochastic-oscillator",
+              "title": "Oscilador estocástico"
+            },
+            {
+              "slug": "momentum",
+              "title": "Momentum"
+            },
+            {
+              "slug": "rate-of-change",
+              "title": "Tasa de cambio (ROC)"
+            },
+            {
+              "slug": "cci",
+              "title": "Índice de canal de mercancías (CCI)"
+            },
+            {
+              "slug": "williams-r",
+              "title": "Williams %R"
+            },
+            {
+              "slug": "awesome-oscillator",
+              "title": "Oscilador Awesome"
+            },
+            {
+              "slug": "inverse-cyber-cycle",
+              "title": "Ciclo Cibernético Inverso (Inverse Cyber Cycle)"
+            },
+            {
+              "slug": "know-sure-thing",
+              "title": "Know Sure Thing (KST)"
+            }
+          ]
+        },
+        {
+          "name": "Volatilidad y bandas",
+          "en_name": "Volatility & Bands",
+          "articles": [
+            {
+              "slug": "bollinger-bands",
+              "title": "Bandas de Bollinger"
+            },
+            {
+              "slug": "keltner-channel",
+              "title": "Canal de Keltner"
+            },
+            {
+              "slug": "atr",
+              "title": "Rango Verdadero Medio (ATR)"
+            },
+            {
+              "slug": "standard-deviation",
+              "title": "Desviación estándar"
+            },
+            {
+              "slug": "vwap-envelopes",
+              "title": "Envolventes VWAP"
+            },
+            {
+              "slug": "adr-target",
+              "title": "Objetivo de rango diario promedio (ADR Target)"
+            }
+          ]
+        },
+        {
+          "name": "Volumen y delta",
+          "en_name": "Volume & Delta",
+          "articles": [
+            {
+              "slug": "volume",
+              "title": "Volumen"
+            },
+            {
+              "slug": "delta-bar",
+              "title": "Delta Bar"
+            },
+            {
+              "slug": "delta-highlight",
+              "title": "Resaltado de delta %"
+            },
+            {
+              "slug": "delta-cumulative-candlestick",
+              "title": "Delta Cumulative Candlestick"
+            },
+            {
+              "slug": "delta-cumulative-histogram",
+              "title": "Delta Cumulative Histogram"
+            },
+            {
+              "slug": "volume-swing",
+              "title": "Swing de volumen (Volume Swing)"
+            },
+            {
+              "slug": "volume-delta-sprint",
+              "title": "Sprint de volumen/delta (Volume/Delta Sprint)"
+            },
+            {
+              "slug": "chaikin-ad",
+              "title": "Acumulación/Distribución de Chaikin"
+            },
+            {
+              "slug": "big-trades",
+              "title": "Big Trades"
+            },
+            {
+              "slug": "speed-of-tape",
+              "title": "Velocidad de la cinta"
+            },
+            {
+              "slug": "speed-of-tape-instant",
+              "title": "Velocidad de la cinta (instantánea)"
+            },
+            {
+              "slug": "market-statistics",
+              "title": "Estadísticas de mercado"
+            },
+            {
+              "slug": "on-candle-stats",
+              "title": "On Candle Stats"
+            }
+          ]
+        },
+        {
+          "name": "Flujo de órdenes y subasta",
+          "en_name": "Order Flow & Auction",
+          "articles": [
+            {
+              "slug": "market-profile-tpo",
+              "title": "Perfil de mercado (TPO)"
+            },
+            {
+              "slug": "imbalance-tracker",
+              "title": "Rastreador de Desequilibrios (Imbalance Tracker)"
+            },
+            {
+              "slug": "imbalance-rejector",
+              "title": "Rechazador de Desequilibrios (Imbalance Rejector)"
+            },
+            {
+              "slug": "session-imbalance",
+              "title": "Desequilibrio de sesión"
+            },
+            {
+              "slug": "unfinished-auction",
+              "title": "Subasta sin terminar (Unfinished Auction)"
+            },
+            {
+              "slug": "auction-gap-tracker",
+              "title": "Auction Gap Tracker"
+            },
+            {
+              "slug": "dynamic-poc",
+              "title": "POC Dinámico"
+            },
+            {
+              "slug": "bar-poc",
+              "title": "POC de barra"
+            },
+            {
+              "slug": "stop-spotter",
+              "title": "Stop Spotter"
+            },
+            {
+              "slug": "ratio-highlight",
+              "title": "Ratio Highlight"
+            }
+          ]
+        },
+        {
+          "name": "Niveles y patrones",
+          "en_name": "Levels & Patterns",
+          "articles": [
+            {
+              "slug": "pivot-points",
+              "title": "Puntos pivote"
+            },
+            {
+              "slug": "important-levels",
+              "title": "Niveles importantes"
+            },
+            {
+              "slug": "absolute-levels",
+              "title": "Niveles absolutos"
+            },
+            {
+              "slug": "price-movement-levels",
+              "title": "Niveles de movimiento del precio"
+            },
+            {
+              "slug": "session-marker",
+              "title": "Marcador de sesión"
+            },
+            {
+              "slug": "swing-point",
+              "title": "Swing Point"
+            },
+            {
+              "slug": "gap-detector",
+              "title": "Detector de gaps (Gap Detector)"
+            },
+            {
+              "slug": "fvg-identifier",
+              "title": "Identificador de FVG (FVG Identifier)"
+            },
+            {
+              "slug": "divergence-detector",
+              "title": "Detector de divergencias"
+            },
+            {
+              "slug": "confluence-identifier",
+              "title": "Identificador de Confluencias"
+            }
+          ]
+        },
+        {
+          "name": "Superposiciones de gráfico",
+          "en_name": "Chart Overlays",
+          "articles": [
+            {
+              "slug": "candlestick-bar",
+              "title": "Barra de velas (Candlestick Bar)"
+            },
+            {
+              "slug": "overlay-chart",
+              "title": "Superposición de gráfico (Overlay Chart)"
+            },
+            {
+              "slug": "overlay-symbol",
+              "title": "Superposición de símbolo (Overlay Symbol)"
+            },
+            {
+              "slug": "overlay-timeframe-candlestick",
+              "title": "Superposición de velas de marco temporal (Overlay Timeframe Candlestick)"
+            },
+            {
+              "slug": "overlay-timeframe-highlight",
+              "title": "Resaltado de marco temporal (Overlay Timeframe Highlight)"
+            },
+            {
+              "slug": "shift-candle",
+              "title": "Vela Shift"
+            },
+            {
+              "slug": "text-on-chart",
+              "title": "Texto en el gráfico"
+            },
+            {
+              "slug": "annotations-overlay",
+              "title": "Superposición de anotaciones"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "data-database",
+      "name": "Datos y base de datos",
+      "icon": "🗄️",
+      "description": "Mantenga en buen estado su base de datos local de datos de mercado: rollover, limpieza y reparación.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "symbol-rollover",
+              "title": "Rollover de símbolos (cambio de mes de contrato)"
+            },
+            {
+              "slug": "delete-market-data",
+              "title": "Eliminar datos de mercado (métodos en la aplicación y manual)"
+            },
+            {
+              "slug": "download-data",
+              "title": "Volver a descargar datos históricos (herramienta Download Data)"
+            },
+            {
+              "slug": "database-optimization",
+              "title": "Optimización de la base de datos"
+            },
+            {
+              "slug": "database-problems",
+              "title": "Solución: problemas de la base de datos"
+            },
+            {
+              "slug": "fix-could-not-find-path",
+              "title": "Solución: Could Not Find a Part of the Path"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "troubleshooting-support",
+      "name": "Solución de problemas y soporte",
+      "icon": "🛟",
+      "description": "Problemas de instalación, licencia e interfaz, y cómo contactar con soporte por la vía rápida.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "installation-problems",
+              "title": "Solución: problemas de instalación y requisitos básicos"
+            },
+            {
+              "slug": "installation-setup-failed",
+              "title": "Solución: Installation Setup Failed"
+            },
+            {
+              "slug": "application-control-policy",
+              "title": "Solución: una política de control de aplicaciones bloquea DeepCharts"
+            },
+            {
+              "slug": "rectangle-drawing-tool",
+              "title": "Solución: la herramienta de dibujo Rectángulo no funciona"
+            },
+            {
+              "slug": "chart-zoom",
+              "title": "Solución: el zoom del gráfico no funciona"
+            },
+            {
+              "slug": "license-issues",
+              "title": "Solución: problemas de licencia y activación"
+            },
+            {
+              "slug": "diagnostic-report",
+              "title": "Informe de diagnóstico: antes de contactar con soporte"
+            },
+            {
+              "slug": "get-help",
+              "title": "Cómo obtener ayuda (chat, informe de diagnóstico, soporte)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "account-billing",
+      "name": "Cuenta y facturación",
+      "icon": "👤",
+      "description": "Suscripciones, licencias y traslado entre equipos.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "manage-subscriptions",
+              "title": "Administre sus suscripciones y facturación"
+            },
+            {
+              "slug": "move-to-new-computer",
+              "title": "Mover DeepCharts a un ordenador nuevo"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
