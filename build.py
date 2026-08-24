@@ -65,19 +65,29 @@ ENABLED_LANGS = [l for l in LANGS if lang_available(l[0])]
 UI_STR = {
     "en": {"new_here": "New here?", "browse": "Browse the library",
            "search_ph": "Search the knowledge base...  ( / )",
+           "all_articles": "All articles", "quick_start": "Quick start",
+           "get_started": "Get started", "get_help": "Get help",
            "beta_note": ""},
     "it": {"new_here": "Prima volta qui?", "browse": "Sfoglia la libreria",
            "search_ph": "Cerca nella knowledge base...  ( / )",
-           "beta_note": "Questa lingua è in beta — alcune pagine possono essere tradotte automaticamente."},
+           "all_articles": "Tutti gli articoli", "quick_start": "Guida rapida",
+           "get_started": "Primi passi", "get_help": "Assistenza",
+           "beta_note": "Questa lingua è in beta — alcune pagine possono essere tradotte con l'aiuto dell'AI."},
     "es": {"new_here": "¿Primera vez aquí?", "browse": "Explora la biblioteca",
            "search_ph": "Buscar en la base de conocimientos...  ( / )",
-           "beta_note": "Este idioma está en beta — algunas páginas pueden estar traducidas automáticamente."},
+           "all_articles": "Todos los artículos", "quick_start": "Guía rápida",
+           "get_started": "Primeros pasos", "get_help": "Soporte",
+           "beta_note": "Este idioma está en beta — algunas páginas pueden estar traducidas con ayuda de la IA."},
     "fr": {"new_here": "Nouveau ici ?", "browse": "Parcourir la bibliothèque",
            "search_ph": "Rechercher dans la base de connaissances...  ( / )",
-           "beta_note": "Cette langue est en bêta — certaines pages peuvent être traduites automatiquement."},
+           "all_articles": "Tous les articles", "quick_start": "Guide rapide",
+           "get_started": "Premiers pas", "get_help": "Assistance",
+           "beta_note": "Cette langue est en bêta — certaines pages peuvent être traduites avec l'aide de l'IA."},
     "de": {"new_here": "Neu hier?", "browse": "Bibliothek durchsuchen",
            "search_ph": "Wissensdatenbank durchsuchen...  ( / )",
-           "beta_note": "Diese Sprache ist in der Beta — einige Seiten können maschinell übersetzt sein."},
+           "all_articles": "Alle Artikel", "quick_start": "Schnellstart",
+           "get_started": "Erste Schritte", "get_help": "Hilfe",
+           "beta_note": "Diese Sprache ist in der Beta — einige Seiten können mit KI-Unterstützung übersetzt sein."},
 }
 
 # ---------------- load articles ----------------
@@ -279,19 +289,20 @@ def lang_dropdown(root, loc):
 
 def header_html(root, kbroot, loc):
     langroot = f"{root}{LANG_PREFIX}"
+    S = UI_STR.get(LANG, UI_STR["en"])
     if KB["key"] == "deepdom":
         brand = 'DeepDOM <span class="hc">Help Center</span>'
         switch = f'<a class="kb-switch" href="{langroot}index.html" title="Switch knowledge base">⇄ DeepCharts KB</a>'
-        links = (f'<a href="{kbroot}index.html">All articles</a>'
-                 f'<a href="{kbroot}article/installation-and-first-configuration.html">Get started</a>'
-                 f'<a href="{langroot}article/get-help.html">Get help</a>')
+        links = (f'<a href="{kbroot}index.html">{html.escape(S["all_articles"])}</a>'
+                 f'<a href="{kbroot}article/installation-and-first-configuration.html">{html.escape(S["get_started"])}</a>'
+                 f'<a href="{langroot}article/get-help.html">{html.escape(S["get_help"])}</a>')
     else:
         brand = 'DeepCharts <span class="hc">Help Center</span>'
         switch = f'<a class="kb-switch" href="{langroot}deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a>'
-        links = (f'<a href="{kbroot}index.html">All articles</a>'
-                 f'<a href="{kbroot}article/quick-start-first-trade.html">Quick start</a>'
-                 f'<a href="{kbroot}article/get-help.html">Get help</a>')
-    ph = UI_STR.get(LANG, UI_STR["en"])["search_ph"]
+        links = (f'<a href="{kbroot}index.html">{html.escape(S["all_articles"])}</a>'
+                 f'<a href="{kbroot}article/quick-start-first-trade.html">{html.escape(S["quick_start"])}</a>'
+                 f'<a href="{kbroot}article/get-help.html">{html.escape(S["get_help"])}</a>')
+    ph = S["search_ph"]
     return f'''<header class="site-header">
   <div class="logo"><a href="{kbroot}index.html">{brand}</a></div>
   <div class="searchbox" data-search><span class="mag">🔎</span>

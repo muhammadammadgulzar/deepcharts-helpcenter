@@ -1,0 +1,89 @@
+{
+  "site": {
+    "name": "Centro Assistenza DeepCharts",
+    "tagline": "Tutto ciò che ti serve per padroneggiare DeepCharts — dalla prima installazione all'orderflow avanzato."
+  },
+  "site_deepdom": {
+    "name": "Centro Assistenza DeepDOM",
+    "tagline": "Padroneggia DeepDOM, la piattaforma di trading orderflow."
+  },
+  "categories": {
+    "getting-started": {
+      "name": "Primi passi",
+      "description": "Installa DeepCharts, collega i dati ed esegui la tua prima operazione."
+    },
+    "connections-data-feeds": {
+      "name": "Connessioni e feed dati",
+      "description": "Collega tutti i broker, le prop firm e i feed dati supportati — e risolvi i problemi di connessione."
+    },
+    "charts-workspace": {
+      "name": "Grafici e workspace",
+      "description": "Padroneggia la finestra del grafico, i template, gli strumenti di disegno e il tuo workspace."
+    },
+    "platform-windows": {
+      "name": "Finestre della piattaforma",
+      "description": "Le finestre di analisi dedicate: Time & Sales, DOM, profili, scanner e correlazione."
+    },
+    "trading-orders": {
+      "name": "Trading e ordini",
+      "description": "Fai trading dal grafico e dal DOM, gestisci ordini, rischio e performance."
+    },
+    "concepts": {
+      "name": "Concetti",
+      "description": "Scopri le idee dell'orderflow alla base degli strumenti — dal delta alla teoria dell'asta."
+    },
+    "indicators-analysis": {
+      "name": "Indicatori e analisi",
+      "description": "Tutti gli indicatori — gli strumenti proprietari Deep e l'intera libreria standard."
+    },
+    "data-database": {
+      "name": "Dati e database",
+      "description": "Mantieni in salute il tuo database locale dei dati di mercato: rollover, pulizia, riparazione."
+    },
+    "troubleshooting-support": {
+      "name": "Risoluzione problemi e supporto",
+      "description": "Problemi di installazione, licenza e interfaccia — e come contattare il supporto nel modo più rapido."
+    },
+    "account-billing": {
+      "name": "Account e fatturazione",
+      "description": "Abbonamenti, licenze e passaggio da un computer all'altro."
+    },
+    "common-issues": {
+      "name": "Problemi Comuni",
+      "description": "Risolvi i problemi di installazione, licenza, sottoscrizione dei simboli e cache in DeepDOM."
+    },
+    "how-to": {
+      "name": "Come Fare",
+      "description": "Installa, configura e personalizza DeepDOM — connessioni, mercati, workspace, scorciatoie e altro."
+    },
+    "trading": {
+      "name": "Trading",
+      "description": "Fai trading da DeepDOM: la finestra Ordini, il trading dal grafico, la gestione del rischio e l'ambiente di simulazione."
+    },
+    "indicators": {
+      "name": "Indicatori",
+      "description": "Gli indicatori orderflow e volume di DeepDOM, da Spread Bid/Ask a Important Levels."
+    },
+    "features": {
+      "name": "Funzionalità",
+      "description": "Le visualizzazioni di punta di DeepDOM: Volume Bubbles, Heatmap e replay dei dati tick."
+    },
+    "deepindicators": {
+      "name": "Indicatori Deep",
+      "description": "La serie Deep — rilevamento basato sui dati MBO di iceberg, ripristini, liquidità e delta nascosto."
+    }
+  },
+  "subcategories": {
+    "Chart Overlays": "Overlay del grafico",
+    "Deep Indicators": "Indicatori Deep",
+    "Indicator Basics": "Fondamenti degli indicatori",
+    "Levels & Patterns": "Livelli e pattern",
+    "Momentum & Oscillators": "Momentum e oscillatori",
+    "Order Flow & Auction": "Orderflow e asta",
+    "Setup": "Configurazione",
+    "Trend": "Trend",
+    "Troubleshooting": "Risoluzione dei problemi",
+    "Volatility & Bands": "Volatilità e bande",
+    "Volume & Delta": "Volume e delta"
+  }
+}
