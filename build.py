@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
-"""DeepCharts Help Center static-site builder.
+"""DeepCharts + DeepDOM Help Center static-site builder.
 
-Reads manifest.json + content/*.md and produces:
-  site/index.html, site/category/<cat>.html, site/article/<slug>.html
-  site/pdf/<slug>.pdf           (per-article download)
-  site/assets/*                 (css/js + search-index.js)
-  screenshots-needed.md         (every placeholder, for the screenshot capture pass)
+Builds TWO knowledge bases into one site:
+  site/                       DeepCharts KB (173 articles) — index, category/, article/, pdf/
+  site/deepdom/               DeepDOM KB (39 articles)     — index, category/, article/, pdf/
+  site/assets/*               shared css/js + per-KB search indexes + kb-map.js
+  screenshots-needed.md       every placeholder from BOTH KBs, for the capture pass
+
+Sources:
+  manifest.json          + content/*.md           -> DeepCharts KB
+  manifest-deepdom.json  + content-deepdom/*.md   -> DeepDOM KB
 
 Run:  python3 build.py
 """
@@ -15,16 +19,19 @@ import yaml
 from markdown_it import MarkdownIt
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-CONTENT = os.path.join(ROOT, "content")
 SITE = os.path.join(ROOT, "site")
 ASSETS = os.path.join(ROOT, "assets")
 
 md = MarkdownIt("commonmark", {"html": True}).enable("table").enable("strikethrough")
-
-manifest = json.load(open(os.path.join(ROOT, "manifest.json")))
-SITE_NAME = manifest["site"]["name"]
-TAGLINE = manifest["site"]["tagline"]
 TODAY = datetime.date.today().strftime("%B %d, %Y")
+
+# ---------------- knowledge bases ----------------
+KBS = [
+    {"key": "",        "brand": "DeepCharts", "manifest": "manifest.json",
+     "content": "content", "sub": "", "search_js": "search-index.js"},
+    {"key": "deepdom", "brand": "DeepDOM",    "manifest": "manifest-deepdom.json",
+     "content": "content-deepdom", "sub": "deepdom", "search_js": "search-index-deepdom.js"},
+]
 
 # ---------------- load articles ----------------
 def parse_frontmatter(text, path):
@@ -34,39 +41,54 @@ def parse_frontmatter(text, path):
     meta = yaml.safe_load(m.group(1))
     return meta, text[m.end():]
 
-articles = {}   # slug -> {meta, body}
-errors = []
-for fn in sorted(os.listdir(CONTENT)) if os.path.isdir(CONTENT) else []:
-    if not fn.endswith(".md"):
-        continue
-    path = os.path.join(CONTENT, fn)
-    try:
-        meta, body = parse_frontmatter(open(path, encoding="utf-8").read(), fn)
-        slug = meta.get("slug") or fn[:-3]
-        if fn[:-3] != slug:
-            errors.append(f"{fn}: filename != slug '{slug}'")
-        articles[slug] = {"meta": meta, "body": body}
-    except Exception as e:
-        errors.append(f"{fn}: {e}")
 
-# linear order from manifest
-order = []          # [(slug, cat, sub)]
+def load_kb(kb):
+    content_dir = os.path.join(ROOT, kb["content"])
+    man = json.load(open(os.path.join(ROOT, kb["manifest"])))
+    arts = {}
+    errs = []
+    for fn in sorted(os.listdir(content_dir)) if os.path.isdir(content_dir) else []:
+        if not fn.endswith(".md"):
+            continue
+        path = os.path.join(content_dir, fn)
+        try:
+            meta, body = parse_frontmatter(open(path, encoding="utf-8").read(), fn)
+            slug = meta.get("slug") or fn[:-3]
+            if fn[:-3] != slug:
+                errs.append(f"{fn}: filename != slug '{slug}'")
+            arts[slug] = {"meta": meta, "body": body}
+        except Exception as e:
+            errs.append(f"{fn}: {e}")
+
+    ordr = []          # [(slug, cat, sub)]
+    catof = {}
+    for c in man["categories"]:
+        for s in c["subcategories"]:
+            for a in s["articles"]:
+                ordr.append((a["slug"], c, s["name"]))
+                catof[a["slug"]] = (c, s["name"], a)
+
+    miss = [sl for sl, _, _ in ordr if sl not in arts]
+    extr = [sl for sl in arts if sl not in catof]
+    print(f"[{kb['brand']}] content files: {len(arts)} | manifest: {len(ordr)} | "
+          f"missing: {len(miss)} | extra: {len(extr)}")
+    if miss:
+        print("MISSING:", ", ".join(miss))
+    if extr:
+        print("EXTRA (not in manifest, skipped):", ", ".join(extr))
+    for e in errs:
+        print("ERROR:", e)
+    return {"manifest": man, "articles": arts, "order": ordr, "cat_of": catof,
+            "missing": miss, "errors": errs}
+
+# per-KB globals (assigned by build_kb; helpers below read them)
+KB = KBS[0]
+manifest = None
+articles = {}
 cat_of = {}
-for c in manifest["categories"]:
-    for s in c["subcategories"]:
-        for a in s["articles"]:
-            order.append((a["slug"], c, s["name"]))
-            cat_of[a["slug"]] = (c, s["name"], a)
-
-missing = [sl for sl, _, _ in order if sl not in articles]
-extra = [sl for sl in articles if sl not in cat_of]
-print(f"content files: {len(articles)} | manifest: {len(order)} | missing: {len(missing)} | extra: {len(extra)}")
-if missing:
-    print("MISSING:", ", ".join(missing))
-if extra:
-    print("EXTRA (not in manifest, skipped):", ", ".join(extra))
-for e in errors:
-    print("ERROR:", e)
+order = []
+SITE_NAME = ""
+TAGLINE = ""
 
 # ---------------- markdown transforms ----------------
 SHOT_RE = re.compile(r"^\[SCREENSHOT:\s*(.+?)\s*\|\s*([\w.\-]+)\s*\][ \t]*$", re.M)
@@ -74,13 +96,13 @@ WIDGET_RE = re.compile(r"^\[WIDGET:\s*([\w\-]+)\s*\][ \t]*$", re.M)
 LINK_RE = re.compile(r"\[\[([\w\-]+)(?:\|([^\]]+))?\]\]")
 CONFIRM_RE = re.compile(r"\[CONFIRM:([^\]]+)\]")
 
-shots = []   # (slug, filename, desc)
+shots = []   # (content_dir, slug, title, filename, desc)
 badlinks = []
 
 def transform_md(slug, body):
     def shot_sub(m):
         desc, fname = m.group(1), m.group(2)
-        shots.append((slug, fname, desc))
+        shots.append((KB["content"], slug, articles[slug]["meta"]["title"], fname, desc))
         return ('<div class="shot"><div class="cam">📷</div><div>'
                 '<div class="s-label">Screenshot placeholder</div>'
                 f'<div class="s-desc">{html.escape(desc)}</div>'
@@ -129,7 +151,7 @@ def callout_pass(rendered):
     return rendered
 
 # ---------------- html shell ----------------
-def sidebar_html(root, active_slug=None):
+def sidebar_html(kbroot, active_slug=None):
     out = []
     for c in manifest["categories"]:
         out.append('<div class="nav-cat"><button>{i}&nbsp; {n} <span class="tw">▶</span></button><ul class="nav-items">'
@@ -139,20 +161,32 @@ def sidebar_html(root, active_slug=None):
                 out.append(f'<li class="nav-sub">{html.escape(s["name"])}</li>')
             for a in s["articles"]:
                 cls = ' class="active"' if a["slug"] == active_slug else ""
-                out.append(f'<li><a href="{root}article/{a["slug"]}.html"{cls}>{html.escape(a["title"])}</a></li>')
+                out.append(f'<li><a href="{kbroot}article/{a["slug"]}.html"{cls}>{html.escape(a["title"])}</a></li>')
         out.append("</ul></div>")
     return "".join(out)
 
-def header_html(root):
+def header_html(root, kbroot):
+    if KB["key"] == "deepdom":
+        brand = 'DeepDOM <span class="hc">Help Center</span>'
+        switch = f'<a class="kb-switch" href="{root}index.html" title="Switch knowledge base">⇄ DeepCharts KB</a>'
+        links = (f'<a href="{kbroot}index.html">All articles</a>'
+                 f'<a href="{kbroot}article/installation-and-first-configuration.html">Get started</a>'
+                 f'<a href="{root}article/get-help.html">Get help</a>')
+    else:
+        brand = 'DeepCharts <span class="hc">Help Center</span>'
+        switch = f'<a class="kb-switch" href="{root}deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a>'
+        links = (f'<a href="{kbroot}index.html">All articles</a>'
+                 f'<a href="{kbroot}article/quick-start-first-trade.html">Quick start</a>'
+                 f'<a href="{kbroot}article/get-help.html">Get help</a>')
     return f'''<header class="site-header">
-  <div class="logo"><a href="{root}index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="logo"><a href="{kbroot}index.html">{brand}</a></div>
   <div class="searchbox" data-search><span class="mag">🔎</span>
     <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
     <div class="search-results"></div></div>
-  <nav class="header-links"><a href="{root}index.html">All articles</a><a href="{root}article/quick-start-first-trade.html">Quick start</a><a href="{root}article/get-help.html">Get help</a></nav>
+  <nav class="header-links">{links}{switch}</nav>
 </header>'''
 
-def page(root, title, body, active_slug=None, toc_html="", desc=""):
+def page(root, kbroot, title, body, active_slug=None, toc_html="", desc=""):
     return f'''<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -162,17 +196,18 @@ def page(root, title, body, active_slug=None, toc_html="", desc=""):
 <meta name="description" content="{html.escape(desc)}">
 <link rel="stylesheet" href="{root}assets/style.css">
 <link rel="stylesheet" href="{root}assets/review.css">
-<script>window.HC_ROOT="{root}";</script>
+<script>window.HC_ROOT="{root}";window.KB_ROOT="{kbroot}";window.HC_KB="{KB["key"]}";</script>
 </head><body>
-{header_html(root)}
+{header_html(root, kbroot)}
 <div class="layout">
-  <nav class="sidebar">{sidebar_html(root, active_slug)}</nav>
+  <nav class="sidebar">{sidebar_html(kbroot, active_slug)}</nav>
   <main class="content">{body}
-    <div class="footer">DeepCharts Help Center · rebuilt {TODAY} · screenshots pending capture (see placeholders)</div>
+    <div class="footer">{SITE_NAME} · rebuilt {TODAY} · screenshots pending capture (see placeholders)</div>
   </main>
   {toc_html}
 </div>
-<script src="{root}assets/search-index.js"></script>
+<script src="{root}assets/kb-map.js"></script>
+<script src="{root}assets/{KB["search_js"]}"></script>
 <script src="{root}assets/app.js"></script>
 <script src="{root}assets/widgets.js"></script>
 <script src="{root}assets/deep-print-studio.js"></script>
@@ -190,121 +225,7 @@ KNOWN_WIDGETS = {
 widget_uses = []   # (slug, name) for reporting
 bad_widgets = []
 
-# ---------------- build article pages ----------------
-os.makedirs(os.path.join(SITE, "article"), exist_ok=True)
-os.makedirs(os.path.join(SITE, "category"), exist_ok=True)
-os.makedirs(os.path.join(SITE, "pdf"), exist_ok=True)
-shutil.copytree(ASSETS, os.path.join(SITE, "assets"), dirs_exist_ok=True)
-
-search_index = []
-linear = [sl for sl, _, _ in order if sl in articles]
-
-for idx, slug in enumerate(linear):
-    art = articles[slug]
-    meta = art["meta"]
-    c, sub, _ = cat_of[slug]
-    body_md = transform_md(slug, art["body"])
-    rendered = md.render(body_md)
-    rendered = callout_pass(rendered)
-    rendered, toc = heading_anchor_pass(rendered)
-
-    toc_html = ""
-    if toc:
-        items = "".join(f'<li class="lv{lv}"><a href="#{hid}">{html.escape(t)}</a></li>' for lv, hid, t in toc)
-        toc_html = f'<aside class="toc"><div class="toc-head">On this page</div><ul>{items}</ul></aside>'
-
-    prev_a = next_a = ""
-    if idx > 0:
-        p = articles[linear[idx-1]]["meta"]
-        prev_a = f'<a class="prev" href="./{linear[idx-1]}.html"><div class="pn-lbl">← Previous</div><div class="pn-title">{html.escape(p["title"])}</div></a>'
-    if idx < len(linear) - 1:
-        n = articles[linear[idx+1]]["meta"]
-        next_a = f'<a class="next" href="./{linear[idx+1]}.html"><div class="pn-lbl">Next →</div><div class="pn-title">{html.escape(n["title"])}</div></a>'
-
-    crumb = (f'<div class="breadcrumb"><a href="../index.html">Help Center</a> › '
-             f'<a href="../category/{c["slug"]}.html">{html.escape(c["name"])}</a>'
-             + (f' › {html.escape(sub)}' if sub else "") + "</div>")
-    dif = meta.get("difficulty", "beginner")
-    typ = meta.get("type", "reference")
-    body_html = f'''{crumb}
-<div class="article-head"><h1>{html.escape(meta["title"])}</h1>
-<p class="article-desc">{html.escape(meta.get("description",""))}</p>
-<div class="meta-row">
-  <span class="badge b-{dif}">{dif.capitalize()}</span>
-  <span class="badge">{typ.capitalize()}</span>
-  <span class="badge">🕒 {html.escape(meta.get("time",""))}</span>
-  <a class="btn-pdf" href="../pdf/{slug}.pdf" download>⬇ Download PDF</a>
-</div></div>
-<article class="article-body">{rendered}</article>
-<div class="pn">{prev_a}{next_a}</div>'''
-
-    open(os.path.join(SITE, "article", f"{slug}.html"), "w", encoding="utf-8").write(
-        page("../", meta["title"], body_html, active_slug=slug, toc_html=toc_html, desc=meta.get("description","")))
-
-    search_index.append({"s": slug, "t": meta["title"], "d": meta.get("description",""),
-                         "c": c["name"], "sub": sub, "dif": dif,
-                         "k": meta.get("keywords", []), "h": [t for _, _, t in toc]})
-
-# ---------------- category pages ----------------
-for c in manifest["categories"]:
-    parts = [f'<div class="breadcrumb"><a href="../index.html">Help Center</a> › {html.escape(c["name"])}</div>',
-             f'<div class="article-head"><h1>{c["icon"]} {html.escape(c["name"])}</h1>'
-             f'<p class="article-desc">{html.escape(c["description"])}</p></div>']
-    for s in c["subcategories"]:
-        if s["name"]:
-            parts.append(f'<div class="sec-h">{html.escape(s["name"])}</div>')
-        parts.append('<ul class="art-list">')
-        for a in s["articles"]:
-            m = articles.get(a["slug"], {}).get("meta", {})
-            d = m.get("description", "")
-            dif = m.get("difficulty", a.get("difficulty", ""))
-            parts.append(f'<li><a href="../article/{a["slug"]}.html"><div class="t">{html.escape(a["title"])}</div>'
-                         f'<div class="d">{html.escape(d)}</div>'
-                         f'<div class="d"><span class="badge b-{dif}">{dif}</span></div></a></li>')
-        parts.append("</ul>")
-    open(os.path.join(SITE, "category", f'{c["slug"]}.html'), "w", encoding="utf-8").write(
-        page("../", c["name"], "".join(parts), desc=c["description"]))
-
-# ---------------- home page ----------------
-total = len(linear)
-cards = []
-for c in manifest["categories"]:
-    cnt = sum(len(s["articles"]) for s in c["subcategories"])
-    cards.append(f'<a class="cat-card" href="category/{c["slug"]}.html"><div class="c-ico">{c["icon"]}</div>'
-                 f'<h3>{html.escape(c["name"])}</h3><p>{html.escape(c["description"])}</p>'
-                 f'<div class="c-count">{cnt} articles →</div></a>')
-candles = "".join(
-    f'<div class="candle {k}" style="height:{h}px;margin-top:{m}px;animation-delay:{i*0.35:.2f}s"></div>'
-    for i, (k, h, m) in enumerate([("g",140,-40),("p",90,30),("g",180,-10),("p",120,60),("g",100,-70),
-                                   ("p",170,20),("g",130,80),("p",95,-30),("g",160,40),("p",140,-60)]))
-home = f'''<div class="hero home-hero">
-<div class="hero-candles">{candles}</div>
-<h1>Don't read the manual.<br><span class="hg">Live</span> the <span class="hp">platform</span>.</h1>
-<p>{html.escape(TAGLINE)} Every guide here is a working piece of DeepCharts — turn the dials, hover the ladders, feel the answer.</p>
-<div class="hero-search searchbox" data-search><span class="mag">🔎</span>
-<input type="text" placeholder="Search {total} articles… try “connect dxFeed” or “what is delta”" autocomplete="off"><div class="search-results"></div></div>
-<div class="start-strip"><span style="color:var(--green);font-size:13px;align-self:center;font-weight:700">New here?</span>
-<a href="article/quick-start-first-trade.html">🚀 Quick start</a>
-<a href="article/install-deepcharts.html">Install DeepCharts</a>
-<a href="article/compatibility-guide.html">Is my broker supported?</a>
-<a href="article/orderflow-101.html">Learn orderflow</a></div></div>
-<div class="home-duo">
-<div class="home-duo-txt"><div class="sec-h" style="margin-top:0">Navigate by <b style="color:var(--orange)">doing</b></div>
-<h2 style="font-size:26px;letter-spacing:-.6px;margin:0 0 12px">This is the Feed Settings window.<br>Pick a source — we fly you to its guide.</h2>
-<p style="color:var(--ink2);font-size:15px">You don't remember article titles — you remember what the screen looked like. So the help center starts from the screen. Hover any field to understand it; choose your data source and the library reshapes around your setup.</p>
-<div class="demo-strip"><span>More live demos:</span>
-<a href="article/rsi.html">RSI lab</a><a href="article/advanced-dom.html">Living DOM ladder</a><a href="article/orderflow-101.html">Orderflow 101</a></div></div>
-<div class="widget-mount" data-widget="feed-navigator" style="margin:0"></div>
-</div>
-<div class="sec-h">Browse the library</div>
-<div class="cat-grid">{''.join(cards)}</div>'''
-open(os.path.join(SITE, "index.html"), "w", encoding="utf-8").write(page("", "Home", home, desc=TAGLINE))
-
-# ---------------- search index ----------------
-open(os.path.join(SITE, "assets", "search-index.js"), "w", encoding="utf-8").write(
-    "window.SEARCH_INDEX=" + json.dumps(search_index, ensure_ascii=False) + ";")
-
-# ---------------- per-article PDFs ----------------
+# ---------------- pdf machinery ----------------
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 from reportlab.lib import colors
@@ -382,6 +303,8 @@ def md_to_flowables(body, meta):
             flush_para(); flush_bullets(); flows.append(Paragraph(inline(ln[3:]), p_h2))
         elif ln.startswith("# "):
             flush_para(); flush_bullets(); flows.append(Paragraph(inline(ln[2:]), p_h2))
+        elif ln.startswith("#### "):
+            flush_para(); flush_bullets(); flows.append(Paragraph(inline(ln[5:]), p_h3))
         elif ln.startswith("> "):
             flush_para(); flush_bullets(); flows.append(Paragraph(inline(ln[2:]), p_call)); flows.append(Spacer(1, 4))
         elif re.match(r"^\s*[-*]\s+", ln):
@@ -396,49 +319,225 @@ def md_to_flowables(body, meta):
     flush_para(); flush_bullets()
     return flows
 
-pdf_fail = []
-for slug in linear:
-    art = articles[slug]; meta = art["meta"]
-    c, sub, _ = cat_of[slug]
-    out = os.path.join(SITE, "pdf", f"{slug}.pdf")
-    try:
-        docp = SimpleDocTemplate(out, pagesize=A4, leftMargin=20*mm, rightMargin=20*mm,
-                                 topMargin=18*mm, bottomMargin=18*mm, title=meta["title"], author="DeepCharts Help Center")
-        flows = [Paragraph(inline(meta["title"]), p_title),
-                 Paragraph(f'{c["name"]}{" / " + sub if sub else ""} &nbsp;|&nbsp; {meta.get("difficulty","")} &nbsp;|&nbsp; {meta.get("time","")} &nbsp;|&nbsp; DeepCharts Help Center &nbsp;|&nbsp; {TODAY}', p_meta),
-                 Spacer(1, 4), HRFlowable(width="100%", thickness=0.7, color=colors.HexColor("#c9d2da")), Spacer(1, 8)]
-        flows += md_to_flowables(art["body"], meta)
-        docp.build(flows)
-    except Exception as e:
-        pdf_fail.append((slug, str(e)[:120]))
+# ---------------- per-KB build ----------------
+def build_kb(kb, data):
+    global KB, manifest, articles, cat_of, order, SITE_NAME, TAGLINE
+    KB = kb
+    manifest = data["manifest"]
+    articles = data["articles"]
+    cat_of = data["cat_of"]
+    order = data["order"]
+    SITE_NAME = manifest["site"]["name"]
+    TAGLINE = manifest["site"]["tagline"]
+
+    out_base = os.path.join(SITE, kb["sub"]) if kb["sub"] else SITE
+    os.makedirs(os.path.join(out_base, "article"), exist_ok=True)
+    os.makedirs(os.path.join(out_base, "category"), exist_ok=True)
+    os.makedirs(os.path.join(out_base, "pdf"), exist_ok=True)
+
+    # path prefixes: root -> site root (assets), kbroot -> this KB's root
+    depth1 = "../../" if kb["sub"] else "../"     # from article/ or category/ pages
+    kb1 = "../"                                    # KB root from its own subpages
+    root0 = "../" if kb["sub"] else ""             # site root from the KB's index page
+    kb0 = ""                                       # KB root from its own index page
+
+    search_index = []
+    linear = [sl for sl, _, _ in order if sl in articles]
+
+    for idx, slug in enumerate(linear):
+        art = articles[slug]
+        meta = art["meta"]
+        c, sub, _ = cat_of[slug]
+        body_md = transform_md(slug, art["body"])
+        rendered = md.render(body_md)
+        rendered = callout_pass(rendered)
+        rendered, toc = heading_anchor_pass(rendered)
+
+        toc_html = ""
+        if toc:
+            items = "".join(f'<li class="lv{lv}"><a href="#{hid}">{html.escape(t)}</a></li>' for lv, hid, t in toc)
+            toc_html = f'<aside class="toc"><div class="toc-head">On this page</div><ul>{items}</ul></aside>'
+
+        prev_a = next_a = ""
+        if idx > 0:
+            p = articles[linear[idx-1]]["meta"]
+            prev_a = f'<a class="prev" href="./{linear[idx-1]}.html"><div class="pn-lbl">← Previous</div><div class="pn-title">{html.escape(p["title"])}</div></a>'
+        if idx < len(linear) - 1:
+            n = articles[linear[idx+1]]["meta"]
+            next_a = f'<a class="next" href="./{linear[idx+1]}.html"><div class="pn-lbl">Next →</div><div class="pn-title">{html.escape(n["title"])}</div></a>'
+
+        crumb = (f'<div class="breadcrumb"><a href="../index.html">Help Center</a> › '
+                 f'<a href="../category/{c["slug"]}.html">{html.escape(c["name"])}</a>'
+                 + (f' › {html.escape(sub)}' if sub else "") + "</div>")
+        dif = meta.get("difficulty", "beginner")
+        typ = meta.get("type", "reference")
+        body_html = f'''{crumb}
+<div class="article-head"><h1>{html.escape(meta["title"])}</h1>
+<p class="article-desc">{html.escape(meta.get("description",""))}</p>
+<div class="meta-row">
+  <span class="badge b-{dif}">{dif.capitalize()}</span>
+  <span class="badge">{typ.capitalize()}</span>
+  <span class="badge">🕒 {html.escape(meta.get("time",""))}</span>
+  <a class="btn-pdf" href="../pdf/{slug}.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body">{rendered}</article>
+<div class="pn">{prev_a}{next_a}</div>'''
+
+        open(os.path.join(out_base, "article", f"{slug}.html"), "w", encoding="utf-8").write(
+            page(depth1, kb1, meta["title"], body_html, active_slug=slug, toc_html=toc_html, desc=meta.get("description","")))
+
+        search_index.append({"s": slug, "t": meta["title"], "d": meta.get("description",""),
+                             "c": c["name"], "sub": sub, "dif": dif,
+                             "k": meta.get("keywords", []), "h": [t for _, _, t in toc]})
+
+    # ---------------- category pages ----------------
+    for c in manifest["categories"]:
+        parts = [f'<div class="breadcrumb"><a href="../index.html">Help Center</a> › {html.escape(c["name"])}</div>',
+                 f'<div class="article-head"><h1>{c["icon"]} {html.escape(c["name"])}</h1>'
+                 f'<p class="article-desc">{html.escape(c["description"])}</p></div>']
+        for s in c["subcategories"]:
+            if s["name"]:
+                parts.append(f'<div class="sec-h">{html.escape(s["name"])}</div>')
+            parts.append('<ul class="art-list">')
+            for a in s["articles"]:
+                m = articles.get(a["slug"], {}).get("meta", {})
+                d = m.get("description", "")
+                dif = m.get("difficulty", a.get("difficulty", ""))
+                parts.append(f'<li><a href="../article/{a["slug"]}.html"><div class="t">{html.escape(a["title"])}</div>'
+                             f'<div class="d">{html.escape(d)}</div>'
+                             f'<div class="d"><span class="badge b-{dif}">{dif}</span></div></a></li>')
+            parts.append("</ul>")
+        open(os.path.join(out_base, "category", f'{c["slug"]}.html'), "w", encoding="utf-8").write(
+            page(depth1, kb1, c["name"], "".join(parts), desc=c["description"]))
+
+    # ---------------- home page ----------------
+    total = len(linear)
+    cards = []
+    for c in manifest["categories"]:
+        cnt = sum(len(s["articles"]) for s in c["subcategories"])
+        cards.append(f'<a class="cat-card" href="category/{c["slug"]}.html"><div class="c-ico">{c["icon"]}</div>'
+                     f'<h3>{html.escape(c["name"])}</h3><p>{html.escape(c["description"])}</p>'
+                     f'<div class="c-count">{cnt} articles →</div></a>')
+
+    if kb["key"] == "deepdom":
+        home = f'''<div class="hero home-hero">
+<h1>The <span class="hp">DeepDOM</span> knowledge base.</h1>
+<p>{html.escape(TAGLINE)} Every guide from installation to the Deep indicator series — searchable, printable, and kept current.</p>
+<div class="hero-search searchbox" data-search><span class="mag">🔎</span>
+<input type="text" placeholder="Search {total} DeepDOM articles… try “heatmap” or “iceberg”" autocomplete="off"><div class="search-results"></div></div>
+<div class="start-strip"><span style="color:var(--green);font-size:13px;align-self:center;font-weight:700">New here?</span>
+<a href="article/installation-and-first-configuration.html">🚀 Install &amp; first configuration</a>
+<a href="article/general-settings.html">General settings</a>
+<a href="article/heatmap.html">The Heatmap</a>
+<a href="article/deep-iceberg.html">Deep Iceberg</a></div></div>
+<div class="sec-h">Browse the library</div>
+<div class="cat-grid">{''.join(cards)}</div>
+<p style="margin-top:28px;color:var(--ink2);font-size:14px">Looking for the charting platform instead?
+<a href="../index.html"><b>Switch to the DeepCharts Help Center →</b></a></p>'''
+    else:
+        candles = "".join(
+            f'<div class="candle {k}" style="height:{h}px;margin-top:{m}px;animation-delay:{i*0.35:.2f}s"></div>'
+            for i, (k, h, m) in enumerate([("g",140,-40),("p",90,30),("g",180,-10),("p",120,60),("g",100,-70),
+                                           ("p",170,20),("g",130,80),("p",95,-30),("g",160,40),("p",140,-60)]))
+        home = f'''<div class="hero home-hero">
+<div class="hero-candles">{candles}</div>
+<h1>Don't read the manual.<br><span class="hg">Live</span> the <span class="hp">platform</span>.</h1>
+<p>{html.escape(TAGLINE)} Every guide here is a working piece of DeepCharts — turn the dials, hover the ladders, feel the answer.</p>
+<div class="hero-search searchbox" data-search><span class="mag">🔎</span>
+<input type="text" placeholder="Search {total} articles… try “connect dxFeed” or “what is delta”" autocomplete="off"><div class="search-results"></div></div>
+<div class="start-strip"><span style="color:var(--green);font-size:13px;align-self:center;font-weight:700">New here?</span>
+<a href="article/quick-start-first-trade.html">🚀 Quick start</a>
+<a href="article/install-deepcharts.html">Install DeepCharts</a>
+<a href="article/compatibility-guide.html">Is my broker supported?</a>
+<a href="article/orderflow-101.html">Learn orderflow</a></div></div>
+<div class="home-duo">
+<div class="home-duo-txt"><div class="sec-h" style="margin-top:0">Navigate by <b style="color:var(--orange)">doing</b></div>
+<h2 style="font-size:26px;letter-spacing:-.6px;margin:0 0 12px">This is the Feed Settings window.<br>Pick a source — we fly you to its guide.</h2>
+<p style="color:var(--ink2);font-size:15px">You don't remember article titles — you remember what the screen looked like. So the help center starts from the screen. Hover any field to understand it; choose your data source and the library reshapes around your setup.</p>
+<div class="demo-strip"><span>More live demos:</span>
+<a href="article/rsi.html">RSI lab</a><a href="article/advanced-dom.html">Living DOM ladder</a><a href="article/orderflow-101.html">Orderflow 101</a></div></div>
+<div class="widget-mount" data-widget="feed-navigator" style="margin:0"></div>
+</div>
+<div class="sec-h">Browse the library</div>
+<div class="cat-grid">{''.join(cards)}</div>
+<div class="sec-h">Also from DeepCharts</div>
+<a class="cat-card" href="deepdom/index.html" style="max-width:420px"><div class="c-ico">🧊</div>
+<h3>DeepDOM Help Center</h3><p>Guides for the DeepDOM orderflow platform — installation, trading, the Heatmap and the Deep indicator series.</p>
+<div class="c-count">Open the DeepDOM KB →</div></a>'''
+
+    open(os.path.join(out_base, "index.html"), "w", encoding="utf-8").write(
+        page(root0, kb0, "Home", home, desc=TAGLINE))
+
+    # ---------------- search index ----------------
+    open(os.path.join(SITE, "assets", kb["search_js"]), "w", encoding="utf-8").write(
+        "window.SEARCH_INDEX=" + json.dumps(search_index, ensure_ascii=False) + ";")
+
+    # ---------------- per-article PDFs ----------------
+    pdf_fail = []
+    for slug in linear:
+        art = articles[slug]; meta = art["meta"]
+        c, sub, _ = cat_of[slug]
+        out = os.path.join(out_base, "pdf", f"{slug}.pdf")
+        try:
+            docp = SimpleDocTemplate(out, pagesize=A4, leftMargin=20*mm, rightMargin=20*mm,
+                                     topMargin=18*mm, bottomMargin=18*mm, title=meta["title"], author=SITE_NAME)
+            flows = [Paragraph(inline(meta["title"]), p_title),
+                     Paragraph(f'{c["name"]}{" / " + sub if sub else ""} &nbsp;|&nbsp; {meta.get("difficulty","")} &nbsp;|&nbsp; {meta.get("time","")} &nbsp;|&nbsp; {SITE_NAME} &nbsp;|&nbsp; {TODAY}', p_meta),
+                     Spacer(1, 4), HRFlowable(width="100%", thickness=0.7, color=colors.HexColor("#c9d2da")), Spacer(1, 8)]
+            flows += md_to_flowables(art["body"], meta)
+            docp.build(flows)
+        except Exception as e:
+            pdf_fail.append((slug, str(e)[:120]))
+
+    return {"linear": linear, "pdf_fail": pdf_fail, "n_cats": len(manifest["categories"])}
+
+# ---------------- main ----------------
+os.makedirs(os.path.join(SITE, "assets"), exist_ok=True)
+shutil.copytree(ASSETS, os.path.join(SITE, "assets"), dirs_exist_ok=True)
+
+loaded = [(kb, load_kb(kb)) for kb in KBS]
+
+# kb-map.js: which article slugs belong to the DeepDOM KB (used by review.js + app.js)
+dd_slugs = [sl for sl, _, _ in loaded[1][1]["order"]]
+open(os.path.join(SITE, "assets", "kb-map.js"), "w", encoding="utf-8").write(
+    "window.DEEPDOM_SLUGS=" + json.dumps(dd_slugs) + ";")
+
+results = []
+for kb, data in loaded:
+    results.append((kb, data, build_kb(kb, data)))
 
 # ---------------- screenshots manifest ----------------
 with open(os.path.join(ROOT, "screenshots-needed.md"), "w", encoding="utf-8") as f:
     f.write(f"# Screenshots to capture — {len(shots)} placeholders\n\n")
-    f.write("Save each capture as `site/assets/img/<filename>` and replace the placeholder in the matching "
-            "content/*.md file with a normal image tag, then rebuild.\n\n")
+    f.write("Save each capture as `assets/img/<filename>` and replace the placeholder in the matching "
+            "content file with a normal image tag, then rebuild.\n"
+            "DeepDOM placeholders list their original old-site image in `deepdom-source-images.csv`.\n\n")
     cur = None
-    for slug, fname, desc in shots:
-        if slug != cur:
-            cur = slug
-            t = articles[slug]["meta"]["title"]
-            f.write(f"\n## {t}  (`content/{slug}.md`)\n\n")
+    for cdir, slug, title, fname, desc in shots:
+        if (cdir, slug) != cur:
+            cur = (cdir, slug)
+            f.write(f"\n## {title}  (`{cdir}/{slug}.md`)\n\n")
         f.write(f"- **{fname}** — {desc}\n")
 
-print(f"\nbuilt: {len(linear)} articles, {len(manifest['categories'])} categories, "
-      f"{len(shots)} screenshot placeholders, {len(widget_uses)} live widgets in "
-      f"{len(set(s for s, _ in widget_uses))} articles, {len(linear) - len(pdf_fail)} PDFs")
+# ---------------- report ----------------
+any_missing = any(data["missing"] for _, data, _ in results)
+any_pdf_fail = any(r["pdf_fail"] for _, _, r in results)
+for kb, data, r in results:
+    print(f"[{kb['brand']}] built: {len(r['linear'])} articles, {r['n_cats']} categories, "
+          f"{len(r['linear']) - len(r['pdf_fail'])} PDFs")
+    if r["pdf_fail"]:
+        print("PDF FAILURES:")
+        for s, e in r["pdf_fail"]:
+            print("  ", s, "->", e)
+print(f"total screenshot placeholders: {len(shots)} | live widgets: {len(widget_uses)} in "
+      f"{len(set(s for s, _ in widget_uses))} articles")
 if bad_widgets:
     print("UNKNOWN WIDGETS:")
     for s, n in bad_widgets:
         print(f"   {s} -> [WIDGET: {n}]")
-if pdf_fail:
-    print("PDF FAILURES:")
-    for s, e in pdf_fail:
-        print("  ", s, "->", e)
 if badlinks:
     uniq = sorted(set(badlinks))
     print(f"BAD [[links]] ({len(uniq)}):")
     for s, t in uniq:
         print(f"   {s} -> [[{t}]]")
-sys.exit(1 if (missing or pdf_fail or bad_widgets) else 0)
+sys.exit(1 if (any_missing or any_pdf_fail or bad_widgets) else 0)

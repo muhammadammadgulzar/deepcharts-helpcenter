@@ -1,0 +1,242 @@
+{
+  "site": {
+    "name": "DeepDOM Help Center",
+    "tagline": "Master the DeepDOM orderflow trading platform."
+  },
+  "categories": [
+    {
+      "slug": "common-issues",
+      "name": "Common Issues",
+      "icon": "🛠️",
+      "description": "Fix installation, licence, symbol-subscription and cache problems in DeepDOM.",
+      "subcategories": [
+        {
+          "name": "",
+          "articles": [
+            {
+              "slug": "installation-issues",
+              "title": "Installation Issues"
+            },
+            {
+              "slug": "licence-issues",
+              "title": "Licence Issues"
+            },
+            {
+              "slug": "symbol-subscription-issues",
+              "title": "Symbol Subscription Issues"
+            },
+            {
+              "slug": "cache-issues-deepdom",
+              "title": "Cache Issues"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "how-to",
+      "name": "How To",
+      "icon": "📘",
+      "description": "Install, configure and personalise DeepDOM — connections, markets, workspaces, shortcuts and more.",
+      "subcategories": [
+        {
+          "name": "",
+          "articles": [
+            {
+              "slug": "installation-and-first-configuration",
+              "title": "Installation and First Configuration"
+            },
+            {
+              "slug": "general-settings",
+              "title": "General Settings"
+            },
+            {
+              "slug": "how-to-add-a-new-connection",
+              "title": "How to Add a New Connection"
+            },
+            {
+              "slug": "how-to-add-markets-correctly",
+              "title": "How to Add Markets Correctly"
+            },
+            {
+              "slug": "user-configuration-templates-workspaces",
+              "title": "User Configuration — Templates, Workspaces, Tool Config"
+            },
+            {
+              "slug": "how-to-set-up-keyboard-shortcuts",
+              "title": "How to Set Up Keyboard Shortcuts"
+            },
+            {
+              "slug": "how-to-insert-sound-notifications",
+              "title": "How to Insert Sound Notifications"
+            },
+            {
+              "slug": "how-to-customize-language-and-theme",
+              "title": "How to Customize Language and Theme"
+            },
+            {
+              "slug": "how-to-manage-symbol-rollover",
+              "title": "How to Manage Symbol Rollover"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "trading",
+      "name": "Trading",
+      "icon": "📈",
+      "description": "Trade from DeepDOM: the Orders Window, chart trading, risk management and the simulation environment.",
+      "subcategories": [
+        {
+          "name": "",
+          "articles": [
+            {
+              "slug": "orders-window-deepdom",
+              "title": "Orders Window"
+            },
+            {
+              "slug": "trading-from-the-chart",
+              "title": "Trading from the Chart"
+            },
+            {
+              "slug": "portfolio-risk-manager",
+              "title": "Portfolio-Risk Manager"
+            },
+            {
+              "slug": "simulation-environment",
+              "title": "Simulation Environment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "indicators",
+      "name": "Indicators",
+      "icon": "📊",
+      "description": "DeepDOM's orderflow and volume indicators, from Spread Bid/Ask to Important Levels.",
+      "subcategories": [
+        {
+          "name": "",
+          "articles": [
+            {
+              "slug": "spread-bid-ask",
+              "title": "Spread Bid/Ask"
+            },
+            {
+              "slug": "vwap-envelopes-deepdom",
+              "title": "VWAP + Envelopes"
+            },
+            {
+              "slug": "session-imbalance-deepdom",
+              "title": "Session Imbalance"
+            },
+            {
+              "slug": "book-speed",
+              "title": "Book Speed"
+            },
+            {
+              "slug": "volume-profile-deepdom",
+              "title": "Volume Profile"
+            },
+            {
+              "slug": "stop-run",
+              "title": "Stop Run"
+            },
+            {
+              "slug": "absorption",
+              "title": "Absorption"
+            },
+            {
+              "slug": "cumulative-iceberg-stop",
+              "title": "Cumulative Iceberg/Stop"
+            },
+            {
+              "slug": "volume-swing-deepdom",
+              "title": "Volume Swing"
+            },
+            {
+              "slug": "poc-dynamic",
+              "title": "POC Dynamic"
+            },
+            {
+              "slug": "volume-deepdom",
+              "title": "Volume"
+            },
+            {
+              "slug": "delta-bar-deepdom",
+              "title": "Delta Bar"
+            },
+            {
+              "slug": "cumulative-volume-delta",
+              "title": "Cumulative Volume Delta"
+            },
+            {
+              "slug": "big-trades-deepdom",
+              "title": "Big Trades"
+            },
+            {
+              "slug": "important-levels-deepdom",
+              "title": "Important Levels"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "features",
+      "name": "Features",
+      "icon": "✨",
+      "description": "DeepDOM's flagship visualisations: Volume Bubbles, Heatmap and tick-data replay.",
+      "subcategories": [
+        {
+          "name": "",
+          "articles": [
+            {
+              "slug": "volume-bubbles",
+              "title": "Volume Bubbles"
+            },
+            {
+              "slug": "heatmap",
+              "title": "Heatmap"
+            },
+            {
+              "slug": "replay-tick-data",
+              "title": "Replay Tick Data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "deepindicators",
+      "name": "Deep Indicators",
+      "icon": "🧠",
+      "description": "The Deep series — MBO-powered detection of icebergs, reloads, liquidity and hidden delta.",
+      "subcategories": [
+        {
+          "name": "",
+          "articles": [
+            {
+              "slug": "deep-iceberg",
+              "title": "Deep Iceberg (Iceberg Detector)"
+            },
+            {
+              "slug": "deep-reload",
+              "title": "Deep Reload"
+            },
+            {
+              "slug": "deep-liquidity-scan",
+              "title": "Deep Liquidity Scan"
+            },
+            {
+              "slug": "deep-delta-deepdom",
+              "title": "Deep Delta"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

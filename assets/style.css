@@ -182,3 +182,7 @@ a:hover{text-decoration:underline}
 .demo-strip{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;align-items:center;font-size:13px;color:var(--ink3)}
 .demo-strip a{background:var(--panel);border:1px solid var(--line2);color:var(--ink2);padding:6px 13px;border-radius:99px;font-size:12.5px;text-decoration:none;transition:all .25s var(--ease)}
 .demo-strip a:hover{border-color:var(--green);color:var(--green);transform:translateY(-2px);text-decoration:none}
+
+/* KB switcher (DeepCharts <-> DeepDOM) */
+.header-links .kb-switch{border:1px solid var(--line,#2c3a4d);border-radius:8px;padding:5px 11px;font-weight:600;white-space:nowrap}
+.header-links .kb-switch:hover{border-color:var(--green,#26d07c);color:var(--green,#26d07c)}

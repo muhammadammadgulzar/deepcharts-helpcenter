@@ -38,7 +38,8 @@
     function render(items) {
       if (!items.length) { results.classList.remove("open"); results.innerHTML = ""; return; }
       results.innerHTML = items.map(function (it) {
-        return '<a href="' + window.HC_ROOT + 'article/' + it.s + '.html"><div class="r-title">' + it.t +
+        var kbRoot = (window.KB_ROOT !== undefined) ? window.KB_ROOT : window.HC_ROOT;
+        return '<a href="' + kbRoot + 'article/' + it.s + '.html"><div class="r-title">' + it.t +
                '</div><div class="r-meta">' + it.c + (it.sub ? " / " + it.sub : "") + " · " + it.dif + "</div></a>";
       }).join("");
       results.classList.add("open"); sel = -1;

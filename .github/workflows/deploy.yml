@@ -1,0 +1,56 @@
+# Build & deploy the help center to GitHub Pages.
+#
+#   push to main  ->  builds and deploys to the gh-pages ROOT   (LIVE site)
+#   push to test  ->  builds and deploys to gh-pages /test/     (TEAM PREVIEW)
+#
+# The two deploys never touch each other's files, and a concurrency group
+# serializes them so simultaneous pushes can't race on the gh-pages branch.
+name: build-deploy
+
+on:
+  push:
+    branches: [main, test]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gh-pages-deploy
+  cancel-in-progress: false
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install build dependencies
+        run: pip install pyyaml markdown-it-py reportlab
+
+      - name: Build site
+        run: python3 build.py
+
+      - name: Deploy to gh-pages
+        run: |
+          set -e
+          git config user.name  "helpcenter-bot"
+          git config user.email "actions@github.com"
+          git fetch origin gh-pages
+          git worktree add /tmp/ghp gh-pages
+          touch site/.nojekyll
+          if [ "${GITHUB_REF_NAME}" = "main" ]; then
+            rsync -a --delete --exclude '/test' --exclude '/CNAME' --exclude '/.git' site/ /tmp/ghp/
+            MSG="deploy LIVE from main @ ${GITHUB_SHA::7}"
+          else
+            mkdir -p /tmp/ghp/test
+            rsync -a --delete --exclude '/.git' site/ /tmp/ghp/test/
+            MSG="deploy TEST from test @ ${GITHUB_SHA::7}"
+          fi
+          cd /tmp/ghp
+          git add -A
+          git diff --cached --quiet || git commit -m "$MSG"
+          git push origin gh-pages
