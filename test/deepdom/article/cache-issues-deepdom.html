@@ -30,9 +30,11 @@
 <article class="article-body"><p>This article explains how to resolve Data Gap errors in DeepDom by clearing the local cache database. These issues are usually caused by connection failures, platform blackouts, or abrupt shutdowns that leave incomplete data in the cache. Following the steps below forces DeepDom to rebuild its database from the data provider.</p>
 <h2 id="possible-causes-of-data-gap-errors">Possible Causes of Data Gap Errors</h2>
 <p>The most common reasons are:</p>
-<p>Loss of connection to the data feed while the platform is running.</p>
-<p>Power outage, operating system crash, or forced restart of the computer.</p>
-<p>Sudden DeepDom shutdown, such as killing the process or closing Windows before the platform can finish writing data.</p>
+<ul>
+<li>Loss of connection to the data feed while the platform is running.</li>
+<li>Power outage, operating system crash, or forced restart of the computer.</li>
+<li>Sudden DeepDom shutdown, such as killing the process or closing Windows before the platform can finish writing data.</li>
+</ul>
 <p>In these cases, some cached files may become corrupted or incomplete, and the safest fix is to remove the cache folder so DeepDom can recreate it from scratch on the next start.</p>
 <h2 id="step-by-step-remove-cache-folder">Step‑by‑Step – Remove Cache Folder</h2>
 <div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Cache Issues — Step‑by‑Step – Remove Cache Folder (DeepDOM)</div><div class="s-file">cache-issues-deepdom-01.png</div></div></div>
