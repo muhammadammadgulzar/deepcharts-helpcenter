@@ -1,0 +1,248 @@
+{
+  "site": {
+    "name": "Centro de Ayuda de DeepDOM",
+    "tagline": "Domine DeepDOM, la plataforma de trading de flujo de órdenes."
+  },
+  "categories": [
+    {
+      "slug": "common-issues",
+      "name": "Problemas comunes",
+      "icon": "🛠️",
+      "description": "Solucione problemas de instalación, licencia, suscripción a símbolos y caché en DeepDOM.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "installation-issues",
+              "title": "Problemas de instalación"
+            },
+            {
+              "slug": "licence-issues",
+              "title": "Problemas de licencia"
+            },
+            {
+              "slug": "symbol-subscription-issues",
+              "title": "Problemas de suscripción de símbolos"
+            },
+            {
+              "slug": "cache-issues-deepdom",
+              "title": "Problemas de caché"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "how-to",
+      "name": "Cómo hacer",
+      "icon": "📘",
+      "description": "Instale, configure y personalice DeepDOM: conexiones, mercados, espacios de trabajo, atajos y más.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "installation-and-first-configuration",
+              "title": "Instalación y primera configuración"
+            },
+            {
+              "slug": "general-settings",
+              "title": "Configuración general"
+            },
+            {
+              "slug": "how-to-add-a-new-connection",
+              "title": "Cómo añadir una nueva conexión"
+            },
+            {
+              "slug": "how-to-add-markets-correctly",
+              "title": "Cómo añadir mercados correctamente"
+            },
+            {
+              "slug": "user-configuration-templates-workspaces",
+              "title": "Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas"
+            },
+            {
+              "slug": "how-to-set-up-keyboard-shortcuts",
+              "title": "Cómo configurar los atajos de teclado"
+            },
+            {
+              "slug": "how-to-insert-sound-notifications",
+              "title": "Cómo insertar notificaciones de sonido"
+            },
+            {
+              "slug": "how-to-customize-language-and-theme",
+              "title": "Cómo personalizar el idioma y el tema"
+            },
+            {
+              "slug": "how-to-manage-symbol-rollover",
+              "title": "Cómo gestionar el rollover de símbolos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "trading",
+      "name": "Trading",
+      "icon": "📈",
+      "description": "Opere desde DeepDOM: la Ventana de órdenes, el trading desde el gráfico, la gestión de riesgos y el entorno de simulación.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "orders-window-deepdom",
+              "title": "Ventana de órdenes"
+            },
+            {
+              "slug": "trading-from-the-chart",
+              "title": "Operar desde el gráfico"
+            },
+            {
+              "slug": "portfolio-risk-manager",
+              "title": "Gestor de riesgos de cartera"
+            },
+            {
+              "slug": "simulation-environment",
+              "title": "Entorno de simulación"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "indicators",
+      "name": "Indicadores",
+      "icon": "📊",
+      "description": "Los indicadores de flujo de órdenes y volumen de DeepDOM, desde el Diferencial de oferta/demanda hasta los Niveles importantes.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "spread-bid-ask",
+              "title": "Diferencial de oferta/demanda"
+            },
+            {
+              "slug": "vwap-envelopes-deepdom",
+              "title": "VWAP + Envolventes"
+            },
+            {
+              "slug": "session-imbalance-deepdom",
+              "title": "Desequilibrio de sesión"
+            },
+            {
+              "slug": "book-speed",
+              "title": "Velocidad del libro"
+            },
+            {
+              "slug": "volume-profile-deepdom",
+              "title": "Perfil de volumen"
+            },
+            {
+              "slug": "stop-run",
+              "title": "Barrido de stops (Stop Run)"
+            },
+            {
+              "slug": "absorption",
+              "title": "Absorción"
+            },
+            {
+              "slug": "cumulative-iceberg-stop",
+              "title": "Iceberg/Stop acumulado"
+            },
+            {
+              "slug": "volume-swing-deepdom",
+              "title": "Volume Swing"
+            },
+            {
+              "slug": "poc-dynamic",
+              "title": "POC Dinámico"
+            },
+            {
+              "slug": "volume-deepdom",
+              "title": "Volumen"
+            },
+            {
+              "slug": "delta-bar-deepdom",
+              "title": "Delta Bar"
+            },
+            {
+              "slug": "cumulative-volume-delta",
+              "title": "CVD (delta de volumen acumulado)"
+            },
+            {
+              "slug": "big-trades-deepdom",
+              "title": "Operaciones grandes"
+            },
+            {
+              "slug": "important-levels-deepdom",
+              "title": "Niveles importantes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "features",
+      "name": "Funciones",
+      "icon": "✨",
+      "description": "Las visualizaciones estrella de DeepDOM: Burbujas de volumen, Mapa de calor y reproducción de datos de tick.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "volume-bubbles",
+              "title": "Burbujas de volumen"
+            },
+            {
+              "slug": "heatmap",
+              "title": "Mapa de calor"
+            },
+            {
+              "slug": "replay-tick-data",
+              "title": "Reproducción de datos de tick"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "deepindicators",
+      "name": "Indicadores profundos",
+      "icon": "🧠",
+      "description": "La serie Deep: detección de icebergs, recargas, liquidez y delta oculto basada en datos MBO.",
+      "subcategories": [
+        {
+          "name": "",
+          "en_name": "",
+          "articles": [
+            {
+              "slug": "deep-iceberg",
+              "title": "Iceberg Profundo (Deep Iceberg)"
+            },
+            {
+              "slug": "deep-reload",
+              "title": "Recarga Profunda (Deep Reload)"
+            },
+            {
+              "slug": "deep-liquidity-scan",
+              "title": "Análisis de Liquidez Profunda (Deep Liquidity Scan)"
+            },
+            {
+              "slug": "deep-delta-deepdom",
+              "title": "Delta Profundo (Deep Delta)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-# Screenshots to capture — 1532 placeholders
+# Screenshots to capture — 2298 placeholders
 
 Every placeholder has a unique ID = its filename ({kb}-{lang}-{slug}-{NN}.png).
 Capture pass: save each file named exactly by its ID into one folder, then run
@@ -2761,3 +2761,1381 @@ DeepDOM placeholders list their original old-site image in `deepdom-source-image
 - **dd-it-deep-delta-deepdom-04.png** — Deep Delta — Input Data (DeepDOM)
 - **dd-it-deep-delta-deepdom-05.png** — Deep Delta — Delta Mode (DeepDOM)
 - **dd-it-deep-delta-deepdom-06.png** — Deep Delta — Configurazione dei Range 1–4 (DeepDOM)
+
+## Cómo instalar DeepCharts y activar su licencia  (`content-es/install-deepcharts.md`)
+
+- **dc-es-install-deepcharts-01.png** — Panel de my.deepcharts.com tras iniciar sesión con el área de descarga del instalador de DeepCharts visible
+- **dc-es-install-deepcharts-02.png** — Ventana del instalador de DeepCharts en el paso de términos y condiciones con el botón Install visible
+- **dc-es-install-deepcharts-03.png** — Pantalla de bienvenida de DeepCharts mostrando el texto Starting Application y el número de versión en la esquina inferior derecha
+- **dc-es-install-deepcharts-04.png** — Ventana de activación License Key con los campos E-mail y License rellenados, el botón Login y el pie Verifying License Key visible
+- **dc-es-install-deepcharts-05.png** — Paso de fuente de datos del Startup Wizard mostrando las dos opciones de radio: 15 minutes delayed data powered by dxFeed, y I have a datafeed and I want to configure and connect it
+- **dc-es-install-deepcharts-06.png** — Barra principal tras una configuración correcta con el selector Feed mostrando un nombre de conexión y un punto de estado verde
+
+## Cómo usar la fuente de datos gratuita con 15 minutos de retraso  (`content-es/free-delayed-data-feed.md`)
+
+- **dc-es-free-delayed-data-feed-01.png** — Paso de fuente de datos del Startup Wizard con la opción de radio I want to use 15 minutes delayed data powered by dxFeed for the moment seleccionada
+- **dc-es-free-delayed-data-feed-02.png** — Paso Symbol Manage del Startup Wizard mostrando las columnas Exchange, Description y Data Feed con filas asignadas a la conexión dxFeed retrasada
+- **dc-es-free-delayed-data-feed-03.png** — Menú desplegable del selector Feed en la barra principal con el elemento Feed Settings resaltado
+- **dc-es-free-delayed-data-feed-04.png** — Un gráfico de precios recibiendo datos de la fuente retrasada con la indicación de datos retrasados visible y el punto verde de la fuente en la barra principal
+
+## Cómo comprar una fuente de datos y obtener sus credenciales  (`content-es/buy-data-feed.md`)
+
+- **dc-es-buy-data-feed-01.png** — Panel de my.deepcharts.com tras iniciar sesión con el menú izquierdo visible y la entrada Data Feed resaltada
+- **dc-es-buy-data-feed-02.png** — La sección Data Feed mostrando el botón Add data feed subscription resaltado
+- **dc-es-buy-data-feed-03.png** — La página de compra de la fuente de datos con la fuente seleccionada y la lista de productos de datos de mercado (bolsas, opciones de top of book / profundidad de mercado) visible
+- **dc-es-buy-data-feed-04.png** — El flujo de firma del contrato de datos de mercado en el panel con la opción de estado de suscripción Non-Professional visible
+- **dc-es-buy-data-feed-05.png** — La sección Data Feed mostrando una suscripción activa con los campos de nombre de usuario y contraseña visibles (valores ocultos)
+
+## Abra su primer gráfico  (`content-es/first-chart.md`)
+
+- **dc-es-first-chart-01.png** — El selector de fuente de la barra principal en la parte superior derecha mostrando el nombre de una fuente conectada con un punto de estado verde, con el menú desplegable abierto listando las conexiones guardadas y el elemento Feed Settings
+- **dc-es-first-chart-02.png** — El menú New abierto en la barra principal con Price Chart resaltado (otros elementos visibles: Adv. Time And Sales, Book, Correlation Viewer, Profile Chart, Scanner)
+- **dc-es-first-chart-03.png** — El diálogo Select Instrument con la bolsa CME seleccionada en la barra lateral, la lista de símbolos mostrando NQ MINI NASDAQ resaltado, y el cuadro Type to filter y el botón Select visibles
+- **dc-es-first-chart-04.png** — Una nueva ventana de gráfico mostrando el indicador giratorio Building chart, con la insignia de estado LDT/DWT visible en la barra principal
+- **dc-es-first-chart-05.png** — Un gráfico de precios terminado con los tres menús desplegables de la barra de título (símbolo, rango 10D - BT, marco temporal 5 Minute) anotados
+- **dc-es-first-chart-06.png** — El menú desplegable de marco temporal abierto mostrando todas las filas de tipos de barra (Second, Minute, Time, Vol Bars, Range, Volume, Trade, Renko, P/F, Delta) con sus preajustes rápidos
+
+## Cuentas de trading y simulación  (`content-es/simulation-accounts.md`)
+
+- **dc-es-simulation-accounts-01.png** — La ventana General Settings en la pestaña Sim Account mostrando la tabla de cuentas con las columnas Name y Balance, una fila de cuenta SIM, el icono de papelera por fila y el botón Add
+- **dc-es-simulation-accounts-02.png** — El diálogo Add Sim Account con el campo Name rellenado y el campo Balance mostrando el predeterminado 10000, con los botones Cancel y Add visibles
+- **dc-es-simulation-accounts-03.png** — Un gráfico de precios con el interruptor Trading panel de la barra inferior resaltado y el panel de trading abierto en el lado derecho
+
+## Inicio rápido: de la instalación a su primera operación  (`content-es/quick-start-first-trade.md`)
+
+- **dc-es-quick-start-first-trade-01.png** — El diálogo License Key de DeepCharts en el primer arranque con los campos Email y License visibles y el número de versión en el pie
+- **dc-es-quick-start-first-trade-02.png** — Paso 1 del asistente de inicio con la opción 15 minutes delayed data powered by dxFeed seleccionada
+- **dc-es-quick-start-first-trade-03.png** — El diálogo Select Instrument con CME seleccionado y MES MICRO SP resaltado
+- **dc-es-quick-start-first-trade-04.png** — La ventana Indicator List con el cuadro de búsqueda mostrando Volume y el icono + junto al indicador Volume resaltado
+- **dc-es-quick-start-first-trade-05.png** — El panel de trading del gráfico con Broker establecido en SIM, una cuenta seleccionada y la cantidad establecida en 1
+- **dc-es-quick-start-first-trade-06.png** — El panel de trading con OCO Strategy habilitado, Mode establecido en SL/TP, valores de SL y TP en ticks introducidos y el botón BUY MKT resaltado
+
+## Cómo conectar una fuente de datos (Feed Settings)  (`content-es/connect-data-feed.md`)
+
+- **dc-es-connect-data-feed-01.png** — Barra de herramientas principal de DeepCharts con el menú desplegable Select Connection abierto y la entrada Feed Settings resaltada en la parte inferior del desplegable
+- **dc-es-connect-data-feed-02.png** — Formulario de conexión Rithmic RAPI completado, con el menú desplegable Gateway abierto mostrando la lista de regiones y Automatic seleccionado
+- **dc-es-connect-data-feed-03.png** — Menú desplegable Select Connection mostrando la fuente recién guardada con un punto de estado verde a su lado
+
+## Symbol Manage: suscribir bolsas y asignar su fuente de datos  (`content-es/symbol-manage.md`)
+
+- **dc-es-symbol-manage-01.png** — Menú Options abierto en la barra principal de DeepCharts con la entrada Symbol Manage resaltada
+- **dc-es-symbol-manage-02.png** — Fila de Subscribe List con el icono de eslabón de cadena para cambiar de fuente pulsado y la lista de conexiones de fuentes guardadas abierta para su selección
+- **dc-es-symbol-manage-03.png** — Selector de instrumentos de New Price Chart mostrando solo las bolsas suscritas, con un símbolo seleccionado
+
+## Firme su acuerdo de datos de mercado  (`content-es/sign-market-data-agreement.md`)
+
+- **dc-es-sign-market-data-agreement-01.png** — Página Subscriptions del panel de DeepCharts con una fila de suscripción de dxFeed y el botón Sign Market Data Contract resaltado
+- **dc-es-sign-market-data-agreement-02.png** — Pantalla de inicio de sesión de R Trader Pro mostrando los dos formularios de inicio de sesión uno junto al otro, ambos rellenados, con el menú desplegable System abierto en la lista de servidores de empresas prop
+- **dc-es-sign-market-data-agreement-03.png** — Aviso del acuerdo de datos de mercado de R Trader Pro mostrado tras el inicio de sesión, con la acción de aceptar visible
+
+## Cómo conectar una fuente de datos dxFeed  (`content-es/connect-dxfeed.md`)
+
+- **dc-es-connect-dxfeed-01.png** — Barra de herramientas principal con el menú desplegable Select Connection abierto y Feed Settings resaltado en la parte inferior
+- **dc-es-connect-dxfeed-02.png** — Menú desplegable Select Connection con el perfil dxFeed conectado y su círculo de estado en verde
+
+## Cómo conectar una fuente de datos de Rithmic  (`content-es/connect-rithmic.md`)
+
+- **dc-es-connect-rithmic-01.png** — Panel de DeepCharts en my.deepcharts.com con la sección Subscriptions abierta y la fila de la suscripción de Rithmic visible, con el área de credenciales resaltada (difumine el nombre de usuario y la contraseña reales)
+- **dc-es-connect-rithmic-02.png** — Pantalla de inicio de sesión de R Trader Pro mostrando los dos formularios de inicio de sesión uno junto al otro, ambos rellenados de forma idéntica, con System establecido en Rithmic Paper Trading y el menú desplegable Gateway visible
+- **dc-es-connect-rithmic-03.png** — Ventana de preferencias de R Trader Pro en la pestaña Performance con los deslizadores Quotes y Order Book arrastrados a la posición máxima
+- **dc-es-connect-rithmic-04.png** — Barra de herramientas principal de DeepCharts con el menú desplegable Select Connection abierto y la entrada Feed Settings resaltada en la parte inferior
+- **dc-es-connect-rithmic-05.png** — Barra de herramientas principal de DeepCharts mostrando el indicador de conexión verde junto al nombre de la fuente de datos de Rithmic, con un gráfico de ES en vivo actualizándose al fondo
+
+## Conectar Rithmic mediante el plugin de RTrader Pro  (`content-es/rtrader-pro-plugin.md`)
+
+- **dc-es-rtrader-pro-plugin-01.png** — Pantalla de inicio de sesión de R Trader Pro con ambos formularios rellenados de forma idéntica y el interruptor Allow Plugins habilitado y resaltado
+- **dc-es-rtrader-pro-plugin-02.png** — Ventana Preferences de R Trader Pro, pestaña Performance, con los deslizadores Quotes y Order Book en No Max y la casilla "Adjust to keep up with market data inflow" marcada
+- **dc-es-rtrader-pro-plugin-03.png** — Diálogo Feed Settings de DeepCharts con Feed Source=Rithmic RAPI, Server y Gateway coincidiendo con R Trader Pro, y la opción Use R|Trader habilitada y resaltada
+- **dc-es-rtrader-pro-plugin-04.png** — DeepCharts con un punto de conexión verde y un gráfico en vivo, con R Trader Pro visible ejecutándose en segundo plano
+
+## Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)  (`content-es/connect-rithmic-prop-firm.md`)
+
+- **dc-es-connect-rithmic-prop-firm-01.png** — Pantalla de inicio de sesión de R Trader Pro con ambos formularios rellenados, el menú desplegable System abierto mostrando las entradas de servidores de empresas prop, y el campo Gateway visible
+- **dc-es-connect-rithmic-prop-firm-02.png** — Pestaña Performance de las preferencias de R Trader Pro con los deslizadores Quotes y Order Book al máximo
+
+## Cómo conectar Apex Trader Funding  (`content-es/connect-apex.md`)
+
+- **dc-es-connect-apex-01.png** — Pantalla de inicio de sesión de R Trader Pro con ambos formularios lado a lado completados de forma idéntica, el menú desplegable System configurado en Apex y el menú desplegable Gateway visible
+- **dc-es-connect-apex-02.png** — Aviso del acuerdo de datos de mercado de R Trader Pro tras el inicio de sesión, con el botón de aceptar visible
+- **dc-es-connect-apex-03.png** — Ventana Preferences de R Trader Pro, pestaña Performance, deslizadores Quotes y Order Book ambos al máximo
+- **dc-es-connect-apex-04.png** — Barra de herramientas superior de DeepCharts con el menú desplegable Select Connection abierto y Feed Settings resaltado en la parte inferior
+
+## Cómo conectar una cuenta dxFeed de empresa prop (MFF, Aqua, Goat...)  (`content-es/connect-dxfeed-prop-firm.md`)
+
+- **dc-es-connect-dxfeed-prop-firm-01.png** — Un panel de empresa prop (diseño de ejemplo) con el botón de firma del acuerdo de datos de mercado resaltado
+- **dc-es-connect-dxfeed-prop-firm-02.png** — Barra de herramientas superior de DeepCharts con el menú desplegable Select Connection abierto y Feed Settings resaltado
+
+## Cómo conectar CQG (AMP, Optimus, EdgeClear, Ironbeam...)  (`content-es/connect-cqg.md`)
+
+- **dc-es-connect-cqg-01.png** — Barra principal de DeepCharts con el menú desplegable Select Connection abierto y la entrada Feed Settings resaltada
+- **dc-es-connect-cqg-02.png** — Formulario de conexión CQG completado mostrando Name, Feed Source=CQG, Username relleno, Use demo credentials sin marcar, Connect on startup visible, con el botón Save resaltado
+- **dc-es-connect-cqg-03.png** — Menú desplegable Select Connection mostrando la nueva fuente CQG con un punto de estado verde
+
+## Cómo conectar Interactive Brokers (solo ejecución)  (`content-es/connect-interactive-brokers.md`)
+
+- **dc-es-connect-interactive-brokers-01.png** — Ventana Global Configuration de TWS, página API > Settings, con Enable ActiveX and Socket Clients marcado y el campo Socket port visible
+- **dc-es-connect-interactive-brokers-02.png** — Sección Trusted IPs de la configuración API de TWS mostrando 127.0.0.1 añadida a la lista y la casilla Allow connections from localhost only marcada
+- **dc-es-connect-interactive-brokers-03.png** — Diálogo Feed Settings de DeepCharts con Feed Source configurado en Interactive Brokers, Host 127.0.0.1, y los campos Port y Client ID rellenos
+- **dc-es-connect-interactive-brokers-04.png** — Menú desplegable Select Connection mostrando la conexión de IBKR y una conexión Rithmic o dxFeed, cada una con un punto de estado verde
+- **dc-es-connect-interactive-brokers-05.png** — Trading Panel en la parte inferior derecha de un gráfico con el campo Broker configurado en Interactive Brokers y una cuenta seleccionada
+
+## Competición de DeepCharts: únase y conéctese  (`content-es/competition-connect.md`)
+
+- **dc-es-competition-connect-01.png** — Panel de DeepCharts con la entrada Contest resaltada en la barra lateral y una tarjeta de competición activa visible
+- **dc-es-competition-connect-02.png** — Página del concurso después de unirse, mostrando el botón See Credentials y el panel de credenciales con el nombre de usuario, la contraseña, la fuente V-Sim y el ID de cuenta visibles (valores ocultos)
+- **dc-es-competition-connect-03.png** — Diálogo Feed Settings con Feed Source configurado en V-Sim y el nombre de usuario del concurso introducido
+- **dc-es-competition-connect-04.png** — Menú desplegable Select Connection con la conexión del concurso V-Sim y una conexión de fuente de datos en vivo mostrando puntos verdes
+
+## Conectar datos históricos (fin de día)  (`content-es/end-of-day-data.md`)
+
+- **dc-es-end-of-day-data-01.png** — Barra principal de DeepCharts con el menú desplegable Select Connection abierto y Feed Settings resaltado
+- **dc-es-end-of-day-data-02.png** — Diálogo de Feed Settings con el menú desplegable Feed Source abierto e Historical resaltado, con Name completado como "End of Day"
+- **dc-es-end-of-day-data-03.png** — Un gráfico de precios mostrando datos históricos de fin de día cargados desde el perfil de fuente Historical
+
+## Administrar y cambiar entre conexiones de fuente de datos  (`content-es/manage-feed-connections.md`)
+
+- **dc-es-manage-feed-connections-01.png** — Barra principal de DeepCharts con el menú desplegable Select Connection abierto, listando varias conexiones guardadas, una con punto verde y las demás desconectadas
+
+## Solución: fuente en vivo conectada pero el gráfico no se mueve  (`content-es/feed-connected-chart-not-moving.md`)
+
+- **dc-es-feed-connected-chart-not-moving-01.png** — Barra de herramientas principal de DeepCharts con el punto de conexión en verde, junto a un gráfico de precios abierto visiblemente obsoleto (resaltada la marca de tiempo de la última vela, de una sesión anterior)
+- **dc-es-feed-connected-chart-not-moving-02.png** — El diálogo de selección de fuente que se abre desde el icono de enlace en Symbol Manage, con la fuente conectada resaltada antes de confirmar
+- **dc-es-feed-connected-chart-not-moving-03.png** — El diálogo Subscribe al que se llega desde Export Mode, con una fuente de datos elegida y una bolsa seleccionada, con el botón Select visible
+
+## Solución: Connection Failed — Unable to Establish Connection  (`content-es/fix-unable-to-establish-connection.md`)
+
+- **dc-es-fix-unable-to-establish-connection-01.png** — El cuadro de diálogo de error de conexión mostrando el mensaje completo "Unable to establish connection" tras un intento fallido de conexión de la fuente
+- **dc-es-fix-unable-to-establish-connection-02.png** — La ventana del instalador de Microsoft Visual C++ Redistributable en la pantalla de configuración, antes de hacer clic en Install
+- **dc-es-fix-unable-to-establish-connection-03.png** — Página Windows Settings Time & Language > Language con el menú desplegable del idioma de visualización establecido en English
+- **dc-es-fix-unable-to-establish-connection-04.png** — Página Windows Settings Time & Language > Region con Country or region establecido en United States
+
+## Solución: Connection Failed — Verifique el nombre de usuario y la contraseña  (`content-es/fix-username-password.md`)
+
+- **dc-es-fix-username-password-01.png** — El cuadro de diálogo de error de conexión mostrando el mensaje "Please make sure you entered the username and password correctly" tras una conexión de Rithmic fallida
+- **dc-es-fix-username-password-02.png** — Feed Settings con el menú desplegable Server abierto, mostrando entradas como Apex y Paper Trading, con la correcta resaltada
+
+## Solución: Connection Failed — Bad Server  (`content-es/fix-bad-server.md`)
+
+- **dc-es-fix-bad-server-01.png** — El diálogo de error de conexión mostrando el mensaje "Bad Server" tras un intento fallido de conexión a dxFeed
+- **dc-es-fix-bad-server-02.png** — La página del portal del proveedor de datos mostrando el Acuerdo de datos de mercado con la opción de estado Non-Professional seleccionada
+
+## Solución: Please Log In Using R Trader or R Trader Pro  (`content-es/fix-log-in-using-rtrader.md`)
+
+- **dc-es-fix-log-in-using-rtrader-01.png** — El cuadro de diálogo de error de conexión mostrando el mensaje "Please log in using R | Trader or R | Trader Pro and sign the agreements"
+- **dc-es-fix-log-in-using-rtrader-02.png** — La pantalla de inicio de sesión de R Trader Pro mostrando los dos formularios de inicio de sesión lado a lado, ambos rellenados con System, Gateway, Username y Password
+- **dc-es-fix-log-in-using-rtrader-03.png** — El aviso del Acuerdo de Datos de Mercado dentro de R Trader Pro con la acción de aceptar visible
+
+## Solución: Rithmic — Expert Not Attached  (`content-es/fix-rithmic-expert-not-attached.md`)
+
+- **dc-es-fix-rithmic-expert-not-attached-01.png** — Conexión de la fuente Rithmic mostrando el indicador de estado amarillo junto con el mensaje de error "Rithmic: Expert not attached"
+- **dc-es-fix-rithmic-expert-not-attached-02.png** — Cuadro de diálogo Feed Settings de Rithmic con la casilla Use R|Trader visible y resaltada en su estado desmarcado
+
+## Solución: No se puede cargar la DLL DXFeed_64.dll  (`content-es/fix-dxfeed-dll.md`)
+
+- **dc-es-fix-dxfeed-dll-01.png** — El cuadro de diálogo de error de conexión mostrando el mensaje completo "Unable to load DLL 'DXFeed_64.dll' (Exception from HRESULT: 0x8007007E)"
+- **dc-es-fix-dxfeed-dll-02.png** — La ventana del instalador de Microsoft Visual C++ Redistributable en la pantalla de configuración, antes de hacer clic en Install
+
+## Solución: dxFeed DATA_ACCESS_SUSPENDED  (`content-es/fix-data-access-suspended.md`)
+
+- **dc-es-fix-data-access-suspended-01.png** — El error de conexión de la fuente mostrando el texto exacto del mensaje "Dxfeed: DATA_ACCESS_SUSPENDED"
+
+## Solución: dxfeed.myfundedfutures.com Failed  (`content-es/fix-myfundedfutures-failed.md`)
+
+- **dc-es-fix-myfundedfutures-failed-01.png** — El cuadro de diálogo de error de conexión mostrando el mensaje completo "dxfeed.myfundedfutures.com failed: You need to sign the datafeed"
+- **dc-es-fix-myfundedfutures-failed-02.png** — La conexión de la fuente mostrando un estado correcto (verde) después de activarse el acuerdo y reiniciarse DeepCharts
+
+## Solución: The System Cannot Find the File Specified  (`content-es/fix-system-cannot-find-file.md`)
+
+- **dc-es-fix-system-cannot-find-file-01.png** — El cuadro de diálogo de error de conexión mostrando el mensaje completo "Connection Failed: The system cannot find the file specified"
+- **dc-es-fix-system-cannot-find-file-02.png** — La ventana del instalador de DeepCharts con la opción Repair visible y resaltada
+- **dc-es-fix-system-cannot-find-file-03.png** — Pantalla de Quarantined Items de McAfee con VolumetricaBridge.exe en la lista y la acción Restore visible
+- **dc-es-fix-system-cannot-find-file-04.png** — Pantalla de exclusiones de Real-Time Scanning de McAfee después de añadir VolumetricaBridge.exe
+
+## Solución: conexión perdida al abrir un gráfico  (`content-es/connection-lost-opening-chart.md`)
+
+- **dc-es-connection-lost-opening-chart-01.png** — Ventana principal de DeepCharts en el momento en que la conexión se cae tras abrir un gráfico, con la advertencia de desconexión o el mensaje de error visible en pantalla
+- **dc-es-connection-lost-opening-chart-02.png** — Configuración de Windows, página Time & Language, Language, con el menú desplegable del idioma de visualización de Windows abierto y English seleccionado
+- **dc-es-connection-lost-opening-chart-03.png** — Configuración de Windows, página Time & Language, Region, con Country or region establecido en United States
+
+## Solución: Problema de suscripción de símbolo  (`content-es/symbol-subscription-issue.md`)
+
+- **dc-es-symbol-subscription-issue-01.png** — DeepCharts mostrando el mensaje de problema de suscripción de símbolo al abrir un gráfico, con el símbolo afectado visible
+- **dc-es-symbol-subscription-issue-02.png** — Barra de fuentes de DeepCharts con el indicador de conexión verde visible junto al nombre de la fuente activa
+- **dc-es-symbol-subscription-issue-03.png** — Ventana Symbol Manage con el menú desplegable de clic derecho abierto sobre una fila de mercado, mostrando la lista de conexiones disponibles para asignar
+
+## Solución: la aplicación se cierra al guardar la configuración de la fuente  (`content-es/app-crashes-saving-feed.md`)
+
+- **dc-es-app-crashes-saving-feed-01.png** — Menú contextual del Explorador de Windows sobre DeepChart.exe con "Run as administrator" resaltado
+- **dc-es-app-crashes-saving-feed-02.png** — Menú View del Explorador de archivos abierto con Show > Hidden items marcado, en la carpeta del perfil de usuario
+- **dc-es-app-crashes-saving-feed-03.png** — Carpeta AppData en el Explorador de archivos con la carpeta de la aplicación DeepCharts seleccionada antes de eliminarla
+
+## Solución: gaps de precio en los gráficos  (`content-es/gaps-in-price.md`)
+
+- **dc-es-gaps-in-price-01.png** — Un gráfico de precios con un gap visible en el historial de velas: barras ausentes en medio de una sesión, con el área del gap resaltada
+- **dc-es-gaps-in-price-02.png** — Diálogo de borrado de datos de la aplicación con un símbolo seleccionado y un rango de fechas que cubre el gap
+- **dc-es-gaps-in-price-03.png** — Diálogo de General Settings con el campo Database Folder Path resaltado
+- **dc-es-gaps-in-price-04.png** — Explorador de archivos dentro de la carpeta de la base de datos con la subcarpeta de un único símbolo seleccionada para su eliminación, y las carpetas de los demás símbolos visibles e intactas
+
+## Solución: gráficos con retraso o datos demorados (lista de verificación)  (`content-es/data-delayed-lagging.md`)
+
+- **dc-es-data-delayed-lagging-01.png** — Un gráfico con la etiqueta roja de retraso visible en la esquina superior izquierda mostrando un valor de retraso en segundos
+- **dc-es-data-delayed-lagging-02.png** — Ventana Diagnostic Tools tras completarse la prueba de red, mostrando los resultados de ping y velocidad de descarga por región con el botón de copiar al portapapeles visible
+- **dc-es-data-delayed-lagging-03.png** — Configuración de la fuente dxFeed con el campo DOM Type abierto mostrando las opciones MBO y MBP, con MBP seleccionado
+- **dc-es-data-delayed-lagging-04.png** — Pestaña Performance de las preferencias de R Trader Pro con los deslizadores Quotes y Order Book arrastrados al máximo
+
+## La ventana de gráfico  (`content-es/chart-window.md`)
+
+- **dc-es-chart-window-01.png** — Una ventana de gráfico completa con un gráfico de velas cargado (p. ej. NQ, 5 Minute), anotada con llamadas para la barra de título, la fila de iconos superior izquierda, el indicador OHLC, la barra de herramientas de dibujo izquierda y la barra inferior
+- **dc-es-chart-window-02.png** — El diálogo Select Instrument con la barra lateral de bolsas a la izquierda, CME seleccionada, la lista de símbolos con NQ resaltado y los botones New / Cancel / Select visibles
+- **dc-es-chart-window-03.png** — Esquina superior izquierda de un gráfico ampliada, mostrando el indicador OHLC con valores reales (O H L C, %V, ΣV, ΔV) mientras se pasa el cursor sobre una vela
+- **dc-es-chart-window-04.png** — Los seis iconos superiores izquierdos del gráfico ampliados, en orden: hamburguesa, dos velas, gráfico de barras, engranaje, signo de dólar (estado verde/armado), cámara
+- **dc-es-chart-window-05.png** — La ventana Indicator List con las pestañas de categoría a la izquierda, el cuadro de búsqueda en la parte superior, la lista desplazable de indicadores con iconos + y el panel derecho mostrando los indicadores activos
+- **dc-es-chart-window-06.png** — Una ventana de gráfico en modo de pestañas compactas con dos pestañas ("NQ 5 m" activa en verde, la segunda pestaña inactiva) y el panel emergente de la pestaña abierto mostrando los tres menús desplegables más los botones Detach y Close
+
+## Configuración del gráfico de precios  (`content-es/price-chart-settings.md`)
+
+- **dc-es-price-chart-settings-01.png** — El diálogo Price Settings abierto en la pestaña Parameters, mostrando la lista de secciones de la izquierda (DATA, VOLUME/DELTA, PRICE LINE, COUNTDOWN, % VAR, LINE START DAY, CUSTOM TIME SESSION, DEEP RANGE) y los campos de GENERAL con Days To Load=10, Param Type=Minute, Param 1=5
+- **dc-es-price-chart-settings-02.png** — Un gráfico con Width based volume y Color based on delta habilitados a la vez, velas de anchos visiblemente distintos e intensidades de color verde/morado, junto a la sección VOLUME/DELTA del diálogo Price Settings
+- **dc-es-price-chart-settings-03.png** — El diálogo Price Settings en la pestaña Subgraphs mostrando la fila Price seleccionada, las muestras de color Bull/Bear y el menú Subgraph Style abierto con Line / Candlestick / OHLC / Hidden / CandleBody visibles
+
+## Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)  (`content-es/chart-display-options.md`)
+
+- **dc-es-chart-display-options-01.png** — El menú desplegable del icono de dos velas abierto en un gráfico, mostrando Candlestick resaltado como activo, Line, OHLC, las casillas Equi-Volume Bars y Delta-Volume Bars, ETH Session marcada, Auction filter, Bar values marcada, Countdown timer y la entrada Price Settings al final
+- **dc-es-chart-display-options-02.png** — Comparación lado a lado del mismo movimiento de precio como velas estándar frente a Equi-Volume + Delta-Volume habilitados, mostrando anchos de vela variables y diferencias de intensidad verde/púrpura
+
+## Herramientas de dibujo y anotaciones  (`content-es/drawing-tools.md`)
+
+- **dc-es-drawing-tools-01.png** — Un gráfico con varias anotaciones colocadas — una línea horizontal en un nivel, una línea de tendencia, una zona rectangular y una nota de texto — con la barra de herramientas de dibujo izquierda visible y el submenú Drawing Objects del clic derecho abierto
+- **dc-es-drawing-tools-02.png** — El diálogo de Configuración de anotaciones abierto para una línea horizontal, mostrando las opciones de color, estilo de línea y grosor
+- **dc-es-drawing-tools-03.png** — Un dibujo de calculadora de compra colocado en un gráfico con el área de SL debajo de la entrada y el área de TP encima, mostrando la relación riesgo/beneficio y las distancias en ticks
+
+## Plantillas y espacios de trabajo  (`content-es/templates-workspaces.md`)
+
+- **dc-es-templates-workspaces-01.png** — Menú contextual de clic derecho del gráfico abierto con el submenú Template expandido mostrando Load y Save As, con Save As resaltado
+- **dc-es-templates-workspaces-02.png** — Diálogo de guardado de plantilla/selector de archivos mostrando las opciones de origen Local y Cloud con un nombre de plantilla siendo introducido
+- **dc-es-templates-workspaces-03.png** — Selector de archivos de plantilla con las pestañas de origen Local, Cloud y Shared visibles, una plantilla seleccionada y el panel de vista previa mostrando su vista previa
+- **dc-es-templates-workspaces-04.png** — Barra principal de DeepCharts con el desplegable Workspace abierto mostrando el nombre del espacio de trabajo actual y las opciones de guardar/cargar
+- **dc-es-templates-workspaces-05.png** — Selector de archivos de espacio de trabajo mostrando un espacio de trabajo guardado seleccionado en la pestaña Local con el panel de vista previa visible
+
+## Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)  (`content-es/quick-chart-templates.md`)
+
+- **dc-es-quick-chart-templates-01.png** — Barra inferior de un gráfico de precios mostrando el botón Templates seguido de los botones de opción OF-VP, OF-B/A, D-VP, D-DP, D-VL, W-VP, W-DP y C-VP, con el botón DOM Trading y el conmutador Trading panel en el extremo derecho
+- **dc-es-quick-chart-templates-02.png** — Gráfico de precios inmediatamente después de hacer clic en OF-VP, con el botón OF-VP seleccionado en la barra inferior y cada vela renderizada como un perfil de volumen por barra
+
+## Vincular ventanas con grupos de color  (`content-es/link-windows.md`)
+
+- **dc-es-link-windows-01.png** — Esquina superior derecha de una ventana de gráfico con el icono cuadrado de vínculo resaltado, a la izquierda de los botones minimizar/maximizar/cerrar
+- **dc-es-link-windows-02.png** — Menú de vínculo del gráfico abierto mostrando None link, las ocho entradas Link de colores y la opción $ Link Trading Symbol, con Link 1 resaltado
+
+## Reproducir datos de mercado  (`content-es/replay-data.md`)
+
+- **dc-es-replay-data-01.png** — Menú Options abierto en la barra principal con Replay Tick Data resaltado
+- **dc-es-replay-data-02.png** — Ventana Replay Manage con la selección de bolsa/símbolo abierta y una bolsa elegida
+- **dc-es-replay-data-03.png** — Ventana Replay Manage con el selector de calendario abierto, una fecha y hora de inicio seleccionadas, y el botón Set visible
+- **dc-es-replay-data-04.png** — Ventana Replay Manage durante la reproducción mostrando el control Play, la barra deslizante de velocidad y las opciones de velocidad predefinidas, con un gráfico reproduciéndose en segundo plano
+
+## Referencia de atajos de teclado  (`content-es/keyboard-shortcuts-reference.md`)
+
+- **dc-es-keyboard-shortcuts-reference-01.png** — Ventana General Settings en la pestaña Shortcuts mostrando la tabla de atajos con las columnas Category, Type, Description y Combination, desplazada al inicio
+- **dc-es-keyboard-shortcuts-reference-02.png** — Menú contextual de clic derecho del gráfico abierto, con las teclas rápidas visibles junto a las entradas (Pointer Alt P, Crosshair Alt C, Trading Enabled Ctrl Alt T, Indicators Ctrl I, Properties Ctrl P)
+
+## Advanced Time And Sales (la cinta)  (`content-es/adv-time-and-sales.md`)
+
+- **dc-es-adv-time-and-sales-01.png** — El menú New abierto en la barra principal de DeepCharts con Adv. Time And Sales resaltado, y el diálogo Select Instrument visible con NQ seleccionado
+- **dc-es-adv-time-and-sales-02.png** — Ventana completa de Adv. Time And Sales en NQ mostrando los iconos de la barra de título (logo, engranaje, enlace, minimizar, cerrar), el menú desplegable de símbolo a ancho completo, y una cinta mixta de celdas de precio verdes y rosas con números de volumen en azul
+- **dc-es-adv-time-and-sales-03.png** — Menú del engranaje de Adv. Time And Sales completamente abierto mostrando todos los elementos: el filtro All/Ask/Bid Trades con la marca en All Trades, y las entradas Enable Bid/Ask, Enable Delta, Chart Settings, Enable book imbalance, Book imbalance settings, Duplicate Adv. TS, Always on Top, Template, Rebuild TS, Rename TS y Settings TS
+- **dc-es-adv-time-and-sales-04.png** — Cinta con el filtro Ask Trades activo, todas las filas verdes, y el menú del engranaje abierto mostrando la marca movida a Ask Trades
+- **dc-es-adv-time-and-sales-05.png** — Adv. Time And Sales con el panel inferior Bid/Ask habilitado: caja morada a la izquierda, caja verde a la derecha, recuentos de contratos bajo cada caja y el botón verde Reset a ancho completo
+- **dc-es-adv-time-and-sales-06.png** — Panel inferior de Delta mostrando una barra de delta negativo morada con dos números negativos apilados, y luego el mismo panel en verde después de que el delta se volvió positivo
+- **dc-es-adv-time-and-sales-07.png** — Panel inferior de desequilibrio del libro en dos estados: valores iguales mostrados como números simples, y un lado bid dominante con una caja verde a la izquierda dimensionada proporcionalmente
+- **dc-es-adv-time-and-sales-08.png** — Diálogo Chart Settings abierto mostrando la sección GENERAL con el menú desplegable Period Mode expandido listando Resettable, Fixed count y Fixed seconds
+- **dc-es-adv-time-and-sales-09.png** — Diálogo TS Settings abierto en la sección GENERAL mostrando las muestras de color Back/Border/Font, Font size 12.00, el interruptor Bold font, el desplegable Input data en Volume, el interruptor Show milliseconds y el desplegable TS Mode
+- **dc-es-adv-time-and-sales-10.png** — Diálogo TS Settings desplazado hasta FILTER SETTINGS y la sección FILTER 1 expandida mostrando los campos de color de fondo y texto Bid, Below Bid, Between Bid/Ask (gris), Ask y Above Ask
+
+## Ventana Advanced DOM  (`content-es/advanced-dom.md`)
+
+- **dc-es-advanced-dom-01.png** — Menú New abierto con el submenú Book expandido mostrando Adv. Dom, Horizontal dom y Vertical dom, y el diálogo Select Instrument detrás
+- **dc-es-advanced-dom-02.png** — Ventana completa de Advanced DOM en NQ con las cuatro secciones visibles: barra de título con logo, borrador, engranaje, menú desplegable de símbolo e iconos de enlace; el encabezado Broker/Account/Qty/Daily P&L; la fila de estadísticas %V %O V T; la escalera con las columnas P&L, B, Bid, Price, Ask, S y VP con la fila del precio actual resaltada en naranja; y el pie con la caja A, el selector Qty, Cancel - Flat All, Buy, Cancel, Flat, Sell y el bloque OCO
+- **dc-es-advanced-dom-03.png** — Escalera del Advanced DOM ampliada para mostrar celdas de profundidad del bid azules, celdas de profundidad del ask moradas, una orden de compra en curso verde en la columna B, y las dos columnas VP a la derecha con el valor del POC resaltado en rojo
+- **dc-es-advanced-dom-04.png** — Advanced DOM con posición larga de 2 contratos: campo Qty en verde mostrando +2, la columna P&L llena con valores por nivel y la fila verde 0.00 en el nivel de entrada, con la fila del precio actual en naranja debajo
+- **dc-es-advanced-dom-05.png** — Advanced DOM estrecho en disposición compacta dividida mostrando las columnas de precio centradas, las columnas X de cancelación y el pie de ticket de orden con los campos Qty, Price y Type=LMT
+- **dc-es-advanced-dom-06.png** — Menú del engranaje del Advanced DOM abierto mostrando Duplicate Dom, Settings Column Order, Settings Dom, Resettable Profile, Daily Profile, los cuatro interruptores Show marcados, Always on Top y Template
+- **dc-es-advanced-dom-07.png** — Menú rápido de clic derecho en el encabezado de columna abierto mostrando Adjust column size, Adjust window to fit content, Pull/Stack, Trades, Offers, la entrada Profit/Loss marcada y los submenús Resettable/Daily Profile
+- **dc-es-advanced-dom-08.png** — Diálogo Chart Dom Settings abierto con la sección GENERAL expandida y la lista de los diez encabezados de sección visible
+- **dc-es-advanced-dom-09.png** — Diálogo de configuración del Resettable Profile mostrando los nueve encabezados de sección con GENERAL expandido, y la ventana anidada Background Settings abierta encima mostrando Method color=Fading color y Color calculation=Volume
+
+## Ventana de gráfico de perfil (perfiles TPO y de volumen)  (`content-es/profile-chart-window.md`)
+
+- **dc-es-profile-chart-window-01.png** — Ventana Profile Chart recién abierta en NQ mostrando el indicador Building chart con barra de progreso, y la insignia LDT de la barra principal visible en la parte superior
+- **dc-es-profile-chart-window-02.png** — Profile Chart completamente renderizado en NQ en modo TPO mostrando el encabezado con el menú desplegable de símbolo, el menú 30D - BT y el menú de agrupamiento de ticks, los iconos de la barra de herramientas superior, la barra de dibujo izquierda, perfiles de letras TPO por sesión con líneas POC magenta y líneas discontinuas de área de valor, y la fila inferior de conmutadores de tipos de perfil
+- **dc-es-profile-chart-window-03.png** — El menú de agrupamiento de ticks abierto mostrando los valores predefinidos 1 T, 20 T y 100 T, con el diálogo Set Ticks Grouping abierto mostrando el campo numérico y los botones Cancel, Apply y Set
+- **dc-es-profile-chart-window-04.png** — Profile Chart con varios conmutadores habilitados a la vez: letras TPO más barras de perfil de volumen diario por sesión en el área principal, y tres áreas verticales etiquetadas W-VP, W-DP y C-VP en el borde derecho, cada una con un histograma de altura completa
+- **dc-es-profile-chart-window-05.png** — Panel Indicators abierto sobre el Profile Chart listando Chart Area 1 con Price y varias instancias DT y DP: Vol, más Vertical Chart Areas 1-3 con una instancia semanal o compuesta cada una, con los iconos de papelera, ojo y engranaje visibles por fila
+- **dc-es-profile-chart-window-06.png** — Profile Chart con el panel de trading acoplado a la derecha mostrando el campo Qty, la cuadrícula MKT/BID-ASK/LMT/STP/STP LMT, los botones Breakeven y Cancel and Flat y el bloque OCO, con el icono $ de la barra de herramientas en verde
+
+## Escáner de mercado  (`content-es/scanner-window.md`)
+
+- **dc-es-scanner-window-01.png** — Ventana del Escáner con dos filas (ES y NQ) mostrando las columnas Symbol, Open, High, Low, Close y %, con las celdas de cambio porcentual resaltadas visibles
+- **dc-es-scanner-window-02.png** — Selector Select Instrument abierto desde New → Scanner, con la barra lateral de bolsas a la izquierda, el cuadro de filtrado por escritura y una fila de símbolo resaltada antes de pulsar Select
+- **dc-es-scanner-window-03.png** — Barra de título del Escáner ampliada con los iconos de embudo, engranaje y enlace visibles y etiquetados
+- **dc-es-scanner-window-04.png** — Ventana de administración Scanner Symbols listando las filas NQ y ES con los botones rojo Remove y verde Add visibles
+- **dc-es-scanner-window-05.png** — Diálogo Resolution Settings abierto desde el menú de engranaje del Escáner, mostrando Days To Load, Param 1, Param 2, el menú desplegable Param Type, el interruptor Based on minute data, el menú desplegable Continuos contract, y los interruptores Exclude Auction(Tick Data), Filter Bad Ticks y Extended market hour
+- **dc-es-scanner-window-06.png** — Ventana del Escáner con la franja de filtro de embudo visible sobre la tabla, mostrando las casillas Rank top y Rank worst con sus selectores numéricos
+- **dc-es-scanner-window-07.png** — Menú de engranaje del Escáner abierto mostrando las entradas Resolutions, Always on Top, Symbol List, Graphics Settings y Template
+- **dc-es-scanner-window-08.png** — Diálogo Graphics Settings del Escáner mostrando todas las muestras de color de celdas y encabezados y los dos campos de tamaño de texto
+
+## Visor de correlación  (`content-es/correlation-viewer.md`)
+
+- **dc-es-correlation-viewer-01.png** — Ventana del Visor de correlación renderizada en el modo de visualización Bars con dos barras por símbolo (NQ y ES) en un eje porcentual compartido, con los nombres de los símbolos visibles bajo las barras y la escala porcentual en el eje y
+- **dc-es-correlation-viewer-02.png** — Diálogo Select Base Instrument con la barra lateral de bolsas (All, CBOT, CME, COMEX, CRYPTO, EUREX, INDEX US y otras), el cuadro de filtrado por escritura y la tabla de símbolos visibles
+- **dc-es-correlation-viewer-03.png** — Diálogo Correlation Properties con la sección Symbols mostrando las fichas NQ-CME y ES-CME, cada una con las muestras Price Down Color, Price Up Color y Retracement Color, y el botón verde Add symbol
+- **dc-es-correlation-viewer-04.png** — Barra de título del Visor de correlación ampliada con los iconos de engranaje y embudo visibles y etiquetados
+- **dc-es-correlation-viewer-05.png** — Visor de correlación mostrando el indicador giratorio Building chart con la insignia DWT: ES-CME visible en la barra superior de la aplicación
+- **dc-es-correlation-viewer-06.png** — Vista Bars renderizada, ampliada en la barra de un símbolo, mostrando el cuerpo y la extensión más fina en forma de mecha frente a las etiquetas del eje porcentual
+- **dc-es-correlation-viewer-07.png** — Selector Select Instrument abierto encima del diálogo Correlation Properties tras pulsar Add symbol
+- **dc-es-correlation-viewer-08.png** — Sección GENERAL de Correlation Properties mostrando Days to load, el menú desplegable TF type, el selector numérico TF y el menú desplegable Display mode
+- **dc-es-correlation-viewer-09.png** — Diálogo Correlation Properties desplazado hasta las secciones CHART AREA, GRID, USER ANNOTATIONS y EXTRA con los botones Apply y OK visibles
+
+## Operar desde el gráfico  (`content-es/trading-from-chart.md`)
+
+- **dc-es-trading-from-chart-01.png** — Fila de iconos superior izquierda del gráfico con el icono de dólar resaltado en su estado verde (armado), junto a los iconos de barra de herramientas, estilo de barras, indicadores, engranaje y cámara
+- **dc-es-trading-from-chart-02.png** — Gráfico de precios con el panel de trading abierto en el lado derecho, mostrando el desplegable de símbolo, los indicadores Open Qty / Open P/L / Daily P/L, el selector Qty, los desplegables Broker y Account y la cuadrícula de botones BUY/SELL
+- **dc-es-trading-from-chart-03.png** — Desplegable de símbolo del panel de trading abierto mostrando el diálogo Select Instrument con la barra lateral de bolsas y el cuadro de filtro
+- **dc-es-trading-from-chart-04.png** — Una orden de límite de compra activa mostrada en el gráfico siendo arrastrada a un nuevo nivel de precio con el cursor visible
+
+## Referencia del panel de trading: cada botón y campo  (`content-es/trading-panel-reference.md`)
+
+- **dc-es-trading-panel-reference-01.png** — Bloque OCO del panel de trading en modo MULTI mostrando el icono de exclamación rojo junto al desplegable Mode, con el campo Qty del panel visible mostrando un valor no coincidente
+
+## DOM Trading en el gráfico (escalera de trading con clics)  (`content-es/dom-trading-chart.md`)
+
+- **dc-es-dom-trading-chart-01.png** — Gráfico de precios con DOM Trading habilitado: columna verde de compra y columna roja de venta en el borde derecho, la etiqueta D: 0.00 $ en la parte superior de la escalera y los botones naranjas CANCEL ALL y FLAT ALL en la parte inferior, con el botón de opción DOM Trading de la barra inferior resaltado
+- **dc-es-dom-trading-chart-02.png** — Escalera DOM ampliada con una fuente Level 2 mostrando las cantidades de liquidez pasiva en los niveles de precio de las columnas verde y roja
+- **dc-es-dom-trading-chart-03.png** — El menú desplegable de DOM Trading abierto en la barra inferior del gráfico mostrando Enable Chart Trading, Chart Trading Width, Trading Colors, Line Bid/Ask, DOM Settings y Text Settings
+
+## Indicador de profundidad de mercado (DOM)  (`content-es/depth-of-market.md`)
+
+- **dc-es-depth-of-market-01.png** — Menú New abierto con el submenú Book y ADV DOM resaltado, con el diálogo Select Instrument visible detrás
+- **dc-es-depth-of-market-02.png** — Escalera del DOM con una orden de compra límite activa en la columna B siendo arrastrada a una fila de precio inferior, con el cursor visible a mitad del arrastre
+- **dc-es-depth-of-market-03.png** — Menú de clic derecho del encabezado de columnas abierto sobre el Advanced DOM mostrando la lista de columnas adicionales, incluidas Pull/Stack, Trades y Offers con marcas de verificación
+
+## Estrategias OCO (One-Cancels-the-Other)  (`content-es/oco-strategies.md`)
+
+- **dc-es-oco-strategies-01.png** — Panel de trading con la casilla OCO Strategy habilitada, mostrando el menú desplegable Mode, los campos de ticks SL y TP, los interruptores BE y Trail, y los botones de opción Server/Client
+- **dc-es-oco-strategies-02.png** — Gráfico mostrando una entrada ejecutada con su bracket OCO adjunto: orden stop debajo y límite objetivo por encima del precio de la posición
+- **dc-es-oco-strategies-03.png** — El editor Oco Strategy mostrando una estrategia con nombre de tres contratos con un bracket Stop a 12 ticks y tres brackets Target a 8, 12 y 20 ticks, la opción Move BE activada en el segundo objetivo, y los botones Add bracket y Save
+- **dc-es-oco-strategies-04.png** — La ventana Link pending orders listando las órdenes pendientes de la cuenta con un límite de take-profit y una orden stop seleccionados para vincular
+
+## Ventana de órdenes  (`content-es/orders-window.md`)
+
+- **dc-es-orders-window-01.png** — La Ventana de órdenes abierta mediante Trading → Show Orders, mostrando el menú desplegable Broker en la parte superior y una lista de órdenes poblada con una mezcla de órdenes ejecutadas y enviadas
+- **dc-es-orders-window-02.png** — La Ventana de órdenes con el filtro Status establecido en Submitted, mostrando en la lista solo órdenes activas sin ejecutar
+
+## Cartera (Wallet)  (`content-es/portfolio-wallet.md`)
+
+- **dc-es-portfolio-wallet-01.png** — La ventana Cartera abierta mediante Trading → Show Portfolio, mostrando tarjetas de conexión para SIM y una fuente en vivo, cada una con cifras de Daily Profit y Open Profit y filas de cuentas debajo
+- **dc-es-portfolio-wallet-02.png** — Una sola tarjeta de cuenta ampliada, con los botones Eye, Pause y Close visibles junto a las cifras de Balance, Daily PnL y Open PnL
+
+## Gestor de riesgos  (`content-es/risk-manager.md`)
+
+- **dc-es-risk-manager-01.png** — La ventana Portfolio con una tarjeta de conexión visible y el botón Settings resaltado, a punto de abrir la configuración de gestión de riesgos
+- **dc-es-risk-manager-02.png** — El diálogo de configuración de riesgo mostrando las secciones Daily Loss Limit y Daily Profit Limit, cada una con el interruptor Enable, el campo Value y el selector de unidad $/%, y la opción Include Open Position en el límite de ganancia
+- **dc-es-risk-manager-03.png** — El diálogo de configuración de riesgo desplazado hasta Limit Trading Hours con los campos de hora Begin/End y el interruptor Symbol – Exclude Not Listed con la lista Add Symbol debajo
+- **dc-es-risk-manager-04.png** — Una tarjeta de cuenta del Portfolio mostrando el estado Lockout con el temporizador de cuenta atrás tras dispararse una regla de riesgo
+
+## Cómo configurar el Trade Copier  (`content-es/trade-copier.md`)
+
+- **dc-es-trade-copier-01.png** — El menú Trading abierto con la entrada Trade Copier - Beta resaltada
+- **dc-es-trade-copier-02.png** — La ventana del Trade Copier con la configuración Add New Group abierta, el campo Name rellenado y la lista de ajustes visible
+- **dc-es-trade-copier-03.png** — La configuración del grupo mostrando la cuenta principal, las filas de cuentas secundarias con sus valores de Contracts Multiplier y la lista de símbolos del grupo
+- **dc-es-trade-copier-04.png** — La ventana del Trade Copier con un grupo en ejecución, el estado de la principal mostrando Ready y las cuentas secundarias listadas con su estado de sincronización
+
+## Análisis de rendimiento (Signal Performance)  (`content-es/performance-analysis.md`)
+
+- **dc-es-performance-analysis-01.png** — La ventana Signal Performance abierta mediante Trading → Strategy Report, mostrando los selectores Broker y Account, los filtros de rango de fechas y símbolos en la esquina superior derecha, y el botón Generate Report
+- **dc-es-performance-analysis-02.png** — El área de filtros superior derecha de la ventana Signal Performance con los controles de rango de fechas y selección de símbolos visibles
+- **dc-es-performance-analysis-03.png** — La sección Strategy Performance de un informe generado mostrando Balance, Profit, Losses, recuento de operaciones, DrawDown, Run-up y porcentaje de acierto divididos en columnas Long/Short/All Executes
+- **dc-es-performance-analysis-04.png** — La sección Chart de un informe mostrando la curva de capital con el gráfico de drawdown debajo
+- **dc-es-performance-analysis-05.png** — La sección Time Analysis mostrando el histograma de rentabilidad por hora con horas claramente rentables y no rentables
+
+## Flujo de órdenes 101: bid, ask, agresor y delta  (`content-es/orderflow-101.md`)
+
+- **dc-es-orderflow-101-01.png** — Dos barras footprint consecutivas anotadas lado a lado — la primera barra con delta fuertemente positivo cerrando en su máximo, la segunda barra con un delta positivo similar pero un cierre plano, texto de anotación "mismo esfuerzo comprador, sin resultado = absorción"
+
+## Entender el perfil de volumen: POC, área de valor, HVN/LVN  (`content-es/understanding-volume-profile.md`)
+
+- **dc-es-understanding-volume-profile-01.png** — Gráfico intradía de ES con el perfil de ayer superpuesto, anotado con la apertura por encima del VAH, la reentrada en el valor y una flecha hacia el POC etiquetada con la lógica de rotación
+
+## Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción  (`content-es/understanding-auction-theory.md`)
+
+- **dc-es-understanding-auction-theory-01.png** — Una secuencia de footprint de NQ anotada en tres etapas — desequilibrios compradores apilados durante la subida, una barra de absorción en el máximo del día anterior con volumen alto y precio plano, y el tick superior sin estrechar rodeado como posible subasta sin terminar
+
+## Entender los icebergs y la absorción  (`content-es/understanding-icebergs-absorption.md`)
+
+- **dc-es-understanding-icebergs-absorption-01.png** — Una vista compuesta anotada del mismo momento en tres paneles — la cinta mostrando impresiones de venta repetidas en un precio, el DOM mostrando el bid en ese precio recargándose a un tamaño similar tras cada golpe, y una barra de footprint con una enorme celda de volumen en el bid en el mínimo y sin precios inferiores impresos, con el pie "un iceberg, tres vistas"
+- **dc-es-understanding-icebergs-absorption-02.png** — Gráfico de ES del ejemplo práctico anotado con la línea del nivel 5.270,00, un panel de delta acumulado debajo cayendo bruscamente mientras el precio se mantiene plano en el nivel, y un rótulo que dice "2.400 vendidos contra un bid de 60 lotes: comprador oculto"
+
+## Entender el VWAP  (`content-es/understanding-vwap.md`)
+
+- **dc-es-understanding-vwap-01.png** — El ejemplo práctico como gráfico de ES anotado — impulso matinal por encima del VWAP, primer toque de retroceso etiquetado "punto de decisión", el retest fallido desde abajo etiquetado "el soporte se convierte en resistencia", y la rotación vespertina entre las bandas con flechas
+
+## Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)  (`content-es/understanding-market-structure-sessions.md`)
+
+- **dc-es-understanding-market-structure-sessions-01.png** — Un gráfico de NQ que abarca dos días completos con la porción nocturna (solo ETH) visualmente distinguida de la porción RTH, anotado con el inicio de sesión de las 18:00 de Nueva York, la apertura RTH de las 09:30, el máximo y mínimo nocturnos y la pausa diaria de 17:00 a 18:00
+- **dc-es-understanding-market-structure-sessions-02.png** — Gráfico intradía de NQ del ejemplo práctico con el rango nocturno sombreado, anotaciones en la apertura RTH, la extensión fallida del máximo nocturno, la ruptura del mínimo nocturno con un aumento de volumen, y el cierre RTH previo marcado como la siguiente referencia
+
+## Cómo leer un footprint: ejemplos prácticos  (`content-es/reading-a-footprint.md`)
+
+- **dc-es-reading-a-footprint-01.png** — Barras de footprint alrededor de una ruptura con cuatro desequilibrios de compra apilados resaltados en celdas diagonales consecutivas, lectura de delta positivo bajo la barra, y la zona apilada marcada como soporte futuro
+- **dc-es-reading-a-footprint-02.png** — Un footprint de mínimo de swing con la fila del precio extremo mostrando volumen tanto en el bid como en el ask, anotado "subasta inacabada — sin impresión en cero", más una revisita posterior del mismo precio marcada con una flecha
+
+## Diferentes tipos de datos de entrada para indicadores  (`content-es/different-types-of-input.md`)
+
+- **dc-es-different-types-of-input-01.png** — Un diálogo de configuración de indicador (p. ej. Deep Print) abierto en la sección Data Settings con el menú desplegable Input Data expandido, mostrando las entradas Volume, Order y Aggregate
+- **dc-es-different-types-of-input-02.png** — Dos gráficos footprint idénticos lado a lado, uno con Input Data = Volume y otro con Input Data = Aggregate, mostrando valores de celda visiblemente distintos en las mismas velas
+
+## Cómo cambiar la disposición de los indicadores  (`content-es/indicator-layout.md`)
+
+- **dc-es-indicator-layout-01.png** — Gráfico de precio con una media móvil fusionada en el área de gráfico 1, dibujada sobre las velas en lugar de en un panel separado
+
+## Deep Print (Footprint)  (`content-es/deep-print.md`)
+
+- **dc-es-deep-print-01.png** — Vista ampliada de dos o tres velas de Deep Print con el borde del Volume POC, el resaltado del área de valor y un desequilibrio apilado anotado
+- **dc-es-deep-print-02.png** — Diálogo de configuración de Deep Print abierto en la sección Sizing con Multi Column configurado, junto a un gráfico que muestra una vela representada como tres columnas contiguas (Bid×Ask, Delta, Volumen)
+
+## Deep Profile (Perfil de volumen / delta)  (`content-es/deep-profile.md`)
+
+- **dc-es-deep-profile-01.png** — Diálogo de configuración de Deep Profile abierto en la sección General settings mostrando los menús desplegables VBP Type y VBP Period
+- **dc-es-deep-profile-02.png** — Menú contextual de clic derecho sobre un perfil mostrando las opciones de fusión, división y restablecimiento
+
+## Deep Profile Swing  (`content-es/deep-profile-swing.md`)
+
+- **dc-es-deep-profile-swing-01.png** — Gráfico con Deep Profile Swing activo mostrando histogramas de volumen separados dibujados sobre tres swings de precio consecutivos, con las líneas de nivel de swing extendiéndose hacia la derecha
+- **dc-es-deep-profile-swing-02.png** — Diálogo de configuración de Deep Profile Swing abierto en Main Swing Settings con el menú desplegable Swing Type expandido mostrando los cuatro métodos de detección
+
+## Deep Profile Values  (`content-es/deep-profile-values.md`)
+
+- **dc-es-deep-profile-values-01.png** — Gráfico con Deep Profile Values activo mostrando líneas de POC diarias y líneas de límites del área de valor; una línea de POC más antigua se extiende intacta durante varios días, anotada como POC naked
+- **dc-es-deep-profile-values-02.png** — Diálogo de configuración de Deep Profile Values abierto en la sección POC mostrando los menús desplegables Show Line y Extend Line con Till Interaction seleccionado
+
+## Deep Delta  (`content-es/deep-delta.md`)
+
+- **dc-es-deep-delta-01.png** — Diálogo de configuración de Deep Delta abierto en la sección Parameters mostrando Delta Mode establecido en Multi-Range y las cuatro filas de rangos con filtros Min/Max
+
+## Deep Stats  (`content-es/deep-stats.md`)
+
+- **dc-es-deep-stats-01.png** — Ventana de gráfico con Deep Stats aplicado: velas de precio arriba y la tabla de texto de varios niveles de Deep Stats en un panel debajo, con varias filas de métricas (Tot Vol, Delta Vol, Delta %, COT Bar) visibles y una celda atípica fuertemente coloreada
+- **dc-es-deep-stats-02.png** — Diálogo de configuración de Deep Stats abierto en la sección Data Settings, mostrando el menú desplegable Input Data expandido con las opciones Volume, Order y Aggregate Trades, además de los campos Min Filter y Max Filter
+
+## Deep Trades  (`content-es/deep-trades.md`)
+
+- **dc-es-deep-trades-01.png** — Gráfico con Deep Trades activo mostrando varios tipos de marcador a la vez: al menos un cuadrado, un círculo hueco, un círculo relleno y un marcador de diamante en velas recientes, con marcadores de color ask y de color bid distinguibles
+- **dc-es-deep-trades-02.png** — Diálogo de configuración de Deep Trades abierto en Data Settings, mostrando Chart Area, Days to Load y Filter Mode establecido en Automatic con el menú desplegable Intensity expandido (Low/Medium/Strong)
+
+## Deep Wall  (`content-es/deep-wall.md`)
+
+- **dc-es-deep-wall-01.png** — Gráfico de ES con una detección de Deep Wall visible: el nivel marcado donde el precio golpeó repetidamente la liquidez en reposo y rechazó, con la señal de Deep Wall resaltada
+- **dc-es-deep-wall-02.png** — Diálogo de configuración de Deep Wall junto con la pantalla Options → Settings → Add Alert mostrando una alerta configurada con Alert Sound y Message Popup habilitados para Deep Wall
+
+## Deep V-Tracker  (`content-es/deep-v-tracker.md`)
+
+- **dc-es-deep-v-tracker-01.png** — Gráfico con Deep V-Tracker activo mostrando una caja de aceleración cian sobre el cuerpo de una vela más varias líneas horizontales de Absorption & Pressure en morado y verde con sus etiquetas P/A/PC/AC visibles
+- **dc-es-deep-v-tracker-02.png** — Diálogo de configuración de Deep V-Tracker mostrando el módulo Patterns con solo Acceleration habilitado y Pattern Mode establecido en Strong, y la sección Absorption & Pressure con los menús desplegables Intensity y Level Mode visibles
+
+## Deep-M IVB  (`content-es/deep-m-ivb.md`)
+
+- **dc-es-deep-m-ivb-01.png** — Gráfico con Deep-M IVB aplicado tras la apertura: líneas High/Mid/Low del rango de apertura, niveles de proyección por encima del rango tras una ruptura, zonas de reacción sombreadas, y el Summary Panel visible en la esquina superior izquierda mostrando el sesgo diario
+- **dc-es-deep-m-ivb-02.png** — Diálogo de configuración de Deep-M IVB mostrando RTH Opening Range (Min) establecido en 30, con Enable Protection y Enable Zones activados, y los controles de color/grosor/estilo del rango visibles
+
+## Deep-M Effort (NQ)  (`content-es/deep-m-effort.md`)
+
+- **dc-es-deep-m-effort-01.png** — Gráfico de NQ 40 Range con Deep-M Effort aplicado: zonas verdes de presión alcista y zonas moradas de presión bajista visibles alrededor del precio, con la línea de media móvil integrada recorriendo el gráfico
+- **dc-es-deep-m-effort-02.png** — Diálogo de configuración de Deep-M Effort (NQ) mostrando las opciones de personalización visual: Bid Color, Ask Color, Opacity, Line Width, y la sección Moving Average con los controles Auto Color y Line Style
+
+## Deep Pattern Builder  (`content-es/deep-pattern-builder.md`)
+
+- **dc-es-deep-pattern-builder-01.png** — Gráfico con Deep Pattern Builder aplicado: marcadores de señal trazados en las velas donde se activaron las condiciones personalizadas, con un par de barras con fondo resaltado visibles
+- **dc-es-deep-pattern-builder-02.png** — Diálogo de configuración de Deep Pattern Builder mostrando una condición habilitada con Input A establecido en Reference Close, el menú desplegable Logical Operator, Input C establecido en Reference Open, y el selector Combine Mode debajo
+- **dc-es-deep-pattern-builder-03.png** — Menú contextual de clic derecho en el gráfico con Autotrading expandido y Execute Backtest resaltado, con un informe de backtest completado visible
+
+## Media móvil  (`content-es/moving-average.md`)
+
+- **dc-es-moving-average-01.png** — Cuadro de diálogo de configuración de Moving Average abierto, mostrando la sección Parameters con Input, Length en 21 y el menú desplegable Type Average expandido listando Simple, Exponential, Triangular y Weighted
+
+## Super Trend  (`content-es/super-trend.md`)
+
+- **dc-es-super-trend-01.png** — Un gráfico de velas con la línea Super Trend trazada por debajo del precio en una tendencia alcista, y luego cambiando por encima del precio tras una reversión; ambos colores de línea visibles a lo largo del cambio
+- **dc-es-super-trend-02.png** — Diálogo de configuración de Super Trend mostrando la sección General con Length = 10 y Multiplier = 3.00, además de las secciones Chart Settings y Alert visibles debajo
+
+## Super Trend Difference  (`content-es/super-trend-difference.md`)
+
+- **dc-es-super-trend-difference-01.png** — Un gráfico de velas con Super Trend en el precio y el histograma Super Trend Difference en un panel inferior, mostrando barras verdes positivas encogiéndose hacia cero antes de un cambio de tendencia
+- **dc-es-super-trend-difference-02.png** — Diálogo de configuración de Super Trend Difference mostrando los parámetros generales Length = 10 y Multiplier = 3.00, con la sección Subgraphs mostrando Auto Color +/- y Line Width 4
+
+## SAR Parabólico  (`content-es/parabolic-sar.md`)
+
+- **dc-es-parabolic-sar-01.png** — Un gráfico de velas con los puntos del SAR Parabólico debajo del precio durante una tendencia alcista, saltando por encima del precio tras una reversión; el punto de giro claramente visible
+- **dc-es-parabolic-sar-02.png** — Diálogo de configuración del SAR Parabólico mostrando la sección Parameters con Step = 0.02 y Maximum = 0.20, y la sección de estilo Subgraph debajo
+
+## Ichimoku  (`content-es/ichimoku.md`)
+
+- **dc-es-ichimoku-01.png** — Un gráfico de velas con el indicador Ichimoku completo aplicado: las líneas Tenkan-sen y Kijun-sen sobre el precio, la nube Kumo sombreada proyectada por delante de la última vela y el Chikou Span rezagado por detrás del precio
+- **dc-es-ichimoku-02.png** — Diálogo de configuración de Ichimoku mostrando Conversion Line Period = 9, Baseline Period = 26 y Lagging Span Period = 26, con las opciones de color de Subgraph para cada línea visibles
+
+## Regresión lineal  (`content-es/linear-regression.md`)
+
+- **dc-es-linear-regression-01.png** — Un gráfico de velas con la línea de Regresión lineal trazada sobre el precio, siguiendo de cerca una tendencia alcista y curvándose en la reversión
+- **dc-es-linear-regression-02.png** — Diálogo de configuración de Regresión lineal mostrando la sección Parameters con Input Data en Close y Length = 21, y la sección de estilo Subgraph debajo
+
+## Canal de regresión  (`content-es/regression-channel.md`)
+
+- **dc-es-regression-channel-01.png** — Un gráfico de velas con el Canal de regresión aplicado — línea central con pendiente ascendente y bandas de desviación superior e inferior conteniendo la tendencia, con el precio tocando la banda inferior y revirtiendo hacia el centro
+- **dc-es-regression-channel-02.png** — Diálogo de configuración del Canal de regresión mostrando la sección General con Mode, Value Dev. Std. = 1.00 y Bars = 100, más la sección Zig Zag y las secciones de trazado MID/UP/DN debajo
+
+## Tillson T3  (`content-es/tillson-t3.md`)
+
+- **dc-es-tillson-t3-01.png** — Un gráfico de precios con el Tillson T3 trazado sobre las velas, Auto Color = Slope de modo que la línea muestra un color en los tramos ascendentes y el color secundario en los descendentes
+- **dc-es-tillson-t3-02.png** — El diálogo de configuración del Tillson T3 mostrando el grupo General (Length 14, Volume Factor 0.618, Input Data Close) y el grupo Subgraph debajo
+
+## Zig Zag  (`content-es/zig-zag.md`)
+
+- **dc-es-zig-zag-01.png** — Un gráfico de precio con el indicador Zig Zag conectando máximos y mínimos de swing con líneas de colores, con etiquetas de retroceso mostrando los niveles 38,2%/50%/61,8% en el retroceso más reciente
+- **dc-es-zig-zag-02.png** — El diálogo de configuración de Zig Zag con el grupo de configuración principal visible, el menú desplegable Zig Zag Mode abierto mostrando Highest Lowest, Absolute Reversal y Tick Reversal, y el grupo de configuración de retrocesos debajo
+
+## Canal de Donchian  (`content-es/donchian-channel.md`)
+
+- **dc-es-donchian-channel-01.png** — Un gráfico de precios con el Canal de Donchian trazado: líneas superior e inferior escalonándose alrededor de las velas, con una vela de ruptura reciente cerrando por encima de la línea superior
+- **dc-es-donchian-channel-02.png** — El diálogo de configuración del Canal de Donchian mostrando el parámetro Length y las filas de subgraph para Donchian_Channel, +DI (Upper Line) y -DI (Lower Line) con sus opciones de visualización
+
+## Índice direccional promedio (ADX)  (`content-es/adx.md`)
+
+- **dc-es-adx-01.png** — Un gráfico de precio con el indicador ADX en un panel inferior mostrando tres líneas: la línea ADX subiendo durante un movimiento en tendencia, con +DI por encima de −DI, mientras el panel de precio de arriba muestra la tendencia alcista correspondiente
+- **dc-es-adx-02.png** — El diálogo de configuración del ADX mostrando el parámetro Period en 14 y las opciones de subgráfico Line Color, Line Style, Line Width, Plus DI Color y Minus DI Color
+
+## Aroon Up/Down  (`content-es/aroon-up-down.md`)
+
+- **dc-es-aroon-up-down-01.png** — Un gráfico de precio con el indicador Aroon Up/Down en un panel inferior — Aroon Up manteniéndose cerca de 100 durante una tendencia alcista mientras Aroon Down se sitúa cerca de 0, con las líneas de nivel 75/50/25 visibles
+- **dc-es-aroon-up-down-02.png** — El diálogo de configuración de Aroon Up/Down mostrando Length 14, los campos Middle/Lower/High Level en 50/25/75, y las dos secciones de subgráfico para Aroon Up y Aroon Down
+
+## Oscilador Aroon  (`content-es/aroon-oscillator.md`)
+
+- **dc-es-aroon-oscillator-01.png** — Un gráfico de precio con el Oscilador Aroon en un panel inferior renderizado como barras, barras positivas de un color durante la tendencia alcista y barras negativas de otro tras la reversión, con la línea cero visible en el medio
+- **dc-es-aroon-oscillator-02.png** — El diálogo de configuración del Oscilador Aroon mostrando Length 14, el grupo de configuración de niveles con los campos Middle/Lower/High Level, y el grupo de subgráficos con Subgraph Style en Bars y Auto Color (+/-) habilitado
+
+## Índice de fuerza relativa (RSI)  (`content-es/rsi.md`)
+
+- **dc-es-rsi-01.png** — El diálogo de configuración del RSI mostrando el grupo General (Input data, Length 14), el grupo Average (Enable, Average Type, Length 20) y el grupo de configuración de niveles (Overbought 70, Oversold 30)
+
+## MACD  (`content-es/macd.md`)
+
+- **dc-es-macd-01.png** — Primer plano del área de gráfico del MACD mostrando el histograma encogiéndose hasta un cruce de la línea de señal, con la barra del cruce resaltada
+- **dc-es-macd-02.png** — El diálogo de configuración del MACD abierto en la sección Parameters, mostrando Fast EMA Period 12, Slow EMA Period 26, el menú desplegable Input Data y la opción Smooth
+
+## Oscilador estocástico  (`content-es/stochastic-oscillator.md`)
+
+- **dc-es-stochastic-oscillator-01.png** — Un gráfico con el Oscilador estocástico en su propia área debajo del precio, mostrando las líneas K y D cruzándose dentro de la zona de sobreventa bajo la línea de nivel 20
+- **dc-es-stochastic-oscillator-02.png** — El diálogo de configuración del Oscilador estocástico mostrando K Period 14, D Period 3, Smoothing Length 3 y la configuración de niveles con Overbought 80 y Oversold 20
+
+## Momentum  (`content-es/momentum.md`)
+
+- **dc-es-momentum-01.png** — Un gráfico con el indicador Momentum en su propia área debajo del precio, la línea de momentum subiendo con fuerza durante un avance del precio y su línea de media opcional habilitada
+- **dc-es-momentum-02.png** — El cuadro de diálogo de configuración de Momentum mostrando Input Data en Close, Length 14 y la sección Average con Average Type y Periods 20
+
+## Tasa de cambio (ROC)  (`content-es/rate-of-change.md`)
+
+- **dc-es-rate-of-change-01.png** — Un gráfico con el indicador Rate of Change en su propia área bajo el precio, con la línea ROC cruzando por encima de la línea cero mientras el precio rompe al alza
+- **dc-es-rate-of-change-02.png** — El diálogo de configuración de Rate of Change mostrando Period 10, el conmutador Use Percent y las opciones de apariencia del subgráfico
+
+## Índice de canal de mercancías (CCI)  (`content-es/cci.md`)
+
+- **dc-es-cci-01.png** — Un gráfico con el indicador CCI en su propia área debajo del precio, con la línea disparándose por encima de la línea de umbral de sobrecompra y girando de vuelta hacia cero
+- **dc-es-cci-02.png** — El diálogo de configuración del CCI mostrando los parámetros generales con Input Data y Period, la sección Average y la sección Levels con las opciones de sobrecompra, sobreventa y línea cero
+
+## Williams %R  (`content-es/williams-r.md`)
+
+- **dc-es-williams-r-01.png** — Un gráfico con el indicador Williams %R en su propia área debajo del precio, la línea cayendo por debajo del nivel bajo 20 y girando de nuevo al alza, con las líneas de nivel 80/50/20 visibles
+- **dc-es-williams-r-02.png** — El diálogo de configuración de Williams %R mostrando Length 14, la sección Average con las opciones de Average Type y la sección Levels con Middle 50, Low 20 y High 80
+
+## Oscilador Awesome  (`content-es/awesome-oscillator.md`)
+
+- **dc-es-awesome-oscillator-01.png** — Un gráfico con el histograma del Oscilador Awesome en su propia área debajo del precio, barras coloreadas según la pendiente, cruzando de debajo a encima de la línea cero durante una subida
+- **dc-es-awesome-oscillator-02.png** — Primer plano del área de gráfico del AO mostrando un patrón de twin peaks — dos picos por encima de cero con el segundo más bajo, seguido de un cruce por debajo de la línea cero
+- **dc-es-awesome-oscillator-03.png** — El diálogo de configuración del Oscilador Awesome mostrando Average Type Simple, AO Length 1 = 5, AO Length 2 = 34, y la sección de subgráficos con el estilo de histograma y la opción de coloreado automático por pendiente
+
+## Ciclo Cibernético Inverso (Inverse Cyber Cycle)  (`content-es/inverse-cyber-cycle.md`)
+
+- **dc-es-inverse-cyber-cycle-01.png** — Gráfico de precio con el Inverse Cyber Cycle en un panel inferior, mostrando Cycle A y Cycle B en colores contrastados cruzándose cerca de un mínimo de oscilación, con las líneas de nivel medio, alto y bajo visibles
+- **dc-es-inverse-cyber-cycle-02.png** — Diálogo de configuración del Inverse Cyber Cycle abierto, mostrando el campo Smoothing Alpha, los parámetros Cycle A Length y Cycle B Length, y la configuración de niveles Middle/Low/High
+
+## Know Sure Thing (KST)  (`content-es/know-sure-thing.md`)
+
+- **dc-es-know-sure-thing-01.png** — Gráfico de precios con el indicador KST en un panel inferior, líneas KST y Signal en colores contrastantes, con un cruce alcista de KST sobre Signal por debajo de la línea de cero resaltado
+- **dc-es-know-sure-thing-02.png** — Diálogo de configuración del KST abierto mostrando el grupo General con Use percent, el grupo Average con Average Type, Avg Length 1-4 y Signal Period, y el grupo ROC con ROC Length 1-4
+
+## Bandas de Bollinger  (`content-es/bollinger-bands.md`)
+
+- **dc-es-bollinger-bands-01.png** — Gráfico de velas con las Bandas de Bollinger superpuestas, mostrando la media central y las bandas superior e inferior, con un squeeze visible (bandas estrechándose) seguido de una expansión
+- **dc-es-bollinger-bands-02.png** — Ventana de configuración de las Bandas de Bollinger abierta, mostrando el menú desplegable Input Data, el campo Periods y el campo Std Dev Value, con la sección de estilo Subgraphs debajo
+
+## Canal de Keltner  (`content-es/keltner-channel.md`)
+
+- **dc-es-keltner-channel-01.png** — Gráfico de velas con el Canal de Keltner superpuesto, línea EMA central con bandas superior e inferior, precio en tendencia a lo largo de la banda superior con retrocesos que respetan la línea central
+- **dc-es-keltner-channel-02.png** — Ventana de configuración del Canal de Keltner abierta mostrando el campo ATR Multiplier Value en 2.00, el menú desplegable Input y el campo Length en 21, con las opciones de color de Subgraphs debajo
+
+## Rango Verdadero Medio (ATR)  (`content-es/atr.md`)
+
+- **dc-es-atr-01.png** — Gráfico de precio con el indicador ATR en un panel inferior, la línea de ATR subiendo bruscamente durante una liquidación volátil y descendiendo durante una consolidación tranquila
+- **dc-es-atr-02.png** — Diálogo de configuración del ATR abierto mostrando la selección de Display Mode (Tick o Periods), el campo de períodos y las opciones de estilo de Subgraph debajo
+
+## Desviación estándar  (`content-es/standard-deviation.md`)
+
+- **dc-es-standard-deviation-01.png** — Gráfico de precios con el indicador Desviación estándar en un panel inferior, la línea repuntando durante una ruptura rápida y decayendo hacia su base durante una consolidación lateral
+- **dc-es-standard-deviation-02.png** — Ventana de configuración de Desviación estándar abierta mostrando el campo Periods con valor 14 y la sección Subgraphs con las opciones Std. Dev Color, Subgraph Style, Line Style y Line Width
+
+## Envolventes VWAP  (`content-es/vwap-envelopes.md`)
+
+- **dc-es-vwap-envelopes-01.png** — Diálogo de configuración de Envolventes VWAP abierto mostrando Period Mode (Daily/Minutes), Period Value, Envelope Mode (Standard Deviation / Price Percentage) y los parámetros de las bandas 1st/2nd/3rd Standard
+
+## Objetivo de rango diario promedio (ADR Target)  (`content-es/adr-target.md`)
+
+- **dc-es-adr-target-01.png** — Ventana de gráfico con ADR Target aplicado: velas de precio intradía con los niveles objetivo ADR proyectados y sus etiquetas de texto visibles en el gráfico, con el precio operando aproximadamente a mitad de camino hacia el objetivo superior
+- **dc-es-adr-target-02.png** — Diálogo de configuración de ADR Target mostrando el menú desplegable Length Type abierto con las opciones Daily, Weekly y Monthly, el campo Length en 10, y la configuración de trazado (Font Size, Text Align, Background, Text Color) debajo
+
+## Volumen  (`content-es/volume.md`)
+
+- **dc-es-volume-01.png** — Ventana de gráfico con el indicador Volumen en un panel debajo de las velas de precio: barras del histograma visibles con un coloreado de fondo basado en delta y una barra señalada con un marcador de absorción
+- **dc-es-volume-02.png** — Diálogo de configuración del indicador Volumen abierto en la sección de datos, mostrando el menú desplegable Input data expandido con las entradas Volume, Order y Aggregate Trade y los campos Filter Min / Filter Max debajo
+
+## Delta Bar  (`content-es/delta-bar.md`)
+
+- **dc-es-delta-bar-01.png** — Diálogo de configuración de Delta Bar mostrando la sección de configuración de datos con las opciones de entrada (Volume, Order, Trades, Aggregate Volume, Aggregate Trades) y la sección Subgraphs con el menú desplegable de estilo abierto en Candlestick, OHLC, CandleBody
+
+## Resaltado de delta %  (`content-es/delta-highlight.md`)
+
+- **dc-es-delta-highlight-01.png** — Ventana de gráfico con Resaltado de delta % aplicado: una serie de velas normales con dos o tres velas visiblemente teñidas con el color del ask y una con el color del bid, mostrando cómo destacan las velas de delta extremo
+- **dc-es-delta-highlight-02.png** — Diálogo de configuración de Resaltado de delta % mostrando los campos Min Value y Max Value, los selectores Bid Color y Ask Color, y el control Opacity
+
+## Delta Cumulative Candlestick  (`content-es/delta-cumulative-candlestick.md`)
+
+- **dc-es-delta-cumulative-candlestick-01.png** — Diálogo de configuración de Delta Cumulative Candlestick mostrando el menú desplegable Input Data abierto con las opciones Volumes, Order y Aggregates Trades, además de la configuración de Filter Min, Filter Max, Reset to Start Session, Average y Zero Line
+
+## Delta Cumulative Histogram  (`content-es/delta-cumulative-histogram.md`)
+
+- **dc-es-delta-cumulative-histogram-01.png** — Diálogo de configuración de Delta Cumulative Histogram mostrando las opciones de Input Data (Volumes, Trades), los campos Filter Min y Filter Max, el interruptor Restore at Start Session y las opciones de estilo Bars / Line en Subgraphs
+
+## Swing de volumen (Volume Swing)  (`content-es/volume-swing.md`)
+
+- **dc-es-volume-swing-01.png** — Ventana de gráfico con Volume Swing aplicado — líneas ZigZag conectando máximos y mínimos de swing, etiquetas por swing mostrando valores de volumen y delta, un swing marcado como NOE y otro como NOR, con las bandas de fondo de tendencia visibles
+- **dc-es-volume-swing-02.png** — Diálogo de configuración de Volume Swing abierto en la sección ZigZag Settings — menú desplegable ZigZag Mode mostrando Absolute Reversal y Tick Reversal, con los campos Zig Zag Rev. & Absolute y Zig Zag Tick Rev. más Color Up/Down y Line Width debajo
+
+## Sprint de volumen/delta (Volume/Delta Sprint)  (`content-es/volume-delta-sprint.md`)
+
+- **dc-es-volume-delta-sprint-01.png** — Ventana de gráfico con el indicador Volume/Delta Sprint en un panel inferior separado — velas de precio arriba, histograma Sprint abajo mostrando un grupo de barras positivas altas (color comprador) durante una subida seguido de barras cada vez más pequeñas mientras el movimiento se estanca
+- **dc-es-volume-delta-sprint-02.png** — Diálogo de configuración de Volume/Delta Sprint abierto en la sección General, mostrando Input Data, Filter Min, Filter Max, Length = 10 y Delta Color Mode visibles
+
+## Acumulación/Distribución de Chaikin  (`content-es/chaikin-ad.md`)
+
+- **dc-es-chaikin-ad-01.png** — Ventana de gráfico con el indicador Acumulación/Distribución de Chaikin en un panel inferior: la línea AD subiendo al compás de una tendencia alcista, con la línea de media opcional superpuesta
+- **dc-es-chaikin-ad-02.png** — Diálogo de configuración de la Acumulación/Distribución de Chaikin mostrando la sección Average (Enable, Average Type, Avg Length) y la configuración del subgráfico AD debajo
+
+## Big Trades  (`content-es/big-trades.md`)
+
+- **dc-es-big-trades-01.png** — Ventana de gráfico con el indicador Big Trades activo — marcadores circulares de tamaño variable en varias velas, marcadores de color ask en movimientos alcistas y de color bid en movimientos bajistas, con una zona horizontal extendiéndose a la derecha desde una operación grande
+- **dc-es-big-trades-02.png** — Diálogo de configuración de Big Trades abierto en Data Settings — Days to Load, Input Type, Filter Mode en Manual, y los campos de filtro manual Min/Max visibles
+- **dc-es-big-trades-03.png** — Menú Options expandido mostrando Tools → Big Trades Analysis, con la ventana de la herramienta de análisis abierta y lista para ejecutarse
+
+## Velocidad de la cinta  (`content-es/speed-of-tape.md`)
+
+- **dc-es-speed-of-tape-01.png** — Ventana de gráfico con el indicador Speed of Tape en un panel inferior — barras de velocidad de estilo vela disparándose durante una ruptura, con barras de color alcista en el impulso y barras más pequeñas durante la consolidación previa
+- **dc-es-speed-of-tape-02.png** — Diálogo de configuración de Speed of Tape abierto en la sección General — el menú desplegable Input Data expandido mostrando Volume, Order y Trades, con Number Seconds y los campos de filtro visibles debajo
+
+## Velocidad de la cinta (instantánea)  (`content-es/speed-of-tape-instant.md`)
+
+- **dc-es-speed-of-tape-instant-01.png** — Gráfico con Speed of Tape (Instant) activo — las tres barras de velocidad de la cinta más recientes visibles, la barra más alta en el color de compra durante un empuje alcista rápido, con las velas de precio moviéndose de fondo
+- **dc-es-speed-of-tape-instant-02.png** — Diálogo de configuración de Speed of Tape (Instant) — Plot Settings con Bars to show = 3 y Scale min value = 0, y las secciones Data Settings y Mode Settings visibles con Number of seconds = 10
+
+## Estadísticas de mercado  (`content-es/market-statistics.md`)
+
+- **dc-es-market-statistics-01.png** — Gráfico con la salida del indicador Market Statistics: una tabla/gráfica de rangos de valores con cifras de AVG y Dev por rango, en un símbolo de futuros activo
+- **dc-es-market-statistics-02.png** — Cuadro de diálogo de configuración de Market Statistics: Stat Mode, Font Size y % Dev. Std. en General, con las secciones Data, Range Trade, Bar y Time visibles
+
+## On Candle Stats  (`content-es/on-candle-stats.md`)
+
+- **dc-es-on-candle-stats-01.png** — Gráfico con On Candle Stats activo: pequeños cuadros de texto encima de cada vela mostrando valores de volumen y delta, las velas con delta positivo etiquetadas en texto verde y las de delta negativo en rojo
+- **dc-es-on-candle-stats-02.png** — Cuadro de diálogo de configuración de On Candle Stats: Data Settings arriba (Input Data, Filter Min, Filter Max), con las secciones Text, Coloring y Price debajo, y Color Text Based on Delta habilitado
+
+## Perfil de mercado (TPO)  (`content-es/market-profile-tpo.md`)
+
+- **dc-es-market-profile-tpo-01.png** — El cuadro de diálogo de configuración de Market Profile abierto en la sección General, mostrando las opciones TPO Base Minute, TPO Type y Period
+
+## Rastreador de Desequilibrios (Imbalance Tracker)  (`content-es/imbalance-tracker.md`)
+
+- **dc-es-imbalance-tracker-01.png** — Un gráfico de velas con el Rastreador de Desequilibrios activo, mostrando una zona fresca de desequilibrio del lado comprador que se extiende hacia la derecha desde un impulso alcista y una zona activada atenuada por encima
+- **dc-es-imbalance-tracker-02.png** — El diálogo de configuración del Rastreador de Desequilibrios mostrando el grupo Imbalance Settings con Minimum Imbalance %, Minimum Volume Diff, Include zero on imbalance y Min. Num. Of Consecutive Imb
+
+## Rechazador de Desequilibrios (Imbalance Rejector)  (`content-es/imbalance-rejector.md`)
+
+- **dc-es-imbalance-rejector-01.png** — Un gráfico con el Rechazador de Desequilibrios activo, mostrando un marcador bajista trazado unos ticks por encima de un máximo de swing y un marcador alcista por debajo de un mínimo de swing, en colores contrastantes
+- **dc-es-imbalance-rejector-02.png** — El diálogo de configuración del Rechazador de Desequilibrios mostrando el grupo Settings Imbalance con % Min. Imbalance, Minimum Diagonal Comparison, Lookback Period y Tick Offset
+
+## Desequilibrio de sesión  (`content-es/session-imbalance.md`)
+
+- **dc-es-session-imbalance-01.png** — Un gráfico intradía de futuros con el indicador Session Imbalance trazando las líneas de máximo, mínimo y punto medio del Initial Balance para los primeros 60 minutos, con los niveles de extensión del 50% y 100% visibles por encima y por debajo
+- **dc-es-session-imbalance-02.png** — El diálogo de configuración de Session Imbalance mostrando el grupo General con Number of Minutes en 60, y los campos Custom Start Time y Number of Days
+
+## Subasta sin terminar (Unfinished Auction)  (`content-es/unfinished-auction.md`)
+
+- **dc-es-unfinished-auction-01.png** — Un gráfico de futuros con el indicador Unfinished Auction mostrando un rectángulo en un máximo de swing marcado como máximo defectuoso, en un color que contrasta con un rectángulo de mínimo defectuoso en un mínimo de swing más abajo
+- **dc-es-unfinished-auction-02.png** — El diálogo de configuración de Unfinished Auction mostrando la sección General con Days to Load, Line Width, Color Bad High, Color Bad Low, Show rectangle, Show background y Opacity
+
+## Auction Gap Tracker  (`content-es/auction-gap-tracker.md`)
+
+- **dc-es-auction-gap-tracker-01.png** — Un gráfico con el Auction Gap Tracker activo, mostrando un rectángulo de hueco del lado vendedor completamente opaco extendiéndose hacia la derecha y un rectángulo de opacidad reducida donde el precio ya ha cruzado el nivel
+- **dc-es-auction-gap-tracker-02.png** — El diálogo de configuración del Auction Gap Tracker mostrando el grupo Unfinished Settings con Minimum Tick Vol, Threshold-max. unfinished, Include Mode y Min. Num. Of Consecutive Zero
+
+## POC Dinámico  (`content-es/dynamic-poc.md`)
+
+- **dc-es-dynamic-poc-01.png** — Un gráfico intradía con la línea de POC Dinámico siguiendo el punto de control móvil, con tres bandas envolventes trazadas por encima y por debajo
+- **dc-es-dynamic-poc-02.png** — El diálogo de configuración de Dynamic POC mostrando Period Mode, Period Value y los tres campos de porcentaje de envolvente
+
+## POC de barra  (`content-es/bar-poc.md`)
+
+- **dc-es-bar-poc-01.png** — Ventana de gráfico con Bar POC aplicado — velas con pequeños rectángulos de resaltado en el precio de mayor volumen de cada barra, y dos o tres líneas de POC extendidas corriendo hasta el borde derecho del gráfico, una de ellas mostrando una etiqueta de duración
+- **dc-es-bar-poc-02.png** — Diálogo de configuración de Bar POC mostrando la sección General con Days to Load, Input Data, el menú desplegable Filter Mode abierto en Auto, los campos Auto Std. Dev. y Manual Min. Vol., y los grupos de Plot Settings (HighLight, Extended POC, Duration on Extension) debajo
+
+## Stop Spotter  (`content-es/stop-spotter.md`)
+
+- **dc-es-stop-spotter-01.png** — Ventana de gráfico con Stop Spotter aplicado — una vela direccional rápida rompiendo un mínimo de swing reciente con un marcador cuadrado impreso sobre ella, las barras circundantes sin marcar, mostrando que solo se señala el candidato a cacería de stops
+- **dc-es-stop-spotter-02.png** — Diálogo de configuración de Stop Spotter mostrando la lista de parámetros principales — Min. delta %, Min. volume, Min. volume increase, Min. body ticks, Min price ticks increase, Min. horizontal delta, Min. % imbalance, Min. number imbalance, Calculation Mode y Seconds To Close — con sus valores predeterminados visibles
+
+## Ratio Highlight  (`content-es/ratio-highlight.md`)
+
+- **dc-es-ratio-highlight-01.png** — Ventana de gráfico con Ratio Highlight aplicado — un máximo de swing donde una barra bajista lleva un marcador de Ask Absorption en su parte superior, y un mínimo de swing donde una barra alcista lleva un marcador de Bid Absorption, con ambos colores claramente distinguibles
+- **dc-es-ratio-highlight-02.png** — Diálogo de configuración de Ratio Highlight mostrando la sección Ratio con la selección de ratio, los campos Min Ratio y Maximum Ratio, y la sección Plot con Bid Absorption Color, Ask Absorption Color y Opacity
+
+## Puntos pivote  (`content-es/pivot-points.md`)
+
+- **dc-es-pivot-points-01.png** — Gráfico intradía con Puntos pivote aplicado: la línea pivote central con R1 y R2 por encima y S1 y S2 por debajo, cada línea etiquetada y en un color distinto, con el precio reaccionando cerca de R1
+- **dc-es-pivot-points-02.png** — Diálogo de configuración de Puntos pivote mostrando la Configuración de trazado (Plot Settings) (Font Size 12.00, Line Width 1.00, Line Style, Label Align, Period to Show 1), la sección Custom Reference - Timeframe, la configuración de color para Pivot Point, R1, R2, S1, S2 y la sección Custom Time - Market Timezone
+
+## Niveles importantes  (`content-es/important-levels.md`)
+
+- **dc-es-important-levels-01.png** — Gráfico intradía con Niveles importantes aplicado: líneas horizontales etiquetadas para el máximo, mínimo, cierre, POC y VWAP del día anterior en colores distintos, con el precio operando entre el POC y el máximo del día anterior
+- **dc-es-important-levels-02.png** — Diálogo de configuración de Niveles importantes mostrando la sección Length (Days, Weeks, Months, Skip Last), la Configuración de trazado (Plot Settings) con el menú desplegable Plot Type abierto (Label, Line, Label and Line), los interruptores de nivel por período (Average Value, Low, High, Open, Close, POC, Value Area, VWAP), la configuración de color y el menú desplegable Filter Time
+
+## Niveles absolutos  (`content-es/absolute-levels.md`)
+
+- **dc-es-absolute-levels-01.png** — Ventana de gráfico con Niveles absolutos aplicado: dos líneas horizontales en precios definidos por el usuario con distintos colores y estilos, una por encima y otra por debajo del precio actual, abarcando claramente todo el ancho del gráfico
+- **dc-es-absolute-levels-02.png** — Diálogo de configuración de Niveles absolutos mostrando la sección Parameters con los campos First Value y Second Value rellenados, y los grupos de formato First Line y Second Line con los controles Color, Style y Thickness
+
+## Niveles de movimiento del precio  (`content-es/price-movement-levels.md`)
+
+- **dc-es-price-movement-levels-01.png** — Gráfico intradía con Niveles de movimiento del precio aplicado: la línea cero en el precio de referencia de la sesión con niveles etiquetados en porcentaje apilados por encima (color de resistencia) y por debajo (color de soporte), con el precio operando entre el primer y el segundo nivel superior
+- **dc-es-price-movement-levels-02.png** — Diálogo de configuración de Niveles de movimiento del precio mostrando las opciones de Chart Area, la configuración general (Days to load, Level based on, Step mode, Step value, Font size, Text color, Minimum levels) y los grupos Support Line, Resistance Line, Zero Line y Custom Time Session
+
+## Marcador de sesión  (`content-es/session-marker.md`)
+
+- **dc-es-session-marker-01.png** — Un gráfico de futuros de 5 minutos con el Session Marker activo — tres bloques de sesión sombreados con color (asiática, europea, estadounidense) visibles a lo largo del día, con las líneas de máximo/mínimo de sesión y el rango de desequilibrio resaltado dentro de la sesión estadounidense
+- **dc-es-session-marker-02.png** — El diálogo de configuración de Session Marker mostrando el grupo General (Imbalance Minutes, Line Width, Line Style, Extended, Text Size, Text Color) con los grupos de las sesiones asiática, europea y estadounidense contraídos debajo
+
+## Swing Point  (`content-es/swing-point.md`)
+
+- **dc-es-swing-point-01.png** — Un gráfico de precios con el indicador Swing Point activo — líneas horizontales discontinuas extendiéndose desde varios máximos y mínimos de swing, cada una con una pequeña etiqueta de texto junto a la línea
+- **dc-es-swing-point-02.png** — El diálogo de configuración de Swing Point mostrando los parámetros generales (Left Bars, Right Bars, Filter Swing) y el grupo Plot Settings con Line Width, Line Style, colores High/Low y opciones de texto
+
+## Detector de gaps (Gap Detector)  (`content-es/gap-detector.md`)
+
+- **dc-es-gap-detector-01.png** — Un gráfico intradía de futuros con el Detector de gaps activo: una zona de gap alcista resaltada desde una apertura de sesión, mostrada como un rectángulo sombreado que se extiende hacia la derecha hasta rellenarse
+- **dc-es-gap-detector-02.png** — El diálogo de configuración del Detector de gaps mostrando Gap Mode con las opciones Percentual y Tick, los campos Perc Value y Tick Value, el interruptor Trigger Whole Bar y los controles de color/opacidad
+
+## Identificador de FVG (FVG Identifier)  (`content-es/fvg-identifier.md`)
+
+- **dc-es-fvg-identifier-01.png** — Un gráfico de precios con el Identificador de FVG activo: dos zonas FVG sombreadas que se extienden hacia la derecha desde movimientos impulsivos, una todavía abierta y otra a punto de ser tocada por un retroceso
+- **dc-es-fvg-identifier-02.png** — El diálogo de configuración del Identificador de FVG mostrando los Parámetros generales (Min num ticks, Max num ticks), la Configuración de trazado y el grupo Extensión con Reset Start Day, Remove Line On Shadow Triggered, Max bars extension y % breakout
+
+## Detector de divergencias  (`content-es/divergence-detector.md`)
+
+- **dc-es-divergence-detector-01.png** — Un gráfico de futuros con el Detector de divergencias activo: un nuevo máximo de giro etiquetado con VDD sobre la vela, mostrando el precio haciendo un máximo más alto mientras la participación se desvanecía
+- **dc-es-divergence-detector-02.png** — El diálogo de configuración del Detector de divergencias mostrando los menús desplegables Calculation Mode (1) y Calculation Mode (2), Maximum Seconds To Close, y el grupo Zig Zag Settings con los tres modos de reversión
+
+## Identificador de Confluencias  (`content-es/confluence-identifier.md`)
+
+- **dc-es-confluence-identifier-01.png** — Un gráfico de futuros con el Identificador de Confluencias activo: varias zonas de soporte/resistencia sombreadas con intensidad de color variable, con la zona más fuerte donde se alinean un POC de perfil, un mínimo de giro y un nivel de retroceso
+- **dc-es-confluence-identifier-02.png** — El diálogo de configuración del Identificador de Confluencias mostrando el grupo Confluence Settings (Tick Sensitivity, Minimum Number of Confluences, Starting Mode) con los tres bloques de perfiles Volume By Price contraídos debajo
+
+## Barra de velas (Candlestick Bar)  (`content-es/candlestick-bar.md`)
+
+- **dc-es-candlestick-bar-01.png** — Un gráfico intradía rápido con la superposición Candlestick Bar activa: velas semitransparentes más grandes dibujadas sobre las barras base, ambas claramente distinguibles
+- **dc-es-candlestick-bar-02.png** — El diálogo de configuración de Candlestick Bar mostrando Parameter Type en Minutes con los campos Parameter 1 y Parameter 2, además de los grupos Colors y Plot Settings
+
+## Superposición de gráfico (Overlay Chart)  (`content-es/overlay-chart.md`)
+
+- **dc-es-overlay-chart-01.png** — Gráfico principal de un instrumento de futuros con Overlay Chart activo mostrando las velas de un segundo instrumento renderizadas en Chart Area 1 sobre un eje secundario, ambas series claramente distinguibles por color
+- **dc-es-overlay-chart-02.png** — Diálogo de configuración de Overlay Chart abierto, mostrando la sección de parámetros General con Select Symbol y el menú desplegable Parameter Type expandido listando Minutes, Days, Weekly, Monthly, Vol Bars, Range, Volume, Trade, Renko, Seconds, Point Figure y Delta
+
+## Superposición de símbolo (Overlay Symbol)  (`content-es/overlay-symbol.md`)
+
+- **dc-es-overlay-symbol-01.png** — Gráfico principal con Overlay Symbol activo — las velas de un segundo instrumento renderizadas en chart area 1 sobre un eje secundario, con el marco temporal coincidiendo con el gráfico principal
+- **dc-es-overlay-symbol-02.png** — Ventana de configuración de Overlay Symbol mostrando la sección General con el campo Select y la sección Volume/Delta con Width based on volume, Color based on Delta, % Max Width Based on Volume, Border based on Open/close, Delta input, Color mode y Std. dev. for coloring
+
+## Superposición de velas de marco temporal (Overlay Timeframe Candlestick)  (`content-es/overlay-timeframe-candlestick.md`)
+
+- **dc-es-overlay-timeframe-candlestick-01.png** — Un gráfico de 5 minutos con Overlay Timeframe Candlestick dibujando velas de 30 minutos semitransparentes detrás de las barras de precio, con una vela de marco temporal superior aún formándose en el borde derecho
+- **dc-es-overlay-timeframe-candlestick-02.png** — Diálogo de configuración de Overlay Timeframe Candlestick mostrando los grupos Chart Area, General, Color y Plot con Param type, Param 1, Param 2, Up bar, Down bar, Show filled bar, Candle width, Border width, Opacity y Show vertical line on close visibles
+
+## Resaltado de marco temporal (Overlay Timeframe Highlight)  (`content-es/overlay-timeframe-highlight.md`)
+
+- **dc-es-overlay-timeframe-highlight-01.png** — Un gráfico de 5 minutos con Overlay Timeframe Highlight sombreando segmentos horarios alternos, líneas objetivo de máximo/mínimo proyectadas hacia la derecha desde la última vela horaria completada, y un resumen de volumen impreso sobre cada segmento
+- **dc-es-overlay-timeframe-highlight-02.png** — Diálogo de configuración de Overlay Timeframe Highlight mostrando todos los grupos — Chart Area, General, Color, Plot, Range Target y Summary — con Target enabled y Enable Summary activados
+
+## Vela Shift  (`content-es/shift-candle.md`)
+
+- **dc-es-shift-candle-01.png** — Un gráfico de futuros con Shift Candle activo — un marcador de reversión trazado bajo una barra de reversión alcista que cumple los criterios y una zona de desequilibrio fresca coloreada extendiéndose hacia la derecha desde la vela de señal
+- **dc-es-shift-candle-02.png** — Diálogo de configuración de Shift Candle mostrando las secciones Trinity Settings, Marker Settings, Imbalance Settings, Imbalance Fresh Zone y Alert
+
+## Texto en el gráfico  (`content-es/text-on-chart.md`)
+
+- **dc-es-text-on-chart-01.png** — Un gráfico con el indicador Text on Chart mostrando una breve nota del plan de trading en texto grande con un bloque de fondo contrastante, claramente legible sobre las velas
+- **dc-es-text-on-chart-02.png** — Diálogo de configuración de Text on Chart mostrando los campos Font Size, Text Color, Back Color y Text, con un mensaje de ejemplo introducido en el campo Text
+
+## Superposición de anotaciones  (`content-es/annotations-overlay.md`)
+
+- **dc-es-annotations-overlay-01.png** — Finder Window con la función Mirror habilitada, posicionada sobre el gráfico fuente de 30 minutos, con la primera fila mostrando el valor del ID del gráfico resaltado
+- **dc-es-annotations-overlay-02.png** — La lista de indicadores del gráfico fuente con el pequeño número de ID entre paréntesis junto a la entrada Bar POC rodeado/resaltado
+- **dc-es-annotations-overlay-03.png** — Un gráfico de 5 minutos mostrando niveles de Bar POC importados calculados originalmente en un gráfico de 30 minutos mediante Superposición de anotaciones, con el diálogo de configuración de Overlay Annotations mostrando los campos Chart ID e Indicator ID rellenados
+
+## Rollover de símbolos (cambio de mes de contrato)  (`content-es/symbol-rollover.md`)
+
+- **dc-es-symbol-rollover-01.png** — El menú Options abierto en la barra principal de DeepCharts con la entrada Symbols Rollover resaltada
+- **dc-es-symbol-rollover-02.png** — La ventana Manage Rollover mostrando ambos paneles — Contracts in Roll-window con al menos un símbolo listado, y Contracts Rolled — con los botones Perform Rollover y Perform Rollback visibles
+- **dc-es-symbol-rollover-03.png** — La ventana Manage Rollover justo después de un rollover, con el símbolo ya listado en el panel Contracts Rolled
+
+## Eliminar datos de mercado (métodos en la aplicación y manual)  (`content-es/delete-market-data.md`)
+
+- **dc-es-delete-market-data-01.png** — El menú Options abierto en la barra principal de DeepCharts con la entrada Delete Data resaltada
+- **dc-es-delete-market-data-02.png** — El panel Delete Data con un símbolo seleccionado, la fecha establecida unos días atrás y los tipos de datos Tick and Minute seleccionados, con el botón Delete visible
+- **dc-es-delete-market-data-03.png** — El diálogo Settings en la pestaña Various con el campo de la ruta Database Folder resaltado
+- **dc-es-delete-market-data-04.png** — El File Explorer mostrando el contenido de la carpeta de la base de datos de DeepCharts con la carpeta de un símbolo seleccionada
+
+## Volver a descargar datos históricos (herramienta Download Data)  (`content-es/download-data.md`)
+
+- **dc-es-download-data-01.png** — El menú Options abierto en la barra principal de DeepCharts con la entrada Download data resaltada
+- **dc-es-download-data-02.png** — La ventana Download data con un símbolo seleccionado, una fecha de inicio establecida, Data Type en Tick y el interruptor Download From VolServer visible
+- **dc-es-download-data-03.png** — La ventana Show Logs en la pestaña Connection Logs mostrando entradas de progreso de la descarga de datos históricos
+
+## Optimización de la base de datos  (`content-es/database-optimization.md`)
+
+- **dc-es-database-optimization-01.png** — El menú desplegable de espacios de trabajo en la parte superior de la barra principal de DeepCharts expandido, mostrando la opción de cerrar el espacio de trabajo actual
+- **dc-es-database-optimization-02.png** — El menú desplegable Feed en la parte superior de la barra principal expandido con la opción de desconexión visible
+- **dc-es-database-optimization-03.png** — El diálogo Database Settings con la opción Migrate / Compress resaltada
+- **dc-es-database-optimization-04.png** — El estado de progreso de Migrate / Compress mientras la utilidad se está ejecutando
+
+## Solución: problemas de la base de datos  (`content-es/database-problems.md`)
+
+- **dc-es-database-problems-01.png** — El panel Delete Data con la fecha establecida 15+ días atrás, Tick and Minute seleccionados y un símbolo afectado elegido
+- **dc-es-database-problems-02.png** — El diálogo Settings en la pestaña Various con la ruta de Database Folder resaltada
+
+## Solución: Could Not Find a Part of the Path  (`content-es/fix-could-not-find-path.md`)
+
+- **dc-es-fix-could-not-find-path-01.png** — Lista de procesos del Administrador de tareas de Windows con el proceso de DeepCharts seleccionado y la opción End Task del clic derecho visible
+
+## Solución: problemas de instalación y requisitos básicos  (`content-es/installation-problems.md`)
+
+- **dc-es-installation-problems-01.png** — Un panel de antivirus de terceros con su interruptor de protección en tiempo real apagado, mostrando la protección deshabilitada temporalmente
+- **dc-es-installation-problems-02.png** — Vista This PC del Explorador de archivos con la barra de la unidad Local Disk C: visible mostrando el espacio libre restante
+- **dc-es-installation-problems-03.png** — Área de descarga del panel de my.deepcharts.com con el número de versión junto al botón de descarga resaltado
+
+## Solución: Installation Setup Failed  (`content-es/installation-setup-failed.md`)
+
+- **dc-es-installation-setup-failed-01.png** — El diálogo de error Installation Setup Failed durante la instalación de DeepCharts con el botón Log File visible y resaltado
+- **dc-es-installation-setup-failed-02.png** — El archivo de registro del instalador abierto en Notepad con las líneas del fallo cerca del final del registro visibles
+- **dc-es-installation-setup-failed-03.png** — Página Time & Language de la Configuración de Windows con el menú desplegable del idioma de visualización de Windows abierto y English seleccionado
+
+## Solución: una política de control de aplicaciones bloquea DeepCharts  (`content-es/application-control-policy.md`)
+
+- **dc-es-application-control-policy-01.png** — La notificación o diálogo de Windows con el texto "An Application Control policy has blocked this file", mostrado al iniciar DeepCharts
+- **dc-es-application-control-policy-02.png** — Barra de búsqueda de Windows con "Smart App Control" escrito y el resultado de configuración de Smart App Control resaltado
+- **dc-es-application-control-policy-03.png** — Página de configuración de Smart App Control de Seguridad de Windows mostrando los tres botones de radio de estado On, Evaluation y Off
+- **dc-es-application-control-policy-04.png** — Página de configuración de Smart App Control con la opción Off seleccionada y confirmada
+
+## Solución: la herramienta de dibujo Rectángulo no funciona  (`content-es/rectangle-drawing-tool.md`)
+
+- **dc-es-rectangle-drawing-tool-01.png** — El Explorador de archivos mostrando la carpeta Settings dentro de la carpeta DeepChart en Documentos, con la ruta de la carpeta visible en la barra de direcciones
+- **dc-es-rectangle-drawing-tool-02.png** — El Explorador de archivos dentro de la carpeta Settings con el archivo tool_config seleccionado y el menú contextual del clic derecho abierto sobre Eliminar
+- **dc-es-rectangle-drawing-tool-03.png** — Un gráfico de DeepCharts con la herramienta de dibujo Rectángulo seleccionada y un rectángulo dibujado con éxito sobre un área de precio
+
+## Solución: el zoom del gráfico no funciona  (`content-es/chart-zoom.md`)
+
+- **dc-es-chart-zoom-01.png** — Configuración de Windows, página Bluetooth & devices > Mouse con el conmutador "Scroll inactive windows when hovering over them" activado y resaltado
+- **dc-es-chart-zoom-02.png** — Ventana de gráfico de DeepCharts en pleno zoom, con el cursor sobre las velas y el eje de tiempo visiblemente comprimido en comparación con un segundo estado: antes/después de un zoom con la rueda del ratón
+- **dc-es-chart-zoom-03.png** — Menú contextual de clic derecho abierto en la escala de precios del eje Y del gráfico mostrando las opciones de escala disponibles
+
+## Solución: problemas de licencia y activación  (`content-es/license-issues.md`)
+
+- **dc-es-license-issues-01.png** — Ventana de activación License Key de DeepCharts con los campos E-mail y License visibles y un estado de error Invalid License mostrado
+- **dc-es-license-issues-02.png** — Panel de cuenta de my.deepcharts.com con la sección de clave de licencia visible, clave parcialmente difuminada
+
+## Informe de diagnóstico: antes de contactar con soporte  (`content-es/diagnostic-report.md`)
+
+- **dc-es-diagnostic-report-01.png** — Barra de herramientas principal de DeepCharts con el indicador RAM resaltado, mostrando el valor total de RAM del sistema y el valor de memoria de DeepCharts entre corchetes
+- **dc-es-diagnostic-report-02.png** — El menú ? (signo de interrogación) abierto en la barra de herramientas de DeepCharts con la entrada Contact Support resaltada
+- **dc-es-diagnostic-report-03.png** — La ventana de diagnóstico mostrando los resultados de versión, sistema operativo, CPU, memoria, conectividad de red, tiempos de ping a los servidores y velocidad de descarga
+- **dc-es-diagnostic-report-04.png** — Explorador de archivos abierto en Documents > DeepCharts > Logs mostrando los archivos de registro General, Trade Copier, Trading y Various con nombres fechados
+
+## Cómo obtener ayuda (chat, informe de diagnóstico, soporte)  (`content-es/get-help.md`)
+
+- **dc-es-get-help-01.png** — El menú ? abierto en la barra de herramientas de DeepCharts con Contact Support resaltado, y la ventana de diagnóstico visible detrás
+- **dc-es-get-help-02.png** — El sitio web de DeepCharts con el widget de chat de soporte abierto en la esquina, mostrando el campo de entrada de la conversación
+
+## Administre sus suscripciones y facturación  (`content-es/manage-subscriptions.md`)
+
+- **dc-es-manage-subscriptions-01.png** — Página Subscriptions de my.deepcharts.com tras iniciar sesión mostrando la entrada de la licencia de plataforma y la sección Data Feeds con las tarjetas de dxFeed y Rithmic
+- **dc-es-manage-subscriptions-02.png** — Una tarjeta de fuente de datos en la página Subscriptions con los campos de usuario/contraseña (valores ocultos), el botón Add Exchange y el control de estado de la suscripción visibles
+- **dc-es-manage-subscriptions-03.png** — La página Add Exchange abierta desde una tarjeta de fuente, mostrando la lista de bolsas con las opciones Top of Book y Market Depth y la entrada del paquete de CME
+- **dc-es-manage-subscriptions-04.png** — Una tarjeta de fuente de datos con el control de estado abierto y Pending Cancel seleccionado
+- **dc-es-manage-subscriptions-05.png** — El formulario Edit data en la página Subscriptions mostrando los campos personales/de facturación y la casilla Professional user
+
+## Mover DeepCharts a un ordenador nuevo  (`content-es/move-to-new-computer.md`)
+
+- **dc-es-move-to-new-computer-01.png** — Cuadro de diálogo de guardado de espacio de trabajo con el destino Cloud seleccionado y un nombre de espacio de trabajo introducido, ilustrando una copia de seguridad en la nube antes de la migración
+- **dc-es-move-to-new-computer-02.png** — Explorador de Windows mostrando la carpeta Documents\deepchart con las subcarpetas Template y Workspace resaltadas para copiar
+- **dc-es-move-to-new-computer-03.png** — Ventana de activación License Key en el PC nuevo con los campos E-mail y License rellenados y el botón Login visible
+- **dc-es-move-to-new-computer-04.png** — Selector de archivos de espacio de trabajo en el PC nuevo con la pestaña Cloud seleccionada y el espacio de trabajo migrado visible en la lista
+- **dc-es-move-to-new-computer-05.png** — Options → Settings → General con la sección Various visible y la opción de ubicación Database folder resaltada
+
+## Problemas de licencia  (`content-es-deepdom/licence-issues.md`)
+
+- **dd-es-licence-issues-01.png** — Problemas de licencia — Paso 1 – Compruebe el estado de su suscripción (DeepDOM)
+
+## Problemas de suscripción de símbolos  (`content-es-deepdom/symbol-subscription-issues.md`)
+
+- **dd-es-symbol-subscription-issues-01.png** — Problemas de suscripción de símbolos — Paso 1 – Confirmar la conexión de la fuente de datos (DeepDOM)
+- **dd-es-symbol-subscription-issues-02.png** — Problemas de suscripción de símbolos — Paso 2 – Comprobar la suscripción de símbolos (DeepDOM)
+
+## Problemas de caché  (`content-es-deepdom/cache-issues-deepdom.md`)
+
+- **dd-es-cache-issues-deepdom-01.png** — Problemas de caché — Paso a paso: eliminar la carpeta de caché (DeepDOM)
+- **dd-es-cache-issues-deepdom-02.png** — Problemas de caché — 3. Elimine la carpeta de la base de datos local (DeepDOM)
+
+## Instalación y primera configuración  (`content-es-deepdom/installation-and-first-configuration.md`)
+
+- **dd-es-installation-and-first-configuration-01.png** — Instalación y primera configuración — Parte 1: descarga de DeepDom (DeepDOM)
+- **dd-es-installation-and-first-configuration-02.png** — Instalación y primera configuración — Paso 2 – Descargue el instalador (DeepDOM)
+- **dd-es-installation-and-first-configuration-03.png** — Instalación y primera configuración — Paso 3 – Extraiga el archivo ZIP (DeepDOM)
+- **dd-es-installation-and-first-configuration-04.png** — Instalación y primera configuración — Paso 6 – Complete la instalación (DeepDOM)
+- **dd-es-installation-and-first-configuration-05.png** — Instalación y primera configuración — Paso 8 – Introduzca los datos de su licencia (DeepDOM)
+- **dd-es-installation-and-first-configuration-06.png** — Instalación y primera configuración — Paso 8 – Introduzca los datos de su licencia (DeepDOM)
+- **dd-es-installation-and-first-configuration-07.png** — Instalación y primera configuración — Paso 9 – Cree su primera conexión de datos (DeepDOM)
+- **dd-es-installation-and-first-configuration-08.png** — Instalación y primera configuración — Paso 9 – Cree su primera conexión de datos (DeepDOM)
+- **dd-es-installation-and-first-configuration-09.png** — Instalación y primera configuración — Paso 10 – Administrar símbolos (DeepDOM)
+- **dd-es-installation-and-first-configuration-10.png** — Instalación y primera configuración — Paso 11 – Elija su tema (DeepDOM)
+- **dd-es-installation-and-first-configuration-11.png** — Instalación y primera configuración — Paso 12 – Conexión de la fuente de datos: esto conecta DeepDom a su fuente de datos de mercado en vivo: (DeepDOM)
+- **dd-es-installation-and-first-configuration-12.png** — Instalación y primera configuración — Paso 12 – Conexión de la fuente de datos: esto conecta DeepDom a su fuente de datos de mercado en vivo: (DeepDOM)
+- **dd-es-installation-and-first-configuration-13.png** — Instalación y primera configuración — Paso 13 – Abra su primer mapa de calor (DeepDOM)
+- **dd-es-installation-and-first-configuration-14.png** — Instalación y primera configuración — Paso 13 – Abra su primer mapa de calor (DeepDOM)
+
+## Configuración general  (`content-es-deepdom/general-settings.md`)
+
+- **dd-es-general-settings-01.png** — Configuración general — Cómo abrir la Configuración general (DeepDOM)
+- **dd-es-general-settings-02.png** — Configuración general — Cómo abrir la Configuración general (DeepDOM)
+- **dd-es-general-settings-03.png** — Configuración general — Pestaña 1 — General (DeepDOM)
+- **dd-es-general-settings-04.png** — Configuración general — General (DeepDOM)
+- **dd-es-general-settings-05.png** — Configuración general — Tiempo de actualización (MS) (DeepDOM)
+- **dd-es-general-settings-06.png** — Configuración general — Tiempo de actualización (MS) (DeepDOM)
+- **dd-es-general-settings-07.png** — Configuración general — Varios (DeepDOM)
+- **dd-es-general-settings-08.png** — Configuración general — Alertas de trading (DeepDOM)
+- **dd-es-general-settings-09.png** — Configuración general — Pestaña 2 — Alert (DeepDOM)
+- **dd-es-general-settings-10.png** — Configuración general — Pestaña 2 — Alert (DeepDOM)
+- **dd-es-general-settings-11.png** — Configuración general — Pestaña 3 — Sim Account (DeepDOM)
+- **dd-es-general-settings-12.png** — Configuración general — Pestaña 4 — Trading Quantity (DeepDOM)
+- **dd-es-general-settings-13.png** — Configuración general — Pestaña 4 — Trading Quantity (DeepDOM)
+- **dd-es-general-settings-14.png** — Configuración general — Pestaña 5 — Shortcuts (DeepDOM)
+- **dd-es-general-settings-15.png** — Configuración general — Pestaña 5 — Shortcuts (DeepDOM)
+
+## Cómo añadir una nueva conexión  (`content-es-deepdom/how-to-add-a-new-connection.md`)
+
+- **dd-es-how-to-add-a-new-connection-01.png** — Cómo añadir una nueva conexión — Cómo abrir Data Feed Settings (DeepDOM)
+- **dd-es-how-to-add-a-new-connection-02.png** — Cómo añadir una nueva conexión — Cómo añadir una nueva conexión (DeepDOM)
+
+## Cómo añadir mercados correctamente  (`content-es-deepdom/how-to-add-markets-correctly.md`)
+
+- **dd-es-how-to-add-markets-correctly-01.png** — Cómo añadir mercados correctamente — Procedimiento general (DeepDOM)
+- **dd-es-how-to-add-markets-correctly-02.png** — Cómo añadir mercados correctamente — Si los mercados no se han añadido antes (DeepDOM)
+- **dd-es-how-to-add-markets-correctly-03.png** — Cómo añadir mercados correctamente — Si los mercados se añadieron con otra conexión (DeepDOM)
+
+## Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas  (`content-es-deepdom/user-configuration-templates-workspaces.md`)
+
+- **dd-es-user-configuration-templates-workspaces-01.png** — Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas — Cargar una plantilla (DeepDOM)
+- **dd-es-user-configuration-templates-workspaces-02.png** — Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas — Guardar una plantilla con nombre (DeepDOM)
+- **dd-es-user-configuration-templates-workspaces-03.png** — Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas — Espacios de trabajo (Work Plans) (DeepDOM)
+- **dd-es-user-configuration-templates-workspaces-04.png** — Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas — Crear y guardar configuraciones de anotaciones (DeepDOM)
+
+## Cómo configurar los atajos de teclado  (`content-es-deepdom/how-to-set-up-keyboard-shortcuts.md`)
+
+- **dd-es-how-to-set-up-keyboard-shortcuts-01.png** — Cómo configurar los atajos de teclado — Cómo abrir la configuración de atajos (DeepDOM)
+- **dd-es-how-to-set-up-keyboard-shortcuts-02.png** — Cómo configurar los atajos de teclado — Visión general de la ventana de atajos (DeepDOM)
+
+## Cómo insertar notificaciones de sonido  (`content-es-deepdom/how-to-insert-sound-notifications.md`)
+
+- **dd-es-how-to-insert-sound-notifications-01.png** — Cómo insertar notificaciones de sonido — Paso 1 – Habilitar las notificaciones (DeepDOM)
+- **dd-es-how-to-insert-sound-notifications-02.png** — Cómo insertar notificaciones de sonido — Paso 2 – Añadir perfiles de notificación de sonido (DeepDOM)
+
+## Cómo personalizar el idioma y el tema  (`content-es-deepdom/how-to-customize-language-and-theme.md`)
+
+- **dd-es-how-to-customize-language-and-theme-01.png** — Cómo personalizar el idioma y el tema — Cómo acceder a la Configuración general (DeepDOM)
+- **dd-es-how-to-customize-language-and-theme-02.png** — Cómo personalizar el idioma y el tema — Cómo acceder a la Configuración general (DeepDOM)
+
+## Cómo gestionar el rollover de símbolos  (`content-es-deepdom/how-to-manage-symbol-rollover.md`)
+
+- **dd-es-how-to-manage-symbol-rollover-01.png** — Cómo gestionar el rollover de símbolos — Procedimiento para realizar el rollover en DeepDom (DeepDOM)
+- **dd-es-how-to-manage-symbol-rollover-02.png** — Cómo gestionar el rollover de símbolos — Procedimiento para realizar el rollover en DeepDom (DeepDOM)
+- **dd-es-how-to-manage-symbol-rollover-03.png** — Cómo gestionar el rollover de símbolos — Cómo restaurar un vencimiento anterior (DeepDOM)
+- **dd-es-how-to-manage-symbol-rollover-04.png** — Cómo gestionar el rollover de símbolos — Cómo restaurar un vencimiento anterior (DeepDOM)
+- **dd-es-how-to-manage-symbol-rollover-05.png** — Cómo gestionar el rollover de símbolos — Cómo restaurar un vencimiento anterior (DeepDOM)
+
+## Ventana de órdenes  (`content-es-deepdom/orders-window-deepdom.md`)
+
+- **dd-es-orders-window-deepdom-01.png** — Ventana de órdenes — Cómo abrir la Ventana de órdenes (DeepDOM)
+- **dd-es-orders-window-deepdom-02.png** — Ventana de órdenes — Cómo abrir la Ventana de órdenes (DeepDOM)
+
+## Operar desde el gráfico  (`content-es-deepdom/trading-from-the-chart.md`)
+
+- **dd-es-trading-from-the-chart-01.png** — Operar desde el gráfico — Habilitar el trading y mostrar el panel de trading (DeepDOM)
+- **dd-es-trading-from-the-chart-02.png** — Operar desde el gráfico — Panel de trading y trading cruzado Mini/Micro (DeepDOM)
+- **dd-es-trading-from-the-chart-03.png** — Operar desde el gráfico — Botones de trading y acciones básicas (DeepDOM)
+- **dd-es-trading-from-the-chart-04.png** — Operar desde el gráfico — Estrategia OCO (DeepDOM)
+- **dd-es-trading-from-the-chart-05.png** — Operar desde el gráfico — Mostrar ejecuciones históricas (DeepDOM)
+- **dd-es-trading-from-the-chart-06.png** — Operar desde el gráfico — Vista general del Chart DOM (DeepDOM)
+- **dd-es-trading-from-the-chart-07.png** — Operar desde el gráfico — Configuración y columnas del Chart DOM (DeepDOM)
+- **dd-es-trading-from-the-chart-08.png** — Operar desde el gráfico — Configuración y columnas del Chart DOM (DeepDOM)
+
+## Gestor de riesgos de cartera  (`content-es-deepdom/portfolio-risk-manager.md`)
+
+- **dd-es-portfolio-risk-manager-01.png** — Gestor de riesgos de cartera — 1. Cómo acceder al Gestor de riesgos (DeepDOM)
+- **dd-es-portfolio-risk-manager-02.png** — Gestor de riesgos de cartera — 2. Sección de vista general (DeepDOM)
+- **dd-es-portfolio-risk-manager-03.png** — Gestor de riesgos de cartera — 2. Sección de vista general (DeepDOM)
+- **dd-es-portfolio-risk-manager-04.png** — Gestor de riesgos de cartera — Información de la tarjeta de conexión (DeepDOM)
+- **dd-es-portfolio-risk-manager-05.png** — Gestor de riesgos de cartera — Cuando está en pausa: (DeepDOM)
+- **dd-es-portfolio-risk-manager-06.png** — Gestor de riesgos de cartera — 3. Tarjetas de cuenta individuales (DeepDOM)
+- **dd-es-portfolio-risk-manager-07.png** — Gestor de riesgos de cartera — 4. Configuración de gestión monetaria (lado del cliente) (DeepDOM)
+- **dd-es-portfolio-risk-manager-08.png** — Gestor de riesgos de cartera — 5. Configuración general (DeepDOM)
+- **dd-es-portfolio-risk-manager-09.png** — Gestor de riesgos de cartera — 6. Límite de pérdida diaria (DeepDOM)
+- **dd-es-portfolio-risk-manager-10.png** — Gestor de riesgos de cartera — 7. Límite de beneficio diario (DeepDOM)
+- **dd-es-portfolio-risk-manager-11.png** — Gestor de riesgos de cartera — Opciones de acción: (DeepDOM)
+- **dd-es-portfolio-risk-manager-12.png** — Gestor de riesgos de cartera — Opciones de acción: (DeepDOM)
+- **dd-es-portfolio-risk-manager-13.png** — Gestor de riesgos de cartera — Límite de pérdida de cartera (DeepDOM)
+- **dd-es-portfolio-risk-manager-14.png** — Gestor de riesgos de cartera — Límite de beneficio de cartera (DeepDOM)
+- **dd-es-portfolio-risk-manager-15.png** — Gestor de riesgos de cartera — Límite de beneficio por posición (DeepDOM)
+- **dd-es-portfolio-risk-manager-16.png** — Gestor de riesgos de cartera — 11. Limitar horas de trading (zona horaria EST) (DeepDOM)
+- **dd-es-portfolio-risk-manager-17.png** — Gestor de riesgos de cartera — 12. Añadir símbolo (DeepDOM)
+- **dd-es-portfolio-risk-manager-18.png** — Gestor de riesgos de cartera — 13. Inhibir cambios hasta la próxima sesión (DeepDOM)
+- **dd-es-portfolio-risk-manager-19.png** — Gestor de riesgos de cartera — 14. Estado (DeepDOM)
+- **dd-es-portfolio-risk-manager-20.png** — Gestor de riesgos de cartera — Si está bloqueada durante el día: (DeepDOM)
+
+## Entorno de simulación  (`content-es-deepdom/simulation-environment.md`)
+
+- **dd-es-simulation-environment-01.png** — Entorno de simulación — Añadir una nueva cuenta SIM (DeepDOM)
+- **dd-es-simulation-environment-02.png** — Entorno de simulación — Añadir una nueva cuenta SIM (DeepDOM)
+- **dd-es-simulation-environment-03.png** — Entorno de simulación — Operar en modo de simulación (DeepDOM)
+
+## Diferencial de oferta/demanda  (`content-es-deepdom/spread-bid-ask.md`)
+
+- **dd-es-spread-bid-ask-01.png** — Diferencial de oferta/demanda — vista general (DeepDOM)
+- **dd-es-spread-bid-ask-02.png** — Diferencial de oferta/demanda — 3. Configuración de alertas (DeepDOM)
+
+## VWAP + Envolventes  (`content-es-deepdom/vwap-envelopes-deepdom.md`)
+
+- **dd-es-vwap-envelopes-deepdom-01.png** — VWAP + Envolventes — vista general (DeepDOM)
+- **dd-es-vwap-envelopes-deepdom-02.png** — VWAP + Envolventes — Cómo añadir el VWAP a su gráfico (DeepDOM)
+- **dd-es-vwap-envelopes-deepdom-03.png** — VWAP + Envolventes — Configuración general (DeepDOM)
+- **dd-es-vwap-envelopes-deepdom-04.png** — VWAP + Envolventes — Configuración de visualización (DeepDOM)
+- **dd-es-vwap-envelopes-deepdom-05.png** — VWAP + Envolventes — Configuración de bandas: primera, segunda y tercera banda (DeepDOM)
+- **dd-es-vwap-envelopes-deepdom-06.png** — VWAP + Envolventes — Configuración de bandas: primera, segunda y tercera banda (DeepDOM)
+- **dd-es-vwap-envelopes-deepdom-07.png** — VWAP + Envolventes — Configuración de bandas: primera, segunda y tercera banda (DeepDOM)
+- **dd-es-vwap-envelopes-deepdom-08.png** — VWAP + Envolventes — Configuración de bandas: primera, segunda y tercera banda (DeepDOM)
+- **dd-es-vwap-envelopes-deepdom-09.png** — VWAP + Envolventes — Configuración de bandas: primera, segunda y tercera banda (DeepDOM)
+- **dd-es-vwap-envelopes-deepdom-10.png** — VWAP + Envolventes — Cómo utilizar múltiples VWAP (DeepDOM)
+
+## Desequilibrio de sesión  (`content-es-deepdom/session-imbalance-deepdom.md`)
+
+- **dd-es-session-imbalance-deepdom-01.png** — Desequilibrio de sesión — vista general (DeepDOM)
+- **dd-es-session-imbalance-deepdom-02.png** — Desequilibrio de sesión — Cómo añadir el Desequilibrio de sesión a su gráfico (DeepDOM)
+- **dd-es-session-imbalance-deepdom-03.png** — Desequilibrio de sesión — Configuración general (DeepDOM)
+- **dd-es-session-imbalance-deepdom-04.png** — Desequilibrio de sesión — Configuración de trazado (DeepDOM)
+- **dd-es-session-imbalance-deepdom-05.png** — Desequilibrio de sesión — Configuración de trazado (DeepDOM)
+- **dd-es-session-imbalance-deepdom-06.png** — Desequilibrio de sesión — Configuración de trazado (DeepDOM)
+- **dd-es-session-imbalance-deepdom-07.png** — Desequilibrio de sesión — Configuración de trazado (DeepDOM)
+- **dd-es-session-imbalance-deepdom-08.png** — Desequilibrio de sesión — Configuración de trazado (DeepDOM)
+- **dd-es-session-imbalance-deepdom-09.png** — Desequilibrio de sesión — Configuración de trazado (DeepDOM)
+- **dd-es-session-imbalance-deepdom-10.png** — Desequilibrio de sesión — Configuración de trazado (DeepDOM)
+- **dd-es-session-imbalance-deepdom-11.png** — Desequilibrio de sesión — Configuración de trazado (DeepDOM)
+- **dd-es-session-imbalance-deepdom-12.png** — Desequilibrio de sesión — Configuración de trazado (DeepDOM)
+- **dd-es-session-imbalance-deepdom-13.png** — Desequilibrio de sesión — Configuración de trazado (DeepDOM)
+- **dd-es-session-imbalance-deepdom-14.png** — Desequilibrio de sesión — Niveles de extensión del 50 % / 100 % (DeepDOM)
+- **dd-es-session-imbalance-deepdom-15.png** — Desequilibrio de sesión — Niveles de extensión del 50 % / 100 % (DeepDOM)
+
+## Velocidad del libro  (`content-es-deepdom/book-speed.md`)
+
+- **dd-es-book-speed-01.png** — Velocidad del libro — visión general (DeepDOM)
+- **dd-es-book-speed-02.png** — Velocidad del libro — Cómo añadir Velocidad del libro a su gráfico (DeepDOM)
+- **dd-es-book-speed-03.png** — Velocidad del libro — Configuración general (DeepDOM)
+- **dd-es-book-speed-04.png** — Velocidad del libro — Configuración general (DeepDOM)
+- **dd-es-book-speed-05.png** — Velocidad del libro — Configuración general (DeepDOM)
+- **dd-es-book-speed-06.png** — Velocidad del libro — Configuración de trazado (DeepDOM)
+- **dd-es-book-speed-07.png** — Velocidad del libro — Configuración de trazado (DeepDOM)
+- **dd-es-book-speed-08.png** — Velocidad del libro — Promedio (DeepDOM)
+- **dd-es-book-speed-09.png** — Velocidad del libro — Promedio (DeepDOM)
+- **dd-es-book-speed-10.png** — Velocidad del libro — Marcador (DeepDOM)
+- **dd-es-book-speed-11.png** — Velocidad del libro — Marcador (DeepDOM)
+
+## Perfil de volumen  (`content-es-deepdom/volume-profile-deepdom.md`)
+
+- **dd-es-volume-profile-deepdom-01.png** — Perfil de volumen — vista general (DeepDOM)
+- **dd-es-volume-profile-deepdom-02.png** — Perfil de volumen — Cómo añadir el perfil de volumen a su gráfico (DeepDOM)
+- **dd-es-volume-profile-deepdom-03.png** — Perfil de volumen — Configuración general (DeepDOM)
+- **dd-es-volume-profile-deepdom-04.png** — Perfil de volumen — Configuración de trazado (DeepDOM)
+- **dd-es-volume-profile-deepdom-05.png** — Perfil de volumen — Configuración de trazado (DeepDOM)
+- **dd-es-volume-profile-deepdom-06.png** — Perfil de volumen — POC (Point of Control) (DeepDOM)
+- **dd-es-volume-profile-deepdom-07.png** — Perfil de volumen — Área de valor (DeepDOM)
+- **dd-es-volume-profile-deepdom-08.png** — Perfil de volumen — Picos y valles (DeepDOM)
+- **dd-es-volume-profile-deepdom-09.png** — Perfil de volumen — Resumen (DeepDOM)
+- **dd-es-volume-profile-deepdom-10.png** — Perfil de volumen — Etiquetas en línea (DeepDOM)
+
+## Barrido de stops (Stop Run)  (`content-es-deepdom/stop-run.md`)
+
+- **dd-es-stop-run-01.png** — Stop Run — vista general (DeepDOM)
+- **dd-es-stop-run-02.png** — Stop Run — ¿Qué es un Stop Run? (DeepDOM)
+- **dd-es-stop-run-03.png** — Stop Run — Qué buscar durante un Stop Run (DeepDOM)
+- **dd-es-stop-run-04.png** — Stop Run — Qué buscar durante un Stop Run (DeepDOM)
+- **dd-es-stop-run-05.png** — Stop Run — Qué buscar durante un Stop Run (DeepDOM)
+- **dd-es-stop-run-06.png** — Stop Run — Qué buscar durante un Stop Run (DeepDOM)
+- **dd-es-stop-run-07.png** — Stop Run — Cómo configurar el indicador Stop Run (DeepDOM)
+- **dd-es-stop-run-08.png** — Stop Run — Configuración general (DeepDOM)
+- **dd-es-stop-run-09.png** — Stop Run — Configuración general (DeepDOM)
+- **dd-es-stop-run-10.png** — Stop Run — Configuración general (DeepDOM)
+- **dd-es-stop-run-11.png** — Stop Run — Configuración general (DeepDOM)
+- **dd-es-stop-run-12.png** — Stop Run — Configuración general (DeepDOM)
+- **dd-es-stop-run-13.png** — Stop Run — Configuración general (DeepDOM)
+- **dd-es-stop-run-14.png** — Stop Run — Configuración general (DeepDOM)
+- **dd-es-stop-run-15.png** — Stop Run — Configuración general (DeepDOM)
+- **dd-es-stop-run-16.png** — Stop Run — Configuración general (DeepDOM)
+- **dd-es-stop-run-17.png** — Stop Run — Configuración general (DeepDOM)
+- **dd-es-stop-run-18.png** — Stop Run — Configuración de trazado (DeepDOM)
+- **dd-es-stop-run-19.png** — Stop Run — Configuración de trazado (DeepDOM)
+- **dd-es-stop-run-20.png** — Stop Run — Configuración de trazado (DeepDOM)
+- **dd-es-stop-run-21.png** — Stop Run — Configuración de trazado (DeepDOM)
+- **dd-es-stop-run-22.png** — Stop Run — Configuración de trazado (DeepDOM)
+- **dd-es-stop-run-23.png** — Stop Run — Configuración de trazado (DeepDOM)
+- **dd-es-stop-run-24.png** — Stop Run — Configuración de trazado (DeepDOM)
+- **dd-es-stop-run-25.png** — Stop Run — Configuración de texto (DeepDOM)
+- **dd-es-stop-run-26.png** — Stop Run — Configuración de texto (DeepDOM)
+- **dd-es-stop-run-27.png** — Stop Run — Configuración de texto (DeepDOM)
+- **dd-es-stop-run-28.png** — Stop Run — Configuración de texto (DeepDOM)
+- **dd-es-stop-run-29.png** — Stop Run — Alertas (DeepDOM)
+
+## Absorción  (`content-es-deepdom/absorption.md`)
+
+- **dd-es-absorption-01.png** — Absorción — ¿Qué es la absorción? (DeepDOM)
+- **dd-es-absorption-02.png** — Absorción — Cómo configurar el indicador Absorción (DeepDOM)
+- **dd-es-absorption-03.png** — Absorción — Configuración general (DeepDOM)
+- **dd-es-absorption-04.png** — Absorción — Configuración general (DeepDOM)
+- **dd-es-absorption-05.png** — Absorción — Configuración general (DeepDOM)
+- **dd-es-absorption-06.png** — Absorción — Configuración general (DeepDOM)
+- **dd-es-absorption-07.png** — Absorción — Configuración general (DeepDOM)
+- **dd-es-absorption-08.png** — Absorción — Configuración general (DeepDOM)
+- **dd-es-absorption-09.png** — Absorción — Configuración general (DeepDOM)
+- **dd-es-absorption-10.png** — Absorción — Configuración general (DeepDOM)
+- **dd-es-absorption-11.png** — Absorción — Configuración general (DeepDOM)
+- **dd-es-absorption-12.png** — Absorción — Configuración general (DeepDOM)
+- **dd-es-absorption-13.png** — Absorción — Configuración de trazado (DeepDOM)
+- **dd-es-absorption-14.png** — Absorción — Configuración de trazado (DeepDOM)
+- **dd-es-absorption-15.png** — Absorción — Configuración de trazado (DeepDOM)
+- **dd-es-absorption-16.png** — Absorción — Configuración de trazado (DeepDOM)
+- **dd-es-absorption-17.png** — Absorción — Configuración de trazado (DeepDOM)
+- **dd-es-absorption-18.png** — Absorción — Configuración de trazado (DeepDOM)
+- **dd-es-absorption-19.png** — Absorción — Configuración de trazado (DeepDOM)
+- **dd-es-absorption-20.png** — Absorción — Configuración de trazado (DeepDOM)
+- **dd-es-absorption-21.png** — Absorción — Configuración de trazado (DeepDOM)
+- **dd-es-absorption-22.png** — Absorción — Configuración de texto (DeepDOM)
+- **dd-es-absorption-23.png** — Absorción — Configuración de trazado (DeepDOM)
+
+## Iceberg/Stop acumulado  (`content-es-deepdom/cumulative-iceberg-stop.md`)
+
+- **dd-es-cumulative-iceberg-stop-01.png** — Iceberg/Stop acumulado — vista general (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-02.png** — Iceberg/Stop acumulado — Cómo configurar el indicador Iceberg/Stop acumulado (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-03.png** — Iceberg/Stop acumulado — Configuración general (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-04.png** — Iceberg/Stop acumulado — Configuración general (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-05.png** — Iceberg/Stop acumulado — Configuración general (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-06.png** — Iceberg/Stop acumulado — Configuración general (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-07.png** — Iceberg/Stop acumulado — Configuración general (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-08.png** — Iceberg/Stop acumulado — Configuración general (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-09.png** — Iceberg/Stop acumulado — Configuración general (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-10.png** — Iceberg/Stop acumulado — Configuración de iceberg (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-11.png** — Iceberg/Stop acumulado — Configuración de iceberg (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-12.png** — Iceberg/Stop acumulado — Configuración de stop (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-13.png** — Iceberg/Stop acumulado — Configuración de stop (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-14.png** — Iceberg/Stop acumulado — Configuración de trazado (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-15.png** — Iceberg/Stop acumulado — Alerta de Stop (DeepDOM)
+- **dd-es-cumulative-iceberg-stop-16.png** — Iceberg/Stop acumulado — Alerta de Iceberg (DeepDOM)
+
+## Volume Swing  (`content-es-deepdom/volume-swing-deepdom.md`)
+
+- **dd-es-volume-swing-deepdom-01.png** — Volume Swing — vista general (DeepDOM)
+- **dd-es-volume-swing-deepdom-02.png** — Volume Swing — Cómo configurar Volume Swing (DeepDOM)
+- **dd-es-volume-swing-deepdom-03.png** — Volume Swing — Configuración de Zig Zag (DeepDOM)
+- **dd-es-volume-swing-deepdom-04.png** — Volume Swing — Configuración de Zig Zag (DeepDOM)
+- **dd-es-volume-swing-deepdom-05.png** — Volume Swing — Configuración de Zig Zag (DeepDOM)
+- **dd-es-volume-swing-deepdom-06.png** — Volume Swing — Configuración de trazado (DeepDOM)
+- **dd-es-volume-swing-deepdom-07.png** — Volume Swing — Configuración de color (DeepDOM)
+
+## POC Dinámico  (`content-es-deepdom/poc-dynamic.md`)
+
+- **dd-es-poc-dynamic-01.png** — POC Dinámico — vista general (DeepDOM)
+- **dd-es-poc-dynamic-02.png** — POC Dinámico — Cómo añadir POC Dinámico a su gráfico (DeepDOM)
+- **dd-es-poc-dynamic-03.png** — POC Dinámico — Configuración general (DeepDOM)
+- **dd-es-poc-dynamic-04.png** — POC Dinámico — Configuración de trazado (DeepDOM)
+- **dd-es-poc-dynamic-05.png** — POC Dinámico — Configuración de trazado (DeepDOM)
+- **dd-es-poc-dynamic-06.png** — POC Dinámico — Configuración de envolventes (DeepDOM)
+- **dd-es-poc-dynamic-07.png** — POC Dinámico — Configuración de envolventes (DeepDOM)
+- **dd-es-poc-dynamic-08.png** — POC Dinámico — Primera, segunda y tercera banda (DeepDOM)
+- **dd-es-poc-dynamic-09.png** — POC Dinámico — Primera, segunda y tercera banda (DeepDOM)
+
+## Volumen  (`content-es-deepdom/volume-deepdom.md`)
+
+- **dd-es-volume-deepdom-01.png** — Volumen — Cómo aplicar el indicador Volumen (DeepDOM)
+- **dd-es-volume-deepdom-02.png** — Volumen — Configuración general (DeepDOM)
+- **dd-es-volume-deepdom-03.png** — Volumen — Modo de visualización (DeepDOM)
+- **dd-es-volume-deepdom-04.png** — Volumen — Modo de visualización (DeepDOM)
+
+## Delta Bar  (`content-es-deepdom/delta-bar-deepdom.md`)
+
+- **dd-es-delta-bar-deepdom-01.png** — Delta Bar — vista general (DeepDOM)
+- **dd-es-delta-bar-deepdom-02.png** — Delta Bar — Configuración de uso (DeepDOM)
+- **dd-es-delta-bar-deepdom-03.png** — Delta Bar — Configuración general (DeepDOM)
+- **dd-es-delta-bar-deepdom-04.png** — Delta Bar — Datos de entrada (DeepDOM)
+- **dd-es-delta-bar-deepdom-05.png** — Delta Bar — Agrupamiento de barras (DeepDOM)
+- **dd-es-delta-bar-deepdom-06.png** — Delta Bar — Filtros (DeepDOM)
+- **dd-es-delta-bar-deepdom-07.png** — Delta Bar — Configuración de trazado (DeepDOM)
+
+## CVD (delta de volumen acumulado)  (`content-es-deepdom/cumulative-volume-delta.md`)
+
+- **dd-es-cumulative-volume-delta-01.png** — CVD (delta de volumen acumulado) — vista general (DeepDOM)
+- **dd-es-cumulative-volume-delta-02.png** — CVD (delta de volumen acumulado) — Configuración de uso (DeepDOM)
+- **dd-es-cumulative-volume-delta-03.png** — CVD (delta de volumen acumulado) — Configuración general (DeepDOM)
+- **dd-es-cumulative-volume-delta-04.png** — CVD (delta de volumen acumulado) — Configuración de trazado (DeepDOM)
+- **dd-es-cumulative-volume-delta-05.png** — CVD (delta de volumen acumulado) — CVD filtrado (DeepDOM)
+
+## Operaciones grandes  (`content-es-deepdom/big-trades-deepdom.md`)
+
+- **dd-es-big-trades-deepdom-01.png** — Operaciones grandes — visión general (DeepDOM)
+- **dd-es-big-trades-deepdom-02.png** — Operaciones grandes — Configuración de uso (DeepDOM)
+- **dd-es-big-trades-deepdom-03.png** — Operaciones grandes — Configuración de datos (DeepDOM)
+- **dd-es-big-trades-deepdom-04.png** — Operaciones grandes — Configuración de trazado (DeepDOM)
+- **dd-es-big-trades-deepdom-05.png** — Operaciones grandes — Configuración de marcador y texto (DeepDOM)
+
+## Niveles importantes  (`content-es-deepdom/important-levels-deepdom.md`)
+
+- **dd-es-important-levels-deepdom-01.png** — Niveles importantes — vista general (DeepDOM)
+- **dd-es-important-levels-deepdom-02.png** — Niveles importantes — Configuración de uso (DeepDOM)
+- **dd-es-important-levels-deepdom-03.png** — Niveles importantes — Configuración de trazado (DeepDOM)
+- **dd-es-important-levels-deepdom-04.png** — Niveles importantes — Máximo / Mínimo / Apertura (DeepDOM)
+
+## Burbujas de volumen  (`content-es-deepdom/volume-bubbles.md`)
+
+- **dd-es-volume-bubbles-01.png** — Burbujas de volumen — vista general (DeepDOM)
+- **dd-es-volume-bubbles-02.png** — Burbujas de volumen — Cómo añadir y configurar las burbujas de volumen en su gráfico (DeepDOM)
+- **dd-es-volume-bubbles-03.png** — Burbujas de volumen — Configuración general (DeepDOM)
+- **dd-es-volume-bubbles-04.png** — Burbujas de volumen — Configuración general (DeepDOM)
+- **dd-es-volume-bubbles-05.png** — Burbujas de volumen — Configuración general (DeepDOM)
+- **dd-es-volume-bubbles-06.png** — Burbujas de volumen — Configuración general (DeepDOM)
+- **dd-es-volume-bubbles-07.png** — Burbujas de volumen — Configuración general (DeepDOM)
+- **dd-es-volume-bubbles-08.png** — Burbujas de volumen — Configuración general (DeepDOM)
+- **dd-es-volume-bubbles-09.png** — Burbujas de volumen — Configuración general (DeepDOM)
+- **dd-es-volume-bubbles-10.png** — Burbujas de volumen — Configuración general (DeepDOM)
+- **dd-es-volume-bubbles-11.png** — Burbujas de volumen — Dimensionamiento (DeepDOM)
+- **dd-es-volume-bubbles-12.png** — Burbujas de volumen — Dimensionamiento (DeepDOM)
+- **dd-es-volume-bubbles-13.png** — Burbujas de volumen — Dimensionamiento (DeepDOM)
+- **dd-es-volume-bubbles-14.png** — Burbujas de volumen — Dimensionamiento (DeepDOM)
+- **dd-es-volume-bubbles-15.png** — Burbujas de volumen — Dimensionamiento (DeepDOM)
+- **dd-es-volume-bubbles-16.png** — Burbujas de volumen — Configuración de trazado (DeepDOM)
+- **dd-es-volume-bubbles-17.png** — Burbujas de volumen — Configuración de trazado (DeepDOM)
+- **dd-es-volume-bubbles-18.png** — Burbujas de volumen — Configuración de trazado (DeepDOM)
+- **dd-es-volume-bubbles-19.png** — Burbujas de volumen — Agrupamiento (DeepDOM)
+- **dd-es-volume-bubbles-20.png** — Burbujas de volumen — Agrupamiento (DeepDOM)
+
+## Mapa de calor  (`content-es-deepdom/heatmap.md`)
+
+- **dd-es-heatmap-01.png** — Mapa de calor — visión general (DeepDOM)
+- **dd-es-heatmap-02.png** — Mapa de calor — Cómo abrir un mapa de calor (DeepDOM)
+- **dd-es-heatmap-03.png** — Mapa de calor — Cómo abrir un mapa de calor (DeepDOM)
+- **dd-es-heatmap-04.png** — Mapa de calor — Cómo configurar la fuente de datos MBO / MBP (DeepDOM)
+- **dd-es-heatmap-05.png** — Mapa de calor — General (DeepDOM)
+- **dd-es-heatmap-06.png** — Mapa de calor — Filtros MBO (DeepDOM)
+- **dd-es-heatmap-07.png** — Mapa de calor — Cómo entender la liquidez (DeepDOM)
+- **dd-es-heatmap-08.png** — Mapa de calor — Cómo leer los límites de compra y venta: (DeepDOM)
+- **dd-es-heatmap-09.png** — Mapa de calor — Cómo leer la liquidez fresca frente a la persistente: (DeepDOM)
+- **dd-es-heatmap-10.png** — Mapa de calor — Cómo leer la liquidez fresca frente a la persistente: (DeepDOM)
+
+## Reproducción de datos de tick  (`content-es-deepdom/replay-tick-data.md`)
+
+- **dd-es-replay-tick-data-01.png** — Reproducción de datos de tick — Cómo acceder a la reproducción de datos de tick (DeepDOM)
+- **dd-es-replay-tick-data-02.png** — Reproducción de datos de tick — Cómo acceder a la reproducción de datos de tick (DeepDOM)
+- **dd-es-replay-tick-data-03.png** — Reproducción de datos de tick — Cómo acceder a la reproducción de datos de tick (DeepDOM)
+- **dd-es-replay-tick-data-04.png** — Reproducción de datos de tick — Paso 1 – Seleccione su símbolo (DeepDOM)
+- **dd-es-replay-tick-data-05.png** — Reproducción de datos de tick — Paso 1 – Seleccione su símbolo (DeepDOM)
+- **dd-es-replay-tick-data-06.png** — Reproducción de datos de tick — Paso 1 – Seleccione su símbolo (DeepDOM)
+- **dd-es-replay-tick-data-07.png** — Reproducción de datos de tick — Paso 1 – Seleccione su símbolo (DeepDOM)
+- **dd-es-replay-tick-data-08.png** — Reproducción de datos de tick — Paso 2 – Establezca la fecha de inicio (DeepDOM)
+- **dd-es-replay-tick-data-09.png** — Reproducción de datos de tick — Paso 3 – Inicie la reproducción (DeepDOM)
+- **dd-es-replay-tick-data-10.png** — Reproducción de datos de tick — Trading simulado (DeepDOM)
+
+## Iceberg Profundo (Deep Iceberg)  (`content-es-deepdom/deep-iceberg.md`)
+
+- **dd-es-deep-iceberg-01.png** — Iceberg Profundo (Deep Iceberg) — vista general (DeepDOM)
+- **dd-es-deep-iceberg-02.png** — Iceberg Profundo (Deep Iceberg) — 3. Visualización en el gráfico (DeepDOM)
+- **dd-es-deep-iceberg-03.png** — Iceberg Profundo (Deep Iceberg) — 4. Configuración de datos (DeepDOM)
+- **dd-es-deep-iceberg-04.png** — Iceberg Profundo (Deep Iceberg) — 5. Configuración de trazado (DeepDOM)
+- **dd-es-deep-iceberg-05.png** — Iceberg Profundo (Deep Iceberg) — 6. Icebergs activos (DeepDOM)
+- **dd-es-deep-iceberg-06.png** — Iceberg Profundo (Deep Iceberg) — 7. Configuración de trazado (DeepDOM)
+- **dd-es-deep-iceberg-07.png** — Iceberg Profundo (Deep Iceberg) — 8. Configuración de texto (DeepDOM)
+- **dd-es-deep-iceberg-08.png** — Iceberg Profundo (Deep Iceberg) — 9. Alerta de Iceberg (DeepDOM)
+
+## Recarga Profunda (Deep Reload)  (`content-es-deepdom/deep-reload.md`)
+
+- **dd-es-deep-reload-01.png** — Recarga Profunda — vista general (DeepDOM)
+- **dd-es-deep-reload-02.png** — Recarga Profunda — Cómo configurar Recarga Profunda (DeepDOM)
+- **dd-es-deep-reload-03.png** — Recarga Profunda — 2. Configuración general (DeepDOM)
+- **dd-es-deep-reload-04.png** — Recarga Profunda — 3. Configuración de trazado (DeepDOM)
+- **dd-es-deep-reload-05.png** — Recarga Profunda — 4. Filtro de tendencia (DeepDOM)
+- **dd-es-deep-reload-06.png** — Recarga Profunda — 5. Alertas (DeepDOM)
+
+## Análisis de Liquidez Profunda (Deep Liquidity Scan)  (`content-es-deepdom/deep-liquidity-scan.md`)
+
+- **dd-es-deep-liquidity-scan-01.png** — Análisis de Liquidez Profunda — vista general (DeepDOM)
+- **dd-es-deep-liquidity-scan-02.png** — Análisis de Liquidez Profunda — Cómo configurar el Análisis de Liquidez Profunda (DeepDOM)
+- **dd-es-deep-liquidity-scan-03.png** — Análisis de Liquidez Profunda — Configuración general (DeepDOM)
+- **dd-es-deep-liquidity-scan-04.png** — Análisis de Liquidez Profunda — Num Lev Depth - 200 (DeepDOM)
+- **dd-es-deep-liquidity-scan-05.png** — Análisis de Liquidez Profunda — Num Lev Depth - 200 (DeepDOM)
+- **dd-es-deep-liquidity-scan-06.png** — Análisis de Liquidez Profunda — Num Lev Depth - 200 (DeepDOM)
+- **dd-es-deep-liquidity-scan-07.png** — Análisis de Liquidez Profunda — Num Lev Depth - 200 (DeepDOM)
+- **dd-es-deep-liquidity-scan-08.png** — Análisis de Liquidez Profunda — Num Lev Depth - 200 (DeepDOM)
+- **dd-es-deep-liquidity-scan-09.png** — Análisis de Liquidez Profunda — Num Lev Depth - 200 (DeepDOM)
+- **dd-es-deep-liquidity-scan-10.png** — Análisis de Liquidez Profunda — Configuración de trazado (DeepDOM)
+- **dd-es-deep-liquidity-scan-11.png** — Análisis de Liquidez Profunda — Configuración de delta (DeepDOM)
+- **dd-es-deep-liquidity-scan-12.png** — Análisis de Liquidez Profunda — Configuración de delta (DeepDOM)
+- **dd-es-deep-liquidity-scan-13.png** — Análisis de Liquidez Profunda — Configuración de delta (DeepDOM)
+- **dd-es-deep-liquidity-scan-14.png** — Análisis de Liquidez Profunda — Configuración de delta (DeepDOM)
+- **dd-es-deep-liquidity-scan-15.png** — Análisis de Liquidez Profunda — 1. Zero Line Color (DeepDOM)
+- **dd-es-deep-liquidity-scan-16.png** — Análisis de Liquidez Profunda — Zero Line Style (DeepDOM)
+- **dd-es-deep-liquidity-scan-17.png** — Análisis de Liquidez Profunda — Zero Line View - (DeepDOM)
+- **dd-es-deep-liquidity-scan-18.png** — Análisis de Liquidez Profunda — 2. Delta Axis (DeepDOM)
+- **dd-es-deep-liquidity-scan-19.png** — Análisis de Liquidez Profunda — Axis View - (DeepDOM)
+
+## Delta Profundo (Deep Delta)  (`content-es-deepdom/deep-delta-deepdom.md`)
+
+- **dd-es-deep-delta-deepdom-01.png** — Delta Profundo — vista general (DeepDOM)
+- **dd-es-deep-delta-deepdom-02.png** — Delta Profundo — Configuración de uso (DeepDOM)
+- **dd-es-deep-delta-deepdom-03.png** — Delta Profundo — Configuración general (DeepDOM)
+- **dd-es-deep-delta-deepdom-04.png** — Delta Profundo — Datos de entrada (DeepDOM)
+- **dd-es-deep-delta-deepdom-05.png** — Delta Profundo — Modo de delta (DeepDOM)
+- **dd-es-deep-delta-deepdom-06.png** — Delta Profundo — Configuración de los rangos 1–4 (DeepDOM)
