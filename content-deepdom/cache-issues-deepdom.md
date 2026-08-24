@@ -15,11 +15,9 @@ This article explains how to resolve Data Gap errors in DeepDom by clearing the 
 
 The most common reasons are:
 
-Loss of connection to the data feed while the platform is running.
-
-Power outage, operating system crash, or forced restart of the computer.
-
-Sudden DeepDom shutdown, such as killing the process or closing Windows before the platform can finish writing data.
+- Loss of connection to the data feed while the platform is running.
+- Power outage, operating system crash, or forced restart of the computer.
+- Sudden DeepDom shutdown, such as killing the process or closing Windows before the platform can finish writing data.
 
 In these cases, some cached files may become corrupted or incomplete, and the safest fix is to remove the cache folder so DeepDom can recreate it from scratch on the next start.
 
