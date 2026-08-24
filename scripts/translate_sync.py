@@ -138,7 +138,18 @@ def translate_file(en_text, lang):
 
 # ── post-processing / validation ─────────────────────────────────
 
-def postprocess(translated, en_text, lang, slug):
+def img_prefix_for(tgt_path):
+    """Relative prefix from a content dir's articles to the shared site assets/."""
+    rel = os.path.relpath(tgt_path, ROOT)
+    d = rel.split(os.sep)[0]
+    if d == "content":
+        return "../"
+    if d == "content-deepdom" or re.match(r"^content-(it|es|fr|de)$", d):
+        return "../../"
+    return "../../../"          # content-<lang>-deepdom
+
+
+def postprocess(translated, en_text, lang, slug, tgt_path):
     """Deterministic fixes + parity checks. Returns (text, problems)."""
     problems = []
     t = translated.strip()
@@ -160,14 +171,17 @@ def postprocess(translated, en_text, lang, slug):
     # swap screenshot-ID language tokens deterministically
     body = SHOT_RE.sub(lambda mm: f"[SCREENSHOT: {mm.group(1)} | {swap_lang_token(mm.group(2), lang)}]", body)
 
-    # localized real images: swap token; if the localized capture doesn't exist
-    # yet, turn the image back into a placeholder so coverage tracking sees it
+    # localized real images: swap token and FIX the relative prefix for this
+    # article's location (translated dirs sit one level deeper than English);
+    # if the localized capture doesn't exist yet, turn the image back into a
+    # placeholder so coverage tracking sees it
+    good_prefix = img_prefix_for(tgt_path) + "assets/img/"
     def img_sub(mm):
-        alt, prefix, fname = mm.groups()
+        alt, _prefix, fname = mm.groups()
         swapped = swap_lang_token(fname, lang)
         if swapped != fname and not os.path.exists(os.path.join(IMG_DIR, swapped)):
             return f"[SCREENSHOT: {alt} | {swapped}]"
-        return f"![{alt}]({prefix}{swapped})"
+        return f"![{alt}]({good_prefix}{swapped})"
     body = IMG_LINE_RE.sub(img_sub, body)
 
     out = f"---\n{fm}\n---\n{body}"
@@ -204,7 +218,10 @@ def needs_update(en_text, tgt_path, force):
 
 
 def sync_one(en_path, lang, force=False):
-    """Translate one English file into one language. Returns status string."""
+    """Translate one English file into one language. Returns status string.
+    Never raises — API errors are retried with backoff, then reported as FAIL
+    (so one bad call can't abort the whole ThreadPool run)."""
+    import time
     slug = os.path.basename(en_path)[:-3]
     tgt = target_path(en_path, lang)
     if tgt is None:
@@ -212,15 +229,21 @@ def sync_one(en_path, lang, force=False):
     en_text = open(en_path, encoding="utf-8").read()
     if not needs_update(en_text, tgt, force):
         return f"ok   [{lang}] {slug} (up to date)"
-    for attempt in (1, 2):
-        out, problems = postprocess(translate_file(en_text, lang), en_text, lang, slug)
+    problems = ["no output"]
+    for attempt in (1, 2, 3):
+        try:
+            out, problems = postprocess(translate_file(en_text, lang), en_text, lang, slug, tgt)
+        except SystemExit:
+            raise
+        except Exception as e:
+            out, problems = None, [f"API error: {type(e).__name__}: {str(e)[:120]}"]
+            time.sleep(5 * attempt)      # rate-limit friendly backoff
+            continue
         if out and not problems:
             os.makedirs(os.path.dirname(tgt), exist_ok=True)
             open(tgt, "w", encoding="utf-8").write(out)
             return f"DONE [{lang}] {slug}"
-        if attempt == 2:
-            return f"FAIL [{lang}] {slug}: {'; '.join(problems or ['no output'])}"
-    return f"FAIL [{lang}] {slug}"
+    return f"FAIL [{lang}] {slug}: {'; '.join(problems)}"
 
 
 # ── manifests ────────────────────────────────────────────────────
@@ -276,15 +299,23 @@ def sync_manifest(lang, en_manifest, lang_manifest, lang_dir, translate_names=Fa
         subs_out = []
         old_sub_names = {}
         if oc:
+            # translated manifests store en_name so renames/reorders of English
+            # subcategories can't shift translations onto the wrong section;
+            # legacy manifests without en_name fall back to positional pairing
             en_c = next(ec for ec in en["categories"] if ec["slug"] == c["slug"])
-            for es_, os_ in zip(en_c["subcategories"], oc["subcategories"]):
-                old_sub_names[es_["name"]] = os_["name"]
+            for i, os_ in enumerate(oc["subcategories"]):
+                key = os_.get("en_name")
+                if key is None and i < len(en_c["subcategories"]):
+                    key = en_c["subcategories"][i]["name"]
+                if key:
+                    old_sub_names[key] = os_["name"]
         for s in c["subcategories"]:
             sname = tr_subs.get(c["slug"], {}).get(s["name"]) or old_sub_names.get(s["name"], s["name"])
             arts = [{"slug": a["slug"],
                      "title": translated_title(lang_dir.format(L=lang), a["slug"], a["title"])}
                     for a in s["articles"]]
-            subs_out.append({"name": sname if s["name"] else "", "articles": arts})
+            subs_out.append({"name": sname if s["name"] else "", "en_name": s["name"],
+                             "articles": arts})
         out["categories"].append({"slug": c["slug"], "name": name, "icon": c["icon"],
                                   "description": desc, "subcategories": subs_out})
     json.dump(out, open(tgt_path, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
@@ -306,7 +337,7 @@ def all_en_files():
     return out
 
 
-def run_sync(files, langs, force=False):
+def run_sync(files, langs, force=False, write_manifests=True):
     jobs = [(f, L) for f in files for L in langs]
     if not jobs:
         print("nothing to translate.")
@@ -317,8 +348,9 @@ def run_sync(files, langs, force=False):
             print(res)
             if res.startswith("FAIL"):
                 fails += 1
-    for L in langs:
-        sync_manifests(L)          # refresh titles/structure after translations
+    if write_manifests:
+        for L in langs:
+            sync_manifests(L)      # refresh titles/structure after translations
     return fails
 
 
@@ -355,10 +387,17 @@ def main():
 
     if a.init:
         L = a.init
-        print(f"bootstrapping {LANG_NAMES[L]}…")
+        print(f"bootstrapping {LANG_NAMES[L]}… (articles first; the language only "
+              f"goes live if every article translates)")
+        # articles first — the language is NOT enabled (no manifests) until all
+        # translations exist, so a crash/partial run can never break the build
+        fails = run_sync(all_en_files(), [L], force=False, write_manifests=False)
+        if fails:
+            print(f"\n{fails} article(s) failed — language NOT enabled. Re-run "
+                  f"--init {L}: finished articles are kept, only failures retry.")
+            sys.exit(1)
         sync_manifests(L, translate_names=True)      # creates manifests -> enables lang
-        fails = run_sync(all_en_files(), [L], force=True)
-        sys.exit(1 if fails else 0)
+        sys.exit(0)
 
     langs = a.langs or enabled_langs()
     if not langs:

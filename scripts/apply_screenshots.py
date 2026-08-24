@@ -55,7 +55,7 @@ def main():
 
     # index every placeholder + already-inserted image across all content
     placeholder_at = {}   # id -> (content_dir, slug, rel_prefix)
-    inserted = set()      # ids already present as real images
+    inserted = {}         # id -> (content_dir, slug, current_filename)
     for cdir, rel in content_dirs():
         full = os.path.join(ROOT, cdir)
         if not os.path.isdir(full):
@@ -67,7 +67,8 @@ def main():
             for _, fname in SHOT_RE.findall(text):
                 placeholder_at[fname.rsplit(".", 1)[0]] = (cdir, fn[:-3], rel)
             for m in re.finditer(r"!\[[^\]]*\]\([^)\s]*assets/img/([^)\s]+)\)", text):
-                inserted.add(m.group(1).rsplit(".", 1)[0])
+                f2 = m.group(1)
+                inserted[f2.rsplit(".", 1)[0]] = (cdir, fn[:-3], f2)
 
     os.makedirs(IMG_DIR, exist_ok=True)
     applied, refreshed, unmatched, badname = [], [], [], []
@@ -96,7 +97,18 @@ def main():
             shutil.copy2(src, os.path.join(IMG_DIR, dst_name))
             applied.append((base, f"{cdir}/{slug}.md"))
         elif base in inserted:
+            cdir, slug, old_name = inserted[base]
             shutil.copy2(src, os.path.join(IMG_DIR, dst_name))
+            if old_name != dst_name:
+                # re-capture with a different extension: update the article's
+                # image reference and drop the stale file
+                path = os.path.join(ROOT, cdir, f"{slug}.md")
+                text = open(path, encoding="utf-8").read()
+                open(path, "w", encoding="utf-8").write(
+                    text.replace(f"assets/img/{old_name}", f"assets/img/{dst_name}"))
+                old_path = os.path.join(IMG_DIR, old_name)
+                if os.path.exists(old_path):
+                    os.remove(old_path)
             refreshed.append(base)
         else:
             unmatched.append(f)
@@ -116,7 +128,7 @@ def main():
     remaining = len(placeholder_at) - len(applied)
     print(f"placeholders still remaining across all languages/KBs: {remaining}")
 
-    if do_build and applied:
+    if do_build and (applied or refreshed):
         print("\nrebuilding site…")
         subprocess.run([sys.executable, os.path.join(ROOT, "build.py")], check=False)
 

@@ -3,19 +3,26 @@
 #   push to main  ->  builds and deploys to the gh-pages ROOT   (LIVE site)
 #   push to test  ->  builds and deploys to gh-pages /test/     (TEAM PREVIEW)
 #
-# The two deploys never touch each other's files, and a concurrency group
-# serializes them so simultaneous pushes can't race on the gh-pages branch.
+# The two deploys write disjoint paths. Concurrency groups are per-branch so a
+# queued LIVE deploy can never be displaced by newer TEST pushes (GitHub keeps
+# only one pending run per group); a race on the gh-pages push itself is
+# resolved by the rebase-retry loop below.
+#
+# workflow_dispatch exists so the auto-translate workflow can trigger a deploy
+# for the commits it pushes (pushes made with GITHUB_TOKEN don't fire `push`
+# workflows on their own).
 name: build-deploy
 
 on:
   push:
     branches: [main, test]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: gh-pages-deploy
+  group: gh-pages-deploy-${{ github.ref_name }}
   cancel-in-progress: false
 
 jobs:
@@ -48,9 +55,16 @@ jobs:
           else
             mkdir -p /tmp/ghp/test
             rsync -a --delete --exclude '/.git' site/ /tmp/ghp/test/
-            MSG="deploy TEST from test @ ${GITHUB_SHA::7}"
+            MSG="deploy TEST from ${GITHUB_REF_NAME} @ ${GITHUB_SHA::7}"
           fi
           cd /tmp/ghp
           git add -A
-          git diff --cached --quiet || git commit -m "$MSG"
+          git diff --cached --quiet && { echo "nothing to deploy"; exit 0; }
+          git commit -m "$MSG"
+          # main and test deploys may race on the branch tip — rebase and retry
+          for i in 1 2 3 4; do
+            if git push origin gh-pages; then exit 0; fi
+            echo "push race, retrying ($i)…"
+            git pull --rebase origin gh-pages
+          done
           git push origin gh-pages
