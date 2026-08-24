@@ -1,6 +1,11 @@
-# Auto-translate: when English content changes on `test`, regenerate the
-# other languages' versions and push them back to `test` (which then
-# auto-deploys the TEST site via deploy.yml).
+# Auto-translate: when English content changes on `test`, bring every enabled
+# language back in sync and push the translations to `test`, then dispatch a
+# deploy for them (pushes made with GITHUB_TOKEN don't fire `push` workflows,
+# so the deploy is triggered explicitly via workflow_dispatch).
+#
+# The sync runs `translate_sync.py --all`: every article carries a source_hash,
+# so up-to-date translations are skipped with zero API calls, and any range a
+# superseded/canceled run missed is healed by the next run automatically.
 #
 # Inert until (a) at least one language is bootstrapped with
 # `scripts/translate_sync.py --init <lang>` AND (b) the repo secret
@@ -25,14 +30,14 @@ concurrency:
 
 jobs:
   translate:
-    # the sync's own commits touch only content-<lang>*/manifest-<lang>* so they
+    # translation commits touch only content-<lang>*/manifest-<lang>* so they
     # can't re-trigger this workflow; the message guard is a second safety net
     if: "!startsWith(github.event.head_commit.message, 'Auto-translate:')"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          ref: test
 
       - uses: actions/setup-python@v5
         with:
@@ -41,35 +46,28 @@ jobs:
       - name: Install deps
         run: pip install openai pyyaml
 
-      - name: Detect changed English files
-        id: changed
-        run: |
-          BEFORE="${{ github.event.before }}"
-          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then
-            BEFORE="${{ github.sha }}~1"
-          fi
-          FILES=$(git diff --name-only "$BEFORE" "${{ github.sha }}" -- \
-                  content/ content-deepdom/ manifest.json manifest-deepdom.json | tr '\n' ' ')
-          echo "files=$FILES" >> "$GITHUB_OUTPUT"
-          echo "changed: $FILES"
-
-      - name: Translate
-        if: steps.changed.outputs.files != ''
+      - name: Sync translations (skips up-to-date articles without API calls)
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: python3 scripts/translate_sync.py --files ${{ steps.changed.outputs.files }}
+        run: python3 scripts/translate_sync.py --all
 
-      - name: Commit translations
-        if: steps.changed.outputs.files != ''
+      - name: Commit, push and deploy translations
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name  "helpcenter-translator"
           git config user.email "actions@github.com"
-          git add content-it* content-es* content-fr* content-de* \
-                  manifest-it* manifest-es* manifest-fr* manifest-de* 2>/dev/null || true
+          git add -A
           if git diff --cached --quiet; then
             echo "no translation changes"
-          else
-            git commit -m "Auto-translate: sync ${{ steps.changed.outputs.files }}"
-            git pull --rebase origin test
-            git push origin test
+            exit 0
           fi
+          N=$(git diff --cached --name-only | wc -l | tr -d ' ')
+          git commit -m "Auto-translate: sync $N file(s) with English"
+          for i in 1 2 3 4; do
+            if git push origin test; then break; fi
+            echo "push race with a teammate push, rebasing ($i)…"
+            git pull --rebase origin test || { git rebase --abort; exit 1; }
+          done
+          # GITHUB_TOKEN pushes don't fire `push` workflows — deploy explicitly
+          gh workflow run deploy.yml --ref test

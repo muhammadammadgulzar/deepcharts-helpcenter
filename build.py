@@ -168,10 +168,11 @@ def transform_md(slug, body):
                 bad_shots.append((LANG, KB["shot_kb"], slug, fname, f"language token should be '{LANG}'"))
             if mid.group(3) != slug:
                 bad_shots.append((LANG, KB["shot_kb"], slug, fname, f"slug token should be '{slug}'"))
-            if fname in seen_shot_ids:
+            stem = fname.rsplit(".", 1)[0]
+            if stem in seen_shot_ids:
                 bad_shots.append((LANG, KB["shot_kb"], slug, fname,
-                                  f"duplicate ID (also in {seen_shot_ids[fname]})"))
-            seen_shot_ids[fname] = (LANG, KB["shot_kb"], slug)
+                                  f"duplicate ID (also in {seen_shot_ids[stem]})"))
+            seen_shot_ids[stem] = (LANG, KB["shot_kb"], slug)
         shots.append((KB["content"], slug, articles[slug]["meta"]["title"], fname, desc))
         sid = html.escape(fname.rsplit(".", 1)[0])
         return ('<div class="shot"><div class="cam">📷</div><div>'
