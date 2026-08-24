@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Identificador de FVG (FVG Identifier) — Centro de Ayuda de DeepCharts</title>
+<meta name="description" content="Detecte y resalte automáticamente los Fair Value Gaps (FVG) en el gráfico, con filtros por tamaño en ticks, reglas de mitigación y controles de extensión.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/quick-start-first-trade.html">Guía rápida</a><a href="../article/get-help.html">Soporte</a><a class="kb-switch" href="../../es/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/fvg-identifier.html">English</a><a class="lang-item" href="../../it/article/fvg-identifier.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primeros pasos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Bienvenido a DeepCharts: recorrido por la plataforma</a></li><li><a href="../article/system-requirements.html">Requisitos del sistema</a></li><li><a href="../article/install-deepcharts.html">Cómo instalar DeepCharts y activar su licencia</a></li><li><a href="../article/free-delayed-data-feed.html">Cómo usar la fuente de datos gratuita con 15 minutos de retraso</a></li><li><a href="../article/buy-data-feed.html">Cómo comprar una fuente de datos y obtener sus credenciales</a></li><li><a href="../article/first-chart.html">Abra su primer gráfico</a></li><li><a href="../article/simulation-accounts.html">Cuentas de trading y simulación</a></li><li><a href="../article/quick-start-first-trade.html">Inicio rápido: de la instalación a su primera operación</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Conexiones y fuentes de datos <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configuración inicial</li><li><a href="../article/compatibility-guide.html">Brókers, empresas prop y fuentes de datos compatibles</a></li><li><a href="../article/connect-data-feed.html">Cómo conectar una fuente de datos (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a></li><li><a href="../article/sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a></li><li><a href="../article/connect-dxfeed.html">Cómo conectar una fuente de datos dxFeed</a></li><li><a href="../article/connect-rithmic.html">Cómo conectar una fuente de datos de Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Conectar Rithmic mediante el plugin de RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a></li><li><a href="../article/connect-apex.html">Cómo conectar Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Cómo conectar una cuenta dxFeed de empresa prop (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Cómo conectar CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Cómo conectar Interactive Brokers (solo ejecución)</a></li><li><a href="../article/competition-connect.html">Competición de DeepCharts: únase y conéctese</a></li><li><a href="../article/end-of-day-data.html">Conectar datos históricos (fin de día)</a></li><li><a href="../article/manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li><li class="nav-sub">Solución de problemas</li><li><a href="../article/feed-connected-chart-not-moving.html">Solución: fuente en vivo conectada pero el gráfico no se mueve</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Solución: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Solución: Connection Failed — Verifique el nombre de usuario y la contraseña</a></li><li><a href="../article/fix-bad-server.html">Solución: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Solución: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Solución: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Solución: No se puede cargar la DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Solución: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Solución: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Solución: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Solución: conexión perdida al abrir un gráfico</a></li><li><a href="../article/symbol-subscription-issue.html">Solución: Problema de suscripción de símbolo</a></li><li><a href="../article/app-crashes-saving-feed.html">Solución: la aplicación se cierra al guardar la configuración de la fuente</a></li><li><a href="../article/gaps-in-price.html">Solución: gaps de precio en los gráficos</a></li><li><a href="../article/data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Gráficos y espacio de trabajo <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La ventana de gráfico</a></li><li><a href="../article/price-chart-settings.html">Configuración del gráfico de precios</a></li><li><a href="../article/chart-display-options.html">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</a></li><li><a href="../article/drawing-tools.html">Herramientas de dibujo y anotaciones</a></li><li><a href="../article/templates-workspaces.html">Plantillas y espacios de trabajo</a></li><li><a href="../article/quick-chart-templates.html">Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Vincular ventanas con grupos de color</a></li><li><a href="../article/replay-data.html">Reproducir datos de mercado</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalice el idioma, el tema y los sonidos de notificación</a></li><li><a href="../article/keyboard-shortcuts.html">Cómo configurar atajos de teclado</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Referencia de atajos de teclado</a></li><li><a href="../article/multi-monitor-windows.html">Organizar ventanas en varios monitores (y recuperar ventanas fuera de pantalla)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Ventanas de la plataforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (la cinta)</a></li><li><a href="../article/advanced-dom.html">Ventana Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Ventana de gráfico de perfil (perfiles TPO y de volumen)</a></li><li><a href="../article/scanner-window.html">Escáner de mercado</a></li><li><a href="../article/correlation-viewer.html">Visor de correlación</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading y órdenes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Operar desde el gráfico</a></li><li><a href="../article/trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading en el gráfico (escalera de trading con clics)</a></li><li><a href="../article/depth-of-market.html">Indicador de profundidad de mercado (DOM)</a></li><li><a href="../article/oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Ventana de órdenes</a></li><li><a href="../article/portfolio-wallet.html">Cartera (Wallet)</a></li><li><a href="../article/risk-manager.html">Gestor de riesgos</a></li><li><a href="../article/trade-copier.html">Cómo configurar el Trade Copier</a></li><li><a href="../article/performance-analysis.html">Análisis de rendimiento (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Conceptos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li><li><a href="../article/understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción</a></li><li><a href="../article/understanding-icebergs-absorption.html">Entender los icebergs y la absorción</a></li><li><a href="../article/understanding-vwap.html">Entender el VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Cómo leer un footprint: ejemplos prácticos</a></li><li><a href="../article/glossary.html">Glosario de términos de flujo de órdenes y de la plataforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicadores y análisis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fundamentos de indicadores</li><li><a href="../article/different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li><li><a href="../article/indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li><li class="nav-sub">Indicadores profundos</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Tendencia</li><li><a href="../article/moving-average.html">Media móvil</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">SAR Parabólico</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regresión lineal</a></li><li><a href="../article/regression-channel.html">Canal de regresión</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Canal de Donchian</a></li><li><a href="../article/adx.html">Índice direccional promedio (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Oscilador Aroon</a></li><li class="nav-sub">Momentum y osciladores</li><li><a href="../article/rsi.html">Índice de fuerza relativa (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscilador estocástico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Tasa de cambio (ROC)</a></li><li><a href="../article/cci.html">Índice de canal de mercancías (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Oscilador Awesome</a></li><li><a href="../article/inverse-cyber-cycle.html">Ciclo Cibernético Inverso (Inverse Cyber Cycle)</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilidad y bandas</li><li><a href="../article/bollinger-bands.html">Bandas de Bollinger</a></li><li><a href="../article/keltner-channel.html">Canal de Keltner</a></li><li><a href="../article/atr.html">Rango Verdadero Medio (ATR)</a></li><li><a href="../article/standard-deviation.html">Desviación estándar</a></li><li><a href="../article/vwap-envelopes.html">Envolventes VWAP</a></li><li><a href="../article/adr-target.html">Objetivo de rango diario promedio (ADR Target)</a></li><li class="nav-sub">Volumen y delta</li><li><a href="../article/volume.html">Volumen</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Resaltado de delta %</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Swing de volumen (Volume Swing)</a></li><li><a href="../article/volume-delta-sprint.html">Sprint de volumen/delta (Volume/Delta Sprint)</a></li><li><a href="../article/chaikin-ad.html">Acumulación/Distribución de Chaikin</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Velocidad de la cinta</a></li><li><a href="../article/speed-of-tape-instant.html">Velocidad de la cinta (instantánea)</a></li><li><a href="../article/market-statistics.html">Estadísticas de mercado</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Flujo de órdenes y subasta</li><li><a href="../article/market-profile-tpo.html">Perfil de mercado (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a></li><li><a href="../article/imbalance-rejector.html">Rechazador de Desequilibrios (Imbalance Rejector)</a></li><li><a href="../article/session-imbalance.html">Desequilibrio de sesión</a></li><li><a href="../article/unfinished-auction.html">Subasta sin terminar (Unfinished Auction)</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">POC Dinámico</a></li><li><a href="../article/bar-poc.html">POC de barra</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Niveles y patrones</li><li><a href="../article/pivot-points.html">Puntos pivote</a></li><li><a href="../article/important-levels.html">Niveles importantes</a></li><li><a href="../article/absolute-levels.html">Niveles absolutos</a></li><li><a href="../article/price-movement-levels.html">Niveles de movimiento del precio</a></li><li><a href="../article/session-marker.html">Marcador de sesión</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Detector de gaps (Gap Detector)</a></li><li><a href="../article/fvg-identifier.html" class="active">Identificador de FVG (FVG Identifier)</a></li><li><a href="../article/divergence-detector.html">Detector de divergencias</a></li><li><a href="../article/confluence-identifier.html">Identificador de Confluencias</a></li><li class="nav-sub">Superposiciones de gráfico</li><li><a href="../article/candlestick-bar.html">Barra de velas (Candlestick Bar)</a></li><li><a href="../article/overlay-chart.html">Superposición de gráfico (Overlay Chart)</a></li><li><a href="../article/overlay-symbol.html">Superposición de símbolo (Overlay Symbol)</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Superposición de velas de marco temporal (Overlay Timeframe Candlestick)</a></li><li><a href="../article/overlay-timeframe-highlight.html">Resaltado de marco temporal (Overlay Timeframe Highlight)</a></li><li><a href="../article/shift-candle.html">Vela Shift</a></li><li><a href="../article/text-on-chart.html">Texto en el gráfico</a></li><li><a href="../article/annotations-overlay.html">Superposición de anotaciones</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Datos y base de datos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover de símbolos (cambio de mes de contrato)</a></li><li><a href="../article/delete-market-data.html">Eliminar datos de mercado (métodos en la aplicación y manual)</a></li><li><a href="../article/download-data.html">Volver a descargar datos históricos (herramienta Download Data)</a></li><li><a href="../article/database-optimization.html">Optimización de la base de datos</a></li><li><a href="../article/database-problems.html">Solución: problemas de la base de datos</a></li><li><a href="../article/fix-could-not-find-path.html">Solución: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Solución de problemas y soporte <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Solución: problemas de instalación y requisitos básicos</a></li><li><a href="../article/installation-setup-failed.html">Solución: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Solución: una política de control de aplicaciones bloquea DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Solución: la herramienta de dibujo Rectángulo no funciona</a></li><li><a href="../article/chart-zoom.html">Solución: el zoom del gráfico no funciona</a></li><li><a href="../article/license-issues.html">Solución: problemas de licencia y activación</a></li><li><a href="../article/diagnostic-report.html">Informe de diagnóstico: antes de contactar con soporte</a></li><li><a href="../article/get-help.html">Cómo obtener ayuda (chat, informe de diagnóstico, soporte)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Cuenta y facturación <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Administre sus suscripciones y facturación</a></li><li><a href="../article/move-to-new-computer.html">Mover DeepCharts a un ordenador nuevo</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicadores y análisis</a> › Niveles y patrones</div>
+<div class="article-head"><h1>Identificador de FVG (FVG Identifier)</h1>
+<p class="article-desc">Detecte y resalte automáticamente los Fair Value Gaps (FVG) en el gráfico, con filtros por tamaño en ticks, reglas de mitigación y controles de extensión.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 5 min read</span>
+  <a class="btn-pdf" href="../pdf/fvg-identifier.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>El Identificador de FVG (FVG Identifier) detecta y resalta automáticamente los Fair Value Gaps (FVG) en el gráfico. Un Fair Value Gap se forma cuando el precio se mueve con la agresividad suficiente para dejar un desequilibrio entre velas: un rango de precios que fue saltado en lugar de negociado en ambas direcciones. Estas zonas actúan con frecuencia como áreas futuras de reacción o mitigación, y por eso muchos traders las mantienen marcadas.</p>
+<p>En lugar de buscar usted mismo secuencias de tres velas a ojo, el indicador encuentra los gaps que cumplen los criterios, los sombrea, los extiende hacia adelante y puede eliminarlos automáticamente una vez que el precio ha vuelto a negociar dentro de ellos.</p>
+<h2 id="qu-es">Qué es</h2>
+<p>El Identificador de FVG responde a la pregunta &quot;¿dónde se movió el precio tan rápido que dejó un desequilibrio, y cuáles de esas zonas siguen abiertas?&quot; Cuando un gap entre velas alcanza su tamaño mínimo (en ticks), el indicador dibuja una zona sombreada sobre ese rango de precios y la extiende hacia la derecha hasta que se cumple su regla de mitigación: por ejemplo, cuando el precio entra en la zona con una mecha o rellena un porcentaje determinado de ella.</p>
+<p>Los FVG suelen leerse como huellas de un flujo de órdenes agresivo y unilateral: el mercado se movió tan rápido que en ese rango de precios nunca hubo negociación en ambos sentidos, y el precio a menudo regresa más tarde para &quot;reequilibrarlo&quot;.</p>
+<h2 id="cu-ndo-usarlo">Cuándo usarlo</h2>
+<ul>
+<li>Para marcar zonas potenciales de reacción: los FVG abiertos son áreas populares para entradas en retroceso en la dirección del movimiento impulsivo original.</li>
+<li>Para hacer seguimiento de la mitigación: el indicador puede eliminar o actualizar las zonas a medida que el precio vuelve a negociar dentro de ellas, dejando en el gráfico solo los desequilibrios todavía relevantes.</li>
+<li>Para filtrar la relevancia: los límites de tamaño en ticks le permiten ignorar los microgaps y acotar los desmesurados, de modo que solo queden zonas operables.</li>
+<li>Para complementar el análisis de flujo de órdenes: los FVG derivados de la acción del precio suelen coincidir con señales de desequilibrio de herramientas basadas en volumen como <a href="./imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a>.</li>
+</ul>
+<h2 id="inicio-r-pido">Inicio rápido</h2>
+<ol>
+<li>Abra un gráfico y haga clic en el icono de gráfico de barras en la esquina superior izquierda para abrir el panel <strong>Indicators</strong>.</li>
+<li>Haga clic en <strong>Indicators</strong> para abrir la <strong>Indicator List</strong> completa.</li>
+<li>Busque &quot;FVG Identifier&quot; y haga clic en <strong>+</strong> para añadirlo.</li>
+<li>Haga clic en el icono de engranaje junto al indicador para abrir su configuración. Ajuste <strong>Min num ticks</strong> lo bastante alto para excluir el ruido rutinario entre barras en su marco temporal: empiece con un valor pequeño y auméntelo hasta que solo queden zonas limpias.</li>
+<li>Elija si las zonas deben desaparecer al ser tocadas por una mecha (<strong>Remove Line On Shadow Triggered</strong>) o solo tras un relleno porcentual (<strong>% breakout</strong>), según lo estricta que sea su definición de mitigación.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Un gráfico de precios con el Identificador de FVG activo: dos zonas FVG sombreadas que se extienden hacia la derecha desde movimientos impulsivos, una todavía abierta y otra a punto de ser tocada por un retroceso</div><div class="s-file">ID: <b class="s-id">dc-es-fvg-identifier-01</b> · save as <code>dc-es-fvg-identifier-01.png</code></div></div></div>
+<h2 id="c-mo-leerlo">Cómo leerlo</h2>
+<ul>
+<li><strong>Un FVG abierto por debajo del precio</strong> (dejado por un movimiento alcista agresivo) es una zona potencial de demanda/reacción en un retroceso; <strong>un FVG abierto por encima del precio</strong> es el caso espejo para movimientos bajistas.</li>
+<li><strong>El primer toque es el que más importa.</strong> El manual habitual vigila el primer regreso a una zona fresca; una zona en la que se ha entrado repetidamente ya ha completado la mayor parte de su reequilibrio.</li>
+<li><strong>La mitigación es su regla de limpieza.</strong> Con una regla estricta (cualquier mecha elimina la zona) su gráfico se mantiene minimalista; con una regla de relleno porcentual, las zonas parcialmente rellenadas sobreviven y usted puede operar el resto sin rellenar.</li>
+<li><strong>El tamaño es información.</strong> Los gaps muy pequeños son en su mayoría ruido, para eso existe <strong>Min num ticks</strong>, mientras que los gaps extremadamente grandes suelen provenir de eventos de noticias y se comportan de forma menos predecible, motivo por el cual existe el límite <strong>Max num ticks</strong>.</li>
+</ul>
+<h2 id="referencia-de-configuraci-n">Referencia de configuración</h2>
+<h3 id="visualizaci-n">Visualización</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Horizontal</strong></td>
+<td>Dibuja los resaltados de FVG directamente sobre el gráfico de precios.</td>
+</tr>
+<tr>
+<td><strong>Vertical</strong></td>
+<td>Muestra el indicador en vertical, donde esté disponible.</td>
+</tr>
+<tr>
+<td><strong>Panel</strong></td>
+<td>Selecciona qué panel del gráfico recibe la superposición.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="par-metros-generales">Parámetros generales</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Min num ticks</strong></td>
+<td>El tamaño mínimo, en ticks, requerido para que un gap se considere un FVG válido. Valores más pequeños detectan más gaps; valores más grandes filtran los desequilibrios menores.</td>
+</tr>
+<tr>
+<td><strong>Max num ticks</strong></td>
+<td>El tamaño máximo de gap permitido para calificar como FVG. Filtra los movimientos excesivamente grandes.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuraci-n-de-trazado-plot-settings">Configuración de trazado (Plot Settings)</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>Grosor de los bordes de las zonas FVG.</td>
+</tr>
+<tr>
+<td><strong>Color</strong></td>
+<td>Color del área FVG resaltada.</td>
+</tr>
+<tr>
+<td><strong>Back Opacity</strong></td>
+<td>Transparencia del fondo de la zona: cuanto más alto, más sólido; cuanto más bajo, más transparente.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="extensi-n">Extensión</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Reset Start Day</strong></td>
+<td>Reinicia el seguimiento de FVG al comienzo de cada día de trading.</td>
+</tr>
+<tr>
+<td><strong>Remove Line On Shadow Triggered</strong></td>
+<td>Elimina una zona FVG en cuanto el precio entra en ella con una mecha.</td>
+</tr>
+<tr>
+<td><strong>Max bars extension</strong></td>
+<td>Limita cuántas barras se extiende una zona hacia adelante. 0 = se extiende indefinidamente.</td>
+</tr>
+<tr>
+<td><strong>% breakout</strong></td>
+<td>El porcentaje del gap que debe rellenarse para que la zona cuente como mitigada.</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">El diálogo de configuración del Identificador de FVG mostrando los Parámetros generales (Min num ticks, Max num ticks), la Configuración de trazado y el grupo Extensión con Reset Start Day, Remove Line On Shadow Triggered, Max bars extension y % breakout</div><div class="s-file">ID: <b class="s-id">dc-es-fvg-identifier-02</b> · save as <code>dc-es-fvg-identifier-02.png</code></div></div></div>
+<h2 id="consejos-y-errores-comunes">Consejos y errores comunes</h2>
+<ul>
+<li><strong>No use un mínimo de 0 ticks en gráficos rápidos.</strong> Los gráficos de futuros en marcos temporales bajos producen pequeños desequilibrios constantemente; sin un <strong>Min num ticks</strong> razonable, el gráfico se convierte en un empapelado.</li>
+<li><strong>Decida qué significa &quot;mitigado&quot; antes de operarlo.</strong> Una regla de toque de mecha y una regla de relleno del 50% producen gráficos distintos y operaciones distintas: ajuste <strong>Remove Line On Shadow Triggered</strong> y <strong>% breakout</strong> según su propio manual, no según los valores por defecto del último tutorial que haya visto.</li>
+<li><strong>Use Reset Start Day de forma deliberada.</strong> Habilitarlo mantiene el gráfico centrado en los desequilibrios de hoy; deshabilitarlo conserva zonas de varios días, que importan más en marcos temporales altos.</li>
+<li><strong>Los FVG son una aproximación al desequilibrio basada en la acción del precio, no una prueba de él.</strong> Las herramientas basadas en volumen miden la agresión directamente; cuando un FVG y un desequilibrio de volumen coinciden, la zona merece más peso. Consulte <a href="./understanding-auction-theory.html">Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción</a> para la lógica subyacente.</li>
+</ul>
+<h2 id="art-culos-relacionados">Artículos relacionados</h2>
+<ul>
+<li><a href="./gap-detector.html">Detector de gaps (Gap Detector)</a></li>
+<li><a href="./imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a></li>
+<li><a href="./understanding-auction-theory.html">Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción</a></li>
+<li><a href="./swing-point.html">Swing Point</a></li>
+<li><a href="./different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li>
+<li><a href="./indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./gap-detector.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Detector de gaps (Gap Detector)</div></a><a class="next" href="./divergence-detector.html"><div class="pn-lbl">Next →</div><div class="pn-title">Detector de divergencias</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#qu-es">Qué es</a></li><li class="lv2"><a href="#cu-ndo-usarlo">Cuándo usarlo</a></li><li class="lv2"><a href="#inicio-r-pido">Inicio rápido</a></li><li class="lv2"><a href="#c-mo-leerlo">Cómo leerlo</a></li><li class="lv2"><a href="#referencia-de-configuraci-n">Referencia de configuración</a></li><li class="lv3"><a href="#visualizaci-n">Visualización</a></li><li class="lv3"><a href="#par-metros-generales">Parámetros generales</a></li><li class="lv3"><a href="#configuraci-n-de-trazado-plot-settings">Configuración de trazado (Plot Settings)</a></li><li class="lv3"><a href="#extensi-n">Extensión</a></li><li class="lv2"><a href="#consejos-y-errores-comunes">Consejos y errores comunes</a></li><li class="lv2"><a href="#art-culos-relacionados">Artículos relacionados</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-es.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

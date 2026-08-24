@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Reproducción de datos de tick — Centro de Ayuda de DeepDOM</title>
+<meta name="description" content="La función de reproducción de datos de tick le permite reproducir una sesión de trading pasada como si estuviera ocurriendo en tiempo real, con la opción de practicar trading simulado al mismo tiempo.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/installation-and-first-configuration.html">Primeros pasos</a><a href="../../../es/article/get-help.html">Soporte</a><a class="kb-switch" href="../../../es/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/replay-tick-data.html">English</a><a class="lang-item" href="../../../it/deepdom/article/replay-tick-data.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemas comunes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemas de instalación</a></li><li><a href="../article/licence-issues.html">Problemas de licencia</a></li><li><a href="../article/symbol-subscription-issues.html">Problemas de suscripción de símbolos</a></li><li><a href="../article/cache-issues-deepdom.html">Problemas de caché</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Cómo hacer <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Instalación y primera configuración</a></li><li><a href="../article/general-settings.html">Configuración general</a></li><li><a href="../article/how-to-add-a-new-connection.html">Cómo añadir una nueva conexión</a></li><li><a href="../article/how-to-add-markets-correctly.html">Cómo añadir mercados correctamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Cómo configurar los atajos de teclado</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Cómo insertar notificaciones de sonido</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Cómo personalizar el idioma y el tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Cómo gestionar el rollover de símbolos</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Ventana de órdenes</a></li><li><a href="../article/trading-from-the-chart.html">Operar desde el gráfico</a></li><li><a href="../article/portfolio-risk-manager.html">Gestor de riesgos de cartera</a></li><li><a href="../article/simulation-environment.html">Entorno de simulación</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicadores <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Diferencial de oferta/demanda</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envolventes</a></li><li><a href="../article/session-imbalance-deepdom.html">Desequilibrio de sesión</a></li><li><a href="../article/book-speed.html">Velocidad del libro</a></li><li><a href="../article/volume-profile-deepdom.html">Perfil de volumen</a></li><li><a href="../article/stop-run.html">Barrido de stops (Stop Run)</a></li><li><a href="../article/absorption.html">Absorción</a></li><li><a href="../article/cumulative-iceberg-stop.html">Iceberg/Stop acumulado</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dinámico</a></li><li><a href="../article/volume-deepdom.html">Volumen</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">CVD (delta de volumen acumulado)</a></li><li><a href="../article/big-trades-deepdom.html">Operaciones grandes</a></li><li><a href="../article/important-levels-deepdom.html">Niveles importantes</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funciones <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Burbujas de volumen</a></li><li><a href="../article/heatmap.html">Mapa de calor</a></li><li><a href="../article/replay-tick-data.html" class="active">Reproducción de datos de tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicadores profundos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Iceberg Profundo (Deep Iceberg)</a></li><li><a href="../article/deep-reload.html">Recarga Profunda (Deep Reload)</a></li><li><a href="../article/deep-liquidity-scan.html">Análisis de Liquidez Profunda (Deep Liquidity Scan)</a></li><li><a href="../article/deep-delta-deepdom.html">Delta Profundo (Deep Delta)</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/features.html">Funciones</a></div>
+<div class="article-head"><h1>Reproducción de datos de tick</h1>
+<p class="article-desc">La función de reproducción de datos de tick le permite reproducir una sesión de trading pasada como si estuviera ocurriendo en tiempo real, con la opción de practicar trading simulado al mismo tiempo.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 3 min read</span>
+  <a class="btn-pdf" href="../pdf/replay-tick-data.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>La función de reproducción de datos de tick le permite reproducir una sesión de trading pasada como si estuviera ocurriendo en tiempo real, con la opción de practicar trading simulado al mismo tiempo. Esta función es especialmente útil para los usuarios que todavía están aprendiendo y, como no requiere una fuente de datos en vivo, también es una excelente manera de estudiar nuevos instrumentos financieros antes de comprar su suscripción de datos.</p>
+<h2 id="c-mo-acceder-a-la-reproducci-n-de-datos-de-tick">Cómo acceder a la reproducción de datos de tick</h2>
+<p>No necesita una fuente de datos activa para usar esta función. Para empezar:</p>
+<p>Asegúrese de que la transmisión esté desconectada; si no lo está, desconéctela antes de usar la herramienta de reproducción</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Reproducción de datos de tick — Cómo acceder a la reproducción de datos de tick (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-replay-tick-data-01</b> · save as <code>dd-es-replay-tick-data-01.png</code></div></div></div>
+<p>Haga clic en <strong>Options</strong></p>
+<p>Seleccione <strong>Tick Data Replay</strong> en el menú</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Reproducción de datos de tick — Cómo acceder a la reproducción de datos de tick (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-replay-tick-data-02</b> · save as <code>dd-es-replay-tick-data-02.png</code></div></div></div>
+<p>Se abrirá el panel <strong>Replay Management</strong> (Gestión de reproducción)</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Reproducción de datos de tick — Cómo acceder a la reproducción de datos de tick (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-replay-tick-data-03</b> · save as <code>dd-es-replay-tick-data-03.png</code></div></div></div>
+<h2 id="gesti-n-de-la-reproducci-n">Gestión de la reproducción</h2>
+<h3 id="paso-1-seleccione-su-s-mbolo">Paso 1 – Seleccione su símbolo</h3>
+<p>En el panel <strong>Replay Management</strong>, haga clic en <strong>Select Symbols</strong></p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Reproducción de datos de tick — Paso 1 – Seleccione su símbolo (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-replay-tick-data-04</b> · save as <code>dd-es-replay-tick-data-04.png</code></div></div></div>
+<p>Elija el instrumento financiero que desea reproducir</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Reproducción de datos de tick — Paso 1 – Seleccione su símbolo (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-replay-tick-data-05</b> · save as <code>dd-es-replay-tick-data-05.png</code></div></div></div>
+<p>Mantenga pulsada la tecla Ctrl mientras hace clic para seleccionar varios instrumentos y ejecutar varias reproducciones al mismo tiempo (tenga esto en cuenta si lo hace: puede estar viendo el mapa de calor de un símbolo y querer colocar una operación sobre otro símbolo desde el panel de trading. Por ejemplo, ver el mapa de calor de NQ y colocar una operación sobre MNQ desde el panel de trading)</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Reproducción de datos de tick — Paso 1 – Seleccione su símbolo (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-replay-tick-data-06</b> · save as <code>dd-es-replay-tick-data-06.png</code></div></div></div>
+<p>Una vez seleccionado, abra el espacio de trabajo con los gráficos del instrumento elegido</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Reproducción de datos de tick — Paso 1 – Seleccione su símbolo (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-replay-tick-data-07</b> · save as <code>dd-es-replay-tick-data-07.png</code></div></div></div>
+<h3 id="paso-2-establezca-la-fecha-de-inicio">Paso 2 – Establezca la fecha de inicio</h3>
+<p>Haga clic en <strong>Start Date</strong> para elegir la fecha y hora desde la que desea que comience la reproducción</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Reproducción de datos de tick — Paso 2 – Establezca la fecha de inicio (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-replay-tick-data-08</b> · save as <code>dd-es-replay-tick-data-08.png</code></div></div></div>
+<p>Nota: la reproducción solo está disponible para sesiones anteriores. La sesión del día de trading actual no está disponible para reproducción. Puede reproducir cualquier sesión de ayer o anterior.</p>
+<h3 id="paso-3-inicie-la-reproducci-n">Paso 3 – Inicie la reproducción</h3>
+<p>Una vez que todo esté configurado:</p>
+<p>Haga clic en <strong>Set</strong>: la plataforma cargará la sesión seleccionada</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Reproducción de datos de tick — Paso 3 – Inicie la reproducción (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-replay-tick-data-09</b> · save as <code>dd-es-replay-tick-data-09.png</code></div></div></div>
+<p>Haga clic en <strong>Play</strong> para iniciar la reproducción</p>
+<p>Haga clic en <strong>Pause</strong> en cualquier momento para detener la reproducción</p>
+<p>Utilice la sección <strong>Speed</strong> para aumentar la velocidad de reproducción</p>
+<p>Haga clic en <strong>Reset</strong> para detener la reproducción por completo</p>
+<h2 id="trading-simulado">Trading simulado</h2>
+<p>Mientras la reproducción está en marcha, puede practicar la colocación de órdenes como si estuviera operando en tiempo real:</p>
+<p>Habilite el <strong>Trading Panel</strong> o el <strong>Chart DOM</strong> desde la barra de herramientas</p>
+<p>Coloque órdenes en modo simulado directamente en el gráfico</p>
+<p>La simulación se comporta como una sesión en vivo, permitiéndole probar estrategias sin ningún riesgo real</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Reproducción de datos de tick — Trading simulado (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-replay-tick-data-10</b> · save as <code>dd-es-replay-tick-data-10.png</code></div></div></div>
+<h2 id="conclusi-n">Conclusión</h2>
+<p>La reproducción de datos de tick es una de las herramientas más valiosas para traders en cualquier etapa. Utilícela para revisar sesiones pasadas, estudiar nuevos instrumentos sin una suscripción de datos y ganar confianza mediante el trading simulado antes de operar en vivo.</p>
+<h2 id="sigue-teniendo-problemas">¿Sigue teniendo problemas?</h2>
+<p>Nuestro equipo de soporte está disponible 24/7 y listo para ayudarle con cualquier problema que encuentre.</p>
+<p>Cuando se ponga en contacto, incluya:</p>
+<p>Una captura de pantalla del problema</p>
+<p>Una breve descripción de lo que intentaba hacer</p>
+<p>Ticket de soporte (respuesta más rápida): visite www.deepcharts.com y cree un ticket de soporte directamente en nuestro sitio web.</p>
+<p>Soporte por correo electrónico: escríbanos a support@deepcharts.com. Tenga en cuenta que las respuestas por correo electrónico pueden tardar un poco más que un ticket de soporte.</p>
+</article>
+<div class="pn"><a class="prev" href="./heatmap.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Mapa de calor</div></a><a class="next" href="./deep-iceberg.html"><div class="pn-lbl">Next →</div><div class="pn-title">Iceberg Profundo (Deep Iceberg)</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#c-mo-acceder-a-la-reproducci-n-de-datos-de-tick">Cómo acceder a la reproducción de datos de tick</a></li><li class="lv2"><a href="#gesti-n-de-la-reproducci-n">Gestión de la reproducción</a></li><li class="lv3"><a href="#paso-1-seleccione-su-s-mbolo">Paso 1 – Seleccione su símbolo</a></li><li class="lv3"><a href="#paso-2-establezca-la-fecha-de-inicio">Paso 2 – Establezca la fecha de inicio</a></li><li class="lv3"><a href="#paso-3-inicie-la-reproducci-n">Paso 3 – Inicie la reproducción</a></li><li class="lv2"><a href="#trading-simulado">Trading simulado</a></li><li class="lv2"><a href="#conclusi-n">Conclusión</a></li><li class="lv2"><a href="#sigue-teniendo-problemas">¿Sigue teniendo problemas?</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-es-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>

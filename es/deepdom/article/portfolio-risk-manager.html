@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Gestor de riesgos de cartera — Centro de Ayuda de DeepDOM</title>
+<meta name="description" content="Gestione y realice el seguimiento de las órdenes activas, las posiciones y el historial de ejecuciones a través de la interfaz dedicada de la Ventana de órdenes">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/installation-and-first-configuration.html">Primeros pasos</a><a href="../../../es/article/get-help.html">Soporte</a><a class="kb-switch" href="../../../es/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/portfolio-risk-manager.html">English</a><a class="lang-item" href="../../../it/deepdom/article/portfolio-risk-manager.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemas comunes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemas de instalación</a></li><li><a href="../article/licence-issues.html">Problemas de licencia</a></li><li><a href="../article/symbol-subscription-issues.html">Problemas de suscripción de símbolos</a></li><li><a href="../article/cache-issues-deepdom.html">Problemas de caché</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Cómo hacer <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Instalación y primera configuración</a></li><li><a href="../article/general-settings.html">Configuración general</a></li><li><a href="../article/how-to-add-a-new-connection.html">Cómo añadir una nueva conexión</a></li><li><a href="../article/how-to-add-markets-correctly.html">Cómo añadir mercados correctamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Cómo configurar los atajos de teclado</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Cómo insertar notificaciones de sonido</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Cómo personalizar el idioma y el tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Cómo gestionar el rollover de símbolos</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Ventana de órdenes</a></li><li><a href="../article/trading-from-the-chart.html">Operar desde el gráfico</a></li><li><a href="../article/portfolio-risk-manager.html" class="active">Gestor de riesgos de cartera</a></li><li><a href="../article/simulation-environment.html">Entorno de simulación</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicadores <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Diferencial de oferta/demanda</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envolventes</a></li><li><a href="../article/session-imbalance-deepdom.html">Desequilibrio de sesión</a></li><li><a href="../article/book-speed.html">Velocidad del libro</a></li><li><a href="../article/volume-profile-deepdom.html">Perfil de volumen</a></li><li><a href="../article/stop-run.html">Barrido de stops (Stop Run)</a></li><li><a href="../article/absorption.html">Absorción</a></li><li><a href="../article/cumulative-iceberg-stop.html">Iceberg/Stop acumulado</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dinámico</a></li><li><a href="../article/volume-deepdom.html">Volumen</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">CVD (delta de volumen acumulado)</a></li><li><a href="../article/big-trades-deepdom.html">Operaciones grandes</a></li><li><a href="../article/important-levels-deepdom.html">Niveles importantes</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funciones <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Burbujas de volumen</a></li><li><a href="../article/heatmap.html">Mapa de calor</a></li><li><a href="../article/replay-tick-data.html">Reproducción de datos de tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicadores profundos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Iceberg Profundo (Deep Iceberg)</a></li><li><a href="../article/deep-reload.html">Recarga Profunda (Deep Reload)</a></li><li><a href="../article/deep-liquidity-scan.html">Análisis de Liquidez Profunda (Deep Liquidity Scan)</a></li><li><a href="../article/deep-delta-deepdom.html">Delta Profundo (Deep Delta)</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/trading.html">Trading</a></div>
+<div class="article-head"><h1>Gestor de riesgos de cartera</h1>
+<p class="article-desc">Gestione y realice el seguimiento de las órdenes activas, las posiciones y el historial de ejecuciones a través de la interfaz dedicada de la Ventana de órdenes</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">How-to</span>
+  <span class="badge">🕒 6 min read</span>
+  <a class="btn-pdf" href="../pdf/portfolio-risk-manager.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Gestione y realice el seguimiento de las órdenes activas, las posiciones y el historial de ejecuciones a través de la interfaz dedicada de la Ventana de órdenes</p>
+<h2 id="gestor-de-riesgos">Gestor de riesgos</h2>
+<p>El Gestor de riesgos de Deepdom permite a los traders aplicar controles de riesgo profesionales y automatizados directamente dentro de la plataforma.</p>
+<p>Al definir reglas estrictas de gestión de riesgos, los traders pueden imponer disciplina en tiempo real. Si se incumple cualquier regla predefinida, la cuenta se bloquea automáticamente durante el día (o durante un período especificado), garantizando el cumplimiento del plan de trading y evitando la toma de decisiones emocionales.</p>
+<h2 id="1-c-mo-acceder-al-gestor-de-riesgos">1. Cómo acceder al Gestor de riesgos</h2>
+<ol>
+<li>Vaya a <strong>Trading</strong> en la barra de navegación principal.</li>
+<li>Haga clic en <strong>Show Portfolio</strong>.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — 1. Cómo acceder al Gestor de riesgos (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-01</b> · save as <code>dd-es-portfolio-risk-manager-01.png</code></div></div></div>
+<h2 id="2-secci-n-de-vista-general">2. Sección de vista general</h2>
+<p>En la pestaña <strong>Overview</strong> (Vista general), puede ver todas las cuentas conectadas a Deepdom.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — 2. Sección de vista general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-02</b> · save as <code>dd-es-portfolio-risk-manager-02.png</code></div></div></div>
+<p>Verá una tarjeta principal por cada conexión (por ejemplo: SIM, Rithmic, Dxfeed).</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — 2. Sección de vista general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-03</b> · save as <code>dd-es-portfolio-risk-manager-03.png</code></div></div></div>
+<h4>Información de la tarjeta de conexión</h4>
+<p>Nombre de la conexión (arriba a la izquierda, p. ej., SIM)</p>
+<p>Daily Profit (Beneficio diario): PnL diario total de todas las cuentas bajo esa conexión</p>
+<p>Open Profit (Beneficio abierto): PnL no realizado actual</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — Información de la tarjeta de conexión (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-04</b> · save as <code>dd-es-portfolio-risk-manager-04.png</code></div></div></div>
+<h4>Controles a nivel de conexión</h4>
+<p>En el lado derecho de la tarjeta de conexión:</p>
+<h4>Botón de pausa</h4>
+<p>Le permite pausar el trading durante:</p>
+<p>1 minuto</p>
+<p>10 minutos</p>
+<p>30 minutos</p>
+<p>60 minutos</p>
+<p>Toda la sesión</p>
+<h4>Cuando está en pausa:</h4>
+<p>Todas las cuentas bajo la conexión quedan bloqueadas</p>
+<p>Aparece el estado &quot;Lockout&quot; (Bloqueo)</p>
+<p>Un temporizador de cuenta atrás muestra cuándo se reanudará el trading</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — Cuando está en pausa: (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-05</b> · save as <code>dd-es-portfolio-risk-manager-05.png</code></div></div></div>
+<h4>Botón de cierre</h4>
+<p>Cierra (aplana) instantáneamente todas las posiciones abiertas de todas las cuentas bajo esa conexión.</p>
+<h2 id="3-tarjetas-de-cuenta-individuales">3. Tarjetas de cuenta individuales</h2>
+<p>Cada cuenta bajo una conexión tiene su propio panel de control.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — 3. Tarjetas de cuenta individuales (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-06</b> · save as <code>dd-es-portfolio-risk-manager-06.png</code></div></div></div>
+<h4>Botones a nivel de cuenta</h4>
+<p>• Botón de ojo: abre la vista detallada de gestión de riesgos de esa cuenta</p>
+<p>• Botón de pausa: pausa solo esa cuenta específica</p>
+<p>• Botón de cierre: aplana solo esa cuenta</p>
+<h4>Información de la cuenta</h4>
+<p>• Balance (Saldo)</p>
+<p>• PnL diario</p>
+<p>• PnL abierto</p>
+<h2 id="4-configuraci-n-de-gesti-n-monetaria-lado-del-cliente">4. Configuración de gestión monetaria (lado del cliente)</h2>
+<p>Haga clic en el botón <strong>Settings</strong> para configurar las reglas de riesgo.</p>
+<p>Se le pedirá que elija entre:</p>
+<p>• Configuración a nivel de cuenta</p>
+<p>• Configuración a nivel de conexión</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — 4. Configuración de gestión monetaria (lado del cliente) (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-07</b> · save as <code>dd-es-portfolio-risk-manager-07.png</code></div></div></div>
+<p>Importante: el Gestor de riesgos opera en el lado del cliente. Si la plataforma está cerrada, el gestor monetario no funcionará.</p>
+<h2 id="5-configuraci-n-general">5. Configuración general</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — 5. Configuración general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-08</b> · save as <code>dd-es-portfolio-risk-manager-08.png</code></div></div></div>
+<h4>Habilitar</h4>
+<p>Active o desactive el gestor monetario.</p>
+<h4>Symbol – Exclude Not Listed (Símbolo: excluir no listados)</h4>
+<p>Si está habilitado, solo podrá operar los símbolos que añada manualmente.</p>
+<p>Ejemplo: si desea evitar operar accidentalmente el contrato Mini en lugar del Micro, añada solo el símbolo Micro. Todos los demás símbolos quedarán bloqueados.</p>
+<h2 id="6-l-mite-de-p-rdida-diaria">6. Límite de pérdida diaria</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — 6. Límite de pérdida diaria (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-09</b> · save as <code>dd-es-portfolio-risk-manager-09.png</code></div></div></div>
+<p>• Habilitar: active la protección de pérdida diaria</p>
+<p>• Valor: pérdida máxima permitida</p>
+<p>• Unidad: dinero ($) o porcentaje (%)</p>
+<p>Una vez incumplido, se ejecutará la acción seleccionada.</p>
+<h2 id="7-l-mite-de-beneficio-diario">7. Límite de beneficio diario</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — 7. Límite de beneficio diario (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-10</b> · save as <code>dd-es-portfolio-risk-manager-10.png</code></div></div></div>
+<p>• Habilitar: active la protección de beneficio diario</p>
+<p>• Valor: beneficio máximo permitido</p>
+<p>• Unidad: dinero ($) o porcentaje (%)</p>
+<p>• Include Open Position (Incluir posición abierta): si está habilitado, las operaciones abiertas se cerrarán una vez alcanzado el límite.</p>
+<h2 id="8-trailing-stop-drawdown-m-vil-diario">8. Trailing Stop (drawdown móvil diario)</h2>
+<h4>Habilitar</h4>
+<p>Active el límite móvil.</p>
+<h4>Opciones de acción:</h4>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — Opciones de acción: (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-11</b> · save as <code>dd-es-portfolio-risk-manager-11.png</code></div></div></div>
+<p>• Daily Pause (Pausa diaria): bloquea la cuenta durante la sesión</p>
+<p>• Time Pause (Pausa temporal): bloquea la cuenta durante los minutos seleccionados</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — Opciones de acción: (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-12</b> · save as <code>dd-es-portfolio-risk-manager-12.png</code></div></div></div>
+<p>• Flat (Aplanar): cierra las posiciones pero no bloquea</p>
+<h4>Valor y unidad</h4>
+<p>Se establece en dinero o porcentaje.</p>
+<h4>Incluir posición abierta</h4>
+<p>Si está habilitado, el trailing stop se aplica también al PnL no realizado.</p>
+<p>Ejemplo: si el beneficio abierto retrocede más que el límite móvil, el sistema ejecuta la acción seleccionada.</p>
+<h2 id="9-l-mites-basados-en-la-cartera">9. Límites basados en la cartera</h2>
+<h4>Límite de pérdida de cartera</h4>
+<p>Controla la pérdida total de todas las posiciones abiertas (p. ej., ES + NQ combinados).</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — Límite de pérdida de cartera (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-13</b> · save as <code>dd-es-portfolio-risk-manager-13.png</code></div></div></div>
+<h4>Mismas opciones de configuración:</h4>
+<p>• Habilitar</p>
+<p>• Acción</p>
+<p>• Valor</p>
+<p>• Unidad</p>
+<h4>Límite de beneficio de cartera</h4>
+<p>Misma lógica que el límite de beneficio diario, pero aplicada a toda la cartera.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — Límite de beneficio de cartera (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-14</b> · save as <code>dd-es-portfolio-risk-manager-14.png</code></div></div></div>
+<h2 id="10-l-mites-basados-en-posiciones">10. Límites basados en posiciones</h2>
+<h4>Límite de pérdida por posición</h4>
+<p>Se aplica a operaciones individuales. Si se supera, la posición se aplana automáticamente y se ejecuta la acción.</p>
+<h4>Límite de beneficio por posición</h4>
+<p>Misma lógica, pero para objetivos de beneficio en posiciones individuales.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — Límite de beneficio por posición (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-15</b> · save as <code>dd-es-portfolio-risk-manager-15.png</code></div></div></div>
+<h2 id="11-limitar-horas-de-trading-zona-horaria-est">11. Limitar horas de trading (zona horaria EST)</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — 11. Limitar horas de trading (zona horaria EST) (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-16</b> · save as <code>dd-es-portfolio-risk-manager-16.png</code></div></div></div>
+<p>Puede restringir el trading a ventanas horarias específicas.</p>
+<h4>Importante:</h4>
+<p>• La hora se basa en la zona horaria EST</p>
+<p>• Es independiente de la zona horaria de su PC o de la del gráfico</p>
+<h4>Establezca:</h4>
+<p>• Begin Time (Hora de inicio)</p>
+<p>• End Time (Hora de fin)</p>
+<h2 id="12-a-adir-s-mbolo">12. Añadir símbolo</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — 12. Añadir símbolo (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-17</b> · save as <code>dd-es-portfolio-risk-manager-17.png</code></div></div></div>
+<p>Añada o elimine los símbolos permitidos para el trading.</p>
+<p>Si Symbol – Exclude Not Listed está habilitado, solo se podrán operar los símbolos añadidos.</p>
+<h2 id="13-inhibir-cambios-hasta-la-pr-xima-sesi-n">13. Inhibir cambios hasta la próxima sesión</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — 13. Inhibir cambios hasta la próxima sesión (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-18</b> · save as <code>dd-es-portfolio-risk-manager-18.png</code></div></div></div>
+<p>Si está habilitado:</p>
+<p>• Cualquier cambio realizado en la configuración de riesgo solo se aplicará el próximo día de trading.</p>
+<h2 id="14-estado">14. Estado</h2>
+<p>El estado puede mostrar:</p>
+<p>Lockout (Bloqueo): la cuenta está bloqueada debido al incumplimiento de una regla. Un temporizador de cuenta atrás muestra cuándo se reanudará el trading.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — 14. Estado (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-19</b> · save as <code>dd-es-portfolio-risk-manager-19.png</code></div></div></div>
+<h2 id="15-vista-detallada-de-la-cuenta">15. Vista detallada de la cuenta</h2>
+<p>Haga clic en el botón de ojo para ver las posiciones detalladas y la información de riesgo de la cuenta.</p>
+<h4>Nota importante</h4>
+<p>El Gestor de riesgos sigue la zona horaria de CME (EST) para los reinicios diarios.</p>
+<h4>Si está bloqueada durante el día:</h4>
+<p>• La cuenta se desbloquea automáticamente a las 18:00 EST.</p>
+<p>• La única manera de desbloquear la cuenta después de que se active el bloqueo del Gestor de riesgos es pedir al equipo de soporte de Deepdom que la desbloquee desde el backend, y esto puede tardar algún tiempo.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gestor de riesgos de cartera — Si está bloqueada durante el día: (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-portfolio-risk-manager-20</b> · save as <code>dd-es-portfolio-risk-manager-20.png</code></div></div></div>
+<h2 id="resumen">Resumen</h2>
+<p>El Gestor de riesgos de Deepdom proporciona:</p>
+<p>• Límites diarios de pérdida y beneficio</p>
+<p>• Protección de drawdown móvil</p>
+<p>• Controles de riesgo a nivel de cartera</p>
+<p>• Límites basados en posiciones</p>
+<p>• Trading restringido por horario</p>
+<p>• Protección basada en símbolos</p>
+<p>• Aplicación automática de bloqueos</p>
+<p>Transforma la gestión de riesgos de una decisión discrecional en un sistema de disciplina automatizado, garantizando que los traders sigan estrictamente su plan de riesgo predefinido.</p>
+<h2 id="sigue-teniendo-problemas">¿Sigue teniendo problemas?</h2>
+<p>Nuestro equipo de soporte está disponible 24/7 y listo para ayudarle con cualquier problema que encuentre. Cuando se ponga en contacto, incluya:</p>
+<p>Una captura de pantalla del problema.</p>
+<p>Una breve descripción de lo que intentaba hacer.</p>
+<p>Ticket de soporte (respuesta más rápida): visite www.deepcharts.com y cree un ticket de soporte directamente en nuestro sitio web.</p>
+<p>Soporte por correo electrónico: también puede escribirnos a support@deepcharts.com. Tenga en cuenta que las respuestas por correo electrónico pueden tardar un poco más que un ticket de soporte.</p>
+</article>
+<div class="pn"><a class="prev" href="./trading-from-the-chart.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Operar desde el gráfico</div></a><a class="next" href="./simulation-environment.html"><div class="pn-lbl">Next →</div><div class="pn-title">Entorno de simulación</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#gestor-de-riesgos">Gestor de riesgos</a></li><li class="lv2"><a href="#1-c-mo-acceder-al-gestor-de-riesgos">1. Cómo acceder al Gestor de riesgos</a></li><li class="lv2"><a href="#2-secci-n-de-vista-general">2. Sección de vista general</a></li><li class="lv2"><a href="#3-tarjetas-de-cuenta-individuales">3. Tarjetas de cuenta individuales</a></li><li class="lv2"><a href="#4-configuraci-n-de-gesti-n-monetaria-lado-del-cliente">4. Configuración de gestión monetaria (lado del cliente)</a></li><li class="lv2"><a href="#5-configuraci-n-general">5. Configuración general</a></li><li class="lv2"><a href="#6-l-mite-de-p-rdida-diaria">6. Límite de pérdida diaria</a></li><li class="lv2"><a href="#7-l-mite-de-beneficio-diario">7. Límite de beneficio diario</a></li><li class="lv2"><a href="#8-trailing-stop-drawdown-m-vil-diario">8. Trailing Stop (drawdown móvil diario)</a></li><li class="lv2"><a href="#9-l-mites-basados-en-la-cartera">9. Límites basados en la cartera</a></li><li class="lv2"><a href="#10-l-mites-basados-en-posiciones">10. Límites basados en posiciones</a></li><li class="lv2"><a href="#11-limitar-horas-de-trading-zona-horaria-est">11. Limitar horas de trading (zona horaria EST)</a></li><li class="lv2"><a href="#12-a-adir-s-mbolo">12. Añadir símbolo</a></li><li class="lv2"><a href="#13-inhibir-cambios-hasta-la-pr-xima-sesi-n">13. Inhibir cambios hasta la próxima sesión</a></li><li class="lv2"><a href="#14-estado">14. Estado</a></li><li class="lv2"><a href="#15-vista-detallada-de-la-cuenta">15. Vista detallada de la cuenta</a></li><li class="lv2"><a href="#resumen">Resumen</a></li><li class="lv2"><a href="#sigue-teniendo-problemas">¿Sigue teniendo problemas?</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-es-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>

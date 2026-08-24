@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Problemas de caché — Centro de Ayuda de DeepDOM</title>
+<meta name="description" content="Este artículo explica cómo resolver los errores de brecha de datos (Data Gap) en DeepDom borrando la base de datos de caché local.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/installation-and-first-configuration.html">Primeros pasos</a><a href="../../../es/article/get-help.html">Soporte</a><a class="kb-switch" href="../../../es/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/cache-issues-deepdom.html">English</a><a class="lang-item" href="../../../it/deepdom/article/cache-issues-deepdom.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemas comunes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemas de instalación</a></li><li><a href="../article/licence-issues.html">Problemas de licencia</a></li><li><a href="../article/symbol-subscription-issues.html">Problemas de suscripción de símbolos</a></li><li><a href="../article/cache-issues-deepdom.html" class="active">Problemas de caché</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Cómo hacer <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Instalación y primera configuración</a></li><li><a href="../article/general-settings.html">Configuración general</a></li><li><a href="../article/how-to-add-a-new-connection.html">Cómo añadir una nueva conexión</a></li><li><a href="../article/how-to-add-markets-correctly.html">Cómo añadir mercados correctamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Cómo configurar los atajos de teclado</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Cómo insertar notificaciones de sonido</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Cómo personalizar el idioma y el tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Cómo gestionar el rollover de símbolos</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Ventana de órdenes</a></li><li><a href="../article/trading-from-the-chart.html">Operar desde el gráfico</a></li><li><a href="../article/portfolio-risk-manager.html">Gestor de riesgos de cartera</a></li><li><a href="../article/simulation-environment.html">Entorno de simulación</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicadores <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Diferencial de oferta/demanda</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envolventes</a></li><li><a href="../article/session-imbalance-deepdom.html">Desequilibrio de sesión</a></li><li><a href="../article/book-speed.html">Velocidad del libro</a></li><li><a href="../article/volume-profile-deepdom.html">Perfil de volumen</a></li><li><a href="../article/stop-run.html">Barrido de stops (Stop Run)</a></li><li><a href="../article/absorption.html">Absorción</a></li><li><a href="../article/cumulative-iceberg-stop.html">Iceberg/Stop acumulado</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dinámico</a></li><li><a href="../article/volume-deepdom.html">Volumen</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">CVD (delta de volumen acumulado)</a></li><li><a href="../article/big-trades-deepdom.html">Operaciones grandes</a></li><li><a href="../article/important-levels-deepdom.html">Niveles importantes</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funciones <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Burbujas de volumen</a></li><li><a href="../article/heatmap.html">Mapa de calor</a></li><li><a href="../article/replay-tick-data.html">Reproducción de datos de tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicadores profundos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Iceberg Profundo (Deep Iceberg)</a></li><li><a href="../article/deep-reload.html">Recarga Profunda (Deep Reload)</a></li><li><a href="../article/deep-liquidity-scan.html">Análisis de Liquidez Profunda (Deep Liquidity Scan)</a></li><li><a href="../article/deep-delta-deepdom.html">Delta Profundo (Deep Delta)</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/common-issues.html">Problemas comunes</a></div>
+<div class="article-head"><h1>Problemas de caché</h1>
+<p class="article-desc">Este artículo explica cómo resolver los errores de brecha de datos (Data Gap) en DeepDom borrando la base de datos de caché local.</p>
+<div class="meta-row">
+  <span class="badge b-beginner">Beginner</span>
+  <span class="badge">Troubleshooting</span>
+  <span class="badge">🕒 3 min read</span>
+  <a class="btn-pdf" href="../pdf/cache-issues-deepdom.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Este artículo explica cómo resolver los errores de brecha de datos (Data Gap) en DeepDom borrando la base de datos de caché local. Estos problemas suelen deberse a fallos de conexión, interrupciones de la plataforma o cierres abruptos que dejan datos incompletos en la caché. Seguir los pasos siguientes obliga a DeepDom a reconstruir su base de datos desde el proveedor de datos.</p>
+<h2 id="posibles-causas-de-los-errores-de-brecha-de-datos">Posibles causas de los errores de brecha de datos</h2>
+<p>Las razones más comunes son:</p>
+<p>Pérdida de conexión con la fuente de datos mientras la plataforma está en funcionamiento.</p>
+<p>Corte de energía, fallo del sistema operativo o reinicio forzado del ordenador.</p>
+<p>Cierre repentino de DeepDom, como terminar el proceso o cerrar Windows antes de que la plataforma pueda terminar de escribir los datos.</p>
+<p>En estos casos, algunos archivos en caché pueden quedar dañados o incompletos, y la solución más segura es eliminar la carpeta de caché para que DeepDom pueda recrearla desde cero en el siguiente inicio.</p>
+<h2 id="paso-a-paso-eliminar-la-carpeta-de-cach">Paso a paso: eliminar la carpeta de caché</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Problemas de caché — Paso a paso: eliminar la carpeta de caché (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cache-issues-deepdom-01</b> · save as <code>dd-es-cache-issues-deepdom-01.png</code></div></div></div>
+<h3 id="1-abra-la-ruta-de-la-carpeta-de-la-base-de-datos">1. Abra la ruta de la carpeta de la base de datos</h3>
+<ol>
+<li>En DeepDom, vaya a Options &gt; Settings &gt; Various (Opciones &gt; Configuración &gt; Varios).</li>
+<li>Localice el campo etiquetado como <strong>Database Folder</strong> (Carpeta de la base de datos).</li>
+<li>Haga clic dentro del campo y copie la ruta completa que se muestra (por ejemplo, usando <em>Ctrl + C</em>).</li>
+</ol>
+<h3 id="2-cierre-de-forma-segura-deepdom-y-el-flujo-de-datos">2. Cierre de forma segura DeepDom y el flujo de datos</h3>
+<ol>
+<li>Desconecte el flujo de datos o la conexión de la fuente de datos dentro de DeepDom para que no se escriban datos nuevos.</li>
+<li>Cierre todos los planes de trabajo (Work Plans) y gráficos abiertos.</li>
+<li>Salga de DeepDom por completo, asegurándose de que la plataforma ya no se esté ejecutando en la barra de tareas ni en la bandeja del sistema.</li>
+</ol>
+<h3 id="3-elimine-la-carpeta-de-la-base-de-datos-local">3. Elimine la carpeta de la base de datos local</h3>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Problemas de caché — 3. Elimine la carpeta de la base de datos local (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cache-issues-deepdom-02</b> · save as <code>dd-es-cache-issues-deepdom-02.png</code></div></div></div>
+<ol>
+<li>Abra el Explorador de Windows (File Explorer).</li>
+<li>Haga clic en la barra de direcciones y pegue la ruta de la <strong>Database Folder</strong> copiada previamente; luego pulse Enter.</li>
+<li>Cuando se abra la carpeta, seleccione y elimine los archivos/símbolos dañados.</li>
+<li>Confirme la eliminación en la papelera de reciclaje si Windows solicita permiso de administrador.</li>
+</ol>
+<p>Eliminar estos archivos borra todos los datos en caché de DeepDom, lo que permite a la plataforma recrear una base de datos nueva la próxima vez que se inicie.</p>
+<h3 id="4-reinicie-deepdom">4. Reinicie DeepDom</h3>
+<ol>
+<li>Inicie DeepDom de nuevo.</li>
+<li>Vuelva a conectar su flujo de datos o fuente de datos.</li>
+<li>Abra sus planes de trabajo y gráficos habituales. DeepDom comenzará a descargar y reconstruir la base de datos desde el proveedor, completando el historial que faltaba y eliminando los errores de brecha de datos anteriores.</li>
+</ol>
+<h2 id="consejos-adicionales">Consejos adicionales</h2>
+<p>Para minimizar la posibilidad de futuros problemas de caché, desconecte siempre la fuente de datos y cierre DeepDom normalmente antes de apagar Windows. Evite terminar la aplicación desde el Administrador de tareas a menos que sea absolutamente necesario, y asegúrese de tener una conexión a Internet estable cuando ejecute sesiones largas o registre grandes cantidades de datos históricos.</p>
+<h2 id="sigue-teniendo-problemas">¿Sigue teniendo problemas?</h2>
+<p>Nuestro equipo de soporte está disponible 24/7 y listo para ayudarle con cualquier problema que encuentre. Cuando se ponga en contacto, incluya:</p>
+<p>Una captura de pantalla del problema.</p>
+<p>Una breve descripción de lo que intentaba hacer.</p>
+<p>Ticket de soporte (respuesta más rápida): visite www.deepcharts.com y cree un ticket de soporte directamente en nuestro sitio web.</p>
+<p>Soporte por correo electrónico: también puede escribirnos a support@deepcharts.com. Tenga en cuenta que las respuestas por correo electrónico pueden tardar un poco más que un ticket de soporte.</p>
+</article>
+<div class="pn"><a class="prev" href="./symbol-subscription-issues.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Problemas de suscripción de símbolos</div></a><a class="next" href="./installation-and-first-configuration.html"><div class="pn-lbl">Next →</div><div class="pn-title">Instalación y primera configuración</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#posibles-causas-de-los-errores-de-brecha-de-datos">Posibles causas de los errores de brecha de datos</a></li><li class="lv2"><a href="#paso-a-paso-eliminar-la-carpeta-de-cach">Paso a paso: eliminar la carpeta de caché</a></li><li class="lv3"><a href="#1-abra-la-ruta-de-la-carpeta-de-la-base-de-datos">1. Abra la ruta de la carpeta de la base de datos</a></li><li class="lv3"><a href="#2-cierre-de-forma-segura-deepdom-y-el-flujo-de-datos">2. Cierre de forma segura DeepDom y el flujo de datos</a></li><li class="lv3"><a href="#3-elimine-la-carpeta-de-la-base-de-datos-local">3. Elimine la carpeta de la base de datos local</a></li><li class="lv3"><a href="#4-reinicie-deepdom">4. Reinicie DeepDom</a></li><li class="lv2"><a href="#consejos-adicionales">Consejos adicionales</a></li><li class="lv2"><a href="#sigue-teniendo-problemas">¿Sigue teniendo problemas?</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-es-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>

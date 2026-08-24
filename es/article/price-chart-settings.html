@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Configuración del gráfico de precios — Centro de Ayuda de DeepCharts</title>
+<meta name="description" content="Referencia del diálogo Price Settings: parámetros de datos, todos los tipos de barra, modos de velas de volumen/delta, línea de precio, cuenta atrás, sesiones y estilo de los subgráficos.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/quick-start-first-trade.html">Guía rápida</a><a href="../article/get-help.html">Soporte</a><a class="kb-switch" href="../../es/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/price-chart-settings.html">English</a><a class="lang-item" href="../../it/article/price-chart-settings.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primeros pasos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Bienvenido a DeepCharts: recorrido por la plataforma</a></li><li><a href="../article/system-requirements.html">Requisitos del sistema</a></li><li><a href="../article/install-deepcharts.html">Cómo instalar DeepCharts y activar su licencia</a></li><li><a href="../article/free-delayed-data-feed.html">Cómo usar la fuente de datos gratuita con 15 minutos de retraso</a></li><li><a href="../article/buy-data-feed.html">Cómo comprar una fuente de datos y obtener sus credenciales</a></li><li><a href="../article/first-chart.html">Abra su primer gráfico</a></li><li><a href="../article/simulation-accounts.html">Cuentas de trading y simulación</a></li><li><a href="../article/quick-start-first-trade.html">Inicio rápido: de la instalación a su primera operación</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Conexiones y fuentes de datos <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configuración inicial</li><li><a href="../article/compatibility-guide.html">Brókers, empresas prop y fuentes de datos compatibles</a></li><li><a href="../article/connect-data-feed.html">Cómo conectar una fuente de datos (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a></li><li><a href="../article/sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a></li><li><a href="../article/connect-dxfeed.html">Cómo conectar una fuente de datos dxFeed</a></li><li><a href="../article/connect-rithmic.html">Cómo conectar una fuente de datos de Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Conectar Rithmic mediante el plugin de RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a></li><li><a href="../article/connect-apex.html">Cómo conectar Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Cómo conectar una cuenta dxFeed de empresa prop (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Cómo conectar CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Cómo conectar Interactive Brokers (solo ejecución)</a></li><li><a href="../article/competition-connect.html">Competición de DeepCharts: únase y conéctese</a></li><li><a href="../article/end-of-day-data.html">Conectar datos históricos (fin de día)</a></li><li><a href="../article/manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li><li class="nav-sub">Solución de problemas</li><li><a href="../article/feed-connected-chart-not-moving.html">Solución: fuente en vivo conectada pero el gráfico no se mueve</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Solución: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Solución: Connection Failed — Verifique el nombre de usuario y la contraseña</a></li><li><a href="../article/fix-bad-server.html">Solución: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Solución: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Solución: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Solución: No se puede cargar la DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Solución: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Solución: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Solución: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Solución: conexión perdida al abrir un gráfico</a></li><li><a href="../article/symbol-subscription-issue.html">Solución: Problema de suscripción de símbolo</a></li><li><a href="../article/app-crashes-saving-feed.html">Solución: la aplicación se cierra al guardar la configuración de la fuente</a></li><li><a href="../article/gaps-in-price.html">Solución: gaps de precio en los gráficos</a></li><li><a href="../article/data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Gráficos y espacio de trabajo <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La ventana de gráfico</a></li><li><a href="../article/price-chart-settings.html" class="active">Configuración del gráfico de precios</a></li><li><a href="../article/chart-display-options.html">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</a></li><li><a href="../article/drawing-tools.html">Herramientas de dibujo y anotaciones</a></li><li><a href="../article/templates-workspaces.html">Plantillas y espacios de trabajo</a></li><li><a href="../article/quick-chart-templates.html">Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Vincular ventanas con grupos de color</a></li><li><a href="../article/replay-data.html">Reproducir datos de mercado</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalice el idioma, el tema y los sonidos de notificación</a></li><li><a href="../article/keyboard-shortcuts.html">Cómo configurar atajos de teclado</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Referencia de atajos de teclado</a></li><li><a href="../article/multi-monitor-windows.html">Organizar ventanas en varios monitores (y recuperar ventanas fuera de pantalla)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Ventanas de la plataforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (la cinta)</a></li><li><a href="../article/advanced-dom.html">Ventana Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Ventana de gráfico de perfil (perfiles TPO y de volumen)</a></li><li><a href="../article/scanner-window.html">Escáner de mercado</a></li><li><a href="../article/correlation-viewer.html">Visor de correlación</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading y órdenes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Operar desde el gráfico</a></li><li><a href="../article/trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading en el gráfico (escalera de trading con clics)</a></li><li><a href="../article/depth-of-market.html">Indicador de profundidad de mercado (DOM)</a></li><li><a href="../article/oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Ventana de órdenes</a></li><li><a href="../article/portfolio-wallet.html">Cartera (Wallet)</a></li><li><a href="../article/risk-manager.html">Gestor de riesgos</a></li><li><a href="../article/trade-copier.html">Cómo configurar el Trade Copier</a></li><li><a href="../article/performance-analysis.html">Análisis de rendimiento (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Conceptos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li><li><a href="../article/understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción</a></li><li><a href="../article/understanding-icebergs-absorption.html">Entender los icebergs y la absorción</a></li><li><a href="../article/understanding-vwap.html">Entender el VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Cómo leer un footprint: ejemplos prácticos</a></li><li><a href="../article/glossary.html">Glosario de términos de flujo de órdenes y de la plataforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicadores y análisis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fundamentos de indicadores</li><li><a href="../article/different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li><li><a href="../article/indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li><li class="nav-sub">Indicadores profundos</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Tendencia</li><li><a href="../article/moving-average.html">Media móvil</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">SAR Parabólico</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regresión lineal</a></li><li><a href="../article/regression-channel.html">Canal de regresión</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Canal de Donchian</a></li><li><a href="../article/adx.html">Índice direccional promedio (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Oscilador Aroon</a></li><li class="nav-sub">Momentum y osciladores</li><li><a href="../article/rsi.html">Índice de fuerza relativa (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscilador estocástico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Tasa de cambio (ROC)</a></li><li><a href="../article/cci.html">Índice de canal de mercancías (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Oscilador Awesome</a></li><li><a href="../article/inverse-cyber-cycle.html">Ciclo Cibernético Inverso (Inverse Cyber Cycle)</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilidad y bandas</li><li><a href="../article/bollinger-bands.html">Bandas de Bollinger</a></li><li><a href="../article/keltner-channel.html">Canal de Keltner</a></li><li><a href="../article/atr.html">Rango Verdadero Medio (ATR)</a></li><li><a href="../article/standard-deviation.html">Desviación estándar</a></li><li><a href="../article/vwap-envelopes.html">Envolventes VWAP</a></li><li><a href="../article/adr-target.html">Objetivo de rango diario promedio (ADR Target)</a></li><li class="nav-sub">Volumen y delta</li><li><a href="../article/volume.html">Volumen</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Resaltado de delta %</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Swing de volumen (Volume Swing)</a></li><li><a href="../article/volume-delta-sprint.html">Sprint de volumen/delta (Volume/Delta Sprint)</a></li><li><a href="../article/chaikin-ad.html">Acumulación/Distribución de Chaikin</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Velocidad de la cinta</a></li><li><a href="../article/speed-of-tape-instant.html">Velocidad de la cinta (instantánea)</a></li><li><a href="../article/market-statistics.html">Estadísticas de mercado</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Flujo de órdenes y subasta</li><li><a href="../article/market-profile-tpo.html">Perfil de mercado (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a></li><li><a href="../article/imbalance-rejector.html">Rechazador de Desequilibrios (Imbalance Rejector)</a></li><li><a href="../article/session-imbalance.html">Desequilibrio de sesión</a></li><li><a href="../article/unfinished-auction.html">Subasta sin terminar (Unfinished Auction)</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">POC Dinámico</a></li><li><a href="../article/bar-poc.html">POC de barra</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Niveles y patrones</li><li><a href="../article/pivot-points.html">Puntos pivote</a></li><li><a href="../article/important-levels.html">Niveles importantes</a></li><li><a href="../article/absolute-levels.html">Niveles absolutos</a></li><li><a href="../article/price-movement-levels.html">Niveles de movimiento del precio</a></li><li><a href="../article/session-marker.html">Marcador de sesión</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Detector de gaps (Gap Detector)</a></li><li><a href="../article/fvg-identifier.html">Identificador de FVG (FVG Identifier)</a></li><li><a href="../article/divergence-detector.html">Detector de divergencias</a></li><li><a href="../article/confluence-identifier.html">Identificador de Confluencias</a></li><li class="nav-sub">Superposiciones de gráfico</li><li><a href="../article/candlestick-bar.html">Barra de velas (Candlestick Bar)</a></li><li><a href="../article/overlay-chart.html">Superposición de gráfico (Overlay Chart)</a></li><li><a href="../article/overlay-symbol.html">Superposición de símbolo (Overlay Symbol)</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Superposición de velas de marco temporal (Overlay Timeframe Candlestick)</a></li><li><a href="../article/overlay-timeframe-highlight.html">Resaltado de marco temporal (Overlay Timeframe Highlight)</a></li><li><a href="../article/shift-candle.html">Vela Shift</a></li><li><a href="../article/text-on-chart.html">Texto en el gráfico</a></li><li><a href="../article/annotations-overlay.html">Superposición de anotaciones</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Datos y base de datos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover de símbolos (cambio de mes de contrato)</a></li><li><a href="../article/delete-market-data.html">Eliminar datos de mercado (métodos en la aplicación y manual)</a></li><li><a href="../article/download-data.html">Volver a descargar datos históricos (herramienta Download Data)</a></li><li><a href="../article/database-optimization.html">Optimización de la base de datos</a></li><li><a href="../article/database-problems.html">Solución: problemas de la base de datos</a></li><li><a href="../article/fix-could-not-find-path.html">Solución: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Solución de problemas y soporte <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Solución: problemas de instalación y requisitos básicos</a></li><li><a href="../article/installation-setup-failed.html">Solución: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Solución: una política de control de aplicaciones bloquea DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Solución: la herramienta de dibujo Rectángulo no funciona</a></li><li><a href="../article/chart-zoom.html">Solución: el zoom del gráfico no funciona</a></li><li><a href="../article/license-issues.html">Solución: problemas de licencia y activación</a></li><li><a href="../article/diagnostic-report.html">Informe de diagnóstico: antes de contactar con soporte</a></li><li><a href="../article/get-help.html">Cómo obtener ayuda (chat, informe de diagnóstico, soporte)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Cuenta y facturación <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Administre sus suscripciones y facturación</a></li><li><a href="../article/move-to-new-computer.html">Mover DeepCharts a un ordenador nuevo</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/charts-workspace.html">Gráficos y espacio de trabajo</a></div>
+<div class="article-head"><h1>Configuración del gráfico de precios</h1>
+<p class="article-desc">Referencia del diálogo Price Settings: parámetros de datos, todos los tipos de barra, modos de velas de volumen/delta, línea de precio, cuenta atrás, sesiones y estilo de los subgráficos.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 10 min read</span>
+  <a class="btn-pdf" href="../pdf/price-chart-settings.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>El diálogo <strong>Price Settings</strong> (configuración de precio) controla cómo se construye y se dibuja la propia serie de precios: cuánta historia se carga, qué tipo de barras se forman, si las velas codifican volumen y delta, y los elementos adicionales superpuestos al gráfico, como la línea de precio, la cuenta atrás y los marcadores de sesión.</p>
+<p>Este artículo cubre todo el diálogo, sección por sección, en el orden en que aparece en la aplicación. Si busca los conmutadores rápidos de visualización (estilo de barra, sesión ETH, cuenta atrás activada/desactivada), estos están en el menú desplegable de dos velas y se cubren en <a href="./chart-display-options.html">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</a>: varios de ellos son atajos a configuraciones descritas aquí.</p>
+<h2 id="qu-es">Qué es</h2>
+<p>Price Settings es el diálogo de configuración de la serie base <strong>Price</strong>: las velas en sí. Responde a preguntas como &quot;cómo cargo más historia&quot;, &quot;cómo cambio a barras Renko o Range&quot;, &quot;por qué mis velas tienen anchos o colores distintos&quot; y &quot;cómo restrinjo el gráfico a una sesión personalizada&quot;.</p>
+<p>El gráfico visualiza las transacciones históricas de compradores y vendedores basadas en el libro de órdenes, y este diálogo decide cómo se agrupan esas transacciones en barras y cómo se renderizan.</p>
+<h2 id="cu-ndo-usarlo">Cuándo usarlo</h2>
+<ul>
+<li>Cambiar cuántos días de datos carga el gráfico, o alternar entre historia basada en ticks y basada en minutos.</li>
+<li>Cambiar el tipo de barra: barras de tiempo, Range, Vol Bars, Volume, Trades, Renko, Point &amp; Figure, Delta.</li>
+<li>Habilitar velas con ancho por volumen o coloreadas por delta (y afinar cómo se colorean).</li>
+<li>Configurar la línea del último precio, la cuenta atrás del cierre de barra, la variación % diaria, la línea de inicio del día o una ventana de sesión personalizada.</li>
+<li>Controlar el empalme de rollover de futuros (<strong>Continuous Contract</strong>) y el filtrado de ticks.</li>
+</ul>
+<h2 id="inicio-r-pido">Inicio rápido</h2>
+<ol>
+<li>Haga clic en el icono de dos velas en la parte superior izquierda del gráfico y elija <strong>⚙ Price Settings</strong> al final del menú desplegable. (Alternativa: icono de gráfico de barras → engranaje en la fila <strong>Price</strong>.)</li>
+<li>El diálogo se abre con dos pestañas: <strong>Parameters</strong> y <strong>Subgraphs</strong>. La columna izquierda de <strong>Parameters</strong> lista las secciones: DATA, VOLUME/DELTA, PRICE LINE, COUNTDOWN, % VAR, LINE START DAY, CUSTOM TIME SESSION, DEEP RANGE.</li>
+<li>Realice un cambio, por ejemplo, establezca <strong>Days To Load</strong> en 30.</li>
+<li>Haga clic en <strong>Apply</strong> para ver el resultado en el gráfico, y luego en <strong>Save</strong>.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">El diálogo Price Settings abierto en la pestaña Parameters, mostrando la lista de secciones de la izquierda (DATA, VOLUME/DELTA, PRICE LINE, COUNTDOWN, % VAR, LINE START DAY, CUSTOM TIME SESSION, DEEP RANGE) y los campos de GENERAL con Days To Load=10, Param Type=Minute, Param 1=5</div><div class="s-file">ID: <b class="s-id">dc-es-price-chart-settings-01</b> · save as <code>dc-es-price-chart-settings-01.png</code></div></div></div>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Algunos cambios (por ejemplo, activar <strong>Exclude Auction</strong>) reconstruyen todo el gráfico: el indicador <strong>Building chart</strong> mientras se recarga es normal.</p>
+</blockquote>
+<h2 id="c-mo-leerlo">Cómo leerlo</h2>
+<p>Los parámetros de datos reflejan la barra de título del gráfico: <strong>Days To Load</strong> es el mismo valor que el menú desplegable de rango de datos (por ejemplo <strong>10D - BT</strong>, donde BT = Based on Tick, basado en tick, y BM = Based on Minute, basado en minuto), y <strong>Param Type</strong> más <strong>Param 1</strong> son lo mismo que el menú desplegable de marco temporal (Param Type <strong>Minute</strong> con Param 1 <strong>5</strong> es un gráfico de 5 minutos). Puede cambiarlos en cualquiera de los dos lugares: el diálogo y la barra de título se mantienen sincronizados.</p>
+<h2 id="referencia-de-configuraci-n">Referencia de configuración</h2>
+<h3 id="pesta-a-parameters-data-general">Pestaña Parameters — DATA (GENERAL)</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Days To Load</strong></td>
+<td>Número de días de historia que se cargan en el gráfico. Refleja el menú desplegable de rango de datos de la barra de título.</td>
+</tr>
+<tr>
+<td><strong>Param Type</strong></td>
+<td>El tipo de barra: consulte la tabla de tipos de barra más abajo.</td>
+</tr>
+<tr>
+<td><strong>Param 1</strong></td>
+<td>El parámetro de barra para el tipo seleccionado (p. ej., 5 para un gráfico de 5 minutos, ticks para Range).</td>
+</tr>
+<tr>
+<td><strong>Param 2</strong></td>
+<td>Segundo parámetro, usado por los tipos de barra que necesitan dos valores: Vol Bars y Point &amp; Figure. <span class="confirm-flag">CONFIRM: whether Param 2 has any effect on other bar types</span></td>
+</tr>
+<tr>
+<td><strong>Based on minute data</strong></td>
+<td>Desactivado por defecto: las barras se construyen a partir de datos de tick para máxima precisión. Activado: las barras se construyen a partir de datos de minuto. Los rangos de historia largos (3 meses o más en el menú de la barra de título) usan datos de minuto.</td>
+</tr>
+<tr>
+<td><strong>Continuous Contract</strong></td>
+<td>Cómo se empalma la historia de futuros entre meses de contrato: <strong>None</strong>, <strong>Date</strong>, <strong>Volume</strong>, <strong>Adjusted Date</strong>, <strong>Adjusted Volume</strong>. Adjusted Date hace el rollover según la expiración temporal; los modos Adjusted eliminan el hueco artificial de precio en el rollover. Consulte <a href="./symbol-rollover.html">Rollover de símbolos (cambio de mes de contrato)</a>.</td>
+</tr>
+<tr>
+<td><strong>Exclude Auction (Tick Data)</strong></td>
+<td>Desactivado por defecto. Elimina los datos de subasta de apertura/cierre de los cálculos del gráfico; el comportamiento exacto del filtrado puede variar <span class="confirm-flag">CONFIRM: precisely which auction prints are excluded</span>. Es la misma configuración que el conmutador <strong>Auction filter</strong> del menú de dos velas; al activarlo se reconstruye el gráfico.</td>
+</tr>
+<tr>
+<td><strong>Filter Bad Ticks</strong></td>
+<td>Activado por defecto. Filtra los ticks erróneos de la serie <span class="confirm-flag">CONFIRM: what qualifies as a bad tick and when to disable</span>.</td>
+</tr>
+<tr>
+<td><strong>Trade Type</strong></td>
+<td><strong>All</strong> por defecto. <span class="confirm-flag">CONFIRM: other Trade Type options and what each restricts</span></td>
+</tr>
+<tr>
+<td><strong>RTH - only</strong></td>
+<td>Desactivado por defecto. Restringe el gráfico al horario regular de negociación (Regular Trading Hours): el inverso del conmutador <strong>ETH Session</strong> del menú de dos velas (misma configuración, dos lugares).</td>
+</tr>
+<tr>
+<td><strong>Bid/Ask type</strong></td>
+<td><strong>Bid ask</strong> por defecto. <span class="confirm-flag">CONFIRM: other options and their effect on the chart</span></td>
+</tr>
+</tbody>
+</table>
+<h4>Tipos de barra (Param Type)</h4>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Cómo se forman las barras</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Second / Minute / Daily / Weekly / Monthly</strong></td>
+<td>Cada barra cubre un período de tiempo fijo.</td>
+</tr>
+<tr>
+<td><strong>Range</strong></td>
+<td>No depende del tiempo: Param 1 define el rango en ticks de cada barra individual (p. ej., un rango de 8 ticks dispara una nueva barra).</td>
+</tr>
+<tr>
+<td><strong>Vol Bars</strong></td>
+<td>Dos parámetros: <strong>Target</strong>, el umbral mínimo de ticks que debe alcanzar la barra, y <strong>Reverse</strong>, los ticks en dirección opuesta necesarios para iniciar una nueva barra.</td>
+</tr>
+<tr>
+<td><strong>Volume</strong></td>
+<td>Cada barra se cierra cuando se alcanza un umbral máximo de volumen: no se basa en tiempo ni en precio.</td>
+</tr>
+<tr>
+<td><strong>Trades</strong></td>
+<td>Se basa en el número máximo de transacciones por barra, en lugar de contratos negociados.</td>
+</tr>
+<tr>
+<td><strong>Renko</strong></td>
+<td>Como Range, pero el movimiento se mide desde el cuerpo de la vela anterior (p. ej., nueva barra cuando el precio se mueve 10 ticks desde el cuerpo anterior).</td>
+</tr>
+<tr>
+<td><strong>Point Figure</strong></td>
+<td>Dos parámetros: tamaño de caja y cantidad de reversión.</td>
+</tr>
+<tr>
+<td><strong>Delta</strong></td>
+<td>Cada barra se forma según el delta, en valor absoluto: la diferencia entre compras y ventas agresivas. Consulte <a href="./orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a>.</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-tip">
+<p><strong>Consejo:</strong> En los tipos de barra no temporales, las funciones ancladas al tiempo (marcadores de sesión, indicadores basados en tiempo) se comportan de forma diferente, y los recuentos de barras ya no corresponden al tiempo de reloj. Téngalo en cuenta al comparar gráficos.</p>
+</blockquote>
+<h3 id="pesta-a-parameters-data-tick-grouping-y-aggregated-trades">Pestaña Parameters — DATA (TICK GROUPING y AGGREGATED TRADES)</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tick Grouping — Mode</strong></td>
+<td><strong>Automatic</strong> por defecto; un campo <strong>Fixed value</strong> (predeterminado 1) se usa con el modo fijo. Agrupa los ticks entrantes antes de graficarlos <span class="confirm-flag">CONFIRM: exact tick-grouping behavior and when a fixed value helps</span>.</td>
+</tr>
+<tr>
+<td><strong>Aggregated Trades — Price Mode</strong></td>
+<td><strong>Last</strong> por defecto. <span class="confirm-flag">CONFIRM: available Price Mode options and their effect on aggregated trade pricing</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="pesta-a-parameters-volume-delta">Pestaña Parameters — VOLUME/DELTA</h3>
+<p>Estas configuraciones alimentan los modos de velas con ancho por volumen y coloreadas por delta. Los conmutadores <strong>Equi-Volume Bars</strong> y <strong>Delta-Volume Bars</strong> del menú de dos velas son atajos a los dos interruptores maestros de aquí.</p>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Width based volume</strong></td>
+<td>El ancho de la vela escala con el volumen de la barra en relación con las demás velas: más ancha = más volumen. Le permite ver de un vistazo si un movimiento tuvo volumen real detrás o el libro estaba fino.</td>
+</tr>
+<tr>
+<td><strong>% max width based volume</strong></td>
+<td>Ancho máximo de vela usado por el escalado (100 según la configuración del diálogo).</td>
+</tr>
+<tr>
+<td><strong>Color based on delta</strong></td>
+<td>El color de la vela varía con el delta de la barra: baja intensidad = delta bajo, alta intensidad = delta alto.</td>
+</tr>
+<tr>
+<td><strong>Border color mode</strong></td>
+<td><strong>Fixed delta</strong>, <strong>Fading delta</strong> o <strong>Bar direction</strong>: la estrategia de coloreado del borde <span class="confirm-flag">CONFIRM: per-option behavior</span>.</td>
+</tr>
+<tr>
+<td><strong>Delta input</strong></td>
+<td><strong>Volume</strong>, <strong>Trades</strong> o <strong>Delta volume</strong>: qué alimenta el coloreado por delta <span class="confirm-flag">CONFIRM: per-option behavior</span>.</td>
+</tr>
+<tr>
+<td><strong>Color mode</strong></td>
+<td><strong>Fixed</strong> o <strong>Fading color</strong> <span class="confirm-flag">CONFIRM: exact visual difference</span>.</td>
+</tr>
+<tr>
+<td><strong>Delta fading mode</strong></td>
+<td><strong>Delta volume</strong> o <strong>Delta percentual</strong> <span class="confirm-flag">CONFIRM: exact difference</span>.</td>
+</tr>
+<tr>
+<td><strong>Std dev for coloring</strong></td>
+<td>2.00 según la configuración <span class="confirm-flag">CONFIRM: how the standard deviation scales the coloring</span>.</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Un gráfico con Width based volume y Color based on delta habilitados a la vez, velas de anchos visiblemente distintos e intensidades de color verde/morado, junto a la sección VOLUME/DELTA del diálogo Price Settings</div><div class="s-file">ID: <b class="s-id">dc-es-price-chart-settings-02</b> · save as <code>dc-es-price-chart-settings-02.png</code></div></div></div>
+<h3 id="pesta-a-parameters-price-line">Pestaña Parameters — PRICE LINE</h3>
+<p>La línea discontinua que marca el precio actual.</p>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Muestra la línea del precio actual. Activada por defecto.</td>
+</tr>
+<tr>
+<td><strong>Line Color / Line Style / Line Width</strong></td>
+<td>Estilo. Estilos: <strong>Solid, Dash, Dot, Dash dot, Dash dot dot</strong> (predeterminado Dash, grosor 1).</td>
+</tr>
+<tr>
+<td><strong>Extend line to left</strong></td>
+<td>Desactivado por defecto. Al activarlo, la línea se extiende por todo el gráfico en lugar de solo a la derecha de la última barra.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pesta-a-parameters-countdown">Pestaña Parameters — COUNTDOWN</h3>
+<p>El recuadro que cuenta atrás hasta el cierre de la barra actual (un gráfico de 5 minutos cuenta atrás 5 minutos por vela).</p>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Muestra el recuadro de la cuenta atrás. También se activa desde el menú de dos velas (<strong>Countdown timer</strong>).</td>
+</tr>
+<tr>
+<td><strong>Mode</strong></td>
+<td><strong>Axis</strong>, adosado a la escala de precios, o <strong>Floating</strong>, un recuadro libre que puede arrastrar a cualquier parte del gráfico.</td>
+</tr>
+<tr>
+<td><strong>Text Size / Text Color / BackColor</strong></td>
+<td>Estilo (tamaño de texto 18 según la configuración).</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Con una fuente retrasada o inactiva la cuenta atrás puede quedarse en 00:00: la fuente no está entregando ticks en vivo; no hay nada roto.</p>
+</blockquote>
+<h3 id="pesta-a-parameters-var">Pestaña Parameters — % VAR</h3>
+<p>Muestra la variación porcentual respecto al precio de cierre de la sesión anterior (el mismo % de cambio diario que reporta el campo <strong>%V</strong> del panel de lectura).</p>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Desactivado por defecto. Muestra el elemento de variación % (desplazable).</td>
+</tr>
+<tr>
+<td><strong>Text Size / Pos. Text Color / Neg. Text Color / BackColor</strong></td>
+<td>Estilo: cambio positivo en el color positivo (verde por defecto), negativo en el color negativo (rojo por defecto).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pesta-a-parameters-line-start-day">Pestaña Parameters — LINE START DAY</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Desactivado por defecto. Dibuja una línea vertical al inicio de cada sesión/día, trazada a la hora de la bolsa: en NQ eso es a las 18:00, hora de Nueva York; con otra zona horaria del gráfico sigue cayendo donde las 18:00 de NY se convierten.</td>
+</tr>
+<tr>
+<td><strong>Line Color / Line Style / Line Width</strong></td>
+<td>Estilo (los mismos cinco estilos de línea que la línea de precio).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pesta-a-parameters-custom-time-session-exchange-time-zone">Pestaña Parameters — CUSTOM TIME SESSION (EXCHANGE TIME ZONE)</h3>
+<p>Restringe el gráfico a una ventana de sesión definida por el usuario: como el interruptor ETH/RTH, pero con sus propios horarios. Ejemplo: <strong>Ini Time</strong> 09:30:00 y <strong>End Time</strong> 11:30:00 muestra solo las dos primeras horas tras la apertura. Las horas están en la zona horaria de la bolsa.</p>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Desactivado por defecto.</td>
+</tr>
+<tr>
+<td><strong>Ini Time / End Time</strong></td>
+<td>Límites de inicio y fin de la sesión.</td>
+</tr>
+<tr>
+<td><strong>Use ini time as base for minute tf.</strong></td>
+<td><span class="confirm-flag">CONFIRM: what this toggle changes about minute-bar anchoring</span></td>
+</tr>
+</tbody>
+</table>
+<p>Consulte <a href="./understanding-market-structure-sessions.html">Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)</a> para entender por qué importan los límites de sesión.</p>
+<h3 id="pesta-a-parameters-deep-range">Pestaña Parameters — DEEP RANGE</h3>
+<p>Filtros de barra para la función Deep Range <span class="confirm-flag">CONFIRM: purpose and behavior of the DEEP RANGE section</span>. Campos tal como aparecen: <strong>TIME/VOLUME</strong> — <strong>Mode</strong> (<strong>Disabled</strong>, <strong>Time and volume</strong>, <strong>Time or volume</strong>; predeterminado Disabled), <strong>Time-Minimum(s)</strong>, <strong>Time-Maximum(s)</strong>, <strong>Volume-Minimum</strong>, <strong>Volume-Maximum</strong>; <strong>WICK VOLUME</strong> — <strong>Custom mode</strong> (predeterminado None), <strong>Ticks</strong> (predeterminado 1), <strong>Minimum volume</strong> (predeterminado 1.00).</p>
+<h3 id="pesta-a-subgraphs">Pestaña Subgraphs</h3>
+<p>Controla cómo se dibuja y etiqueta la propia serie de precios en el eje.</p>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Bull/Bear Border and Fill colors</strong></td>
+<td>Los colores de las velas para barras alcistas y bajistas.</td>
+</tr>
+<tr>
+<td><strong>Subgraph Style</strong></td>
+<td><strong>Line</strong>, <strong>Candlestick</strong> (predeterminado), <strong>OHLC</strong>, <strong>Hidden</strong>, <strong>CandleBody</strong> <span class="confirm-flag">CONFIRM: how CandleBody differs from Candlestick</span>.</td>
+</tr>
+<tr>
+<td><strong>Auto Color</strong></td>
+<td><strong>None</strong> (predeterminado), <strong>Slope</strong>, <strong>+/-</strong>: reglas de coloreado automático <span class="confirm-flag">CONFIRM: exact behavior of Slope and +/- modes</span>.</td>
+</tr>
+<tr>
+<td><strong>Line Style / Line Width</strong></td>
+<td><strong>Solid</strong> (predeterminado) o <strong>Dash</strong>, grosor 1: se usa cuando el estilo es Line.</td>
+</tr>
+<tr>
+<td><strong>Short Name</strong></td>
+<td>Texto de la etiqueta de la serie.</td>
+</tr>
+<tr>
+<td><strong>Name Label / Value Label</strong></td>
+<td>Muestra el nombre de la serie / el valor actual en el eje (predeterminados: nombre desactivado, valor activado).</td>
+</tr>
+<tr>
+<td><strong>Name Background / Value Background</strong></td>
+<td>Relleno de fondo tras esas etiquetas (predeterminados: nombre desactivado, valor activado).</td>
+</tr>
+<tr>
+<td><strong>Chart color for marker</strong></td>
+<td>Desactivado por defecto <span class="confirm-flag">CONFIRM: exact effect</span>.</td>
+</tr>
+<tr>
+<td><strong>Include on Auto Center</strong></td>
+<td>Activado por defecto: si esta serie se tiene en cuenta cuando el gráfico autocentra el rango de precios visible <span class="confirm-flag">CONFIRM: exact Auto Center behavior</span>.</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">El diálogo Price Settings en la pestaña Subgraphs mostrando la fila Price seleccionada, las muestras de color Bull/Bear y el menú Subgraph Style abierto con Line / Candlestick / OHLC / Hidden / CandleBody visibles</div><div class="s-file">ID: <b class="s-id">dc-es-price-chart-settings-03</b> · save as <code>dc-es-price-chart-settings-03.png</code></div></div></div>
+<h3 id="pie-del-di-logo">Pie del diálogo</h3>
+<ul>
+<li>Selector de <strong>Chart area</strong> (arriba): en qué área del gráfico se renderiza la serie.</li>
+<li><strong>Indicator Template</strong>: guarde o cargue esta configuración para reutilizarla en otros gráficos.</li>
+<li>Conmutador <strong>Protected</strong> <span class="confirm-flag">CONFIRM: what the Protected toggle protects</span>.</li>
+<li><strong>Apply</strong> / <strong>Save</strong>: Apply muestra los cambios en el gráfico; Save los almacena <span class="confirm-flag">CONFIRM: exact difference between Apply and Save</span>.</li>
+</ul>
+<h2 id="consejos-y-errores-comunes">Consejos y errores comunes</h2>
+<ul>
+<li><strong>Las reconstrucciones del gráfico tras un cambio son normales.</strong> Las configuraciones a nivel de datos (Exclude Auction, tipo de barra, días a cargar) activan el indicador <strong>Building chart</strong>: espere a que termine.</li>
+<li><strong>¿Gráfico distinto al de un colega?</strong> Compare el estado de <strong>RTH - only</strong> / sesión ETH, el tipo de barra y <strong>Days To Load</strong> antes que nada.</li>
+<li><strong>El precio salta en el rollover de contrato en historias largas</strong>: cambie <strong>Continuous Contract</strong> a un modo Adjusted para eliminar el hueco artificial.</li>
+<li><strong>Las velas tienen de repente anchos raros o colores desvaídos</strong>: <strong>Width based volume</strong> o <strong>Color based on delta</strong> está activado (posiblemente desde el menú de dos velas como Equi-Volume/Delta-Volume Bars).</li>
+<li><strong>¿Carga años de historia?</strong> Los rangos de 3 meses o más se basan en minutos (BM). El detalle a nivel de tick solo está disponible en los rangos más cortos basados en tick.</li>
+<li>Las configuraciones cambiadas aquí afectan solo a este gráfico. Para reutilizar una configuración, guárdela mediante <strong>Indicator Template</strong> o guarde el gráfico completo como plantilla; consulte <a href="./templates-workspaces.html">Plantillas y espacios de trabajo</a>.</li>
+</ul>
+<h2 id="art-culos-relacionados">Artículos relacionados</h2>
+<ul>
+<li><a href="./chart-window.html">La ventana de gráfico</a></li>
+<li><a href="./chart-display-options.html">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</a></li>
+<li><a href="./understanding-market-structure-sessions.html">Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)</a></li>
+<li><a href="./symbol-rollover.html">Rollover de símbolos (cambio de mes de contrato)</a></li>
+<li><a href="./orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li>
+<li><a href="./different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./chart-window.html"><div class="pn-lbl">← Previous</div><div class="pn-title">La ventana de gráfico</div></a><a class="next" href="./chart-display-options.html"><div class="pn-lbl">Next →</div><div class="pn-title">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#qu-es">Qué es</a></li><li class="lv2"><a href="#cu-ndo-usarlo">Cuándo usarlo</a></li><li class="lv2"><a href="#inicio-r-pido">Inicio rápido</a></li><li class="lv2"><a href="#c-mo-leerlo">Cómo leerlo</a></li><li class="lv2"><a href="#referencia-de-configuraci-n">Referencia de configuración</a></li><li class="lv3"><a href="#pesta-a-parameters-data-general">Pestaña Parameters — DATA (GENERAL)</a></li><li class="lv3"><a href="#pesta-a-parameters-data-tick-grouping-y-aggregated-trades">Pestaña Parameters — DATA (TICK GROUPING y AGGREGATED TRADES)</a></li><li class="lv3"><a href="#pesta-a-parameters-volume-delta">Pestaña Parameters — VOLUME/DELTA</a></li><li class="lv3"><a href="#pesta-a-parameters-price-line">Pestaña Parameters — PRICE LINE</a></li><li class="lv3"><a href="#pesta-a-parameters-countdown">Pestaña Parameters — COUNTDOWN</a></li><li class="lv3"><a href="#pesta-a-parameters-var">Pestaña Parameters — % VAR</a></li><li class="lv3"><a href="#pesta-a-parameters-line-start-day">Pestaña Parameters — LINE START DAY</a></li><li class="lv3"><a href="#pesta-a-parameters-custom-time-session-exchange-time-zone">Pestaña Parameters — CUSTOM TIME SESSION (EXCHANGE TIME ZONE)</a></li><li class="lv3"><a href="#pesta-a-parameters-deep-range">Pestaña Parameters — DEEP RANGE</a></li><li class="lv3"><a href="#pesta-a-subgraphs">Pestaña Subgraphs</a></li><li class="lv3"><a href="#pie-del-di-logo">Pie del diálogo</a></li><li class="lv2"><a href="#consejos-y-errores-comunes">Consejos y errores comunes</a></li><li class="lv2"><a href="#art-culos-relacionados">Artículos relacionados</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-es.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

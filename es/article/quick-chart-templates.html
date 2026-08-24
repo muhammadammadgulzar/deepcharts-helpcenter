@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...) — Centro de Ayuda de DeepCharts</title>
+<meta name="description" content="Qué cargan los botones de opción OF-VP, OF-B/A, D-VP, D-DP, D-VL, W-VP, W-DP y C-VP de la barra inferior del gráfico, y cuándo usar cada preajuste.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/quick-start-first-trade.html">Guía rápida</a><a href="../article/get-help.html">Soporte</a><a class="kb-switch" href="../../es/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/quick-chart-templates.html">English</a><a class="lang-item" href="../../it/article/quick-chart-templates.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primeros pasos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Bienvenido a DeepCharts: recorrido por la plataforma</a></li><li><a href="../article/system-requirements.html">Requisitos del sistema</a></li><li><a href="../article/install-deepcharts.html">Cómo instalar DeepCharts y activar su licencia</a></li><li><a href="../article/free-delayed-data-feed.html">Cómo usar la fuente de datos gratuita con 15 minutos de retraso</a></li><li><a href="../article/buy-data-feed.html">Cómo comprar una fuente de datos y obtener sus credenciales</a></li><li><a href="../article/first-chart.html">Abra su primer gráfico</a></li><li><a href="../article/simulation-accounts.html">Cuentas de trading y simulación</a></li><li><a href="../article/quick-start-first-trade.html">Inicio rápido: de la instalación a su primera operación</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Conexiones y fuentes de datos <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configuración inicial</li><li><a href="../article/compatibility-guide.html">Brókers, empresas prop y fuentes de datos compatibles</a></li><li><a href="../article/connect-data-feed.html">Cómo conectar una fuente de datos (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a></li><li><a href="../article/sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a></li><li><a href="../article/connect-dxfeed.html">Cómo conectar una fuente de datos dxFeed</a></li><li><a href="../article/connect-rithmic.html">Cómo conectar una fuente de datos de Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Conectar Rithmic mediante el plugin de RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a></li><li><a href="../article/connect-apex.html">Cómo conectar Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Cómo conectar una cuenta dxFeed de empresa prop (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Cómo conectar CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Cómo conectar Interactive Brokers (solo ejecución)</a></li><li><a href="../article/competition-connect.html">Competición de DeepCharts: únase y conéctese</a></li><li><a href="../article/end-of-day-data.html">Conectar datos históricos (fin de día)</a></li><li><a href="../article/manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li><li class="nav-sub">Solución de problemas</li><li><a href="../article/feed-connected-chart-not-moving.html">Solución: fuente en vivo conectada pero el gráfico no se mueve</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Solución: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Solución: Connection Failed — Verifique el nombre de usuario y la contraseña</a></li><li><a href="../article/fix-bad-server.html">Solución: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Solución: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Solución: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Solución: No se puede cargar la DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Solución: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Solución: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Solución: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Solución: conexión perdida al abrir un gráfico</a></li><li><a href="../article/symbol-subscription-issue.html">Solución: Problema de suscripción de símbolo</a></li><li><a href="../article/app-crashes-saving-feed.html">Solución: la aplicación se cierra al guardar la configuración de la fuente</a></li><li><a href="../article/gaps-in-price.html">Solución: gaps de precio en los gráficos</a></li><li><a href="../article/data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Gráficos y espacio de trabajo <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La ventana de gráfico</a></li><li><a href="../article/price-chart-settings.html">Configuración del gráfico de precios</a></li><li><a href="../article/chart-display-options.html">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</a></li><li><a href="../article/drawing-tools.html">Herramientas de dibujo y anotaciones</a></li><li><a href="../article/templates-workspaces.html">Plantillas y espacios de trabajo</a></li><li><a href="../article/quick-chart-templates.html" class="active">Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Vincular ventanas con grupos de color</a></li><li><a href="../article/replay-data.html">Reproducir datos de mercado</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalice el idioma, el tema y los sonidos de notificación</a></li><li><a href="../article/keyboard-shortcuts.html">Cómo configurar atajos de teclado</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Referencia de atajos de teclado</a></li><li><a href="../article/multi-monitor-windows.html">Organizar ventanas en varios monitores (y recuperar ventanas fuera de pantalla)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Ventanas de la plataforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (la cinta)</a></li><li><a href="../article/advanced-dom.html">Ventana Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Ventana de gráfico de perfil (perfiles TPO y de volumen)</a></li><li><a href="../article/scanner-window.html">Escáner de mercado</a></li><li><a href="../article/correlation-viewer.html">Visor de correlación</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading y órdenes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Operar desde el gráfico</a></li><li><a href="../article/trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading en el gráfico (escalera de trading con clics)</a></li><li><a href="../article/depth-of-market.html">Indicador de profundidad de mercado (DOM)</a></li><li><a href="../article/oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Ventana de órdenes</a></li><li><a href="../article/portfolio-wallet.html">Cartera (Wallet)</a></li><li><a href="../article/risk-manager.html">Gestor de riesgos</a></li><li><a href="../article/trade-copier.html">Cómo configurar el Trade Copier</a></li><li><a href="../article/performance-analysis.html">Análisis de rendimiento (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Conceptos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li><li><a href="../article/understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción</a></li><li><a href="../article/understanding-icebergs-absorption.html">Entender los icebergs y la absorción</a></li><li><a href="../article/understanding-vwap.html">Entender el VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Cómo leer un footprint: ejemplos prácticos</a></li><li><a href="../article/glossary.html">Glosario de términos de flujo de órdenes y de la plataforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicadores y análisis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fundamentos de indicadores</li><li><a href="../article/different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li><li><a href="../article/indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li><li class="nav-sub">Indicadores profundos</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Tendencia</li><li><a href="../article/moving-average.html">Media móvil</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">SAR Parabólico</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regresión lineal</a></li><li><a href="../article/regression-channel.html">Canal de regresión</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Canal de Donchian</a></li><li><a href="../article/adx.html">Índice direccional promedio (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Oscilador Aroon</a></li><li class="nav-sub">Momentum y osciladores</li><li><a href="../article/rsi.html">Índice de fuerza relativa (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscilador estocástico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Tasa de cambio (ROC)</a></li><li><a href="../article/cci.html">Índice de canal de mercancías (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Oscilador Awesome</a></li><li><a href="../article/inverse-cyber-cycle.html">Ciclo Cibernético Inverso (Inverse Cyber Cycle)</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilidad y bandas</li><li><a href="../article/bollinger-bands.html">Bandas de Bollinger</a></li><li><a href="../article/keltner-channel.html">Canal de Keltner</a></li><li><a href="../article/atr.html">Rango Verdadero Medio (ATR)</a></li><li><a href="../article/standard-deviation.html">Desviación estándar</a></li><li><a href="../article/vwap-envelopes.html">Envolventes VWAP</a></li><li><a href="../article/adr-target.html">Objetivo de rango diario promedio (ADR Target)</a></li><li class="nav-sub">Volumen y delta</li><li><a href="../article/volume.html">Volumen</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Resaltado de delta %</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Swing de volumen (Volume Swing)</a></li><li><a href="../article/volume-delta-sprint.html">Sprint de volumen/delta (Volume/Delta Sprint)</a></li><li><a href="../article/chaikin-ad.html">Acumulación/Distribución de Chaikin</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Velocidad de la cinta</a></li><li><a href="../article/speed-of-tape-instant.html">Velocidad de la cinta (instantánea)</a></li><li><a href="../article/market-statistics.html">Estadísticas de mercado</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Flujo de órdenes y subasta</li><li><a href="../article/market-profile-tpo.html">Perfil de mercado (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a></li><li><a href="../article/imbalance-rejector.html">Rechazador de Desequilibrios (Imbalance Rejector)</a></li><li><a href="../article/session-imbalance.html">Desequilibrio de sesión</a></li><li><a href="../article/unfinished-auction.html">Subasta sin terminar (Unfinished Auction)</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">POC Dinámico</a></li><li><a href="../article/bar-poc.html">POC de barra</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Niveles y patrones</li><li><a href="../article/pivot-points.html">Puntos pivote</a></li><li><a href="../article/important-levels.html">Niveles importantes</a></li><li><a href="../article/absolute-levels.html">Niveles absolutos</a></li><li><a href="../article/price-movement-levels.html">Niveles de movimiento del precio</a></li><li><a href="../article/session-marker.html">Marcador de sesión</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Detector de gaps (Gap Detector)</a></li><li><a href="../article/fvg-identifier.html">Identificador de FVG (FVG Identifier)</a></li><li><a href="../article/divergence-detector.html">Detector de divergencias</a></li><li><a href="../article/confluence-identifier.html">Identificador de Confluencias</a></li><li class="nav-sub">Superposiciones de gráfico</li><li><a href="../article/candlestick-bar.html">Barra de velas (Candlestick Bar)</a></li><li><a href="../article/overlay-chart.html">Superposición de gráfico (Overlay Chart)</a></li><li><a href="../article/overlay-symbol.html">Superposición de símbolo (Overlay Symbol)</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Superposición de velas de marco temporal (Overlay Timeframe Candlestick)</a></li><li><a href="../article/overlay-timeframe-highlight.html">Resaltado de marco temporal (Overlay Timeframe Highlight)</a></li><li><a href="../article/shift-candle.html">Vela Shift</a></li><li><a href="../article/text-on-chart.html">Texto en el gráfico</a></li><li><a href="../article/annotations-overlay.html">Superposición de anotaciones</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Datos y base de datos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover de símbolos (cambio de mes de contrato)</a></li><li><a href="../article/delete-market-data.html">Eliminar datos de mercado (métodos en la aplicación y manual)</a></li><li><a href="../article/download-data.html">Volver a descargar datos históricos (herramienta Download Data)</a></li><li><a href="../article/database-optimization.html">Optimización de la base de datos</a></li><li><a href="../article/database-problems.html">Solución: problemas de la base de datos</a></li><li><a href="../article/fix-could-not-find-path.html">Solución: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Solución de problemas y soporte <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Solución: problemas de instalación y requisitos básicos</a></li><li><a href="../article/installation-setup-failed.html">Solución: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Solución: una política de control de aplicaciones bloquea DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Solución: la herramienta de dibujo Rectángulo no funciona</a></li><li><a href="../article/chart-zoom.html">Solución: el zoom del gráfico no funciona</a></li><li><a href="../article/license-issues.html">Solución: problemas de licencia y activación</a></li><li><a href="../article/diagnostic-report.html">Informe de diagnóstico: antes de contactar con soporte</a></li><li><a href="../article/get-help.html">Cómo obtener ayuda (chat, informe de diagnóstico, soporte)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Cuenta y facturación <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Administre sus suscripciones y facturación</a></li><li><a href="../article/move-to-new-computer.html">Mover DeepCharts a un ordenador nuevo</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/charts-workspace.html">Gráficos y espacio de trabajo</a></div>
+<div class="article-head"><h1>Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)</h1>
+<p class="article-desc">Qué cargan los botones de opción OF-VP, OF-B/A, D-VP, D-DP, D-VL, W-VP, W-DP y C-VP de la barra inferior del gráfico, y cuándo usar cada preajuste.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 4 min read</span>
+  <a class="btn-pdf" href="../pdf/quick-chart-templates.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Cada gráfico de precios en DeepCharts tiene una fila de botones de opción en su barra inferior: <strong>OF-VP</strong>, <strong>OF-B/A</strong>, <strong>D-VP</strong>, <strong>D-DP</strong>, <strong>D-VL</strong>, <strong>W-VP</strong>, <strong>W-DP</strong> y <strong>C-VP</strong>. Un clic aplica al gráfico un diseño de flujo de órdenes completo y configurado profesionalmente, sin necesidad de configurar indicadores.</p>
+<p>Este artículo explica qué carga cada preajuste y en qué se diferencia de las plantillas que usted guarda por su cuenta.</p>
+<h2 id="qu-es">Qué es</h2>
+<p>Los botones de plantilla rápida son preajustes integrados de un solo clic de los indicadores propios de DeepCharts, <strong>Deep Print</strong> y <strong>Deep Profile</strong>, con configuraciones predefinidas, para que no tenga que configurar lo básico usted mismo. Responden a la pregunta &quot;¿cómo consigo un footprint o un perfil de volumen en mi gráfico ahora mismo?&quot;.</p>
+<p>No son editables por el usuario. Si quiere una versión modificada de uno de estos diseños, añada usted mismo el indicador subyacente (<a href="./deep-print.html">Deep Print (Footprint)</a> o <a href="./deep-profile.html">Deep Profile (Perfil de volumen / delta)</a>), configúrelo y guarde su propia plantilla; consulte <a href="./templates-workspaces.html">Plantillas y espacios de trabajo</a>.</p>
+<p>El botón <strong>Templates</strong> situado junto a los botones de opción es una función distinta: es un atajo de clic derecho → <strong>Template → Load</strong> y abre el selector de archivos <strong>Local / Cloud / Shared</strong> para sus propias plantillas guardadas.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Barra inferior de un gráfico de precios mostrando el botón Templates seguido de los botones de opción OF-VP, OF-B/A, D-VP, D-DP, D-VL, W-VP, W-DP y C-VP, con el botón DOM Trading y el conmutador Trading panel en el extremo derecho</div><div class="s-file">ID: <b class="s-id">dc-es-quick-chart-templates-01</b> · save as <code>dc-es-quick-chart-templates-01.png</code></div></div></div>
+<h2 id="cu-ndo-usarlo">Cuándo usarlo</h2>
+<ul>
+<li>Quiere una vista footprint (de flujo de órdenes) de cada vela sin configurar Deep Print desde cero.</li>
+<li>Quiere el perfil de volumen o de delta del día o de la semana con un clic.</li>
+<li>Está evaluando qué diseño de flujo de órdenes se adapta a su trading antes de comprometerse con una plantilla personalizada.</li>
+<li>Está siguiendo un vídeo educativo que parte de uno de estos preajustes.</li>
+</ul>
+<h2 id="inicio-r-pido">Inicio rápido</h2>
+<ol>
+<li>Abra un gráfico de precios; consulte <a href="./first-chart.html">Abra su primer gráfico</a>.</li>
+<li>Mire la barra inferior del gráfico y haga clic en <strong>OF-VP</strong>.</li>
+<li>Espere a que el gráfico se redibuje: cada vela muestra ahora su propio perfil de volumen (Deep Print en estilo de perfil).</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gráfico de precios inmediatamente después de hacer clic en OF-VP, con el botón OF-VP seleccionado en la barra inferior y cada vela renderizada como un perfil de volumen por barra</div><div class="s-file">ID: <b class="s-id">dc-es-quick-chart-templates-02</b> · save as <code>dc-es-quick-chart-templates-02.png</code></div></div></div>
+<ol start="4">
+<li>Recorra los demás botones para comparar diseños y quédese con el que encaje con su flujo de trabajo.</li>
+</ol>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> <span class="confirm-flag">CONFIRM: whether selecting a quick-template radio replaces the chart's existing indicators or layers on top of them, and how to return the chart to its previous state afterwards</span></p>
+</blockquote>
+<h2 id="c-mo-leerlo">Cómo leerlo</h2>
+<p>Cada preajuste es una vista de los mismos datos de flujo de órdenes subyacentes con una agregación distinta:</p>
+<table>
+<thead>
+<tr>
+<th>Preajuste</th>
+<th>Qué carga</th>
+<th>Basado en</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OF-VP</strong></td>
+<td>Deep Print en estilo de perfil: cada vela muestra su propio perfil de volumen</td>
+<td><a href="./deep-print.html">Deep Print (Footprint)</a></td>
+</tr>
+<tr>
+<td><strong>OF-B/A</strong></td>
+<td>Deep Print en estilo de columnas Bid/Ask, con impresiones de desequilibrio en negrita e intensidad de color</td>
+<td><a href="./deep-print.html">Deep Print (Footprint)</a></td>
+</tr>
+<tr>
+<td><strong>D-VP</strong></td>
+<td>Perfil de volumen diario</td>
+<td><a href="./deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></td>
+</tr>
+<tr>
+<td><strong>D-DP</strong></td>
+<td>Perfil de delta diario</td>
+<td><a href="./deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></td>
+</tr>
+<tr>
+<td><strong>D-VL</strong></td>
+<td>VWAP diario con 3 bandas de desviación estándar por encima y por debajo</td>
+<td><a href="./deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></td>
+</tr>
+<tr>
+<td><strong>W-VP</strong></td>
+<td>Perfil de volumen semanal</td>
+<td><a href="./deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></td>
+</tr>
+<tr>
+<td><strong>W-DP</strong></td>
+<td>Perfil de delta semanal</td>
+<td><a href="./deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></td>
+</tr>
+<tr>
+<td><strong>C-VP</strong></td>
+<td>Perfil compuesto de todos los datos cargados en el gráfico</td>
+<td><a href="./deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></td>
+</tr>
+</tbody>
+</table>
+<p>Los preajustes <strong>OF-</strong> convierten cada vela en una vista de flujo de órdenes por barra: pruebe el footprint de abajo: pase el cursor sobre las celdas bid×ask y ajuste el ratio de desequilibrio para ver qué resalta en negrita OF-B/A.</p>
+<div class="widget-mount" data-widget="footprint-lab"></div>
+<p>Indicaciones de lectura:</p>
+<ul>
+<li>Los preajustes <strong>OF-</strong> son vistas de flujo de órdenes por barra. Empiece por <a href="./reading-a-footprint.html">Cómo leer un footprint: ejemplos prácticos</a> para interpretar las columnas bid/ask y las impresiones de desequilibrio, y por <a href="./orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a> para los conceptos subyacentes.</li>
+<li>Los preajustes <strong>D-</strong> y <strong>W-</strong> agregan un día o una semana por perfil. El POC, el área de valor y los nodos de alto/bajo volumen se explican en <a href="./understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a>.</li>
+<li><strong>D-VL</strong> es la excepción: en lugar de un perfil, traza el VWAP diario con tres bandas de desviación estándar a cada lado; consulte <a href="./understanding-vwap.html">Entender el VWAP</a> para saber cómo usan los operadores esas bandas.</li>
+<li><strong>C-VP</strong> construye un único perfil con todo lo cargado actualmente en el gráfico, así que su forma cambia si cambia cuánta historia carga el gráfico.</li>
+</ul>
+<p>Practique la lectura de los preajustes de perfil con el perfil en vivo de abajo: arrastre el Value Area % y pase el cursor sobre las filas para ver cómo funcionan el POC, el VAH y el VAL en D-VP, W-VP y C-VP.</p>
+<div class="widget-mount" data-widget="volume-profile-lab"></div>
+<h2 id="referencia-de-configuraci-n">Referencia de configuración</h2>
+<p>Los preajustes en sí no exponen configuraciones: son configuraciones fijas. La barra inferior contiene:</p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Botón <strong>Templates</strong></td>
+<td>Abre el selector de archivos de plantillas (Local / Cloud / Shared): atajo de clic derecho → <strong>Template → Load</strong>. Consulte <a href="./templates-workspaces.html">Plantillas y espacios de trabajo</a>.</td>
+</tr>
+<tr>
+<td>Botones <strong>OF-VP</strong> ... <strong>C-VP</strong></td>
+<td>Aplican el preajuste integrado correspondiente (tabla anterior). No editables por el usuario.</td>
+</tr>
+<tr>
+<td>Botón <strong>DOM Trading</strong></td>
+<td>Cambia el gráfico a la escalera de trading con clics sobre el gráfico; consulte <a href="./dom-trading-chart.html">DOM Trading en el gráfico (escalera de trading con clics)</a>.</td>
+</tr>
+<tr>
+<td>Conmutador <strong>Trading panel</strong></td>
+<td>Muestra u oculta el panel de trading del gráfico; consulte <a href="./trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Para ajustar cualquier cosa que muestre un preajuste (agrupamiento de ticks, umbrales de desequilibrio, colores), abra la configuración propia del indicador desde el gestor de indicadores del gráfico y configure directamente <a href="./deep-print.html">Deep Print (Footprint)</a> o <a href="./deep-profile.html">Deep Profile (Perfil de volumen / delta)</a>.</p>
+<h2 id="consejos-y-errores-comunes">Consejos y errores comunes</h2>
+<ul>
+<li><strong>Intentar editar un preajuste.</strong> Los botones son fijos. Recree el diseño con su propia configuración de Deep Print / Deep Profile y guárdelo como plantilla; luego cárguelo desde el botón <strong>Templates</strong>.</li>
+<li><strong>Confundir los preajustes con las plantillas guardadas.</strong> Botones de opción = integrados y fijos; botón <strong>Templates</strong> = sus propios archivos más la biblioteca <strong>Shared</strong> de solo lectura del equipo.</li>
+<li><strong>Esperar que C-VP coincida con el compuesto de otro operador.</strong> C-VP perfila todos los datos cargados en <em>su</em> gráfico; dos gráficos que cargan cantidades distintas de historia producen compuestos distintos.</li>
+<li><strong>Juzgar un preajuste con una fuente retrasada.</strong> Las impresiones de desequilibrio y el coloreado por delta son más significativos con una fuente en vivo; en la fuente gratuita retrasada los datos van 15 minutos por detrás; consulte <a href="./free-delayed-data-feed.html">Cómo usar la fuente de datos gratuita con 15 minutos de retraso</a>.</li>
+</ul>
+<h2 id="art-culos-relacionados">Artículos relacionados</h2>
+<ul>
+<li><a href="./templates-workspaces.html">Plantillas y espacios de trabajo</a></li>
+<li><a href="./deep-print.html">Deep Print (Footprint)</a></li>
+<li><a href="./deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></li>
+<li><a href="./understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li>
+<li><a href="./understanding-vwap.html">Entender el VWAP</a></li>
+<li><a href="./reading-a-footprint.html">Cómo leer un footprint: ejemplos prácticos</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./templates-workspaces.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Plantillas y espacios de trabajo</div></a><a class="next" href="./link-windows.html"><div class="pn-lbl">Next →</div><div class="pn-title">Vincular ventanas con grupos de color</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#qu-es">Qué es</a></li><li class="lv2"><a href="#cu-ndo-usarlo">Cuándo usarlo</a></li><li class="lv2"><a href="#inicio-r-pido">Inicio rápido</a></li><li class="lv2"><a href="#c-mo-leerlo">Cómo leerlo</a></li><li class="lv2"><a href="#referencia-de-configuraci-n">Referencia de configuración</a></li><li class="lv2"><a href="#consejos-y-errores-comunes">Consejos y errores comunes</a></li><li class="lv2"><a href="#art-culos-relacionados">Artículos relacionados</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-es.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>
