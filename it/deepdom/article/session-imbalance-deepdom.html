@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Session Imbalance — Centro Assistenza DeepDOM</title>
+<meta name="description" content="L&#x27;indicatore Session Imbalance evidenzia i livelli di prezzo chiave della prima ora di trading, nota come Initial Balance.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/installation-and-first-configuration.html">Primi passi</a><a href="../../../it/article/get-help.html">Assistenza</a><a class="kb-switch" href="../../../it/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/session-imbalance-deepdom.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemi Comuni <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemi di installazione</a></li><li><a href="../article/licence-issues.html">Problemi di licenza</a></li><li><a href="../article/symbol-subscription-issues.html">Problemi di sottoscrizione dei simboli</a></li><li><a href="../article/cache-issues-deepdom.html">Problemi di cache</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Come Fare <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installazione e prima configurazione</a></li><li><a href="../article/general-settings.html">Impostazioni generali</a></li><li><a href="../article/how-to-add-a-new-connection.html">Come aggiungere una nuova connessione</a></li><li><a href="../article/how-to-add-markets-correctly.html">Come aggiungere i mercati correttamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configurazione utente — Template, Workspace, configurazione degli strumenti</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Come inserire le notifiche sonore</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Come personalizzare lingua e tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Come gestire il rollover dei simboli</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Finestra degli ordini</a></li><li><a href="../article/trading-from-the-chart.html">Trading dal grafico</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio e Responsabile del rischio</a></li><li><a href="../article/simulation-environment.html">Ambiente di simulazione</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicatori <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html" class="active">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html">Volume Profile</a></li><li><a href="../article/stop-run.html">Stop Run</a></li><li><a href="../article/absorption.html">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funzionalità <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay dei dati tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicatori Deep <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Deep Iceberg (Rilevatore di ordini Iceberg)</a></li><li><a href="../article/deep-reload.html">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators.html">Indicatori</a></div>
+<div class="article-head"><h1>Session Imbalance</h1>
+<p class="article-desc">L&#x27;indicatore Session Imbalance evidenzia i livelli di prezzo chiave della prima ora di trading, nota come Initial Balance.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 7 min read</span>
+  <a class="btn-pdf" href="../pdf/session-imbalance-deepdom.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>L'indicatore Session Imbalance evidenzia i livelli di prezzo chiave della prima ora di trading, nota come Initial Balance. Questi livelli sono considerati significativi perché la maggior parte del volume di trading di ogni sessione entra proprio durante questa prima ora di apertura.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — panoramica (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-01</b> · save as <code>dd-it-session-imbalance-deepdom-01.png</code></div></div></div>
+<p>Per i futures statunitensi, questo corrisponde alle 9:30 – 10:30 ora del mercato. Nel corso della sessione, questi livelli agiscono spesso come importanti zone di supporto, resistenza o reazione.</p>
+<p>L'indicatore traccia i seguenti livelli:</p>
+<p>IBH (Imbalance High) — il massimo del periodo di initial balance</p>
+<p>IBL (Imbalance Low) — il minimo del periodo di initial balance</p>
+<p>IBM (Mid Point) — il punto medio tra IBH e IBL</p>
+<p>IB50% — estensioni del 50% sopra e sotto l'initial balance</p>
+<p>IB100% — estensioni del 100% sopra e sotto l'initial balance</p>
+<h2 id="quando-usare-questo-indicatore">Quando usare questo indicatore</h2>
+<p>L'indicatore Session Imbalance è particolarmente utile durante le sessioni di trading regolari in cui esiste un periodo di apertura definito — in particolare nei mercati dei futures come NQ, ES, CL e strumenti simili che hanno un'apertura di sessione chiara con alta partecipazione.</p>
+<p>Ecco le situazioni più comuni in cui questo indicatore aggiunge reale valore:</p>
+<p>All'inizio della giornata di trading Non appena la sessione apre, l'indicatore inizia a costruire il range dell'Initial Balance. Osservare come il prezzo si comporta all'interno di questo range durante la prima ora ti offre un contesto importante per il resto della giornata. Un range stretto suggerisce indecisione. Un range ampio suggerisce una forte convinzione direzionale già a inizio sessione.</p>
+<p>Quando il prezzo ritorna nell'Initial Balance dopo un breakout Uno degli usi più affidabili di questo indicatore è osservare il prezzo che rompe sopra l'IBH o sotto l'IBL e poi ritorna su quei livelli. Quando questo accade, IBH e IBL spesso invertono il loro ruolo — una vecchia resistenza diventa supporto e un vecchio supporto diventa resistenza. Questi re-test possono offrire opportunità di ingresso di alta qualità.</p>
+<p>Usare il Midpoint come riferimento intraday L'IBM (punto medio) è uno dei livelli più osservati dai trader istituzionali durante l'intera sessione. Un prezzo che gravita verso il punto medio spesso segnala un movimento di bilanciamento o di ritorno alla media. Un forte rifiuto del punto medio, al contrario, può segnalare una continuazione nella direzione del breakout.</p>
+<p>Usare le estensioni del 50% e 100% come target Una volta che il prezzo rompe il range dell'Initial Balance, i livelli di estensione del 50% e 100% diventano target naturali del movimento. Se il prezzo rompe sopra l'IBH, l'estensione IB50% superiore diventa il primo target e l'estensione IB100% il secondo. Lo stesso vale al contrario per una rottura sotto l'IBL.</p>
+<p>Quando lo combini con strumenti di orderflow e volume I livelli del Session Imbalance diventano molto più potenti se combinati con strumenti come la Heatmap o il DOM. Se un grande cluster di ordini limit è posizionato esattamente sul livello IBH o IBL, quella confluenza rende molto più probabile che il livello agisca come una forte zona di reazione.</p>
+<h2 id="come-aggiungere-il-session-imbalance-al-grafico">Come aggiungere il Session Imbalance al grafico</h2>
+<p>Fai clic sull'icona Indicators (Indicatori) sul grafico</p>
+<p>Trova Session Imbalance nell'elenco e fai clic su + per aggiungerlo</p>
+<p>Fai clic sull'icona delle impostazioni sull'indicatore per aprire la sua finestra di configurazione</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Come aggiungere il Session Imbalance al grafico (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-02</b> · save as <code>dd-it-session-imbalance-deepdom-02.png</code></div></div></div>
+<h2 id="impostazioni-generali">Impostazioni generali</h2>
+<p>Number of Minutes Definisce quanti minuti vengono usati per calcolare l'Initial Balance. Il valore predefinito è 60 minuti, per catturare la prima ora completa di trading. Puoi comunque modificarlo — per esempio, impostalo su 15 per usare solo i primi 15 minuti. Puoi anche applicare più indicatori Session Imbalance con intervalli di tempo diversi sullo stesso grafico.</p>
+<p>Custom Timeframe Quando è attivo, ti consente di definire manualmente un orario di inizio sessione personalizzato invece di usare quello predefinito.</p>
+<p>Start Session – Market Time Definisce l'orario di inizio della sessione. Importante — inserisci sempre l'ora del mercato di riferimento, non quella del tuo fuso orario locale.</p>
+<p>Futures USA → 9:30</p>
+<p>Futures europei → 9:00</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Impostazioni generali (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-03</b> · save as <code>dd-it-session-imbalance-deepdom-03.png</code></div></div></div>
+<h2 id="impostazioni-di-visualizzazione">Impostazioni di visualizzazione</h2>
+<p>High Color Imposta il colore della linea IBH (Imbalance High).</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-04</b> · save as <code>dd-it-session-imbalance-deepdom-04.png</code></div></div></div>
+<p>Mid Color Imposta il colore della linea IBM (Mid Point).</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-05</b> · save as <code>dd-it-session-imbalance-deepdom-05.png</code></div></div></div>
+<p>Low Color Imposta il colore della linea IBL (Imbalance Low).</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-06</b> · save as <code>dd-it-session-imbalance-deepdom-06.png</code></div></div></div>
+<p>Line Width Imposta lo spessore di tutte le linee del Session Imbalance.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-07</b> · save as <code>dd-it-session-imbalance-deepdom-07.png</code></div></div></div>
+<p>Line Style Imposta lo stile delle linee — per esempio continua, tratteggiata o punteggiata.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-08</b> · save as <code>dd-it-session-imbalance-deepdom-08.png</code></div></div></div>
+<p>Text Size Imposta la dimensione del carattere delle etichette mostrate accanto a ogni livello.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-09</b> · save as <code>dd-it-session-imbalance-deepdom-09.png</code></div></div></div>
+<p>Extend Controlla fino a dove le linee del Session Imbalance vengono disegnate sul grafico. Ci sono tre opzioni:</p>
+<p>None: le linee vengono disegnate solo all'interno del periodo di initial balance. Una volta terminato il periodo, le linee si fermano e non si estendono più verso destra.</p>
+<p>Till Interaction: le linee si estendono verso destra finché il prezzo non interagisce con esse — cioè non appena il prezzo tocca o attraversa un livello, la linea smette di estendersi in quel punto. È utile se vuoi vedere solo i livelli non ancora testati dal prezzo.</p>
+<p>Till End: le linee si estendono fino al bordo destro del grafico, indipendentemente dal fatto che il prezzo abbia interagito o meno con esse. È l'impostazione predefinita e ti offre un riferimento visivo completo di tutti i livelli per l'intera sessione.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-10</b> · save as <code>dd-it-session-imbalance-deepdom-10.png</code></div></div></div>
+<p>Text Align Imposta dove appaiono le etichette rispetto alle linee. Puoi scegliere tra:</p>
+<p>Left</p>
+<p>Center</p>
+<p>Right</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-11</b> · save as <code>dd-it-session-imbalance-deepdom-11.png</code></div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-12</b> · save as <code>dd-it-session-imbalance-deepdom-12.png</code></div></div></div>
+<p>Plot Once Ended Quando questa impostazione è attiva, i livelli del Session Imbalance vengono disegnati sul grafico solo quando il periodo di initial balance si è completamente chiuso e concluso. Questo significa che non vedrai le linee formarsi o aggiornarsi in tempo reale mentre il periodo di apertura è ancora attivo — appariranno solo alla fine del periodo.</p>
+<p>Quando questa impostazione è disattivata, i livelli vengono disegnati e aggiornati in tempo reale mentre il periodo di initial balance si sta formando, così puoi osservare IBH, IBL e punto medio svilupparsi in diretta fin dall'inizio della sessione.</p>
+<p>Usa Plot Once Ended su ON se vuoi operare solo sui livelli confermati e definitivi e preferisci un grafico pulito durante il periodo di apertura.</p>
+<p>Usa Plot Once Ended su OFF se vuoi monitorare i livelli mentre si sviluppano e reagire alla price action durante il periodo di apertura stesso.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-13</b> · save as <code>dd-it-session-imbalance-deepdom-13.png</code></div></div></div>
+<h2 id="livelli-di-estensione-50-100">Livelli di estensione 50% / 100%</h2>
+<p>Attiva le linee di estensione 50% e 100% per tracciare livelli proiettati sopra e sotto il range dell'Initial Balance. Una volta attivate, puoi impostare un colore personalizzato per ciascuna estensione.</p>
+<p>Queste estensioni vengono comunemente usate per identificare potenziali target o zone di reazione se il prezzo rompe oltre il massimo o il minimo dell'initial balance.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Livelli di estensione 50% / 100% (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-14</b> · save as <code>dd-it-session-imbalance-deepdom-14.png</code></div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Session Imbalance — Livelli di estensione 50% / 100% (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-session-imbalance-deepdom-15</b> · save as <code>dd-it-session-imbalance-deepdom-15.png</code></div></div></div>
+<h2 id="conclusione">Conclusione</h2>
+<p>L'indicatore Session Imbalance ti offre un riferimento visivo immediato per i livelli di prezzo più importanti stabiliti nella prima ora di trading. Combinati con l'analisi del volume e dell'orderflow, questi livelli possono migliorare in modo significativo la precisione dei tuoi ingressi e delle tue uscite durante la sessione.</p>
+<h3 id="hai-ancora-problemi">Hai ancora problemi?</h3>
+<p>Il nostro team di supporto è disponibile 24/7 e pronto ad aiutarti con qualsiasi problema tu incontri.</p>
+<p>Quando ci contatti, includi:</p>
+<p>Uno screenshot del problema</p>
+<p>Una breve descrizione di ciò che stavi cercando di fare</p>
+<p>Ticket di supporto (risposta più rapida) Visita www.deepcharts.com e crea un ticket di supporto direttamente sul nostro sito.</p>
+<p>Supporto via email Scrivici a support@deepcharts.com — tieni presente che le risposte via email possono richiedere un po' più di tempo rispetto a un ticket di supporto.</p>
+</article>
+<div class="pn"><a class="prev" href="./vwap-envelopes-deepdom.html"><div class="pn-lbl">← Previous</div><div class="pn-title">VWAP + Envelopes</div></a><a class="next" href="./book-speed.html"><div class="pn-lbl">Next →</div><div class="pn-title">Book Speed</div></a></div>
+    <div class="footer">Centro Assistenza DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#quando-usare-questo-indicatore">Quando usare questo indicatore</a></li><li class="lv2"><a href="#come-aggiungere-il-session-imbalance-al-grafico">Come aggiungere il Session Imbalance al grafico</a></li><li class="lv2"><a href="#impostazioni-generali">Impostazioni generali</a></li><li class="lv2"><a href="#impostazioni-di-visualizzazione">Impostazioni di visualizzazione</a></li><li class="lv2"><a href="#livelli-di-estensione-50-100">Livelli di estensione 50% / 100%</a></li><li class="lv2"><a href="#conclusione">Conclusione</a></li><li class="lv3"><a href="#hai-ancora-problemi">Hai ancora problemi?</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-it-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>

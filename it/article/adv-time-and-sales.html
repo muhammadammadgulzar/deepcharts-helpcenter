@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Advanced Time And Sales (il tape) — Centro Assistenza DeepCharts</title>
+<meta name="description" content="Leggi il tape di DeepCharts: stampe trade per trade con colori dell&#x27;aggressore, filtri per lato e i pannelli inferiori Bid/Ask, Delta e squilibrio del book.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/quick-start-first-trade.html">Guida rapida</a><a href="../article/get-help.html">Assistenza</a><a class="kb-switch" href="../../it/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/adv-time-and-sales.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primi passi <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Benvenuto in DeepCharts: tour della piattaforma</a></li><li><a href="../article/system-requirements.html">Requisiti di sistema</a></li><li><a href="../article/install-deepcharts.html">Come installare DeepCharts e attivare la tua licenza</a></li><li><a href="../article/free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a></li><li><a href="../article/buy-data-feed.html">Come acquistare un feed dati e ottenere le tue credenziali</a></li><li><a href="../article/first-chart.html">Apri il tuo primo grafico</a></li><li><a href="../article/simulation-accounts.html">Conti di trading e simulazione</a></li><li><a href="../article/quick-start-first-trade.html">Avvio rapido: dall&#x27;installazione alla tua prima operazione</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connessioni e feed dati <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configurazione</li><li><a href="../article/compatibility-guide.html">Broker, prop firm e feed dati supportati</a></li><li><a href="../article/connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li><li><a href="../article/sign-market-data-agreement.html">Firma il contratto sui dati di mercato</a></li><li><a href="../article/connect-dxfeed.html">Come connettere un feed dati dxFeed</a></li><li><a href="../article/connect-rithmic.html">Come collegare un feed dati Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Connettere Rithmic con il plugin RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Collega qualsiasi conto prop firm Rithmic (tabella dei server)</a></li><li><a href="../article/connect-apex.html">Connettere Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connettere un conto dxFeed di una prop firm (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Come connettere CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connettere Interactive Brokers (solo esecuzione)</a></li><li><a href="../article/competition-connect.html">Competizione DeepCharts: iscriviti e connettiti</a></li><li><a href="../article/end-of-day-data.html">Connettere i dati storici (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Gestire e passare da una connessione feed all&#x27;altra</a></li><li class="nav-sub">Risoluzione dei problemi</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Correzione: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Correzione: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Correzione: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Correzione: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Correzione: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Correzione: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Correzione: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Correzione: connessione persa all&#x27;apertura di un grafico</a></li><li><a href="../article/symbol-subscription-issue.html">Correzione: problema di sottoscrizione dei simboli</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: l&#x27;app va in crash salvando le impostazioni del feed</a></li><li><a href="../article/gaps-in-price.html">Correzione: gap di prezzo sui grafici</a></li><li><a href="../article/data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Grafici e workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La finestra del grafico</a></li><li><a href="../article/price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li><li><a href="../article/chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li><li><a href="../article/drawing-tools.html">Strumenti di disegno e annotazioni</a></li><li><a href="../article/templates-workspaces.html">Template e workspace</a></li><li><a href="../article/quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Collegare le finestre con i gruppi colore</a></li><li><a href="../article/replay-data.html">Replay dei dati di mercato</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalizza lingua, tema e suoni di notifica</a></li><li><a href="../article/keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Riferimento delle scorciatoie da tastiera</a></li><li><a href="../article/multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Finestre della piattaforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html" class="active">Advanced Time And Sales (il tape)</a></li><li><a href="../article/advanced-dom.html">Finestra Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading e ordini <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading dal grafico</a></li><li><a href="../article/trading-panel-reference.html">Riferimento del pannello di trading: ogni pulsante e campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li><li><a href="../article/depth-of-market.html">Indicatore Depth of Market (DOM)</a></li><li><a href="../article/oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Finestra Ordini</a></li><li><a href="../article/portfolio-wallet.html">Portafoglio (Wallet)</a></li><li><a href="../article/risk-manager.html">Responsabile del rischio</a></li><li><a href="../article/trade-copier.html">Come configurare il Trade Copier</a></li><li><a href="../article/performance-analysis.html">Analisi delle performance (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concetti <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li><li><a href="../article/understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Capire la teoria dell&#x27;asta: squilibrio, aste incompiute, assorbimento</a></li><li><a href="../article/understanding-icebergs-absorption.html">Capire gli iceberg e l&#x27;assorbimento</a></li><li><a href="../article/understanding-vwap.html">Capire il VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Leggere un footprint: esempi svolti</a></li><li><a href="../article/glossary.html">Glossario dei termini di orderflow e della piattaforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicatori e analisi <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fondamenti degli indicatori</li><li><a href="../article/different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li><li><a href="../article/indicator-layout.html">Come cambiare il layout degli indicatori</a></li><li class="nav-sub">Indicatori Deep</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Media mobile</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regressione lineare</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum e oscillatori</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscillatore stocastico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilità e bande</li><li><a href="../article/bollinger-bands.html">Bande di Bollinger</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Deviazione standard</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume e delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Orderflow e asta</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Livelli e pattern</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Livelli importanti</a></li><li><a href="../article/absolute-levels.html">Livelli assoluti</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Overlay del grafico</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Testo sul grafico</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Dati e database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></li><li><a href="../article/delete-market-data.html">Eliminare i dati di mercato (metodo in-app e manuale)</a></li><li><a href="../article/download-data.html">Ri-scaricare i dati storici (strumento Download Data)</a></li><li><a href="../article/database-optimization.html">Ottimizzazione del database</a></li><li><a href="../article/database-problems.html">Correzione: problemi al database</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Risoluzione problemi e supporto <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Risoluzione: problemi di installazione e requisiti di base</a></li><li><a href="../article/installation-setup-failed.html">Risoluzione: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: una policy di controllo delle applicazioni blocca DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Soluzione: lo strumento di disegno Rettangolo non funziona</a></li><li><a href="../article/chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a></li><li><a href="../article/license-issues.html">Risolvere: problemi di licenza e attivazione</a></li><li><a href="../article/diagnostic-report.html">Report diagnostico: prima di contattare il supporto</a></li><li><a href="../article/get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account e fatturazione <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Gestire abbonamenti e fatturazione</a></li><li><a href="../article/move-to-new-computer.html">Spostare DeepCharts su un nuovo computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/platform-windows.html">Finestre della piattaforma</a></div>
+<div class="article-head"><h1>Advanced Time And Sales (il tape)</h1>
+<p class="article-desc">Leggi il tape di DeepCharts: stampe trade per trade con colori dell&#x27;aggressore, filtri per lato e i pannelli inferiori Bid/Ask, Delta e squilibrio del book.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 12 min read</span>
+  <a class="btn-pdf" href="../pdf/adv-time-and-sales.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Advanced Time And Sales è il tape di DeepCharts: una lista in tempo reale in cui ogni trade eseguito compare come una riga nel momento in cui viene stampato. Dove un grafico comprime l'attività in barre, il tape ti mostra ogni singola transazione — l'orario, la dimensione e quale lato del mercato è stato l'aggressore.</p>
+<p>Questo articolo copre la finestra in sé: come aprirla, cosa significano i colori delle righe, i tre pannelli inferiori opzionali (Bid/Ask, Delta, squilibrio del book) e ogni impostazione delle finestre <strong>Chart Settings</strong> e <strong>TS Settings</strong>.</p>
+<h2 id="che-cos">Che cos'è</h2>
+<p>La finestra risponde a una domanda: chi sta scambiando in questo momento, quanto e a quale prezzo. Ogni riga è la stampa di un singolo trade con tre colonne — <strong>Time</strong>, <strong>Volume</strong> e <strong>Price</strong>. La cella del prezzo è colorata in base a dove il trade è stato eseguito, così a colpo d'occhio vedi se i compratori stanno alzando l'ask o i venditori stanno colpendo il bid. Pannelli opzionali in fondo alla finestra aggregano quelle stampe in totali progressivi per lato, in una barra di delta, o in una vista live del book di negoziazione.</p>
+<p>Se la logica del lato aggressore ti è nuova (perché un trade &quot;all'ask&quot; significa un compratore aggressivo), leggi prima <a href="./orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a> — il tape ha molto più senso con quel modello in mente.</p>
+<h2 id="quando-usarlo">Quando usarlo</h2>
+<ul>
+<li>Per confermare se un movimento rapido è sostenuto da volume aggressivo reale o da stampe sottili.</li>
+<li>Per osservare la velocità di esecuzione e le dimensioni delle stampe attorno a un livello che ti interessa — si abbina bene a <a href="./speed-of-tape.html">Speed of Tape</a> e <a href="./big-trades.html">Big Trades</a>.</li>
+<li>Per monitorare un solo lato (tutti gli acquisti o tutte le vendite) con il filtro per lato del trade.</li>
+<li>Per tenere un conteggio compatto del delta o dei volumi bid/ask senza aprire un grafico completo.</li>
+<li>Per osservare la pressione del book passivo con il pannello di squilibrio del book mentre gestisci un ingresso sull'<a href="./advanced-dom.html">Finestra Advanced DOM</a>.</li>
+</ul>
+<h2 id="avvio-rapido">Avvio rapido</h2>
+<ol>
+<li>Nella barra principale, apri <strong>New → Adv. Time And Sales</strong>.</li>
+<li>Nella finestra <strong>Select Instrument</strong>, scegli il tuo strumento (per esempio NQ) e conferma. Qui compaiono solo gli exchange che hai sottoscritto in <a href="./symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a> — un selettore vuoto significa che non c'è ancora nessuna sottoscrizione.</li>
+<li>La finestra del tape si apre e inizia a riempirsi con le stampe in tempo reale.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Il menu New aperto nella barra principale di DeepCharts con Adv. Time And Sales evidenziato, e la finestra Select Instrument visibile con NQ selezionato</div><div class="s-file">ID: <b class="s-id">dc-it-adv-time-and-sales-01</b> · save as <code>dc-it-adv-time-and-sales-01.png</code></div></div></div>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Un tape appena aperto parte vuoto e si riempie solo con i nuovi trade stampati. In base al comportamento verificato su video, le finestre Time And Sales duplicate e nuove non mostravano alcun backfill storico — in un mercato tranquillo la finestra può restare scarna per un po'. Sembra essere una scelta di progetto, ma il comportamento esatto di backfill è <span class="confirm-flag">CONFIRM: does a new/duplicated Adv. TS window intentionally load no trade history?</span>.</p>
+</blockquote>
+<h2 id="anatomia-della-finestra">Anatomia della finestra</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra Adv. Time And Sales completa su NQ con le icone della barra del titolo (logo, ingranaggio, link, riduci a icona, chiudi), il menu a discesa del simbolo a tutta larghezza, e un tape misto di celle prezzo verdi e rosa con i numeri di volume in blu</div><div class="s-file">ID: <b class="s-id">dc-it-adv-time-and-sales-02</b> · save as <code>dc-it-adv-time-and-sales-02.png</code></div></div></div>
+<ul>
+<li><strong>Barra del titolo</strong>, da sinistra a destra: il logo DeepCharts, l'icona <strong>ingranaggio</strong> (l'hub delle impostazioni — è tutto qui), l'icona quadrata <strong>link</strong>, riduci a icona e chiudi. L'icona link non è stata dimostrata nel nostro materiale di riferimento; presumibilmente si tratta dei consueti gruppi di colori per il collegamento delle finestre (vedi <a href="./link-windows.html">Collegare le finestre con i gruppi colore</a>), ma il comportamento esatto può variare.</li>
+<li><strong>Menu a discesa del simbolo</strong> — a tutta larghezza, subito sotto la barra del titolo (per esempio NQ-202609). Cambiarlo commuta il tape su un altro strumento.</li>
+<li><strong>Il tape</strong> — colonne <strong>Time | Volume | Price</strong>. Le righe compaiono dall'alto verso il basso man mano che i trade vengono eseguiti. Il volume è stampato in testo blu.</li>
+<li>La finestra è liberamente ridimensionabile; le colonne si allargano con essa.</li>
+</ul>
+<h2 id="come-leggerlo">Come leggerlo</h2>
+<p>Lo sfondo della cella <strong>Price</strong> di ogni riga codifica il lato aggressore:</p>
+<table>
+<thead>
+<tr>
+<th>Colore</th>
+<th>Significato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verde</td>
+<td>Trade eseguito all'ask — aggressore in acquisto</td>
+</tr>
+<tr>
+<td>Rosa</td>
+<td>Trade eseguito al bid — aggressore in vendita</td>
+</tr>
+<tr>
+<td>Grigio</td>
+<td>Non confermato — probabilmente un trade eseguito tra bid e ask (dentro lo spread)</td>
+</tr>
+</tbody>
+</table>
+<p>La lettura del grigio è un'inferenza, non un fatto confermato: i campi colore di <strong>TS Settings</strong> includono uno sfondo <strong>Between Bid/Ask</strong> che è grigio di default, il che suggerisce con forza che le righe grigie siano stampe dentro lo spread — ma è in attesa di conferma, quindi trattala come probabile piuttosto che certa. Gli stessi set di colori includono anche gli sfondi <strong>Below Bid</strong> e <strong>Above Ask</strong>, il che significa che il tape può distinguere anche le stampe fuori dallo spread quotato; quando quelle colorazioni scattino è <span class="confirm-flag">CONFIRM: exact conditions for Below Bid / Above Ask row coloring</span>.</p>
+<p>Provalo sul tape live qui sotto — passa il mouse su una stampa per mettere in pausa il flusso e vedere perché è verde o rosa, e cambia i filtri All/Ask/Bid per vedere il tape diventare di un solo colore.</p>
+<div class="widget-mount" data-widget="tape-lab"></div>
+<p>Un tape che diventa improvvisamente tutto di un colore di solito non è il mercato — è il filtro per lato del trade (sezione seguente).</p>
+<h2 id="il-menu-dell-ingranaggio">Il menu dell'ingranaggio</h2>
+<p>L'icona dell'ingranaggio apre il menu completo: <strong>All Trades / Ask Trades / Bid Trades</strong> (un filtro a tre vie), <strong>Enable Bid/Ask</strong>, <strong>Enable Delta</strong>, <strong>Chart Settings</strong>, <strong>Enable book imbalance</strong>, <strong>Book imbalance settings</strong>, <strong>Duplicate Adv. TS</strong>, <strong>Always on Top</strong>, <strong>Template</strong> (Load / Save As), <strong>Rebuild TS</strong>, <strong>Rename TS</strong> e <strong>Settings TS</strong>.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Menu dell&#x27;ingranaggio di Adv. Time And Sales completamente aperto con tutte le voci: il filtro All/Ask/Bid Trades con la spunta su All Trades, e le voci Enable Bid/Ask, Enable Delta, Chart Settings, Enable book imbalance, Book imbalance settings, Duplicate Adv. TS, Always on Top, Template, Rebuild TS, Rename TS e Settings TS</div><div class="s-file">ID: <b class="s-id">dc-it-adv-time-and-sales-03</b> · save as <code>dc-it-adv-time-and-sales-03.png</code></div></div></div>
+<h3 id="filtri-per-lato-del-trade">Filtri per lato del trade</h3>
+<p><strong>All Trades</strong> (default) mostra il tape misto. <strong>Ask Trades</strong> mostra solo le esecuzioni lato ask — ogni riga visibile diventa verde. <strong>Bid Trades</strong> mostra solo le esecuzioni lato bid — tutte rosa. La stessa scelta esiste anche dentro <strong>Settings TS</strong> come <strong>TS Mode</strong>; le due restano sincronizzate.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Tape con il filtro Ask Trades attivo — ogni riga verde — e il menu dell&#x27;ingranaggio aperto con la spunta spostata su Ask Trades</div><div class="s-file">ID: <b class="s-id">dc-it-adv-time-and-sales-04</b> · save as <code>dc-it-adv-time-and-sales-04.png</code></div></div></div>
+<h3 id="pannello-bid-ask">Pannello Bid/Ask</h3>
+<p><strong>Enable Bid/Ask</strong> (disattivato di default) aggiunge un pannello nel terzo inferiore della finestra. Parte vuoto con un pulsante verde <strong>Reset</strong> a tutta larghezza, poi fa crescere due riquadri: viola a sinistra e verde a destra, ciascuno con un conteggio sotto. I riquadri crescono man mano che i trade vengono stampati, e <strong>Reset</strong> azzera entrambi i contatori.</p>
+<p>In base alla convenzione di colori del tape, il riquadro viola sembra tracciare il volume scambiato lato bid e quello verde il volume lato ask dall'ultimo reset — una lettura ragionevole, ma la semantica esatta è <span class="confirm-flag">CONFIRM: Bid/Ask panel — do the two counters equal cumulative contracts traded at bid vs at ask since last Reset?</span>.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Adv. Time And Sales con il pannello inferiore Bid/Ask attivato — riquadro viola a sinistra, riquadro verde a destra, i conteggi dei contratti sotto ciascun riquadro e il pulsante verde Reset a tutta larghezza</div><div class="s-file">ID: <b class="s-id">dc-it-adv-time-and-sales-05</b> · save as <code>dc-it-adv-time-and-sales-05.png</code></div></div></div>
+<h3 id="pannello-delta">Pannello Delta</h3>
+<p><strong>Enable Delta</strong> (disattivato di default) mostra una singola barra orizzontale nel pannello inferiore: viola mentre il delta corrente è negativo, verde quando è positivo, con due numeri impilati che crescono man mano che i trade vengono stampati (per esempio -5 / -3 che diventa -14 / -12 durante una fase di vendite). <strong>Reset</strong> azzera la barra.</p>
+<p>I campi di testo di <strong>Chart Settings</strong> includono colori separati per &quot;Delta Volume&quot; e &quot;Delta Trade&quot;, quindi i due numeri sono molto probabilmente il volume delta (sopra) e il conteggio dei trade delta (sotto) — mappatura esatta non confermata.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Pannello inferiore Delta con una barra viola di delta negativo e due numeri negativi impilati, poi lo stesso pannello verde dopo che il delta è diventato positivo</div><div class="s-file">ID: <b class="s-id">dc-it-adv-time-and-sales-06</b> · save as <code>dc-it-adv-time-and-sales-06.png</code></div></div></div>
+<h3 id="pannello-di-squilibrio-del-book">Pannello di squilibrio del book</h3>
+<p><strong>Enable book imbalance</strong> (disattivato di default) commuta il pannello inferiore su una vista del book passivo: un numero a sinistra (lato bid) e uno a destra (lato ask). Quando i due lati sono uguali, compaiono solo numeri semplici. Quando un lato domina, quel lato fa crescere un riquadro colorato dimensionato in base alla sua quota — un riquadro verde a sinistra quando domina il book bid, uno rosso a destra quando domina il book ask. I colori sono confermati dalla finestra <strong>Imbalance settings</strong> (Bid Volume = verde, Ask Volume = rosso).</p>
+<p>A differenza degli altri due pannelli, questa modalità non ha un pulsante <strong>Reset</strong> — rispecchia il book corrente invece di accumulare. Cosa sommino esattamente i numeri (solo il miglior livello bid/ask, o più livelli del book) non è confermato, come non lo è se il pannello richieda dati di profondità Level 2 per popolarsi.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Pannello inferiore di squilibrio del book in due stati — valori uguali mostrati come numeri semplici, e un lato bid dominante con un riquadro verde a sinistra dimensionato in proporzione</div><div class="s-file">ID: <b class="s-id">dc-it-adv-time-and-sales-07</b> · save as <code>dc-it-adv-time-and-sales-07.png</code></div></div></div>
+<h3 id="utilit-della-finestra">Utilità della finestra</h3>
+<ul>
+<li><strong>Duplicate Adv. TS</strong> — apre una seconda finestra del tape con lo stesso simbolo preselezionato. Il duplicato parte con un tape vuoto e contatori dei pannelli azzerati, e ogni finestra mantiene le proprie impostazioni.</li>
+<li><strong>Always on Top</strong> — mantiene la finestra sopra le altre; il comportamento esatto non è stato dimostrato nel nostro materiale di riferimento, ma la voce di menu corrisponde alla consueta opzione della finestra.</li>
+<li><strong>Template → Load / Save As</strong> — salva o carica una configurazione Time And Sales con nome, lo stesso schema dei template di grafico e DOM (<a href="./templates-workspaces.html">Template e workspace</a>).</li>
+<li><strong>Rebuild TS</strong> — svuota e ricostruisce il tape. Usalo come prima soluzione leggera quando il tape sembra difettoso o bloccato. I contatori dei pannelli si azzerano dopo una ricostruzione.</li>
+<li><strong>Rename TS</strong> — rinomina la finestra. <span class="confirm-flag">CONFIRM: Rename TS dialog contents — never opened in source material</span></li>
+</ul>
+<h2 id="riferimento-impostazioni">Riferimento impostazioni</h2>
+<h3 id="chart-settings-pannelli-bid-ask-e-delta">Chart Settings (pannelli Bid/Ask e Delta)</h3>
+<p><strong>Ingranaggio → Chart Settings</strong> controlla come i due pannelli ad accumulo misurano e visualizzano.</p>
+<table>
+<thead>
+<tr>
+<th>Sezione</th>
+<th>Impostazione</th>
+<th>Che cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GENERAL</td>
+<td><strong>Period Mode</strong></td>
+<td>Finestra di accumulo. Default <strong>Resettable</strong> — accumula finché non premi Reset. Altre opzioni: <strong>Fixed count</strong>, <strong>Fixed seconds</strong> — queste sembrano azzerarsi automaticamente usando <strong>Period Length</strong> come finestra, ma il comportamento esatto non è confermato.</td>
+</tr>
+<tr>
+<td>GENERAL</td>
+<td><strong>Period Length</strong></td>
+<td>Numero usato dalle modalità Fixed. Default 10.</td>
+</tr>
+<tr>
+<td>GENERAL</td>
+<td><strong>Visual Mode</strong></td>
+<td>Default <strong>Pos and neg</strong>. <span class="confirm-flag">CONFIRM: other Visual Mode options</span></td>
+</tr>
+<tr>
+<td>GENERAL</td>
+<td><strong>Enable Shortcut Reset</strong></td>
+<td>Disattivato di default. <span class="confirm-flag">CONFIRM: which shortcut this binds</span></td>
+</tr>
+<tr>
+<td>COLOR SETTINGS</td>
+<td><strong>Bid Volume / Ask Volume / Bid Trades / Ask Trades</strong></td>
+<td>Campioni di colore per i riquadri dei pannelli e la barra di delta (bid = viola, ask = verde di default).</td>
+</tr>
+<tr>
+<td>COLOR SETTINGS</td>
+<td><strong>Color only dominant delta</strong></td>
+<td>Interruttore che influisce sulla colorazione della barra di delta.</td>
+</tr>
+<tr>
+<td>TEXT SETTINGS</td>
+<td><strong>Text Size / Text Color</strong></td>
+<td>Stile del testo dei pannelli. Dimensione di default 14.</td>
+</tr>
+<tr>
+<td>TEXT SETTINGS</td>
+<td><strong>Pos./Neg. Delta Volume, Pos./Neg. Delta Trade</strong></td>
+<td>Selettori di colore separati per i due numeri stampati sulla barra di delta, per ciascun segno.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Apply</strong> applica senza chiudere; <strong>OK</strong> chiude la finestra.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra Chart Settings aperta con la sezione GENERAL e il menu a discesa Period Mode espanso che elenca Resettable, Fixed count e Fixed seconds</div><div class="s-file">ID: <b class="s-id">dc-it-adv-time-and-sales-08</b> · save as <code>dc-it-adv-time-and-sales-08.png</code></div></div></div>
+<h3 id="book-imbalance-settings">Book imbalance settings</h3>
+<p><strong>Ingranaggio → Book imbalance settings</strong> apre la finestra <strong>Imbalance settings</strong>: COLOR SETTINGS (<strong>Bid Volume</strong> = verde, <strong>Ask Volume</strong> = rosso) e TEXT SETTINGS (<strong>Text Size</strong> default 14, <strong>Bid color</strong>, <strong>Ask color</strong>).</p>
+<h3 id="ts-settings-il-tape-stesso">TS Settings (il tape stesso)</h3>
+<p><strong>Ingranaggio → Settings TS</strong> apre la finestra <strong>TS Settings</strong> con cinque sezioni comprimibili:</p>
+<table>
+<thead>
+<tr>
+<th>Sezione</th>
+<th>Impostazioni</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GENERAL</td>
+<td><strong>Back color</strong>, <strong>Border color</strong>, <strong>Font color</strong>, <strong>Font size</strong> (default 12.00), <strong>Bold font</strong> (si applica subito con Apply), <strong>Input data</strong> (default <strong>Volume</strong>; passando a <strong>Order</strong> cambia l'intestazione della colonna centrale — il tape mostra allora un conteggio legato agli ordini per stampa invece del volume in contratti; semantica esatta ed eventuali ulteriori opzioni non confermate), <strong>Show milliseconds</strong> (la colonna Time diventa per esempio 02:03:42.382), <strong>TS Mode</strong> (<strong>All trades / Ask trades / Bid trades</strong> — lo stesso filtro dell'ingranaggio).</td>
+</tr>
+<tr>
+<td>FILTER SETTINGS</td>
+<td><strong>Filter 1</strong> (numero, default 0), <strong>Enable Filter 2</strong> (disattivato), <strong>Filter 2</strong> (numero, default 0). Sembrano soglie di dimensione minima che attivano i set di colori FILTER 1 / FILTER 2 per evidenziare le stampe più grandi — non confermato.</td>
+</tr>
+<tr>
+<td>FILTER 1</td>
+<td>Dieci campi colore: gli sfondi <strong>Bid</strong>, <strong>Below Bid</strong>, <strong>Between Bid/Ask</strong> (grigio di default), <strong>Ask</strong>, <strong>Above Ask</strong> più i cinque colori di testo corrispondenti.</td>
+</tr>
+<tr>
+<td>FILTER 2</td>
+<td>Gli stessi dieci campi con un secondo set di colori più saturo.</td>
+</tr>
+<tr>
+<td>ALERT SOUND</td>
+<td>Menu a discesa dei suoni <strong>Enable Filter 1</strong>, <strong>Bid Filter 1</strong> e <strong>Ask Filter 1</strong> con pulsanti di anteprima, <strong>Enable Filter 2</strong>, <strong>Bid/Ask Filter 2</strong>. Presumibilmente riproduce il suono scelto quando una stampa supera il filtro su quel lato — semantica di attivazione non confermata.</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra TS Settings aperta sulla sezione GENERAL con i campioni Back/Border/Font color, Font size 12.00, l&#x27;interruttore Bold font, il menu a discesa Input data impostato su Volume, l&#x27;interruttore Show milliseconds e il menu a discesa TS Mode</div><div class="s-file">ID: <b class="s-id">dc-it-adv-time-and-sales-09</b> · save as <code>dc-it-adv-time-and-sales-09.png</code></div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra TS Settings scorsa fino a FILTER SETTINGS e la sezione FILTER 1 espansa con i campi di sfondo e colore testo Bid, Below Bid, Between Bid/Ask (grigio), Ask e Above Ask</div><div class="s-file">ID: <b class="s-id">dc-it-adv-time-and-sales-10</b> · save as <code>dc-it-adv-time-and-sales-10.png</code></div></div></div>
+<h2 id="risoluzione-dei-problemi">Risoluzione dei problemi</h2>
+<ul>
+<li><strong>Il tape è vuoto o bianco.</strong> Le finestre nuove e duplicate partono vuote e si riempiono solo con le stampe live — aspetta che arrivino trade, verifica che il feed sia connesso e il mercato aperto, poi prova <strong>Ingranaggio → Rebuild TS</strong>. Se il tape resta fermo mentre i grafici si muovono, vedi <a href="./feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a>.</li>
+<li><strong>Solo righe verdi / solo righe rosa.</strong> Il filtro per lato del trade è impostato su Ask Trades o Bid Trades. Torna su <strong>All Trades</strong> (controlla anche <strong>Settings TS → TS Mode</strong>).</li>
+<li><strong>La colonna centrale dice Order invece di Volume.</strong> <strong>Settings TS → GENERAL → Input data</strong> è stato cambiato — riportalo su <strong>Volume</strong>.</li>
+<li><strong>Il tape sembra bloccato o difettoso.</strong> Prima <strong>Ingranaggio → Rebuild TS</strong>; se è l'intero feed a essere fermo, segui <a href="./data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a>.</li>
+<li><strong>I numeri nel pannello inferiore non si azzerano.</strong> La modalità di squilibrio del book non ha un Reset per scelta di progetto — rispecchia il book corrente. Solo le modalità Bid/Ask e Delta hanno il controllo verde Reset.</li>
+</ul>
+<h2 id="suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</h2>
+<ul>
+<li>Il pannello inferiore mostra una modalità alla volta — Bid/Ask, Delta o squilibrio del book. Se il pannello non ha l'aspetto che ti aspetti, controlla quale dei tre interruttori dell'ingranaggio è attivo.</li>
+<li>Usa <strong>Duplicate Adv. TS</strong> più il menu a discesa del simbolo per eseguire due tape fianco a fianco su strumenti diversi; ogni finestra mantiene filtri, pannelli e impostazioni indipendenti.</li>
+<li>Salva il tuo tape configurato come template (<strong>Ingranaggio → Template → Save As</strong>) così puoi ricostruire il tuo layout in pochi secondi su un nuovo workspace.</li>
+<li>Non leggere le righe grigie come un segnale definitivo — l'interpretazione &quot;dentro lo spread&quot; è probabile ma non confermata. Se la tua strategia dipende da questo, verifica prima con il supporto (<a href="./get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a>).</li>
+<li>I millisecondi (<strong>Show milliseconds</strong>) valgono la pena quando studi l'attività a raffica — le stampe nello stesso secondo diventano distinguibili.</li>
+</ul>
+<h2 id="articoli-correlati">Articoli correlati</h2>
+<ul>
+<li><a href="./orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li>
+<li><a href="./advanced-dom.html">Finestra Advanced DOM</a></li>
+<li><a href="./speed-of-tape.html">Speed of Tape</a></li>
+<li><a href="./big-trades.html">Big Trades</a></li>
+<li><a href="./deep-trades.html">Deep Trades</a></li>
+<li><a href="./symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./multi-monitor-windows.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</div></a><a class="next" href="./advanced-dom.html"><div class="pn-lbl">Next →</div><div class="pn-title">Finestra Advanced DOM</div></a></div>
+    <div class="footer">Centro Assistenza DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#che-cos">Che cos&#x27;è</a></li><li class="lv2"><a href="#quando-usarlo">Quando usarlo</a></li><li class="lv2"><a href="#avvio-rapido">Avvio rapido</a></li><li class="lv2"><a href="#anatomia-della-finestra">Anatomia della finestra</a></li><li class="lv2"><a href="#come-leggerlo">Come leggerlo</a></li><li class="lv2"><a href="#il-menu-dell-ingranaggio">Il menu dell&#x27;ingranaggio</a></li><li class="lv3"><a href="#filtri-per-lato-del-trade">Filtri per lato del trade</a></li><li class="lv3"><a href="#pannello-bid-ask">Pannello Bid/Ask</a></li><li class="lv3"><a href="#pannello-delta">Pannello Delta</a></li><li class="lv3"><a href="#pannello-di-squilibrio-del-book">Pannello di squilibrio del book</a></li><li class="lv3"><a href="#utilit-della-finestra">Utilità della finestra</a></li><li class="lv2"><a href="#riferimento-impostazioni">Riferimento impostazioni</a></li><li class="lv3"><a href="#chart-settings-pannelli-bid-ask-e-delta">Chart Settings (pannelli Bid/Ask e Delta)</a></li><li class="lv3"><a href="#book-imbalance-settings">Book imbalance settings</a></li><li class="lv3"><a href="#ts-settings-il-tape-stesso">TS Settings (il tape stesso)</a></li><li class="lv2"><a href="#risoluzione-dei-problemi">Risoluzione dei problemi</a></li><li class="lv2"><a href="#suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</a></li><li class="lv2"><a href="#articoli-correlati">Articoli correlati</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-it.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

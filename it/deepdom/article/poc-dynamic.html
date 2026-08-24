@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>POC Dynamic — Centro Assistenza DeepDOM</title>
+<meta name="description" content="L&#x27;indicatore POC Dynamic mostra il Point of Control (POC) — il livello di prezzo dove è stato scambiato il volume più alto — calcolato su base mobile sugli ultimi n minuti.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/installation-and-first-configuration.html">Primi passi</a><a href="../../../it/article/get-help.html">Assistenza</a><a class="kb-switch" href="../../../it/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/poc-dynamic.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemi Comuni <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemi di installazione</a></li><li><a href="../article/licence-issues.html">Problemi di licenza</a></li><li><a href="../article/symbol-subscription-issues.html">Problemi di sottoscrizione dei simboli</a></li><li><a href="../article/cache-issues-deepdom.html">Problemi di cache</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Come Fare <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installazione e prima configurazione</a></li><li><a href="../article/general-settings.html">Impostazioni generali</a></li><li><a href="../article/how-to-add-a-new-connection.html">Come aggiungere una nuova connessione</a></li><li><a href="../article/how-to-add-markets-correctly.html">Come aggiungere i mercati correttamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configurazione utente — Template, Workspace, configurazione degli strumenti</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Come inserire le notifiche sonore</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Come personalizzare lingua e tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Come gestire il rollover dei simboli</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Finestra degli ordini</a></li><li><a href="../article/trading-from-the-chart.html">Trading dal grafico</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio e Responsabile del rischio</a></li><li><a href="../article/simulation-environment.html">Ambiente di simulazione</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicatori <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html">Volume Profile</a></li><li><a href="../article/stop-run.html">Stop Run</a></li><li><a href="../article/absorption.html">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html" class="active">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funzionalità <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay dei dati tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicatori Deep <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Deep Iceberg (Rilevatore di ordini Iceberg)</a></li><li><a href="../article/deep-reload.html">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators.html">Indicatori</a></div>
+<div class="article-head"><h1>POC Dynamic</h1>
+<p class="article-desc">L&#x27;indicatore POC Dynamic mostra il Point of Control (POC) — il livello di prezzo dove è stato scambiato il volume più alto — calcolato su base mobile sugli ultimi n minuti.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 4 min read</span>
+  <a class="btn-pdf" href="../pdf/poc-dynamic.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>L'indicatore POC Dynamic mostra il Point of Control (POC) — il livello di prezzo dove è stato scambiato il volume più alto — calcolato su base mobile sugli ultimi n minuti. Oltre alla linea del POC stessa, ti consente di tracciare bande di deviazione standard sopra e sotto di essa, aiutandoti a contestualizzare in tempo reale quanto il prezzo si stia allontanando dal livello di volume più attivo.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">POC Dynamic — panoramica (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-poc-dynamic-01</b> · save as <code>dd-it-poc-dynamic-01.png</code></div></div></div>
+<p>Che cos'è il Point of Control (POC)? Immagina tutta l'attività di trading avvenuta in un periodo di tempo distribuita sui diversi livelli di prezzo. Il POC è semplicemente il livello di prezzo dove si è concentrata la maggior parte degli acquisti e delle vendite. Agisce come un magnete — il prezzo tende a gravitare di nuovo verso di esso perché rappresenta l'area dove il mercato ha trovato il maggior accordo tra compratori e venditori. I trader osservano il POC con attenzione come punto di riferimento chiave per il fair value.</p>
+<h3 id="come-aggiungere-poc-dynamic-al-tuo-grafico">Come aggiungere POC Dynamic al tuo grafico</h3>
+<p>Fai clic sull'icona Indicators (Indicatori) sul grafico</p>
+<p>Trova POC Dynamic nell'elenco e fai clic su + per aggiungerlo</p>
+<p>Fai clic sull'icona delle impostazioni dell'indicatore per aprire la sua finestra di configurazione</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">POC Dynamic — Come aggiungere POC Dynamic al tuo grafico (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-poc-dynamic-02</b> · save as <code>dd-it-poc-dynamic-02.png</code></div></div></div>
+<h2 id="general-settings">General Settings</h2>
+<p>Period Value definisce il numero di minuti usati per calcolare il POC. Ad esempio, impostandolo a 5, DeepDOM calcolerà continuamente il POC in base agli ultimi 5 minuti di dati di volume, aggiornandolo in tempo reale man mano che arrivano nuovi dati. Un periodo più breve rende il POC più reattivo all'attività recente, mentre un periodo più lungo offre una visione più ampia e stabile di dove si è concentrato il volume.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">POC Dynamic — General Settings (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-poc-dynamic-03</b> · save as <code>dd-it-poc-dynamic-03.png</code></div></div></div>
+<h2 id="plot-settings">Plot Settings</h2>
+<p>Definisce l'aspetto visivo della linea del POC:</p>
+<p>Imposta il colore della linea del POC</p>
+<p>Imposta lo spessore della linea del POC</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">POC Dynamic — Plot Settings (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-poc-dynamic-04</b> · save as <code>dd-it-poc-dynamic-04.png</code></div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">POC Dynamic — Plot Settings (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-poc-dynamic-05</b> · save as <code>dd-it-poc-dynamic-05.png</code></div></div></div>
+<h2 id="envelope-settings">Envelope Settings</h2>
+<p>Definisce l'aspetto delle bande di deviazione standard tracciate attorno al POC:</p>
+<p>Imposta lo spessore delle bande</p>
+<p>Imposta lo stile della linea delle bande — ad esempio continua, tratteggiata o punteggiata</p>
+<p>Cosa sono le bande di deviazione standard? Le bande di deviazione standard sono linee tracciate sopra e sotto il POC che mostrano quanto il prezzo si stia allontanando dal livello di volume più attivo. Pensale come zone di distanza dal fair value. Quando il prezzo è dentro la prima banda, è relativamente vicino al fair value. Quando il prezzo raggiunge la seconda o la terza banda, si sta spingendo in territorio statisticamente meno comune — il che può segnalare che il prezzo è iperesteso e potrebbe essere pronto per un ritracciamento verso il POC.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">POC Dynamic — Envelope Settings (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-poc-dynamic-06</b> · save as <code>dd-it-poc-dynamic-06.png</code></div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">POC Dynamic — Envelope Settings (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-poc-dynamic-07</b> · save as <code>dd-it-poc-dynamic-07.png</code></div></div></div>
+<h2 id="first-second-amp-third-band">First, Second &amp; Third Band</h2>
+<p>Ognuna delle tre bande di deviazione standard può essere configurata individualmente:</p>
+<p>Attiva o disattiva ogni banda in modo indipendente</p>
+<p>Imposta il valore di deviazione standard per ogni banda</p>
+<p>Imposta un colore personalizzato per ogni banda</p>
+<p>Puoi scegliere di mostrare solo le bande rilevanti per la tua analisi — ad esempio attivando solo la prima banda e lasciando disattivate la seconda e la terza. Questo mantiene il grafico pulito e concentrato su ciò che conta di più per il tuo stile di trading.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">POC Dynamic — First, Second &amp; Third Band (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-poc-dynamic-08</b> · save as <code>dd-it-poc-dynamic-08.png</code></div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">POC Dynamic — First, Second &amp; Third Band (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-poc-dynamic-09</b> · save as <code>dd-it-poc-dynamic-09.png</code></div></div></div>
+<h2 id="conclusione">Conclusione</h2>
+<p>L'indicatore POC Dynamic ti offre una vista continuamente aggiornata di dove il mercato ha concentrato il maggior volume in una finestra temporale mobile. Combinato con le bande di deviazione standard, fornisce un quadro dinamico per identificare il fair value e individuare quando il prezzo si sta spingendo in territorio esteso rispetto all'attività di volume recente.</p>
+<h3 id="hai-ancora-problemi">Hai ancora problemi?</h3>
+<p>Il nostro team di supporto è disponibile 24/7 e pronto ad aiutarti con qualsiasi problema tu incontri.</p>
+<p>Quando ci contatti, includi:</p>
+<p>Uno screenshot del problema</p>
+<p>Una breve descrizione di ciò che stavi cercando di fare</p>
+<p>Ticket di supporto (risposta più rapida): visita www.deepcharts.com e crea un ticket di supporto direttamente sul nostro sito.</p>
+<p>Supporto via email: scrivici a support@deepcharts.com — tieni presente che le risposte via email possono richiedere un po' più di tempo rispetto a un ticket di supporto.</p>
+</article>
+<div class="pn"><a class="prev" href="./volume-swing-deepdom.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Volume Swing</div></a><a class="next" href="./volume-deepdom.html"><div class="pn-lbl">Next →</div><div class="pn-title">Volume</div></a></div>
+    <div class="footer">Centro Assistenza DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv3"><a href="#come-aggiungere-poc-dynamic-al-tuo-grafico">Come aggiungere POC Dynamic al tuo grafico</a></li><li class="lv2"><a href="#general-settings">General Settings</a></li><li class="lv2"><a href="#plot-settings">Plot Settings</a></li><li class="lv2"><a href="#envelope-settings">Envelope Settings</a></li><li class="lv2"><a href="#first-second-amp-third-band">First, Second &amp;amp; Third Band</a></li><li class="lv2"><a href="#conclusione">Conclusione</a></li><li class="lv3"><a href="#hai-ancora-problemi">Hai ancora problemi?</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-it-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>

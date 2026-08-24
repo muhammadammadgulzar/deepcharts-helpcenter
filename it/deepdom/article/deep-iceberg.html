@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Deep Iceberg (Rilevatore di ordini Iceberg) — Centro Assistenza DeepDOM</title>
+<meta name="description" content="L&#x27;indicatore Deep Iceberg evidenzia la liquidità istituzionale nascosta rilevando gli ordini iceberg – grandi ordini limit di cui in ogni momento è visibile nel DOM solo una piccola porzione, mentre il resto rimane nascosto.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/installation-and-first-configuration.html">Primi passi</a><a href="../../../it/article/get-help.html">Assistenza</a><a class="kb-switch" href="../../../it/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/deep-iceberg.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemi Comuni <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemi di installazione</a></li><li><a href="../article/licence-issues.html">Problemi di licenza</a></li><li><a href="../article/symbol-subscription-issues.html">Problemi di sottoscrizione dei simboli</a></li><li><a href="../article/cache-issues-deepdom.html">Problemi di cache</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Come Fare <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installazione e prima configurazione</a></li><li><a href="../article/general-settings.html">Impostazioni generali</a></li><li><a href="../article/how-to-add-a-new-connection.html">Come aggiungere una nuova connessione</a></li><li><a href="../article/how-to-add-markets-correctly.html">Come aggiungere i mercati correttamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configurazione utente — Template, Workspace, configurazione degli strumenti</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Come inserire le notifiche sonore</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Come personalizzare lingua e tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Come gestire il rollover dei simboli</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Finestra degli ordini</a></li><li><a href="../article/trading-from-the-chart.html">Trading dal grafico</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio e Responsabile del rischio</a></li><li><a href="../article/simulation-environment.html">Ambiente di simulazione</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicatori <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html">Volume Profile</a></li><li><a href="../article/stop-run.html">Stop Run</a></li><li><a href="../article/absorption.html">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funzionalità <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay dei dati tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicatori Deep <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html" class="active">Deep Iceberg (Rilevatore di ordini Iceberg)</a></li><li><a href="../article/deep-reload.html">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/deepindicators.html">Indicatori Deep</a></div>
+<div class="article-head"><h1>Deep Iceberg (Rilevatore di ordini Iceberg)</h1>
+<p class="article-desc">L&#x27;indicatore Deep Iceberg evidenzia la liquidità istituzionale nascosta rilevando gli ordini iceberg – grandi ordini limit di cui in ogni momento è visibile nel DOM solo una piccola porzione, mentre il resto rimane nascosto.</p>
+<div class="meta-row">
+  <span class="badge b-advanced">Advanced</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 6 min read</span>
+  <a class="btn-pdf" href="../pdf/deep-iceberg.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>L'indicatore Deep Iceberg evidenzia la liquidità istituzionale nascosta rilevando gli ordini iceberg – grandi ordini limit di cui in ogni momento è visibile nel DOM solo una piccola porzione, mentre il resto rimane nascosto.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Iceberg (Rilevatore di ordini Iceberg) — panoramica (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-iceberg-01</b> · save as <code>dd-it-deep-iceberg-01.png</code></div></div></div>
+<h2 id="1-che-cos-un-ordine-iceberg">1. Che cos'è un ordine iceberg?</h2>
+<p>Sugli exchange di futures come il CME, un ordine iceberg è un ordine limit che specifica una dimensione totale e una dimensione visibile più piccola (chiamata anche peak o display quantity).</p>
+<p>Solo la porzione visibile appare nel book di negoziazione come un normale ordine limit.</p>
+<p>Quando quella fetta visibile viene eseguita, l'Iceberg Algo la ricarica automaticamente dalla quantità nascosta, mantenendo lo stesso ID dell'ordine ma con una priorità di coda aggiornata.</p>
+<p>Questo processo si ripete finché l'intera dimensione totale non viene eseguita oppure la quantità nascosta rimanente non viene cancellata.</p>
+<p>L'effetto nel DOM è che un piccolo ordine in attesa sembra <em>ricaricarsi ancora e ancora</em> esattamente allo stesso prezzo, anche se in realtà lì vengono scambiati molti più contratti di quanto la dimensione visualizzata lascerebbe intendere in una candela Footprint.</p>
+<h2 id="2-come-deep-iceberg-rileva-la-dimensione-nascosta">2. Come Deep Iceberg rileva la dimensione nascosta</h2>
+<p>Deep Iceberg utilizza i dati MBO (Market By Order) per tracciare la ricarica ripetuta degli ordini in attesa allo stesso prezzo e identificare dove è stato scambiato molto più volume di quanto sia mai stato visibile nel book.</p>
+<p>Monitora l'ID dell'ordine: tutti quei piccoli ordini passivi che continuano a riapparire hanno una cosa in comune, l'ID passivo, e Deep Iceberg traccia proprio quell'ID.</p>
+<p>Ti mostra il totale dei contratti e l'Highest Visible Limit Order (ordine limit visibile più alto) che è stato visibile nel book durante la vita dell'iceberg.</p>
+<p>Questo rende possibile vedere dove un grande partecipante sta accumulando o distribuendo dimensioni significative mantenendo la maggior parte del suo interesse nascosta dalla normale vista del DOM.</p>
+<h2 id="3-visualizzazione-sul-grafico">3. Visualizzazione sul grafico</h2>
+<p>Ogni iceberg rilevato viene disegnato come un marker al prezzo in cui la liquidità nascosta è stata scambiata. L'etichetta accanto al marker mostra due valori:</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Iceberg (Rilevatore di ordini Iceberg) — 3. Visualizzazione sul grafico (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-iceberg-02</b> · save as <code>dd-it-deep-iceberg-02.png</code></div></div></div>
+<p>Volume iceberg totale eseguito – il totale dei contratti scambiati come parte dell'iceberg a quel prezzo (ad esempio, 1.000 contratti).</p>
+<p>Dimensione visibile massima – la fetta visualizzata più grande che sia mai stata visibile nel book durante la vita di quell'iceberg (ad esempio, 10 contratti).</p>
+<p>Quando attivi le linee degli iceberg attivi, una linea orizzontale viene tracciata attraverso il marker finché l'iceberg è ancora in attesa nel book e non è stato completamente eseguito o cancellato. Questo crea una fascia visiva di &quot;supporto&quot; o &quot;resistenza&quot; che mostra dove un grande player è ancora presente.</p>
+<h2 id="4-impostazioni-dei-dati">4. Impostazioni dei dati</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Iceberg (Rilevatore di ordini Iceberg) — 4. Impostazioni dei dati (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-iceberg-03</b> · save as <code>dd-it-deep-iceberg-03.png</code></div></div></div>
+<p>Il gruppo Data Settings ti consente di controllare quali eventi iceberg vengono visualizzati e quanto è sensibile il rilevatore:</p>
+<p>Filter min / Filter max – filtri inferiore e superiore sulla dimensione degli iceberg rilevati. Usali per ignorare gli iceberg molto piccoli o per concentrarti solo su eventi eccezionalmente grandi.</p>
+<p>Iceberg timeout seconds – per quanto tempo Deep Iceberg continua a trattare l'attività in corso allo stesso prezzo come parte dello stesso iceberg. Se entro questo periodo non avviene alcuna nuova ricarica, l'iceberg viene considerato concluso.</p>
+<h2 id="5-impostazioni-di-visualizzazione">5. Impostazioni di visualizzazione</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Iceberg (Rilevatore di ordini Iceberg) — 5. Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-iceberg-04</b> · save as <code>dd-it-deep-iceberg-04.png</code></div></div></div>
+<p>La sezione Plot Settings controlla come i marker degli iceberg appaiono sul grafico:</p>
+<p>Marker – scegli la forma usata per ogni iceberg rilevato: <em>Circle</em>, <em>Square</em>, <em>Diamond</em>, <em>Triangle</em> o <em>Text</em>.</p>
+<p>Size unit –</p>
+<p>Automatic – la dimensione del marker viene scalata automaticamente in base al volume dell'iceberg.</p>
+<p>Tick – la dimensione del marker è definita in tick di prezzo, così rimane coerente rispetto alla scala dei prezzi.</p>
+<p>Standard Dev. – controlla quanto un iceberg deve discostarsi dalla dimensione media per essere evidenziato con più forza. Valori più alti rendono la visualizzazione più selettiva.</p>
+<p>Opacity – trasparenza dei marker degli iceberg.</p>
+<p>Ask color / Bid color – colori usati per gli iceberg sul lato vendita e sul lato acquisto.</p>
+<h2 id="6-iceberg-attivi">6. Iceberg attivi</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Iceberg (Rilevatore di ordini Iceberg) — 6. Iceberg attivi (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-iceberg-05</b> · save as <code>dd-it-deep-iceberg-05.png</code></div></div></div>
+<p>La sezione Active Icebergs gestisce le linee orizzontali per gli iceberg che sono ancora in attesa nel book:</p>
+<p>Enable line – attiva o disattiva il disegno della linea degli iceberg attivi.</p>
+<p>Line width – spessore della linea orizzontale.</p>
+<p>Line style – scegli tra gli stili <em>Solid</em>, <em>Dash</em>, <em>Dot</em>, <em>Dash dot</em> o <em>Dash dot dot</em>.</p>
+<p>Line remove mode – determina cosa succede quando l'iceberg non è più attivo:</p>
+<p>Stop – la linea smette di estendersi ma rimane sul grafico nella sua ultima posizione.</p>
+<p>Disappear – la linea viene rimossa quando l'iceberg è completamente eseguito o cancellato.</p>
+<p>Una linea continua ti dice che il grande partecipante sta ancora quotando a quel prezzo. Quando la linea si ferma o scompare, quella liquidità è stata completamente scambiata oppure si è ritirata.</p>
+<h2 id="7-impostazioni-di-visualizzazione">7. Impostazioni di visualizzazione</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Iceberg (Rilevatore di ordini Iceberg) — 7. Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-iceberg-06</b> · save as <code>dd-it-deep-iceberg-06.png</code></div></div></div>
+<p>Minimum size / Maximum size – impostano la dimensione minima e massima dei marker che Deep Iceberg userà per disegnare gli eventi iceberg. Usa un intervallo stretto se preferisci un aspetto più uniforme, oppure un intervallo più ampio così che gli iceberg molto grandi risaltino con marker più grandi.</p>
+<h2 id="8-impostazioni-del-testo">8. Impostazioni del testo</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Iceberg (Rilevatore di ordini Iceberg) — 8. Impostazioni del testo (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-iceberg-07</b> · save as <code>dd-it-deep-iceberg-07.png</code></div></div></div>
+<p>Usa il gruppo Text Settings per controllare le etichette collegate ai marker degli iceberg:</p>
+<p>Plot only if inside – quando è attivata, le etichette di testo vengono disegnate solo quando rientrano nella vista corrente del grafico, aiutando a evitare etichette sovrapposte.</p>
+<p>Text size – dimensione del carattere delle etichette degli iceberg.</p>
+<p>Text color – colore usato per il testo, indipendente dal colore del marker.</p>
+<p>Il formato dell'etichetta è pensato per rendere la struttura dell'iceberg facile da leggere a colpo d'occhio, mostrando tipicamente la dimensione totale eseguita e la fetta visibile massima.</p>
+<h2 id="9-alert-iceberg">9. Alert Iceberg</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Iceberg (Rilevatore di ordini Iceberg) — 9. Alert Iceberg (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-iceberg-08</b> · save as <code>dd-it-deep-iceberg-08.png</code></div></div></div>
+<p>La sezione Alert Iceberg ti consente di attivare avvisi quando vengono rilevati iceberg particolarmente grandi:</p>
+<p>Enable – attiva o disattiva gli avvisi sugli iceberg.</p>
+<p>Threshold – volume minimo dell'iceberg rilevato necessario per far scattare un avviso. Impostalo alto per ricevere notifiche solo per gli ordini nascosti più significativi del mercato.</p>
+<p>Gli avvisi possono essere combinati con i marker visivi, così non ti perdi gli eventi chiave di liquidità nascosta anche quando sei concentrato su un'altra parte del grafico.</p>
+<h2 id="10-casi-d-uso-pratici">10. Casi d'uso pratici</h2>
+<p>Deep Iceberg è particolarmente utile per individuare dove un grande player sta assorbendo ordini a mercato o sta alimentando il mercato con un'offerta nascosta.</p>
+<p>Per usare Iceberg in DeepDom è necessario un feed dati MBO</p>
+<p>Iceberg ripetuti sul lato acquisto vicino ai minimi spesso segnalano un accumulo silenzioso e una potenziale base.</p>
+<p>Iceberg sul lato vendita impilati sopra il prezzo possono indicare distribuzione o un venditore nascosto che difende un livello.</p>
+<p>Quando un'importante linea iceberg finalmente scompare e il prezzo la attraversa, ciò segna spesso un cambiamento significativo nel controllo del mercato.</p>
+<h3 id="hai-ancora-problemi">Hai ancora problemi?</h3>
+<p>Il nostro team di supporto è disponibile 24 ore su 24, 7 giorni su 7, pronto ad aiutarti con qualsiasi problema tu possa incontrare.</p>
+<p>Quando ci contatti, includi:</p>
+<p>Uno screenshot del problema</p>
+<p>Una breve descrizione di ciò che stavi cercando di fare</p>
+<p>Ticket di supporto (risposta più rapida) Visita www.deepcharts.com e crea un ticket di supporto direttamente sul nostro sito.</p>
+<p>Supporto via email Scrivici a support@deepcharts.com — tieni presente che le risposte via email possono richiedere un po' più di tempo rispetto a un ticket di supporto.</p>
+</article>
+<div class="pn"><a class="prev" href="./replay-tick-data.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Replay dei dati tick</div></a><a class="next" href="./deep-reload.html"><div class="pn-lbl">Next →</div><div class="pn-title">Deep Reload</div></a></div>
+    <div class="footer">Centro Assistenza DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#1-che-cos-un-ordine-iceberg">1. Che cos&#x27;è un ordine iceberg?</a></li><li class="lv2"><a href="#2-come-deep-iceberg-rileva-la-dimensione-nascosta">2. Come Deep Iceberg rileva la dimensione nascosta</a></li><li class="lv2"><a href="#3-visualizzazione-sul-grafico">3. Visualizzazione sul grafico</a></li><li class="lv2"><a href="#4-impostazioni-dei-dati">4. Impostazioni dei dati</a></li><li class="lv2"><a href="#5-impostazioni-di-visualizzazione">5. Impostazioni di visualizzazione</a></li><li class="lv2"><a href="#6-iceberg-attivi">6. Iceberg attivi</a></li><li class="lv2"><a href="#7-impostazioni-di-visualizzazione">7. Impostazioni di visualizzazione</a></li><li class="lv2"><a href="#8-impostazioni-del-testo">8. Impostazioni del testo</a></li><li class="lv2"><a href="#9-alert-iceberg">9. Alert Iceberg</a></li><li class="lv2"><a href="#10-casi-d-uso-pratici">10. Casi d&#x27;uso pratici</a></li><li class="lv3"><a href="#hai-ancora-problemi">Hai ancora problemi?</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-it-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>

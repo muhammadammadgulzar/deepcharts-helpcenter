@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Regression Channel — Centro Assistenza DeepCharts</title>
+<meta name="description" content="Riferimento per l&#x27;indicatore Regression Channel in DeepCharts: linea centrale e bande di deviazione, modalità a barre e Zig Zag, e impostazioni di plot per ogni linea.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/quick-start-first-trade.html">Guida rapida</a><a href="../article/get-help.html">Assistenza</a><a class="kb-switch" href="../../it/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/regression-channel.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primi passi <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Benvenuto in DeepCharts: tour della piattaforma</a></li><li><a href="../article/system-requirements.html">Requisiti di sistema</a></li><li><a href="../article/install-deepcharts.html">Come installare DeepCharts e attivare la tua licenza</a></li><li><a href="../article/free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a></li><li><a href="../article/buy-data-feed.html">Come acquistare un feed dati e ottenere le tue credenziali</a></li><li><a href="../article/first-chart.html">Apri il tuo primo grafico</a></li><li><a href="../article/simulation-accounts.html">Conti di trading e simulazione</a></li><li><a href="../article/quick-start-first-trade.html">Avvio rapido: dall&#x27;installazione alla tua prima operazione</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connessioni e feed dati <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configurazione</li><li><a href="../article/compatibility-guide.html">Broker, prop firm e feed dati supportati</a></li><li><a href="../article/connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li><li><a href="../article/sign-market-data-agreement.html">Firma il contratto sui dati di mercato</a></li><li><a href="../article/connect-dxfeed.html">Come connettere un feed dati dxFeed</a></li><li><a href="../article/connect-rithmic.html">Come collegare un feed dati Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Connettere Rithmic con il plugin RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Collega qualsiasi conto prop firm Rithmic (tabella dei server)</a></li><li><a href="../article/connect-apex.html">Connettere Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connettere un conto dxFeed di una prop firm (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Come connettere CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connettere Interactive Brokers (solo esecuzione)</a></li><li><a href="../article/competition-connect.html">Competizione DeepCharts: iscriviti e connettiti</a></li><li><a href="../article/end-of-day-data.html">Connettere i dati storici (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Gestire e passare da una connessione feed all&#x27;altra</a></li><li class="nav-sub">Risoluzione dei problemi</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Correzione: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Correzione: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Correzione: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Correzione: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Correzione: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Correzione: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Correzione: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Correzione: connessione persa all&#x27;apertura di un grafico</a></li><li><a href="../article/symbol-subscription-issue.html">Correzione: problema di sottoscrizione dei simboli</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: l&#x27;app va in crash salvando le impostazioni del feed</a></li><li><a href="../article/gaps-in-price.html">Correzione: gap di prezzo sui grafici</a></li><li><a href="../article/data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Grafici e workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La finestra del grafico</a></li><li><a href="../article/price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li><li><a href="../article/chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li><li><a href="../article/drawing-tools.html">Strumenti di disegno e annotazioni</a></li><li><a href="../article/templates-workspaces.html">Template e workspace</a></li><li><a href="../article/quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Collegare le finestre con i gruppi colore</a></li><li><a href="../article/replay-data.html">Replay dei dati di mercato</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalizza lingua, tema e suoni di notifica</a></li><li><a href="../article/keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Riferimento delle scorciatoie da tastiera</a></li><li><a href="../article/multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Finestre della piattaforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (il tape)</a></li><li><a href="../article/advanced-dom.html">Finestra Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading e ordini <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading dal grafico</a></li><li><a href="../article/trading-panel-reference.html">Riferimento del pannello di trading: ogni pulsante e campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li><li><a href="../article/depth-of-market.html">Indicatore Depth of Market (DOM)</a></li><li><a href="../article/oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Finestra Ordini</a></li><li><a href="../article/portfolio-wallet.html">Portafoglio (Wallet)</a></li><li><a href="../article/risk-manager.html">Responsabile del rischio</a></li><li><a href="../article/trade-copier.html">Come configurare il Trade Copier</a></li><li><a href="../article/performance-analysis.html">Analisi delle performance (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concetti <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li><li><a href="../article/understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Capire la teoria dell&#x27;asta: squilibrio, aste incompiute, assorbimento</a></li><li><a href="../article/understanding-icebergs-absorption.html">Capire gli iceberg e l&#x27;assorbimento</a></li><li><a href="../article/understanding-vwap.html">Capire il VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Leggere un footprint: esempi svolti</a></li><li><a href="../article/glossary.html">Glossario dei termini di orderflow e della piattaforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicatori e analisi <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fondamenti degli indicatori</li><li><a href="../article/different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li><li><a href="../article/indicator-layout.html">Come cambiare il layout degli indicatori</a></li><li class="nav-sub">Indicatori Deep</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Media mobile</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regressione lineare</a></li><li><a href="../article/regression-channel.html" class="active">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum e oscillatori</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscillatore stocastico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilità e bande</li><li><a href="../article/bollinger-bands.html">Bande di Bollinger</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Deviazione standard</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume e delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Orderflow e asta</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Livelli e pattern</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Livelli importanti</a></li><li><a href="../article/absolute-levels.html">Livelli assoluti</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Overlay del grafico</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Testo sul grafico</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Dati e database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></li><li><a href="../article/delete-market-data.html">Eliminare i dati di mercato (metodo in-app e manuale)</a></li><li><a href="../article/download-data.html">Ri-scaricare i dati storici (strumento Download Data)</a></li><li><a href="../article/database-optimization.html">Ottimizzazione del database</a></li><li><a href="../article/database-problems.html">Correzione: problemi al database</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Risoluzione problemi e supporto <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Risoluzione: problemi di installazione e requisiti di base</a></li><li><a href="../article/installation-setup-failed.html">Risoluzione: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: una policy di controllo delle applicazioni blocca DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Soluzione: lo strumento di disegno Rettangolo non funziona</a></li><li><a href="../article/chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a></li><li><a href="../article/license-issues.html">Risolvere: problemi di licenza e attivazione</a></li><li><a href="../article/diagnostic-report.html">Report diagnostico: prima di contattare il supporto</a></li><li><a href="../article/get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account e fatturazione <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Gestire abbonamenti e fatturazione</a></li><li><a href="../article/move-to-new-computer.html">Spostare DeepCharts su un nuovo computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicatori e analisi</a> › Trend</div>
+<div class="article-head"><h1>Regression Channel</h1>
+<p class="article-desc">Riferimento per l&#x27;indicatore Regression Channel in DeepCharts: linea centrale e bande di deviazione, modalità a barre e Zig Zag, e impostazioni di plot per ogni linea.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 5 min read</span>
+  <a class="btn-pdf" href="../pdf/regression-channel.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Il Regression Channel è uno strumento usato per identificare trend e aree di supporto e resistenza. Disegna un canale derivato dalla regressione lineare: una linea di trend centrale adattata al prezzo, affiancata da bande superiore e inferiore spostate di un numero scelto di deviazioni standard.</p>
+<p>Mentre l'indicatore <a href="./linear-regression.html">Regressione lineare</a> traccia una singola linea mobile, il Regression Channel inquadra l'intero movimento — mostrando la direzione del trend, il suo centro statistico e la zona in cui è rimasta la maggior parte dell'azione del prezzo.</p>
+<h2 id="che-cos">Che cos'è</h2>
+<p>Il Regression Channel risponde alla domanda: qual è il trend attuale, e quanto lontano da esso può vagare il prezzo prima che questo significhi qualcosa? La linea centrale è la regressione di miglior adattamento sulla finestra di osservazione; le bande si trovano un numero configurabile di deviazioni standard sopra e sotto di essa. Un prezzo vicino alla linea centrale è al fair value del trend; un prezzo su una banda è statisticamente tirato, e favorisce una reversione verso il centro oppure — se la rompe e tiene — un cambiamento di trend.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Un grafico a candele con il Regression Channel applicato — linea centrale inclinata verso l&#x27;alto con bande di deviazione superiore e inferiore che contengono il trend, con il prezzo che tocca la banda inferiore e ritorna verso il centro</div><div class="s-file">ID: <b class="s-id">dc-it-regression-channel-01</b> · save as <code>dc-it-regression-channel-01.png</code></div></div></div>
+<h2 id="quando-usarlo">Quando usarlo</h2>
+<ul>
+<li>Per inquadrare un trend in modo oggettivo: la pendenza del canale indica la direzione, la sua larghezza la volatilità.</li>
+<li>Per tradare i pullback dentro un trend — ingressi vicino alla banda inferiore del canale in pendenza rialzista, uscite o short vicino alla banda superiore in pendenza ribassista.</li>
+<li>Per rilevare le rotture di trend: un prezzo che chiude e resta fuori dal canale suggerisce che la regressione che definiva il movimento non è più adeguata.</li>
+<li>Per abbinarlo alla struttura degli swing tramite la modalità Zig Zag, così il canale si ancora agli swing rilevati invece che a un numero fisso di barre.</li>
+</ul>
+<h2 id="avvio-rapido">Avvio rapido</h2>
+<ol>
+<li>Apri un grafico — vedi <a href="./first-chart.html">Apri il tuo primo grafico</a>.</li>
+<li>Fai clic sull'icona a grafico a barre nella fila di icone in alto a sinistra del grafico per aprire il pannello <strong>Indicators</strong>, poi fai clic su <strong>Indicators</strong> per aprire l'<strong>Indicator List</strong> completa.</li>
+<li>Cerca <strong>Regression Channel</strong> e fai clic su <strong>+</strong> per aggiungerlo.</li>
+<li>Fai clic sull'icona a ingranaggio per aprire le sue impostazioni.</li>
+<li>Configurazione di partenza: mantieni <strong>Bars</strong> al valore predefinito 100 e <strong>Value Dev. Std.</strong> al valore predefinito 1.00. Allarga la deviazione (per esempio verso 2.00) se vuoi che le bande contengano una parte maggiore dell'azione del prezzo e segnalino solo gli allungamenti più grandi.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra delle impostazioni del Regression Channel che mostra la sezione General con Mode, Value Dev. Std. = 1.00 e Bars = 100, più la sezione Zig Zag e le sezioni di plot MID/UP/DN sotto</div><div class="s-file">ID: <b class="s-id">dc-it-regression-channel-02</b> · save as <code>dc-it-regression-channel-02.png</code></div></div></div>
+<h2 id="come-leggerlo">Come leggerlo</h2>
+<ul>
+<li><strong>Pendenza della linea centrale</strong> — il trend. Pendenza rialzista, favorisci i long; ribassista, favorisci gli short; quasi piatta, tratta il canale come un range.</li>
+<li><strong>Posizione dentro il canale</strong> — un prezzo vicino alla linea centrale è al fair value del trend adattato; un prezzo su una banda è a un estremo statistico per la finestra.</li>
+<li><strong>Tocchi delle bande</strong> — in un trend sano, i tocchi della banda dal lato del trend (banda inferiore in un uptrend) sono opportunità di pullback; ripetuti fallimenti nel raggiungere la banda opposta mostrano un trend che si indebolisce.</li>
+<li><strong>Rotture del canale</strong> — una chiusura decisa fuori dal canale che tiene significa che il trend adattato sta fallendo; aspettati un'accelerazione nella direzione della rottura oppure un nuovo regime a cui il canale si riadatterà.</li>
+<li><strong>Colorazione del trend</strong> — le linee MID, UP e DN hanno ciascuna un colore positivo e uno negativo, quindi la colorazione stessa del canale ti dice quale direzione ha attualmente l'adattamento.</li>
+</ul>
+<h2 id="riferimento-impostazioni">Riferimento impostazioni</h2>
+<h3 id="general">General</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mode</strong></td>
+<td>Seleziona come opera il canale. <span class="confirm-flag">CONFIRM: the exact list of Mode options and what each does — the live article names the setting without enumerating its values</span></td>
+</tr>
+<tr>
+<td><strong>Value Dev. Std.</strong></td>
+<td>Numero di deviazioni standard per le bande superiore e inferiore. Predefinito: 1.00. Valori più alti collocano le bande più lontano dalla linea centrale.</td>
+</tr>
+<tr>
+<td><strong>Bars</strong></td>
+<td>Numero di barre usate per il calcolo della regressione. Predefinito: 100.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="zig-zag">Zig Zag</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Zig Zag Mode</strong></td>
+<td>Abilita il rilevamento dei pattern di swing, così il canale lavora sugli swing dello Zig Zag.</td>
+</tr>
+<tr>
+<td><strong>Zig Zag Abs.Rev.</strong></td>
+<td>Soglia di inversione in tick per il rilevamento degli swing. Predefinito: 0.50.</td>
+</tr>
+<tr>
+<td><strong>Zig Zag Tick Rev./Highest-Lowest</strong></td>
+<td>Valore di inversione per il calcolo degli swing. Predefinito: 22.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mid-plot-della-linea-centrale">MID — plot della linea centrale</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>Spessore della linea centrale. Predefinito: 2.</td>
+</tr>
+<tr>
+<td><strong>Line Style</strong></td>
+<td>Solid, Dashed, Dotted e altri formati.</td>
+</tr>
+<tr>
+<td><strong>Positive Color</strong></td>
+<td>Colore quando il trend adattato è rialzista.</td>
+</tr>
+<tr>
+<td><strong>Negative Color</strong></td>
+<td>Colore quando il trend adattato è ribassista.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="up-plot-della-linea-superiore">UP — plot della linea superiore</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>Spessore della banda superiore. Predefinito: 2.</td>
+</tr>
+<tr>
+<td><strong>Line Style</strong></td>
+<td>Solid, Dashed, Dotted e altri formati.</td>
+</tr>
+<tr>
+<td><strong>Positive / Negative Color</strong></td>
+<td>Colorazione in base al trend per la banda superiore.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="dn-plot-della-linea-inferiore">DN — plot della linea inferiore</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>Spessore della banda inferiore. Predefinito: 2.</td>
+</tr>
+<tr>
+<td><strong>Line Style</strong></td>
+<td>Opzioni di formato linea disponibili.</td>
+</tr>
+<tr>
+<td><strong>Positive / Negative Color</strong></td>
+<td>Colorazione in base al trend per la banda inferiore.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</h2>
+<ul>
+<li><strong>Adatta Bars al movimento che stai inquadrando.</strong> 100 barre adattate su due trend distinti producono un canale medio senza significato; accorcia la finestra, oppure usa lo <strong>Zig Zag Mode</strong> per ancorare il canale agli swing rilevati.</li>
+<li><strong>Una deviazione standard contiene meno di quanto ti aspetti.</strong> Al valore predefinito 1.00, il prezzo scambierà regolarmente fuori dalle bande in condizioni normali — e questo da solo non è un segnale. Alza <strong>Value Dev. Std.</strong> se vuoi che i tocchi delle bande siano eventi più rari e significativi.</li>
+<li><strong>Non fare fading su ogni tocco di banda.</strong> In un trend forte il prezzo può cavalcare la banda opposta per tratti prolungati; controlla la pendenza della linea centrale prima di trattare una banda come livello di inversione.</li>
+<li>Confrontalo con <a href="./zig-zag.html">Zig Zag</a> per capire il rilevamento degli swing su cui si basa lo <strong>Zig Zag Mode</strong>, e con <a href="./standard-deviation.html">Deviazione standard</a> per la misura di dispersione dietro le bande.</li>
+</ul>
+<h2 id="articoli-correlati">Articoli correlati</h2>
+<ul>
+<li><a href="./linear-regression.html">Regressione lineare</a></li>
+<li><a href="./zig-zag.html">Zig Zag</a></li>
+<li><a href="./standard-deviation.html">Deviazione standard</a></li>
+<li><a href="./bollinger-bands.html">Bande di Bollinger</a></li>
+<li><a href="./different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li>
+<li><a href="./indicator-layout.html">Come cambiare il layout degli indicatori</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./linear-regression.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Regressione lineare</div></a><a class="next" href="./tillson-t3.html"><div class="pn-lbl">Next →</div><div class="pn-title">Tillson T3</div></a></div>
+    <div class="footer">Centro Assistenza DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#che-cos">Che cos&#x27;è</a></li><li class="lv2"><a href="#quando-usarlo">Quando usarlo</a></li><li class="lv2"><a href="#avvio-rapido">Avvio rapido</a></li><li class="lv2"><a href="#come-leggerlo">Come leggerlo</a></li><li class="lv2"><a href="#riferimento-impostazioni">Riferimento impostazioni</a></li><li class="lv3"><a href="#general">General</a></li><li class="lv3"><a href="#zig-zag">Zig Zag</a></li><li class="lv3"><a href="#mid-plot-della-linea-centrale">MID — plot della linea centrale</a></li><li class="lv3"><a href="#up-plot-della-linea-superiore">UP — plot della linea superiore</a></li><li class="lv3"><a href="#dn-plot-della-linea-inferiore">DN — plot della linea inferiore</a></li><li class="lv2"><a href="#suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</a></li><li class="lv2"><a href="#articoli-correlati">Articoli correlati</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-it.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

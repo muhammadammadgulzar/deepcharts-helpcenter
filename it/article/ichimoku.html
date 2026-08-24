@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Ichimoku — Centro Assistenza DeepCharts</title>
+<meta name="description" content="Riferimento per l&#x27;indicatore Ichimoku in DeepCharts: Tenkan-sen, Kijun-sen, Chikou Span, Senkou Span e la nuvola, con impostazioni dei periodi e stili.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/quick-start-first-trade.html">Guida rapida</a><a href="../article/get-help.html">Assistenza</a><a class="kb-switch" href="../../it/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/ichimoku.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primi passi <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Benvenuto in DeepCharts: tour della piattaforma</a></li><li><a href="../article/system-requirements.html">Requisiti di sistema</a></li><li><a href="../article/install-deepcharts.html">Come installare DeepCharts e attivare la tua licenza</a></li><li><a href="../article/free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a></li><li><a href="../article/buy-data-feed.html">Come acquistare un feed dati e ottenere le tue credenziali</a></li><li><a href="../article/first-chart.html">Apri il tuo primo grafico</a></li><li><a href="../article/simulation-accounts.html">Conti di trading e simulazione</a></li><li><a href="../article/quick-start-first-trade.html">Avvio rapido: dall&#x27;installazione alla tua prima operazione</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connessioni e feed dati <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configurazione</li><li><a href="../article/compatibility-guide.html">Broker, prop firm e feed dati supportati</a></li><li><a href="../article/connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li><li><a href="../article/sign-market-data-agreement.html">Firma il contratto sui dati di mercato</a></li><li><a href="../article/connect-dxfeed.html">Come connettere un feed dati dxFeed</a></li><li><a href="../article/connect-rithmic.html">Come collegare un feed dati Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Connettere Rithmic con il plugin RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Collega qualsiasi conto prop firm Rithmic (tabella dei server)</a></li><li><a href="../article/connect-apex.html">Connettere Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connettere un conto dxFeed di una prop firm (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Come connettere CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connettere Interactive Brokers (solo esecuzione)</a></li><li><a href="../article/competition-connect.html">Competizione DeepCharts: iscriviti e connettiti</a></li><li><a href="../article/end-of-day-data.html">Connettere i dati storici (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Gestire e passare da una connessione feed all&#x27;altra</a></li><li class="nav-sub">Risoluzione dei problemi</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Correzione: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Correzione: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Correzione: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Correzione: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Correzione: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Correzione: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Correzione: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Correzione: connessione persa all&#x27;apertura di un grafico</a></li><li><a href="../article/symbol-subscription-issue.html">Correzione: problema di sottoscrizione dei simboli</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: l&#x27;app va in crash salvando le impostazioni del feed</a></li><li><a href="../article/gaps-in-price.html">Correzione: gap di prezzo sui grafici</a></li><li><a href="../article/data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Grafici e workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La finestra del grafico</a></li><li><a href="../article/price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li><li><a href="../article/chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li><li><a href="../article/drawing-tools.html">Strumenti di disegno e annotazioni</a></li><li><a href="../article/templates-workspaces.html">Template e workspace</a></li><li><a href="../article/quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Collegare le finestre con i gruppi colore</a></li><li><a href="../article/replay-data.html">Replay dei dati di mercato</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalizza lingua, tema e suoni di notifica</a></li><li><a href="../article/keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Riferimento delle scorciatoie da tastiera</a></li><li><a href="../article/multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Finestre della piattaforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (il tape)</a></li><li><a href="../article/advanced-dom.html">Finestra Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading e ordini <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading dal grafico</a></li><li><a href="../article/trading-panel-reference.html">Riferimento del pannello di trading: ogni pulsante e campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li><li><a href="../article/depth-of-market.html">Indicatore Depth of Market (DOM)</a></li><li><a href="../article/oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Finestra Ordini</a></li><li><a href="../article/portfolio-wallet.html">Portafoglio (Wallet)</a></li><li><a href="../article/risk-manager.html">Responsabile del rischio</a></li><li><a href="../article/trade-copier.html">Come configurare il Trade Copier</a></li><li><a href="../article/performance-analysis.html">Analisi delle performance (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concetti <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li><li><a href="../article/understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Capire la teoria dell&#x27;asta: squilibrio, aste incompiute, assorbimento</a></li><li><a href="../article/understanding-icebergs-absorption.html">Capire gli iceberg e l&#x27;assorbimento</a></li><li><a href="../article/understanding-vwap.html">Capire il VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Leggere un footprint: esempi svolti</a></li><li><a href="../article/glossary.html">Glossario dei termini di orderflow e della piattaforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicatori e analisi <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fondamenti degli indicatori</li><li><a href="../article/different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li><li><a href="../article/indicator-layout.html">Come cambiare il layout degli indicatori</a></li><li class="nav-sub">Indicatori Deep</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Media mobile</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html" class="active">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regressione lineare</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum e oscillatori</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscillatore stocastico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilità e bande</li><li><a href="../article/bollinger-bands.html">Bande di Bollinger</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Deviazione standard</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume e delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Orderflow e asta</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Livelli e pattern</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Livelli importanti</a></li><li><a href="../article/absolute-levels.html">Livelli assoluti</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Overlay del grafico</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Testo sul grafico</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Dati e database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></li><li><a href="../article/delete-market-data.html">Eliminare i dati di mercato (metodo in-app e manuale)</a></li><li><a href="../article/download-data.html">Ri-scaricare i dati storici (strumento Download Data)</a></li><li><a href="../article/database-optimization.html">Ottimizzazione del database</a></li><li><a href="../article/database-problems.html">Correzione: problemi al database</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Risoluzione problemi e supporto <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Risoluzione: problemi di installazione e requisiti di base</a></li><li><a href="../article/installation-setup-failed.html">Risoluzione: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: una policy di controllo delle applicazioni blocca DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Soluzione: lo strumento di disegno Rettangolo non funziona</a></li><li><a href="../article/chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a></li><li><a href="../article/license-issues.html">Risolvere: problemi di licenza e attivazione</a></li><li><a href="../article/diagnostic-report.html">Report diagnostico: prima di contattare il supporto</a></li><li><a href="../article/get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account e fatturazione <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Gestire abbonamenti e fatturazione</a></li><li><a href="../article/move-to-new-computer.html">Spostare DeepCharts su un nuovo computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicatori e analisi</a> › Trend</div>
+<div class="article-head"><h1>Ichimoku</h1>
+<p class="article-desc">Riferimento per l&#x27;indicatore Ichimoku in DeepCharts: Tenkan-sen, Kijun-sen, Chikou Span, Senkou Span e la nuvola, con impostazioni dei periodi e stili.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 4 min read</span>
+  <a class="btn-pdf" href="../pdf/ichimoku.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>L'indicatore Ichimoku, formalmente noto come Ichimoku Kinko Hyo, è uno strumento di analisi tecnica completo sviluppato negli anni '30 dal giornalista giapponese Goichi Hosoda. Da un singolo indicatore ottieni livelli di supporto e resistenza, direzione del trend e una lettura del momentum — il nome si traduce approssimativamente come &quot;grafico di equilibrio a colpo d'occhio&quot;.</p>
+<p>Traccia diverse linee e una nuvola ombreggiata (il Kumo) direttamente sul grafico dei prezzi. Ogni linea risponde a una domanda diversa, e le loro posizioni rispetto al prezzo e tra loro costruiscono il quadro complessivo.</p>
+<h2 id="cos">Cos'è</h2>
+<p>Ichimoku risponde alla domanda: qual è il trend, dov'è l'equilibrio e dove sono i livelli che contano — tutto in un colpo d'occhio? Invece di mediare le chiusure come una media mobile, le sue linee sono costruite dal punto medio di massimi e minimi su lookback fissi, e alcune vengono poi proiettate in avanti o spostate indietro nel tempo. È questo spostamento temporale che crea la nuvola davanti al prezzo e la linea di confronto ritardata dietro di esso.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Un grafico a candele con l&#x27;indicatore Ichimoku completo applicato — le linee Tenkan-sen e Kijun-sen sul prezzo, la nuvola Kumo ombreggiata proiettata davanti all&#x27;ultima candela e la Chikou Span che segue dietro al prezzo</div><div class="s-file">ID: <b class="s-id">dc-it-ichimoku-01</b> · save as <code>dc-it-ichimoku-01.png</code></div></div></div>
+<h2 id="quando-usarlo">Quando usarlo</h2>
+<ul>
+<li>Per leggere la direzione del trend e la sua qualità in un'unica vista — prezzo sopra una nuvola in salita è un trend rialzista sano; prezzo dentro la nuvola è un mercato in transizione.</li>
+<li>Per trovare supporti e resistenze dinamici: la Kijun-sen e i bordi della nuvola sono livelli molto osservati.</li>
+<li>Per il timing con gli incroci delle linee — la Tenkan-sen che incrocia la Kijun-sen è il segnale Ichimoku classico.</li>
+<li>Per confermare il momentum con la posizione della Chikou Span rispetto al prezzo passato.</li>
+</ul>
+<h2 id="avvio-rapido">Avvio rapido</h2>
+<ol>
+<li>Apri un grafico — vedi <a href="./first-chart.html">Apri il tuo primo grafico</a>.</li>
+<li>Fai clic sull'icona a forma di grafico a barre nella fila di icone in alto a sinistra del grafico per aprire il pannello <strong>Indicators</strong>, poi fai clic su <strong>Indicators</strong> per aprire l'<strong>Indicator List</strong> completa.</li>
+<li>Cerca <strong>Ichimoku</strong> e fai clic su <strong>+</strong> per aggiungerlo.</li>
+<li>Fai clic sull'icona a ingranaggio per aprirne le impostazioni.</li>
+<li>Configurazione di partenza: mantieni i default — <strong>Conversion Line Period</strong> 9, <strong>Baseline Period</strong> 26, <strong>Lagging Span Period</strong> 26. Sono i valori originali di Hosoda e quelli che praticamente tutta la letteratura su Ichimoku dà per scontati.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">La finestra delle impostazioni di Ichimoku che mostra Conversion Line Period = 9, Baseline Period = 26 e Lagging Span Period = 26, con visibili le opzioni di colore Subgraph per ciascuna linea</div><div class="s-file">ID: <b class="s-id">dc-it-ichimoku-02</b> · save as <code>dc-it-ichimoku-02.png</code></div></div></div>
+<h2 id="come-leggerlo">Come leggerlo</h2>
+<p>I componenti dell'indicatore:</p>
+<table>
+<thead>
+<tr>
+<th>Componente</th>
+<th>Costruzione</th>
+<th>Ruolo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tenkan-sen</strong> (Conversion Line)</td>
+<td>Media dei massimi e minimi degli ultimi 9 periodi</td>
+<td>Direzione del trend di breve termine</td>
+</tr>
+<tr>
+<td><strong>Kijun-sen</strong> (Baseline)</td>
+<td>Media dei massimi e minimi degli ultimi 26 periodi</td>
+<td>Supporto/resistenza; potenziale livello di cambio di trend</td>
+</tr>
+<tr>
+<td><strong>Chikou Span</strong> (Delay Line)</td>
+<td>Il prezzo di chiusura spostato indietro di 26 periodi</td>
+<td>Confronta il prezzo corrente con la price action passata</td>
+</tr>
+<tr>
+<td><strong>Senkou Span</strong></td>
+<td>Media di Tenkan-sen e Kijun-sen, proiettata in avanti di 26 periodi</td>
+<td>Una delle due linee che formano la nuvola (Kumo)</td>
+</tr>
+</tbody>
+</table>
+<p>Leggere il quadro:</p>
+<ul>
+<li><strong>Prezzo vs nuvola</strong>: sopra la nuvola = contesto rialzista, sotto = ribassista, dentro = terra di nessuno. La nuvola davanti al prezzo mappa i futuri supporti/resistenze.</li>
+<li><strong>Incrocio Tenkan/Kijun</strong>: la Tenkan-sen che incrocia al rialzo la Kijun-sen è rialzista (più forte quando avviene sopra la nuvola); l'incrocio al ribasso è ribassista.</li>
+<li><strong>La Kijun-sen come ancora</strong>: il prezzo tende a tornare verso la Baseline; una distanza marcata da essa avverte di un movimento esteso.</li>
+<li><strong>Conferma della Chikou Span</strong>: la linea ritardata che si trova sopra le barre di prezzo di 26 periodi fa conferma il momentum rialzista; sotto di esse, quello ribassista.</li>
+<li><strong>Spessore della nuvola</strong>: una nuvola spessa implica supporto/resistenza forti; una nuvola sottile è più facile da attraversare per il prezzo.</li>
+</ul>
+<h2 id="riferimento-impostazioni">Riferimento impostazioni</h2>
+<h3 id="parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Conversion Line Period</strong></td>
+<td>Lookback per il punto medio della Tenkan-sen. Default: 9. Più corto = linea di segnale più veloce e rumorosa.</td>
+</tr>
+<tr>
+<td><strong>Baseline Period</strong></td>
+<td>Lookback per il punto medio della Kijun-sen. Default: 26.</td>
+</tr>
+<tr>
+<td><strong>Lagging Span Period</strong></td>
+<td>Spostamento della Chikou Span (chiusura spostata indietro). Default: 26.</td>
+</tr>
+</tbody>
+</table>
+<p><span class="confirm-flag">CONFIRM: whether the settings dialog also exposes a separate period for the second cloud line (Senkou Span B) — the live article documents one Senkou Span and three period parameters only</span></p>
+<h3 id="subgraph">Subgraph</h3>
+<p>Colori e stili sono regolabili per ogni linea — <strong>Tenkan-sen</strong>, <strong>Kijun-sen</strong>, <strong>Chikou Span</strong> e <strong>Senkou Span</strong> — più:</p>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Line Style</strong></td>
+<td>Aspetto di ogni linea tracciata.</td>
+</tr>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>Spessore di ogni linea.</td>
+</tr>
+<tr>
+<td><strong>Use Secondary Axis</strong></td>
+<td>Visualizza l'indicatore su un asse alternativo.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</h2>
+<ul>
+<li><strong>Non scegliere una sola linea a piacere.</strong> Ichimoku è un sistema — un incrocio rialzista Tenkan/Kijun sotto una nuvola ribassista è un segnale in conflitto, non un acquisto.</li>
+<li><strong>Resisti alla tentazione di riconfigurare subito i periodi.</strong> La struttura 9/26 è il linguaggio condiviso di ogni riferimento su Ichimoku; cambiala solo quando avrai capito cosa fa ogni spostamento.</li>
+<li><strong>Rispetta lo stato &quot;dentro la nuvola&quot;.</strong> È il modo dell'indicatore di dire che il mercato è in equilibrio — la maggior parte delle strategie Ichimoku lì resta a guardare.</li>
+<li><strong>Alleggerisci se serve.</strong> Cinque plot sovrapposti possono seppellire la price action; assottiglia gli spessori delle linee o ricolora i componenti nella sezione Subgraph, e vedi <a href="./indicator-layout.html">Come cambiare il layout degli indicatori</a> per organizzare i grafici affollati.</li>
+</ul>
+<h2 id="articoli-correlati">Articoli correlati</h2>
+<ul>
+<li><a href="./moving-average.html">Media mobile</a></li>
+<li><a href="./super-trend.html">Super Trend</a></li>
+<li><a href="./donchian-channel.html">Donchian Channel</a></li>
+<li><a href="./adx.html">Average Directional Index (ADX)</a></li>
+<li><a href="./different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li>
+<li><a href="./indicator-layout.html">Come cambiare il layout degli indicatori</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./parabolic-sar.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Parabolic SAR</div></a><a class="next" href="./linear-regression.html"><div class="pn-lbl">Next →</div><div class="pn-title">Regressione lineare</div></a></div>
+    <div class="footer">Centro Assistenza DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#cos">Cos&#x27;è</a></li><li class="lv2"><a href="#quando-usarlo">Quando usarlo</a></li><li class="lv2"><a href="#avvio-rapido">Avvio rapido</a></li><li class="lv2"><a href="#come-leggerlo">Come leggerlo</a></li><li class="lv2"><a href="#riferimento-impostazioni">Riferimento impostazioni</a></li><li class="lv3"><a href="#parameters">Parameters</a></li><li class="lv3"><a href="#subgraph">Subgraph</a></li><li class="lv2"><a href="#suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</a></li><li class="lv2"><a href="#articoli-correlati">Articoli correlati</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-it.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>
