@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Visor de correlación — Centro de Ayuda de DeepCharts</title>
+<meta name="description" content="Compare cómo se movieron varios instrumentos en un mismo eje porcentual compartido, configure la comparación en el diálogo Correlation Properties y lea las barras por símbolo.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/quick-start-first-trade.html">Guía rápida</a><a href="../article/get-help.html">Soporte</a><a class="kb-switch" href="../../es/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/correlation-viewer.html">English</a><a class="lang-item" href="../../it/article/correlation-viewer.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primeros pasos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Bienvenido a DeepCharts: recorrido por la plataforma</a></li><li><a href="../article/system-requirements.html">Requisitos del sistema</a></li><li><a href="../article/install-deepcharts.html">Cómo instalar DeepCharts y activar su licencia</a></li><li><a href="../article/free-delayed-data-feed.html">Cómo usar la fuente de datos gratuita con 15 minutos de retraso</a></li><li><a href="../article/buy-data-feed.html">Cómo comprar una fuente de datos y obtener sus credenciales</a></li><li><a href="../article/first-chart.html">Abra su primer gráfico</a></li><li><a href="../article/simulation-accounts.html">Cuentas de trading y simulación</a></li><li><a href="../article/quick-start-first-trade.html">Inicio rápido: de la instalación a su primera operación</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Conexiones y fuentes de datos <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configuración inicial</li><li><a href="../article/compatibility-guide.html">Brókers, empresas prop y fuentes de datos compatibles</a></li><li><a href="../article/connect-data-feed.html">Cómo conectar una fuente de datos (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a></li><li><a href="../article/sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a></li><li><a href="../article/connect-dxfeed.html">Cómo conectar una fuente de datos dxFeed</a></li><li><a href="../article/connect-rithmic.html">Cómo conectar una fuente de datos de Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Conectar Rithmic mediante el plugin de RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a></li><li><a href="../article/connect-apex.html">Cómo conectar Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Cómo conectar una cuenta dxFeed de empresa prop (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Cómo conectar CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Cómo conectar Interactive Brokers (solo ejecución)</a></li><li><a href="../article/competition-connect.html">Competición de DeepCharts: únase y conéctese</a></li><li><a href="../article/end-of-day-data.html">Conectar datos históricos (fin de día)</a></li><li><a href="../article/manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li><li class="nav-sub">Solución de problemas</li><li><a href="../article/feed-connected-chart-not-moving.html">Solución: fuente en vivo conectada pero el gráfico no se mueve</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Solución: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Solución: Connection Failed — Verifique el nombre de usuario y la contraseña</a></li><li><a href="../article/fix-bad-server.html">Solución: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Solución: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Solución: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Solución: No se puede cargar la DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Solución: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Solución: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Solución: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Solución: conexión perdida al abrir un gráfico</a></li><li><a href="../article/symbol-subscription-issue.html">Solución: Problema de suscripción de símbolo</a></li><li><a href="../article/app-crashes-saving-feed.html">Solución: la aplicación se cierra al guardar la configuración de la fuente</a></li><li><a href="../article/gaps-in-price.html">Solución: gaps de precio en los gráficos</a></li><li><a href="../article/data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Gráficos y espacio de trabajo <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La ventana de gráfico</a></li><li><a href="../article/price-chart-settings.html">Configuración del gráfico de precios</a></li><li><a href="../article/chart-display-options.html">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</a></li><li><a href="../article/drawing-tools.html">Herramientas de dibujo y anotaciones</a></li><li><a href="../article/templates-workspaces.html">Plantillas y espacios de trabajo</a></li><li><a href="../article/quick-chart-templates.html">Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Vincular ventanas con grupos de color</a></li><li><a href="../article/replay-data.html">Reproducir datos de mercado</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalice el idioma, el tema y los sonidos de notificación</a></li><li><a href="../article/keyboard-shortcuts.html">Cómo configurar atajos de teclado</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Referencia de atajos de teclado</a></li><li><a href="../article/multi-monitor-windows.html">Organizar ventanas en varios monitores (y recuperar ventanas fuera de pantalla)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Ventanas de la plataforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (la cinta)</a></li><li><a href="../article/advanced-dom.html">Ventana Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Ventana de gráfico de perfil (perfiles TPO y de volumen)</a></li><li><a href="../article/scanner-window.html">Escáner de mercado</a></li><li><a href="../article/correlation-viewer.html" class="active">Visor de correlación</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading y órdenes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Operar desde el gráfico</a></li><li><a href="../article/trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading en el gráfico (escalera de trading con clics)</a></li><li><a href="../article/depth-of-market.html">Indicador de profundidad de mercado (DOM)</a></li><li><a href="../article/oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Ventana de órdenes</a></li><li><a href="../article/portfolio-wallet.html">Cartera (Wallet)</a></li><li><a href="../article/risk-manager.html">Gestor de riesgos</a></li><li><a href="../article/trade-copier.html">Cómo configurar el Trade Copier</a></li><li><a href="../article/performance-analysis.html">Análisis de rendimiento (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Conceptos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li><li><a href="../article/understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción</a></li><li><a href="../article/understanding-icebergs-absorption.html">Entender los icebergs y la absorción</a></li><li><a href="../article/understanding-vwap.html">Entender el VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Cómo leer un footprint: ejemplos prácticos</a></li><li><a href="../article/glossary.html">Glosario de términos de flujo de órdenes y de la plataforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicadores y análisis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fundamentos de indicadores</li><li><a href="../article/different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li><li><a href="../article/indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li><li class="nav-sub">Indicadores profundos</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Tendencia</li><li><a href="../article/moving-average.html">Media móvil</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">SAR Parabólico</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regresión lineal</a></li><li><a href="../article/regression-channel.html">Canal de regresión</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Canal de Donchian</a></li><li><a href="../article/adx.html">Índice direccional promedio (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Oscilador Aroon</a></li><li class="nav-sub">Momentum y osciladores</li><li><a href="../article/rsi.html">Índice de fuerza relativa (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscilador estocástico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Tasa de cambio (ROC)</a></li><li><a href="../article/cci.html">Índice de canal de mercancías (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Oscilador Awesome</a></li><li><a href="../article/inverse-cyber-cycle.html">Ciclo Cibernético Inverso (Inverse Cyber Cycle)</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilidad y bandas</li><li><a href="../article/bollinger-bands.html">Bandas de Bollinger</a></li><li><a href="../article/keltner-channel.html">Canal de Keltner</a></li><li><a href="../article/atr.html">Rango Verdadero Medio (ATR)</a></li><li><a href="../article/standard-deviation.html">Desviación estándar</a></li><li><a href="../article/vwap-envelopes.html">Envolventes VWAP</a></li><li><a href="../article/adr-target.html">Objetivo de rango diario promedio (ADR Target)</a></li><li class="nav-sub">Volumen y delta</li><li><a href="../article/volume.html">Volumen</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Resaltado de delta %</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Swing de volumen (Volume Swing)</a></li><li><a href="../article/volume-delta-sprint.html">Sprint de volumen/delta (Volume/Delta Sprint)</a></li><li><a href="../article/chaikin-ad.html">Acumulación/Distribución de Chaikin</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Velocidad de la cinta</a></li><li><a href="../article/speed-of-tape-instant.html">Velocidad de la cinta (instantánea)</a></li><li><a href="../article/market-statistics.html">Estadísticas de mercado</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Flujo de órdenes y subasta</li><li><a href="../article/market-profile-tpo.html">Perfil de mercado (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a></li><li><a href="../article/imbalance-rejector.html">Rechazador de Desequilibrios (Imbalance Rejector)</a></li><li><a href="../article/session-imbalance.html">Desequilibrio de sesión</a></li><li><a href="../article/unfinished-auction.html">Subasta sin terminar (Unfinished Auction)</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">POC Dinámico</a></li><li><a href="../article/bar-poc.html">POC de barra</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Niveles y patrones</li><li><a href="../article/pivot-points.html">Puntos pivote</a></li><li><a href="../article/important-levels.html">Niveles importantes</a></li><li><a href="../article/absolute-levels.html">Niveles absolutos</a></li><li><a href="../article/price-movement-levels.html">Niveles de movimiento del precio</a></li><li><a href="../article/session-marker.html">Marcador de sesión</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Detector de gaps (Gap Detector)</a></li><li><a href="../article/fvg-identifier.html">Identificador de FVG (FVG Identifier)</a></li><li><a href="../article/divergence-detector.html">Detector de divergencias</a></li><li><a href="../article/confluence-identifier.html">Identificador de Confluencias</a></li><li class="nav-sub">Superposiciones de gráfico</li><li><a href="../article/candlestick-bar.html">Barra de velas (Candlestick Bar)</a></li><li><a href="../article/overlay-chart.html">Superposición de gráfico (Overlay Chart)</a></li><li><a href="../article/overlay-symbol.html">Superposición de símbolo (Overlay Symbol)</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Superposición de velas de marco temporal (Overlay Timeframe Candlestick)</a></li><li><a href="../article/overlay-timeframe-highlight.html">Resaltado de marco temporal (Overlay Timeframe Highlight)</a></li><li><a href="../article/shift-candle.html">Vela Shift</a></li><li><a href="../article/text-on-chart.html">Texto en el gráfico</a></li><li><a href="../article/annotations-overlay.html">Superposición de anotaciones</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Datos y base de datos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover de símbolos (cambio de mes de contrato)</a></li><li><a href="../article/delete-market-data.html">Eliminar datos de mercado (métodos en la aplicación y manual)</a></li><li><a href="../article/download-data.html">Volver a descargar datos históricos (herramienta Download Data)</a></li><li><a href="../article/database-optimization.html">Optimización de la base de datos</a></li><li><a href="../article/database-problems.html">Solución: problemas de la base de datos</a></li><li><a href="../article/fix-could-not-find-path.html">Solución: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Solución de problemas y soporte <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Solución: problemas de instalación y requisitos básicos</a></li><li><a href="../article/installation-setup-failed.html">Solución: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Solución: una política de control de aplicaciones bloquea DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Solución: la herramienta de dibujo Rectángulo no funciona</a></li><li><a href="../article/chart-zoom.html">Solución: el zoom del gráfico no funciona</a></li><li><a href="../article/license-issues.html">Solución: problemas de licencia y activación</a></li><li><a href="../article/diagnostic-report.html">Informe de diagnóstico: antes de contactar con soporte</a></li><li><a href="../article/get-help.html">Cómo obtener ayuda (chat, informe de diagnóstico, soporte)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Cuenta y facturación <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Administre sus suscripciones y facturación</a></li><li><a href="../article/move-to-new-computer.html">Mover DeepCharts a un ordenador nuevo</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/platform-windows.html">Ventanas de la plataforma</a></div>
+<div class="article-head"><h1>Visor de correlación</h1>
+<p class="article-desc">Compare cómo se movieron varios instrumentos en un mismo eje porcentual compartido, configure la comparación en el diálogo Correlation Properties y lea las barras por símbolo.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 7 min read</span>
+  <a class="btn-pdf" href="../pdf/correlation-viewer.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>El Visor de correlación (Correlation Viewer) coloca varios instrumentos en un mismo eje porcentual compartido para que pueda ver, de un vistazo, qué mercado se movió más en la misma ventana temporal, por ejemplo NQ frente a ES en los últimos 15 días. En lugar de comparar a ojo dos gráficos con escalas de precio diferentes, obtiene una única comparación normalizada.</p>
+<p>Esta referencia cubre cómo abrir el visor, el diálogo Correlation Properties (propiedades de correlación), cómo añadir y eliminar símbolos de comparación, y cómo se lee la vista renderizada.</p>
+<h2 id="qu-es">Qué es</h2>
+<p>El Visor de correlación responde a la pregunta &quot;¿cómo se movieron estos mercados en relación entre sí?&quot; Usted elige un instrumento base, añade los símbolos que desea comparar, y el visor dibuja el cambio porcentual de cada símbolo en el mismo eje. Como todo se expresa en porcentaje en lugar de precio, los instrumentos con niveles de precio muy diferentes (un futuro de índice frente a un futuro de divisas, por ejemplo) se vuelven directamente comparables.</p>
+<p>El visor carga sus propios datos desde su fuente de datos, como lo hace un gráfico, y su configuración puede editarse en cualquier momento después de la creación.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Ventana del Visor de correlación renderizada en el modo de visualización Bars con dos barras por símbolo (NQ y ES) en un eje porcentual compartido, con los nombres de los símbolos visibles bajo las barras y la escala porcentual en el eje y</div><div class="s-file">ID: <b class="s-id">dc-es-correlation-viewer-01</b> · save as <code>dc-es-correlation-viewer-01.png</code></div></div></div>
+<h2 id="cu-ndo-usarlo">Cuándo usarlo</h2>
+<ul>
+<li>Opera futuros de índices correlacionados (NQ, ES) y quiere ver cuál lidera o se rezaga.</li>
+<li>Quiere una lectura rápida de fuerza relativa entre un puñado de mercados sin construir un diseño de múltiples gráficos.</li>
+<li>Quiere comprobar si una correlación normalmente estrecha está divergiendo en su ventana de retrospección elegida.</li>
+<li>Quiere una comparación normalizada (basada en porcentajes) que ignore los niveles de precio absolutos.</li>
+</ul>
+<h2 id="inicio-r-pido">Inicio rápido</h2>
+<ol>
+<li>En la barra superior de la aplicación, elija <strong>New → Correlation Viewer</strong>.</li>
+<li>Se abrirá la ventana <strong>Select Base Instrument</strong> (seleccionar instrumento base): el selector de instrumentos estándar con una barra lateral de bolsas, un cuadro de filtrado por escritura y una tabla <strong>Symbol / Description / Exchange</strong>. Elija su símbolo base y pulse <strong>Select</strong>.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Diálogo Select Base Instrument con la barra lateral de bolsas (All, CBOT, CME, COMEX, CRYPTO, EUREX, INDEX US y otras), el cuadro de filtrado por escritura y la tabla de símbolos visibles</div><div class="s-file">ID: <b class="s-id">dc-es-correlation-viewer-02</b> · save as <code>dc-es-correlation-viewer-02.png</code></div></div></div>
+<ol start="3">
+<li>Se abrirá el diálogo <strong>Correlation Properties</strong>. En la sección <strong>GENERAL</strong>, establezca <strong>Days to load</strong>, <strong>TF type</strong> y <strong>TF</strong> para la ventana de comparación.</li>
+<li>En la sección <strong>Symbols</strong>, pulse el botón verde <strong>Add symbol</strong> por cada instrumento adicional que quiera comparar. Cada uno aparece como una ficha con su propia configuración de color.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Diálogo Correlation Properties con la sección Symbols mostrando las fichas NQ-CME y ES-CME, cada una con las muestras Price Down Color, Price Up Color y Retracement Color, y el botón verde Add symbol</div><div class="s-file">ID: <b class="s-id">dc-es-correlation-viewer-03</b> · save as <code>dc-es-correlation-viewer-03.png</code></div></div></div>
+<ol start="5">
+<li>Pulse <strong>OK</strong>. El visor muestra un indicador giratorio &quot;Building chart&quot; mientras descarga los datos, y luego renderiza una barra por símbolo en el eje porcentual compartido.</li>
+</ol>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Los selectores de instrumentos solo listan las bolsas que ha suscrito en Symbol Manage. Si el selector se ve vacío, configure primero sus suscripciones; consulte <a href="./symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a>.</p>
+</blockquote>
+<h2 id="anatom-a-de-la-ventana">Anatomía de la ventana</h2>
+<p>La barra de título contiene, de izquierda a derecha:</p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Logotipo de DeepCharts</td>
+<td>Marca de la ventana</td>
+</tr>
+<tr>
+<td><strong>Icono de engranaje</strong></td>
+<td>Reabre el diálogo Correlation Properties para que pueda editar la comparación después de la creación</td>
+</tr>
+<tr>
+<td><strong>Icono de embudo</strong></td>
+<td><span class="confirm-flag">CONFIRM: what the funnel icon does in the Correlation Viewer — it is not necessarily the same rank filter as the Market Scanner's funnel</span></td>
+</tr>
+<tr>
+<td>Minimizar / maximizar / cerrar</td>
+<td>Controles de ventana estándar</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Barra de título del Visor de correlación ampliada con los iconos de engranaje y embudo visibles y etiquetados</div><div class="s-file">ID: <b class="s-id">dc-es-correlation-viewer-04</b> · save as <code>dc-es-correlation-viewer-04.png</code></div></div></div>
+<p>Mientras el visor carga, el cuerpo de la ventana muestra un indicador giratorio &quot;Building chart&quot; y una insignia <strong>DWT:</strong> con el nombre del símbolo aparece en la barra superior de la aplicación: DWT significa que los datos se están descargando desde su servidor de fuente de datos (LDT significaría que se están cargando datos ya presentes en el disco).</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Visor de correlación mostrando el indicador giratorio Building chart con la insignia DWT: ES-CME visible en la barra superior de la aplicación</div><div class="s-file">ID: <b class="s-id">dc-es-correlation-viewer-05</b> · save as <code>dc-es-correlation-viewer-05.png</code></div></div></div>
+<h2 id="c-mo-leerlo">Cómo leerlo</h2>
+<p>Con el <strong>Display mode</strong> (modo de visualización) establecido en <strong>Bars</strong> (el modo observado; otros modos de visualización no fueron verificados — <span class="confirm-flag">CONFIRM: the full Display mode option list and how each renders</span>), el visor dibuja una barra vertical por símbolo en un eje porcentual compartido, con el nombre del símbolo bajo cada barra.</p>
+<p>Cada barra resume el movimiento porcentual de ese símbolo en la ventana cargada. En una sesión en la que NQ cayó mucho más que ES, la barra de NQ se extendió mucho más profundo en el eje porcentual negativo que la barra de ES: una lectura visual inmediata de debilidad relativa. Las barras tienen un cuerpo y una extensión más fina en forma de mecha. <span class="confirm-flag">CONFIRM: what the bar body versus the wick represents — for example net change versus the extremes of the loaded window</span></p>
+<p>Los colores de las barras parecen seguir los colores <strong>Price Down Color</strong> / <strong>Price Up Color</strong> configurados para cada símbolo en la sección Symbols, pero la asignación exacta de colores puede variar: si los colores importan para su lectura, establezca colores distintos por símbolo para que cada barra sea inequívoca.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Vista Bars renderizada, ampliada en la barra de un símbolo, mostrando el cuerpo y la extensión más fina en forma de mecha frente a las etiquetas del eje porcentual</div><div class="s-file">ID: <b class="s-id">dc-es-correlation-viewer-06</b> · save as <code>dc-es-correlation-viewer-06.png</code></div></div></div>
+<h2 id="a-adir-o-eliminar-s-mbolos">Añadir o eliminar símbolos</h2>
+<p>Puede cambiar la comparación en cualquier momento:</p>
+<ol>
+<li>Haga clic en el <strong>icono de engranaje</strong> para reabrir <strong>Correlation Properties</strong>.</li>
+<li>En la sección <strong>Symbols</strong>, pulse el botón verde <strong>Add symbol</strong>: el selector estándar <strong>Select Instrument</strong> se abre encima del diálogo. Elija un símbolo y confirme; aparecerá como una nueva ficha.</li>
+<li>Para eliminar un símbolo, pase el cursor sobre su ficha y haga clic en el icono rojo de eliminación que aparece.</li>
+<li>Pulse <strong>OK</strong>: el visor se reconstruirá con el conjunto de símbolos actualizado.</li>
+</ol>
+<p>Cada ficha de símbolo lleva su propio <strong>Price Down Color</strong> (rojo por defecto), <strong>Price Up Color</strong> (verde por defecto) y <strong>Retracement Color</strong> (azul por defecto).</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Selector Select Instrument abierto encima del diálogo Correlation Properties tras pulsar Add symbol</div><div class="s-file">ID: <b class="s-id">dc-es-correlation-viewer-07</b> · save as <code>dc-es-correlation-viewer-07.png</code></div></div></div>
+<h2 id="referencia-de-configuraci-n">Referencia de configuración</h2>
+<p>Toda la configuración vive en el diálogo <strong>Correlation Properties</strong>, mostrado al crearlo y reabrible mediante el <strong>icono de engranaje</strong>. <strong>Apply</strong> aplica los cambios en vivo; <strong>OK</strong> confirma y cierra.</p>
+<h3 id="general">GENERAL</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Predeterminado</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Days to load</strong></td>
+<td>15</td>
+<td>Cuántos días de historia cubre la comparación. Más días = una retrospección más larga y una descarga inicial más larga.</td>
+</tr>
+<tr>
+<td><strong>TF type</strong></td>
+<td>Minutes</td>
+<td>La unidad de marco temporal de los datos subyacentes</td>
+</tr>
+<tr>
+<td><strong>TF</strong></td>
+<td>15</td>
+<td>El valor del marco temporal (con TF type = Minutes, datos de 15 minutos)</td>
+</tr>
+<tr>
+<td><strong>Display mode</strong></td>
+<td>Bars</td>
+<td>Cómo se renderiza la comparación. <strong>Bars</strong> dibuja una barra porcentual por símbolo. <span class="confirm-flag">CONFIRM: other Display mode options</span></td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Sección GENERAL de Correlation Properties mostrando Days to load, el menú desplegable TF type, el selector numérico TF y el menú desplegable Display mode</div><div class="s-file">ID: <b class="s-id">dc-es-correlation-viewer-08</b> · save as <code>dc-es-correlation-viewer-08.png</code></div></div></div>
+<h3 id="calculation">CALCULATION</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Predeterminado</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mode</strong></td>
+<td>Zig zag</td>
+<td>El modo de cálculo de la correlación. Zig zag fue el único modo observado. <span class="confirm-flag">CONFIRM: other Mode options</span></td>
+</tr>
+<tr>
+<td><strong>Zig Zag Abs. Rev</strong></td>
+<td>0.50</td>
+<td>El umbral de reversión zig-zag utilizado por el cálculo. <span class="confirm-flag">CONFIRM: the exact unit and semantics of the 0.50 reversal value</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="symbols">Symbols</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Predeterminado</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Add symbol</strong></td>
+<td>—</td>
+<td>Botón verde; abre el selector Select Instrument para añadir un símbolo de comparación</td>
+</tr>
+<tr>
+<td><strong>Price Down Color</strong> (por símbolo)</td>
+<td>Rojo</td>
+<td>Color utilizado para ese símbolo cuando su precio bajó</td>
+</tr>
+<tr>
+<td><strong>Price Up Color</strong> (por símbolo)</td>
+<td>Verde</td>
+<td>Color utilizado para ese símbolo cuando su precio subió</td>
+</tr>
+<tr>
+<td><strong>Retracement Color</strong> (por símbolo)</td>
+<td>Azul</td>
+<td>Color utilizado para las líneas de superposición de retroceso de ese símbolo</td>
+</tr>
+</tbody>
+</table>
+<h3 id="retracements">RETRACEMENTS</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Predeterminado</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Off</td>
+<td>Activa la superposición de retrocesos; las líneas de cada símbolo usan su Retracement Color (la colocación exacta de las líneas de retroceso puede variar: actívela y obsérvela en sus datos)</td>
+</tr>
+<tr>
+<td><strong>Line width</strong></td>
+<td>1</td>
+<td>Ancho de las líneas de retroceso</td>
+</tr>
+</tbody>
+</table>
+<h3 id="reference-level">REFERENCE LEVEL</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Predeterminado</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Off</td>
+<td>Activa la línea de nivel de referencia. <span class="confirm-flag">CONFIRM: what level the reference line marks</span></td>
+</tr>
+<tr>
+<td><strong>Line width</strong></td>
+<td>1</td>
+<td>Ancho de la línea de referencia</td>
+</tr>
+<tr>
+<td><strong>Line color</strong></td>
+<td>Blanco</td>
+<td>Color de la línea de referencia</td>
+</tr>
+</tbody>
+</table>
+<h3 id="apariencia-de-la-ventana">Apariencia de la ventana</h3>
+<p>El mismo diálogo también contiene las secciones estándar de apariencia de ventana presentes en otras ventanas de DeepCharts:</p>
+<table>
+<thead>
+<tr>
+<th>Sección</th>
+<th>Configuración</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>CHART AREA</strong></td>
+<td><strong>Back Color</strong>, <strong>Border Color</strong>, <strong>Text Size</strong> (12.00), <strong>Text Color</strong>, <strong>Crosshair</strong>, <strong>Series Marker Margin (px)</strong> (6)</td>
+</tr>
+<tr>
+<td><strong>GRID</strong></td>
+<td>Estilo de la cuadrícula</td>
+</tr>
+<tr>
+<td><strong>USER ANNOTATIONS</strong></td>
+<td>Estilo de las anotaciones</td>
+</tr>
+<tr>
+<td><strong>EXTRA</strong></td>
+<td>Opciones adicionales (contraídas por defecto)</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Diálogo Correlation Properties desplazado hasta las secciones CHART AREA, GRID, USER ANNOTATIONS y EXTRA con los botones Apply y OK visibles</div><div class="s-file">ID: <b class="s-id">dc-es-correlation-viewer-09</b> · save as <code>dc-es-correlation-viewer-09.png</code></div></div></div>
+<h2 id="consejos-y-errores-comunes">Consejos y errores comunes</h2>
+<ul>
+<li><strong>¿Atascado en &quot;Building chart&quot;?</strong> El visor descarga datos antes de renderizar: la insignia <strong>DWT:</strong> en la barra superior confirma que hay una descarga en curso. Compruebe que el punto de la insignia de la fuente de datos esté verde y dele tiempo; si los gráficos cargan bien pero el visor nunca renderiza, ciérrelo y vuelva a abrirlo, y consulte <a href="./data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a> si las descargas son lentas en general.</li>
+<li><strong>Un selector de instrumentos vacío significa que no hay suscripciones de bolsas.</strong> Suscriba primero las bolsas que necesita en <a href="./symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a>.</li>
+<li><strong>Dé a cada símbolo colores distintos.</strong> Con varios símbolos en un mismo eje, los colores <strong>Price Down/Up</strong> por símbolo son la única forma de distinguir las barras rápidamente.</li>
+<li><strong>Ajuste la retrospección a su pregunta.</strong> <strong>Days to load</strong> y <strong>TF</strong> definen la ventana de comparación: una ventana de 15 días responde a una pregunta diferente que una ventana de 2 días.</li>
+<li><strong>La configuración es editable después de la creación.</strong> Nunca necesita reconstruir el visor desde cero: el icono de engranaje reabre el diálogo completo de propiedades.</li>
+</ul>
+<h2 id="art-culos-relacionados">Artículos relacionados</h2>
+<ul>
+<li><a href="./scanner-window.html">Escáner de mercado</a></li>
+<li><a href="./symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a></li>
+<li><a href="./connect-data-feed.html">Cómo conectar una fuente de datos (Feed Settings)</a></li>
+<li><a href="./chart-window.html">La ventana de gráfico</a></li>
+<li><a href="./profile-chart-window.html">Ventana de gráfico de perfil (perfiles TPO y de volumen)</a></li>
+<li><a href="./data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./scanner-window.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Escáner de mercado</div></a><a class="next" href="./trading-from-chart.html"><div class="pn-lbl">Next →</div><div class="pn-title">Operar desde el gráfico</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#qu-es">Qué es</a></li><li class="lv2"><a href="#cu-ndo-usarlo">Cuándo usarlo</a></li><li class="lv2"><a href="#inicio-r-pido">Inicio rápido</a></li><li class="lv2"><a href="#anatom-a-de-la-ventana">Anatomía de la ventana</a></li><li class="lv2"><a href="#c-mo-leerlo">Cómo leerlo</a></li><li class="lv2"><a href="#a-adir-o-eliminar-s-mbolos">Añadir o eliminar símbolos</a></li><li class="lv2"><a href="#referencia-de-configuraci-n">Referencia de configuración</a></li><li class="lv3"><a href="#general">GENERAL</a></li><li class="lv3"><a href="#calculation">CALCULATION</a></li><li class="lv3"><a href="#symbols">Symbols</a></li><li class="lv3"><a href="#retracements">RETRACEMENTS</a></li><li class="lv3"><a href="#reference-level">REFERENCE LEVEL</a></li><li class="lv3"><a href="#apariencia-de-la-ventana">Apariencia de la ventana</a></li><li class="lv2"><a href="#consejos-y-errores-comunes">Consejos y errores comunes</a></li><li class="lv2"><a href="#art-culos-relacionados">Artículos relacionados</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-es.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

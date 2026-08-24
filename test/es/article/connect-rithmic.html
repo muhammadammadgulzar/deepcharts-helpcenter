@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Cómo conectar una fuente de datos de Rithmic — Centro de Ayuda de DeepCharts</title>
+<meta name="description" content="Conecte una fuente de datos de Rithmic a DeepCharts: firme el acuerdo en R Trader Pro, introduzca sus credenciales con el valor de Server correcto y verifique los gráficos en vivo.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/quick-start-first-trade.html">Guía rápida</a><a href="../article/get-help.html">Soporte</a><a class="kb-switch" href="../../es/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/connect-rithmic.html">English</a><a class="lang-item" href="../../it/article/connect-rithmic.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primeros pasos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Bienvenido a DeepCharts: recorrido por la plataforma</a></li><li><a href="../article/system-requirements.html">Requisitos del sistema</a></li><li><a href="../article/install-deepcharts.html">Cómo instalar DeepCharts y activar su licencia</a></li><li><a href="../article/free-delayed-data-feed.html">Cómo usar la fuente de datos gratuita con 15 minutos de retraso</a></li><li><a href="../article/buy-data-feed.html">Cómo comprar una fuente de datos y obtener sus credenciales</a></li><li><a href="../article/first-chart.html">Abra su primer gráfico</a></li><li><a href="../article/simulation-accounts.html">Cuentas de trading y simulación</a></li><li><a href="../article/quick-start-first-trade.html">Inicio rápido: de la instalación a su primera operación</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Conexiones y fuentes de datos <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configuración inicial</li><li><a href="../article/compatibility-guide.html">Brókers, empresas prop y fuentes de datos compatibles</a></li><li><a href="../article/connect-data-feed.html">Cómo conectar una fuente de datos (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a></li><li><a href="../article/sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a></li><li><a href="../article/connect-dxfeed.html">Cómo conectar una fuente de datos dxFeed</a></li><li><a href="../article/connect-rithmic.html" class="active">Cómo conectar una fuente de datos de Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Conectar Rithmic mediante el plugin de RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a></li><li><a href="../article/connect-apex.html">Cómo conectar Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Cómo conectar una cuenta dxFeed de empresa prop (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Cómo conectar CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Cómo conectar Interactive Brokers (solo ejecución)</a></li><li><a href="../article/competition-connect.html">Competición de DeepCharts: únase y conéctese</a></li><li><a href="../article/end-of-day-data.html">Conectar datos históricos (fin de día)</a></li><li><a href="../article/manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li><li class="nav-sub">Solución de problemas</li><li><a href="../article/feed-connected-chart-not-moving.html">Solución: fuente en vivo conectada pero el gráfico no se mueve</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Solución: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Solución: Connection Failed — Verifique el nombre de usuario y la contraseña</a></li><li><a href="../article/fix-bad-server.html">Solución: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Solución: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Solución: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Solución: No se puede cargar la DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Solución: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Solución: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Solución: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Solución: conexión perdida al abrir un gráfico</a></li><li><a href="../article/symbol-subscription-issue.html">Solución: Problema de suscripción de símbolo</a></li><li><a href="../article/app-crashes-saving-feed.html">Solución: la aplicación se cierra al guardar la configuración de la fuente</a></li><li><a href="../article/gaps-in-price.html">Solución: gaps de precio en los gráficos</a></li><li><a href="../article/data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Gráficos y espacio de trabajo <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La ventana de gráfico</a></li><li><a href="../article/price-chart-settings.html">Configuración del gráfico de precios</a></li><li><a href="../article/chart-display-options.html">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</a></li><li><a href="../article/drawing-tools.html">Herramientas de dibujo y anotaciones</a></li><li><a href="../article/templates-workspaces.html">Plantillas y espacios de trabajo</a></li><li><a href="../article/quick-chart-templates.html">Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Vincular ventanas con grupos de color</a></li><li><a href="../article/replay-data.html">Reproducir datos de mercado</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalice el idioma, el tema y los sonidos de notificación</a></li><li><a href="../article/keyboard-shortcuts.html">Cómo configurar atajos de teclado</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Referencia de atajos de teclado</a></li><li><a href="../article/multi-monitor-windows.html">Organizar ventanas en varios monitores (y recuperar ventanas fuera de pantalla)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Ventanas de la plataforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (la cinta)</a></li><li><a href="../article/advanced-dom.html">Ventana Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Ventana de gráfico de perfil (perfiles TPO y de volumen)</a></li><li><a href="../article/scanner-window.html">Escáner de mercado</a></li><li><a href="../article/correlation-viewer.html">Visor de correlación</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading y órdenes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Operar desde el gráfico</a></li><li><a href="../article/trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading en el gráfico (escalera de trading con clics)</a></li><li><a href="../article/depth-of-market.html">Indicador de profundidad de mercado (DOM)</a></li><li><a href="../article/oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Ventana de órdenes</a></li><li><a href="../article/portfolio-wallet.html">Cartera (Wallet)</a></li><li><a href="../article/risk-manager.html">Gestor de riesgos</a></li><li><a href="../article/trade-copier.html">Cómo configurar el Trade Copier</a></li><li><a href="../article/performance-analysis.html">Análisis de rendimiento (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Conceptos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li><li><a href="../article/understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción</a></li><li><a href="../article/understanding-icebergs-absorption.html">Entender los icebergs y la absorción</a></li><li><a href="../article/understanding-vwap.html">Entender el VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Cómo leer un footprint: ejemplos prácticos</a></li><li><a href="../article/glossary.html">Glosario de términos de flujo de órdenes y de la plataforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicadores y análisis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fundamentos de indicadores</li><li><a href="../article/different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li><li><a href="../article/indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li><li class="nav-sub">Indicadores profundos</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Tendencia</li><li><a href="../article/moving-average.html">Media móvil</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">SAR Parabólico</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regresión lineal</a></li><li><a href="../article/regression-channel.html">Canal de regresión</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Canal de Donchian</a></li><li><a href="../article/adx.html">Índice direccional promedio (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Oscilador Aroon</a></li><li class="nav-sub">Momentum y osciladores</li><li><a href="../article/rsi.html">Índice de fuerza relativa (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscilador estocástico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Tasa de cambio (ROC)</a></li><li><a href="../article/cci.html">Índice de canal de mercancías (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Oscilador Awesome</a></li><li><a href="../article/inverse-cyber-cycle.html">Ciclo Cibernético Inverso (Inverse Cyber Cycle)</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilidad y bandas</li><li><a href="../article/bollinger-bands.html">Bandas de Bollinger</a></li><li><a href="../article/keltner-channel.html">Canal de Keltner</a></li><li><a href="../article/atr.html">Rango Verdadero Medio (ATR)</a></li><li><a href="../article/standard-deviation.html">Desviación estándar</a></li><li><a href="../article/vwap-envelopes.html">Envolventes VWAP</a></li><li><a href="../article/adr-target.html">Objetivo de rango diario promedio (ADR Target)</a></li><li class="nav-sub">Volumen y delta</li><li><a href="../article/volume.html">Volumen</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Resaltado de delta %</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Swing de volumen (Volume Swing)</a></li><li><a href="../article/volume-delta-sprint.html">Sprint de volumen/delta (Volume/Delta Sprint)</a></li><li><a href="../article/chaikin-ad.html">Acumulación/Distribución de Chaikin</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Velocidad de la cinta</a></li><li><a href="../article/speed-of-tape-instant.html">Velocidad de la cinta (instantánea)</a></li><li><a href="../article/market-statistics.html">Estadísticas de mercado</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Flujo de órdenes y subasta</li><li><a href="../article/market-profile-tpo.html">Perfil de mercado (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a></li><li><a href="../article/imbalance-rejector.html">Rechazador de Desequilibrios (Imbalance Rejector)</a></li><li><a href="../article/session-imbalance.html">Desequilibrio de sesión</a></li><li><a href="../article/unfinished-auction.html">Subasta sin terminar (Unfinished Auction)</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">POC Dinámico</a></li><li><a href="../article/bar-poc.html">POC de barra</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Niveles y patrones</li><li><a href="../article/pivot-points.html">Puntos pivote</a></li><li><a href="../article/important-levels.html">Niveles importantes</a></li><li><a href="../article/absolute-levels.html">Niveles absolutos</a></li><li><a href="../article/price-movement-levels.html">Niveles de movimiento del precio</a></li><li><a href="../article/session-marker.html">Marcador de sesión</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Detector de gaps (Gap Detector)</a></li><li><a href="../article/fvg-identifier.html">Identificador de FVG (FVG Identifier)</a></li><li><a href="../article/divergence-detector.html">Detector de divergencias</a></li><li><a href="../article/confluence-identifier.html">Identificador de Confluencias</a></li><li class="nav-sub">Superposiciones de gráfico</li><li><a href="../article/candlestick-bar.html">Barra de velas (Candlestick Bar)</a></li><li><a href="../article/overlay-chart.html">Superposición de gráfico (Overlay Chart)</a></li><li><a href="../article/overlay-symbol.html">Superposición de símbolo (Overlay Symbol)</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Superposición de velas de marco temporal (Overlay Timeframe Candlestick)</a></li><li><a href="../article/overlay-timeframe-highlight.html">Resaltado de marco temporal (Overlay Timeframe Highlight)</a></li><li><a href="../article/shift-candle.html">Vela Shift</a></li><li><a href="../article/text-on-chart.html">Texto en el gráfico</a></li><li><a href="../article/annotations-overlay.html">Superposición de anotaciones</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Datos y base de datos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover de símbolos (cambio de mes de contrato)</a></li><li><a href="../article/delete-market-data.html">Eliminar datos de mercado (métodos en la aplicación y manual)</a></li><li><a href="../article/download-data.html">Volver a descargar datos históricos (herramienta Download Data)</a></li><li><a href="../article/database-optimization.html">Optimización de la base de datos</a></li><li><a href="../article/database-problems.html">Solución: problemas de la base de datos</a></li><li><a href="../article/fix-could-not-find-path.html">Solución: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Solución de problemas y soporte <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Solución: problemas de instalación y requisitos básicos</a></li><li><a href="../article/installation-setup-failed.html">Solución: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Solución: una política de control de aplicaciones bloquea DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Solución: la herramienta de dibujo Rectángulo no funciona</a></li><li><a href="../article/chart-zoom.html">Solución: el zoom del gráfico no funciona</a></li><li><a href="../article/license-issues.html">Solución: problemas de licencia y activación</a></li><li><a href="../article/diagnostic-report.html">Informe de diagnóstico: antes de contactar con soporte</a></li><li><a href="../article/get-help.html">Cómo obtener ayuda (chat, informe de diagnóstico, soporte)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Cuenta y facturación <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Administre sus suscripciones y facturación</a></li><li><a href="../article/move-to-new-computer.html">Mover DeepCharts a un ordenador nuevo</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/connections-data-feeds.html">Conexiones y fuentes de datos</a> › Configuración inicial</div>
+<div class="article-head"><h1>Cómo conectar una fuente de datos de Rithmic</h1>
+<p class="article-desc">Conecte una fuente de datos de Rithmic a DeepCharts: firme el acuerdo en R Trader Pro, introduzca sus credenciales con el valor de Server correcto y verifique los gráficos en vivo.</p>
+<div class="meta-row">
+  <span class="badge b-beginner">Beginner</span>
+  <span class="badge">Howto</span>
+  <span class="badge">🕒 15 min to complete</span>
+  <a class="btn-pdf" href="../pdf/connect-rithmic.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Al final de esta guía tendrá una fuente de datos de Rithmic conectada a DeepCharts y un gráfico en vivo en pantalla. La guía principal cubre una suscripción de Rithmic comprada en el sitio web de DeepCharts; las secciones derivadas cubren cuentas de Rithmic emitidas por un bróker o traídas de otra plataforma de trading.</p>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Rithmic no vende fuentes de datos directamente desde rithmic.com. Sus credenciales de Rithmic siempre provienen de uno de cuatro lugares: el sitio web de DeepCharts, un bróker, una empresa prop u otra plataforma de trading. Si su cuenta provino de una empresa prop, siga <a href="./connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a> en su lugar (o <a href="./connect-apex.html">Cómo conectar Apex Trader Funding</a> para Apex Trader Funding).</p>
+</blockquote>
+<h2 id="antes-de-empezar">Antes de empezar</h2>
+<p>Asegúrese de tener:</p>
+<ul>
+<li>[ ] DeepCharts instalado y activado; consulte <a href="./install-deepcharts.html">Cómo instalar DeepCharts y activar su licencia</a></li>
+<li>[ ] Una suscripción activa de Rithmic con su nombre de usuario y contraseña; consulte <a href="./buy-data-feed.html">Cómo comprar una fuente de datos y obtener sus credenciales</a> si aún no ha comprado una</li>
+<li>[ ] El acuerdo de datos de mercado de Rithmic firmado a través de R Trader Pro; consulte <a href="./sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a> (los pasos 2–3 a continuación resumen el proceso)</li>
+<li>[ ] Comprobado que el origen de su cuenta es compatible; consulte <a href="./compatibility-guide.html">Brókers, empresas prop y fuentes de datos compatibles</a></li>
+</ul>
+<h2 id="pasos">Pasos</h2>
+<ol>
+<li>Obtenga sus credenciales de Rithmic. Para una fuente de datos comprada en el sitio web de DeepCharts: inicie sesión en my.deepcharts.com, abra la sección <strong>Subscriptions</strong> (suscripciones) y localice su nombre de usuario y contraseña de Rithmic. Téngalos a mano: los necesitará en todos los pasos siguientes.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Panel de DeepCharts en my.deepcharts.com con la sección Subscriptions abierta y la fila de la suscripción de Rithmic visible, con el área de credenciales resaltada (difumine el nombre de usuario y la contraseña reales)</div><div class="s-file">ID: <b class="s-id">dc-es-connect-rithmic-01</b> · save as <code>dc-es-connect-rithmic-01.png</code></div></div></div>
+<ol start="2">
+<li>Firme el acuerdo de datos de mercado de Rithmic en R Trader Pro. Rithmic exige que acepte sus acuerdos antes de que cualquier plataforma de terceros pueda conectarse: con ellos sin firmar, la conexión falla incluso con credenciales correctas. Descargue R Trader Pro desde https://www.rithmic.com/rtraderpro (haga clic en <strong>Download R | Trader Pro</strong>), instálelo y ábralo. Rellene <strong>ambos</strong> formularios de inicio de sesión con los mismos valores: su nombre de usuario y contraseña de Rithmic, <strong>System</strong> = <strong>Rithmic Paper Trading</strong>, y el <strong>Gateway</strong> más cercano a usted. Haga clic en <strong>Login</strong>, elija su estatus de datos de mercado cuando se le solicite (los traders minoristas normalmente seleccionan <strong>Non-Professional</strong>), y luego lea y acepte cada acuerdo hasta que no queden avisos. El proceso completo se cubre en <a href="./sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a>.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Pantalla de inicio de sesión de R Trader Pro mostrando los dos formularios de inicio de sesión uno junto al otro, ambos rellenados de forma idéntica, con System establecido en Rithmic Paper Trading y el menú desplegable Gateway visible</div><div class="s-file">ID: <b class="s-id">dc-es-connect-rithmic-02</b> · save as <code>dc-es-connect-rithmic-02.png</code></div></div></div>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Los acuerdos se almacenan en los servidores de Rithmic, por lo que no necesita mantener R Trader Pro abierto mientras usa DeepCharts. Solo repetirá esto si su cuenta se restablece o Rithmic introduce nuevos acuerdos obligatorios.</p>
+</blockquote>
+<ol start="3">
+<li>Mientras está en R Trader Pro (solo en la primera configuración), elimine el límite de recepción de datos de Rithmic: abra <strong>Window → Preferences → Performance</strong> y arrastre ambos deslizadores, <strong>Quotes</strong> y <strong>Order Book</strong>, al máximo; luego haga clic en <strong>Apply</strong> y <strong>OK</strong>. Con un límite establecido, los gráficos pueden quedarse atrás durante los períodos de mercado de alto volumen. Cierre R Trader Pro cuando termine.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Ventana de preferencias de R Trader Pro en la pestaña Performance con los deslizadores Quotes y Order Book arrastrados a la posición máxima</div><div class="s-file">ID: <b class="s-id">dc-es-connect-rithmic-03</b> · save as <code>dc-es-connect-rithmic-03.png</code></div></div></div>
+<ol start="4">
+<li>En DeepCharts, haga clic en <strong>Select Connection</strong> en la barra de herramientas superior y luego haga clic en <strong>Feed Settings</strong> en la parte inferior del menú desplegable. Se abrirá la ventana de Feed Settings.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Barra de herramientas principal de DeepCharts con el menú desplegable Select Connection abierto y la entrada Feed Settings resaltada en la parte inferior</div><div class="s-file">ID: <b class="s-id">dc-es-connect-rithmic-04</b> · save as <code>dc-es-connect-rithmic-04.png</code></div></div></div>
+<ol start="5">
+<li>Haga clic en <strong>Add Connection</strong> y rellene el formulario:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Qué introducir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td>Cualquier etiqueta que reconozca después, por ejemplo &quot;Rithmic Live&quot;.</td>
+</tr>
+<tr>
+<td><strong>Feed Source</strong></td>
+<td><strong>Rithmic RAPI</strong>: la opción recomendada.</td>
+</tr>
+<tr>
+<td><strong>Username</strong></td>
+<td>Su nombre de usuario de Rithmic (no su inicio de sesión del sitio web de DeepCharts).</td>
+</tr>
+<tr>
+<td><strong>Password</strong></td>
+<td>Su contraseña de Rithmic.</td>
+</tr>
+<tr>
+<td><strong>Server</strong></td>
+<td><strong>Rithmic Paper Trading</strong> para una fuente de datos comprada en el sitio web de DeepCharts.</td>
+</tr>
+<tr>
+<td><strong>Gateway</strong></td>
+<td><strong>Automatic</strong> (el predeterminado), o la región más cercana a usted.</td>
+</tr>
+</tbody>
+</table>
+<p>Deje todos los demás campos como están. La opción <strong>Include commissions</strong> (incluir comisiones) está activada de forma predeterminada: muestra las comisiones en su P/L.</p>
+<p>Pruebe el formulario en vivo a continuación: establezca el Feed Source en Rithmic RAPI y observe cómo aparecen los campos Server y Gateway.</p>
+<div class="widget-mount" data-widget="feed-navigator"></div>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> El menú desplegable Feed Source muestra <strong>Rithmic RAPI</strong> y <strong>Rithmic Wss - beta</strong>: ya no existe una opción simple &quot;Rithmic&quot;, así que si una guía antigua menciona una, elija <strong>Rithmic RAPI</strong>. Si los gráficos alguna vez se sienten retrasados o inestables, verifique que está en RAPI y no en la beta Wss.</p>
+</blockquote>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> &quot;Paper Trading&quot; es solo la etiqueta del servidor de Rithmic para cuentas de fuente de datos: los datos que entrega son reales y en vivo, idénticos a las fuentes de Rithmic de brókeres y empresas prop.</p>
+</blockquote>
+<p>El menú desplegable Gateway ofrece: Automatic, Chicago Area, Seoul, Mumbai, Hong Kong, Sao Paolo, Singapore, Sydney, Tokyo, Frankfurt, Europe, Cape Town, NYC Area y US West. Un gateway lejano funciona igualmente pero añade latencia: si está lejos de Chicago y los datos se sienten lentos, elija la región más cercana a usted (por ejemplo Europe o Frankfurt para usuarios de la UE, Singapore o Mumbai para Asia) y vuelva a conectarse.</p>
+<h3 id="si-su-cuenta-de-rithmic-provino-de-un-br-ker">Si su cuenta de Rithmic provino de un bróker</h3>
+<p>Para cuentas de Rithmic emitidas por AMP Futures, EdgeClear, Ironbeam, Phillips Capital u Optimus Futures, la configuración es idéntica excepto el campo <strong>Server</strong>: seleccione <strong>Rithmic 01</strong> en lugar de Rithmic Paper Trading. Use el mismo valor que el campo System al firmar el acuerdo en R Trader Pro.</p>
+<h3 id="si-sus-credenciales-de-rithmic-provinieron-de-otra-plataforma-de-trading">Si sus credenciales de Rithmic provinieron de otra plataforma de trading</h3>
+<p>Las credenciales de Rithmic emitidas a través de otra plataforma de flujo de órdenes o mapa de calor (Quantower, Sierra Chart, MotiveWave, ATAS, NinjaTrader y similares) funcionan con DeepCharts. Use <strong>Server</strong> = <strong>Rithmic Paper Trading</strong>, y asegúrese de que el acuerdo esté firmado en R Trader Pro con el mismo valor en el campo System.</p>
+<blockquote class="callout-warning">
+<p><strong>Advertencia:</strong> Solo las credenciales de Rithmic se transfieren de otras plataformas de esta manera. Las credenciales de dxFeed emitidas a través de otras plataformas no pueden usarse con DeepCharts: para dxFeed necesita comprar a través del sitio web de DeepCharts o directamente en dxfeed.com con DeepCharts seleccionada como plataforma (consulte <a href="./connect-dxfeed.html">Cómo conectar una fuente de datos dxFeed</a>).</p>
+</blockquote>
+<h3 id="si-su-cuenta-de-rithmic-provino-de-una-empresa-prop">Si su cuenta de Rithmic provino de una empresa prop</h3>
+<p>Siga <a href="./connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a>: cada empresa usa su propio valor de Server con nombre, listado en la tabla de ese artículo. Apex Trader Funding tiene una guía dedicada: <a href="./connect-apex.html">Cómo conectar Apex Trader Funding</a>.</p>
+<ol start="6">
+<li>
+<p>Haga clic en <strong>Save</strong>.</p>
+</li>
+<li>
+<p>De vuelta en la barra de herramientas principal, haga clic en <strong>Select Connection</strong> de nuevo: su nueva fuente de datos de Rithmic aparece ahora en el menú desplegable con el nombre que le dio. Haga clic en ella para conectarse.</p>
+</li>
+<li>
+<p>Enrute sus bolsas a la nueva fuente de datos: abra <strong>Options → Symbol Manage</strong> y asegúrese de que las bolsas en las que opera estén suscritas y asignadas a esta conexión de Rithmic (el icono de eslabón de cadena en una fila cambia desde qué fuente de datos carga esa bolsa). El selector de instrumentos solo muestra las bolsas que ha suscrito. Detalles completos en <a href="./symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a>.</p>
+</li>
+</ol>
+<p>Pruebe la asignación a continuación: haga clic en el icono de eslabón de cadena de una fila para alternar desde qué fuente de datos carga la bolsa.</p>
+<div class="widget-mount" data-widget="symbol-manage-mock"></div>
+<ol start="9">
+<li>Abra un gráfico: haga clic en <strong>New</strong> en el menú superior, luego en <strong>Price Chart</strong>, seleccione un instrumento (por ejemplo ES o NQ) y confirme.</li>
+</ol>
+<h2 id="verifique-que-funcion">Verifique que funcionó</h2>
+<ul>
+<li>En unos 10 segundos tras conectarse, el indicador de conexión se pone <strong>verde</strong>.</li>
+<li>El gráfico que abrió carga velas y el precio se actualiza en vivo.</li>
+</ul>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Barra de herramientas principal de DeepCharts mostrando el indicador de conexión verde junto al nombre de la fuente de datos de Rithmic, con un gráfico de ES en vivo actualizándose al fondo</div><div class="s-file">ID: <b class="s-id">dc-es-connect-rithmic-05</b> · save as <code>dc-es-connect-rithmic-05.png</code></div></div></div>
+<h2 id="si-algo-sali-mal">Si algo salió mal</h2>
+<table>
+<thead>
+<tr>
+<th>Síntoma</th>
+<th>Adónde ir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conexión fallida: compruebe el nombre de usuario y la contraseña</td>
+<td><a href="./fix-username-password.html">Solución: Connection Failed — Verifique el nombre de usuario y la contraseña</a> — la causa más común es introducir un inicio de sesión del sitio web en lugar de las credenciales de Rithmic</td>
+</tr>
+<tr>
+<td>Conexión fallida: servidor incorrecto</td>
+<td><a href="./fix-bad-server.html">Solución: Connection Failed — Bad Server</a> — el valor de Server no coincide con el origen de su cuenta</td>
+</tr>
+<tr>
+<td>Un mensaje le pide iniciar sesión usando R Trader o R Trader Pro</td>
+<td><a href="./fix-log-in-using-rtrader.html">Solución: Please Log In Using R Trader or R Trader Pro</a> — el paso del acuerdo se omitió o quedó incompleto</td>
+</tr>
+<tr>
+<td>El indicador se pone amarillo con &quot;Expert not attached&quot;</td>
+<td><a href="./fix-rithmic-expert-not-attached.html">Solución: Rithmic — Expert Not Attached</a></td>
+</tr>
+<tr>
+<td>Conexión fallida: no se pudo establecer la conexión</td>
+<td><a href="./fix-unable-to-establish-connection.html">Solución: Connection Failed — Unable to Establish Connection</a></td>
+</tr>
+<tr>
+<td>El punto está verde pero el gráfico no se mueve</td>
+<td><a href="./feed-connected-chart-not-moving.html">Solución: fuente en vivo conectada pero el gráfico no se mueve</a> — casi siempre es un problema de enrutamiento en Symbol Manage</td>
+</tr>
+<tr>
+<td>Los gráficos cargan pero se retrasan durante mercados con mucha actividad</td>
+<td><a href="./data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a> — verifique que el Feed Source sea Rithmic RAPI y que los deslizadores de Performance de R Trader Pro estén al máximo</td>
+</tr>
+</tbody>
+</table>
+<h2 id="art-culos-relacionados">Artículos relacionados</h2>
+<ul>
+<li><a href="./buy-data-feed.html">Cómo comprar una fuente de datos y obtener sus credenciales</a></li>
+<li><a href="./sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a></li>
+<li><a href="./connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a></li>
+<li><a href="./rtrader-pro-plugin.html">Conectar Rithmic mediante el plugin de RTrader Pro</a></li>
+<li><a href="./symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a></li>
+<li><a href="./manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./connect-dxfeed.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Cómo conectar una fuente de datos dxFeed</div></a><a class="next" href="./rtrader-pro-plugin.html"><div class="pn-lbl">Next →</div><div class="pn-title">Conectar Rithmic mediante el plugin de RTrader Pro</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#antes-de-empezar">Antes de empezar</a></li><li class="lv2"><a href="#pasos">Pasos</a></li><li class="lv3"><a href="#si-su-cuenta-de-rithmic-provino-de-un-br-ker">Si su cuenta de Rithmic provino de un bróker</a></li><li class="lv3"><a href="#si-sus-credenciales-de-rithmic-provinieron-de-otra-plataforma-de-trading">Si sus credenciales de Rithmic provinieron de otra plataforma de trading</a></li><li class="lv3"><a href="#si-su-cuenta-de-rithmic-provino-de-una-empresa-prop">Si su cuenta de Rithmic provino de una empresa prop</a></li><li class="lv2"><a href="#verifique-que-funcion">Verifique que funcionó</a></li><li class="lv2"><a href="#si-algo-sali-mal">Si algo salió mal</a></li><li class="lv2"><a href="#art-culos-relacionados">Artículos relacionados</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-es.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

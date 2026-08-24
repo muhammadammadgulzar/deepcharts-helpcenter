@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Swing de volumen (Volume Swing) — Centro de Ayuda de DeepCharts</title>
+<meta name="description" content="Análisis de swings basado en ZigZag con etiquetas de volumen y delta por swing, marcadores automáticos No Effort / No Result, un detector de tendencia y líneas de nivel.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/quick-start-first-trade.html">Guía rápida</a><a href="../article/get-help.html">Soporte</a><a class="kb-switch" href="../../es/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/volume-swing.html">English</a><a class="lang-item" href="../../it/article/volume-swing.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primeros pasos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Bienvenido a DeepCharts: recorrido por la plataforma</a></li><li><a href="../article/system-requirements.html">Requisitos del sistema</a></li><li><a href="../article/install-deepcharts.html">Cómo instalar DeepCharts y activar su licencia</a></li><li><a href="../article/free-delayed-data-feed.html">Cómo usar la fuente de datos gratuita con 15 minutos de retraso</a></li><li><a href="../article/buy-data-feed.html">Cómo comprar una fuente de datos y obtener sus credenciales</a></li><li><a href="../article/first-chart.html">Abra su primer gráfico</a></li><li><a href="../article/simulation-accounts.html">Cuentas de trading y simulación</a></li><li><a href="../article/quick-start-first-trade.html">Inicio rápido: de la instalación a su primera operación</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Conexiones y fuentes de datos <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configuración inicial</li><li><a href="../article/compatibility-guide.html">Brókers, empresas prop y fuentes de datos compatibles</a></li><li><a href="../article/connect-data-feed.html">Cómo conectar una fuente de datos (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a></li><li><a href="../article/sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a></li><li><a href="../article/connect-dxfeed.html">Cómo conectar una fuente de datos dxFeed</a></li><li><a href="../article/connect-rithmic.html">Cómo conectar una fuente de datos de Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Conectar Rithmic mediante el plugin de RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a></li><li><a href="../article/connect-apex.html">Cómo conectar Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Cómo conectar una cuenta dxFeed de empresa prop (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Cómo conectar CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Cómo conectar Interactive Brokers (solo ejecución)</a></li><li><a href="../article/competition-connect.html">Competición de DeepCharts: únase y conéctese</a></li><li><a href="../article/end-of-day-data.html">Conectar datos históricos (fin de día)</a></li><li><a href="../article/manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li><li class="nav-sub">Solución de problemas</li><li><a href="../article/feed-connected-chart-not-moving.html">Solución: fuente en vivo conectada pero el gráfico no se mueve</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Solución: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Solución: Connection Failed — Verifique el nombre de usuario y la contraseña</a></li><li><a href="../article/fix-bad-server.html">Solución: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Solución: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Solución: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Solución: No se puede cargar la DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Solución: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Solución: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Solución: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Solución: conexión perdida al abrir un gráfico</a></li><li><a href="../article/symbol-subscription-issue.html">Solución: Problema de suscripción de símbolo</a></li><li><a href="../article/app-crashes-saving-feed.html">Solución: la aplicación se cierra al guardar la configuración de la fuente</a></li><li><a href="../article/gaps-in-price.html">Solución: gaps de precio en los gráficos</a></li><li><a href="../article/data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Gráficos y espacio de trabajo <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La ventana de gráfico</a></li><li><a href="../article/price-chart-settings.html">Configuración del gráfico de precios</a></li><li><a href="../article/chart-display-options.html">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</a></li><li><a href="../article/drawing-tools.html">Herramientas de dibujo y anotaciones</a></li><li><a href="../article/templates-workspaces.html">Plantillas y espacios de trabajo</a></li><li><a href="../article/quick-chart-templates.html">Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Vincular ventanas con grupos de color</a></li><li><a href="../article/replay-data.html">Reproducir datos de mercado</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalice el idioma, el tema y los sonidos de notificación</a></li><li><a href="../article/keyboard-shortcuts.html">Cómo configurar atajos de teclado</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Referencia de atajos de teclado</a></li><li><a href="../article/multi-monitor-windows.html">Organizar ventanas en varios monitores (y recuperar ventanas fuera de pantalla)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Ventanas de la plataforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (la cinta)</a></li><li><a href="../article/advanced-dom.html">Ventana Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Ventana de gráfico de perfil (perfiles TPO y de volumen)</a></li><li><a href="../article/scanner-window.html">Escáner de mercado</a></li><li><a href="../article/correlation-viewer.html">Visor de correlación</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading y órdenes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Operar desde el gráfico</a></li><li><a href="../article/trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading en el gráfico (escalera de trading con clics)</a></li><li><a href="../article/depth-of-market.html">Indicador de profundidad de mercado (DOM)</a></li><li><a href="../article/oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Ventana de órdenes</a></li><li><a href="../article/portfolio-wallet.html">Cartera (Wallet)</a></li><li><a href="../article/risk-manager.html">Gestor de riesgos</a></li><li><a href="../article/trade-copier.html">Cómo configurar el Trade Copier</a></li><li><a href="../article/performance-analysis.html">Análisis de rendimiento (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Conceptos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li><li><a href="../article/understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción</a></li><li><a href="../article/understanding-icebergs-absorption.html">Entender los icebergs y la absorción</a></li><li><a href="../article/understanding-vwap.html">Entender el VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Cómo leer un footprint: ejemplos prácticos</a></li><li><a href="../article/glossary.html">Glosario de términos de flujo de órdenes y de la plataforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicadores y análisis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fundamentos de indicadores</li><li><a href="../article/different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li><li><a href="../article/indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li><li class="nav-sub">Indicadores profundos</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Tendencia</li><li><a href="../article/moving-average.html">Media móvil</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">SAR Parabólico</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regresión lineal</a></li><li><a href="../article/regression-channel.html">Canal de regresión</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Canal de Donchian</a></li><li><a href="../article/adx.html">Índice direccional promedio (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Oscilador Aroon</a></li><li class="nav-sub">Momentum y osciladores</li><li><a href="../article/rsi.html">Índice de fuerza relativa (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscilador estocástico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Tasa de cambio (ROC)</a></li><li><a href="../article/cci.html">Índice de canal de mercancías (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Oscilador Awesome</a></li><li><a href="../article/inverse-cyber-cycle.html">Ciclo Cibernético Inverso (Inverse Cyber Cycle)</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilidad y bandas</li><li><a href="../article/bollinger-bands.html">Bandas de Bollinger</a></li><li><a href="../article/keltner-channel.html">Canal de Keltner</a></li><li><a href="../article/atr.html">Rango Verdadero Medio (ATR)</a></li><li><a href="../article/standard-deviation.html">Desviación estándar</a></li><li><a href="../article/vwap-envelopes.html">Envolventes VWAP</a></li><li><a href="../article/adr-target.html">Objetivo de rango diario promedio (ADR Target)</a></li><li class="nav-sub">Volumen y delta</li><li><a href="../article/volume.html">Volumen</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Resaltado de delta %</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html" class="active">Swing de volumen (Volume Swing)</a></li><li><a href="../article/volume-delta-sprint.html">Sprint de volumen/delta (Volume/Delta Sprint)</a></li><li><a href="../article/chaikin-ad.html">Acumulación/Distribución de Chaikin</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Velocidad de la cinta</a></li><li><a href="../article/speed-of-tape-instant.html">Velocidad de la cinta (instantánea)</a></li><li><a href="../article/market-statistics.html">Estadísticas de mercado</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Flujo de órdenes y subasta</li><li><a href="../article/market-profile-tpo.html">Perfil de mercado (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a></li><li><a href="../article/imbalance-rejector.html">Rechazador de Desequilibrios (Imbalance Rejector)</a></li><li><a href="../article/session-imbalance.html">Desequilibrio de sesión</a></li><li><a href="../article/unfinished-auction.html">Subasta sin terminar (Unfinished Auction)</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">POC Dinámico</a></li><li><a href="../article/bar-poc.html">POC de barra</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Niveles y patrones</li><li><a href="../article/pivot-points.html">Puntos pivote</a></li><li><a href="../article/important-levels.html">Niveles importantes</a></li><li><a href="../article/absolute-levels.html">Niveles absolutos</a></li><li><a href="../article/price-movement-levels.html">Niveles de movimiento del precio</a></li><li><a href="../article/session-marker.html">Marcador de sesión</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Detector de gaps (Gap Detector)</a></li><li><a href="../article/fvg-identifier.html">Identificador de FVG (FVG Identifier)</a></li><li><a href="../article/divergence-detector.html">Detector de divergencias</a></li><li><a href="../article/confluence-identifier.html">Identificador de Confluencias</a></li><li class="nav-sub">Superposiciones de gráfico</li><li><a href="../article/candlestick-bar.html">Barra de velas (Candlestick Bar)</a></li><li><a href="../article/overlay-chart.html">Superposición de gráfico (Overlay Chart)</a></li><li><a href="../article/overlay-symbol.html">Superposición de símbolo (Overlay Symbol)</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Superposición de velas de marco temporal (Overlay Timeframe Candlestick)</a></li><li><a href="../article/overlay-timeframe-highlight.html">Resaltado de marco temporal (Overlay Timeframe Highlight)</a></li><li><a href="../article/shift-candle.html">Vela Shift</a></li><li><a href="../article/text-on-chart.html">Texto en el gráfico</a></li><li><a href="../article/annotations-overlay.html">Superposición de anotaciones</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Datos y base de datos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover de símbolos (cambio de mes de contrato)</a></li><li><a href="../article/delete-market-data.html">Eliminar datos de mercado (métodos en la aplicación y manual)</a></li><li><a href="../article/download-data.html">Volver a descargar datos históricos (herramienta Download Data)</a></li><li><a href="../article/database-optimization.html">Optimización de la base de datos</a></li><li><a href="../article/database-problems.html">Solución: problemas de la base de datos</a></li><li><a href="../article/fix-could-not-find-path.html">Solución: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Solución de problemas y soporte <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Solución: problemas de instalación y requisitos básicos</a></li><li><a href="../article/installation-setup-failed.html">Solución: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Solución: una política de control de aplicaciones bloquea DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Solución: la herramienta de dibujo Rectángulo no funciona</a></li><li><a href="../article/chart-zoom.html">Solución: el zoom del gráfico no funciona</a></li><li><a href="../article/license-issues.html">Solución: problemas de licencia y activación</a></li><li><a href="../article/diagnostic-report.html">Informe de diagnóstico: antes de contactar con soporte</a></li><li><a href="../article/get-help.html">Cómo obtener ayuda (chat, informe de diagnóstico, soporte)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Cuenta y facturación <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Administre sus suscripciones y facturación</a></li><li><a href="../article/move-to-new-computer.html">Mover DeepCharts a un ordenador nuevo</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicadores y análisis</a> › Volumen y delta</div>
+<div class="article-head"><h1>Swing de volumen (Volume Swing)</h1>
+<p class="article-desc">Análisis de swings basado en ZigZag con etiquetas de volumen y delta por swing, marcadores automáticos No Effort / No Result, un detector de tendencia y líneas de nivel.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 7 min read</span>
+  <a class="btn-pdf" href="../pdf/volume-swing.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Volume Swing combina la estructura del mercado con el análisis de volumen: detecta los swings de precio con un motor ZigZag y luego etiqueta cada swing con el volumen, el delta y las métricas relacionadas que lo construyeron. Además, imprime marcadores automáticos de esfuerzo frente a resultado (NOE y NOR), puede colorear el fondo según la tendencia detectada y puede dibujar líneas de nivel con umbral.</p>
+<p>La idea es el esfuerzo frente a resultado de Wyckoff hecho mecánico: cada tramo del mercado se mide, para que usted pueda ver qué swings tuvieron participación real detrás y cuáles avanzaron sin combustible.</p>
+<h2 id="qu-es">Qué es</h2>
+<p>Volume Swing es una herramienta integral de volumen y estructura. El ZigZag identifica los swings (por reversión de precio absoluta o por reversión en ticks), y hasta cuatro etiquetas configurables por swing muestran métricas como volumen, delta de volumen, delta de operaciones, volumen por tick y extensión. Dos marcadores se calculan automáticamente: <strong>NOE</strong> (No Effort, sin esfuerzo: un movimiento que carece del volumen que lo sustente) y <strong>NOR</strong> (No Result, sin resultado: volumen intenso que no logró mover el precio). Un detector de tendencia añade bandas de fondo coloreadas con la sensibilidad que usted elija.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Ventana de gráfico con Volume Swing aplicado — líneas ZigZag conectando máximos y mínimos de swing, etiquetas por swing mostrando valores de volumen y delta, un swing marcado como NOE y otro como NOR, con las bandas de fondo de tendencia visibles</div><div class="s-file">ID: <b class="s-id">dc-es-volume-swing-01</b> · save as <code>dc-es-volume-swing-01.png</code></div></div></div>
+<h2 id="cu-ndo-usarlo">Cuándo usarlo</h2>
+<ul>
+<li>Quiere cada swing cuantificado: cuánto volumen y delta impulsaron este tramo en comparación con el anterior.</li>
+<li>Opera esfuerzo frente a resultado: los tramos ascendentes con volumen decreciente (NOE) o el volumen intenso sin progreso de precio (NOR) son advertencias estructurales.</li>
+<li>Quiere una estructura de swings objetiva: el ZigZag sustituye el trazado subjetivo de tramos por reglas de reversión fijas.</li>
+<li>Quiere un filtro de tendencia: el detector de tendencia integrado sombrea el fondo para que las señales contra tendencia sean evidentes.</li>
+</ul>
+<h2 id="inicio-r-pido">Inicio rápido</h2>
+<ol>
+<li>Abra la <strong>Indicator List</strong> en su gráfico.</li>
+<li>Busque <strong>Volume Swing</strong> y haga clic en <strong>+</strong> para añadirlo.</li>
+<li>Haga clic en el icono de <strong>Settings</strong> junto al indicador.</li>
+<li>En <strong>Data Settings</strong>, mantenga <strong>Input Data</strong> en <strong>Volume</strong> (vea <a href="./different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a>).</li>
+<li>En <strong>ZigZag Settings</strong>, elija un <strong>ZigZag Mode</strong>: <strong>Tick Reversal</strong> con un recuento de ticks adecuado a su instrumento es un comienzo práctico para intradía; <strong>Absolute Reversal</strong> usa en su lugar un valor fijo de reversión de precio.</li>
+<li>En <strong>Label Settings</strong>, habilite la <strong>First Label</strong> con <strong>Volume</strong> y la <strong>Second Label</strong> con <strong>Delta volume</strong>: dos métricas por swing son más que suficientes mientras aprende.</li>
+<li>Opcionalmente habilite el <strong>Trend Detector</strong> en sensibilidad <strong>Medium</strong>, y luego aplique.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Diálogo de configuración de Volume Swing abierto en la sección ZigZag Settings — menú desplegable ZigZag Mode mostrando Absolute Reversal y Tick Reversal, con los campos Zig Zag Rev. &amp; Absolute y Zig Zag Tick Rev. más Color Up/Down y Line Width debajo</div><div class="s-file">ID: <b class="s-id">dc-es-volume-swing-02</b> · save as <code>dc-es-volume-swing-02.png</code></div></div></div>
+<h2 id="c-mo-leerlo">Cómo leerlo</h2>
+<ul>
+<li><strong>Compare swings consecutivos en la misma dirección.</strong> Máximos más altos con volumen de swing decreciente significan que el avance está perdiendo participación. Tramos ascendentes que llevan cada uno más volumen que el anterior son una tendencia sana.</li>
+<li><strong>NOE (No Effort)</strong> marca un swing que carece del volumen que sustente su movimiento: un empuje que ha perdido impulso. Espere una continuación más superficial o una rotación de vuelta.</li>
+<li><strong>NOR (No Result)</strong> marca un swing con volumen significativo pero poco progreso de precio: el esfuerzo se gastó contra una resistencia o un soporte fuertes. Con frecuencia marcan zonas de absorción y candidatos a reversión (vea <a href="./understanding-icebergs-absorption.html">Entender los icebergs y la absorción</a>).</li>
+<li><strong>Las etiquetas de delta desglosan el esfuerzo por lado.</strong> Un swing ascendente con delta de volumen negativo subió mientras los vendedores eran más agresivos: lo impulsó la compra pasiva, un carácter muy distinto al de una subida de compradores agresivos.</li>
+<li><strong>Las bandas de tendencia establecen el contexto.</strong> Tome las lecturas de NOE/NOR con la tendencia, no en su contra, hasta que tenga evidencia de que la propia tendencia está girando.</li>
+</ul>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Estas señales tienen más peso en movimientos medianos a grandes fuera de condiciones de alta volatilidad. Con poca liquidez el mercado produce lecturas menos significativas y poco fiables.</p>
+</blockquote>
+<h2 id="referencia-de-configuraci-n">Referencia de configuración</h2>
+<p>Agrupada como en el diálogo de configuración.</p>
+<h3 id="data-settings">Data Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Ajuste</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Input Data</strong></td>
+<td>Base del análisis: <strong>Volume</strong> (volumen total negociado), <strong>Order</strong> (número de órdenes) o <strong>Aggregated volume</strong> (volúmenes de órdenes agregados). Vea <a href="./different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a>.</td>
+</tr>
+<tr>
+<td><strong>Filter Min</strong></td>
+<td>Valor mínimo de filtro para los datos seleccionados: las entradas por debajo del umbral se excluyen.</td>
+</tr>
+<tr>
+<td><strong>Filter Max</strong></td>
+<td>Valor máximo de filtro: los datos que superan el límite se excluyen.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="zigzag-settings">ZigZag Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Ajuste</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ZigZag Mode</strong></td>
+<td><strong>Absolute Reversal</strong> usa un valor fijo de reversión de precio para determinar un swing; <strong>Tick Reversal</strong> define la reversión en ticks, permitiendo una cantidad mínima de movimiento en ticks.</td>
+</tr>
+<tr>
+<td><strong>Zig Zag Rev. &amp; Absolute</strong></td>
+<td>Cambio mínimo requerido para que el precio defina un nuevo swing en modo Absolute Reversal.</td>
+</tr>
+<tr>
+<td><strong>Zig Zag Tick Rev.</strong></td>
+<td>Número de ticks requerido para una reversión en modo Tick Reversal.</td>
+</tr>
+<tr>
+<td><strong>Color Up / Color Down</strong></td>
+<td>Colores que diferencian los swings ascendentes de los descendentes.</td>
+</tr>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>Grosor del trazado ZigZag.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="label-settings">Label Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Ajuste</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Text Size</strong></td>
+<td>Tamaño de las etiquetas de swing.</td>
+</tr>
+<tr>
+<td><strong>Text Offset</strong></td>
+<td>Posiciona las etiquetas respecto al punto de swing.</td>
+</tr>
+<tr>
+<td><strong>Max Bars to View</strong></td>
+<td>Limita hasta qué distancia hacia atrás se dibujan las etiquetas.</td>
+</tr>
+<tr>
+<td><strong>First / Second / Third / Fourth Label</strong></td>
+<td>Cada ranura de etiqueta tiene un interruptor <strong>Enabled</strong>, una métrica mostrada (<strong>Volume</strong>, <strong>Delta volume</strong>, <strong>Delta trade</strong>, <strong>Vol per tick</strong>, <strong>Extension</strong>) y selecciones de <strong>Positive/Negative Color</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="marker-labels">Marker Labels</h3>
+<p>Se calculan automáticamente: no hay umbrales que configurar.</p>
+<table>
+<thead>
+<tr>
+<th>Marcador</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>NOE (No Effort)</strong></td>
+<td>Falta de volumen que sustente el movimiento o el empuje: el movimiento ha perdido impulso.</td>
+</tr>
+<tr>
+<td><strong>NOR (No Result)</strong></td>
+<td>Falta de resultado en el movimiento del precio a pesar de un volumen significativo: sugiere una resistencia o un soporte fuertes.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="plot-settings">Plot Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Ajuste</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Display Mode</strong></td>
+<td><strong>Lines only</strong>, <strong>Bars histogram</strong> o <strong>Lines and Bars</strong> combinados.</td>
+</tr>
+<tr>
+<td><strong>Histogram Value</strong></td>
+<td>Métrica que representa el histograma: <strong>Delta Volume</strong>, <strong>Delta trade</strong>, <strong>Vol per tick</strong> o <strong>Extension</strong>.</td>
+</tr>
+<tr>
+<td><strong>All-in-one</strong></td>
+<td>Combina varias métricas en un solo trazado: <strong>None</strong>, <strong>Vol delta trade</strong>, <strong>Vol delta</strong> o <strong>Volume</strong>.</td>
+</tr>
+<tr>
+<td><strong>Show Sign</strong></td>
+<td>Cómo se firma el signo de los valores: <strong>Positive</strong>, <strong>Negative</strong> o <strong>Based Delta</strong>.</td>
+</tr>
+<tr>
+<td><strong>Color Mode</strong></td>
+<td><strong>Fixed</strong>, <strong>Fading colour</strong> o <strong>Delta fading</strong>.</td>
+</tr>
+<tr>
+<td><strong>Std. Dev. for Coloring</strong></td>
+<td>Sensibilidad del coloreado a los cambios en los datos volumétricos.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="all-in-one-color-settings">All-in-one Color Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Ajuste</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Volume Line</strong></td>
+<td>Color de la línea de volumen combinada.</td>
+</tr>
+<tr>
+<td><strong>Positive / Negative Delta Vol.</strong></td>
+<td>Colores para el delta de volumen positivo y negativo.</td>
+</tr>
+<tr>
+<td><strong>Positive / Negative Delta Trade</strong></td>
+<td>Colores para el delta de operaciones positivo y negativo.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="high-low-line-settings">High/Low Line Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Ajuste</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Muestra u oculta las líneas de máximo/mínimo de swing.</td>
+</tr>
+<tr>
+<td><strong>Show End Retracement</strong></td>
+<td>Muestra la marca de fin de retroceso.</td>
+</tr>
+<tr>
+<td><strong>Line Width / Color / Style</strong></td>
+<td>Apariencia de las líneas de máximo/mínimo.</td>
+</tr>
+<tr>
+<td><strong>End Retrace Color</strong></td>
+<td>Color usado para la marca de fin de retroceso.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trend-detector">Trend Detector</h3>
+<table>
+<thead>
+<tr>
+<th>Ajuste</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Trend</strong></td>
+<td>Muestra bandas de fondo coloreadas para las tendencias detectadas.</td>
+</tr>
+<tr>
+<td><strong>Mode</strong></td>
+<td>Sensibilidad: <strong>Weak</strong> (incluye tendencias menores), <strong>Medium</strong> (intermedia) o <strong>Strong</strong> (solo tendencias mayores).</td>
+</tr>
+<tr>
+<td><strong>Trend Up / Trend Down Color</strong></td>
+<td>Colores de banda por dirección.</td>
+</tr>
+<tr>
+<td><strong>Background Opacity</strong></td>
+<td>Visibilidad de las bandas.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="level-settings">Level Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Ajuste</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Level Enable</strong></td>
+<td>Muestra líneas de referencia horizontales.</td>
+</tr>
+<tr>
+<td><strong>Level Value</strong></td>
+<td>Umbral numérico del nivel.</td>
+</tr>
+<tr>
+<td><strong>Line Width / Color / Style</strong></td>
+<td>Apariencia — estilos: <strong>Solid</strong>, <strong>Dash</strong>, <strong>Dot</strong>, <strong>Dash Dot</strong>, <strong>Dash Dot Dot</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="consejos-y-errores-comunes">Consejos y errores comunes</h2>
+<ul>
+<li><strong>Ajuste el ZigZag antes de confiar en cualquier etiqueta.</strong> Un valor de reversión demasiado pequeño convierte el ruido en &quot;swings&quot; e inunda el gráfico de etiquetas NOE/NOR sin sentido; uno demasiado grande oculta la estructura que usted opera.</li>
+<li><strong>Dos etiquetas superan a cuatro.</strong> Empiece con Volume y Delta volume; añada Vol per tick o Extension solo cuando los use activamente.</li>
+<li><strong>Respete la advertencia de liquidez.</strong> Las sesiones nocturnas y festivas producen señales de esfuerzo/resultado poco fiables: la base de volumen es demasiado escasa.</li>
+<li><strong>El último swing se redibuja por diseño.</strong> Las herramientas basadas en ZigZag finalizan un swing solo cuando se cumple la condición de reversión, así que trate la etiqueta del tramo actual como provisional.</li>
+<li><strong>NOE y NOR son contexto, no entradas.</strong> Combínelos con las bandas de tendencia y un argumento de ubicación (soporte, resistencia, borde del área de valor) antes de actuar.</li>
+</ul>
+<h2 id="art-culos-relacionados">Artículos relacionados</h2>
+<ul>
+<li><a href="./orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li>
+<li><a href="./different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li>
+<li><a href="./indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li>
+<li><a href="./swing-point.html">Swing Point</a></li>
+<li><a href="./zig-zag.html">Zig Zag</a></li>
+<li><a href="./volume.html">Volumen</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./delta-cumulative-histogram.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Delta Cumulative Histogram</div></a><a class="next" href="./volume-delta-sprint.html"><div class="pn-lbl">Next →</div><div class="pn-title">Sprint de volumen/delta (Volume/Delta Sprint)</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#qu-es">Qué es</a></li><li class="lv2"><a href="#cu-ndo-usarlo">Cuándo usarlo</a></li><li class="lv2"><a href="#inicio-r-pido">Inicio rápido</a></li><li class="lv2"><a href="#c-mo-leerlo">Cómo leerlo</a></li><li class="lv2"><a href="#referencia-de-configuraci-n">Referencia de configuración</a></li><li class="lv3"><a href="#data-settings">Data Settings</a></li><li class="lv3"><a href="#zigzag-settings">ZigZag Settings</a></li><li class="lv3"><a href="#label-settings">Label Settings</a></li><li class="lv3"><a href="#marker-labels">Marker Labels</a></li><li class="lv3"><a href="#plot-settings">Plot Settings</a></li><li class="lv3"><a href="#all-in-one-color-settings">All-in-one Color Settings</a></li><li class="lv3"><a href="#high-low-line-settings">High/Low Line Settings</a></li><li class="lv3"><a href="#trend-detector">Trend Detector</a></li><li class="lv3"><a href="#level-settings">Level Settings</a></li><li class="lv2"><a href="#consejos-y-errores-comunes">Consejos y errores comunes</a></li><li class="lv2"><a href="#art-culos-relacionados">Artículos relacionados</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-es.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

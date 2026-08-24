@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Diferencial de oferta/demanda — Centro de Ayuda de DeepDOM</title>
+<meta name="description" content="El indicador Diferencial de oferta/demanda (Spread Bid/Ask) mide y traza la distancia entre el mejor precio bid y el mejor precio ask (el diferencial bid–ask) en ticks.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/installation-and-first-configuration.html">Primeros pasos</a><a href="../../../es/article/get-help.html">Soporte</a><a class="kb-switch" href="../../../es/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/spread-bid-ask.html">English</a><a class="lang-item" href="../../../it/deepdom/article/spread-bid-ask.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemas comunes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemas de instalación</a></li><li><a href="../article/licence-issues.html">Problemas de licencia</a></li><li><a href="../article/symbol-subscription-issues.html">Problemas de suscripción de símbolos</a></li><li><a href="../article/cache-issues-deepdom.html">Problemas de caché</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Cómo hacer <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Instalación y primera configuración</a></li><li><a href="../article/general-settings.html">Configuración general</a></li><li><a href="../article/how-to-add-a-new-connection.html">Cómo añadir una nueva conexión</a></li><li><a href="../article/how-to-add-markets-correctly.html">Cómo añadir mercados correctamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Cómo configurar los atajos de teclado</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Cómo insertar notificaciones de sonido</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Cómo personalizar el idioma y el tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Cómo gestionar el rollover de símbolos</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Ventana de órdenes</a></li><li><a href="../article/trading-from-the-chart.html">Operar desde el gráfico</a></li><li><a href="../article/portfolio-risk-manager.html">Gestor de riesgos de cartera</a></li><li><a href="../article/simulation-environment.html">Entorno de simulación</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicadores <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html" class="active">Diferencial de oferta/demanda</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envolventes</a></li><li><a href="../article/session-imbalance-deepdom.html">Desequilibrio de sesión</a></li><li><a href="../article/book-speed.html">Velocidad del libro</a></li><li><a href="../article/volume-profile-deepdom.html">Perfil de volumen</a></li><li><a href="../article/stop-run.html">Barrido de stops (Stop Run)</a></li><li><a href="../article/absorption.html">Absorción</a></li><li><a href="../article/cumulative-iceberg-stop.html">Iceberg/Stop acumulado</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dinámico</a></li><li><a href="../article/volume-deepdom.html">Volumen</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">CVD (delta de volumen acumulado)</a></li><li><a href="../article/big-trades-deepdom.html">Operaciones grandes</a></li><li><a href="../article/important-levels-deepdom.html">Niveles importantes</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funciones <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Burbujas de volumen</a></li><li><a href="../article/heatmap.html">Mapa de calor</a></li><li><a href="../article/replay-tick-data.html">Reproducción de datos de tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicadores profundos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Iceberg Profundo (Deep Iceberg)</a></li><li><a href="../article/deep-reload.html">Recarga Profunda (Deep Reload)</a></li><li><a href="../article/deep-liquidity-scan.html">Análisis de Liquidez Profunda (Deep Liquidity Scan)</a></li><li><a href="../article/deep-delta-deepdom.html">Delta Profundo (Deep Delta)</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators.html">Indicadores</a></div>
+<div class="article-head"><h1>Diferencial de oferta/demanda</h1>
+<p class="article-desc">El indicador Diferencial de oferta/demanda (Spread Bid/Ask) mide y traza la distancia entre el mejor precio bid y el mejor precio ask (el diferencial bid–ask) en ticks.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 4 min read</span>
+  <a class="btn-pdf" href="../pdf/spread-bid-ask.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>El indicador Diferencial de oferta/demanda (Spread Bid/Ask) mide y traza la distancia entre el mejor precio bid y el mejor precio ask (el diferencial bid–ask) en ticks. Le ayuda a ver cuándo cambian las condiciones de liquidez, por ejemplo, cuando los diferenciales se amplían repentinamente durante períodos de baja liquidez o alta volatilidad, y puede generar alertas cuando el diferencial supera un nivel que usted define.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Diferencial de oferta/demanda — vista general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-spread-bid-ask-01</b> · save as <code>dd-es-spread-bid-ask-01.png</code></div></div></div>
+<h2 id="1-concepto-diferencial-bid-ask">1. Concepto: diferencial bid–ask</h2>
+<p>En todos los mercados existe un bid (el precio más alto que los compradores están dispuestos a pagar en ese momento) y un ask u offer (el precio más bajo al que los vendedores están dispuestos a vender). El diferencial bid–ask es la diferencia entre estos dos precios y representa tanto un coste de transacción como una medida directa de la liquidez del mercado.</p>
+<p>Los diferenciales estrechos suelen indicar un mercado líquido y competitivo en el que es fácil entrar y salir de posiciones, mientras que los diferenciales amplios suelen darse en condiciones poco profundas o muy volátiles e implican un mayor riesgo de ejecución para las órdenes a mercado.</p>
+<p>En DeepDom ya puede ver el diferencial en la ventana Chart area 2; el indicador Diferencial de oferta/demanda resume esta información a lo largo del tiempo en un panel separado, haciendo evidentes los patrones incluso cuando el gráfico está alejado.</p>
+<h2 id="2-qu-muestra-el-indicador">2. Qué muestra el indicador</h2>
+<p>Cuando se aplica, el Diferencial de oferta/demanda crea un trazado de línea en un panel separado bajo el gráfico. Cada punto de la línea muestra el diferencial actual en ticks para ese momento. Los picos repentinos de la línea corresponden a los momentos en que el diferencial se amplía, mientras que los valores planos y bajos indican condiciones estables y ajustadas.</p>
+<p>Puede usar esta visualización para responder rápidamente a preguntas como: &quot;¿Se dispararon los diferenciales alrededor de esta vela de noticias?&quot;, &quot;¿Está el producto operando actualmente con un diferencial constantemente amplio?&quot; o &quot;¿Está mi estrategia a punto de operar en un entorno de baja liquidez?&quot;</p>
+<h2 id="3-configuraci-n-de-alertas">3. Configuración de alertas</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Diferencial de oferta/demanda — 3. Configuración de alertas (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-spread-bid-ask-02</b> · save as <code>dd-es-spread-bid-ask-02.png</code></div></div></div>
+<p>La ventana de configuración del Diferencial de oferta/demanda se centra en una lógica de alertas sencilla pero potente.</p>
+<h3 id="3-1-habilitar-alerta-enable-alert">3.1 Habilitar alerta (Enable Alert)</h3>
+<p>Enable Alert activa o desactiva la alerta de diferencial. Cuando está habilitada, DeepDom supervisa continuamente el diferencial actual y dispara una alerta cada vez que cruza el umbral que usted configuró.</p>
+<h3 id="3-2-nivel-de-alerta-en-ticks-alert-level-in-tick">3.2 Nivel de alerta en ticks (Alert Level in Tick)</h3>
+<p>Alert Level in Tick define cuánto debe ampliarse el diferencial (en ticks) para que se dispare una alerta. Por ejemplo:</p>
+<p>Establecer el nivel en 5-6 ticks resalta incluso ampliaciones moderadas, útil para el scalping o instrumentos con diferenciales muy ajustados.</p>
+<p>Valores como 10-15 ticks o más se centran solo en condiciones extremas, como durante noticias importantes o cuando la liquidez desaparece repentinamente.</p>
+<h3 id="3-3-tiempo-de-inhibici-n-en-segundos-inhibition-time-in-seconds">3.3 Tiempo de inhibición en segundos (Inhibition Time in Seconds)</h3>
+<p>Inhibition time in seconds actúa como un período de espera. Después de dispararse una alerta, DeepDom esperará ese tiempo antes de permitir una nueva alerta de diferencial. Esto evita notificaciones repetidas si el diferencial fluctúa alrededor de su umbral.</p>
+<p>Por ejemplo, con un nivel de alerta de 5 ticks y una inhibición de 20 segundos, recibirá como máximo una alerta cada 20 segundos aunque el diferencial supere repetidamente los 5 ticks durante esa ventana.</p>
+<h2 id="4-usos-pr-cticos-en-el-trading">4. Usos prácticos en el trading</h2>
+<h3 id="4-1-evitar-malas-ejecuciones">4.1 Evitar malas ejecuciones</h3>
+<p>Los diferenciales amplios aumentan el deslizamiento y el coste de ejecución de las órdenes a mercado. Una alerta de diferencial puede advertirle de que no persiga un movimiento cuando la liquidez desaparece temporalmente, por ejemplo, alrededor de noticias macroeconómicas programadas o al inicio de sesiones poco líquidas.</p>
+<h3 id="4-2-detecci-n-de-reg-menes">4.2 Detección de regímenes</h3>
+<p>Observando la línea del diferencial a lo largo del tiempo puede distinguir entre regímenes &quot;normales&quot; y de &quot;estrés&quot; para cada producto. Las estrategias que dependen de diferenciales muy ajustados (scalping, reversión a la media de alta frecuencia) pueden deshabilitarse de forma automática o manual cuando los diferenciales permanecen por encima de su umbral durante períodos prolongados.</p>
+<h3 id="4-3-combinaci-n-con-herramientas-de-flujo-de-rdenes">4.3 Combinación con herramientas de flujo de órdenes</h3>
+<p>El Diferencial de oferta/demanda se vuelve aún más potente cuando se combina con herramientas de DeepDom como Imbalance Tracker, Recarga Profunda (Deep Reload) o Deep Trades. Por ejemplo, un pico repentino del diferencial junto con desequilibrios agresivos y recargas suele acompañar a eventos de noticias o capturas de liquidez, que quizá quiera tratar de forma distinta a las rotaciones normales.</p>
+<h2 id="5-buenas-pr-cticas">5. Buenas prácticas</h2>
+<p>Calibre por instrumento: determine los diferenciales típicos de cada símbolo y establezca el nivel de alerta ligeramente por encima de ese rango normal para ver solo ampliaciones realmente inusuales.</p>
+<p>Tenga en cuenta los cambios de sesión: algunos productos operan de forma natural con diferenciales más amplios en la sesión nocturna; quizá necesite plantillas distintas por sesión.</p>
+<p>Utilice la inhibición con criterio: una inhibición corta ofrece más detalle pero puede generar muchas alertas; una inhibición más larga es mejor para días de alta volatilidad o cuando supervisa varios mercados a la vez.</p>
+<h3 id="sigue-teniendo-problemas">¿Sigue teniendo problemas?</h3>
+<p>Nuestro equipo de soporte está disponible 24/7 y listo para ayudarle con cualquier problema que encuentre.</p>
+<p>Al ponerse en contacto, incluya:</p>
+<p>Una captura de pantalla del problema</p>
+<p>Una breve descripción de lo que intentaba hacer</p>
+<p>Ticket de soporte (respuesta más rápida) Visite www.deepcharts.com y cree un ticket de soporte directamente en nuestro sitio web.</p>
+<p>Soporte por correo electrónico Escríbanos a support@deepcharts.com; tenga en cuenta que las respuestas por correo electrónico pueden tardar un poco más que un ticket de soporte.</p>
+</article>
+<div class="pn"><a class="prev" href="./simulation-environment.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Entorno de simulación</div></a><a class="next" href="./vwap-envelopes-deepdom.html"><div class="pn-lbl">Next →</div><div class="pn-title">VWAP + Envolventes</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#1-concepto-diferencial-bid-ask">1. Concepto: diferencial bid–ask</a></li><li class="lv2"><a href="#2-qu-muestra-el-indicador">2. Qué muestra el indicador</a></li><li class="lv2"><a href="#3-configuraci-n-de-alertas">3. Configuración de alertas</a></li><li class="lv3"><a href="#3-1-habilitar-alerta-enable-alert">3.1 Habilitar alerta (Enable Alert)</a></li><li class="lv3"><a href="#3-2-nivel-de-alerta-en-ticks-alert-level-in-tick">3.2 Nivel de alerta en ticks (Alert Level in Tick)</a></li><li class="lv3"><a href="#3-3-tiempo-de-inhibici-n-en-segundos-inhibition-time-in-seconds">3.3 Tiempo de inhibición en segundos (Inhibition Time in Seconds)</a></li><li class="lv2"><a href="#4-usos-pr-cticos-en-el-trading">4. Usos prácticos en el trading</a></li><li class="lv3"><a href="#4-1-evitar-malas-ejecuciones">4.1 Evitar malas ejecuciones</a></li><li class="lv3"><a href="#4-2-detecci-n-de-reg-menes">4.2 Detección de regímenes</a></li><li class="lv3"><a href="#4-3-combinaci-n-con-herramientas-de-flujo-de-rdenes">4.3 Combinación con herramientas de flujo de órdenes</a></li><li class="lv2"><a href="#5-buenas-pr-cticas">5. Buenas prácticas</a></li><li class="lv3"><a href="#sigue-teniendo-problemas">¿Sigue teniendo problemas?</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-es-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>

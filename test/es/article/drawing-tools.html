@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Herramientas de dibujo y anotaciones — Centro de Ayuda de DeepCharts</title>
+<meta name="description" content="Todas las herramientas de dibujo de DeepCharts con su atajo de teclado, además de la edición, el ajuste automático, la ocultación, la importación/exportación y la sincronización de anotaciones entre gráficos.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/quick-start-first-trade.html">Guía rápida</a><a href="../article/get-help.html">Soporte</a><a class="kb-switch" href="../../es/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/drawing-tools.html">English</a><a class="lang-item" href="../../it/article/drawing-tools.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primeros pasos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Bienvenido a DeepCharts: recorrido por la plataforma</a></li><li><a href="../article/system-requirements.html">Requisitos del sistema</a></li><li><a href="../article/install-deepcharts.html">Cómo instalar DeepCharts y activar su licencia</a></li><li><a href="../article/free-delayed-data-feed.html">Cómo usar la fuente de datos gratuita con 15 minutos de retraso</a></li><li><a href="../article/buy-data-feed.html">Cómo comprar una fuente de datos y obtener sus credenciales</a></li><li><a href="../article/first-chart.html">Abra su primer gráfico</a></li><li><a href="../article/simulation-accounts.html">Cuentas de trading y simulación</a></li><li><a href="../article/quick-start-first-trade.html">Inicio rápido: de la instalación a su primera operación</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Conexiones y fuentes de datos <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configuración inicial</li><li><a href="../article/compatibility-guide.html">Brókers, empresas prop y fuentes de datos compatibles</a></li><li><a href="../article/connect-data-feed.html">Cómo conectar una fuente de datos (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a></li><li><a href="../article/sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a></li><li><a href="../article/connect-dxfeed.html">Cómo conectar una fuente de datos dxFeed</a></li><li><a href="../article/connect-rithmic.html">Cómo conectar una fuente de datos de Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Conectar Rithmic mediante el plugin de RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a></li><li><a href="../article/connect-apex.html">Cómo conectar Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Cómo conectar una cuenta dxFeed de empresa prop (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Cómo conectar CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Cómo conectar Interactive Brokers (solo ejecución)</a></li><li><a href="../article/competition-connect.html">Competición de DeepCharts: únase y conéctese</a></li><li><a href="../article/end-of-day-data.html">Conectar datos históricos (fin de día)</a></li><li><a href="../article/manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li><li class="nav-sub">Solución de problemas</li><li><a href="../article/feed-connected-chart-not-moving.html">Solución: fuente en vivo conectada pero el gráfico no se mueve</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Solución: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Solución: Connection Failed — Verifique el nombre de usuario y la contraseña</a></li><li><a href="../article/fix-bad-server.html">Solución: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Solución: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Solución: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Solución: No se puede cargar la DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Solución: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Solución: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Solución: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Solución: conexión perdida al abrir un gráfico</a></li><li><a href="../article/symbol-subscription-issue.html">Solución: Problema de suscripción de símbolo</a></li><li><a href="../article/app-crashes-saving-feed.html">Solución: la aplicación se cierra al guardar la configuración de la fuente</a></li><li><a href="../article/gaps-in-price.html">Solución: gaps de precio en los gráficos</a></li><li><a href="../article/data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Gráficos y espacio de trabajo <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La ventana de gráfico</a></li><li><a href="../article/price-chart-settings.html">Configuración del gráfico de precios</a></li><li><a href="../article/chart-display-options.html">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</a></li><li><a href="../article/drawing-tools.html" class="active">Herramientas de dibujo y anotaciones</a></li><li><a href="../article/templates-workspaces.html">Plantillas y espacios de trabajo</a></li><li><a href="../article/quick-chart-templates.html">Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Vincular ventanas con grupos de color</a></li><li><a href="../article/replay-data.html">Reproducir datos de mercado</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalice el idioma, el tema y los sonidos de notificación</a></li><li><a href="../article/keyboard-shortcuts.html">Cómo configurar atajos de teclado</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Referencia de atajos de teclado</a></li><li><a href="../article/multi-monitor-windows.html">Organizar ventanas en varios monitores (y recuperar ventanas fuera de pantalla)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Ventanas de la plataforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (la cinta)</a></li><li><a href="../article/advanced-dom.html">Ventana Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Ventana de gráfico de perfil (perfiles TPO y de volumen)</a></li><li><a href="../article/scanner-window.html">Escáner de mercado</a></li><li><a href="../article/correlation-viewer.html">Visor de correlación</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading y órdenes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Operar desde el gráfico</a></li><li><a href="../article/trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading en el gráfico (escalera de trading con clics)</a></li><li><a href="../article/depth-of-market.html">Indicador de profundidad de mercado (DOM)</a></li><li><a href="../article/oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Ventana de órdenes</a></li><li><a href="../article/portfolio-wallet.html">Cartera (Wallet)</a></li><li><a href="../article/risk-manager.html">Gestor de riesgos</a></li><li><a href="../article/trade-copier.html">Cómo configurar el Trade Copier</a></li><li><a href="../article/performance-analysis.html">Análisis de rendimiento (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Conceptos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li><li><a href="../article/understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción</a></li><li><a href="../article/understanding-icebergs-absorption.html">Entender los icebergs y la absorción</a></li><li><a href="../article/understanding-vwap.html">Entender el VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Cómo leer un footprint: ejemplos prácticos</a></li><li><a href="../article/glossary.html">Glosario de términos de flujo de órdenes y de la plataforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicadores y análisis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fundamentos de indicadores</li><li><a href="../article/different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li><li><a href="../article/indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li><li class="nav-sub">Indicadores profundos</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Tendencia</li><li><a href="../article/moving-average.html">Media móvil</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">SAR Parabólico</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regresión lineal</a></li><li><a href="../article/regression-channel.html">Canal de regresión</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Canal de Donchian</a></li><li><a href="../article/adx.html">Índice direccional promedio (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Oscilador Aroon</a></li><li class="nav-sub">Momentum y osciladores</li><li><a href="../article/rsi.html">Índice de fuerza relativa (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscilador estocástico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Tasa de cambio (ROC)</a></li><li><a href="../article/cci.html">Índice de canal de mercancías (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Oscilador Awesome</a></li><li><a href="../article/inverse-cyber-cycle.html">Ciclo Cibernético Inverso (Inverse Cyber Cycle)</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilidad y bandas</li><li><a href="../article/bollinger-bands.html">Bandas de Bollinger</a></li><li><a href="../article/keltner-channel.html">Canal de Keltner</a></li><li><a href="../article/atr.html">Rango Verdadero Medio (ATR)</a></li><li><a href="../article/standard-deviation.html">Desviación estándar</a></li><li><a href="../article/vwap-envelopes.html">Envolventes VWAP</a></li><li><a href="../article/adr-target.html">Objetivo de rango diario promedio (ADR Target)</a></li><li class="nav-sub">Volumen y delta</li><li><a href="../article/volume.html">Volumen</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Resaltado de delta %</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Swing de volumen (Volume Swing)</a></li><li><a href="../article/volume-delta-sprint.html">Sprint de volumen/delta (Volume/Delta Sprint)</a></li><li><a href="../article/chaikin-ad.html">Acumulación/Distribución de Chaikin</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Velocidad de la cinta</a></li><li><a href="../article/speed-of-tape-instant.html">Velocidad de la cinta (instantánea)</a></li><li><a href="../article/market-statistics.html">Estadísticas de mercado</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Flujo de órdenes y subasta</li><li><a href="../article/market-profile-tpo.html">Perfil de mercado (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a></li><li><a href="../article/imbalance-rejector.html">Rechazador de Desequilibrios (Imbalance Rejector)</a></li><li><a href="../article/session-imbalance.html">Desequilibrio de sesión</a></li><li><a href="../article/unfinished-auction.html">Subasta sin terminar (Unfinished Auction)</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">POC Dinámico</a></li><li><a href="../article/bar-poc.html">POC de barra</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Niveles y patrones</li><li><a href="../article/pivot-points.html">Puntos pivote</a></li><li><a href="../article/important-levels.html">Niveles importantes</a></li><li><a href="../article/absolute-levels.html">Niveles absolutos</a></li><li><a href="../article/price-movement-levels.html">Niveles de movimiento del precio</a></li><li><a href="../article/session-marker.html">Marcador de sesión</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Detector de gaps (Gap Detector)</a></li><li><a href="../article/fvg-identifier.html">Identificador de FVG (FVG Identifier)</a></li><li><a href="../article/divergence-detector.html">Detector de divergencias</a></li><li><a href="../article/confluence-identifier.html">Identificador de Confluencias</a></li><li class="nav-sub">Superposiciones de gráfico</li><li><a href="../article/candlestick-bar.html">Barra de velas (Candlestick Bar)</a></li><li><a href="../article/overlay-chart.html">Superposición de gráfico (Overlay Chart)</a></li><li><a href="../article/overlay-symbol.html">Superposición de símbolo (Overlay Symbol)</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Superposición de velas de marco temporal (Overlay Timeframe Candlestick)</a></li><li><a href="../article/overlay-timeframe-highlight.html">Resaltado de marco temporal (Overlay Timeframe Highlight)</a></li><li><a href="../article/shift-candle.html">Vela Shift</a></li><li><a href="../article/text-on-chart.html">Texto en el gráfico</a></li><li><a href="../article/annotations-overlay.html">Superposición de anotaciones</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Datos y base de datos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover de símbolos (cambio de mes de contrato)</a></li><li><a href="../article/delete-market-data.html">Eliminar datos de mercado (métodos en la aplicación y manual)</a></li><li><a href="../article/download-data.html">Volver a descargar datos históricos (herramienta Download Data)</a></li><li><a href="../article/database-optimization.html">Optimización de la base de datos</a></li><li><a href="../article/database-problems.html">Solución: problemas de la base de datos</a></li><li><a href="../article/fix-could-not-find-path.html">Solución: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Solución de problemas y soporte <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Solución: problemas de instalación y requisitos básicos</a></li><li><a href="../article/installation-setup-failed.html">Solución: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Solución: una política de control de aplicaciones bloquea DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Solución: la herramienta de dibujo Rectángulo no funciona</a></li><li><a href="../article/chart-zoom.html">Solución: el zoom del gráfico no funciona</a></li><li><a href="../article/license-issues.html">Solución: problemas de licencia y activación</a></li><li><a href="../article/diagnostic-report.html">Informe de diagnóstico: antes de contactar con soporte</a></li><li><a href="../article/get-help.html">Cómo obtener ayuda (chat, informe de diagnóstico, soporte)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Cuenta y facturación <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Administre sus suscripciones y facturación</a></li><li><a href="../article/move-to-new-computer.html">Mover DeepCharts a un ordenador nuevo</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/charts-workspace.html">Gráficos y espacio de trabajo</a></div>
+<div class="article-head"><h1>Herramientas de dibujo y anotaciones</h1>
+<p class="article-desc">Todas las herramientas de dibujo de DeepCharts con su atajo de teclado, además de la edición, el ajuste automático, la ocultación, la importación/exportación y la sincronización de anotaciones entre gráficos.</p>
+<div class="meta-row">
+  <span class="badge b-beginner">Beginner</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 5 min read</span>
+  <a class="btn-pdf" href="../pdf/drawing-tools.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Los dibujos (líneas, niveles, rectángulos, herramientas de Fibonacci, notas de texto) son la forma de anotar un gráfico de DeepCharts. Todas las herramientas están disponibles desde dos lugares: la barra de herramientas izquierda del gráfico y el menú de clic derecho bajo <strong>Drawing Objects</strong> (Objetos de dibujo), la mayoría con un atajo de teclado.</p>
+<p>Este artículo enumera cada objeto de dibujo y su atajo de teclado, y luego cubre los flujos de trabajo relacionados con los dibujos: editar y reutilizar estilos, el ajuste automático, ocultar, borrar en masa, mover anotaciones entre gráficos y equipos, y mantener los dibujos sincronizados entre gráficos del mismo instrumento.</p>
+<h2 id="qu-es">Qué es</h2>
+<p>El sistema de anotaciones de la ventana del gráfico. Responde a &quot;cómo dibujo X&quot;, &quot;cómo cambio el color de un dibujo&quot;, &quot;dónde fueron mis dibujos&quot; y &quot;cómo llevo mis dibujos a otro gráfico o a otro PC&quot;.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Un gráfico con varias anotaciones colocadas — una línea horizontal en un nivel, una línea de tendencia, una zona rectangular y una nota de texto — con la barra de herramientas de dibujo izquierda visible y el submenú Drawing Objects del clic derecho abierto</div><div class="s-file">ID: <b class="s-id">dc-es-drawing-tools-01</b> · save as <code>dc-es-drawing-tools-01.png</code></div></div></div>
+<h2 id="cu-ndo-usarlo">Cuándo usarlo</h2>
+<ul>
+<li>Marcar niveles de soporte/resistencia, zonas y extremos de sesión.</li>
+<li>Medir movimientos y planificar operaciones (Regla, calculadora de compra/venta).</li>
+<li>Anotar gráficos para un diario o para compartir como capturas de pantalla.</li>
+<li>Mantener los mismos niveles visibles en varios gráficos de un instrumento.</li>
+</ul>
+<h2 id="inicio-r-pido">Inicio rápido</h2>
+<ol>
+<li>Haga clic con el botón derecho en el gráfico y abra <strong>Drawing Objects</strong>, o utilice la barra de herramientas izquierda (actívela o desactívela con el icono <strong>≡</strong> en la parte superior izquierda).</li>
+<li>Elija una herramienta — por ejemplo <strong>Horizontal Line</strong> (Línea horizontal) (Shift H) — y haga clic en el gráfico para colocarla.</li>
+<li>Para editar un dibujo, haga doble clic izquierdo sobre él (o clic izquierdo para seleccionarlo y luego clic derecho → <strong>Settings</strong>) y cambie los colores y estilos en la Configuración de anotaciones (Annotation Settings).</li>
+<li>Para eliminar un solo dibujo, selecciónelo y bórrelo; para borrarlo todo, utilice clic derecho → <strong>Drawing Utilities → Erase All Drawing</strong> (vea la advertencia más abajo).</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">El diálogo de Configuración de anotaciones abierto para una línea horizontal, mostrando las opciones de color, estilo de línea y grosor</div><div class="s-file">ID: <b class="s-id">dc-es-drawing-tools-02</b> · save as <code>dc-es-drawing-tools-02.png</code></div></div></div>
+<h2 id="referencia-de-configuraci-n">Referencia de configuración</h2>
+<h3 id="objetos-de-dibujo-clic-derecho-drawing-objects">Objetos de dibujo (clic derecho → Drawing Objects)</h3>
+<table>
+<thead>
+<tr>
+<th>Herramienta (atajo)</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Horizontal Line</strong> (Shift H)</td>
+<td>Nivel de precio a lo ancho del gráfico.</td>
+</tr>
+<tr>
+<td><strong>Vertical Line</strong></td>
+<td>Marca un punto en el tiempo.</td>
+</tr>
+<tr>
+<td><strong>Horizontal Ray</strong></td>
+<td>Nivel de precio que comienza en un punto y se extiende hacia la derecha.</td>
+</tr>
+<tr>
+<td><strong>Line</strong> (Shift L)</td>
+<td>Línea de tendencia libre entre dos puntos.</td>
+</tr>
+<tr>
+<td><strong>Parallel Lines</strong> (Shift P)</td>
+<td>Canal paralelo.</td>
+</tr>
+<tr>
+<td><strong>Ruler</strong></td>
+<td>Mide entre dos puntos del gráfico.</td>
+</tr>
+<tr>
+<td><strong>Rectangle</strong> (Shift R)</td>
+<td>Zona de precio/tiempo. Si deja de responder, consulte <a href="./rectangle-drawing-tool.html">Solución: la herramienta de dibujo Rectángulo no funciona</a>.</td>
+</tr>
+<tr>
+<td><strong>Ellipse</strong></td>
+<td>Zona elíptica.</td>
+</tr>
+<tr>
+<td><strong>Text</strong> (Shift T)</td>
+<td>Nota de texto en el gráfico.</td>
+</tr>
+<tr>
+<td><strong>Pencil</strong></td>
+<td>Dibujo a mano alzada.</td>
+</tr>
+<tr>
+<td><strong>Price Retracement</strong> (Shift F)</td>
+<td>Retroceso de Fibonacci.</td>
+</tr>
+<tr>
+<td><strong>Price Projection</strong></td>
+<td>Proyección de Fibonacci.</td>
+</tr>
+<tr>
+<td><strong>Price Fan</strong></td>
+<td>Herramienta de abanico: corresponde al abanico de Fibonacci listado en <strong>Options → Settings → Toolbar</strong>.</td>
+</tr>
+<tr>
+<td><strong>Volume Profile</strong> (Shift V)</td>
+<td>Dibuja un perfil de volumen sobre un rango seleccionado. Concepto: <a href="./understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a>.</td>
+</tr>
+<tr>
+<td><strong>VWAP</strong></td>
+<td>Herramienta de dibujo de VWAP. Concepto: <a href="./understanding-vwap.html">Entender el VWAP</a>.</td>
+</tr>
+<tr>
+<td><strong>Buy calculator</strong> (Shift B)</td>
+<td>Calculadora de posición para largos: colóquela y luego arrastre el área de stop-loss y el área de take-profit hacia arriba o hacia abajo; muestra la relación riesgo/beneficio, el precio de ambos niveles y la distancia en ticks de cada nivel respecto a la entrada.</td>
+</tr>
+<tr>
+<td><strong>Sell calculator</strong> (Shift S)</td>
+<td>La misma calculadora de posición para cortos.</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Un dibujo de calculadora de compra colocado en un gráfico con el área de SL debajo de la entrada y el área de TP encima, mostrando la relación riesgo/beneficio y las distancias en ticks</div><div class="s-file">ID: <b class="s-id">dc-es-drawing-tools-03</b> · save as <code>dc-es-drawing-tools-03.png</code></div></div></div>
+<blockquote class="callout-tip">
+<p><strong>Consejo:</strong> Vale la pena memorizar las entradas de modo de cursor del mismo menú de clic derecho: <strong>Pointer</strong> (Alt P), <strong>Crosshair</strong> (Alt C), <strong>Global Crosshair</strong> (Alt G — cursor en cruz en todos los gráficos del mismo instrumento), <strong>Hand</strong> (Alt H). Los atajos son configurables — consulte <a href="./keyboard-shortcuts.html">Cómo configurar atajos de teclado</a>.</p>
+</blockquote>
+<h3 id="extras-de-la-barra-de-herramientas-izquierda">Extras de la barra de herramientas izquierda</h3>
+<p>La barra izquierda refleja las herramientas de dibujo (qué herramientas aparecen allí es configurable en <strong>Options → Settings → Toolbar</strong>), además de:</p>
+<table>
+<thead>
+<tr>
+<th>Icono</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ojo</strong></td>
+<td>Oculta/muestra TODOS los dibujos del gráfico.</td>
+</tr>
+<tr>
+<td><strong>Imán</strong></td>
+<td>Cuando está habilitado, los nuevos dibujos se adhieren al nivel principal más cercano: el máximo/mínimo de la mecha de la vela más próxima o su apertura/cierre. Deshabilitado = colocación totalmente libre.</td>
+</tr>
+<tr>
+<td><strong>Borrador</strong></td>
+<td>Elimina dibujos.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="editar-y-reutilizar-estilos">Editar y reutilizar estilos</h3>
+<ul>
+<li><strong>Editar:</strong> haga doble clic izquierdo sobre un dibujo, o selecciónelo y haga clic derecho → <strong>Settings</strong>.</li>
+<li><strong>Guardar una configuración:</strong> almacene la configuración de estilo de un dibujo para reutilizarla en el futuro desde su diálogo de configuración.</li>
+<li><strong>Recuperar una configuración:</strong> haga clic derecho sobre el dibujo y abra <strong>Tool Config</strong>.</li>
+</ul>
+<h3 id="utilidades-de-dibujo-clic-derecho-drawing-utilities">Utilidades de dibujo (clic derecho → Drawing Utilities)</h3>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Import Annotations</strong></td>
+<td>Carga dibujos desde un archivo.</td>
+</tr>
+<tr>
+<td><strong>Export Annotations</strong></td>
+<td>Guarda los dibujos en un archivo — formato seleccionable: CSV o el formato Volumetrica (específico de las aplicaciones DeepCharts). Así es como mueve dibujos entre equipos o los comparte. <span class="confirm-flag">CONFIRM: whether export covers all drawings or only selected ones</span></td>
+</tr>
+<tr>
+<td><strong>Snap annotation</strong> (Ctrl S)</td>
+<td>Interruptor de ajuste automático para anotaciones <span class="confirm-flag">CONFIRM: whether this is the same toggle as the magnet icon</span>.</td>
+</tr>
+<tr>
+<td><strong>Hide/Show annotations</strong></td>
+<td>Alterna la visibilidad de las anotaciones en el gráfico.</td>
+</tr>
+<tr>
+<td><strong>Erase All Drawing</strong></td>
+<td>Elimina todos los dibujos del gráfico.</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-warning">
+<p><strong>Advertencia:</strong> <strong>Erase All Drawing</strong> elimina todos los dibujos del gráfico en una sola acción. Exporte primero sus anotaciones si existe alguna posibilidad de que quiera recuperarlas.</p>
+</blockquote>
+<h3 id="dibujos-entre-gr-ficos">Dibujos entre gráficos</h3>
+<ul>
+<li><strong>Drawing Tool From Other Chart</strong> (menú de clic derecho) sincroniza los dibujos entre gráficos: configúrelo entre, por ejemplo, un gráfico de 1 minuto y uno de 5 minutos del mismo símbolo, y un dibujo hecho en uno aparecerá en el otro.</li>
+<li>Para trasladar una configuración de gráfico completa (dibujos incluidos) a otro gráfico o PC, utilice plantillas y espacios de trabajo — consulte <a href="./templates-workspaces.html">Plantillas y espacios de trabajo</a>.</li>
+</ul>
+<h2 id="consejos-y-errores-comunes">Consejos y errores comunes</h2>
+<ul>
+<li><strong>&quot;Mis dibujos desaparecieron.&quot;</strong> Antes de asumir que se perdieron, revise el icono del <strong>ojo</strong> en la barra de herramientas izquierda y clic derecho → <strong>Drawing Utilities → Hide/Show annotations</strong> — uno de los dos interruptores de visibilidad suele ser la causa.</li>
+<li><strong>Los dibujos no caen exactamente en los máximos/mínimos de las velas</strong> — habilite el icono del <strong>imán</strong> para que los nuevos dibujos se ajusten a la mecha o apertura/cierre más cercanos.</li>
+<li><strong>¿Se cambia a un PC nuevo?</strong> Clic derecho → <strong>Drawing Utilities → Export Annotations</strong>, copie el archivo y luego use <strong>Import Annotations</strong> en el otro equipo.</li>
+<li><strong>Planifique la operación antes de colocarla:</strong> la <strong>calculadora de compra/venta</strong> muestra la relación riesgo/beneficio y las distancias en ticks mientras arrastra los niveles — más rápido que calcularlas a mano.</li>
+<li>Opciones relacionadas a nivel de gráfico: <strong>Options → Settings → General → Chart</strong> incluye comportamientos de anotaciones como <strong>Editable copied annotation</strong> y <strong>Annotations stop on last bar</strong>.</li>
+</ul>
+<h2 id="art-culos-relacionados">Artículos relacionados</h2>
+<ul>
+<li><a href="./chart-window.html">La ventana de gráfico</a></li>
+<li><a href="./rectangle-drawing-tool.html">Solución: la herramienta de dibujo Rectángulo no funciona</a></li>
+<li><a href="./keyboard-shortcuts-reference.html">Referencia de atajos de teclado</a></li>
+<li><a href="./templates-workspaces.html">Plantillas y espacios de trabajo</a></li>
+<li><a href="./understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li>
+<li><a href="./understanding-vwap.html">Entender el VWAP</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./chart-display-options.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</div></a><a class="next" href="./templates-workspaces.html"><div class="pn-lbl">Next →</div><div class="pn-title">Plantillas y espacios de trabajo</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#qu-es">Qué es</a></li><li class="lv2"><a href="#cu-ndo-usarlo">Cuándo usarlo</a></li><li class="lv2"><a href="#inicio-r-pido">Inicio rápido</a></li><li class="lv2"><a href="#referencia-de-configuraci-n">Referencia de configuración</a></li><li class="lv3"><a href="#objetos-de-dibujo-clic-derecho-drawing-objects">Objetos de dibujo (clic derecho → Drawing Objects)</a></li><li class="lv3"><a href="#extras-de-la-barra-de-herramientas-izquierda">Extras de la barra de herramientas izquierda</a></li><li class="lv3"><a href="#editar-y-reutilizar-estilos">Editar y reutilizar estilos</a></li><li class="lv3"><a href="#utilidades-de-dibujo-clic-derecho-drawing-utilities">Utilidades de dibujo (clic derecho → Drawing Utilities)</a></li><li class="lv3"><a href="#dibujos-entre-gr-ficos">Dibujos entre gráficos</a></li><li class="lv2"><a href="#consejos-y-errores-comunes">Consejos y errores comunes</a></li><li class="lv2"><a href="#art-culos-relacionados">Artículos relacionados</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-es.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

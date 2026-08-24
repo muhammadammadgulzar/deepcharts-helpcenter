@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Cómo configurar el Trade Copier — Centro de Ayuda de DeepCharts</title>
+<meta name="description" content="Replique operaciones de una cuenta principal a múltiples cuentas secundarias en tiempo real: modos de copia, resincronización, tiempos y la regla del modo cliente para OCO.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/quick-start-first-trade.html">Guía rápida</a><a href="../article/get-help.html">Soporte</a><a class="kb-switch" href="../../es/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/trade-copier.html">English</a><a class="lang-item" href="../../it/article/trade-copier.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primeros pasos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Bienvenido a DeepCharts: recorrido por la plataforma</a></li><li><a href="../article/system-requirements.html">Requisitos del sistema</a></li><li><a href="../article/install-deepcharts.html">Cómo instalar DeepCharts y activar su licencia</a></li><li><a href="../article/free-delayed-data-feed.html">Cómo usar la fuente de datos gratuita con 15 minutos de retraso</a></li><li><a href="../article/buy-data-feed.html">Cómo comprar una fuente de datos y obtener sus credenciales</a></li><li><a href="../article/first-chart.html">Abra su primer gráfico</a></li><li><a href="../article/simulation-accounts.html">Cuentas de trading y simulación</a></li><li><a href="../article/quick-start-first-trade.html">Inicio rápido: de la instalación a su primera operación</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Conexiones y fuentes de datos <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configuración inicial</li><li><a href="../article/compatibility-guide.html">Brókers, empresas prop y fuentes de datos compatibles</a></li><li><a href="../article/connect-data-feed.html">Cómo conectar una fuente de datos (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a></li><li><a href="../article/sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a></li><li><a href="../article/connect-dxfeed.html">Cómo conectar una fuente de datos dxFeed</a></li><li><a href="../article/connect-rithmic.html">Cómo conectar una fuente de datos de Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Conectar Rithmic mediante el plugin de RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a></li><li><a href="../article/connect-apex.html">Cómo conectar Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Cómo conectar una cuenta dxFeed de empresa prop (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Cómo conectar CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Cómo conectar Interactive Brokers (solo ejecución)</a></li><li><a href="../article/competition-connect.html">Competición de DeepCharts: únase y conéctese</a></li><li><a href="../article/end-of-day-data.html">Conectar datos históricos (fin de día)</a></li><li><a href="../article/manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li><li class="nav-sub">Solución de problemas</li><li><a href="../article/feed-connected-chart-not-moving.html">Solución: fuente en vivo conectada pero el gráfico no se mueve</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Solución: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Solución: Connection Failed — Verifique el nombre de usuario y la contraseña</a></li><li><a href="../article/fix-bad-server.html">Solución: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Solución: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Solución: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Solución: No se puede cargar la DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Solución: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Solución: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Solución: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Solución: conexión perdida al abrir un gráfico</a></li><li><a href="../article/symbol-subscription-issue.html">Solución: Problema de suscripción de símbolo</a></li><li><a href="../article/app-crashes-saving-feed.html">Solución: la aplicación se cierra al guardar la configuración de la fuente</a></li><li><a href="../article/gaps-in-price.html">Solución: gaps de precio en los gráficos</a></li><li><a href="../article/data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Gráficos y espacio de trabajo <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La ventana de gráfico</a></li><li><a href="../article/price-chart-settings.html">Configuración del gráfico de precios</a></li><li><a href="../article/chart-display-options.html">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</a></li><li><a href="../article/drawing-tools.html">Herramientas de dibujo y anotaciones</a></li><li><a href="../article/templates-workspaces.html">Plantillas y espacios de trabajo</a></li><li><a href="../article/quick-chart-templates.html">Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Vincular ventanas con grupos de color</a></li><li><a href="../article/replay-data.html">Reproducir datos de mercado</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalice el idioma, el tema y los sonidos de notificación</a></li><li><a href="../article/keyboard-shortcuts.html">Cómo configurar atajos de teclado</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Referencia de atajos de teclado</a></li><li><a href="../article/multi-monitor-windows.html">Organizar ventanas en varios monitores (y recuperar ventanas fuera de pantalla)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Ventanas de la plataforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (la cinta)</a></li><li><a href="../article/advanced-dom.html">Ventana Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Ventana de gráfico de perfil (perfiles TPO y de volumen)</a></li><li><a href="../article/scanner-window.html">Escáner de mercado</a></li><li><a href="../article/correlation-viewer.html">Visor de correlación</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading y órdenes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Operar desde el gráfico</a></li><li><a href="../article/trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading en el gráfico (escalera de trading con clics)</a></li><li><a href="../article/depth-of-market.html">Indicador de profundidad de mercado (DOM)</a></li><li><a href="../article/oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Ventana de órdenes</a></li><li><a href="../article/portfolio-wallet.html">Cartera (Wallet)</a></li><li><a href="../article/risk-manager.html">Gestor de riesgos</a></li><li><a href="../article/trade-copier.html" class="active">Cómo configurar el Trade Copier</a></li><li><a href="../article/performance-analysis.html">Análisis de rendimiento (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Conceptos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li><li><a href="../article/understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción</a></li><li><a href="../article/understanding-icebergs-absorption.html">Entender los icebergs y la absorción</a></li><li><a href="../article/understanding-vwap.html">Entender el VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Cómo leer un footprint: ejemplos prácticos</a></li><li><a href="../article/glossary.html">Glosario de términos de flujo de órdenes y de la plataforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicadores y análisis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fundamentos de indicadores</li><li><a href="../article/different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li><li><a href="../article/indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li><li class="nav-sub">Indicadores profundos</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Tendencia</li><li><a href="../article/moving-average.html">Media móvil</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">SAR Parabólico</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regresión lineal</a></li><li><a href="../article/regression-channel.html">Canal de regresión</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Canal de Donchian</a></li><li><a href="../article/adx.html">Índice direccional promedio (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Oscilador Aroon</a></li><li class="nav-sub">Momentum y osciladores</li><li><a href="../article/rsi.html">Índice de fuerza relativa (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscilador estocástico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Tasa de cambio (ROC)</a></li><li><a href="../article/cci.html">Índice de canal de mercancías (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Oscilador Awesome</a></li><li><a href="../article/inverse-cyber-cycle.html">Ciclo Cibernético Inverso (Inverse Cyber Cycle)</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilidad y bandas</li><li><a href="../article/bollinger-bands.html">Bandas de Bollinger</a></li><li><a href="../article/keltner-channel.html">Canal de Keltner</a></li><li><a href="../article/atr.html">Rango Verdadero Medio (ATR)</a></li><li><a href="../article/standard-deviation.html">Desviación estándar</a></li><li><a href="../article/vwap-envelopes.html">Envolventes VWAP</a></li><li><a href="../article/adr-target.html">Objetivo de rango diario promedio (ADR Target)</a></li><li class="nav-sub">Volumen y delta</li><li><a href="../article/volume.html">Volumen</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Resaltado de delta %</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Swing de volumen (Volume Swing)</a></li><li><a href="../article/volume-delta-sprint.html">Sprint de volumen/delta (Volume/Delta Sprint)</a></li><li><a href="../article/chaikin-ad.html">Acumulación/Distribución de Chaikin</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Velocidad de la cinta</a></li><li><a href="../article/speed-of-tape-instant.html">Velocidad de la cinta (instantánea)</a></li><li><a href="../article/market-statistics.html">Estadísticas de mercado</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Flujo de órdenes y subasta</li><li><a href="../article/market-profile-tpo.html">Perfil de mercado (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a></li><li><a href="../article/imbalance-rejector.html">Rechazador de Desequilibrios (Imbalance Rejector)</a></li><li><a href="../article/session-imbalance.html">Desequilibrio de sesión</a></li><li><a href="../article/unfinished-auction.html">Subasta sin terminar (Unfinished Auction)</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">POC Dinámico</a></li><li><a href="../article/bar-poc.html">POC de barra</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Niveles y patrones</li><li><a href="../article/pivot-points.html">Puntos pivote</a></li><li><a href="../article/important-levels.html">Niveles importantes</a></li><li><a href="../article/absolute-levels.html">Niveles absolutos</a></li><li><a href="../article/price-movement-levels.html">Niveles de movimiento del precio</a></li><li><a href="../article/session-marker.html">Marcador de sesión</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Detector de gaps (Gap Detector)</a></li><li><a href="../article/fvg-identifier.html">Identificador de FVG (FVG Identifier)</a></li><li><a href="../article/divergence-detector.html">Detector de divergencias</a></li><li><a href="../article/confluence-identifier.html">Identificador de Confluencias</a></li><li class="nav-sub">Superposiciones de gráfico</li><li><a href="../article/candlestick-bar.html">Barra de velas (Candlestick Bar)</a></li><li><a href="../article/overlay-chart.html">Superposición de gráfico (Overlay Chart)</a></li><li><a href="../article/overlay-symbol.html">Superposición de símbolo (Overlay Symbol)</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Superposición de velas de marco temporal (Overlay Timeframe Candlestick)</a></li><li><a href="../article/overlay-timeframe-highlight.html">Resaltado de marco temporal (Overlay Timeframe Highlight)</a></li><li><a href="../article/shift-candle.html">Vela Shift</a></li><li><a href="../article/text-on-chart.html">Texto en el gráfico</a></li><li><a href="../article/annotations-overlay.html">Superposición de anotaciones</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Datos y base de datos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover de símbolos (cambio de mes de contrato)</a></li><li><a href="../article/delete-market-data.html">Eliminar datos de mercado (métodos en la aplicación y manual)</a></li><li><a href="../article/download-data.html">Volver a descargar datos históricos (herramienta Download Data)</a></li><li><a href="../article/database-optimization.html">Optimización de la base de datos</a></li><li><a href="../article/database-problems.html">Solución: problemas de la base de datos</a></li><li><a href="../article/fix-could-not-find-path.html">Solución: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Solución de problemas y soporte <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Solución: problemas de instalación y requisitos básicos</a></li><li><a href="../article/installation-setup-failed.html">Solución: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Solución: una política de control de aplicaciones bloquea DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Solución: la herramienta de dibujo Rectángulo no funciona</a></li><li><a href="../article/chart-zoom.html">Solución: el zoom del gráfico no funciona</a></li><li><a href="../article/license-issues.html">Solución: problemas de licencia y activación</a></li><li><a href="../article/diagnostic-report.html">Informe de diagnóstico: antes de contactar con soporte</a></li><li><a href="../article/get-help.html">Cómo obtener ayuda (chat, informe de diagnóstico, soporte)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Cuenta y facturación <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Administre sus suscripciones y facturación</a></li><li><a href="../article/move-to-new-computer.html">Mover DeepCharts a un ordenador nuevo</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/trading-orders.html">Trading y órdenes</a></div>
+<div class="article-head"><h1>Cómo configurar el Trade Copier</h1>
+<p class="article-desc">Replique operaciones de una cuenta principal a múltiples cuentas secundarias en tiempo real: modos de copia, resincronización, tiempos y la regla del modo cliente para OCO.</p>
+<div class="meta-row">
+  <span class="badge b-advanced">Advanced</span>
+  <span class="badge">Howto</span>
+  <span class="badge">🕒 25 min to complete</span>
+  <a class="btn-pdf" href="../pdf/trade-copier.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Al terminar tendrá un grupo del Trade Copier replicando cada operación de una cuenta principal (Parent) a una o más cuentas secundarias (Child) en tiempo real: la configuración estándar para traders de empresas prop que ejecutan la misma estrategia en múltiples cuentas financiadas.</p>
+<p>El copiador es una función beta con modos de fallo reales (órdenes secundarias sin ejecutar, órdenes a mercado de resincronización, brackets OCO que requieren el modo cliente); esta guía recorre cada una de esas decisiones en orden.</p>
+<blockquote class="callout-warning">
+<p><strong>Advertencia:</strong> Pruebe siempre un grupo nuevo en una cuenta SIM antes de operar en real. Un copiador mal configurado puede enviar órdenes reales a todas las cuentas secundarias a la vez.</p>
+</blockquote>
+<h2 id="antes-de-empezar">Antes de empezar</h2>
+<ul>
+<li>Todas las cuentas (principal y secundarias) conectadas en DeepCharts — <a href="./connect-data-feed.html">Cómo conectar una fuente de datos (Feed Settings)</a> y <a href="./manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li>
+<li>Familiaridad con el panel de trading y los tipos de órdenes — <a href="./trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a></li>
+<li>Una cuenta SIM para la prueba en seco — <a href="./simulation-accounts.html">Cuentas de trading y simulación</a></li>
+<li>Si opera con brackets de stop-loss/take-profit, lea primero la sección de OCO más abajo — <a href="./oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a></li>
+</ul>
+<h2 id="pasos">Pasos</h2>
+<h3 id="crear-el-grupo">Crear el grupo</h3>
+<ol>
+<li>Haga clic en <strong>Trading → Trade Copier - Beta</strong> en la barra principal.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">El menú Trading abierto con la entrada Trade Copier - Beta resaltada</div><div class="s-file">ID: <b class="s-id">dc-es-trade-copier-01</b> · save as <code>dc-es-trade-copier-01.png</code></div></div></div>
+<ol start="2">
+<li>
+<p>Haga clic en <strong>Add New Group</strong>.</p>
+</li>
+<li>
+<p>Dé al grupo un <strong>Name</strong> (nombre) que reconozca: puede ejecutar varios grupos con configuraciones diferentes al mismo tiempo.</p>
+</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">La ventana del Trade Copier con la configuración Add New Group abierta, el campo Name rellenado y la lista de ajustes visible</div><div class="s-file">ID: <b class="s-id">dc-es-trade-copier-02</b> · save as <code>dc-es-trade-copier-02.png</code></div></div></div>
+<h3 id="elegir-el-modo-de-copia">Elegir el modo de copia</h3>
+<ol start="4">
+<li>Establezca <strong>Copy Mode</strong>, el ajuste más determinante del grupo:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Modo</th>
+<th>Cómo funciona</th>
+<th>Compromiso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OrdersToOrders</strong> (predeterminado)</td>
+<td>Replica sus órdenes de límite a las cuentas secundarias como órdenes de límite</td>
+<td>Sin slippage, pero el límite de una cuenta secundaria puede quedar <strong>sin ejecutar</strong> mientras la principal se ejecuta</td>
+</tr>
+<tr>
+<td><strong>OrdersToMarket</strong></td>
+<td>Espera a que la orden de la principal se <strong>ejecute</strong> y luego envía órdenes a mercado a las secundarias</td>
+<td>Ejecuciones y sincronización garantizadas, pero es posible el slippage</td>
+</tr>
+</tbody>
+</table>
+<p>Elija según lo que más perjudique a su estrategia: una ejecución perdida en la secundaria (OrdersToOrders) o un peor precio en la secundaria (OrdersToMarket).</p>
+<h3 id="configurar-las-cuentas-secundarias">Configurar las cuentas secundarias</h3>
+<ol start="5">
+<li>
+<p>Asigne la cuenta <strong>Parent</strong> (principal) y añada las cuentas <strong>Child</strong> (secundarias) al grupo.</p>
+</li>
+<li>
+<p>Establezca el <strong>Contracts Multiplier</strong> de cada cuenta secundaria: la proporción entre el tamaño de la secundaria y el de la principal (por ejemplo, una secundaria en una cuenta financiada mayor puede operar un múltiplo de la cantidad de la principal).</p>
+</li>
+<li>
+<p>Añada los símbolos concretos que el grupo debe copiar: los símbolos se configuran por grupo.</p>
+</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">La configuración del grupo mostrando la cuenta principal, las filas de cuentas secundarias con sus valores de Contracts Multiplier y la lista de símbolos del grupo</div><div class="s-file">ID: <b class="s-id">dc-es-trade-copier-03</b> · save as <code>dc-es-trade-copier-03.png</code></div></div></div>
+<h3 id="establecer-los-tiempos-y-el-comportamiento-de-recuperaci-n">Establecer los tiempos y el comportamiento de recuperación</h3>
+<ol start="8">
+<li>Revise los ajustes de tiempo:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Ajuste</th>
+<th>Predeterminado</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Copy Delay</strong></td>
+<td>5 ms</td>
+<td>Pausa antes de replicar a las secundarias</td>
+</tr>
+<tr>
+<td><strong>Synchronization Timeout</strong></td>
+<td>15 s</td>
+<td>Cuánto tiempo pueden diferir las posiciones antes de que el grupo se considere fuera de sincronización. Un valor demasiado bajo provoca <strong>falsas alertas de desincronización</strong> por retrasos normales de ejecución</td>
+</tr>
+<tr>
+<td><strong>Resynchronization Attempt Delay</strong></td>
+<td>20 s</td>
+<td>Espera entre intentos automáticos de resincronización</td>
+</tr>
+</tbody>
+</table>
+<ol start="9">
+<li>Establezca <strong>Resync Mode</strong>: lo que hace el copiador cuando la principal y las secundarias se desvían:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>Modo</th>
+<th>Comportamiento</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>None</strong></td>
+<td>Sin acción automática: usted corrige los desequilibrios manualmente</td>
+</tr>
+<tr>
+<td><strong>FullMarketAtBestPrice</strong> (predeterminado)</td>
+<td>Envía automáticamente las órdenes que sean necesarias para corregir el desequilibrio</td>
+</tr>
+<tr>
+<td><strong>CloseOnlyAtBestPrice</strong></td>
+<td>Solo cierra posiciones secundarias excedentes; nunca fuerza la apertura de nuevas</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-warning">
+<p><strong>Advertencia:</strong> La resincronización automática puede enviar órdenes a mercado no deseadas a las cuentas secundarias. Supervise el grupo manualmente siempre que se ejecute una resincronización, especialmente en las primeras sesiones.</p>
+</blockquote>
+<ol start="10">
+<li>
+<p>Establezca <strong>Expiration Logic</strong>: lo que ocurre con una orden secundaria aún pendiente cuando la principal ya se ha ejecutado:</p>
+<ul>
+<li><strong>None</strong> (predeterminado) — la orden secundaria sigue activa.</li>
+<li><strong>ToMarketAfterMs</strong> — convierte la orden secundaria pendiente en una orden a mercado tras los milisegundos establecidos.</li>
+<li><strong>CancelAfterMs</strong> — cancela la orden secundaria pendiente tras los milisegundos establecidos.</li>
+</ul>
+</li>
+<li>
+<p>Deje los ajustes de respaldo de OCO en sus valores predeterminados salvo que soporte le indique lo contrario: <strong>Child Brackets Tick Margin</strong> (25), <strong>OCO Bracket Fallback Insert</strong> (15 s), <strong>OCO Order Cancel Fallback</strong> (60 s), <strong>OCO Trailing Stop Fallback</strong> (3 s).</p>
+</li>
+</ol>
+<h3 id="si-usa-brackets-oco-stop-loss-take-profit">Si usa brackets OCO (stop loss / take profit)</h3>
+<p>Algunos brókeres no admiten OCO del lado del servidor junto con el Trade Copier. En el bloque OCO del panel de trading, cambie el botón de opción de <strong>Server</strong> a <strong>Client</strong> para que los brackets se repliquen a las cuentas secundarias.</p>
+<blockquote class="callout-warning">
+<p><strong>Advertencia:</strong> Rithmic no permite OCO del lado del servidor junto con el copy trading: Rithmic + Trade Copier siempre significa OCO del lado <strong>Client</strong> (cliente). El OCO del lado del cliente solo se aplica mientras DeepCharts permanece <strong>abierto y conectado</strong>: cierre la plataforma o pierda la red y sus stops y objetivos pendientes no se ejecutarán. (Una única cuenta de Rithmic sin el copiador puede usar OCO del lado del servidor con normalidad.) Consulte <a href="./oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a> para la explicación completa de Server frente a Client.</p>
+</blockquote>
+<h3 id="iniciar-el-grupo">Iniciar el grupo</h3>
+<ol start="12">
+<li>
+<p>Haga clic en <strong>Start</strong> y acepte el aviso legal.</p>
+</li>
+<li>
+<p>Compruebe el estado de la principal: muestra <strong>Ready</strong> cuando su fuente está conectada, o <strong>Waiting Connection</strong> si no lo está.</p>
+</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">La ventana del Trade Copier con un grupo en ejecución, el estado de la principal mostrando Ready y las cuentas secundarias listadas con su estado de sincronización</div><div class="s-file">ID: <b class="s-id">dc-es-trade-copier-04</b> · save as <code>dc-es-trade-copier-04.png</code></div></div></div>
+<blockquote class="callout-tip">
+<p><strong>Consejo:</strong> La configuración inicial sugerida por la documentación oficial es: Copy Mode <strong>OrdersToOrders</strong>, Copy Delay <strong>0 ms</strong>, Resync Mode <strong>None</strong>, Expiration Logic <strong>None</strong>, Synchronization Timeout <strong>15 s</strong>, Resynchronization Attempt Delay <strong>20 s</strong> — ajustes conservadores sin órdenes automáticas de resincronización mientras aprende a usar la herramienta.</p>
+</blockquote>
+<h2 id="verifique-que-funcion">Verifique que funcionó</h2>
+<p>Con el grupo iniciado y la principal mostrando <strong>Ready</strong>, coloque una pequeña operación de prueba en la principal (en SIM). En instantes la misma orden aparece en cada secundaria, dimensionada por su Contracts Multiplier, y cerrar la posición de la principal cierra las de las secundarias. Compruebe la <a href="./orders-window.html">Ventana de órdenes</a> en una conexión secundaria para confirmar las órdenes replicadas, y confirme que no aparece ninguna alerta de desincronización.</p>
+<h2 id="si-algo-sali-mal">Si algo salió mal</h2>
+<ul>
+<li><strong>Una secundaria perdió una operación / las posiciones no coinciden</strong> — modo OrdersToOrders: el límite de la secundaria quedó sin ejecutar. Considere <strong>OrdersToMarket</strong> (aceptando el slippage) o una <strong>Expiration Logic</strong> de <strong>ToMarketAfterMs</strong>. Un Resync Mode de <strong>FullMarketAtBestPrice</strong> corrige los desequilibrios automáticamente.</li>
+<li><strong>El copiador sigue marcando desincronización pero las operaciones parecen correctas</strong> — el <strong>Synchronization Timeout</strong> es demasiado agresivo; auméntelo. Los retrasos normales de ejecución disparan falsas alertas con valores bajos.</li>
+<li><strong>Los brackets/OCO no aparecen en las cuentas secundarias</strong> — el bróker no admite OCO del lado del servidor con el copiador; cambie el panel de trading al modo <strong>Client</strong> (y mantenga la plataforma abierta y en línea).</li>
+<li><strong>Órdenes a mercado inesperadas en las secundarias</strong> — se activó una resincronización automática. Revise el <strong>Resync Mode</strong>; use <strong>CloseOnlyAtBestPrice</strong> o <strong>None</strong> si desea menos intervención automática.</li>
+<li><strong>La principal se queda en Waiting Connection</strong> — la fuente de la principal no está conectada; consulte <a href="./manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a>.</li>
+</ul>
+<p>Gestión del día a día: cada grupo puede <strong>detenerse (Stopped)</strong>, reabrirse mediante <strong>Settings</strong> o <strong>eliminarse (Removed)</strong>; las cuentas secundarias individuales pueden excluirse de la sincronización sin detener todo el grupo.</p>
+<h2 id="art-culos-relacionados">Artículos relacionados</h2>
+<ul>
+<li><a href="./oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a></li>
+<li><a href="./trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a></li>
+<li><a href="./orders-window.html">Ventana de órdenes</a></li>
+<li><a href="./simulation-accounts.html">Cuentas de trading y simulación</a></li>
+<li><a href="./manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li>
+<li><a href="./risk-manager.html">Gestor de riesgos</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./risk-manager.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Gestor de riesgos</div></a><a class="next" href="./performance-analysis.html"><div class="pn-lbl">Next →</div><div class="pn-title">Análisis de rendimiento (Signal Performance)</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#antes-de-empezar">Antes de empezar</a></li><li class="lv2"><a href="#pasos">Pasos</a></li><li class="lv3"><a href="#crear-el-grupo">Crear el grupo</a></li><li class="lv3"><a href="#elegir-el-modo-de-copia">Elegir el modo de copia</a></li><li class="lv3"><a href="#configurar-las-cuentas-secundarias">Configurar las cuentas secundarias</a></li><li class="lv3"><a href="#establecer-los-tiempos-y-el-comportamiento-de-recuperaci-n">Establecer los tiempos y el comportamiento de recuperación</a></li><li class="lv3"><a href="#si-usa-brackets-oco-stop-loss-take-profit">Si usa brackets OCO (stop loss / take profit)</a></li><li class="lv3"><a href="#iniciar-el-grupo">Iniciar el grupo</a></li><li class="lv2"><a href="#verifique-que-funcion">Verifique que funcionó</a></li><li class="lv2"><a href="#si-algo-sali-mal">Si algo salió mal</a></li><li class="lv2"><a href="#art-culos-relacionados">Artículos relacionados</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-es.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

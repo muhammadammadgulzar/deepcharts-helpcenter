@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Identificador de Confluencias — Centro de Ayuda de DeepCharts</title>
+<meta name="description" content="Encuentre automáticamente zonas de soporte y resistencia de alta probabilidad donde se alinean niveles del perfil de volumen, giros de precio y retrocesos.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/quick-start-first-trade.html">Guía rápida</a><a href="../article/get-help.html">Soporte</a><a class="kb-switch" href="../../es/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/confluence-identifier.html">English</a><a class="lang-item" href="../../it/article/confluence-identifier.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primeros pasos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Bienvenido a DeepCharts: recorrido por la plataforma</a></li><li><a href="../article/system-requirements.html">Requisitos del sistema</a></li><li><a href="../article/install-deepcharts.html">Cómo instalar DeepCharts y activar su licencia</a></li><li><a href="../article/free-delayed-data-feed.html">Cómo usar la fuente de datos gratuita con 15 minutos de retraso</a></li><li><a href="../article/buy-data-feed.html">Cómo comprar una fuente de datos y obtener sus credenciales</a></li><li><a href="../article/first-chart.html">Abra su primer gráfico</a></li><li><a href="../article/simulation-accounts.html">Cuentas de trading y simulación</a></li><li><a href="../article/quick-start-first-trade.html">Inicio rápido: de la instalación a su primera operación</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Conexiones y fuentes de datos <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configuración inicial</li><li><a href="../article/compatibility-guide.html">Brókers, empresas prop y fuentes de datos compatibles</a></li><li><a href="../article/connect-data-feed.html">Cómo conectar una fuente de datos (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a></li><li><a href="../article/sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a></li><li><a href="../article/connect-dxfeed.html">Cómo conectar una fuente de datos dxFeed</a></li><li><a href="../article/connect-rithmic.html">Cómo conectar una fuente de datos de Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Conectar Rithmic mediante el plugin de RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a></li><li><a href="../article/connect-apex.html">Cómo conectar Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Cómo conectar una cuenta dxFeed de empresa prop (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Cómo conectar CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Cómo conectar Interactive Brokers (solo ejecución)</a></li><li><a href="../article/competition-connect.html">Competición de DeepCharts: únase y conéctese</a></li><li><a href="../article/end-of-day-data.html">Conectar datos históricos (fin de día)</a></li><li><a href="../article/manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li><li class="nav-sub">Solución de problemas</li><li><a href="../article/feed-connected-chart-not-moving.html">Solución: fuente en vivo conectada pero el gráfico no se mueve</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Solución: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Solución: Connection Failed — Verifique el nombre de usuario y la contraseña</a></li><li><a href="../article/fix-bad-server.html">Solución: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Solución: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Solución: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Solución: No se puede cargar la DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Solución: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Solución: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Solución: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Solución: conexión perdida al abrir un gráfico</a></li><li><a href="../article/symbol-subscription-issue.html">Solución: Problema de suscripción de símbolo</a></li><li><a href="../article/app-crashes-saving-feed.html">Solución: la aplicación se cierra al guardar la configuración de la fuente</a></li><li><a href="../article/gaps-in-price.html">Solución: gaps de precio en los gráficos</a></li><li><a href="../article/data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Gráficos y espacio de trabajo <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La ventana de gráfico</a></li><li><a href="../article/price-chart-settings.html">Configuración del gráfico de precios</a></li><li><a href="../article/chart-display-options.html">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</a></li><li><a href="../article/drawing-tools.html">Herramientas de dibujo y anotaciones</a></li><li><a href="../article/templates-workspaces.html">Plantillas y espacios de trabajo</a></li><li><a href="../article/quick-chart-templates.html">Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Vincular ventanas con grupos de color</a></li><li><a href="../article/replay-data.html">Reproducir datos de mercado</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalice el idioma, el tema y los sonidos de notificación</a></li><li><a href="../article/keyboard-shortcuts.html">Cómo configurar atajos de teclado</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Referencia de atajos de teclado</a></li><li><a href="../article/multi-monitor-windows.html">Organizar ventanas en varios monitores (y recuperar ventanas fuera de pantalla)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Ventanas de la plataforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (la cinta)</a></li><li><a href="../article/advanced-dom.html">Ventana Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Ventana de gráfico de perfil (perfiles TPO y de volumen)</a></li><li><a href="../article/scanner-window.html">Escáner de mercado</a></li><li><a href="../article/correlation-viewer.html">Visor de correlación</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading y órdenes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Operar desde el gráfico</a></li><li><a href="../article/trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading en el gráfico (escalera de trading con clics)</a></li><li><a href="../article/depth-of-market.html">Indicador de profundidad de mercado (DOM)</a></li><li><a href="../article/oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Ventana de órdenes</a></li><li><a href="../article/portfolio-wallet.html">Cartera (Wallet)</a></li><li><a href="../article/risk-manager.html">Gestor de riesgos</a></li><li><a href="../article/trade-copier.html">Cómo configurar el Trade Copier</a></li><li><a href="../article/performance-analysis.html">Análisis de rendimiento (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Conceptos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li><li><a href="../article/understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción</a></li><li><a href="../article/understanding-icebergs-absorption.html">Entender los icebergs y la absorción</a></li><li><a href="../article/understanding-vwap.html">Entender el VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Cómo leer un footprint: ejemplos prácticos</a></li><li><a href="../article/glossary.html">Glosario de términos de flujo de órdenes y de la plataforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicadores y análisis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fundamentos de indicadores</li><li><a href="../article/different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li><li><a href="../article/indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li><li class="nav-sub">Indicadores profundos</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Tendencia</li><li><a href="../article/moving-average.html">Media móvil</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">SAR Parabólico</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regresión lineal</a></li><li><a href="../article/regression-channel.html">Canal de regresión</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Canal de Donchian</a></li><li><a href="../article/adx.html">Índice direccional promedio (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Oscilador Aroon</a></li><li class="nav-sub">Momentum y osciladores</li><li><a href="../article/rsi.html">Índice de fuerza relativa (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscilador estocástico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Tasa de cambio (ROC)</a></li><li><a href="../article/cci.html">Índice de canal de mercancías (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Oscilador Awesome</a></li><li><a href="../article/inverse-cyber-cycle.html">Ciclo Cibernético Inverso (Inverse Cyber Cycle)</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilidad y bandas</li><li><a href="../article/bollinger-bands.html">Bandas de Bollinger</a></li><li><a href="../article/keltner-channel.html">Canal de Keltner</a></li><li><a href="../article/atr.html">Rango Verdadero Medio (ATR)</a></li><li><a href="../article/standard-deviation.html">Desviación estándar</a></li><li><a href="../article/vwap-envelopes.html">Envolventes VWAP</a></li><li><a href="../article/adr-target.html">Objetivo de rango diario promedio (ADR Target)</a></li><li class="nav-sub">Volumen y delta</li><li><a href="../article/volume.html">Volumen</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Resaltado de delta %</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Swing de volumen (Volume Swing)</a></li><li><a href="../article/volume-delta-sprint.html">Sprint de volumen/delta (Volume/Delta Sprint)</a></li><li><a href="../article/chaikin-ad.html">Acumulación/Distribución de Chaikin</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Velocidad de la cinta</a></li><li><a href="../article/speed-of-tape-instant.html">Velocidad de la cinta (instantánea)</a></li><li><a href="../article/market-statistics.html">Estadísticas de mercado</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Flujo de órdenes y subasta</li><li><a href="../article/market-profile-tpo.html">Perfil de mercado (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a></li><li><a href="../article/imbalance-rejector.html">Rechazador de Desequilibrios (Imbalance Rejector)</a></li><li><a href="../article/session-imbalance.html">Desequilibrio de sesión</a></li><li><a href="../article/unfinished-auction.html">Subasta sin terminar (Unfinished Auction)</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">POC Dinámico</a></li><li><a href="../article/bar-poc.html">POC de barra</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Niveles y patrones</li><li><a href="../article/pivot-points.html">Puntos pivote</a></li><li><a href="../article/important-levels.html">Niveles importantes</a></li><li><a href="../article/absolute-levels.html">Niveles absolutos</a></li><li><a href="../article/price-movement-levels.html">Niveles de movimiento del precio</a></li><li><a href="../article/session-marker.html">Marcador de sesión</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Detector de gaps (Gap Detector)</a></li><li><a href="../article/fvg-identifier.html">Identificador de FVG (FVG Identifier)</a></li><li><a href="../article/divergence-detector.html">Detector de divergencias</a></li><li><a href="../article/confluence-identifier.html" class="active">Identificador de Confluencias</a></li><li class="nav-sub">Superposiciones de gráfico</li><li><a href="../article/candlestick-bar.html">Barra de velas (Candlestick Bar)</a></li><li><a href="../article/overlay-chart.html">Superposición de gráfico (Overlay Chart)</a></li><li><a href="../article/overlay-symbol.html">Superposición de símbolo (Overlay Symbol)</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Superposición de velas de marco temporal (Overlay Timeframe Candlestick)</a></li><li><a href="../article/overlay-timeframe-highlight.html">Resaltado de marco temporal (Overlay Timeframe Highlight)</a></li><li><a href="../article/shift-candle.html">Vela Shift</a></li><li><a href="../article/text-on-chart.html">Texto en el gráfico</a></li><li><a href="../article/annotations-overlay.html">Superposición de anotaciones</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Datos y base de datos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover de símbolos (cambio de mes de contrato)</a></li><li><a href="../article/delete-market-data.html">Eliminar datos de mercado (métodos en la aplicación y manual)</a></li><li><a href="../article/download-data.html">Volver a descargar datos históricos (herramienta Download Data)</a></li><li><a href="../article/database-optimization.html">Optimización de la base de datos</a></li><li><a href="../article/database-problems.html">Solución: problemas de la base de datos</a></li><li><a href="../article/fix-could-not-find-path.html">Solución: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Solución de problemas y soporte <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Solución: problemas de instalación y requisitos básicos</a></li><li><a href="../article/installation-setup-failed.html">Solución: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Solución: una política de control de aplicaciones bloquea DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Solución: la herramienta de dibujo Rectángulo no funciona</a></li><li><a href="../article/chart-zoom.html">Solución: el zoom del gráfico no funciona</a></li><li><a href="../article/license-issues.html">Solución: problemas de licencia y activación</a></li><li><a href="../article/diagnostic-report.html">Informe de diagnóstico: antes de contactar con soporte</a></li><li><a href="../article/get-help.html">Cómo obtener ayuda (chat, informe de diagnóstico, soporte)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Cuenta y facturación <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Administre sus suscripciones y facturación</a></li><li><a href="../article/move-to-new-computer.html">Mover DeepCharts a un ordenador nuevo</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicadores y análisis</a> › Niveles y patrones</div>
+<div class="article-head"><h1>Identificador de Confluencias</h1>
+<p class="article-desc">Encuentre automáticamente zonas de soporte y resistencia de alta probabilidad donde se alinean niveles del perfil de volumen, giros de precio y retrocesos.</p>
+<div class="meta-row">
+  <span class="badge b-advanced">Advanced</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 7 min read</span>
+  <a class="btn-pdf" href="../pdf/confluence-identifier.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>La mayoría de los niveles fuertes de soporte y resistencia son fuertes porque varias razones independientes señalan el mismo precio: un POC del perfil, un giro anterior, un nivel de retroceso. El Identificador de Confluencias (Confluence Identifier) automatiza ese razonamiento: identifica zonas de soporte y resistencia de alta probabilidad combinando múltiples fuentes de datos de mercado y resaltando los precios donde se alinean.</p>
+<p>Es uno de los indicadores más configurables de DeepCharts, por lo que esta referencia recorre cada grupo de configuración en el orden en que los presenta el diálogo.</p>
+<h2 id="qu-es">Qué es</h2>
+<p>El Identificador de Confluencias detecta áreas de confluencia a partir de tres familias de evidencia:</p>
+<ul>
+<li><strong>Niveles del perfil de volumen</strong>: POC, bordes del Área de Valor, Picos y Valles de hasta tres perfiles Volume By Price independientes.</li>
+<li><strong>Giros de la acción del precio</strong>: máximos y mínimos de giro encontrados por un motor Zig Zag.</li>
+<li><strong>Niveles de retroceso de la tendencia</strong>: retrocesos del 38.2%, 50%, 61.8% y 75% del giro principal.</li>
+</ul>
+<p>Cuando suficientes de estos elementos caen dentro de un rango de precios definido (su sensibilidad en ticks), el indicador resalta ese rango como una zona potencial de soporte o resistencia. Las zonas respaldadas por más confluencias se enfatizan visualmente como más fuertes.</p>
+<p>Si los niveles del perfil son la familia menos familiar, pruebe el perfil de volumen interactivo de abajo: pase el cursor sobre las filas y arrastre el porcentaje del Área de Valor para ver de dónde provienen el POC, el VAH y el VAL:</p>
+<div class="widget-mount" data-widget="volume-profile-lab"></div>
+<h2 id="cu-ndo-usarlo">Cuándo usarlo</h2>
+<ul>
+<li>Para construir un mapa de niveles objetivo: en lugar de elegir niveles a mano, usted define la evidencia y el indicador puntúa cada precio según cuánta evidencia se acumula ahí.</li>
+<li>Para clasificar las zonas por fuerza: una zona con 5 confluencias es una propuesta de trading distinta de una zona con 2 confluencias, y el coloreado lo refleja.</li>
+<li>Para combinar el análisis de perfiles y la acción del precio en una sola vista sin ejecutar media docena de estudios separados.</li>
+<li>Para enmarcar operaciones: las zonas de confluencia son ubicaciones naturales para entradas, stops y objetivos cuando se alinean con su lectura direccional.</li>
+</ul>
+<h2 id="inicio-r-pido">Inicio rápido</h2>
+<ol>
+<li>Abra un gráfico y haga clic en el icono de gráfico de barras en la esquina superior izquierda para abrir el panel <strong>Indicators</strong>.</li>
+<li>Haga clic en <strong>Indicators</strong> para abrir la lista completa <strong>Indicator List</strong>.</li>
+<li>Busque &quot;Confluence Identifier&quot; y haga clic en <strong>+</strong> para añadirlo.</li>
+<li>Haga clic en el icono de engranaje junto al indicador para abrir su configuración. Empiece con moderación: habilite un perfil Volume By Price y los giros Zig Zag, y deje los retrocesos desactivados hasta que se familiarice con el resultado.</li>
+<li>A medida que habilite más fuentes, aumente el <strong>Minimum Number of Confluences</strong> (número mínimo de confluencias) y reduzca la <strong>Tick Sensitivity</strong> (sensibilidad en ticks) para que solo sobrevivan las zonas más significativas. Una configuración de ejemplo de la documentación usa tres perfiles de volumen, giros de precio y retrocesos del último giro con un mínimo de 5 confluencias y una sensibilidad de 3 ticks.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Un gráfico de futuros con el Identificador de Confluencias activo: varias zonas de soporte/resistencia sombreadas con intensidad de color variable, con la zona más fuerte donde se alinean un POC de perfil, un mínimo de giro y un nivel de retroceso</div><div class="s-file">ID: <b class="s-id">dc-es-confluence-identifier-01</b> · save as <code>dc-es-confluence-identifier-01.png</code></div></div></div>
+<h2 id="c-mo-leerlo">Cómo leerlo</h2>
+<ul>
+<li><strong>Cada zona resaltada es un rango de precios donde se alinearon múltiples elementos</strong> dentro de su sensibilidad en ticks. Las zonas por encima del precio actúan como resistencia candidata, las zonas por debajo como soporte candidato.</li>
+<li><strong>El color codifica la fuerza.</strong> La configuración Support &amp; Resistance Colors vincula el color de la zona al número de confluencias, de modo que las zonas más fuertes (más confluencias) destacan: trátelas como los niveles de decisión principales.</li>
+<li><strong>Menos zonas y más amplias frente a más zonas y más estrechas es su compromiso.</strong> Valores más pequeños de <strong>Tick Sensitivity</strong> producen zonas más precisas; valores mayores producen zonas más amplias. Un <strong>Minimum Number of Confluences</strong> más alto genera menos zonas pero más fuertes.</li>
+<li><strong>Las zonas son ubicaciones, no direcciones.</strong> El indicador le dice dónde es probable una reacción, no hacia dónde romperá el precio; combínelo con su lectura de tendencia y de flujo de órdenes.</li>
+</ul>
+<h2 id="referencia-de-configuraci-n">Referencia de configuración</h2>
+<h3 id="configuraci-n-de-datos-data-settings">Configuración de datos (Data Settings)</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Input Data</strong></td>
+<td>Lo que miden los perfiles: <strong>Volume</strong> (volumen negociado en cada nivel de precio) u <strong>Orders</strong> (número de órdenes ejecutadas). Consulte <a href="./different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a>.</td>
+</tr>
+<tr>
+<td><strong>Filter Min</strong></td>
+<td>Umbral mínimo que filtra los valores insignificantes.</td>
+</tr>
+<tr>
+<td><strong>Filter Max</strong></td>
+<td>Umbral máximo; 0 = sin filtro máximo.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuraci-n-de-confluencia-confluence-settings">Configuración de confluencia (Confluence Settings)</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tick Sensitivity</strong></td>
+<td>El rango de precios, en ticks, dentro del cual los elementos cuentan como alineados. Valores más pequeños = zonas más precisas; valores más grandes = zonas más amplias.</td>
+</tr>
+<tr>
+<td><strong>Minimum Number of Confluences</strong></td>
+<td>Cuántos elementos deben alinearse para crear una zona. Valores más altos generan menos zonas pero más fuertes; valores más bajos producen zonas más frecuentes.</td>
+</tr>
+<tr>
+<td><strong>Starting Mode</strong></td>
+<td>Dónde comienza el cálculo: <strong>Zig Zag</strong> (usa giros de precio según la lógica Zig Zag) o <strong>Date</strong> (comienza desde una fecha específica).</td>
+</tr>
+<tr>
+<td><strong>Start Date</strong></td>
+<td>La fecha de inicio, usada cuando el modo <strong>Date</strong> está seleccionado.</td>
+</tr>
+<tr>
+<td><strong>Absolute % of Reversal for Zig Zag Trend</strong></td>
+<td>La reversión mínima del precio usada para identificar los puntos de giro que determinan el inicio del cálculo.</td>
+</tr>
+<tr>
+<td><strong>Number of Swings</strong></td>
+<td>Cuántos giros se consideran al determinar el punto de inicio del cálculo.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuraci-n-de-giros-zig-zag-zig-zag-swing-settings">Configuración de giros Zig Zag (Zig Zag Swing Settings)</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>% Absolute Variation for Zig Zag Inversion</strong></td>
+<td>El porcentaje de reversión del precio usado para identificar los giros que alimentan el cálculo de confluencias.</td>
+</tr>
+<tr>
+<td><strong>Enable Zig Zag Swing</strong></td>
+<td>Incluye los máximos y mínimos de giro como elementos de confluencia.</td>
+</tr>
+<tr>
+<td><strong>Include Swings in the First Half</strong></td>
+<td>Habilitado: se incluyen los puntos de giro más antiguos. Deshabilitado: solo se consideran los giros recientes.</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Hay dos Zig Zags en este indicador y cumplen funciones diferentes. El primero (en Confluence Settings) se usa solo para determinar la fecha de inicio del cálculo y puede usar un porcentaje mayor. El segundo (aquí) identifica los giros usados para las confluencias y debe usar un <strong>porcentaje más pequeño</strong> para que se incluyan los giros menores.</p>
+</blockquote>
+<h3 id="perfiles-volume-by-price">Perfiles Volume By Price</h3>
+<p>Se pueden habilitar hasta tres perfiles Volume By Price independientes, cada uno con su propio bloque:</p>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Activa o desactiva este perfil.</td>
+</tr>
+<tr>
+<td><strong>Profile Settings</strong></td>
+<td>Tipo de perfil (Daily, Weekly, Monthly o Composite) más el agrupamiento de ticks y los umbrales de volumen.</td>
+</tr>
+<tr>
+<td><strong>Enablements</strong></td>
+<td>Qué elementos del perfil participan en la confluencia: POC, Área de Valor, Picos, Valles, Desequilibrios de delta.</td>
+</tr>
+<tr>
+<td><strong>Visual Appearance</strong></td>
+<td>Colores, grosor y estilo de línea para los niveles de este perfil.</td>
+</tr>
+<tr>
+<td><strong>Include by Number</strong></td>
+<td>Alterna entre un número fijo de perfiles recientes y todos los perfiles desde la fecha de inicio.</td>
+</tr>
+<tr>
+<td><strong>Number of Profiles</strong></td>
+<td>Cuántos perfiles recientes se usan cuando la opción fija está habilitada.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="activaci-n-de-retrocesos-de-tendencia-trend-retracement-enables">Activación de retrocesos de tendencia (Trend Retracement Enables)</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Retracements</strong></td>
+<td>Añade los niveles de retroceso (38.2%, 50%, 61.8%, 75%) del giro principal como elementos de confluencia.</td>
+</tr>
+<tr>
+<td><strong>Exclude Previous Retracements</strong></td>
+<td>Habilitado: solo se usan los retrocesos del giro más reciente. Deshabilitado: también se incluyen los retrocesos anteriores.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuraci-n-de-desarrollo-developing-settings">Configuración de desarrollo (Developing Settings)</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Zig Zag line display</strong></td>
+<td>Muestra las líneas Zig Zag en el gráfico, con colores personalizables para giros alcistas y bajistas, para que pueda ver la estructura de mercado con la que trabaja el indicador.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="colores-de-soporte-y-resistencia-support-amp-resistance-colors">Colores de soporte y resistencia (Support &amp; Resistance Colors)</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Zone colors by confluence count</strong></td>
+<td>Establece los colores de las zonas según cuántas confluencias respaldan la zona, de modo que las zonas más fuertes se enfatizan visualmente.</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">El diálogo de configuración del Identificador de Confluencias mostrando el grupo Confluence Settings (Tick Sensitivity, Minimum Number of Confluences, Starting Mode) con los tres bloques de perfiles Volume By Price contraídos debajo</div><div class="s-file">ID: <b class="s-id">dc-es-confluence-identifier-02</b> · save as <code>dc-es-confluence-identifier-02.png</code></div></div></div>
+<h2 id="consejos-y-errores-comunes">Consejos y errores comunes</h2>
+<ul>
+<li><strong>Escale los umbrales con la evidencia.</strong> A medida que habilita más elementos (varios VBP, giros, retrocesos), aumente el <strong>Minimum Number of Confluences</strong> y reduzca la <strong>Tick Sensitivity</strong>; de lo contrario, casi cada precio califica como zona y la herramienta deja de discriminar.</li>
+<li><strong>Configure bien los dos porcentajes de Zig Zag.</strong> Una mala configuración común es usar el mismo porcentaje para ambos: el Zig Zag de la fecha de inicio debe ser más grueso (% mayor) y el Zig Zag de giros más fino (% menor) para que los giros menores puedan contribuir a las confluencias.</li>
+<li><strong>Despeje el gráfico con indicadores de perfil separados.</strong> Para un gráfico más limpio, puede desactivar aquí las líneas de VBP y mostrar los perfiles de volumen con indicadores separados como <a href="./deep-profile.html">Deep Profile (Perfil de volumen / delta)</a>: las zonas de confluencia se siguen calculando a partir de los elementos habilitados.</li>
+<li><strong>Valide las zonas contra el concepto.</strong> Si no está seguro de por qué un POC o un borde del Área de Valor debería actuar como soporte, lea primero <a href="./understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a>: el indicador es tan útil como su interpretación de la evidencia que acumula.</li>
+</ul>
+<h2 id="art-culos-relacionados">Artículos relacionados</h2>
+<ul>
+<li><a href="./understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li>
+<li><a href="./deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></li>
+<li><a href="./zig-zag.html">Zig Zag</a></li>
+<li><a href="./swing-point.html">Swing Point</a></li>
+<li><a href="./different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li>
+<li><a href="./indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./divergence-detector.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Detector de divergencias</div></a><a class="next" href="./candlestick-bar.html"><div class="pn-lbl">Next →</div><div class="pn-title">Barra de velas (Candlestick Bar)</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#qu-es">Qué es</a></li><li class="lv2"><a href="#cu-ndo-usarlo">Cuándo usarlo</a></li><li class="lv2"><a href="#inicio-r-pido">Inicio rápido</a></li><li class="lv2"><a href="#c-mo-leerlo">Cómo leerlo</a></li><li class="lv2"><a href="#referencia-de-configuraci-n">Referencia de configuración</a></li><li class="lv3"><a href="#configuraci-n-de-datos-data-settings">Configuración de datos (Data Settings)</a></li><li class="lv3"><a href="#configuraci-n-de-confluencia-confluence-settings">Configuración de confluencia (Confluence Settings)</a></li><li class="lv3"><a href="#configuraci-n-de-giros-zig-zag-zig-zag-swing-settings">Configuración de giros Zig Zag (Zig Zag Swing Settings)</a></li><li class="lv3"><a href="#perfiles-volume-by-price">Perfiles Volume By Price</a></li><li class="lv3"><a href="#activaci-n-de-retrocesos-de-tendencia-trend-retracement-enables">Activación de retrocesos de tendencia (Trend Retracement Enables)</a></li><li class="lv3"><a href="#configuraci-n-de-desarrollo-developing-settings">Configuración de desarrollo (Developing Settings)</a></li><li class="lv3"><a href="#colores-de-soporte-y-resistencia-support-amp-resistance-colors">Colores de soporte y resistencia (Support &amp;amp; Resistance Colors)</a></li><li class="lv2"><a href="#consejos-y-errores-comunes">Consejos y errores comunes</a></li><li class="lv2"><a href="#art-culos-relacionados">Artículos relacionados</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-es.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

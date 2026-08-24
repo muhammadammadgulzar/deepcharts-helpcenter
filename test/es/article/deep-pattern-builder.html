@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Deep Pattern Builder — Centro de Ayuda de DeepCharts</title>
+<meta name="description" content="Construya lógica de trading personalizada a partir de condiciones relacionales sobre precio, volumen, delta y otros indicadores, y luego pruébela con el motor de simulación integrado.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/quick-start-first-trade.html">Guía rápida</a><a href="../article/get-help.html">Soporte</a><a class="kb-switch" href="../../es/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/deep-pattern-builder.html">English</a><a class="lang-item" href="../../it/article/deep-pattern-builder.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primeros pasos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Bienvenido a DeepCharts: recorrido por la plataforma</a></li><li><a href="../article/system-requirements.html">Requisitos del sistema</a></li><li><a href="../article/install-deepcharts.html">Cómo instalar DeepCharts y activar su licencia</a></li><li><a href="../article/free-delayed-data-feed.html">Cómo usar la fuente de datos gratuita con 15 minutos de retraso</a></li><li><a href="../article/buy-data-feed.html">Cómo comprar una fuente de datos y obtener sus credenciales</a></li><li><a href="../article/first-chart.html">Abra su primer gráfico</a></li><li><a href="../article/simulation-accounts.html">Cuentas de trading y simulación</a></li><li><a href="../article/quick-start-first-trade.html">Inicio rápido: de la instalación a su primera operación</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Conexiones y fuentes de datos <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configuración inicial</li><li><a href="../article/compatibility-guide.html">Brókers, empresas prop y fuentes de datos compatibles</a></li><li><a href="../article/connect-data-feed.html">Cómo conectar una fuente de datos (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: suscribir bolsas y asignar su fuente de datos</a></li><li><a href="../article/sign-market-data-agreement.html">Firme su acuerdo de datos de mercado</a></li><li><a href="../article/connect-dxfeed.html">Cómo conectar una fuente de datos dxFeed</a></li><li><a href="../article/connect-rithmic.html">Cómo conectar una fuente de datos de Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Conectar Rithmic mediante el plugin de RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Conecte cualquier cuenta de empresa prop de Rithmic (tabla de servidores)</a></li><li><a href="../article/connect-apex.html">Cómo conectar Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Cómo conectar una cuenta dxFeed de empresa prop (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Cómo conectar CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Cómo conectar Interactive Brokers (solo ejecución)</a></li><li><a href="../article/competition-connect.html">Competición de DeepCharts: únase y conéctese</a></li><li><a href="../article/end-of-day-data.html">Conectar datos históricos (fin de día)</a></li><li><a href="../article/manage-feed-connections.html">Administrar y cambiar entre conexiones de fuente de datos</a></li><li class="nav-sub">Solución de problemas</li><li><a href="../article/feed-connected-chart-not-moving.html">Solución: fuente en vivo conectada pero el gráfico no se mueve</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Solución: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Solución: Connection Failed — Verifique el nombre de usuario y la contraseña</a></li><li><a href="../article/fix-bad-server.html">Solución: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Solución: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Solución: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Solución: No se puede cargar la DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Solución: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Solución: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Solución: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Solución: conexión perdida al abrir un gráfico</a></li><li><a href="../article/symbol-subscription-issue.html">Solución: Problema de suscripción de símbolo</a></li><li><a href="../article/app-crashes-saving-feed.html">Solución: la aplicación se cierra al guardar la configuración de la fuente</a></li><li><a href="../article/gaps-in-price.html">Solución: gaps de precio en los gráficos</a></li><li><a href="../article/data-delayed-lagging.html">Solución: gráficos con retraso o datos demorados (lista de verificación)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Gráficos y espacio de trabajo <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La ventana de gráfico</a></li><li><a href="../article/price-chart-settings.html">Configuración del gráfico de precios</a></li><li><a href="../article/chart-display-options.html">Opciones de visualización del gráfico (estilos de barra, sesiones, cuenta regresiva)</a></li><li><a href="../article/drawing-tools.html">Herramientas de dibujo y anotaciones</a></li><li><a href="../article/templates-workspaces.html">Plantillas y espacios de trabajo</a></li><li><a href="../article/quick-chart-templates.html">Plantillas rápidas de gráfico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Vincular ventanas con grupos de color</a></li><li><a href="../article/replay-data.html">Reproducir datos de mercado</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalice el idioma, el tema y los sonidos de notificación</a></li><li><a href="../article/keyboard-shortcuts.html">Cómo configurar atajos de teclado</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Referencia de atajos de teclado</a></li><li><a href="../article/multi-monitor-windows.html">Organizar ventanas en varios monitores (y recuperar ventanas fuera de pantalla)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Ventanas de la plataforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (la cinta)</a></li><li><a href="../article/advanced-dom.html">Ventana Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Ventana de gráfico de perfil (perfiles TPO y de volumen)</a></li><li><a href="../article/scanner-window.html">Escáner de mercado</a></li><li><a href="../article/correlation-viewer.html">Visor de correlación</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading y órdenes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Operar desde el gráfico</a></li><li><a href="../article/trading-panel-reference.html">Referencia del panel de trading: cada botón y campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading en el gráfico (escalera de trading con clics)</a></li><li><a href="../article/depth-of-market.html">Indicador de profundidad de mercado (DOM)</a></li><li><a href="../article/oco-strategies.html">Estrategias OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Ventana de órdenes</a></li><li><a href="../article/portfolio-wallet.html">Cartera (Wallet)</a></li><li><a href="../article/risk-manager.html">Gestor de riesgos</a></li><li><a href="../article/trade-copier.html">Cómo configurar el Trade Copier</a></li><li><a href="../article/performance-analysis.html">Análisis de rendimiento (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Conceptos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li><li><a href="../article/understanding-volume-profile.html">Entender el perfil de volumen: POC, área de valor, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Entender la teoría de subastas: desequilibrio, subastas sin terminar, absorción</a></li><li><a href="../article/understanding-icebergs-absorption.html">Entender los icebergs y la absorción</a></li><li><a href="../article/understanding-vwap.html">Entender el VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Entender la estructura del mercado y las sesiones (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Cómo leer un footprint: ejemplos prácticos</a></li><li><a href="../article/glossary.html">Glosario de términos de flujo de órdenes y de la plataforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicadores y análisis <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fundamentos de indicadores</li><li><a href="../article/different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li><li><a href="../article/indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li><li class="nav-sub">Indicadores profundos</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Perfil de volumen / delta)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html" class="active">Deep Pattern Builder</a></li><li class="nav-sub">Tendencia</li><li><a href="../article/moving-average.html">Media móvil</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">SAR Parabólico</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regresión lineal</a></li><li><a href="../article/regression-channel.html">Canal de regresión</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Canal de Donchian</a></li><li><a href="../article/adx.html">Índice direccional promedio (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Oscilador Aroon</a></li><li class="nav-sub">Momentum y osciladores</li><li><a href="../article/rsi.html">Índice de fuerza relativa (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscilador estocástico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Tasa de cambio (ROC)</a></li><li><a href="../article/cci.html">Índice de canal de mercancías (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Oscilador Awesome</a></li><li><a href="../article/inverse-cyber-cycle.html">Ciclo Cibernético Inverso (Inverse Cyber Cycle)</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilidad y bandas</li><li><a href="../article/bollinger-bands.html">Bandas de Bollinger</a></li><li><a href="../article/keltner-channel.html">Canal de Keltner</a></li><li><a href="../article/atr.html">Rango Verdadero Medio (ATR)</a></li><li><a href="../article/standard-deviation.html">Desviación estándar</a></li><li><a href="../article/vwap-envelopes.html">Envolventes VWAP</a></li><li><a href="../article/adr-target.html">Objetivo de rango diario promedio (ADR Target)</a></li><li class="nav-sub">Volumen y delta</li><li><a href="../article/volume.html">Volumen</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Resaltado de delta %</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Swing de volumen (Volume Swing)</a></li><li><a href="../article/volume-delta-sprint.html">Sprint de volumen/delta (Volume/Delta Sprint)</a></li><li><a href="../article/chaikin-ad.html">Acumulación/Distribución de Chaikin</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Velocidad de la cinta</a></li><li><a href="../article/speed-of-tape-instant.html">Velocidad de la cinta (instantánea)</a></li><li><a href="../article/market-statistics.html">Estadísticas de mercado</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Flujo de órdenes y subasta</li><li><a href="../article/market-profile-tpo.html">Perfil de mercado (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a></li><li><a href="../article/imbalance-rejector.html">Rechazador de Desequilibrios (Imbalance Rejector)</a></li><li><a href="../article/session-imbalance.html">Desequilibrio de sesión</a></li><li><a href="../article/unfinished-auction.html">Subasta sin terminar (Unfinished Auction)</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">POC Dinámico</a></li><li><a href="../article/bar-poc.html">POC de barra</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Niveles y patrones</li><li><a href="../article/pivot-points.html">Puntos pivote</a></li><li><a href="../article/important-levels.html">Niveles importantes</a></li><li><a href="../article/absolute-levels.html">Niveles absolutos</a></li><li><a href="../article/price-movement-levels.html">Niveles de movimiento del precio</a></li><li><a href="../article/session-marker.html">Marcador de sesión</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Detector de gaps (Gap Detector)</a></li><li><a href="../article/fvg-identifier.html">Identificador de FVG (FVG Identifier)</a></li><li><a href="../article/divergence-detector.html">Detector de divergencias</a></li><li><a href="../article/confluence-identifier.html">Identificador de Confluencias</a></li><li class="nav-sub">Superposiciones de gráfico</li><li><a href="../article/candlestick-bar.html">Barra de velas (Candlestick Bar)</a></li><li><a href="../article/overlay-chart.html">Superposición de gráfico (Overlay Chart)</a></li><li><a href="../article/overlay-symbol.html">Superposición de símbolo (Overlay Symbol)</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Superposición de velas de marco temporal (Overlay Timeframe Candlestick)</a></li><li><a href="../article/overlay-timeframe-highlight.html">Resaltado de marco temporal (Overlay Timeframe Highlight)</a></li><li><a href="../article/shift-candle.html">Vela Shift</a></li><li><a href="../article/text-on-chart.html">Texto en el gráfico</a></li><li><a href="../article/annotations-overlay.html">Superposición de anotaciones</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Datos y base de datos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover de símbolos (cambio de mes de contrato)</a></li><li><a href="../article/delete-market-data.html">Eliminar datos de mercado (métodos en la aplicación y manual)</a></li><li><a href="../article/download-data.html">Volver a descargar datos históricos (herramienta Download Data)</a></li><li><a href="../article/database-optimization.html">Optimización de la base de datos</a></li><li><a href="../article/database-problems.html">Solución: problemas de la base de datos</a></li><li><a href="../article/fix-could-not-find-path.html">Solución: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Solución de problemas y soporte <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Solución: problemas de instalación y requisitos básicos</a></li><li><a href="../article/installation-setup-failed.html">Solución: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Solución: una política de control de aplicaciones bloquea DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Solución: la herramienta de dibujo Rectángulo no funciona</a></li><li><a href="../article/chart-zoom.html">Solución: el zoom del gráfico no funciona</a></li><li><a href="../article/license-issues.html">Solución: problemas de licencia y activación</a></li><li><a href="../article/diagnostic-report.html">Informe de diagnóstico: antes de contactar con soporte</a></li><li><a href="../article/get-help.html">Cómo obtener ayuda (chat, informe de diagnóstico, soporte)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Cuenta y facturación <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Administre sus suscripciones y facturación</a></li><li><a href="../article/move-to-new-computer.html">Mover DeepCharts a un ordenador nuevo</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicadores y análisis</a> › Indicadores profundos</div>
+<div class="article-head"><h1>Deep Pattern Builder</h1>
+<p class="article-desc">Construya lógica de trading personalizada a partir de condiciones relacionales sobre precio, volumen, delta y otros indicadores, y luego pruébela con el motor de simulación integrado.</p>
+<div class="meta-row">
+  <span class="badge b-advanced">Advanced</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 7 min read</span>
+  <a class="btn-pdf" href="../pdf/deep-pattern-builder.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Deep Pattern Builder es el indicador más avanzado de la suite de DeepCharts. Le permite construir lógica de trading personalizada a partir de condiciones relacionales — comparaciones como A + B &gt; C + D sobre valores de vela, volumen, delta, referencias de POC o salidas de otros indicadores — y luego ejecutar backtests automatizados sobre esa lógica con el motor de simulación integrado.</p>
+<p>En la práctica son dos herramientas en una: un motor de señales que traza marcadores o resaltados de fondo allí donde sus condiciones son verdaderas, y un backtester que convierte esas señales en entradas simuladas con stops, objetivos y lógica de trailing.</p>
+<h2 id="qu-es">Qué es</h2>
+<p>Cada condición del constructor admite hasta cuatro entradas (<strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong>), une A con B y C con D mediante operadores matemáticos, y compara el bloque AB con el bloque CD mediante un operador lógico. Las condiciones pueden combinarse con lógica AND/OR, filtrarse con un filtro de desequilibrio integrado, visualizarse en el gráfico, conectarse a alertas y alimentar un modelo simulado de entrada/salida para backtesting.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Gráfico con Deep Pattern Builder aplicado: marcadores de señal trazados en las velas donde se activaron las condiciones personalizadas, con un par de barras con fondo resaltado visibles</div><div class="s-file">ID: <b class="s-id">dc-es-deep-pattern-builder-01</b> · save as <code>dc-es-deep-pattern-builder-01.png</code></div></div></div>
+<h2 id="cu-ndo-usarlo">Cuándo usarlo</h2>
+<ul>
+<li>Tiene una idea repetible (&quot;cierre por encima del POC con delta positivo&quot;) y quiere que la plataforma la marque en cada barra, en vivo e históricamente.</li>
+<li>Quiere referenciar valores de otros indicadores (por ejemplo una media móvil) dentro de sus condiciones.</li>
+<li>Quiere evidencia estadística: el backtest integrado simula entradas, stops y objetivos sobre datos históricos.</li>
+<li>Quiere alertas sobre lógica de múltiples partes que ningún indicador estándar cubre por sí solo.</li>
+</ul>
+<h2 id="inicio-r-pido">Inicio rápido</h2>
+<ol>
+<li>Aplique primero el indicador <strong>Deep Trades</strong> al gráfico: el flujo de trabajo del constructor depende de él (consulte <a href="./deep-trades.html">Deep Trades</a>).</li>
+<li>Haga clic en el icono <strong>Indicator</strong>, busque <strong>Deep Pattern Builder</strong> y haga clic en <strong>+</strong> para añadirlo.</li>
+<li>Haga clic en el icono <strong>Settings</strong> junto a Deep Pattern Builder.</li>
+<li>Construya una primera condición. Ejemplo — &quot;cierre con delta positivo por encima de la apertura&quot;: <strong>Condition 1</strong>: Input A = <strong>Reference → Close</strong>, operador lógico (Logical Operator) <strong>&gt;</strong>, Input C = <strong>Reference → Open</strong>. <strong>Condition 2</strong>: Input A = <strong>Reference → Delta Volume</strong>, operador lógico <strong>&gt;</strong>, Input C = <strong>Constant → 0</strong>. Combine con <strong>AND (Simple)</strong>.</li>
+<li>Habilite <strong>Calculate on Close</strong> para que las señales se evalúen solo cuando la vela se completa, sin parpadeo intrabarra.</li>
+<li>En <strong>Plot Settings</strong>, elija un <strong>Plot Type</strong> (empiece con <strong>Marker</strong>) y una ubicación de <strong>Plot Price</strong>.</li>
+<li>Haga clic en <strong>Apply and Save</strong> y compruebe que aparecen marcadores en las barras históricas donde la lógica es verdadera.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Diálogo de configuración de Deep Pattern Builder mostrando una condición habilitada con Input A establecido en Reference Close, el menú desplegable Logical Operator, Input C establecido en Reference Open, y el selector Combine Mode debajo</div><div class="s-file">ID: <b class="s-id">dc-es-deep-pattern-builder-02</b> · save as <code>dc-es-deep-pattern-builder-02.png</code></div></div></div>
+<h2 id="c-mo-leerlo">Cómo leerlo</h2>
+<p>Una señal (marcador o fondo resaltado) significa que cada parte de su lógica combinada se evaluó como verdadera en esa barra, nada más. La herramienta traza su idea; juzgar la idea es la función del backtest.</p>
+<ul>
+<li><strong>Los marcadores</strong> se colocan en el <strong>Plot Price</strong> elegido (High = por encima de la vela, Low = por debajo, Current = en el cierre, Mid Price = centro de la mecha), coloreados por lado mediante los colores del subgraph.</li>
+<li><strong>Señales que parpadean durante una barra en vivo</strong> significan que la condición oscila intrabarra: habilite <strong>Calculate on Close</strong> si solo quiere señales confirmadas.</li>
+<li><strong>Informe de backtest</strong>: tras ejecutar un backtest, el informe muestra cómo rindieron las entradas simuladas bajo su modelo de stop/objetivo. Itere: ajuste las condiciones o la configuración de riesgo, vuelva a ejecutar y compare con informes guardados anteriores.</li>
+</ul>
+<h2 id="referencia-de-configuraci-n">Referencia de configuración</h2>
+<p>Agrupada como en el diálogo de configuración.</p>
+<h3 id="condici-n">Condición</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Activa la condición.</td>
+</tr>
+<tr>
+<td><strong>Inputs A, B, C, D</strong></td>
+<td>Hasta cuatro ranuras de entrada por condición; B y D son opcionales (establezca las ranuras no usadas en <strong>Unused</strong>).</td>
+</tr>
+<tr>
+<td><strong>Math Operator 1</strong></td>
+<td>+, −, ×, / entre las entradas A y B.</td>
+</tr>
+<tr>
+<td><strong>Math Operator 2</strong></td>
+<td>+, −, ×, / entre las entradas C y D.</td>
+</tr>
+<tr>
+<td><strong>Logical Operator</strong></td>
+<td>Compara el bloque AB con el bloque CD: &gt;, &gt;=, =, &lt;&gt; (distinto), &lt;, &lt;=.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tipos-de-entrada">Tipos de entrada</h3>
+<table>
+<thead>
+<tr>
+<th>Input Type</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Unused</strong></td>
+<td>Deshabilita la ranura de entrada.</td>
+</tr>
+<tr>
+<td><strong>Reference</strong></td>
+<td>Componentes de la vela: Open, Close, High, Low, Bid Volume, Bid NT, Ask Volume, Ask NT, Total Volume, Total NT, Delta Volume, Delta NT, Low–High Ticks, Open–Close Ticks, POC Price %, POC Total Volume, POC on Shadow, Cumulative Delta Volume.</td>
+</tr>
+<tr>
+<td><strong>Indicator</strong></td>
+<td>Valores en vivo de otro indicador aplicado: requiere el <strong>Indicator ID</strong> de ese indicador y el <strong>Subgraph ID</strong> (la línea de valor específica a leer).</td>
+</tr>
+<tr>
+<td><strong>Constant</strong></td>
+<td>Un valor numérico fijo que usted escribe.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Opción</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Previous Bar</strong></td>
+<td>Toma el valor de la entrada de la vela anterior en lugar de la actual: habilita lógica barra a barra como &quot;delta creciente&quot; (A = Delta Volume &gt; B = Delta Volume, Previous Bar).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="modos-de-combinaci-n">Modos de combinación</h3>
+<table>
+<thead>
+<tr>
+<th>Modo</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OR (Simple)</strong></td>
+<td>Basta con que una sola condición sea verdadera para activar la señal.</td>
+</tr>
+<tr>
+<td><strong>AND (Simple)</strong></td>
+<td>Todas las condiciones deben ser verdaderas.</td>
+</tr>
+<tr>
+<td><strong>AND + OR (Advanced)</strong></td>
+<td>Agrupaciones anidadas como (Condición 1 OR Condición 2) AND (Condición 3 OR Condición 4).</td>
+</tr>
+<tr>
+<td><strong>Calculate on Close</strong></td>
+<td>Evalúa las condiciones solo tras el cierre de la vela: sin parpadeo intrabarra.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="filtro-de-desequilibrio">Filtro de desequilibrio</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Imbalance filter</strong></td>
+<td>Un filtro integrado cuya configuración refleja la del indicador <a href="./imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a>: restringe las señales a las barras que también cumplen los criterios de desequilibrio.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuraci-n-de-trazado-plot-settings">Configuración de trazado (Plot Settings)</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Plot Type</strong></td>
+<td><strong>Marker</strong> (solo marcador de señal), <strong>Background</strong> (resaltado del fondo de la vela) o <strong>Series &amp; Background</strong> (ambos).</td>
+</tr>
+<tr>
+<td><strong>Days to Load</strong></td>
+<td>Cuántos días históricos calcular para las señales.</td>
+</tr>
+<tr>
+<td><strong>Plot Price</strong></td>
+<td>Ubicación del marcador: <strong>High</strong> (encima de la vela), <strong>Low</strong> (debajo de la vela), <strong>Current</strong> (en el cierre), <strong>Mid Price</strong> (centro de la mecha).</td>
+</tr>
+<tr>
+<td><strong>Color / Opacity</strong></td>
+<td>Color del marcador o del fondo y transparencia del fondo.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="configuraci-n-de-alertas">Configuración de alertas</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Alert selection</strong></td>
+<td>Las alertas deben crearse primero en <strong>Options → Add Alert</strong>; solo entonces aparecen en la lista de alertas del constructor para su selección.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="simulaci-n-backtesting">Simulación (backtesting)</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Activa el modo de simulación.</td>
+</tr>
+<tr>
+<td><strong>Entry Type</strong></td>
+<td><strong>Market</strong> (entrada inmediata), <strong>Half Bar</strong>, o <strong>Ticks from Close</strong> (orden de límite a X ticks del cierre de la vela).</td>
+</tr>
+<tr>
+<td><strong>Side</strong></td>
+<td><strong>Buy</strong> o <strong>Sell</strong>.</td>
+</tr>
+<tr>
+<td><strong>Allow Multiple Entries</strong></td>
+<td>Permite posiciones simultáneas.</td>
+</tr>
+<tr>
+<td><strong>Entry Expiration (Bars)</strong></td>
+<td>Cuántas barras permanece válida una entrada pendiente.</td>
+</tr>
+<tr>
+<td><strong>Stop (Ticks)</strong></td>
+<td>Distancia fija del stop-loss.</td>
+</tr>
+<tr>
+<td><strong>Trailing Stop — Enable / Trigger (Ticks) / Offset (Ticks)</strong></td>
+<td>Activa un trailing stop; Trigger es el umbral de beneficio antes de activarse, Offset la distancia que mantiene detrás del precio.</td>
+</tr>
+<tr>
+<td><strong>Targets</strong></td>
+<td>Múltiples objetivos de beneficio en ticks.</td>
+</tr>
+<tr>
+<td><strong>Move to Break Even (B/E)</strong></td>
+<td>Mueve el stop al precio de entrada cuando se alcanza un objetivo.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="subgraph">Subgraph</h3>
+<table>
+<thead>
+<tr>
+<th>Configuración</th>
+<th>Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Color / Color 2</strong></td>
+<td>Colores de marcador del lado bid y del lado ask.</td>
+</tr>
+<tr>
+<td><strong>Subgraph style</strong></td>
+<td>Selección del estilo del marcador.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="c-mo-ejecutar-un-backtest">Cómo ejecutar un backtest</h2>
+<ol>
+<li>Configure las condiciones, el trazado y la simulación, y luego haga clic en <strong>Apply and Save</strong>.</li>
+<li>Haga clic con el botón derecho en el gráfico.</li>
+<li>Seleccione <strong>Autotrading → Execute Backtest</strong>.</li>
+<li>Revise el informe. Mediante el clic derecho también puede borrar resultados, ver backtests anteriores y guardar informes.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Menú contextual de clic derecho en el gráfico con Autotrading expandido y Execute Backtest resaltado, con un informe de backtest completado visible</div><div class="s-file">ID: <b class="s-id">dc-es-deep-pattern-builder-03</b> · save as <code>dc-es-deep-pattern-builder-03.png</code></div></div></div>
+<h2 id="consejos-y-errores-comunes">Consejos y errores comunes</h2>
+<ul>
+<li><strong>¿Falta la opción de backtest en el clic derecho?</strong> Siga el flujo de trabajo completo en orden: Deep Trades aplicado, Deep Pattern Builder añadido y configurado, <strong>Apply and Save</strong> pulsado; luego clic derecho → <strong>Autotrading → Execute Backtest</strong>.</li>
+<li><strong>¿La alerta no aparece en la lista del constructor?</strong> Las alertas deben existir antes de que el constructor pueda usarlas: créelas primero en <strong>Options → Add Alert</strong>.</li>
+<li><strong>¿Las señales parpadean intrabarra?</strong> Habilite <strong>Calculate on Close</strong>.</li>
+<li><strong>¿Referenciar otro indicador no devuelve nada?</strong> Compruebe tanto el <strong>Indicator ID</strong> como el <strong>Subgraph ID</strong>: el Subgraph ID selecciona qué línea de valor de ese indicador se lee.</li>
+<li><strong>Empiece con una sola condición.</strong> Verifique que cada condición se traza con sentido por sí sola antes de combinarla con AND/OR: depurar lógica anidada con cuatro entradas por condición es mucho más difícil.</li>
+<li><strong>La lógica barra a barra necesita Previous Bar.</strong> &quot;Delta creciente&quot; es Delta Volume actual &gt; Delta Volume con <strong>Previous Bar</strong> habilitado en la segunda entrada, no dos condiciones separadas.</li>
+</ul>
+<h2 id="art-culos-relacionados">Artículos relacionados</h2>
+<ul>
+<li><a href="./deep-trades.html">Deep Trades</a></li>
+<li><a href="./imbalance-tracker.html">Rastreador de Desequilibrios (Imbalance Tracker)</a></li>
+<li><a href="./orderflow-101.html">Flujo de órdenes 101: bid, ask, agresor y delta</a></li>
+<li><a href="./different-types-of-input.html">Diferentes tipos de datos de entrada para indicadores</a></li>
+<li><a href="./indicator-layout.html">Cómo cambiar la disposición de los indicadores</a></li>
+<li><a href="./dynamic-poc.html">POC Dinámico</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./deep-m-effort.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Deep-M Effort (NQ)</div></a><a class="next" href="./moving-average.html"><div class="pn-lbl">Next →</div><div class="pn-title">Media móvil</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#qu-es">Qué es</a></li><li class="lv2"><a href="#cu-ndo-usarlo">Cuándo usarlo</a></li><li class="lv2"><a href="#inicio-r-pido">Inicio rápido</a></li><li class="lv2"><a href="#c-mo-leerlo">Cómo leerlo</a></li><li class="lv2"><a href="#referencia-de-configuraci-n">Referencia de configuración</a></li><li class="lv3"><a href="#condici-n">Condición</a></li><li class="lv3"><a href="#tipos-de-entrada">Tipos de entrada</a></li><li class="lv3"><a href="#modos-de-combinaci-n">Modos de combinación</a></li><li class="lv3"><a href="#filtro-de-desequilibrio">Filtro de desequilibrio</a></li><li class="lv3"><a href="#configuraci-n-de-trazado-plot-settings">Configuración de trazado (Plot Settings)</a></li><li class="lv3"><a href="#configuraci-n-de-alertas">Configuración de alertas</a></li><li class="lv3"><a href="#simulaci-n-backtesting">Simulación (backtesting)</a></li><li class="lv3"><a href="#subgraph">Subgraph</a></li><li class="lv2"><a href="#c-mo-ejecutar-un-backtest">Cómo ejecutar un backtest</a></li><li class="lv2"><a href="#consejos-y-errores-comunes">Consejos y errores comunes</a></li><li class="lv2"><a href="#art-culos-relacionados">Artículos relacionados</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-es.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

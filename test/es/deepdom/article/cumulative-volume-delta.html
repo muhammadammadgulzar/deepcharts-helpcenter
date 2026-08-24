@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>CVD (delta de volumen acumulado) — Centro de Ayuda de DeepDOM</title>
+<meta name="description" content="El CVD (delta de volumen acumulado) muestra el delta acumulado tick a tick durante un período definido por el usuario, midiendo la diferencia entre el volumen de compras a mercado y ventas a mercado para revelar una presión compradora o vendedora sostenida.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/installation-and-first-configuration.html">Primeros pasos</a><a href="../../../es/article/get-help.html">Soporte</a><a class="kb-switch" href="../../../es/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/cumulative-volume-delta.html">English</a><a class="lang-item" href="../../../it/deepdom/article/cumulative-volume-delta.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemas comunes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemas de instalación</a></li><li><a href="../article/licence-issues.html">Problemas de licencia</a></li><li><a href="../article/symbol-subscription-issues.html">Problemas de suscripción de símbolos</a></li><li><a href="../article/cache-issues-deepdom.html">Problemas de caché</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Cómo hacer <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Instalación y primera configuración</a></li><li><a href="../article/general-settings.html">Configuración general</a></li><li><a href="../article/how-to-add-a-new-connection.html">Cómo añadir una nueva conexión</a></li><li><a href="../article/how-to-add-markets-correctly.html">Cómo añadir mercados correctamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Cómo configurar los atajos de teclado</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Cómo insertar notificaciones de sonido</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Cómo personalizar el idioma y el tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Cómo gestionar el rollover de símbolos</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Ventana de órdenes</a></li><li><a href="../article/trading-from-the-chart.html">Operar desde el gráfico</a></li><li><a href="../article/portfolio-risk-manager.html">Gestor de riesgos de cartera</a></li><li><a href="../article/simulation-environment.html">Entorno de simulación</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicadores <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Diferencial de oferta/demanda</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envolventes</a></li><li><a href="../article/session-imbalance-deepdom.html">Desequilibrio de sesión</a></li><li><a href="../article/book-speed.html">Velocidad del libro</a></li><li><a href="../article/volume-profile-deepdom.html">Perfil de volumen</a></li><li><a href="../article/stop-run.html">Barrido de stops (Stop Run)</a></li><li><a href="../article/absorption.html">Absorción</a></li><li><a href="../article/cumulative-iceberg-stop.html">Iceberg/Stop acumulado</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dinámico</a></li><li><a href="../article/volume-deepdom.html">Volumen</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html" class="active">CVD (delta de volumen acumulado)</a></li><li><a href="../article/big-trades-deepdom.html">Operaciones grandes</a></li><li><a href="../article/important-levels-deepdom.html">Niveles importantes</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funciones <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Burbujas de volumen</a></li><li><a href="../article/heatmap.html">Mapa de calor</a></li><li><a href="../article/replay-tick-data.html">Reproducción de datos de tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicadores profundos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Iceberg Profundo (Deep Iceberg)</a></li><li><a href="../article/deep-reload.html">Recarga Profunda (Deep Reload)</a></li><li><a href="../article/deep-liquidity-scan.html">Análisis de Liquidez Profunda (Deep Liquidity Scan)</a></li><li><a href="../article/deep-delta-deepdom.html">Delta Profundo (Deep Delta)</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators.html">Indicadores</a></div>
+<div class="article-head"><h1>CVD (delta de volumen acumulado)</h1>
+<p class="article-desc">El CVD (delta de volumen acumulado) muestra el delta acumulado tick a tick durante un período definido por el usuario, midiendo la diferencia entre el volumen de compras a mercado y ventas a mercado para revelar una presión compradora o vendedora sostenida.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 2 min read</span>
+  <a class="btn-pdf" href="../pdf/cumulative-volume-delta.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>El CVD (delta de volumen acumulado) muestra el delta acumulado tick a tick durante un período definido por el usuario, midiendo la diferencia entre el volumen de compras a mercado y ventas a mercado para revelar una presión compradora o vendedora sostenida.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">CVD (delta de volumen acumulado) — vista general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-volume-delta-01</b> · save as <code>dd-es-cumulative-volume-delta-01.png</code></div></div></div>
+<h2 id="configuraci-n-de-uso">Configuración de uso</h2>
+<p>Haga clic con el botón derecho en el gráfico y seleccione <strong>Indicators</strong> (Indicadores).</p>
+<p>Busque el indicador deseado y añádalo a su espacio de trabajo haciendo clic en el botón &quot;+&quot;.</p>
+<p>Abra el panel de configuración del indicador, personalice los parámetros según sus preferencias y confirme los cambios haciendo clic en <strong>Save</strong> (Guardar).</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">CVD (delta de volumen acumulado) — Configuración de uso (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-volume-delta-02</b> · save as <code>dd-es-cumulative-volume-delta-02.png</code></div></div></div>
+<h2 id="configuraci-n-general">Configuración general</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">CVD (delta de volumen acumulado) — Configuración general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-volume-delta-03</b> · save as <code>dd-es-cumulative-volume-delta-03.png</code></div></div></div>
+<h4>Modo de período y valor</h4>
+<p>El Modo de período (Period Mode) define el período de referencia para el cálculo del CVD. Puede elegir entre Days, Minutes, Seconds u Order.</p>
+<p>El Valor del período (Period Value) establece el parámetro numérico para el modo elegido (por ejemplo, 1 día o 30 minutos).</p>
+<h4>Mostrar volúmenes Bid/Ask</h4>
+<p>Habilite esta opción para mostrar, además de la línea del CVD, líneas separadas para el volumen ejecutado en el Ask y en el Bid.</p>
+<h2 id="configuraci-n-de-trazado-plot-settings">Configuración de trazado (Plot Settings)</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">CVD (delta de volumen acumulado) — Configuración de trazado (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-volume-delta-04</b> · save as <code>dd-es-cumulative-volume-delta-04.png</code></div></div></div>
+<p>Personalice la apariencia de las líneas de CVD y de volumen:</p>
+<p>Establezca los colores para el CVD negativo (color de delta Bid) y el CVD positivo (color de delta Ask).</p>
+<p>Elija los colores para los volúmenes ejecutados en el Ask y en el Bid.</p>
+<p>Ajuste el grosor de las líneas para mejorar la legibilidad.</p>
+<h2 id="cvd-filtrado">CVD filtrado</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">CVD (delta de volumen acumulado) — CVD filtrado (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-volume-delta-05</b> · save as <code>dd-es-cumulative-volume-delta-05.png</code></div></div></div>
+<h4>Habilitar el CVD filtrado</h4>
+<p>Active el CVD filtrado (Filtered CVD) para aplicar filtros de volumen y, opcionalmente, trazarlo en un eje separado del CVD principal.</p>
+<p>Use separate axes (Usar ejes separados) – si está habilitado, dibuja el CVD filtrado utilizando una escala vertical diferente.</p>
+<p>Vol. &lt;= filter – aplica un filtro de volumen mínimo.</p>
+<p>Vol. &gt;= filter – aplica un filtro de volumen máximo.</p>
+<p>Filtered Bid color (Color de Bid filtrado) – color para el CVD filtrado negativo.</p>
+<p>Filtered Ask color (Color de Ask filtrado) – color para el CVD filtrado positivo.</p>
+<p>Line Zero (Línea cero) – establece el color y el grosor de la línea cero.</p>
+<p>Los filtros son útiles para aislar la participación de los actores más grandes. Por ejemplo, aunque el CVD de la sesión sea positivo mientras el precio opera cerca de los mínimos de la sesión, un CVD filtrado con un umbral de volumen más alto puede revelar que los operadores más grandes son vendedores netos.</p>
+<h2 id="interpretaci-n-del-cvd-en-el-trading">Interpretación del CVD en el trading</h2>
+<p>Confirmación de tendencia: un CVD que marca máximos más altos junto con el precio respalda la idea de un interés comprador genuino; un CVD que diverge (máximos más bajos mientras el precio marca máximos más altos) advierte de un debilitamiento de la participación.</p>
+<p>Absorción y reversión: un CVD que empuja con fuerza en una dirección mientras el precio no logra romper niveles clave suele señalar absorción y posibles zonas de reversión.</p>
+<p>Combinación con Volumen y Deep Trades: utilice el Volumen para tener contexto de la intensidad de la participación y Deep Trades para ver si las grandes ejecuciones se alinean con la dirección del CVD o la contradicen.</p>
+</article>
+<div class="pn"><a class="prev" href="./delta-bar-deepdom.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Delta Bar</div></a><a class="next" href="./big-trades-deepdom.html"><div class="pn-lbl">Next →</div><div class="pn-title">Operaciones grandes</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#configuraci-n-de-uso">Configuración de uso</a></li><li class="lv2"><a href="#configuraci-n-general">Configuración general</a></li><li class="lv2"><a href="#configuraci-n-de-trazado-plot-settings">Configuración de trazado (Plot Settings)</a></li><li class="lv2"><a href="#cvd-filtrado">CVD filtrado</a></li><li class="lv2"><a href="#interpretaci-n-del-cvd-en-el-trading">Interpretación del CVD en el trading</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-es-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>

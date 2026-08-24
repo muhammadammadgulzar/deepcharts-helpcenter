@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Perfil de volumen — Centro de Ayuda de DeepDOM</title>
+<meta name="description" content="El Deep Profile muestra el volumen negociado en cada nivel de precio durante un período específico. Le ofrece un mapa visual claro de dónde ha tenido lugar la mayor parte de la actividad del mercado, ayudándole a identificar niveles estructurales clave, entre ellos:">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/installation-and-first-configuration.html">Primeros pasos</a><a href="../../../es/article/get-help.html">Soporte</a><a class="kb-switch" href="../../../es/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/volume-profile-deepdom.html">English</a><a class="lang-item" href="../../../it/deepdom/article/volume-profile-deepdom.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemas comunes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemas de instalación</a></li><li><a href="../article/licence-issues.html">Problemas de licencia</a></li><li><a href="../article/symbol-subscription-issues.html">Problemas de suscripción de símbolos</a></li><li><a href="../article/cache-issues-deepdom.html">Problemas de caché</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Cómo hacer <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Instalación y primera configuración</a></li><li><a href="../article/general-settings.html">Configuración general</a></li><li><a href="../article/how-to-add-a-new-connection.html">Cómo añadir una nueva conexión</a></li><li><a href="../article/how-to-add-markets-correctly.html">Cómo añadir mercados correctamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Cómo configurar los atajos de teclado</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Cómo insertar notificaciones de sonido</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Cómo personalizar el idioma y el tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Cómo gestionar el rollover de símbolos</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Ventana de órdenes</a></li><li><a href="../article/trading-from-the-chart.html">Operar desde el gráfico</a></li><li><a href="../article/portfolio-risk-manager.html">Gestor de riesgos de cartera</a></li><li><a href="../article/simulation-environment.html">Entorno de simulación</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicadores <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Diferencial de oferta/demanda</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envolventes</a></li><li><a href="../article/session-imbalance-deepdom.html">Desequilibrio de sesión</a></li><li><a href="../article/book-speed.html">Velocidad del libro</a></li><li><a href="../article/volume-profile-deepdom.html" class="active">Perfil de volumen</a></li><li><a href="../article/stop-run.html">Barrido de stops (Stop Run)</a></li><li><a href="../article/absorption.html">Absorción</a></li><li><a href="../article/cumulative-iceberg-stop.html">Iceberg/Stop acumulado</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dinámico</a></li><li><a href="../article/volume-deepdom.html">Volumen</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">CVD (delta de volumen acumulado)</a></li><li><a href="../article/big-trades-deepdom.html">Operaciones grandes</a></li><li><a href="../article/important-levels-deepdom.html">Niveles importantes</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funciones <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Burbujas de volumen</a></li><li><a href="../article/heatmap.html">Mapa de calor</a></li><li><a href="../article/replay-tick-data.html">Reproducción de datos de tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicadores profundos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Iceberg Profundo (Deep Iceberg)</a></li><li><a href="../article/deep-reload.html">Recarga Profunda (Deep Reload)</a></li><li><a href="../article/deep-liquidity-scan.html">Análisis de Liquidez Profunda (Deep Liquidity Scan)</a></li><li><a href="../article/deep-delta-deepdom.html">Delta Profundo (Deep Delta)</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators.html">Indicadores</a></div>
+<div class="article-head"><h1>Perfil de volumen</h1>
+<p class="article-desc">El Deep Profile muestra el volumen negociado en cada nivel de precio durante un período específico. Le ofrece un mapa visual claro de dónde ha tenido lugar la mayor parte de la actividad del mercado, ayudándole a identificar niveles estructurales clave, entre ellos:</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 7 min read</span>
+  <a class="btn-pdf" href="../pdf/volume-profile-deepdom.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>El Deep Profile muestra el volumen negociado en cada nivel de precio durante un período específico. Le ofrece un mapa visual claro de dónde ha tenido lugar la mayor parte de la actividad del mercado, ayudándole a identificar niveles estructurales clave, entre ellos:</p>
+<p>POC (Point of Control): el nivel de precio con el mayor volumen negociado</p>
+<p>Área de valor (Value Area): el rango de precios donde se produjo un porcentaje definido del volumen total</p>
+<p>Nodos de alto volumen (HVN): niveles de precio con actividad intensa, que a menudo actúan como soporte o resistencia</p>
+<p>Nodos de bajo volumen (LVN): niveles de precio con poca actividad, que a menudo permiten que el precio los atraviese rápidamente</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Perfil de volumen — vista general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-volume-profile-deepdom-01</b> · save as <code>dd-es-volume-profile-deepdom-01.png</code></div></div></div>
+<h3 id="c-mo-a-adir-el-perfil-de-volumen-a-su-gr-fico">Cómo añadir el perfil de volumen a su gráfico</h3>
+<p>Haga clic con el botón derecho en el gráfico y seleccione <strong>Indicators</strong>.</p>
+<p>Busque el indicador deseado y añádalo a su espacio de trabajo haciendo clic en el botón &quot;+&quot;.</p>
+<p>Abra el panel de configuración del indicador, personalice los parámetros según sus preferencias y confirme los cambios haciendo clic en <strong>Save</strong> (Guardar).</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Perfil de volumen — Cómo añadir el perfil de volumen a su gráfico (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-volume-profile-deepdom-02</b> · save as <code>dd-es-volume-profile-deepdom-02.png</code></div></div></div>
+<h2 id="configuraci-n-general">Configuración general</h2>
+<p>Tipo de Vbp (Vbp Type) Seleccione qué datos muestra el perfil:</p>
+<p>Volumen: muestra el volumen total negociado en cada nivel de precio, resaltando las zonas más activas</p>
+<p>Volumen Ask/Bid: divide el volumen en ask (venta) y bid (compra) por separado, mostrando el equilibrio entre compradores y vendedores</p>
+<p>Delta: muestra la diferencia entre el volumen de compra y el de venta en cada nivel, útil para identificar la presión del mercado</p>
+<p>Delta total y volumen: combina el delta y el volumen total para una vista completa de la actividad en cada nivel de precio</p>
+<p>Agrupamiento (Grouping) Define cómo se agrupan los niveles de precio en el perfil:</p>
+<p>Automático: DeepDom agrupa automáticamente los ticks según las características del mercado y la resolución del gráfico</p>
+<p>Manual: le permite especificar un número personalizado de ticks para el agrupamiento</p>
+<p>Factor de agrupamiento automático (Auto Group Factor) Al utilizar el agrupamiento automático, define con qué intensidad se agregan los ticks. Un valor más alto implica una mayor agregación y un perfil más amplio.</p>
+<p>Ticks manuales (Manual Ticks) Al utilizar el agrupamiento manual, establece el número exacto de ticks que se agrupan, dándole un control preciso sobre la granularidad del perfil.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Perfil de volumen — Configuración general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-volume-profile-deepdom-03</b> · save as <code>dd-es-volume-profile-deepdom-03.png</code></div></div></div>
+<h2 id="configuraci-n-de-trazado-plot-settings">Configuración de trazado (Plot Settings)</h2>
+<p>Método de color (Method Color): define cómo se colorean las barras del perfil:</p>
+<p>Ninguno (None): no se aplica color, visualización simple de los datos</p>
+<p>Fijo (Fixed): un único color uniforme aplicado a todos los niveles de precio</p>
+<p>Degradado (Fading): la intensidad del color varía con el volumen; los niveles con mayor volumen aparecen más intensos y los de menor volumen más claros</p>
+<p>Más colores (More Colors): utiliza una gama de colores para representar los distintos niveles de volumen, totalmente personalizable por el usuario</p>
+<p>Cálculo de color (Color Calculation): define qué representa el color:</p>
+<p>Volumen: colores basados en el volumen total</p>
+<p>Delta: colores basados en la diferencia entre órdenes de compra y de venta</p>
+<p>Desequilibrio (Imbalance): colores basados en el desequilibrio de órdenes</p>
+<p>Color Le permite establecer colores fijos para el volumen, el bid, el ask y la línea del perfil.</p>
+<p>Rango (Range) Define el rango utilizado para la escala de color:</p>
+<p>Automático: utiliza los rangos predeterminados de la plataforma</p>
+<p>Usuario (User): le permite definir rangos de valores personalizados</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Perfil de volumen — Configuración de trazado (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-volume-profile-deepdom-04</b> · save as <code>dd-es-volume-profile-deepdom-04.png</code></div></div></div>
+<p>Mostrar texto (Show Text) Cuando está habilitado, muestra el volumen total negociado en cada tick o nivel de precio directamente sobre las barras del perfil.</p>
+<p>Configuración de texto (Text Settings) Le permite personalizar el color de las etiquetas de bid, ask y volumen total, así como el tamaño de la fuente.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Perfil de volumen — Configuración de trazado (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-volume-profile-deepdom-05</b> · save as <code>dd-es-volume-profile-deepdom-05.png</code></div></div></div>
+<h2 id="poc-point-of-control">POC (Point of Control)</h2>
+<p>El POC es el nivel de precio con el mayor volumen negociado dentro del perfil. Es uno de los niveles de referencia más importantes en el análisis de volumen.</p>
+<p>Habilitar (Enable): mostrar u ocultar el POC en el gráfico</p>
+<p>Resaltar (Highlight): destacar visualmente la barra del POC dentro del perfil para que sobresalga</p>
+<p>Color de resaltado (Highlight Color): establecer el color utilizado para el resaltado del POC</p>
+<p>Mostrar línea (Show Line): dibujar una línea horizontal que se extiende desde el POC a lo largo del gráfico</p>
+<p>Color de línea (Line Color): establecer el color de la línea del POC</p>
+<p>Grosor de línea (Line Width): establecer el grosor de la línea del POC</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Perfil de volumen — POC (Point of Control) (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-volume-profile-deepdom-06</b> · save as <code>dd-es-volume-profile-deepdom-06.png</code></div></div></div>
+<h2 id="rea-de-valor">Área de valor</h2>
+<p>El Área de valor es el rango de precios dentro del cual se produjo un porcentaje definido del volumen total. Representa la zona de mayor aceptación del mercado.</p>
+<p>Habilitar (Enable): mostrar u ocultar el Área de valor en el gráfico</p>
+<p>% del Área de valor (% Value Area): establecer el porcentaje del volumen total utilizado para definir el Área de valor. El valor predeterminado suele ser el 70 %, es decir, el rango dentro del cual se produjo el 70 % de todo el volumen</p>
+<p>Resaltar (Highlight): resaltar visualmente el Área de valor sobre las velas</p>
+<p>Color exterior (Outside Color): establecer el color aplicado a la zona fuera del Área de valor, ayudando a distinguirla con claridad</p>
+<p>Mostrar línea (Show Line): dibujar líneas que marcan el máximo del Área de valor (VAH) y el mínimo del Área de valor (VAL)</p>
+<p>Color de línea (Line Color): establecer el color de las líneas límite del Área de valor</p>
+<p>Grosor de línea (Line Width): establecer el grosor de las líneas límite del Área de valor</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Perfil de volumen — Área de valor (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-volume-profile-deepdom-07</b> · save as <code>dd-es-volume-profile-deepdom-07.png</code></div></div></div>
+<h2 id="picos-y-valles">Picos y valles</h2>
+<p>Los picos y valles resaltan zonas de alta y baja concentración de volumen dentro del perfil:</p>
+<p>Picos (Peaks): niveles de precio donde el volumen está fuertemente concentrado, lo que a menudo indica un fuerte interés del mercado y un posible soporte o resistencia</p>
+<p>Valles (Valleys): niveles de precio donde el volumen es muy escaso, que a menudo actúan como zonas vacías por las que el precio puede moverse rápidamente</p>
+<p>Sensibilidad (Sensitivity) Controla con qué rigor se identifican los picos y valles. Un valor más alto implica menos picos y valles, pero más significativos. Un valor más bajo muestra más niveles con un filtro más laxo.</p>
+<p>Configuración de picos (Peak Settings)</p>
+<p>Resaltar (Highlight): marcar visualmente los niveles de pico en el perfil</p>
+<p>Volumen mínimo (Minimum Volume): establecer un umbral de volumen mínimo; los picos por debajo de este valor no se mostrarán</p>
+<p>Color de resaltado (Highlight Color): establecer el color de los resaltados de pico</p>
+<p>Mostrar línea (Show Line): dibujar una línea horizontal en cada nivel de pico</p>
+<p>Grosor de línea (Line Width): establecer el grosor de la línea de pico</p>
+<p>Color de línea (Line Color): establecer el color de la línea de pico</p>
+<p>Configuración de valles (Valley Settings)</p>
+<p>Resaltar (Highlight): marcar visualmente los niveles de valle en el perfil</p>
+<p>Volumen mínimo (Minimum Volume): establecer un umbral de volumen mínimo; los valles por debajo de este valor no se mostrarán</p>
+<p>Color de resaltado (Highlight Color): establecer el color de los resaltados de valle</p>
+<p>Mostrar línea (Show Line): dibujar una línea horizontal en cada nivel de valle</p>
+<p>Grosor de línea (Line Width): establecer el grosor de la línea de valle</p>
+<p>Color de línea (Line Color): establecer el color de la línea de valle</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Perfil de volumen — Picos y valles (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-volume-profile-deepdom-08</b> · save as <code>dd-es-volume-profile-deepdom-08.png</code></div></div></div>
+<h2 id="resumen">Resumen</h2>
+<p>El Resumen (Summary) muestra un panel de datos detallado para cada perfil de volumen del gráfico, que incluye el volumen total, el delta, el número de operaciones, el número de ticks y otras estadísticas. Esto facilita comparar de un vistazo la actividad entre distintas sesiones o períodos de tiempo.</p>
+<p>Habilitar resumen (Enable Summary): mostrar u ocultar el panel de resumen de cada perfil</p>
+<p>Color de texto (Text Color): establecer el color del texto del resumen</p>
+<p>Color de ask (Ask Color): establecer el color que representa el volumen de ask en el resumen</p>
+<p>Color de bid (Bid Color): establecer el color que representa el volumen de bid en el resumen</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Perfil de volumen — Resumen (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-volume-profile-deepdom-09</b> · save as <code>dd-es-volume-profile-deepdom-09.png</code></div></div></div>
+<h2 id="etiquetas-en-l-nea">Etiquetas en línea</h2>
+<p>Color de texto (Text Color): editar el color de las líneas</p>
+<p>Texto en línea (Text on Line): habilita las etiquetas en las líneas derivadas del perfil de volumen, como las etiquetas del VPOC y del máximo/mínimo del Área de valor</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Perfil de volumen — Etiquetas en línea (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-volume-profile-deepdom-10</b> · save as <code>dd-es-volume-profile-deepdom-10.png</code></div></div></div>
+<h2 id="conclusi-n">Conclusión</h2>
+<p>El indicador Deep Profile es una de las herramientas más completas disponibles en DeepDom para comprender la estructura del mercado. Al identificar dónde se ha concentrado el volumen y dónde está ausente, obtiene una ventaja significativa a la hora de localizar niveles de soporte y resistencia relevantes, planificar entradas y comprender el contexto general de la acción del precio.</p>
+<h3 id="sigue-teniendo-problemas">¿Sigue teniendo problemas?</h3>
+<p>Nuestro equipo de soporte está disponible 24/7 y listo para ayudarle con cualquier problema que encuentre.</p>
+<p>Al contactarnos, incluya:</p>
+<p>Una captura de pantalla del problema</p>
+<p>Una breve descripción de lo que intentaba hacer</p>
+<p>Ticket de soporte (respuesta más rápida) Visite www.deepcharts.com y cree un ticket de soporte directamente en nuestro sitio web.</p>
+<p>Soporte por correo electrónico Escríbanos a support@deepcharts.com; tenga en cuenta que las respuestas por correo electrónico pueden tardar un poco más que un ticket de soporte.</p>
+</article>
+<div class="pn"><a class="prev" href="./book-speed.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Velocidad del libro</div></a><a class="next" href="./stop-run.html"><div class="pn-lbl">Next →</div><div class="pn-title">Barrido de stops (Stop Run)</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv3"><a href="#c-mo-a-adir-el-perfil-de-volumen-a-su-gr-fico">Cómo añadir el perfil de volumen a su gráfico</a></li><li class="lv2"><a href="#configuraci-n-general">Configuración general</a></li><li class="lv2"><a href="#configuraci-n-de-trazado-plot-settings">Configuración de trazado (Plot Settings)</a></li><li class="lv2"><a href="#poc-point-of-control">POC (Point of Control)</a></li><li class="lv2"><a href="#rea-de-valor">Área de valor</a></li><li class="lv2"><a href="#picos-y-valles">Picos y valles</a></li><li class="lv2"><a href="#resumen">Resumen</a></li><li class="lv2"><a href="#etiquetas-en-l-nea">Etiquetas en línea</a></li><li class="lv2"><a href="#conclusi-n">Conclusión</a></li><li class="lv3"><a href="#sigue-teniendo-problemas">¿Sigue teniendo problemas?</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-es-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>

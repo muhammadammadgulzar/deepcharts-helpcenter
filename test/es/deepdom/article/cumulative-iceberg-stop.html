@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Iceberg/Stop acumulado — Centro de Ayuda de DeepDOM</title>
+<meta name="description" content="El indicador Iceberg/Stop acumulado (Cumulative Iceberg/Stop) monitorea e identifica dos tipos específicos de actividad de mercado, las órdenes iceberg y las órdenes stop, utilizando tecnología MBO (Market By Order).">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="es";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Buscar en la base de conocimientos...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Todos los artículos</a><a href="../article/installation-and-first-configuration.html">Primeros pasos</a><a href="../../../es/article/get-help.html">Soporte</a><a class="kb-switch" href="../../../es/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 ES ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/cumulative-iceberg-stop.html">English</a><a class="lang-item" href="../../../it/deepdom/article/cumulative-iceberg-stop.html">Italiano <em class="beta">BETA</em></a><span class="lang-item cur">Español <em class="beta">BETA</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemas comunes <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemas de instalación</a></li><li><a href="../article/licence-issues.html">Problemas de licencia</a></li><li><a href="../article/symbol-subscription-issues.html">Problemas de suscripción de símbolos</a></li><li><a href="../article/cache-issues-deepdom.html">Problemas de caché</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Cómo hacer <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Instalación y primera configuración</a></li><li><a href="../article/general-settings.html">Configuración general</a></li><li><a href="../article/how-to-add-a-new-connection.html">Cómo añadir una nueva conexión</a></li><li><a href="../article/how-to-add-markets-correctly.html">Cómo añadir mercados correctamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configuración de usuario — Plantillas, espacios de trabajo y configuración de herramientas</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Cómo configurar los atajos de teclado</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Cómo insertar notificaciones de sonido</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Cómo personalizar el idioma y el tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Cómo gestionar el rollover de símbolos</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Ventana de órdenes</a></li><li><a href="../article/trading-from-the-chart.html">Operar desde el gráfico</a></li><li><a href="../article/portfolio-risk-manager.html">Gestor de riesgos de cartera</a></li><li><a href="../article/simulation-environment.html">Entorno de simulación</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicadores <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Diferencial de oferta/demanda</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envolventes</a></li><li><a href="../article/session-imbalance-deepdom.html">Desequilibrio de sesión</a></li><li><a href="../article/book-speed.html">Velocidad del libro</a></li><li><a href="../article/volume-profile-deepdom.html">Perfil de volumen</a></li><li><a href="../article/stop-run.html">Barrido de stops (Stop Run)</a></li><li><a href="../article/absorption.html">Absorción</a></li><li><a href="../article/cumulative-iceberg-stop.html" class="active">Iceberg/Stop acumulado</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dinámico</a></li><li><a href="../article/volume-deepdom.html">Volumen</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">CVD (delta de volumen acumulado)</a></li><li><a href="../article/big-trades-deepdom.html">Operaciones grandes</a></li><li><a href="../article/important-levels-deepdom.html">Niveles importantes</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funciones <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Burbujas de volumen</a></li><li><a href="../article/heatmap.html">Mapa de calor</a></li><li><a href="../article/replay-tick-data.html">Reproducción de datos de tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicadores profundos <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Iceberg Profundo (Deep Iceberg)</a></li><li><a href="../article/deep-reload.html">Recarga Profunda (Deep Reload)</a></li><li><a href="../article/deep-liquidity-scan.html">Análisis de Liquidez Profunda (Deep Liquidity Scan)</a></li><li><a href="../article/deep-delta-deepdom.html">Delta Profundo (Deep Delta)</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators.html">Indicadores</a></div>
+<div class="article-head"><h1>Iceberg/Stop acumulado</h1>
+<p class="article-desc">El indicador Iceberg/Stop acumulado (Cumulative Iceberg/Stop) monitorea e identifica dos tipos específicos de actividad de mercado, las órdenes iceberg y las órdenes stop, utilizando tecnología MBO (Market By Order).</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 7 min read</span>
+  <a class="btn-pdf" href="../pdf/cumulative-iceberg-stop.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>El indicador Iceberg/Stop acumulado (Cumulative Iceberg/Stop) monitorea e identifica dos tipos específicos de actividad de mercado, las órdenes iceberg y las órdenes stop, utilizando tecnología MBO (Market By Order). Rastrea la presencia y ejecución de estas órdenes en tiempo real, mostrando cómo influyen en el movimiento del precio y ayudándole a entender dónde puede estar teniendo lugar una actividad oculta significativa.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — vista general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-01</b> · save as <code>dd-es-cumulative-iceberg-stop-01.png</code></div></div></div>
+<h3 id="qu-es-una-orden-iceberg">¿Qué es una orden iceberg?</h3>
+<p>Una orden iceberg es una orden grande de compra o venta que se divide deliberadamente en porciones visibles más pequeñas para ocultar su tamaño real al mercado. Solo una pequeña parte, la &quot;punta&quot;, es visible en el libro de órdenes en cada momento. Una vez que la porción visible se ejecuta, el resto oculto entra gradualmente en el mercado.</p>
+<p>Piénselo así: imagine que una gran institución quiere comprar 10.000 contratos de NQ. Si colocara toda la orden de una vez, cada operador que observe el libro de órdenes la vería de inmediato, los precios se moverían en su contra y su precio medio de entrada empeoraría. En su lugar, la divide en piezas más pequeñas, mostrando solo 50 contratos a la vez en el libro. Cada vez que esos 50 contratos se compran, aparecen otros 50, haciendo que parezca actividad normal de mercado mientras completa silenciosamente su gran posición.</p>
+<p>Hay dos tipos de órdenes iceberg:</p>
+<p>Orden iceberg nativa: soportada directamente por el motor de emparejamiento de la bolsa. La propia bolsa gestiona las porciones visible y oculta, revelando gradualmente el volumen a medida que se consume la punta visible. Estas pueden identificarse mediante datos MBO.</p>
+<p>Orden iceberg sintética: creada por software de trading externo que divide una orden grande en varias órdenes más pequeñas y las introduce progresivamente en el libro. Estas no son gestionadas por la bolsa y no pueden identificarse mediante MBO: parecen indistinguibles de las órdenes normales.</p>
+<p>¿Qué es MBO (Market By Order)? MBO es una tecnología que le proporciona datos detallados a nivel de orden del libro, incluidos el identificador de cada orden, la cantidad inicial, el volumen restante y el estado de ejecución. Este nivel de detalle permite detectar el comportamiento característico de &quot;recarga&quot; de las órdenes iceberg, en el que una nueva porción visible sigue apareciendo cada vez que la anterior se ejecuta por completo. MBO puede identificar órdenes iceberg nativas, pero no las sintéticas.</p>
+<h3 id="qu-es-una-orden-stop">¿Qué es una orden stop?</h3>
+<p>Una orden stop (STP) es una instrucción que activa automáticamente una orden a mercado cuando el precio alcanza un nivel específico. Los operadores las utilizan de dos maneras principales: para proteger una posición abierta de una gran pérdida, o para entrar en el mercado cuando el precio rompe un nivel clave.</p>
+<p>Por ejemplo, un operador está largo en NQ desde 26.800 y coloca una orden stop en 26.750. Si el precio cae a 26.750, su posición se cierra automáticamente, limitando su pérdida sin necesidad de vigilar la pantalla constantemente.</p>
+<p>Con fuentes de datos como Rithmic (Market Depth), DeepDom puede reconstruir y cuantificar las órdenes stop mediante algoritmos propietarios. Cuando el precio alcanza un nivel donde se han acumulado muchas órdenes stop, todas pueden activarse simultáneamente, generando un pico significativo de volumen y provocando potencialmente una continuación rápida o una reversión del movimiento.</p>
+<h3 id="c-mo-configurar-el-indicador-iceberg-stop-acumulado">Cómo configurar el indicador Iceberg/Stop acumulado</h3>
+<p>Haga clic en el icono <strong>Indicators</strong> (Indicadores) en el gráfico</p>
+<p>Busque <strong>Cumulative Iceberg/Stop</strong> en la lista y haga clic en + para añadirlo</p>
+<p>Haga clic en el icono de configuración del indicador para abrir su ventana de configuración</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Cómo configurar el indicador Iceberg/Stop acumulado (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-02</b> · save as <code>dd-es-cumulative-iceberg-stop-02.png</code></div></div></div>
+<h2 id="configuraci-n-general">Configuración general</h2>
+<p>Datos de entrada (Input Data): seleccione el tipo de datos que el indicador utiliza para sus cálculos:</p>
+<p>Volume — basado en el volumen de las órdenes</p>
+<p>Order — basado en el número de órdenes individuales</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Configuración general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-03</b> · save as <code>dd-es-cumulative-iceberg-stop-03.png</code></div></div></div>
+<p>Filtro mínimo (Filter Minimum): establece el volumen o número de órdenes mínimo necesario para que un evento se considere relevante. Esto filtra la actividad insignificante y centra el indicador en el flujo de órdenes significativo.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Configuración general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-04</b> · save as <code>dd-es-cumulative-iceberg-stop-04.png</code></div></div></div>
+<p>Ejemplos - Filtro mínimo - En 1</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Configuración general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-05</b> · save as <code>dd-es-cumulative-iceberg-stop-05.png</code></div></div></div>
+<p>Filtro mínimo - En 10</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Configuración general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-06</b> · save as <code>dd-es-cumulative-iceberg-stop-06.png</code></div></div></div>
+<p>Filtro máximo (Filter Maximum): establece el volumen o número de órdenes máximo que se incluye en el cálculo. Útil para excluir eventos atípicos de la visualización.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Configuración general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-07</b> · save as <code>dd-es-cumulative-iceberg-stop-07.png</code></div></div></div>
+<p>Ejemplos - Filtro máximo - En 0</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Configuración general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-08</b> · save as <code>dd-es-cumulative-iceberg-stop-08.png</code></div></div></div>
+<p>Filtro máximo - En 10</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Configuración general (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-09</b> · save as <code>dd-es-cumulative-iceberg-stop-09.png</code></div></div></div>
+<h2 id="configuraci-n-de-iceberg">Configuración de iceberg</h2>
+<p>Color de iceberg Ask (Iceberg Ask Color): establece el color utilizado para identificar las órdenes iceberg en el lado Ask (venta) del mercado.</p>
+<p>Color de iceberg Bid (Iceberg Bid Color): establece el color utilizado para identificar las órdenes iceberg en el lado Bid (compra) del mercado.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Configuración de iceberg (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-10</b> · save as <code>dd-es-cumulative-iceberg-stop-10.png</code></div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Configuración de iceberg (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-11</b> · save as <code>dd-es-cumulative-iceberg-stop-11.png</code></div></div></div>
+<h2 id="configuraci-n-de-stop">Configuración de stop</h2>
+<p>Color de stop Bid (Stop Bid Color): establece el color utilizado para mostrar las órdenes stop activadas en el lado de compra. Color de stop Ask (Stop Ask Color): establece el color utilizado para mostrar las órdenes stop activadas en el lado de venta.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Configuración de stop (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-12</b> · save as <code>dd-es-cumulative-iceberg-stop-12.png</code></div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Configuración de stop (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-13</b> · save as <code>dd-es-cumulative-iceberg-stop-13.png</code></div></div></div>
+<h2 id="configuraci-n-de-trazado-plot-settings">Configuración de trazado (Plot Settings)</h2>
+<p>De forma predeterminada, el indicador Stop Iceberg muestra los datos de iceberg y de stop dentro de la misma área del gráfico, utilizando dos ejes:</p>
+<p>Eje de Stop (Stop Axis) — muestra la cantidad de órdenes stop identificadas</p>
+<p>Eje de Iceberg (Iceberg Axis) — muestra la cantidad de órdenes iceberg identificadas</p>
+<p>También puede añadir varios indicadores Stop Iceberg al mismo gráfico y configurarlos de forma independiente, por ejemplo, dedicando un indicador a los icebergs y otro a los stops, lo que permite una vista más personalizada y detallada.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Configuración de trazado (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-14</b> · save as <code>dd-es-cumulative-iceberg-stop-14.png</code></div></div></div>
+<p>Modo de visualización (Display Mode): define cómo se agregan y muestran los datos de las órdenes. Las opciones incluyen:</p>
+<p>Sum — muestra el total acumulado de órdenes durante un movimiento del mercado. No requiere ajuste basado en tiempo</p>
+<p>Last Minutes — muestra las órdenes ejecutadas en los últimos minutos definidos por el usuario</p>
+<p>Last Seconds — muestra las órdenes ejecutadas en los últimos segundos definidos por el usuario</p>
+<p>Parámetros de visualización (Display Parameters): al usar el modo Last Minutes o Last Seconds, esto establece el número exacto de minutos o segundos utilizado para el cálculo.</p>
+<p>Ancho de línea (Line Width): establece el grosor de las líneas utilizadas para representar la actividad de las órdenes en el gráfico.</p>
+<p>Usar ejes separados (Use Separate Axes): cuando está habilitado, los datos de iceberg y de stop se muestran en ejes separados para distinguir más fácilmente entre ambos.</p>
+<h2 id="alerta-de-stop">Alerta de Stop</h2>
+<p>Enable (Habilitar) — activa las notificaciones para la actividad de órdenes stop</p>
+<p>Threshold (Umbral) — establece el número mínimo de órdenes stop que el indicador debe identificar antes de activar una notificación</p>
+<p>Enable Popup (Habilitar ventana emergente) — cuando está habilitado, aparece una alerta emergente en pantalla al alcanzarse el umbral</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Alerta de Stop (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-15</b> · save as <code>dd-es-cumulative-iceberg-stop-15.png</code></div></div></div>
+<h2 id="alerta-de-iceberg">Alerta de Iceberg</h2>
+<p>Enable (Habilitar) — activa las notificaciones para la actividad de órdenes iceberg</p>
+<p>Threshold (Umbral) — establece el número mínimo de órdenes iceberg que el indicador debe identificar antes de activar una notificación</p>
+<p>Enable Popup (Habilitar ventana emergente) — cuando está habilitado, aparece una alerta emergente en pantalla al superarse el umbral</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Iceberg/Stop acumulado — Alerta de Iceberg (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-es-cumulative-iceberg-stop-16</b> · save as <code>dd-es-cumulative-iceberg-stop-16.png</code></div></div></div>
+<h2 id="conclusi-n">Conclusión</h2>
+<p>El indicador Iceberg/Stop acumulado le ofrece una ventana única a dos de los tipos de órdenes ocultas con mayor impacto en el mercado. Al comprender dónde las órdenes iceberg están absorbiendo presión y dónde se están agrupando las órdenes stop, puede obtener una ventaja significativa para anticipar posibles reacciones del precio y entender el comportamiento de los actores institucionales en niveles clave.</p>
+<h4>¿Sigue teniendo problemas?</h4>
+<p>Nuestro equipo de soporte está disponible 24/7 y listo para ayudarle con cualquier problema que encuentre.</p>
+<p>Cuando se ponga en contacto, incluya:</p>
+<p>Una captura de pantalla del problema</p>
+<p>Una breve descripción de lo que intentaba hacer</p>
+<p>Ticket de soporte (respuesta más rápida): visite www.deepcharts.com y cree un ticket de soporte directamente en nuestro sitio web.</p>
+<p>Soporte por correo electrónico: escríbanos a support@deepcharts.com. Tenga en cuenta que las respuestas por correo electrónico pueden tardar un poco más que un ticket de soporte.</p>
+</article>
+<div class="pn"><a class="prev" href="./absorption.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Absorción</div></a><a class="next" href="./volume-swing-deepdom.html"><div class="pn-lbl">Next →</div><div class="pn-title">Volume Swing</div></a></div>
+    <div class="footer">Centro de Ayuda de DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv3"><a href="#qu-es-una-orden-iceberg">¿Qué es una orden iceberg?</a></li><li class="lv3"><a href="#qu-es-una-orden-stop">¿Qué es una orden stop?</a></li><li class="lv3"><a href="#c-mo-configurar-el-indicador-iceberg-stop-acumulado">Cómo configurar el indicador Iceberg/Stop acumulado</a></li><li class="lv2"><a href="#configuraci-n-general">Configuración general</a></li><li class="lv2"><a href="#configuraci-n-de-iceberg">Configuración de iceberg</a></li><li class="lv2"><a href="#configuraci-n-de-stop">Configuración de stop</a></li><li class="lv2"><a href="#configuraci-n-de-trazado-plot-settings">Configuración de trazado (Plot Settings)</a></li><li class="lv2"><a href="#alerta-de-stop">Alerta de Stop</a></li><li class="lv2"><a href="#alerta-de-iceberg">Alerta de Iceberg</a></li><li class="lv2"><a href="#conclusi-n">Conclusión</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-es-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>
