@@ -82,7 +82,7 @@ The defaults are the textbook configuration: **Length** 14 with the **Overbought
 | Display style / line style / line width | How the curves are drawn and how thick. |
 | Secondary axis display | Option to display the indicator on a secondary axis. |
 
-[SCREENSHOT: The RSI settings dialog showing the General group (Input data, Length 14), the Average group (Enable, Average Type, Length 20) and the Level settings group (Overbought 70, Oversold 30) | rsi-settings.png]
+[SCREENSHOT: The RSI settings dialog showing the General group (Input data, Length 14), the Average group (Enable, Average Type, Length 20) and the Level settings group (Overbought 70, Oversold 30) | dc-en-rsi-01.png]
 
 ## Tips and common mistakes
 

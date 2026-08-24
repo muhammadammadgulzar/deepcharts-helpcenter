@@ -17,7 +17,7 @@ You open it from the main bar: **Trading → Show Portfolio**.
 
 One window that answers "how are all my accounts doing right now?". Each feed connection (SIM, Rithmic, dxFeed, and so on) appears as its own card, with the individual accounts under that connection listed inside it. Balances and P/L update live across all sub-accounts, so prop traders running several accounts can watch them side by side without switching windows.
 
-[SCREENSHOT: The Portfolio window opened via Trading → Show Portfolio, showing connection cards for SIM and a live feed, each with Daily Profit and Open Profit figures and account rows underneath | portfolio-overview-cards.png]
+[SCREENSHOT: The Portfolio window opened via Trading → Show Portfolio, showing connection cards for SIM and a live feed, each with Daily Profit and Open Profit figures and account rows underneath | dc-en-portfolio-wallet-01.png]
 
 ## When to use it
 
@@ -41,7 +41,7 @@ The window has two levels:
 
 **Account cards** — one per account inside a connection. Each shows **Balance**, **Daily PnL** and **Open PnL**, plus its own three buttons: **Eye** (opens the detailed view with positions and account risk information), **Pause** (locks only that account) and **Close** (flattens only that account).
 
-[SCREENSHOT: A single account card zoomed in, with the Eye, Pause and Close buttons visible next to the Balance, Daily PnL and Open PnL figures | portfolio-account-card-buttons.png]
+[SCREENSHOT: A single account card zoomed in, with the Eye, Pause and Close buttons visible next to the Balance, Daily PnL and Open PnL figures | dc-en-portfolio-wallet-02.png]
 
 The overview also lists **Connected Brokers**, **Sales**, **Daily P/L** and **Open P/L** per account. [CONFIRM: what exactly the Sales field reports]
 

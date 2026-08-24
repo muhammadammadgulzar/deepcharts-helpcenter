@@ -13,7 +13,7 @@ The Deep Liquidity Scan monitors and displays the level of passive liquidity on 
 
 By using distinct colors for Bid, Ask, and Delta, the indicator helps you quickly spot moments of peak interest and potential price reactions before they become visible in price alone.
 
-[SCREENSHOT: Deep Liquidity Scan — overview (DeepDOM) | deep-liquidity-scan-01.png]
+[SCREENSHOT: Deep Liquidity Scan — overview (DeepDOM) | dd-en-deep-liquidity-scan-01.png]
 
 What is Passive Liquidity? Passive liquidity refers to limit orders sitting in the order book waiting to be filled. For example, a trader places a limit buy order at 26,750 — that order sits in the book as passive liquidity on the Bid side. It is not actively hitting the market — it is waiting for price to come to it. The Liquidity Tracker measures how much of this passive liquidity is sitting on each side of the market at any given moment, and how that balance is changing over time.
 
@@ -55,7 +55,7 @@ Search for the desired indicator and add it to your workspace by clicking the "+
 
 Open the indicator's settings panel, customize the parameters according to your preferences, and confirm the changes by clicking Save.
 
-[SCREENSHOT: Deep Liquidity Scan — How to Set Up the Deep Liquidity Scan (DeepDOM) | deep-liquidity-scan-02.png]
+[SCREENSHOT: Deep Liquidity Scan — How to Set Up the Deep Liquidity Scan (DeepDOM) | dd-en-deep-liquidity-scan-02.png]
 
 ## General Settings
 
@@ -65,7 +65,7 @@ A low value (for example, 20) means the indicator only looks at the 20 levels cl
 
 A high value (for example, 200) means the indicator looks much deeper into the book, capturing liquidity that is sitting far from the current price.
 
-[SCREENSHOT: Deep Liquidity Scan — General Settings (DeepDOM) | deep-liquidity-scan-03.png]
+[SCREENSHOT: Deep Liquidity Scan — General Settings (DeepDOM) | dd-en-deep-liquidity-scan-03.png]
 
 When to use a low value: If you want to see immediate liquidity pressure — the orders that could be hit very soon.
 
@@ -75,7 +75,7 @@ When to use a high value: If you want a broader picture of overall market intere
 
 #### Num Lev Depth - 200
 
-[SCREENSHOT: Deep Liquidity Scan — Num Lev Depth - 200 (DeepDOM) | deep-liquidity-scan-04.png]
+[SCREENSHOT: Deep Liquidity Scan — Num Lev Depth - 200 (DeepDOM) | dd-en-deep-liquidity-scan-04.png]
 
 2. Calc Mode - This setting controls the method used to calculate liquidity across all the depth levels you selected with Num Lev Depth.
 
@@ -83,7 +83,7 @@ Normal: Every depth level is treated equally. Whether an order is sitting 1 leve
 
 Exponential: Levels that are closer to the current price are given more weight than levels that are far away. This means liquidity sitting right next to price has a stronger influence on the indicator's reading than liquidity sitting deep in the book.
 
-[SCREENSHOT: Deep Liquidity Scan — Num Lev Depth - 200 (DeepDOM) | deep-liquidity-scan-05.png]
+[SCREENSHOT: Deep Liquidity Scan — Num Lev Depth - 200 (DeepDOM) | dd-en-deep-liquidity-scan-05.png]
 
 When to use Normal: When you want a simple, equal view of all available liquidity across the selected depth.
 
@@ -95,7 +95,7 @@ Last: The indicator compares current liquidity against the most recent reading. 
 
 Peak: The indicator compares current liquidity against the highest liquidity level it has seen. This means the display is always relative to the biggest reading recorded, making it easier to see how current liquidity compares to the maximum.
 
-[SCREENSHOT: Deep Liquidity Scan — Num Lev Depth - 200 (DeepDOM) | deep-liquidity-scan-06.png]
+[SCREENSHOT: Deep Liquidity Scan — Num Lev Depth - 200 (DeepDOM) | dd-en-deep-liquidity-scan-06.png]
 
 When to use Last: When you want a live, moment-to-moment view of how liquidity is changing right now.
 
@@ -109,7 +109,7 @@ A low value means the weight drops off very quickly. Only the levels very close 
 
 A high value means the weight drops off more gradually. Levels deeper in the book still contribute a fair amount to the overall reading.
 
-[SCREENSHOT: Deep Liquidity Scan — Num Lev Depth - 200 (DeepDOM) | deep-liquidity-scan-07.png]
+[SCREENSHOT: Deep Liquidity Scan — Num Lev Depth - 200 (DeepDOM) | dd-en-deep-liquidity-scan-07.png]
 
 Simple example: If this is set to 5, it means that by the time you reach level 5 in the book, the weight of that level is already half of what level 1 has. The further you go, the less it counts.
 
@@ -129,7 +129,7 @@ Thirty Secs — Smoothing over 30 seconds.
 
 One Min — Smoothing over 1 minute. Best for slower timeframes where you only want to see sustained, meaningful shifts.
 
-[SCREENSHOT: Deep Liquidity Scan — Num Lev Depth - 200 (DeepDOM) | deep-liquidity-scan-08.png]
+[SCREENSHOT: Deep Liquidity Scan — Num Lev Depth - 200 (DeepDOM) | dd-en-deep-liquidity-scan-08.png]
 
 When to use no smoothing: Fast markets, scalping, or when you need to react to real-time changes instantly.
 
@@ -143,7 +143,7 @@ Fresh Only: Only levels that have recently appeared in the book are included. Th
 
 Persistent Only: Only levels that have been sitting in the book for some time are included. These are resting, committed orders — liquidity that has not been cancelled and is genuinely waiting to be filled. This is useful for finding strong support or resistance zones backed by patient, committed traders.
 
-[SCREENSHOT: Deep Liquidity Scan — Num Lev Depth - 200 (DeepDOM) | deep-liquidity-scan-09.png]
+[SCREENSHOT: Deep Liquidity Scan — Num Lev Depth - 200 (DeepDOM) | dd-en-deep-liquidity-scan-09.png]
 
 When to use Fresh Only: When you want to spot new order flow and detect when participants are suddenly positioning themselves.
 
@@ -159,7 +159,7 @@ These settings control the visual appearance of the Bid and Ask lines on the ind
 
 3. Line Width - Sets the thickness of both the Bid and Ask lines. A higher number makes the lines thicker and easier to see. A lower number keeps them thin and less intrusive on the chart. Adjust this based on your screen size and personal preference.
 
-[SCREENSHOT: Deep Liquidity Scan — Plot Settings (DeepDOM) | deep-liquidity-scan-10.png]
+[SCREENSHOT: Deep Liquidity Scan — Plot Settings (DeepDOM) | dd-en-deep-liquidity-scan-10.png]
 
 ## Delta Settings
 
@@ -171,7 +171,7 @@ This is a simple on/off toggle for the Delta display. When turned on, the Delta 
 
 Turn this on if you want to actively monitor the imbalance between buyers and sellers. Turn it off if you prefer a cleaner chart showing only raw Bid and Ask liquidity.
 
-[SCREENSHOT: Deep Liquidity Scan — Delta Settings (DeepDOM) | deep-liquidity-scan-11.png]
+[SCREENSHOT: Deep Liquidity Scan — Delta Settings (DeepDOM) | dd-en-deep-liquidity-scan-11.png]
 
 2. Delta Value
 
@@ -183,7 +183,7 @@ Percentual Delta: Instead of showing the raw difference, this expresses the imba
 
 Percentual Value: This shows the Bid or Ask liquidity expressed as a percentage of the total combined liquidity. For example, if Bid is 500 out of a total of 800, it would show approximately 62.5%. This gives you a proportion view of how much each side accounts for.
 
-[SCREENSHOT: Deep Liquidity Scan — Delta Settings (DeepDOM) | deep-liquidity-scan-12.png]
+[SCREENSHOT: Deep Liquidity Scan — Delta Settings (DeepDOM) | dd-en-deep-liquidity-scan-12.png]
 
 When to use Delta: When you want to see the raw size of the imbalance in market terms.
 
@@ -197,7 +197,7 @@ Histogram (toggled on): The Delta is shown as a bar chart. Each bar grows up (po
 
 Line (toggled off): The Delta is shown as a continuous line that moves up and down around the zero line. This is better for tracking the smooth trend and direction of the imbalance over time — for example, whether Bid dominance is gradually building or fading.
 
-[SCREENSHOT: Deep Liquidity Scan — Delta Settings (DeepDOM) | deep-liquidity-scan-13.png]
+[SCREENSHOT: Deep Liquidity Scan — Delta Settings (DeepDOM) | dd-en-deep-liquidity-scan-13.png]
 
 When to use histogram: When you are actively watching for sudden shifts or spikes in liquidity imbalance and want a clear, immediate visual signal.
 
@@ -209,7 +209,7 @@ Sets the color used for the Delta when it is positive — meaning Bid liquidity 
 
 Sets the color used for the Delta when it is negative — meaning Ask liquidity is greater than Bid liquidity. This color fills the histogram bars or colors the line when sellers have more passive orders in the book than buyers.
 
-[SCREENSHOT: Deep Liquidity Scan — Delta Settings (DeepDOM) | deep-liquidity-scan-14.png]
+[SCREENSHOT: Deep Liquidity Scan — Delta Settings (DeepDOM) | dd-en-deep-liquidity-scan-14.png]
 
 ## Zero Line
 
@@ -219,7 +219,7 @@ The zero line is the horizontal line at the center of the Delta display. It mark
 
 Sets the color of the zero line. Choose a color that is visible but does not distract from the Bid, Ask, and Delta lines. A neutral color like white or grey works well for most chart themes.
 
-[SCREENSHOT: Deep Liquidity Scan — 1. Zero Line Color (DeepDOM) | deep-liquidity-scan-15.png]
+[SCREENSHOT: Deep Liquidity Scan — 1. Zero Line Color (DeepDOM) | dd-en-deep-liquidity-scan-15.png]
 
 #### Zero Line Style
 
@@ -239,11 +239,11 @@ Dash Dot Dot — alternates between a dash and two dots.
 
 Sets the thickness of the zero line. Keep it thin enough that it does not visually compete with the Delta line or histogram. A width of 1 is usually sufficient.
 
-[SCREENSHOT: Deep Liquidity Scan — Zero Line Style (DeepDOM) | deep-liquidity-scan-16.png]
+[SCREENSHOT: Deep Liquidity Scan — Zero Line Style (DeepDOM) | dd-en-deep-liquidity-scan-16.png]
 
 #### Zero Line View -
 
-[SCREENSHOT: Deep Liquidity Scan — Zero Line View - (DeepDOM) | deep-liquidity-scan-17.png]
+[SCREENSHOT: Deep Liquidity Scan — Zero Line View - (DeepDOM) | dd-en-deep-liquidity-scan-17.png]
 
 ## Axis
 
@@ -267,7 +267,7 @@ Secondary: The Delta is plotted against the left axis.
 
 Tip: As shown in the example above, the recommended setup is to place the Bid Ask Axis on Secondary (left axis) and the Delta Axis on Primary (right axis). This keeps the Delta clearly readable on the right side, while the Bid and Ask lines scale independently on the left. This prevents the large Bid and Ask values from compressing the Delta into an unreadable flat line.
 
-[SCREENSHOT: Deep Liquidity Scan — 2. Delta Axis (DeepDOM) | deep-liquidity-scan-18.png]
+[SCREENSHOT: Deep Liquidity Scan — 2. Delta Axis (DeepDOM) | dd-en-deep-liquidity-scan-18.png]
 
 #### Axis View -
 
@@ -275,7 +275,7 @@ Bid Ask Axis - Secondary
 
 Delta Axis - Primary
 
-[SCREENSHOT: Deep Liquidity Scan — Axis View - (DeepDOM) | deep-liquidity-scan-19.png]
+[SCREENSHOT: Deep Liquidity Scan — Axis View - (DeepDOM) | dd-en-deep-liquidity-scan-19.png]
 
 ## Conclusion
 

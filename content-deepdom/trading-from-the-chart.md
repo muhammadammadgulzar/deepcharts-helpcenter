@@ -13,7 +13,7 @@ This guide explains how to enable trading directly from a DeepDom chart, use the
 
 ## Enable Trading and Show the Trading Panel
 
-[SCREENSHOT: Trading from the Chart — Enable Trading and Show the Trading Panel (DeepDOM) | trading-from-the-chart-01.png]
+[SCREENSHOT: Trading from the Chart — Enable Trading and Show the Trading Panel (DeepDOM) | dd-en-trading-from-the-chart-01.png]
 
 ### Enable trading on a chart
 
@@ -33,7 +33,7 @@ Use the chart Settings menu and enable Show trading panel .
 
 ## Trading Panel and Cross Trading Mini/Micro
 
-[SCREENSHOT: Trading from the Chart — Trading Panel and Cross Trading Mini/Micro (DeepDOM) | trading-from-the-chart-02.png]
+[SCREENSHOT: Trading from the Chart — Trading Panel and Cross Trading Mini/Micro (DeepDOM) | dd-en-trading-from-the-chart-02.png]
 
 At the top of the trading panel you can select the instrument used for order execution. DeepDom allows cross trading , for example viewing data from a Mini futures contract while executing orders on a Micro contract, without opening additional charts. For accurate volumetric analysis, always base your decisions on the main futures contract.
 
@@ -47,7 +47,7 @@ Daily P/L – profit or loss realized on the instrument for the current trading 
 
 ## Trading Buttons and Basic Actions
 
-[SCREENSHOT: Trading from the Chart — Trading Buttons and Basic Actions (DeepDOM) | trading-from-the-chart-03.png]
+[SCREENSHOT: Trading from the Chart — Trading Buttons and Basic Actions (DeepDOM) | dd-en-trading-from-the-chart-03.png]
 
 The trading panel includes quick‑access buttons for different order types:
 
@@ -75,17 +75,17 @@ If the Tick diff. option is enabled, Bid and Ask buttons will place limit orders
 
 The OCO (Order‑Cancels‑Order) feature lets you attach two exit orders to a primary position: a profit‑taking limit order and a protective stop. When one of these exit orders is executed, the other is automatically cancelled.
 
-[SCREENSHOT: Trading from the Chart — OCO Strategy (DeepDOM) | trading-from-the-chart-04.png]
+[SCREENSHOT: Trading from the Chart — OCO Strategy (DeepDOM) | dd-en-trading-from-the-chart-04.png]
 
 ### Show historical executions
 
 To display historical fills on the chart, open the chart settings and enable Show historical executions . Trade markers will then appear at the corresponding prices and times.
 
-[SCREENSHOT: Trading from the Chart — Show historical executions (DeepDOM) | trading-from-the-chart-05.png]
+[SCREENSHOT: Trading from the Chart — Show historical executions (DeepDOM) | dd-en-trading-from-the-chart-05.png]
 
 ## Chart DOM Overview
 
-[SCREENSHOT: Trading from the Chart — Chart DOM Overview (DeepDOM) | trading-from-the-chart-06.png]
+[SCREENSHOT: Trading from the Chart — Chart DOM Overview (DeepDOM) | dd-en-trading-from-the-chart-06.png]
 
 The Chart DOM provides a vertical order book ladder next to your chart.
 
@@ -135,11 +135,11 @@ Double‑click with the left mouse button to edit the order quantity.
 
 ## Chart DOM Settings and Columns
 
-[SCREENSHOT: Trading from the Chart — Chart DOM Settings and Columns (DeepDOM) | trading-from-the-chart-07.png]
+[SCREENSHOT: Trading from the Chart — Chart DOM Settings and Columns (DeepDOM) | dd-en-trading-from-the-chart-07.png]
 
 Click the Settings icon on the Chart DOM to open DOM settings. Here you can adjust Font size, Text format and the appearance of various columns, including:
 
-[SCREENSHOT: Trading from the Chart — Chart DOM Settings and Columns (DeepDOM) | trading-from-the-chart-08.png]
+[SCREENSHOT: Trading from the Chart — Chart DOM Settings and Columns (DeepDOM) | dd-en-trading-from-the-chart-08.png]
 
 Bid/Ask Columns – change background and text colors for Bid and Ask.
 

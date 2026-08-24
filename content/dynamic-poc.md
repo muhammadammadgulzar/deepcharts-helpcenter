@@ -36,7 +36,7 @@ For a hands-on feel of how a volume distribution produces its point of control, 
 3. Set the **Period Value** — for example, 120 with **Minutes** shows the POC of the preceding 120-minute window.
 4. Keep the three envelope percentages at their configured values to start, then widen or narrow them once you have seen how far your instrument typically stretches from its POC.
 
-[SCREENSHOT: An intraday chart with the Dynamic POC line tracking the rolling point of control, with three envelope bands plotted above and below it | dynamic-poc-envelope-chart.png]
+[SCREENSHOT: An intraday chart with the Dynamic POC line tracking the rolling point of control, with three envelope bands plotted above and below it | dc-en-dynamic-poc-01.png]
 
 ## How to read it
 
@@ -71,7 +71,7 @@ The source documentation gives this example: with the POC at 5900 and **% First*
 - **Line style**, **width** and thickness adjustments.
 - **Custom short name** for the indicator's label.
 
-[SCREENSHOT: The Dynamic POC settings dialog showing Period Mode, Period Value and the three envelope percentage fields | dynamic-poc-settings-dialog.png]
+[SCREENSHOT: The Dynamic POC settings dialog showing Period Mode, Period Value and the three envelope percentage fields | dc-en-dynamic-poc-02.png]
 
 ## Tips and common mistakes
 

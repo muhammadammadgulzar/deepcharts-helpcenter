@@ -20,7 +20,7 @@ The Correlation Viewer answers the question "how did these markets move relative
 
 The viewer loads its own data from your feed, like a chart does, and its settings can be edited at any time after creation.
 
-[SCREENSHOT: Correlation Viewer window rendered in Bars display mode with two per-symbol bars (NQ and ES) on a shared percent axis, symbol names visible under the bars and the percent scale on the y-axis | correlation-viewer-overview.png]
+[SCREENSHOT: Correlation Viewer window rendered in Bars display mode with two per-symbol bars (NQ and ES) on a shared percent axis, symbol names visible under the bars and the percent scale on the y-axis | dc-en-correlation-viewer-01.png]
 
 ## When to use it
 
@@ -34,12 +34,12 @@ The viewer loads its own data from your feed, like a chart does, and its setting
 1. In the top application bar, choose **New → Correlation Viewer**.
 2. The **Select Base Instrument** window opens — the standard instrument picker with an exchange sidebar, a type-to-filter box and a **Symbol / Description / Exchange** table. Pick your base symbol and press **Select**.
 
-[SCREENSHOT: Select Base Instrument dialog with the exchange sidebar (All, CBOT, CME, COMEX, CRYPTO, EUREX, INDEX US and others), the type-to-filter box and the symbol table visible | correlation-select-base-instrument.png]
+[SCREENSHOT: Select Base Instrument dialog with the exchange sidebar (All, CBOT, CME, COMEX, CRYPTO, EUREX, INDEX US and others), the type-to-filter box and the symbol table visible | dc-en-correlation-viewer-02.png]
 
 3. The **Correlation Properties** dialog opens. In the **GENERAL** section, set **Days to load**, **TF type** and **TF** for the comparison window.
 4. In the **Symbols** section, press the green **Add symbol** button for each additional instrument you want to compare. Each one appears as a chip with its own color settings.
 
-[SCREENSHOT: Correlation Properties dialog with the Symbols section showing NQ-CME and ES-CME chips, each with Price Down Color, Price Up Color and Retracement Color swatches, and the green Add symbol button | correlation-properties-symbols.png]
+[SCREENSHOT: Correlation Properties dialog with the Symbols section showing NQ-CME and ES-CME chips, each with Price Down Color, Price Up Color and Retracement Color swatches, and the green Add symbol button | dc-en-correlation-viewer-03.png]
 
 5. Press **OK**. The viewer shows a "Building chart" spinner while it downloads data, then renders one bar per symbol on the shared percent axis.
 
@@ -56,11 +56,11 @@ The title bar contains, from left to right:
 | **Funnel icon** | [CONFIRM: what the funnel icon does in the Correlation Viewer — it is not necessarily the same rank filter as the Market Scanner's funnel] |
 | Minimize / maximize / close | Standard window controls |
 
-[SCREENSHOT: Correlation Viewer title bar zoomed in with the gear and funnel icons visible and labeled | correlation-viewer-title-bar.png]
+[SCREENSHOT: Correlation Viewer title bar zoomed in with the gear and funnel icons visible and labeled | dc-en-correlation-viewer-04.png]
 
 While the viewer loads, the window body shows a "Building chart" spinner and a **DWT:** badge with the symbol name appears in the top application bar — DWT means the data is being downloaded from your feed server (LDT would mean data already on disk is being loaded).
 
-[SCREENSHOT: Correlation Viewer showing the Building chart spinner with the DWT: ES-CME badge visible in the top application bar | correlation-viewer-building-chart.png]
+[SCREENSHOT: Correlation Viewer showing the Building chart spinner with the DWT: ES-CME badge visible in the top application bar | dc-en-correlation-viewer-05.png]
 
 ## How to read it
 
@@ -70,7 +70,7 @@ Each bar summarizes that symbol's percent move over the loaded window. In a sess
 
 Bar colors appear to follow each symbol's configured **Price Down Color** / **Price Up Color** from the Symbols section, but the exact color mapping may vary — if the colors matter for your read, set distinct per-symbol colors so each bar is unambiguous.
 
-[SCREENSHOT: Rendered Bars view zoomed in on one symbol's bar showing the body and the thinner wick extension against the percent axis labels | correlation-viewer-bar-anatomy.png]
+[SCREENSHOT: Rendered Bars view zoomed in on one symbol's bar showing the body and the thinner wick extension against the percent axis labels | dc-en-correlation-viewer-06.png]
 
 ## Add or remove symbols
 
@@ -83,7 +83,7 @@ You can change the comparison at any time:
 
 Each symbol chip carries its own **Price Down Color** (red by default), **Price Up Color** (green by default) and **Retracement Color** (blue by default).
 
-[SCREENSHOT: Select Instrument picker opened on top of the Correlation Properties dialog after pressing Add symbol | correlation-add-symbol-picker.png]
+[SCREENSHOT: Select Instrument picker opened on top of the Correlation Properties dialog after pressing Add symbol | dc-en-correlation-viewer-07.png]
 
 ## Settings reference
 
@@ -98,7 +98,7 @@ All settings live in the **Correlation Properties** dialog, shown at creation an
 | **TF** | 15 | The timeframe value (with TF type = Minutes, 15-minute data) |
 | **Display mode** | Bars | How the comparison renders. **Bars** draws one percent bar per symbol. [CONFIRM: other Display mode options] |
 
-[SCREENSHOT: Correlation Properties GENERAL section showing Days to load, TF type dropdown, TF stepper and Display mode dropdown | correlation-properties-general.png]
+[SCREENSHOT: Correlation Properties GENERAL section showing Days to load, TF type dropdown, TF stepper and Display mode dropdown | dc-en-correlation-viewer-08.png]
 
 ### CALCULATION
 
@@ -142,7 +142,7 @@ The same dialog also holds the standard window-appearance sections found on othe
 | **USER ANNOTATIONS** | Annotation styling |
 | **EXTRA** | Additional options (collapsed by default) |
 
-[SCREENSHOT: Correlation Properties dialog scrolled to the CHART AREA, GRID, USER ANNOTATIONS and EXTRA sections with the Apply and OK buttons visible | correlation-properties-appearance.png]
+[SCREENSHOT: Correlation Properties dialog scrolled to the CHART AREA, GRID, USER ANNOTATIONS and EXTRA sections with the Apply and OK buttons visible | dc-en-correlation-viewer-09.png]
 
 ## Tips and common mistakes
 

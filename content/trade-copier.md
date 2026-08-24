@@ -28,13 +28,13 @@ The copier is a beta feature with real failure modes (unfilled child orders, res
 
 1. Click **Trading → Trade Copier - Beta** in the main bar.
 
-[SCREENSHOT: The Trading menu open with the Trade Copier - Beta entry highlighted | trading-menu-trade-copier.png]
+[SCREENSHOT: The Trading menu open with the Trade Copier - Beta entry highlighted | dc-en-trade-copier-01.png]
 
 2. Click **Add New Group**.
 
 3. Give the group a **Name** you will recognize — you can run multiple groups with different settings at the same time.
 
-[SCREENSHOT: The Trade Copier window with the Add New Group configuration open, Name field filled in and the settings list visible | trade-copier-new-group.png]
+[SCREENSHOT: The Trade Copier window with the Add New Group configuration open, Name field filled in and the settings list visible | dc-en-trade-copier-02.png]
 
 ### Choose the copy mode
 
@@ -55,7 +55,7 @@ Pick based on what hurts more in your strategy: a missed child fill (OrdersToOrd
 
 7. Add the specific symbols the group should copy — symbols are configured per group.
 
-[SCREENSHOT: The group configuration showing the parent account, child account rows with their Contracts Multiplier values, and the symbol list for the group | trade-copier-children-multiplier.png]
+[SCREENSHOT: The group configuration showing the parent account, child account rows with their Contracts Multiplier values, and the symbol list for the group | dc-en-trade-copier-03.png]
 
 ### Set the timing and recovery behavior
 
@@ -96,7 +96,7 @@ Some brokers do not support server-side OCO together with the Trade Copier. In t
 
 13. Check the parent status: it shows **Ready** when its feed is connected, or **Waiting Connection** if not.
 
-[SCREENSHOT: The Trade Copier window with a running group, parent status showing Ready and child accounts listed with their sync state | trade-copier-group-running.png]
+[SCREENSHOT: The Trade Copier window with a running group, parent status showing Ready and child accounts listed with their sync state | dc-en-trade-copier-04.png]
 
 > **Tip:** The live documentation's suggested starting configuration is: Copy Mode **OrdersToOrders**, Copy Delay **0 ms**, Resync Mode **None**, Expiration Logic **None**, Synchronization Timeout **15 s**, Resynchronization Attempt Delay **20 s** — conservative settings with no automatic resync orders while you learn the tool.
 

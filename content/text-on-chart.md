@@ -32,11 +32,11 @@ It is a lightweight annotation indicator: you type a message once in its setting
 5. Optionally set a **Back Color** to place the text on a solid background block for readability.
 6. Apply the settings.
 
-[SCREENSHOT: A chart with the Text on Chart indicator displaying a short trading-plan note in large text with a contrasting background block, clearly readable over the candles | text-on-chart-note-example.png]
+[SCREENSHOT: A chart with the Text on Chart indicator displaying a short trading-plan note in large text with a contrasting background block, clearly readable over the candles | dc-en-text-on-chart-01.png]
 
 ## Settings reference
 
-[SCREENSHOT: Text on Chart settings dialog showing the Font Size, Text Color, Back Color and Text fields, with a sample message entered in the Text field | text-on-chart-settings.png]
+[SCREENSHOT: Text on Chart settings dialog showing the Font Size, Text Color, Back Color and Text fields, with a sample message entered in the Text field | dc-en-text-on-chart-02.png]
 
 | Setting | What it does |
 |---|---|

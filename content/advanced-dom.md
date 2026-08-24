@@ -38,11 +38,11 @@ If the ladder idea is new to you, explore the living order book below — hover 
 2. Pick your instrument in **Select Instrument** and confirm. Only exchanges subscribed in [[symbol-manage]] appear.
 3. The window opens and the ladder starts updating live. While history downloads, the main bar may show a **DWT:** badge — that is normal (DWT = downloading data from the feed server; LDT = loading data already on disk).
 
-[SCREENSHOT: New menu open with the Book submenu expanded showing Adv. Dom, Horizontal dom and Vertical dom, and the Select Instrument dialog behind it | adv-dom-open-flow.png]
+[SCREENSHOT: New menu open with the Book submenu expanded showing Adv. Dom, Horizontal dom and Vertical dom, and the Select Instrument dialog behind it | dc-en-advanced-dom-01.png]
 
 ## Window anatomy
 
-[SCREENSHOT: Full Advanced DOM window on NQ with all four sections visible: title bar with logo, eraser, gear, symbol dropdown and link icons; the Broker/Account/Qty/Daily P&L header; the %V %O V T stats row; the ladder with P&L, B, Bid, Price, Ask, S and VP columns with the current-price row highlighted orange; and the footer with the A box, Qty spinner, Cancel - Flat All, Buy, Cancel, Flat, Sell and the OCO block | adv-dom-window-overview.png]
+[SCREENSHOT: Full Advanced DOM window on NQ with all four sections visible: title bar with logo, eraser, gear, symbol dropdown and link icons; the Broker/Account/Qty/Daily P&L header; the %V %O V T stats row; the ladder with P&L, B, Bid, Price, Ask, S and VP columns with the current-price row highlighted orange; and the footer with the A box, Qty spinner, Cancel - Flat All, Buy, Cancel, Flat, Sell and the OCO block | dc-en-advanced-dom-02.png]
 
 Top to bottom:
 
@@ -69,7 +69,7 @@ The default view shows **P&L | B | Bid | Price | Ask | S | VP**. Enabling everyt
 | **#B / #A** | Order-count columns, tied to the Offers feature (count of individual orders per level). They can stay empty on feeds that do not deliver order-level data — exact data requirement unconfirmed. |
 | **VP / VP** | Two volume-profile columns: the Resettable Profile (accumulates until you clear it with the eraser icon) and the Daily Profile (from session start). Bars with numbers per level; the highest-volume level's value is highlighted red (the POC). |
 
-[SCREENSHOT: Advanced DOM ladder zoomed to show blue bid depth cells, purple ask depth cells, a green working buy order in the B column, and the two VP columns on the right with the red-highlighted POC value | adv-dom-ladder-columns.png]
+[SCREENSHOT: Advanced DOM ladder zoomed to show blue bid depth cells, purple ask depth cells, a green working buy order in the B column, and the two VP columns on the right with the red-highlighted POC value | dc-en-advanced-dom-03.png]
 
 ## How to read it
 
@@ -78,7 +78,7 @@ The default view shows **P&L | B | Bid | Price | Ask | S | VP**. Enabling everyt
 - **The two VP columns** — executed-volume context. The Daily Profile shows the full session; the Resettable Profile shows only what traded since you last pressed the eraser icon, which makes it useful for "what happened since the news" style questions. The red-highlighted value is the level with the most traded volume (POC — see [[understanding-volume-profile]]).
 - **Markers** — the ladder highlights session levels: **Last** (orange, on by default), **High** (green, on), **Low** (red, on), **Open** (off by default), plus **Suspension** (cyan, on) and **Auction** (off). What the Suspension and Auction markers indicate exactly is [CONFIRM: Suspension and Auction marker semantics].
 
-[SCREENSHOT: Advanced DOM while long 2 contracts — Qty field green showing +2, the P&L column filled with per-level values and the green 0.00 row at the entry level, current-price row orange below it | adv-dom-pl-ladder.png]
+[SCREENSHOT: Advanced DOM while long 2 contracts — Qty field green showing +2, the P&L column filled with per-level values and the green 0.00 row at the entry level, current-price row orange below it | dc-en-advanced-dom-04.png]
 
 ## Trading from the DOM
 
@@ -93,13 +93,13 @@ The default view shows **P&L | B | Bid | Price | Ask | S | VP**. Enabling everyt
 
 When the window is narrow, the DOM re-arranges itself: the header gains **Price** and **P/L** fields, the ladder splits with price in the center and **X** columns that cancel the working order at that level, and the footer becomes an explicit order ticket (**Qty**, **Price**, **Type** dropdown showing LMT, **Buy**, **Cancel all**, **Flat**, **Sell**, plus the OCO row). What width triggers the switch is [CONFIRM: activation rule for the compact split layout].
 
-[SCREENSHOT: Narrow Advanced DOM in compact split layout showing the centered price columns, X cancel columns, and the order-ticket footer with Qty, Price and Type=LMT fields | adv-dom-compact-layout.png]
+[SCREENSHOT: Narrow Advanced DOM in compact split layout showing the centered price columns, X cancel columns, and the order-ticket footer with Qty, Price and Type=LMT fields | dc-en-advanced-dom-05.png]
 
 ## Settings reference
 
 Everything starts at the **gear** icon: **Duplicate Dom**, **Settings Column Order**, **Settings Dom**, **Resettable Profile ▸**, **Daily Profile ▸**, the four **Show** toggles, **Always on Top** and **Template ▸** (Load / Save As).
 
-[SCREENSHOT: Advanced DOM gear menu open showing Duplicate Dom, Settings Column Order, Settings Dom, Resettable Profile, Daily Profile, the four checked Show toggles, Always on Top and Template | adv-dom-gear-menu.png]
+[SCREENSHOT: Advanced DOM gear menu open showing Duplicate Dom, Settings Column Order, Settings Dom, Resettable Profile, Daily Profile, the four checked Show toggles, Always on Top and Template | dc-en-advanced-dom-06.png]
 
 > **Note:** After some settings or profile changes the ladder briefly shows a Loading spinner while it rebuilds. This is normal — the same pattern as a chart rebuilding.
 
@@ -109,7 +109,7 @@ A simple list of the internal column ids with **Up / Down** buttons plus **Apply
 
 A faster alternative: right-click any column header for the quick menu — **Adjust column size**, **Adjust window to fit content**, and show/hide toggles for **Pull/Stack**, **Trades**, **Offers**, **Profit/Loss** plus the two profile submenus.
 
-[SCREENSHOT: Column-header right-click quick menu open showing Adjust column size, Adjust window to fit content, Pull/Stack, Trades, Offers, the checked Profit/Loss entry and the Resettable/Daily Profile submenus | adv-dom-column-quick-menu.png]
+[SCREENSHOT: Column-header right-click quick menu open showing Adjust column size, Adjust window to fit content, Pull/Stack, Trades, Offers, the checked Profit/Loss entry and the Resettable/Daily Profile submenus | dc-en-advanced-dom-07.png]
 
 ### Settings Dom (Chart Dom Settings dialog)
 
@@ -128,7 +128,7 @@ The main dialog, organized in ten collapsible sections:
 | MARKER SETTINGS | Per-marker enable + color: **Last** (on, orange), **Open** (off), **High** (on, green), **Low** (on, red), **Suspension** (on, cyan), **Auction** (off, purple). |
 | ORDER ENABLE SETTINGS | **Enable stop order** (on), **Enable market order** (on). Whether these gate ladder clicks only or also the footer buttons is unconfirmed. |
 
-[SCREENSHOT: Chart Dom Settings dialog open with the GENERAL section expanded and the list of all ten section headers visible | adv-dom-settings-dialog.png]
+[SCREENSHOT: Chart Dom Settings dialog open with the GENERAL section expanded and the list of all ten section headers visible | dc-en-advanced-dom-08.png]
 
 ### Resettable Profile and Daily Profile settings
 
@@ -138,7 +138,7 @@ The nested **Background Settings** window controls profile-bar coloring: **Metho
 
 These profile concepts (POC, value area, peaks and valleys) are the same ones the [[deep-profile]] indicator uses on charts.
 
-[SCREENSHOT: Resettable Profile settings dialog showing the nine section headers with GENERAL expanded, and the nested Background Settings window open on top showing Method color=Fading color and Color calculation=Volume | adv-dom-profile-settings.png]
+[SCREENSHOT: Resettable Profile settings dialog showing the nine section headers with GENERAL expanded, and the nested Background Settings window open on top showing Method color=Fading color and Color calculation=Volume | dc-en-advanced-dom-09.png]
 
 ## Troubleshooting
 

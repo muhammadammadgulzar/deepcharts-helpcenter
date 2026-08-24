@@ -11,7 +11,7 @@ keywords: ["cumulative iceberg stop", "deepdom cumulative iceberg stop", "deepdo
 ---
 The Cumulative Iceberg/Stop indicator monitors and identifies two specific types of market activity — Iceberg orders and Stop orders — using MBO (Market By Order) technology. It tracks the presence and execution of these orders in real time, showing how they influence price movement and helping you understand where significant hidden activity may be taking place.
 
-[SCREENSHOT: Cumulative Iceberg/Stop — overview (DeepDOM) | cumulative-iceberg-stop-01.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — overview (DeepDOM) | dd-en-cumulative-iceberg-stop-01.png]
 
 ### What is an Iceberg Order?
 
@@ -43,7 +43,7 @@ Find Cumulative Iceberg/Stop in the list and click + to add it
 
 Click the settings icon on the indicator to open its configuration window
 
-[SCREENSHOT: Cumulative Iceberg/Stop — How to Set Up the Cumulative Iceberg/Stop Indicator (DeepDOM) | cumulative-iceberg-stop-02.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — How to Set Up the Cumulative Iceberg/Stop Indicator (DeepDOM) | dd-en-cumulative-iceberg-stop-02.png]
 
 ## General Settings
 
@@ -53,31 +53,31 @@ Volume — based on the volume of orders
 
 Order — based on the number of individual orders
 
-[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | cumulative-iceberg-stop-03.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | dd-en-cumulative-iceberg-stop-03.png]
 
 Filter Minimum Sets the minimum volume or number of orders required for an event to be considered relevant. This filters out insignificant activity and focuses the indicator on meaningful order flow.
 
-[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | cumulative-iceberg-stop-04.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | dd-en-cumulative-iceberg-stop-04.png]
 
 Examples - Filter Minimum - By 1
 
-[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | cumulative-iceberg-stop-05.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | dd-en-cumulative-iceberg-stop-05.png]
 
 Filter Minimum - By 10
 
-[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | cumulative-iceberg-stop-06.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | dd-en-cumulative-iceberg-stop-06.png]
 
 Filter Maximum Sets the maximum volume or number of orders to be included in the calculation. Useful for excluding outlier events from the display.
 
-[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | cumulative-iceberg-stop-07.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | dd-en-cumulative-iceberg-stop-07.png]
 
 Examples - Filter Max - By 0
 
-[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | cumulative-iceberg-stop-08.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | dd-en-cumulative-iceberg-stop-08.png]
 
 Filter Max - By 10
 
-[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | cumulative-iceberg-stop-09.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — General Settings (DeepDOM) | dd-en-cumulative-iceberg-stop-09.png]
 
 ## Iceberg Settings
 
@@ -85,17 +85,17 @@ Iceberg Ask Color Sets the color used to identify Iceberg orders on the Ask (sel
 
 Iceberg Bid Color Sets the color used to identify Iceberg orders on the Bid (buy) side of the market.
 
-[SCREENSHOT: Cumulative Iceberg/Stop — Iceberg Settings (DeepDOM) | cumulative-iceberg-stop-10.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — Iceberg Settings (DeepDOM) | dd-en-cumulative-iceberg-stop-10.png]
 
-[SCREENSHOT: Cumulative Iceberg/Stop — Iceberg Settings (DeepDOM) | cumulative-iceberg-stop-11.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — Iceberg Settings (DeepDOM) | dd-en-cumulative-iceberg-stop-11.png]
 
 ## Stop Settings
 
 Stop Bid Color Sets the color used to display Stop orders triggered on the buy side. Stop Ask Color Sets the color used to display Stop orders triggered on the sell side.
 
-[SCREENSHOT: Cumulative Iceberg/Stop — Stop Settings (DeepDOM) | cumulative-iceberg-stop-12.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — Stop Settings (DeepDOM) | dd-en-cumulative-iceberg-stop-12.png]
 
-[SCREENSHOT: Cumulative Iceberg/Stop — Stop Settings (DeepDOM) | cumulative-iceberg-stop-13.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — Stop Settings (DeepDOM) | dd-en-cumulative-iceberg-stop-13.png]
 
 ## Plot Settings
 
@@ -107,7 +107,7 @@ Iceberg Axis — shows the quantity of Iceberg orders identified
 
 You can also add multiple Stop Iceberg indicators to the same chart and configure them independently — for example, dedicating one indicator to Icebergs and another to Stops — allowing for a more customized and detailed view.
 
-[SCREENSHOT: Cumulative Iceberg/Stop — Plot Settings (DeepDOM) | cumulative-iceberg-stop-14.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — Plot Settings (DeepDOM) | dd-en-cumulative-iceberg-stop-14.png]
 
 Display Mode Defines how order data is aggregated and displayed. Options include:
 
@@ -131,7 +131,7 @@ Threshold — sets the minimum number of Stop orders the indicator must identify
 
 Enable Popup — when enabled, a popup alert appears on screen when the threshold is reached
 
-[SCREENSHOT: Cumulative Iceberg/Stop — Alert Stop (DeepDOM) | cumulative-iceberg-stop-15.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — Alert Stop (DeepDOM) | dd-en-cumulative-iceberg-stop-15.png]
 
 ## Alert Iceberg
 
@@ -141,7 +141,7 @@ Threshold — sets the minimum number of Iceberg orders the indicator must ident
 
 Enable Popup — when enabled, a popup alert appears on screen when the threshold is exceeded
 
-[SCREENSHOT: Cumulative Iceberg/Stop — Alert Iceberg (DeepDOM) | cumulative-iceberg-stop-16.png]
+[SCREENSHOT: Cumulative Iceberg/Stop — Alert Iceberg (DeepDOM) | dd-en-cumulative-iceberg-stop-16.png]
 
 ## Conclusion
 

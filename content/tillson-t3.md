@@ -38,7 +38,7 @@ A **Volume Factor** setting controls the balance between responsiveness and smoo
 
 A sensible starter configuration is the default one: **Length** 14, **Volume Factor** 0.618, **Input Data** Close. With **Auto Color** set to **Slope**, the line changes color as its direction changes, which makes the trend read at a glance.
 
-[SCREENSHOT: A price chart with the Tillson T3 plotted over the candles, Auto Color = Slope so the line shows one color on rising segments and the secondary color on falling segments | tillson-t3-on-chart.png]
+[SCREENSHOT: A price chart with the Tillson T3 plotted over the candles, Auto Color = Slope so the line shows one color on rising segments and the secondary color on falling segments | dc-en-tillson-t3-01.png]
 
 ## How to read it
 
@@ -69,7 +69,7 @@ Because the T3 is heavily smoothed, treat it as a trend and bias tool rather tha
 | **Line Width** | Line thickness. Default: 1. Increase it to make the trend line more prominent. |
 | **Short Name** | Custom label shown in the chart legend. |
 
-[SCREENSHOT: The Tillson T3 settings dialog showing the General group (Length 14, Volume Factor 0.618, Input Data Close) and the Subgraph group below it | tillson-t3-settings.png]
+[SCREENSHOT: The Tillson T3 settings dialog showing the General group (Length 14, Volume Factor 0.618, Input Data Close) and the Subgraph group below it | dc-en-tillson-t3-02.png]
 
 ## Tips and common mistakes
 

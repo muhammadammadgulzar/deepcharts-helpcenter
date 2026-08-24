@@ -17,7 +17,7 @@ When connecting a Rithmic feed, the connection fails with:
 
 **Connection Failed: Please log in using R | Trader or R | Trader Pro and sign the agreements**
 
-[SCREENSHOT: The connection error dialog showing the "Please log in using R | Trader or R | Trader Pro and sign the agreements" message | rithmic-sign-agreements-error.png]
+[SCREENSHOT: The connection error dialog showing the "Please log in using R | Trader or R | Trader Pro and sign the agreements" message | dc-en-fix-log-in-using-rtrader-01.png]
 
 Not to be confused with:
 
@@ -49,12 +49,12 @@ If the website route is unavailable for your account, sign through the R Trader 
 3. Launch R Trader Pro. The login screen shows two login forms side by side — fill **both** forms with the same credentials and the same selections; this is how it is designed to work.
 4. In each form, set **System** to your firm or system (Apex users select **Apex**), set **Gateway** to the location nearest to you (Chicago, Europe, Singapore...), and enter your Rithmic username and password.
 
-[SCREENSHOT: The R Trader Pro login screen showing the two side-by-side login forms, both filled with System, Gateway, Username and Password | rtrader-pro-dual-login.png]
+[SCREENSHOT: The R Trader Pro login screen showing the two side-by-side login forms, both filled with System, Gateway, Username and Password | dc-en-fix-log-in-using-rtrader-02.png]
 
 5. Click **Login**.
 6. When prompted, read and accept the Market Data Agreement, selecting **Non-Professional** status if it applies to you.
 
-[SCREENSHOT: The Market Data Agreement prompt inside R Trader Pro with the accept action visible | rtrader-pro-agreement-prompt.png]
+[SCREENSHOT: The Market Data Agreement prompt inside R Trader Pro with the accept action visible | dc-en-fix-log-in-using-rtrader-03.png]
 
 7. Close R Trader Pro — the agreement is now recorded on Rithmic's side.
 8. Open DeepCharts and reconnect the feed.

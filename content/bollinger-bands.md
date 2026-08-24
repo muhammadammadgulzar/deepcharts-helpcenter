@@ -23,7 +23,7 @@ Bollinger Bands answer the question: is price high or low relative to its own re
 
 Since roughly all of recent price action is contained between the bands under normal conditions, a touch or breach of a band is a statement about volatility-adjusted extremes, not a signal by itself.
 
-[SCREENSHOT: Candlestick chart with Bollinger Bands overlaid, showing the middle average and the upper and lower bands, with a visible squeeze (bands narrowing) followed by an expansion | bollinger-bands-on-chart.png]
+[SCREENSHOT: Candlestick chart with Bollinger Bands overlaid, showing the middle average and the upper and lower bands, with a visible squeeze (bands narrowing) followed by an expansion | dc-en-bollinger-bands-01.png]
 
 ## When to use it
 
@@ -40,7 +40,7 @@ Since roughly all of recent price action is contained between the bands under no
 4. Click the gear icon (the indicator settings icon) to open its configuration window.
 5. The classic configuration described by John Bollinger is a 20-period average with a standard-deviation value of 2, calculated on the Close — a solid starting point on any timeframe.
 
-[SCREENSHOT: Bollinger Bands configuration window open, showing the Input Data dropdown, the Periods field and the Std Dev Value field, with the Subgraphs styling section below | bollinger-bands-settings.png]
+[SCREENSHOT: Bollinger Bands configuration window open, showing the Input Data dropdown, the Periods field and the Std Dev Value field, with the Subgraphs styling section below | dc-en-bollinger-bands-02.png]
 
 ## How to read it
 

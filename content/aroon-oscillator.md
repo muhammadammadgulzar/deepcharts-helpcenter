@@ -36,7 +36,7 @@ The indicator helps traders identify emerging trends, trend strength, potential 
 
 The default **Length** of 14 matches the standard Aroon setup. The default **Subgraph Style** is **Bars** with **Auto Color (+/-)**, so positive and negative readings are colored differently out of the box — an easy way to read regime at a glance.
 
-[SCREENSHOT: A price chart with the Aroon Oscillator in a lower panel rendered as bars, positive bars in one color during the uptrend and negative bars in another after the reversal, zero line visible in the middle | aroon-oscillator-on-chart.png]
+[SCREENSHOT: A price chart with the Aroon Oscillator in a lower panel rendered as bars, positive bars in one color during the uptrend and negative bars in another after the reversal, zero line visible in the middle | dc-en-aroon-oscillator-01.png]
 
 ## How to read it
 
@@ -81,7 +81,7 @@ These levels help identify strong trend conditions and potential exhaustion zone
 | **Chart color for marker** | Uses the chart color for the value marker. |
 | **Include on Auto Center** | Whether the series is considered when the panel auto-scales. |
 
-[SCREENSHOT: The Aroon Oscillator settings dialog showing Length 14, the Level settings group with Middle/Lower/High Level fields, and the Subgraphs group with Subgraph Style set to Bars and Auto Color (+/-) enabled | aroon-oscillator-settings.png]
+[SCREENSHOT: The Aroon Oscillator settings dialog showing Length 14, the Level settings group with Middle/Lower/High Level fields, and the Subgraphs group with Subgraph Style set to Bars and Auto Color (+/-) enabled | dc-en-aroon-oscillator-02.png]
 
 ## Tips and common mistakes
 

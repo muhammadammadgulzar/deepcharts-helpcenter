@@ -34,7 +34,7 @@ The raw line is deliberately twitchy. The built-in **Average** section can smoot
 3. Click the gear icon on the indicator's row to open its settings.
 4. Keep the defaults to start: **Length** 14 with the **High Level** at 80, **Middle Level** at 50 and **Low Level** at 20. If the line is too noisy for your timeframe, enable the **Average** section (Simple, 20 bars) to smooth it.
 
-[SCREENSHOT: A chart with the Williams %R indicator in its own area below price, the line dipping under the 20 low level and turning back up, with the 80/50/20 level lines visible | williams-r-on-chart.png]
+[SCREENSHOT: A chart with the Williams %R indicator in its own area below price, the line dipping under the 20 low level and turning back up, with the 80/50/20 level lines visible | dc-en-williams-r-01.png]
 
 ## How to read it
 
@@ -81,7 +81,7 @@ Each level line has its own color and width settings (default line width: 1).
 | **Line Width** | Thickness of the line. Default: 1. |
 | **Short Name** | The label shown for the indicator. Default: "W%R". |
 
-[SCREENSHOT: The Williams %R settings dialog showing Length 14, the Average section with Average Type options, and the Levels section with Middle 50, Low 20 and High 80 | williams-r-settings-dialog.png]
+[SCREENSHOT: The Williams %R settings dialog showing Length 14, the Average section with Average Type options, and the Levels section with Middle 50, Low 20 and High 80 | dc-en-williams-r-02.png]
 
 ## Tips and common mistakes
 

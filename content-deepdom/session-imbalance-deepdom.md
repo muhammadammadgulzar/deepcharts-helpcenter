@@ -11,7 +11,7 @@ keywords: ["session imbalance", "deepdom session imbalance", "deepdom", "indicat
 ---
 The Session Imbalance indicator highlights key price levels from the first hour of trading, known as the Initial Balance. These levels are considered significant because the majority of trading volume in any session enters during this opening hour.
 
-[SCREENSHOT: Session Imbalance — overview (DeepDOM) | session-imbalance-deepdom-01.png]
+[SCREENSHOT: Session Imbalance — overview (DeepDOM) | dd-en-session-imbalance-deepdom-01.png]
 
 For U.S. futures, this corresponds to 9:30 – 10:30 a.m. market time. Over the course of the session, these levels often act as important support, resistance, or reaction zones.
 
@@ -51,7 +51,7 @@ Find Session Imbalance in the list and click + to add it
 
 Click the settings icon on the indicator to open its configuration window
 
-[SCREENSHOT: Session Imbalance — How to Add the Session Imbalance to Your Chart (DeepDOM) | session-imbalance-deepdom-02.png]
+[SCREENSHOT: Session Imbalance — How to Add the Session Imbalance to Your Chart (DeepDOM) | dd-en-session-imbalance-deepdom-02.png]
 
 ## General Settings
 
@@ -65,33 +65,33 @@ U.S. futures → 9:30 a.m.
 
 European futures → 9:00 a.m.
 
-[SCREENSHOT: Session Imbalance — General Settings (DeepDOM) | session-imbalance-deepdom-03.png]
+[SCREENSHOT: Session Imbalance — General Settings (DeepDOM) | dd-en-session-imbalance-deepdom-03.png]
 
 ## Plot Settings
 
 High Color Sets the color of the IBH (Imbalance High) line.
 
-[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | session-imbalance-deepdom-04.png]
+[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | dd-en-session-imbalance-deepdom-04.png]
 
 Mid Color Sets the color of the IBM (Mid Point) line.
 
-[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | session-imbalance-deepdom-05.png]
+[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | dd-en-session-imbalance-deepdom-05.png]
 
 Low Color Sets the color of the IBL (Imbalance Low) line.
 
-[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | session-imbalance-deepdom-06.png]
+[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | dd-en-session-imbalance-deepdom-06.png]
 
 Line Width Sets the thickness of all Session Imbalance lines.
 
-[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | session-imbalance-deepdom-07.png]
+[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | dd-en-session-imbalance-deepdom-07.png]
 
 Line Style Sets the style of the lines — for example solid, dashed, or dotted.
 
-[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | session-imbalance-deepdom-08.png]
+[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | dd-en-session-imbalance-deepdom-08.png]
 
 Text Size Sets the font size of the labels displayed next to each level.
 
-[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | session-imbalance-deepdom-09.png]
+[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | dd-en-session-imbalance-deepdom-09.png]
 
 Extend Controls how far the Session Imbalance lines are drawn across the chart. There are three options:
 
@@ -101,7 +101,7 @@ Till Interaction: The lines extend to the right until price interacts with them 
 
 Till End: The lines extend all the way to the right edge of the chart, regardless of whether price has interacted with them or not. This is the default and gives you a full visual reference of all levels across the entire session.
 
-[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | session-imbalance-deepdom-10.png]
+[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | dd-en-session-imbalance-deepdom-10.png]
 
 Text Align Sets where the labels appear relative to the lines. You can choose between:
 
@@ -111,9 +111,9 @@ Center
 
 Right
 
-[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | session-imbalance-deepdom-11.png]
+[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | dd-en-session-imbalance-deepdom-11.png]
 
-[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | session-imbalance-deepdom-12.png]
+[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | dd-en-session-imbalance-deepdom-12.png]
 
 Plot Once Ended When this setting is enabled, the Session Imbalance levels are only drawn on the chart once the initial balance period has fully closed and completed. This means you will not see the lines forming or updating in real time while the opening period is still active — they will only appear after the period ends.
 
@@ -123,7 +123,7 @@ Use Plot Once Ended ON if you only want to trade the confirmed, finalized levels
 
 Use Plot Once Ended OFF if you want to monitor the levels as they develop and react to price action during the opening period itself.
 
-[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | session-imbalance-deepdom-13.png]
+[SCREENSHOT: Session Imbalance — Plot Settings (DeepDOM) | dd-en-session-imbalance-deepdom-13.png]
 
 ## 50% / 100% Extension Levels
 
@@ -131,9 +131,9 @@ Enable the 50% and 100% extension lines to plot projected levels above and below
 
 These extensions are commonly used to identify potential targets or reaction zones if price breaks out beyond the initial balance high or low.
 
-[SCREENSHOT: Session Imbalance — 50% / 100% Extension Levels (DeepDOM) | session-imbalance-deepdom-14.png]
+[SCREENSHOT: Session Imbalance — 50% / 100% Extension Levels (DeepDOM) | dd-en-session-imbalance-deepdom-14.png]
 
-[SCREENSHOT: Session Imbalance — 50% / 100% Extension Levels (DeepDOM) | session-imbalance-deepdom-15.png]
+[SCREENSHOT: Session Imbalance — 50% / 100% Extension Levels (DeepDOM) | dd-en-session-imbalance-deepdom-15.png]
 
 ## Conclusion
 

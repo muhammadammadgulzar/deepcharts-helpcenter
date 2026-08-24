@@ -37,7 +37,7 @@ The live profile below shows where those levels come from — the POC and the va
 4. In **Value Area**, enable the lines with **% Value Area** = 70.
 5. Apply — each day's POC and value area boundaries now draw as lines, and POC lines that price has not yet revisited keep extending: those are your naked POCs.
 
-[SCREENSHOT: Chart with Deep Profile Values active showing daily POC lines and value area boundary lines; one older POC line extends untouched across several days, annotated as a naked POC | deep-profile-values-naked-poc.png]
+[SCREENSHOT: Chart with Deep Profile Values active showing daily POC lines and value area boundary lines; one older POC line extends untouched across several days, annotated as a naked POC | dc-en-deep-profile-values-01.png]
 
 ## How to read it
 
@@ -153,7 +153,7 @@ Grouped as in the indicator dialog.
 
 > **Warning:** Customized Timetable session times reference the U.S. time zone exclusively. If you trade from another region, convert your session boundaries before entering them, or the profiles will cover the wrong hours.
 
-[SCREENSHOT: Deep Profile Values settings dialog open at the POC section showing Show Line and Extend Line dropdowns with Till Interaction selected | deep-profile-values-settings-poc.png]
+[SCREENSHOT: Deep Profile Values settings dialog open at the POC section showing Show Line and Extend Line dropdowns with Till Interaction selected | dc-en-deep-profile-values-02.png]
 
 ## Tips and common mistakes
 

@@ -85,7 +85,7 @@ Say ES is trading at 5,300.00 and a 5-minute bar prints 12,400 contracts at the 
 
 The next bar prints another +3,000 delta, yet closes flat, back near the previous close. Aggressive buyers spent 3,000 contracts of net effort and got nothing for it. Someone was passively selling into them at the highs — absorption. If the following bars show delta flipping negative while price starts slipping, the failed buying effort becomes the start of a reversal story.
 
-[SCREENSHOT: Two consecutive footprint bars annotated side by side — first bar with strongly positive delta closing on its high, second bar with similar positive delta but a flat close, annotation text "same buying effort, no result = absorption" | orderflow-101-worked-example-absorption.png]
+[SCREENSHOT: Two consecutive footprint bars annotated side by side — first bar with strongly positive delta closing on its high, second bar with similar positive delta but a flat close, annotation text "same buying effort, no result = absorption" | dc-en-orderflow-101-01.png]
 
 ## Common misreadings
 

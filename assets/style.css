@@ -186,3 +186,18 @@ a:hover{text-decoration:underline}
 /* KB switcher (DeepCharts <-> DeepDOM) */
 .header-links .kb-switch{border:1px solid var(--line,#2c3a4d);border-radius:8px;padding:5px 11px;font-weight:600;white-space:nowrap}
 .header-links .kb-switch:hover{border-color:var(--green,#26d07c);color:var(--green,#26d07c)}
+
+/* Language dropdown */
+.lang-dd{position:relative}
+.lang-dd .lang-btn{background:none;border:1px solid var(--line,#2c3a4d);border-radius:8px;color:var(--ink2,#aab6c4);padding:5px 11px;font-size:13px;font-weight:600;cursor:pointer;white-space:nowrap;font-family:inherit}
+.lang-dd .lang-btn:hover{border-color:var(--green,#26d07c);color:var(--green,#26d07c)}
+.lang-dd .lang-menu{display:none;position:absolute;right:0;top:calc(100% + 6px);background:var(--panel,#131c28);border:1px solid var(--line2,rgba(255,255,255,.15));border-radius:10px;min-width:170px;padding:6px;z-index:60;box-shadow:0 10px 30px rgba(0,0,0,.45)}
+.lang-dd:hover .lang-menu,.lang-dd:focus-within .lang-menu{display:block}
+.lang-menu .lang-item{display:flex;align-items:center;gap:6px;padding:7px 10px;border-radius:7px;font-size:13.5px;color:var(--ink,#e8edf3);text-decoration:none}
+.lang-menu a.lang-item:hover{background:rgba(255,255,255,.06);text-decoration:none}
+.lang-menu .lang-item.cur{color:var(--green,#26d07c);font-weight:700}
+.lang-menu .lang-item.soon{color:var(--ink2,#8a95a5);opacity:.55;cursor:default}
+.lang-menu .beta{font-style:normal;font-size:10px;font-weight:700;letter-spacing:.4px;color:var(--orange,#f5a623);border:1px solid currentColor;border-radius:4px;padding:1px 4px}
+.lang-menu .soonlbl{font-style:normal;font-size:10.5px;margin-left:auto;opacity:.8}
+/* Screenshot placeholder ID */
+.shot .s-id{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--green,#26d07c);letter-spacing:.2px;user-select:all}

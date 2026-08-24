@@ -18,7 +18,7 @@ Every shortcut is re-mappable, so if your combinations differ from this page, so
 
 DeepCharts binds key combinations to platform actions (workspaces, screenshots) and chart actions (mouse modes, drawing tools, trading toggles). The authoritative list is the **Shortcuts** tab in **Options → Settings** — it holds roughly 70 bindable actions, organized by **Category** (**General** or **Chart**) and **Type** (**Action**, **Control**, **Drawing and Annotation**, **Scroll**, **Trading**). This page documents the default combinations for the most-used entries; actions not listed here can be looked up (and bound) in the same tab.
 
-[SCREENSHOT: General Settings window on the Shortcuts tab showing the table of shortcuts with Category, Type, Description and Combination columns, scrolled to the top | shortcuts-reference-settings-tab.png]
+[SCREENSHOT: General Settings window on the Shortcuts tab showing the table of shortcuts with Category, Type, Description and Combination columns, scrolled to the top | dc-en-keyboard-shortcuts-reference-01.png]
 
 ## When to use it
 
@@ -38,7 +38,7 @@ DeepCharts binds key combinations to platform actions (workspaces, screenshots) 
 
 Chart shortcuts act on the focused chart window. Many of them are also shown next to their commands in the chart right-click menu, so the menu doubles as an in-app reminder.
 
-[SCREENSHOT: Chart right-click context menu open, with the hotkeys visible next to the entries (Pointer Alt P, Crosshair Alt C, Trading Enabled Ctrl Alt T, Indicators Ctrl I, Properties Ctrl P) | chart-context-menu-hotkeys.png]
+[SCREENSHOT: Chart right-click context menu open, with the hotkeys visible next to the entries (Pointer Alt P, Crosshair Alt C, Trading Enabled Ctrl Alt T, Indicators Ctrl I, Properties Ctrl P) | dc-en-keyboard-shortcuts-reference-02.png]
 
 ### General (platform-wide)
 

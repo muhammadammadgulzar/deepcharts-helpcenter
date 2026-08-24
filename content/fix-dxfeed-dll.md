@@ -17,7 +17,7 @@ When connecting a dxFeed data feed, the connection fails with:
 
 **Connection Failed: Unable to load DLL 'DXFeed_64.dll' (Exception from HRESULT: 0x8007007E)**
 
-[SCREENSHOT: The connection error dialog showing the full "Unable to load DLL 'DXFeed_64.dll' (Exception from HRESULT: 0x8007007E)" message | dxfeed-dll-error-message.png]
+[SCREENSHOT: The connection error dialog showing the full "Unable to load DLL 'DXFeed_64.dll' (Exception from HRESULT: 0x8007007E)" message | dc-en-fix-dxfeed-dll-01.png]
 
 Not to be confused with:
 
@@ -39,7 +39,7 @@ Install (or reinstall) the Visual C++ Redistributable:
 
 3. Run the installer (or installers).
 
-[SCREENSHOT: The Microsoft Visual C++ Redistributable installer window on the setup screen, before clicking Install | vc-redist-installer.png]
+[SCREENSHOT: The Microsoft Visual C++ Redistributable installer window on the setup screen, before clicking Install | dc-en-fix-dxfeed-dll-02.png]
 
 4. Restart your computer.
 5. Reopen DeepCharts and reconnect your data feed.

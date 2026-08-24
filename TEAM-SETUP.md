@@ -85,5 +85,9 @@ exact text they mean.
 - Work on `test` only. **Never push to `main` or `gh-pages`.**
 - Never commit the `site/` folder (it's generated; it's gitignored).
 - Never invent product facts — use `[CONFIRM: question]` flags when unsure.
+- Edit ENGLISH content only (`content/`, `content-deepdom/`) — other languages
+  are auto-translated by the pipeline after you push.
+- Screenshot placeholders: never change an existing ID; new ones follow
+  `{kb}-{lang}-{slug}-{NN}.png` (the build enforces this).
 - One commit per finished piece of work, with a descriptive message.
 - If `python3 build.py` fails, fix it before pushing.

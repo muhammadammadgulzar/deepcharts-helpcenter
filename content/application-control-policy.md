@@ -17,7 +17,7 @@ Windows stops DeepCharts — or one of its data feed connections — with the me
 - Windows shows the error **"An Application Control policy has blocked this file"** when you launch DeepCharts or when the platform tries to connect a data feed such as Rithmic or dxFeed.
 - The blocked file may be the DeepCharts application itself or a feed component it loads at connection time.
 
-[SCREENSHOT: The Windows notification or dialog reading "An Application Control policy has blocked this file", shown while launching DeepCharts | application-control-policy-blocked-message.png]
+[SCREENSHOT: The Windows notification or dialog reading "An Application Control policy has blocked this file", shown while launching DeepCharts | dc-en-application-control-policy-01.png]
 
 Not to be confused with:
 
@@ -34,11 +34,11 @@ Turn Smart App Control off:
 
 1. Type **Smart App Control** into the Windows search bar and press **Enter**.
 
-[SCREENSHOT: Windows search bar with "Smart App Control" typed in and the Smart App Control settings result highlighted | windows-search-smart-app-control.png]
+[SCREENSHOT: Windows search bar with "Smart App Control" typed in and the Smart App Control settings result highlighted | dc-en-application-control-policy-02.png]
 
 2. The Smart App Control settings page opens (it lives inside Windows Security under **App & browser control**). The current status shows as **On**, **Evaluation**, or **Off**.
 
-[SCREENSHOT: Windows Security Smart App Control settings page showing the three status radio buttons On, Evaluation and Off | smart-app-control-status-page.png]
+[SCREENSHOT: Windows Security Smart App Control settings page showing the three status radio buttons On, Evaluation and Off | dc-en-application-control-policy-03.png]
 
 3. Select the **Off** option and confirm any dialog prompts Windows shows.
 
@@ -46,7 +46,7 @@ Turn Smart App Control off:
 
 4. Close DeepCharts completely, wait several seconds, then launch it again. The application and its data feed connections should now work.
 
-[SCREENSHOT: Smart App Control settings page with the Off option selected and confirmed | smart-app-control-off-selected.png]
+[SCREENSHOT: Smart App Control settings page with the Off option selected and confirmed | dc-en-application-control-policy-04.png]
 
 ## If that didn't work
 

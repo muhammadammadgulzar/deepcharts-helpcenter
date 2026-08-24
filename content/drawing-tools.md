@@ -18,7 +18,7 @@ This article lists every drawing object and its hotkey, then covers the workflow
 
 The annotation system of the chart window. It answers "how do I draw X", "how do I change a drawing's color", "where did my drawings go", and "how do I get my drawings onto another chart or another PC".
 
-[SCREENSHOT: A chart with several annotations placed — a horizontal line at a level, a trend line, a rectangle zone and a text note — with the left drawing toolbar strip visible and the right-click Drawing Objects submenu open | drawing-tools-overview.png]
+[SCREENSHOT: A chart with several annotations placed — a horizontal line at a level, a trend line, a rectangle zone and a text note — with the left drawing toolbar strip visible and the right-click Drawing Objects submenu open | dc-en-drawing-tools-01.png]
 
 ## When to use it
 
@@ -34,7 +34,7 @@ The annotation system of the chart window. It answers "how do I draw X", "how do
 3. To edit a drawing, double left-click it (or left-click to select, then right-click → **Settings**) and change colors and styles in the Annotation Settings.
 4. To remove one drawing, select it and delete it; to clear everything, use right-click → **Drawing Utilities → Erase All Drawing** (see the warning below).
 
-[SCREENSHOT: The Annotation Settings dialog open for a horizontal line, showing color, line style and width options | drawing-tools-annotation-settings.png]
+[SCREENSHOT: The Annotation Settings dialog open for a horizontal line, showing color, line style and width options | dc-en-drawing-tools-02.png]
 
 ## Settings reference
 
@@ -60,7 +60,7 @@ The annotation system of the chart window. It answers "how do I draw X", "how do
 | **Buy calculator** (Shift B) | Position calculator for longs: place it, then drag the stop-loss area and the take-profit area up or down — it shows the risk/reward ratio, the price of both levels, and each level's tick distance from entry. |
 | **Sell calculator** (Shift S) | The same position calculator for shorts. |
 
-[SCREENSHOT: A Buy calculator drawing placed on a chart with the SL area below entry and TP area above, showing the risk/reward ratio and tick distances | drawing-tools-buy-calculator.png]
+[SCREENSHOT: A Buy calculator drawing placed on a chart with the SL area below entry and TP area above, showing the risk/reward ratio and tick distances | dc-en-drawing-tools-03.png]
 
 > **Tip:** The cursor-mode entries in the same right-click menu are worth memorizing: **Pointer** (Alt P), **Crosshair** (Alt C), **Global Crosshair** (Alt G — crosshair on all charts of the same instrument), **Hand** (Alt H). Hotkeys are configurable — see [[keyboard-shortcuts]].
 

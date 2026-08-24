@@ -18,7 +18,7 @@ The result is a complete ORB framework on the chart — where the range is, wher
 
 Deep-M IVB builds the RTH opening range (High, Mid, Low) over a window you choose, then projects statistically derived levels beyond it. After a breakout it plots protection and exit levels — high-probability targets and structured zones — and highlights the strongest reaction zones where price may decelerate. A summary panel in the top-left corner of the chart shows the daily bias.
 
-[SCREENSHOT: Chart with Deep-M IVB applied after the open — opening range High/Mid/Low lines, projection levels above the range following a breakout, shaded reaction zones, and the Summary Panel visible in the top-left corner showing the daily bias | deep-m-ivb-chart-overview.png]
+[SCREENSHOT: Chart with Deep-M IVB applied after the open — opening range High/Mid/Low lines, projection levels above the range following a breakout, shaded reaction zones, and the Summary Panel visible in the top-left corner showing the daily bias | dc-en-deep-m-ivb-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ Deep-M IVB builds the RTH opening range (High, Mid, Low) over a window you choos
 5. Turn on **Enable Zones** to highlight the strongest reaction zones during a breakout.
 6. Apply and wait for the opening range window to complete after the RTH open.
 
-[SCREENSHOT: Deep-M IVB settings dialog showing RTH Opening Range (Min) set to 30, with Enable Protection and Enable Zones toggled on, and the Range color/width/style controls visible | deep-m-ivb-settings.png]
+[SCREENSHOT: Deep-M IVB settings dialog showing RTH Opening Range (Min) set to 30, with Enable Protection and Enable Zones toggled on, and the Range color/width/style controls visible | dc-en-deep-m-ivb-02.png]
 
 ## How to read it
 

@@ -24,7 +24,7 @@ By the end you will have the click-trading ladder active on your chart and know 
 
 1. In the chart's bottom bar, select the **DOM Trading** radio button. Two full-height columns appear at the right edge of the chart — a green buy column and a red sell column — with a **D:** label at the top and orange **CANCEL ALL** / **FLAT ALL** buttons at the bottom.
 
-[SCREENSHOT: Price chart with DOM Trading enabled — green buy column and red sell column at the right edge, the D: 0.00 $ label at the top of the ladder and the orange CANCEL ALL and FLAT ALL buttons at the bottom, with the bottom-bar DOM Trading radio highlighted | dom-trading-ladder-enabled.png]
+[SCREENSHOT: Price chart with DOM Trading enabled — green buy column and red sell column at the right edge, the D: 0.00 $ label at the top of the ladder and the orange CANCEL ALL and FLAT ALL buttons at the bottom, with the bottom-bar DOM Trading radio highlighted | dc-en-dom-trading-chart-01.png]
 
 2. Set your size in the trading panel's **Qty** field. Each ladder click submits this quantity.
 
@@ -49,7 +49,7 @@ Get a feel for the level logic on the live ladder below — sell limits sit viol
 
 6. Read the ladder readouts. The **D:** label at the top of the ladder is your profit-and-loss readout for the position. If your feed provides Level 2 depth, the ladder also shows the resting liquidity at each price level — zoom in on the chart to see the numbers. With Level 1 data only the best bid and ask are shown.
 
-[SCREENSHOT: DOM ladder zoomed in on a Level 2 feed showing resting liquidity quantities in the price levels of the green and red columns | dom-ladder-level2-liquidity.png]
+[SCREENSHOT: DOM ladder zoomed in on a Level 2 feed showing resting liquidity quantities in the price levels of the green and red columns | dc-en-dom-trading-chart-02.png]
 
 7. Use the orange emergency buttons at the bottom of the ladder: **CANCEL ALL** cancels working orders, **FLAT ALL** closes positions.
 
@@ -66,7 +66,7 @@ Open the dropdown menu next to the **DOM Trading** radio in the bottom bar:
 - **DOM Settings** — show the depth of market with color customization.
 - **Text Settings** — enable on-chart text and adjust its color and appearance.
 
-[SCREENSHOT: The DOM Trading dropdown menu open in the chart bottom bar showing Enable Chart Trading, Chart Trading Width, Trading Colors, Line Bid/Ask, DOM Settings and Text Settings | dom-trading-dropdown-options.png]
+[SCREENSHOT: The DOM Trading dropdown menu open in the chart bottom bar showing Enable Chart Trading, Chart Trading Width, Trading Colors, Line Bid/Ask, DOM Settings and Text Settings | dc-en-dom-trading-chart-03.png]
 
 ### If you want brackets attached to ladder entries
 

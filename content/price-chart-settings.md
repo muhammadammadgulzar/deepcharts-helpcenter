@@ -35,7 +35,7 @@ The chart visualizes the historical transactions of buyers and sellers based on 
 3. Make a change — for example set **Days To Load** to 30.
 4. Click **Apply** to see the result on the chart, then **Save**.
 
-[SCREENSHOT: The Price Settings dialog open on the Parameters tab, showing the left section list (DATA, VOLUME/DELTA, PRICE LINE, COUNTDOWN, % VAR, LINE START DAY, CUSTOM TIME SESSION, DEEP RANGE) and the GENERAL fields with Days To Load=10, Param Type=Minute, Param 1=5 | price-settings-parameters-tab.png]
+[SCREENSHOT: The Price Settings dialog open on the Parameters tab, showing the left section list (DATA, VOLUME/DELTA, PRICE LINE, COUNTDOWN, % VAR, LINE START DAY, CUSTOM TIME SESSION, DEEP RANGE) and the GENERAL fields with Days To Load=10, Param Type=Minute, Param 1=5 | dc-en-price-chart-settings-01.png]
 
 > **Note:** Some changes (for example toggling **Exclude Auction**) rebuild the entire chart — the **Building chart** spinner while it reloads is normal.
 
@@ -98,7 +98,7 @@ These settings power the volume-width and delta-colored candle modes. The **Equi
 | **Delta fading mode** | **Delta volume** or **Delta percentual** [CONFIRM: exact difference]. |
 | **Std dev for coloring** | 2.00 as configured [CONFIRM: how the standard deviation scales the coloring]. |
 
-[SCREENSHOT: A chart with both Width based volume and Color based on delta enabled — candles of visibly different widths and green/purple color intensities — next to the VOLUME/DELTA section of the Price Settings dialog | price-settings-volume-delta.png]
+[SCREENSHOT: A chart with both Width based volume and Color based on delta enabled — candles of visibly different widths and green/purple color intensities — next to the VOLUME/DELTA section of the Price Settings dialog | dc-en-price-chart-settings-02.png]
 
 ### Parameters tab — PRICE LINE
 
@@ -170,7 +170,7 @@ Controls how the price series itself is drawn and labeled on the axis.
 | **Chart color for marker** | Default off [CONFIRM: exact effect]. |
 | **Include on Auto Center** | Default on — whether this series is considered when the chart auto-centers the visible price range [CONFIRM: exact Auto Center behavior]. |
 
-[SCREENSHOT: The Price Settings dialog on the Subgraphs tab showing the Price row selected, the Bull/Bear color swatches, Subgraph Style dropdown open with Line / Candlestick / OHLC / Hidden / CandleBody visible | price-settings-subgraphs-tab.png]
+[SCREENSHOT: The Price Settings dialog on the Subgraphs tab showing the Price row selected, the Bull/Bear color swatches, Subgraph Style dropdown open with Line / Candlestick / OHLC / Hidden / CandleBody visible | dc-en-price-chart-settings-03.png]
 
 ### Dialog footer
 

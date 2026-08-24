@@ -26,15 +26,15 @@ Replay and a live feed are mutually exclusive: the platform replays recorded tic
 
 2. Open **Options → Replay Tick Data**. The **Replay Manage** window opens.
 
-[SCREENSHOT: Options menu open on the main bar with Replay Tick Data highlighted | options-replay-tick-data-menu.png]
+[SCREENSHOT: Options menu open on the main bar with Replay Tick Data highlighted | dc-en-replay-data-01.png]
 
 3. Press **Select Symbols** and choose the exchange you want to replay.
 
-[SCREENSHOT: Replay Manage window with the exchange/symbol selection open and an exchange chosen | replay-manage-select-symbols.png]
+[SCREENSHOT: Replay Manage window with the exchange/symbol selection open and an exchange chosen | dc-en-replay-data-02.png]
 
 4. Click the calendar icon, pick the date and time where the replay should begin, then press **Set**.
 
-[SCREENSHOT: Replay Manage window with the calendar picker open, a date and start time selected, and the Set button visible | replay-manage-calendar-set.png]
+[SCREENSHOT: Replay Manage window with the calendar picker open, a date and start time selected, and the Set button visible | dc-en-replay-data-03.png]
 
 5. If you want Depth of Market data during the replay, enable the Level 2 option in the replay window while the data loads — the Advanced DOM is then usable during the session. [CONFIRM: exact label and location of the Level 2 / DOM option in the Replay Manage window] See [[advanced-dom]].
 
@@ -42,7 +42,7 @@ Replay and a live feed are mutually exclusive: the platform replays recorded tic
 
 7. Press **Play** in Replay Manage. The chart starts building bars from the selected date and time.
 
-[SCREENSHOT: Replay Manage window during playback showing the Play control, the speed scroll bar and the preset speed options, with a chart replaying in the background | replay-manage-playback-controls.png]
+[SCREENSHOT: Replay Manage window during playback showing the Play control, the speed scroll bar and the preset speed options, with a chart replaying in the background | dc-en-replay-data-04.png]
 
 8. Adjust the pace with the speed scroll bar or the preset speed options.
 

@@ -35,7 +35,7 @@ The Rithmic market data agreement must be signed before DeepCharts can connect. 
    - **Gateway:** select the location nearest to you (Chicago, Europe, Singapore, and so on) — a far-away gateway works but adds latency
    - **Username / Password:** your Rithmic credentials from the Apex welcome email
 
-[SCREENSHOT: R Trader Pro login screen with both side-by-side forms filled identically, System dropdown set to Apex and Gateway dropdown visible | rtrader-login-apex-system.png]
+[SCREENSHOT: R Trader Pro login screen with both side-by-side forms filled identically, System dropdown set to Apex and Gateway dropdown visible | dc-en-connect-apex-01.png]
 
 > **Note:** The System field and the Server field are different fields — the Server field also lists `Apex` alongside `Paper Trading`. For signing the agreement, what matters is **System = Apex**.
 
@@ -43,11 +43,11 @@ The Rithmic market data agreement must be signed before DeepCharts can connect. 
 
 4. Read and accept the market data agreement that appears. If you closed R Trader Pro before the prompt appeared, log back in — the prompt will reappear.
 
-[SCREENSHOT: R Trader Pro market data agreement prompt after login, with the accept button visible | rtrader-apex-agreement-prompt.png]
+[SCREENSHOT: R Trader Pro market data agreement prompt after login, with the accept button visible | dc-en-connect-apex-02.png]
 
 5. First-time setup only: open **Window → Preferences → Performance** and drag both sliders — **Quotes** and **Order Book** — to the maximum, then click **Apply** and **OK**. This removes Rithmic's data-receive limit, which otherwise delays charts during high-volume market periods.
 
-[SCREENSHOT: R Trader Pro Preferences window, Performance tab, Quotes and Order Book sliders both at maximum | rtrader-apex-performance-sliders.png]
+[SCREENSHOT: R Trader Pro Preferences window, Performance tab, Quotes and Order Book sliders both at maximum | dc-en-connect-apex-03.png]
 
 6. Close R Trader Pro. The agreement is now stored on Rithmic's side — you do not need R Trader Pro running while using DeepCharts.
 
@@ -55,7 +55,7 @@ The Rithmic market data agreement must be signed before DeepCharts can connect. 
 
 7. In DeepCharts, click **Select Connection** in the top toolbar, then click **Feed Settings** at the bottom of the dropdown.
 
-[SCREENSHOT: DeepCharts top toolbar with the Select Connection dropdown open and Feed Settings highlighted at the bottom | apex-select-connection-menu.png]
+[SCREENSHOT: DeepCharts top toolbar with the Select Connection dropdown open and Feed Settings highlighted at the bottom | dc-en-connect-apex-04.png]
 
 8. Click **Add Connection** and fill in the form:
 

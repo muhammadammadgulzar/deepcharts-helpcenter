@@ -32,15 +32,15 @@ DeepCharts draws its charts from a real-time market data feed. If you do not alr
 
 2. Click **Data Feed** in the left menu.
 
-[SCREENSHOT: my.deepcharts.com dashboard after login with the left menu visible and the Data Feed entry highlighted | dashboard-data-feed-menu.png]
+[SCREENSHOT: my.deepcharts.com dashboard after login with the left menu visible and the Data Feed entry highlighted | dc-en-buy-data-feed-01.png]
 
 3. Select **Add data feed subscription**.
 
-[SCREENSHOT: The Data Feed section showing the Add data feed subscription button highlighted | dashboard-add-data-feed-subscription.png]
+[SCREENSHOT: The Data Feed section showing the Add data feed subscription button highlighted | dc-en-buy-data-feed-02.png]
 
 4. Choose the data feed you want and proceed with the order. During the order you pick the specific market data products — which exchanges you need (CME, COMEX, and so on) and the data level (top of book versus market depth). Choose market depth if you plan to use the DOM and orderflow tools; top of book is enough for plain candlestick charting.
 
-[SCREENSHOT: The data feed order page with the feed selected and the list of market data products (exchanges, top of book / market depth options) visible | dashboard-feed-product-selection.png]
+[SCREENSHOT: The data feed order page with the feed selected and the list of market data products (exchanges, top of book / market depth options) visible | dc-en-buy-data-feed-03.png]
 
 5. Enter your card information and complete the payment.
 
@@ -50,11 +50,11 @@ DeepCharts draws its charts from a real-time market data feed. If you do not alr
    - Select your subscription status. Most individual traders qualify as **Non-Professional** — the exchanges define the exact criteria, so read the descriptions on the form carefully before choosing.
    - Enter your personal information.
 
-[SCREENSHOT: The market data contract signing flow on the dashboard with the Non-Professional subscription status option visible | dashboard-market-data-contract.png]
+[SCREENSHOT: The market data contract signing flow on the dashboard with the Non-Professional subscription status option visible | dc-en-buy-data-feed-04.png]
 
 8. When the contract is complete, go back to the **Data Feed** section. Your feed **username and password** are now displayed there — these are the credentials you enter in DeepCharts Feed Settings.
 
-[SCREENSHOT: The Data Feed section showing an active subscription with the username and password fields visible (values redacted) | dashboard-feed-credentials.png]
+[SCREENSHOT: The Data Feed section showing an active subscription with the username and password fields visible (values redacted) | dc-en-buy-data-feed-05.png]
 
 ### If you bought a Rithmic feed
 

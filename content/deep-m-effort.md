@@ -20,7 +20,7 @@ Deep-M Effort translates order-book pressure into colored zones directly on the 
 
 > **Warning:** Two hard requirements. First, the indicator works exclusively on a **40 Range** chart — set the chart to Range bars with parameter 40 **before** applying it. Second, it is optimized for **NQ** only. On any other chart type or symbol it will not work as designed. Core logic settings should not be modified — only visual customization is supported.
 
-[SCREENSHOT: NQ 40 Range chart with Deep-M Effort applied — green bullish-pressure zones and purple bearish-pressure zones visible around price, with the integrated moving average line running through the chart | deep-m-effort-nq-chart.png]
+[SCREENSHOT: NQ 40 Range chart with Deep-M Effort applied — green bullish-pressure zones and purple bearish-pressure zones visible around price, with the integrated moving average line running through the chart | dc-en-deep-m-effort-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ Deep-M Effort translates order-book pressure into colored zones directly on the 
 3. Open the **Indicators** menu, find **Deep-M Effort (NQ)** and add it to the workspace.
 4. Leave the core logic untouched. If you want, adjust colors, opacity and the moving-average style, and set up alerts.
 
-[SCREENSHOT: Deep-M Effort (NQ) settings dialog showing the visual customization options — Bid Color, Ask Color, Opacity, Line Width, and the Moving Average section with Auto Color and Line Style controls | deep-m-effort-settings.png]
+[SCREENSHOT: Deep-M Effort (NQ) settings dialog showing the visual customization options — Bid Color, Ask Color, Opacity, Line Width, and the Moving Average section with Auto Color and Line Style controls | dc-en-deep-m-effort-02.png]
 
 ## How to read it
 

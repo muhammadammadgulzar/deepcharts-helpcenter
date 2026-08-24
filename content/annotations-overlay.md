@@ -30,17 +30,17 @@ This gives you true multi-timeframe levels: the source indicator keeps running o
 2. On your target chart, open the indicators menu in the upper left corner and add **Overlay Annotations**.
 3. Find the source **Chart ID**: right-click and select **Finder Window**, then enable the **Mirror** function. Hover over the source chart — the chart's ID appears in the first row of the finder window.
 
-[SCREENSHOT: Finder Window with the Mirror function enabled, positioned over the source 30-minute chart, the first row showing the chart ID value highlighted | annotations-overlay-finder-window-chart-id.png]
+[SCREENSHOT: Finder Window with the Mirror function enabled, positioned over the source 30-minute chart, the first row showing the chart ID value highlighted | dc-en-annotations-overlay-01.png]
 
 4. Enter that value in the **Chart ID** field of the Annotations Overlay settings.
 5. Find the **Indicator ID**: open the indicator list on the source chart and locate the small number in parentheses next to the indicator you want to import.
 
-[SCREENSHOT: The source chart's indicator list with the small ID number in parentheses next to the Bar POC entry circled/highlighted | annotations-overlay-indicator-id-list.png]
+[SCREENSHOT: The source chart's indicator list with the small ID number in parentheses next to the Bar POC entry circled/highlighted | dc-en-annotations-overlay-02.png]
 
 6. Enter that number in the **Indicator ID** field of the Annotations Overlay settings.
 7. Select **Apply and Save** in the lower right corner. The source indicator's annotations now render on your target chart.
 
-[SCREENSHOT: A 5-minute chart displaying imported Bar POC levels originally computed on a 30-minute chart via Annotations Overlay, with the Annotations Overlay settings dialog showing the Chart ID and Indicator ID fields filled in | annotations-overlay-imported-levels.png]
+[SCREENSHOT: A 5-minute chart displaying imported Bar POC levels originally computed on a 30-minute chart via Annotations Overlay, with the Annotations Overlay settings dialog showing the Chart ID and Indicator ID fields filled in | dc-en-annotations-overlay-03.png]
 
 ## How to read it
 

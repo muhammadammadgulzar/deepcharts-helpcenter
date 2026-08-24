@@ -105,13 +105,13 @@ Grouped as in the indicator dialog.
 | **Peaks / Valleys** | Highlights high-volume nodes (peaks) and low-volume zones (valleys) |
 | **Sensitivity** | Higher sensitivity filters out noise — fewer but more significant detections |
 
-[SCREENSHOT: Deep Profile settings dialog open at the General settings section showing the VBP Type and VBP Period dropdowns | deep-profile-settings-general.png]
+[SCREENSHOT: Deep Profile settings dialog open at the General settings section showing the VBP Type and VBP Period dropdowns | dc-en-deep-profile-01.png]
 
 ### Merge and split profiles
 
 Right-click any profile on the chart to combine or divide periods: merge with the previous or the next profile, split a merged profile back apart, or reset to undo all merges. Use this to combine yesterday and today into one distribution, or to isolate a single session out of a composite.
 
-[SCREENSHOT: Right-click context menu on a profile showing the merge, split and reset options | deep-profile-merge-split-menu.png]
+[SCREENSHOT: Right-click context menu on a profile showing the merge, split and reset options | dc-en-deep-profile-02.png]
 
 ## Tips and common mistakes
 

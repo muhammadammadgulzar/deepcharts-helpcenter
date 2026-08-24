@@ -22,7 +22,7 @@ By the end you will have DeepCharts installed, your license activated, and the p
 
 1. Log in to your account at my.deepcharts.com with your email and password.
 
-[SCREENSHOT: my.deepcharts.com dashboard after login with the DeepCharts installer download area visible | dashboard-installer-download.png]
+[SCREENSHOT: my.deepcharts.com dashboard after login with the DeepCharts installer download area visible | dc-en-install-deepcharts-01.png]
 
 2. Download the **DeepchartsInstaller.zip** file.
 
@@ -36,13 +36,13 @@ By the end you will have DeepCharts installed, your license activated, and the p
 
 6. Accept the installation terms and conditions, then click **Install**.
 
-[SCREENSHOT: DeepCharts installer window on the terms and conditions step with the Install button visible | installer-terms-install.png]
+[SCREENSHOT: DeepCharts installer window on the terms and conditions step with the Install button visible | dc-en-install-deepcharts-02.png]
 
 7. Reboot your PC if the installer prompts you to.
 
 8. Launch DeepCharts from the Desktop shortcut. A splash screen appears ("Starting Application", then "Loading Indicators") — the app version is shown in the bottom-right corner of the splash, which is useful to know when contacting support.
 
-[SCREENSHOT: DeepCharts splash screen showing Starting Application text and the version number in the bottom-right corner | splash-screen-version.png]
+[SCREENSHOT: DeepCharts splash screen showing Starting Application text and the version number in the bottom-right corner | dc-en-install-deepcharts-03.png]
 
 9. In the **License Key** window, enter:
    - **E-mail** — the email registered at my.deepcharts.com
@@ -50,7 +50,7 @@ By the end you will have DeepCharts installed, your license activated, and the p
 
    Then click **Login**. The button shows a short countdown while the key is verified.
 
-[SCREENSHOT: License Key activation window with the E-mail and License fields filled in, the Login button, and the Verifying License Key footer visible | license-key-dialog.png]
+[SCREENSHOT: License Key activation window with the E-mail and License fields filled in, the Login button, and the Verifying License Key footer visible | dc-en-install-deepcharts-04.png]
 
 > **Tip:** Paste the email and key with no leading or trailing spaces. Stray whitespace from copy-paste is by far the most common cause of an "Invalid License" error.
 
@@ -59,7 +59,7 @@ By the end you will have DeepCharts installed, your license activated, and the p
     - **Symbol Manage** — review the exchange-to-feed mapping table (the wizard pre-maps the main exchanges for you). This is the same window as **Options → Symbol Manage** — see [[symbol-manage]].
     - **Customize experience** — pick a **Theme** and an **Alert sound profile**, then click **Done**.
 
-[SCREENSHOT: Startup Wizard datafeed step showing the two radio options - 15 minutes delayed data powered by dxFeed, and I have a datafeed and I want to configure and connect it | startup-wizard-feed-choice.png]
+[SCREENSHOT: Startup Wizard datafeed step showing the two radio options - 15 minutes delayed data powered by dxFeed, and I have a datafeed and I want to configure and connect it | dc-en-install-deepcharts-05.png]
 
 ### If you do not have data feed credentials yet
 
@@ -87,7 +87,7 @@ Download the latest installer from the dashboard and run it — no need to unins
 - The **Feed** selector on the main bar shows your connection name with a **green** status dot (if you configured a feed).
 - **New → Price Chart** opens the instrument picker and a chart builds — see [[first-chart]].
 
-[SCREENSHOT: Main bar after successful setup with the Feed selector showing a connection name and green status dot | main-bar-green-dot.png]
+[SCREENSHOT: Main bar after successful setup with the Feed selector showing a connection name and green status dot | dc-en-install-deepcharts-06.png]
 
 ## If something went wrong
 

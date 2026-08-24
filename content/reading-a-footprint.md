@@ -77,7 +77,7 @@ Three short reads, all illustrative ES numbers.
 
 Price breaks a morning high at 5,310.00. The breakout bar prints buy-side diagonal imbalances on four consecutive prices from 5,310.25 to 5,311.00, delta +1,800, and closes on its high. Read: aggressive buyers overwhelmed sellers through the level and were not absorbed — initiative buying with follow-through. The stacked zone at 5,310.25–5,311.00 is now the pullback zone of interest; holding above it keeps the breakout healthy.
 
-[SCREENSHOT: Footprint bars around a breakout with four stacked buy imbalances highlighted on consecutive diagonal cells, positive delta readout below the bar, and the stacked zone marked as future support | footprint-example-stacked-imbalances.png]
+[SCREENSHOT: Footprint bars around a breakout with four stacked buy imbalances highlighted on consecutive diagonal cells, positive delta readout below the bar, and the stacked zone marked as future support | dc-en-reading-a-footprint-01.png]
 
 ### Example 2: Absorption at the high
 
@@ -87,7 +87,7 @@ Later, price pushes to 5,318.00. The bar prints its heaviest ask-side volume of 
 
 During the afternoon selloff, the swing low at 5,296.50 prints `41 × 17` — volume on both bid and ask at the extreme price, no zero print. Read: the auction at the low did not finish; bidders were still active when price bounced. Many footprint traders will keep 5,296.50 on the chart as a revisit candidate and treat any later approach as a planned event rather than a surprise. If the low had printed `0 × 22` instead, selling ended naturally and the level carries no unfinished business.
 
-[SCREENSHOT: A swing low footprint with the extreme price row showing volume on both bid and ask, annotated "unfinished auction — no zero print", plus a later revisit of the same price marked with an arrow | footprint-example-unfinished-auction.png]
+[SCREENSHOT: A swing low footprint with the extreme price row showing volume on both bid and ask, annotated "unfinished auction — no zero print", plus a later revisit of the same price marked with an arrow | dc-en-reading-a-footprint-02.png]
 
 ## Common misreadings
 

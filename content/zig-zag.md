@@ -36,7 +36,7 @@ The optional retracement labels then measure each pullback against the previous 
 
 Start with the default configuration and adjust only the sensitivity: in **Absolute Reversal** mode the default **Zig Zag Abs. Rev** of 0.50% works as a first pass on most instruments. If the line catches too many small wiggles, raise the threshold; if it skips swings you care about, lower it.
 
-[SCREENSHOT: A price chart with the Zig Zag indicator connecting swing highs and lows with colored lines, retracement labels showing 38.2%/50%/61.8% levels on the most recent pullback | zig-zag-on-chart.png]
+[SCREENSHOT: A price chart with the Zig Zag indicator connecting swing highs and lows with colored lines, retracement labels showing 38.2%/50%/61.8% levels on the most recent pullback | dc-en-zig-zag-01.png]
 
 ## How to read it
 
@@ -85,7 +85,7 @@ Start with the default configuration and adjust only the sensitivity: in **Absol
 | **Line Width** | Main line thickness. |
 | **Short Name** | Custom label shown in the chart legend. |
 
-[SCREENSHOT: The Zig Zag settings dialog with the Main settings group visible — Zig Zag Mode dropdown open showing Highest Lowest, Absolute Reversal and Tick Reversal — and the Retracement settings group below | zig-zag-settings.png]
+[SCREENSHOT: The Zig Zag settings dialog with the Main settings group visible — Zig Zag Mode dropdown open showing Highest Lowest, Absolute Reversal and Tick Reversal — and the Retracement settings group below | dc-en-zig-zag-02.png]
 
 ## Tips and common mistakes
 

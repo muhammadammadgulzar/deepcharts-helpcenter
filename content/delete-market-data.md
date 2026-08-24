@@ -35,13 +35,13 @@ Use this guide when:
 2. Disconnect all data feeds.
 3. Go to **Options → Delete Data**.
 
-[SCREENSHOT: The Options menu open on the main DeepCharts bar with the Delete Data entry highlighted | options-menu-delete-data.png]
+[SCREENSHOT: The Options menu open on the main DeepCharts bar with the Delete Data entry highlighted | dc-en-delete-market-data-01.png]
 
 4. In the **Delete Data** panel, click **Select Symbol** and choose the affected symbol.
 5. Set the date range to start **2–3 days before today**. If the corruption has been visible for longer, go back further — for stubborn or older corruption, 15 days or more is recommended.
 6. If the panel offers data-type choices, select **Tick and Minute** so both data sets are cleared.
 
-[SCREENSHOT: The Delete Data panel with a symbol selected, the date set a few days back, and the Tick and Minute data types selected, Delete button visible | delete-data-panel-configured.png]
+[SCREENSHOT: The Delete Data panel with a symbol selected, the date set a few days back, and the Tick and Minute data types selected, Delete button visible | dc-en-delete-market-data-02.png]
 
 7. Click **Delete** and wait for the operation to finish.
 8. Reopen the chart. DeepCharts automatically downloads fresh data and the chart should update normally.
@@ -54,13 +54,13 @@ Use this method **only if Method 1 fails**: the chart stays static after the in-
 
 1. In DeepCharts, go to **Options → Settings → Various** and copy the **Database Folder** path.
 
-[SCREENSHOT: The Settings dialog on the Various tab with the Database Folder path field highlighted | settings-various-database-folder.png]
+[SCREENSHOT: The Settings dialog on the Various tab with the Database Folder path field highlighted | dc-en-delete-market-data-03.png]
 
 2. Close DeepCharts completely. Make sure no DeepCharts process is still running in the background (check Task Manager) — deleting folders while the platform is running causes file-path errors.
 3. Open **File Explorer** and paste the copied path into the address bar.
 4. Locate the folder for the affected symbol.
 
-[SCREENSHOT: File Explorer showing the DeepCharts database folder contents with one symbol folder selected | database-folder-symbol-selected.png]
+[SCREENSHOT: File Explorer showing the DeepCharts database folder contents with one symbol folder selected | dc-en-delete-market-data-04.png]
 
 5. Delete **only that symbol's folder**.
 

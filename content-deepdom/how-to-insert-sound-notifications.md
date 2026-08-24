@@ -13,7 +13,7 @@ This guide shows how to enable and configure sound notifications in DeepDom, and
 
 ### Step 1 – Enable Notifications
 
-[SCREENSHOT: How to Insert Sound Notifications — Step 1 – Enable Notifications (DeepDOM) | how-to-insert-sound-notifications-01.png]
+[SCREENSHOT: How to Insert Sound Notifications — Step 1 – Enable Notifications (DeepDOM) | dd-en-how-to-insert-sound-notifications-01.png]
 
 From the main menu bar in DeepDom:
 
@@ -27,7 +27,7 @@ This activates the global notification system so that sound alerts configured la
 
 ### Step 2 – Add Sound Notification Profiles
 
-[SCREENSHOT: How to Insert Sound Notifications — Step 2 – Add Sound Notification Profiles (DeepDOM) | how-to-insert-sound-notifications-02.png]
+[SCREENSHOT: How to Insert Sound Notifications — Step 2 – Add Sound Notification Profiles (DeepDOM) | dd-en-how-to-insert-sound-notifications-02.png]
 
 You can create reusable sound profiles, each with its own name and audio file.
 

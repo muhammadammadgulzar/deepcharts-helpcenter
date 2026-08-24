@@ -60,11 +60,11 @@ Select **Rithmic Paper Trading** — that is Rithmic's default server for data-f
 
 2. Sign the Rithmic market data agreement in R Trader Pro. Without it, the connection stays red even with correct credentials. Download R Trader Pro from https://www.rithmic.com/rtraderpro (click **Download R | Trader Pro**), open it, and fill **both** side-by-side login forms with the same values: **System** = your firm's server value from the table, **Gateway** = the location nearest to you, and the Rithmic username and password from your firm's welcome email. Click **Login**, select your market data status when prompted (retail traders normally select **Non-Professional**), then read and accept the agreements. Full details in [[sign-market-data-agreement]].
 
-[SCREENSHOT: R Trader Pro login screen with both forms filled, the System dropdown open showing prop-firm server entries, and the Gateway field visible | rtrader-login-prop-firm-system.png]
+[SCREENSHOT: R Trader Pro login screen with both forms filled, the System dropdown open showing prop-firm server entries, and the Gateway field visible | dc-en-connect-rithmic-prop-firm-01.png]
 
 3. First-time setup only: while in R Trader Pro, open **Window → Preferences → Performance** and drag both sliders — **Quotes** and **Order Book** — to the maximum, then click **Apply** and **OK**. This removes Rithmic's data-receive limit; with a limit set, charts can lag during high-volume market periods. Close R Trader Pro when done.
 
-[SCREENSHOT: R Trader Pro Preferences Performance tab with both Quotes and Order Book sliders at maximum | rtrader-performance-max-prop.png]
+[SCREENSHOT: R Trader Pro Preferences Performance tab with both Quotes and Order Book sliders at maximum | dc-en-connect-rithmic-prop-firm-02.png]
 
 4. In DeepCharts, click **Select Connection** in the top toolbar, then **Feed Settings** at the bottom of the dropdown.
 

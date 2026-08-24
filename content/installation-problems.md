@@ -34,7 +34,7 @@ Run a clean installation with only Windows Defender active:
 1. Close any running installer and close DeepCharts if it is open.
 2. Temporarily disable **all** third-party antivirus products, leaving only **Windows Defender** active.
 
-[SCREENSHOT: A third-party antivirus dashboard with its real-time protection toggle switched off, showing protection temporarily disabled | antivirus-disable-realtime.png]
+[SCREENSHOT: A third-party antivirus dashboard with its real-time protection toggle switched off, showing protection temporarily disabled | dc-en-installation-problems-01.png]
 
 3. Download a fresh copy of the installer from your my.deepcharts.com dashboard and run the installation again — see [[install-deepcharts]] for the full walkthrough.
 4. Re-enable your antivirus as soon as the installation finishes.
@@ -59,7 +59,7 @@ The installation needs available space on **Local Disk (C:)** — and DeepCharts
 
 1. Open **File Explorer → This PC** and check the free space shown under **Local Disk (C:)**.
 
-[SCREENSHOT: File Explorer This PC view with the Local Disk C: drive bar visible showing free space remaining | this-pc-disk-space.png]
+[SCREENSHOT: File Explorer This PC view with the Local Disk C: drive bar visible showing free space remaining | dc-en-installation-problems-02.png]
 
 2. Free up space if the drive is close to full, then run the installer again.
 3. If an old DeepCharts installation is taking up space with market data, see [[delete-market-data]].
@@ -68,7 +68,7 @@ The installation needs available space on **Local Disk (C:)** — and DeepCharts
 
 Always install the latest version of the platform. The current version number is indicated next to the download button on your my.deepcharts.com dashboard.
 
-[SCREENSHOT: my.deepcharts.com dashboard download area with the version number next to the download button highlighted | dashboard-download-version.png]
+[SCREENSHOT: my.deepcharts.com dashboard download area with the version number next to the download button highlighted | dc-en-installation-problems-03.png]
 
 1. Log in to your my.deepcharts.com dashboard.
 2. Compare the version next to the download button with the installer you have — if they differ, download the latest installer and run it instead.

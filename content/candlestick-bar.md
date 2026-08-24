@@ -35,7 +35,7 @@ Because the overlay is independent of the base chart's bar type, it belongs to t
 4. Click the gear icon next to the indicator to open its settings. Choose a **Parameter Type** and set **Parameter 1** — for example, Minutes with a value larger than your base chart's timeframe gives a classic higher-timeframe overlay.
 5. Reduce the body **Opacity** or disable **Show Filled Bar** so the underlying chart stays readable beneath the overlay.
 
-[SCREENSHOT: A fast intraday chart with the Candlestick Bar overlay active — larger semi-transparent candles drawn over the base bars, both clearly distinguishable | candlestick-bar-on-chart.png]
+[SCREENSHOT: A fast intraday chart with the Candlestick Bar overlay active — larger semi-transparent candles drawn over the base bars, both clearly distinguishable | dc-en-candlestick-bar-01.png]
 
 ## How to read it
 
@@ -75,7 +75,7 @@ New to reading Japanese candles, or want a quick refresher? Hover the interactiv
 | **Opacity** | Transparency of the candle body background. |
 | **Show Vertical Line on Close** | When enabled, draws a vertical line on closing candles. |
 
-[SCREENSHOT: The Candlestick Bar settings dialog showing Parameter Type set to Minutes with Parameter 1 and Parameter 2 fields, plus the Colors and Plot Settings groups | candlestick-bar-settings.png]
+[SCREENSHOT: The Candlestick Bar settings dialog showing Parameter Type set to Minutes with Parameter 1 and Parameter 2 fields, plus the Colors and Plot Settings groups | dc-en-candlestick-bar-02.png]
 
 ## Tips and common mistakes
 

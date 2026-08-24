@@ -11,7 +11,7 @@ keywords: ["deep delta", "deepdom deep delta", "deepdom", "deep indicators"]
 ---
 Deep Delta is an advanced version of Delta Bar that lets you apply filters to the delta and highlight up to four configurable ranges, making it easier to focus on significant buying or selling imbalances.
 
-[SCREENSHOT: Deep Delta — overview (DeepDOM) | deep-delta-deepdom-01.png]
+[SCREENSHOT: Deep Delta — overview (DeepDOM) | dd-en-deep-delta-deepdom-01.png]
 
 ## Settings of Use
 
@@ -21,15 +21,15 @@ Search for the desired indicator and add it to your workspace by clicking the "+
 
 Open the indicator's settings panel, customize the parameters according to your preferences, and confirm the changes by clicking Save.
 
-[SCREENSHOT: Deep Delta — Settings of Use (DeepDOM) | deep-delta-deepdom-02.png]
+[SCREENSHOT: Deep Delta — Settings of Use (DeepDOM) | dd-en-deep-delta-deepdom-02.png]
 
 ## General Settings
 
-[SCREENSHOT: Deep Delta — General Settings (DeepDOM) | deep-delta-deepdom-03.png]
+[SCREENSHOT: Deep Delta — General Settings (DeepDOM) | dd-en-deep-delta-deepdom-03.png]
 
 #### Input Data
 
-[SCREENSHOT: Deep Delta — Input Data (DeepDOM) | deep-delta-deepdom-04.png]
+[SCREENSHOT: Deep Delta — Input Data (DeepDOM) | dd-en-deep-delta-deepdom-04.png]
 
 Select the database used to compute delta:
 
@@ -43,7 +43,7 @@ Order – order quantities at each price, useful for assessing order pressure.
 
 #### Delta Mode
 
-[SCREENSHOT: Deep Delta — Delta Mode (DeepDOM) | deep-delta-deepdom-05.png]
+[SCREENSHOT: Deep Delta — Delta Mode (DeepDOM) | dd-en-deep-delta-deepdom-05.png]
 
 Choose how the delta is calculated:
 
@@ -67,7 +67,7 @@ Smaller ranges provide context, while larger ranges highlight genuine institutio
 
 ## Range 1–4 Configuration
 
-[SCREENSHOT: Deep Delta — Range 1–4 Configuration (DeepDOM) | deep-delta-deepdom-06.png]
+[SCREENSHOT: Deep Delta — Range 1–4 Configuration (DeepDOM) | dd-en-deep-delta-deepdom-06.png]
 
 Each range is configured independently and includes:
 

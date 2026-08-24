@@ -32,7 +32,7 @@ The oscillator answers: is price closing near the top or the bottom of its recen
 3. Click the gear icon on the indicator's row to open its settings.
 4. Keep the defaults to start: **K Period** 14, **D Period** 3, **Smoothing Length** 3, with the **Overbought Level** at 80 and the **Oversold Level** at 20.
 
-[SCREENSHOT: A chart with the Stochastic Oscillator in its own area below price, showing the K and D lines crossing inside the oversold zone under the 20 level line | stochastic-on-chart.png]
+[SCREENSHOT: A chart with the Stochastic Oscillator in its own area below price, showing the K and D lines crossing inside the oversold zone under the 20 level line | dc-en-stochastic-oscillator-01.png]
 
 ## How to read it
 
@@ -70,7 +70,7 @@ Open the dialog from the gear icon on the indicator's row in the **Indicators** 
 | **Display options** | How the series are drawn in the chart area. |
 | **Use secondary axis** | Plots the oscillator against a secondary value axis. |
 
-[SCREENSHOT: The Stochastic Oscillator settings dialog showing K Period 14, D Period 3, Smoothing Length 3 and the level settings with Overbought 80 and Oversold 20 | stochastic-settings-dialog.png]
+[SCREENSHOT: The Stochastic Oscillator settings dialog showing K Period 14, D Period 3, Smoothing Length 3 and the level settings with Overbought 80 and Oversold 20 | dc-en-stochastic-oscillator-02.png]
 
 ## Tips and common mistakes
 

@@ -18,7 +18,7 @@ In practice it is two tools in one: a signal engine that plots markers or backgr
 
 Each condition in the builder takes up to four inputs (**A**, **B**, **C**, **D**), joins A with B and C with D using math operators, and compares the AB block against the CD block with one logical operator. Conditions can be combined with AND/OR logic, filtered by an integrated imbalance filter, visualized on the chart, wired to alerts, and fed into a simulated entry/exit model for backtesting.
 
-[SCREENSHOT: Chart with Deep Pattern Builder applied — signal markers plotted on candles where the custom conditions fired, with a couple of background-highlighted bars visible | deep-pattern-builder-chart-signals.png]
+[SCREENSHOT: Chart with Deep Pattern Builder applied — signal markers plotted on candles where the custom conditions fired, with a couple of background-highlighted bars visible | dc-en-deep-pattern-builder-01.png]
 
 ## When to use it
 
@@ -37,7 +37,7 @@ Each condition in the builder takes up to four inputs (**A**, **B**, **C**, **D*
 6. Under **Plot Settings**, choose a **Plot Type** (start with **Marker**) and a **Plot Price** placement.
 7. Click **Apply and Save** and check that markers appear on historical bars where the logic is true.
 
-[SCREENSHOT: Deep Pattern Builder settings dialog showing one enabled condition with Input A set to Reference Close, the Logical Operator dropdown, Input C set to Reference Open, and the Combine Mode selector below | deep-pattern-builder-condition-setup.png]
+[SCREENSHOT: Deep Pattern Builder settings dialog showing one enabled condition with Input A set to Reference Close, the Logical Operator dropdown, Input C set to Reference Open, and the Combine Mode selector below | dc-en-deep-pattern-builder-02.png]
 
 ## How to read it
 
@@ -132,7 +132,7 @@ Grouped as in the settings dialog.
 3. Select **Autotrading → Execute Backtest**.
 4. Review the report. Via right-click you can also clear results, view previous backtests and save reports.
 
-[SCREENSHOT: Right-click context menu on the chart with Autotrading expanded and Execute Backtest highlighted, with a completed backtest report visible | deep-pattern-builder-execute-backtest.png]
+[SCREENSHOT: Right-click context menu on the chart with Autotrading expanded and Execute Backtest highlighted, with a completed backtest report visible | dc-en-deep-pattern-builder-03.png]
 
 ## Tips and common mistakes
 

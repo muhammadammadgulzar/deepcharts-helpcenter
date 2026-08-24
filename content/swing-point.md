@@ -35,7 +35,7 @@ Swing highs mark potential resistance and reversal zones; swing lows mark potent
 4. Click the gear icon next to the indicator to open its settings. Start with the defaults (**Left Bars** 2, **Right Bars** 2) and increase both if the chart shows more swing lines than you can use.
 5. Set distinct **High Color** and **Low Color** values so resistance and support levels are distinguishable at a glance.
 
-[SCREENSHOT: A price chart with the Swing Point indicator active — dashed horizontal lines extending from several swing highs and swing lows, each with a small text label near the line | swing-point-on-chart.png]
+[SCREENSHOT: A price chart with the Swing Point indicator active — dashed horizontal lines extending from several swing highs and swing lows, each with a small text label near the line | dc-en-swing-point-01.png]
 
 ## How to read it
 
@@ -67,7 +67,7 @@ Swing highs mark potential resistance and reversal zones; swing lows mark potent
 | **High Text Color** | Text color for swing high labels. |
 | **Low Text Color** | Text color for swing low labels. |
 
-[SCREENSHOT: The Swing Point settings dialog showing General Parameters (Left Bars, Right Bars, Filter Swing) and the Plot Settings group with Line Width, Line Style, High/Low colors and text options | swing-point-settings.png]
+[SCREENSHOT: The Swing Point settings dialog showing General Parameters (Left Bars, Right Bars, Filter Swing) and the Plot Settings group with Line Width, Line Style, High/Low colors and text options | dc-en-swing-point-02.png]
 
 ## Tips and common mistakes
 

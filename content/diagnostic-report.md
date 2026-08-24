@@ -24,17 +24,17 @@ Use it whenever you experience performance issues, delays, or connectivity probl
 
 1. Glance at the **RAM** indicator on the toolbar before you start. It shows two values: the first is total system RAM usage, and the value in brackets is DeepCharts' own memory usage. If your total RAM usage is consistently high, it may affect platform performance — worth mentioning in your support message.
 
-[SCREENSHOT: DeepCharts main toolbar with the RAM indicator highlighted, showing the total system RAM value and the bracketed DeepCharts memory value | toolbar-ram-indicator.png]
+[SCREENSHOT: DeepCharts main toolbar with the RAM indicator highlighted, showing the total system RAM value and the bracketed DeepCharts memory value | dc-en-diagnostic-report-01.png]
 
 2. Click the **?** (question mark) icon in the toolbar.
 3. Select **Contact Support**.
 
-[SCREENSHOT: The ? (question mark) menu open on the DeepCharts toolbar with the Contact Support entry highlighted | question-mark-contact-support.png]
+[SCREENSHOT: The ? (question mark) menu open on the DeepCharts toolbar with the Contact Support entry highlighted | dc-en-diagnostic-report-02.png]
 
 4. Choose **I have a problem or delay with the platform**.
 5. Review the diagnostic window. It collects and displays: platform version, operating system, CPU details, memory statistics, network connectivity, server ping times, and download speeds.
 
-[SCREENSHOT: The diagnostic window showing version, OS, CPU, memory, network connectivity, server ping times and download speed results | diagnostic-report-window.png]
+[SCREENSHOT: The diagnostic window showing version, OS, CPU, memory, network connectivity, server ping times and download speed results | dc-en-diagnostic-report-03.png]
 
 6. Click **Click Here to Confirm** to let the platform collect additional data.
 7. Click **Contact Support and Send Information** to send the results to the support team, together with a short description of your issue.
@@ -48,7 +48,7 @@ DeepCharts also writes daily log files that support may request for deeper analy
 1. Open **My PC → Documents → DeepCharts → Logs**.
 2. Identify the file support asked for. There are four log types — **General**, **Trade Copier**, **Trading** and **Various** — and each file is named with its date, for example `trading_2026-06-22`.
 
-[SCREENSHOT: File Explorer open at Documents > DeepCharts > Logs showing the General, Trade Copier, Trading and Various log files with date-stamped names | deepcharts-logs-folder.png]
+[SCREENSHOT: File Explorer open at Documents > DeepCharts > Logs showing the General, Trade Copier, Trading and Various log files with date-stamped names | dc-en-diagnostic-report-04.png]
 
 3. Attach the file for the day the issue occurred to your support conversation.
 

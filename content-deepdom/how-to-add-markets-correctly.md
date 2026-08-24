@@ -13,7 +13,7 @@ This guide explains how to associate each market with the correct data feed in D
 
 ## General Procedure
 
-[SCREENSHOT: How to Add Markets Correctly — General Procedure (DeepDOM) | how-to-add-markets-correctly-01.png]
+[SCREENSHOT: How to Add Markets Correctly — General Procedure (DeepDOM) | dd-en-how-to-add-markets-correctly-01.png]
 
 Before changing market associations, verify with your data provider that the required markets are included in your subscription.
 
@@ -25,7 +25,7 @@ Go to Options > Symbols Manage .
 
 ## If Markets Have Not Been Added Before
 
-[SCREENSHOT: How to Add Markets Correctly — If Markets Have Not Been Added Before (DeepDOM) | how-to-add-markets-correctly-02.png]
+[SCREENSHOT: How to Add Markets Correctly — If Markets Have Not Been Added Before (DeepDOM) | dd-en-how-to-add-markets-correctly-02.png]
 
 In Symbols Manage , click the Subscribe button.
 
@@ -39,7 +39,7 @@ Close the window to complete the procedure.
 
 ## If Markets Were Added with Another Connection
 
-[SCREENSHOT: How to Add Markets Correctly — If Markets Were Added with Another Connection (DeepDOM) | how-to-add-markets-correctly-03.png]
+[SCREENSHOT: How to Add Markets Correctly — If Markets Were Added with Another Connection (DeepDOM) | dd-en-how-to-add-markets-correctly-03.png]
 
 In Symbols Manage , select the existing market entry.
 

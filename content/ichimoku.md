@@ -17,7 +17,7 @@ It plots several lines and a shaded cloud (the Kumo) directly on the price chart
 
 Ichimoku answers the question: what is the trend, where is equilibrium, and where are the levels that matter — all at one glance? Rather than averaging closes like a moving average, its lines are built from the midpoint of highs and lows over fixed lookbacks, then some are projected forward or shifted backward in time. That time displacement is what creates the cloud ahead of price and the lagging comparison line behind it.
 
-[SCREENSHOT: A candlestick chart with the full Ichimoku indicator applied — Tenkan-sen and Kijun-sen lines on price, the shaded Kumo cloud projected ahead of the last candle, and the Chikou Span trailing behind price | ichimoku-on-chart.png]
+[SCREENSHOT: A candlestick chart with the full Ichimoku indicator applied — Tenkan-sen and Kijun-sen lines on price, the shaded Kumo cloud projected ahead of the last candle, and the Chikou Span trailing behind price | dc-en-ichimoku-01.png]
 
 ## When to use it
 
@@ -34,7 +34,7 @@ Ichimoku answers the question: what is the trend, where is equilibrium, and wher
 4. Click the gear icon to open its settings.
 5. Starter configuration: keep the defaults — **Conversion Line Period** 9, **Baseline Period** 26, **Lagging Span Period** 26. These are Hosoda's original values and the ones virtually all Ichimoku literature assumes.
 
-[SCREENSHOT: Ichimoku settings dialog showing Conversion Line Period = 9, Baseline Period = 26 and Lagging Span Period = 26, with the Subgraph color options for each line visible | ichimoku-settings.png]
+[SCREENSHOT: Ichimoku settings dialog showing Conversion Line Period = 9, Baseline Period = 26 and Lagging Span Period = 26, with the Subgraph color options for each line visible | dc-en-ichimoku-02.png]
 
 ## How to read it
 

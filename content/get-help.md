@@ -41,7 +41,7 @@ Use the in-app flow — it bundles a diagnostic snapshot of your system and conn
 3. Choose **I have a problem or delay with the platform**.
 4. Let the diagnostic checks run, click **Click Here to Confirm**, then **Contact Support and Send Information** together with your description.
 
-[SCREENSHOT: The ? menu open in the DeepCharts toolbar with Contact Support highlighted, and the diagnostic window visible behind it | get-help-in-app-contact-support.png]
+[SCREENSHOT: The ? menu open in the DeepCharts toolbar with Contact Support highlighted, and the diagnostic window visible behind it | dc-en-get-help-01.png]
 
 The full walkthrough, including what the report contains and where log files are stored, is in [[diagnostic-report]].
 
@@ -55,7 +55,7 @@ Use the chat widget on the DeepCharts website:
 2. Describe your issue. The assistant resolves common setup, feed and platform questions immediately, and forwards the conversation to a human agent when the issue needs one.
 3. Attach your screenshots and paste the exact error text into the chat.
 
-[SCREENSHOT: The DeepCharts website with the support chat widget open in the corner, showing the conversation input field | get-help-website-chat-widget.png]
+[SCREENSHOT: The DeepCharts website with the support chat widget open in the corner, showing the conversation input field | dc-en-get-help-02.png]
 
 For billing and subscription questions specifically, [[manage-subscriptions]] covers the self-service options.
 

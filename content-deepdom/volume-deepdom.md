@@ -13,7 +13,7 @@ The Volume indicator displays total traded volume and can color the background a
 
 ## Apply the Volume Indicator
 
-[SCREENSHOT: Volume — Apply the Volume Indicator (DeepDOM) | volume-deepdom-01.png]
+[SCREENSHOT: Volume — Apply the Volume Indicator (DeepDOM) | dd-en-volume-deepdom-01.png]
 
 To add the Volume indicator to a chart:
 
@@ -23,7 +23,7 @@ Open the settings by clicking the indicator's settings icon.
 
 ## General Settings
 
-[SCREENSHOT: Volume — General Settings (DeepDOM) | volume-deepdom-02.png]
+[SCREENSHOT: Volume — General Settings (DeepDOM) | dd-en-volume-deepdom-02.png]
 
 Sets the number of bars used to group the indicator. Lower values give more detailed, bar‑by‑bar volume; higher values create smoother blocks of volume.
 
@@ -33,11 +33,11 @@ Controls how the background is colored:
 
 Dominant – colors the background with a delta gradient, emphasizing which side (Bid or Ask) is dominant.
 
-[SCREENSHOT: Volume — Display mode (DeepDOM) | volume-deepdom-03.png]
+[SCREENSHOT: Volume — Display mode (DeepDOM) | dd-en-volume-deepdom-03.png]
 
 Split – shows separate Bid and Ask volumes, allowing you to compare buying and selling activity directly.
 
-[SCREENSHOT: Volume — Display mode (DeepDOM) | volume-deepdom-04.png]
+[SCREENSHOT: Volume — Display mode (DeepDOM) | dd-en-volume-deepdom-04.png]
 
 ## Interpreting Volume Behaviour
 

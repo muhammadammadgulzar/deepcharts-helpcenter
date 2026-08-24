@@ -34,7 +34,7 @@ A moving average answers the question: where has price been trading, on average,
 4. Click the gear icon next to the indicator to open its settings.
 5. Starter configuration: leave **Input** on Close and **Length** at its default of 21, and pick **Simple** or **Exponential** as the **Type Average**. Adjust the length later to match your timeframe — shorter for faster reaction, longer for smoother trend context.
 
-[SCREENSHOT: Moving Average settings dialog open, showing the Parameters section with Input, Length set to 21 and the Type Average dropdown expanded listing Simple, Exponential, Triangular and Weighted | moving-average-settings.png]
+[SCREENSHOT: Moving Average settings dialog open, showing the Parameters section with Input, Length set to 21 and the Type Average dropdown expanded listing Simple, Exponential, Triangular and Weighted | dc-en-moving-average-01.png]
 
 ## How to read it
 

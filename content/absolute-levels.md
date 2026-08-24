@@ -18,7 +18,7 @@ That makes it the right tool for levels that come from your own analysis or from
 
 Absolute Levels is a manual levels indicator. You enter up to two fixed price values — **First Value** and **Second Value** — and the indicator plots each as a horizontal line with independently configurable color, style and thickness. It answers the question "where are my pre-decided prices relative to the market right now?"
 
-[SCREENSHOT: Chart window with Absolute Levels applied — two horizontal lines at user-defined prices in different colors and styles, one above and one below the current price, clearly spanning the full chart width | absolute-levels-chart-overview.png]
+[SCREENSHOT: Chart window with Absolute Levels applied — two horizontal lines at user-defined prices in different colors and styles, one above and one below the current price, clearly spanning the full chart width | dc-en-absolute-levels-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ Absolute Levels is a manual levels indicator. You enter up to two fixed price va
 5. Give the two lines contrasting formatting — for example, a solid line for the more important level and a dashed line for the secondary one — using each line's **Color**, **Style** and **Thickness** settings.
 6. Apply and confirm both lines sit exactly at the prices you entered.
 
-[SCREENSHOT: Absolute Levels settings dialog showing the Parameters section with First Value and Second Value fields filled in, and the First Line and Second Line formatting groups with Color, Style and Thickness controls | absolute-levels-settings-dialog.png]
+[SCREENSHOT: Absolute Levels settings dialog showing the Parameters section with First Value and Second Value fields filled in, and the First Line and Second Line formatting groups with Color, Style and Thickness controls | dc-en-absolute-levels-02.png]
 
 ## How to read it
 

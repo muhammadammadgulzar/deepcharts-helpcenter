@@ -61,7 +61,7 @@ Bar-based implementations typically use each bar's typical price ((high + low + 
 
 Say ES opens at 5,300.00, drives to 5,312.00 in the first half hour, and the session VWAP settles near 5,305.00 (numbers illustrative). Mid-morning, price pulls back to 5,305.50 — the first touch of VWAP since the drive. This is the classic decision point: if responsive buyers defend the average and the footprint shows selling drying up into the touch, the trend-day playbook says the drive can continue, with the first upper band as an initial target. Instead, suppose price slices through VWAP on strong negative delta and then *retests it from below* at 5,304.75, stalls, and rolls over. The line has flipped from support to resistance, the VWAP slope flattens, and the day's character shifts from drive to rotation — now the play is fading the outer bands back toward the average, not chasing breaks. Same line, two different regimes; the slope and the reaction, not the touch itself, told you which one you were in.
 
-[SCREENSHOT: The worked example as an annotated ES chart — morning drive above VWAP, first pullback touch labelled "decision point", the failed retest from below labelled "support becomes resistance", and the afternoon rotation between the bands with arrows | understanding-vwap-worked-example.png]
+[SCREENSHOT: The worked example as an annotated ES chart — morning drive above VWAP, first pullback touch labelled "decision point", the failed retest from below labelled "support becomes resistance", and the afternoon rotation between the bands with arrows | dc-en-understanding-vwap-01.png]
 
 ## Common misreadings
 

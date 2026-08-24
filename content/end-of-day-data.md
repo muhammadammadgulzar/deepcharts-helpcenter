@@ -24,7 +24,7 @@ The setup follows the same pattern as every other feed in DeepCharts: create the
 
 2. Click **Select Connection** → **Feed Settings**.
 
-[SCREENSHOT: DeepCharts main bar with the Select Connection dropdown open and Feed Settings highlighted | feed-settings-menu-historical.png]
+[SCREENSHOT: DeepCharts main bar with the Select Connection dropdown open and Feed Settings highlighted | dc-en-end-of-day-data-01.png]
 
 3. Click **Add Connection**.
 
@@ -32,7 +32,7 @@ The setup follows the same pattern as every other feed in DeepCharts: create the
 
 5. In **Feed Source**, select **Historical**.
 
-[SCREENSHOT: Feed Settings dialog with the Feed Source dropdown open and Historical highlighted, Name filled in as "End of Day" | feed-settings-historical-source.png]
+[SCREENSHOT: Feed Settings dialog with the Feed Source dropdown open and Historical highlighted, Name filled in as "End of Day" | dc-en-end-of-day-data-02.png]
 
 [CONFIRM: whether the Historical feed source requires any credentials or an active subscription, and which exchanges/symbols and how much history it provides]
 
@@ -48,7 +48,7 @@ The setup follows the same pattern as every other feed in DeepCharts: create the
 
 8. Open a new chart on that exchange — it loads the historical data. See [[first-chart]].
 
-[SCREENSHOT: A price chart displaying end-of-day historical data loaded from the Historical feed profile | chart-end-of-day-data.png]
+[SCREENSHOT: A price chart displaying end-of-day historical data loaded from the Historical feed profile | dc-en-end-of-day-data-03.png]
 
 ## Verify it worked
 

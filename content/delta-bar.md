@@ -38,7 +38,7 @@ Try it live below — hover any delta bar to see which side was pushing in that 
 5. Leave **Filter Min** and **Filter Max** at their neutral values so all delta is counted (a **Filter Max** of **0** applies no maximum filter).
 6. Under **Subgraphs**, pick a style — **Candlestick**, **OHLC** or **CandleBody** — and set the bull/bear colors to match your chart scheme.
 
-[SCREENSHOT: Delta Bar settings dialog showing the data setting section with the input options (Volume, Order, Trades, Aggregate Volume, Aggregate Trades) and the Subgraphs section with the style dropdown open on Candlestick, OHLC, CandleBody | delta-bar-settings-dialog.png]
+[SCREENSHOT: Delta Bar settings dialog showing the data setting section with the input options (Volume, Order, Trades, Aggregate Volume, Aggregate Trades) and the Subgraphs section with the style dropdown open on Candlestick, OHLC, CandleBody | dc-en-delta-bar-01.png]
 
 ## How to read it
 

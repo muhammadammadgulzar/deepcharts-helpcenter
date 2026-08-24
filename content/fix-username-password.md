@@ -17,7 +17,7 @@ When connecting a Rithmic data feed or trading account, the connection fails wit
 
 **Connection failed: Please make sure you entered the username and password correctly.**
 
-[SCREENSHOT: The connection error dialog showing the "Please make sure you entered the username and password correctly" message after a failed Rithmic connection | rithmic-username-password-error.png]
+[SCREENSHOT: The connection error dialog showing the "Please make sure you entered the username and password correctly" message after a failed Rithmic connection | dc-en-fix-username-password-01.png]
 
 Not to be confused with:
 
@@ -50,7 +50,7 @@ Rithmic rejects logins sent to the wrong gateway. In **Feed Settings**, edit the
 | Rithmic data feed only (no broker account) | **Paper Trading** |
 | Prop-firm account | Your firm's name if listed (for example **Apex**) — otherwise **Paper Trading** |
 
-[SCREENSHOT: Feed Settings with the Server dropdown open, showing entries such as Apex and Paper Trading, with the correct one highlighted | feed-settings-server-dropdown.png]
+[SCREENSHOT: Feed Settings with the Server dropdown open, showing entries such as Apex and Paper Trading, with the correct one highlighted | dc-en-fix-username-password-02.png]
 
 > **Note:** The separate **Gateway** field selects a regional location (Chicago, Europe, Singapore...). A distant location adds latency but is not what causes this error — focus on the **Server** field.
 

@@ -55,14 +55,40 @@ cd site && python3 -m http.server 8080     # then open http://localhost:8080
    project's venv: `source ~/Desktop/ai-support-system/venv/bin/activate`).
 4. The build validates everything: missing files, broken `[[links]]`, PDF failures.
 
-## Adding the real screenshots
+## Screenshots — unique IDs & bulk apply
 
-1. Work through `screenshots-needed.md` — each entry says exactly what to capture and the filename.
-   For DeepDOM articles, `deepdom-source-images.csv` links the original old-site image.
-2. Save captures to `assets/img/<filename>` (create the folder — the build copies it into the site).
-3. In the matching content file, replace the `[SCREENSHOT: ... | filename.png]` line with
-   `![alt text](../assets/img/filename.png)` (DeepCharts) or
-   `![alt text](../../assets/img/filename.png)` (DeepDOM) and rebuild.
+Every placeholder has a **unique ID** shown on the page and in `screenshots-needed.md`:
+`{kb}-{lang}-{article-slug}-{NN}` (kb: dc/dd, lang: en/it/es/fr/de) — e.g. `dc-en-connect-cqg-03`.
+The build FAILS on malformed or duplicate IDs, so they stay reliable.
+
+Capture pass: save every capture named exactly by its ID (`dd-en-heatmap-01.png`) into one
+folder, then run:
+
+```bash
+python3 scripts/apply_screenshots.py <folder> --build
+```
+
+It copies the images into `assets/img/` and replaces every matching placeholder in the
+content automatically. For DeepDOM articles, `deepdom-source-images.csv` links each ID to
+the original old-site image. `site/assets/shots-status.json` (rebuilt every build) feeds the
+admin panel's screenshot-coverage view.
+
+## Languages
+
+English is the source of truth. The header has a language dropdown (Italiano, Español,
+Français, Deutsch — BETA). A language goes live once bootstrapped:
+
+```bash
+OPENAI_API_KEY=... python3 scripts/translate_sync.py --init it
+```
+
+That creates `manifest-it(.deepdom).json` + `content-it(/-deepdom)/` with translated
+articles (marked `machine_translated: true`) and the site builds `site/it/…` automatically.
+From then on, `.github/workflows/translate.yml` re-translates any English article the team
+changes on `test` (needs the repo secret `OPENAI_API_KEY`). Screenshot IDs are per-language
+(`dc-it-…`), and a language's article shows a placeholder until its localized capture is
+added — so the coverage report tracks every language separately.
+`python3 scripts/translate_sync.py --status` shows staleness without API calls.
 
 ## Things awaiting confirmation
 

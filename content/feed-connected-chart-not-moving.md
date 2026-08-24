@@ -16,7 +16,7 @@ Your connection dot is green, so the data feed itself is working — but the cha
 - The connection dot is green (feed shows connected).
 - A chart opens but the price does not update, **or** the chart shows "no data", **or** the chart shows old data from a previous session and appears frozen.
 
-[SCREENSHOT: DeepCharts main toolbar with the connection dot green, next to an open price chart that is visibly stale (last candle timestamp from a previous session highlighted) | green-dot-chart-frozen.png]
+[SCREENSHOT: DeepCharts main toolbar with the connection dot green, next to an open price chart that is visibly stale (last candle timestamp from a previous session highlighted) | dc-en-feed-connected-chart-not-moving-01.png]
 
 Not to be confused with:
 
@@ -39,7 +39,7 @@ The exchange for your symbol is not routed to the connected feed in Symbol Manag
 
 5. If the value is wrong or blank, click the **link icon** on that row (next to the delete icon) and pick the correct feed from your connected feeds.
 
-[SCREENSHOT: The feed-selection dialog that opens from the link icon in Symbol Manage, with the connected feed highlighted before confirming | symbol-manage-link-feed.png]
+[SCREENSHOT: The feed-selection dialog that opens from the link icon in Symbol Manage, with the connected feed highlighted before confirming | dc-en-feed-connected-chart-not-moving-02.png]
 
 6. Wait a few seconds — an already-open chart sometimes refreshes on its own once the routing is fixed. If it does not, close the chart and reopen it via **New → Price Chart** and pick the symbol again.
 
@@ -51,7 +51,7 @@ The exchange for your symbol is not routed to the connected feed in Symbol Manag
 
 If the Symbol Manage table is empty, click the **Export Mode** button — a new window opens that should contain the exchanges in a table. Set the **Data Feed** per exchange with the link icon, as above. If the Export Mode window is also empty, click the **Subscribe** button, select your **Data Feed** and the exchange(s) you want to trade, then click **Select**.
 
-[SCREENSHOT: The Subscribe dialog reached from Export Mode, with a data feed chosen and one exchange selected, Select button visible | symbol-manage-subscribe-exchange.png]
+[SCREENSHOT: The Subscribe dialog reached from Export Mode, with a data feed chosen and one exchange selected, Select button visible | dc-en-feed-connected-chart-not-moving-03.png]
 
 The full walkthrough of all three scenarios is in [[symbol-manage]].
 

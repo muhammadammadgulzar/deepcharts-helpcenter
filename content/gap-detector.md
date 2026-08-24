@@ -35,7 +35,7 @@ The Gap Detector scans the chart for places where price jumped from one bar to t
 4. Click the gear icon next to the indicator to open its settings. Choose your **Gap Mode**: **Tick** is the natural choice for futures (set **Tick Value** to a size that is meaningful for your instrument), while **Percentual** scales with price and works across instruments.
 5. Set clearly different colors for bullish and bearish gaps and adjust the opacity so the highlights don't hide the candles.
 
-[SCREENSHOT: An intraday futures chart with the Gap Detector active — a highlighted bullish gap zone from a session open, shown as a shaded rectangle extending to the right until filled | gap-detector-on-chart.png]
+[SCREENSHOT: An intraday futures chart with the Gap Detector active — a highlighted bullish gap zone from a session open, shown as a shaded rectangle extending to the right until filled | dc-en-gap-detector-01.png]
 
 ## How to read it
 
@@ -62,7 +62,7 @@ The Gap Detector scans the chart for places where price jumped from one bar to t
 | **Bullish / bearish gap colors** | Separate colors for gap-up and gap-down zones so direction is readable at a glance. |
 | **Opacity** | Transparency of the highlighted gap zones. |
 
-[SCREENSHOT: The Gap Detector settings dialog showing Gap Mode with Percentual and Tick options, the Perc Value and Tick Value fields, the Trigger Whole Bar toggle and the color/opacity controls | gap-detector-settings.png]
+[SCREENSHOT: The Gap Detector settings dialog showing Gap Mode with Percentual and Tick options, the Perc Value and Tick Value fields, the Trigger Whole Bar toggle and the color/opacity controls | dc-en-gap-detector-02.png]
 
 ## Tips and common mistakes
 

@@ -20,7 +20,7 @@ Deep Trades is an orderflow indicator that plots shape-coded markers on the char
 
 > **Warning:** Feed compatibility is a hard requirement. Deep Trades works on **Rithmic Level 1**, **Rithmic Level 2**, and **dxFeed Level 2** (with **DOM Type = MBO** for CME group symbols). It does **not** work on dxFeed Level 1 or CQG, because those feeds do not provide MBO data. On an MBO-capable feed, also set **Source Type = MBO** in **Source Settings**. If your feed is not compatible, use [[big-trades]] instead with Aggregate input.
 
-[SCREENSHOT: Chart with Deep Trades active showing several marker types at once — at least one square, one hollow circle, one filled circle and one diamond marker on recent candles, with ask-colored and bid-colored markers distinguishable | deep-trades-chart-markers.png]
+[SCREENSHOT: Chart with Deep Trades active showing several marker types at once — at least one square, one hollow circle, one filled circle and one diamond marker on recent candles, with ask-colored and bid-colored markers distinguishable | dc-en-deep-trades-01.png]
 
 ## When to use it
 
@@ -38,7 +38,7 @@ Deep Trades is an orderflow indicator that plots shape-coded markers on the char
 5. Leave **Standard Dev.** at its default (recommended) so marker sizes scale sensibly.
 6. Apply and watch markers appear as large trades execute.
 
-[SCREENSHOT: Deep Trades settings dialog open on Data Settings, showing Chart Area, Days to Load, and Filter Mode set to Automatic with the Intensity dropdown expanded (Low/Medium/Strong) | deep-trades-settings-data.png]
+[SCREENSHOT: Deep Trades settings dialog open on Data Settings, showing Chart Area, Days to Load, and Filter Mode set to Automatic with the Intensity dropdown expanded (Low/Medium/Strong) | dc-en-deep-trades-02.png]
 
 > **Note:** Existing users must run a one-time database migration before Deep Trades history can be stored: **Options → Database → Settings → Migrate/Compress**. Disconnect your feeds and close the workspace first; the migration takes roughly 10–15 minutes.
 

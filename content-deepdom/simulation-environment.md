@@ -13,12 +13,12 @@ DeepDom includes a built‑in simulation environment that lets you practice stra
 
 ## Add a New SIM Account
 
-[SCREENSHOT: Simulation Environment — Add a New SIM Account (DeepDOM) | simulation-environment-01.png]
+[SCREENSHOT: Simulation Environment — Add a New SIM Account (DeepDOM) | dd-en-simulation-environment-01.png]
 
 1. Open the Options menu and select Settings .
 2. Go to the SIM Account section.
 
-[SCREENSHOT: Simulation Environment — Add a New SIM Account (DeepDOM) | simulation-environment-02.png]
+[SCREENSHOT: Simulation Environment — Add a New SIM Account (DeepDOM) | dd-en-simulation-environment-02.png]
 
 In this section you can add or delete simulation accounts:
 
@@ -32,7 +32,7 @@ Click Add again to confirm.
 
 ## Trade in Simulation Mode
 
-[SCREENSHOT: Simulation Environment — Trade in Simulation Mode (DeepDOM) | simulation-environment-03.png]
+[SCREENSHOT: Simulation Environment — Trade in Simulation Mode (DeepDOM) | dd-en-simulation-environment-03.png]
 
 To operate in simulation mode:
 

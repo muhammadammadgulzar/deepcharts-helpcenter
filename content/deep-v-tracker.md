@@ -18,7 +18,7 @@ Together they answer two different questions — "is something unusual happening
 
 The Patterns module watches how each candle forms and marks three anomalies: sudden acceleration in orderflow, deceleration (slowdown), and exhaustion of the aggressive side. The Absorption & Pressure module maps horizontal force levels, labeled by type (Pressure, Absorption, Control and Extreme variants), colored by which side is acting. Both modules aim at the same goal: exposing institutional activity and high-probability trade levels.
 
-[SCREENSHOT: Chart with Deep V-Tracker active showing a cyan Acceleration box over a candle body plus several horizontal Absorption & Pressure lines in purple and green with their P/A/PC/AC labels visible | deep-v-tracker-chart-overview.png]
+[SCREENSHOT: Chart with Deep V-Tracker active showing a cyan Acceleration box over a candle body plus several horizontal Absorption & Pressure lines in purple and green with their P/A/PC/AC labels visible | dc-en-deep-v-tracker-01.png]
 
 ## When to use it
 
@@ -35,7 +35,7 @@ The Patterns module watches how each candle forms and marks three anomalies: sud
 4. In the Absorption & Pressure module, start with **Intensity = Strong** and **Level Mode = Conservative** so only the most structural levels are drawn.
 5. Optionally create alerts under **Options → Settings → Add Alert**; the alert then appears in the Deep V-Tracker list.
 
-[SCREENSHOT: Deep V-Tracker settings dialog showing the Patterns module with only Acceleration enabled and Pattern Mode set to Strong, and the Absorption & Pressure section with Intensity and Level Mode dropdowns visible | deep-v-tracker-settings.png]
+[SCREENSHOT: Deep V-Tracker settings dialog showing the Patterns module with only Acceleration enabled and Pattern Mode set to Strong, and the Absorption & Pressure section with Intensity and Level Mode dropdowns visible | dc-en-deep-v-tracker-02.png]
 
 ## How to read it
 

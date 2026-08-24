@@ -70,7 +70,7 @@ with `ratio` commonly set around 3.0. Most tools also require a minimum volume s
 
 NQ rallies into yesterday's high (say 18,600 — illustrative). On the way up, the footprint prints stacked buying imbalances at 18,560–18,570: initiative buyers in control, and that zone becomes the pullback support to watch. At 18,600 the character changes — volume expands sharply, delta stays strongly positive, but price stalls for several bars. Effort without result: sellers are absorbing the buying. The top tick of the move still shows heavy two-sided trade, so the high is also a potential unfinished auction. Price then rolls over. The auction-theory read: buyers drove the move (imbalances), a patient seller ended it (absorption), and the untapered high stays on the map as unfinished business the market may revisit another day.
 
-[SCREENSHOT: An NQ footprint sequence annotated in three stages — stacked buying imbalances during the rally, an absorption bar at the prior-day high with high volume and flat price, and the untapered top tick circled as a potential unfinished auction | auction-theory-worked-example-nq.png]
+[SCREENSHOT: An NQ footprint sequence annotated in three stages — stacked buying imbalances during the rally, an absorption bar at the prior-day high with high volume and flat price, and the untapered top tick circled as a potential unfinished auction | dc-en-understanding-auction-theory-01.png]
 
 ## Common misreadings
 

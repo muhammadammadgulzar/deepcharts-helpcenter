@@ -36,7 +36,7 @@ The result: direction comes from which DI line is on top, and conviction comes f
 
 The default **Period** of 14 is the standard configuration and a sensible starting point on any timeframe. Give the ADX line and the two DI lines clearly distinct colors so crossovers read instantly.
 
-[SCREENSHOT: A price chart with the ADX indicator in a lower panel showing three lines — the ADX line rising during a trending move, with +DI above −DI — while the price panel above shows the corresponding uptrend | adx-on-chart.png]
+[SCREENSHOT: A price chart with the ADX indicator in a lower panel showing three lines — the ADX line rising during a trending move, with +DI above −DI — while the price panel above shows the corresponding uptrend | dc-en-adx-01.png]
 
 ## How to read it
 
@@ -63,7 +63,7 @@ The default **Period** of 14 is the standard configuration and a sensible starti
 | **Plus DI Color** | Color of the Plus Directional Indicator (+DI) line. |
 | **Minus DI Color** | Color of the Minus Directional Indicator (−DI) line. |
 
-[SCREENSHOT: The ADX settings dialog showing the Period parameter set to 14 and the subgraph options for Line Color, Line Style, Line Width, Plus DI Color and Minus DI Color | adx-settings.png]
+[SCREENSHOT: The ADX settings dialog showing the Period parameter set to 14 and the subgraph options for Line Color, Line Style, Line Width, Plus DI Color and Minus DI Color | dc-en-adx-02.png]
 
 ## Tips and common mistakes
 

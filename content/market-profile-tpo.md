@@ -105,7 +105,7 @@ Session-based analysis using U.S. time-zone references. Modes: **None**, **Filte
 
 Right-click a profile on the chart to reshape it without touching the settings dialog: **Merge+** (merge forward), **Merge-** (merge backward), **Split+** (split forward), **Split-** (split backward) and **Reset All**.
 
-[SCREENSHOT: The Market Profile settings dialog open on the General section, showing TPO Base Minute, TPO Type and Period options | market-profile-tpo-settings-general.png]
+[SCREENSHOT: The Market Profile settings dialog open on the General section, showing TPO Base Minute, TPO Type and Period options | dc-en-market-profile-tpo-01.png]
 
 ## Tips and common mistakes
 

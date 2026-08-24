@@ -22,7 +22,7 @@ Get a feel for pace on the live tape below — let it run, then hover to pause a
 
 The indicator measures activity per time interval — the **Number Seconds** window — using your choice of volume, orders, or executed trades as the input. The result plots as candlestick-style bars in a separate panel, with bull and bear coloring reflecting strong buyer or strong seller participation. Filters and a standard-deviation option let you keep only the statistically unusual readings.
 
-[SCREENSHOT: Chart window with the Speed of Tape indicator in a footer panel — candlestick-style speed bars spiking during a breakout, with bull-colored bars on the impulse and smaller bars during the consolidation before it | speed-of-tape-chart-overview.png]
+[SCREENSHOT: Chart window with the Speed of Tape indicator in a footer panel — candlestick-style speed bars spiking during a breakout, with bull-colored bars on the impulse and smaller bars during the consolidation before it | dc-en-speed-of-tape-01.png]
 
 ## When to use it
 
@@ -39,7 +39,7 @@ The indicator measures activity per time interval — the **Number Seconds** win
 4. Set **Number Seconds** to the interval you want speed measured over — shorter intervals react faster, longer intervals smooth the reading.
 5. Leave **Filter Min** and **Filter Max** unset at first; add a **Filter Min** later to mark only genuinely fast periods.
 
-[SCREENSHOT: Speed of Tape settings dialog open on the General section — Input Data dropdown expanded showing Volume, Order and Trades, with Number Seconds and the filter fields visible below | speed-of-tape-settings-general.png]
+[SCREENSHOT: Speed of Tape settings dialog open on the General section — Input Data dropdown expanded showing Volume, Order and Trades, with Number Seconds and the filter fields visible below | dc-en-speed-of-tape-02.png]
 
 ## How to read it
 

@@ -13,7 +13,7 @@ This guide explains how to configure keyboard shortcuts in DeepDom so you can pe
 
 ## Open the Shortcuts Settings
 
-[SCREENSHOT: How to Set Up Keyboard Shortcuts — Open the Shortcuts Settings (DeepDOM) | how-to-set-up-keyboard-shortcuts-01.png]
+[SCREENSHOT: How to Set Up Keyboard Shortcuts — Open the Shortcuts Settings (DeepDOM) | dd-en-how-to-set-up-keyboard-shortcuts-01.png]
 
 1. Open the Options menu in DeepDom.
 2. Click Settings .
@@ -22,7 +22,7 @@ This guide explains how to configure keyboard shortcuts in DeepDom so you can pe
 
 ## Shortcuts Window Overview
 
-[SCREENSHOT: How to Set Up Keyboard Shortcuts — Shortcuts Window Overview (DeepDOM) | how-to-set-up-keyboard-shortcuts-02.png]
+[SCREENSHOT: How to Set Up Keyboard Shortcuts — Shortcuts Window Overview (DeepDOM) | dd-en-how-to-set-up-keyboard-shortcuts-02.png]
 
 Shortcuts are organized by Category and Type .
 

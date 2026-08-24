@@ -18,7 +18,7 @@ It is a favorite for orderflow traders who want footprint-grade information at a
 
 For each candle, the indicator computes a set of data series — eleven are available, including Max/Min Delta, total volume, delta volume, total trades, delta trades, extension, COT High, COT Low, COT Bar, Bid-Ask/Vol, and Ratio — and renders your chosen values as a compact text box positioned above, below, or on the candle. Coloring and opacity options tie the text's appearance to delta sign and magnitude, so the annotation itself carries a directional read.
 
-[SCREENSHOT: Chart with On Candle Stats active — small text boxes above each candle showing volume and delta values, positive-delta candles labeled in green text and negative in red | on-candle-stats-chart-overview.png]
+[SCREENSHOT: Chart with On Candle Stats active — small text boxes above each candle showing volume and delta values, positive-delta candles labeled in green text and negative in red | dc-en-on-candle-stats-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ For each candle, the indicator computes a set of data series — eleven are avai
 5. Turn on **Color Text Based on Delta** so positive readings print in one color (typically green) and negative in another (typically red).
 6. Set **Price Plot** to **High** and add a small **Tick Offset** so text boxes sit clear of the candle wicks.
 
-[SCREENSHOT: On Candle Stats settings dialog — Data Settings at top (Input Data, Filter Min, Filter Max), with Text, Coloring and Price sections below, Color Text Based on Delta enabled | on-candle-stats-settings-dialog.png]
+[SCREENSHOT: On Candle Stats settings dialog — Data Settings at top (Input Data, Filter Min, Filter Max), with Text, Coloring and Price sections below, Color Text Based on Delta enabled | dc-en-on-candle-stats-02.png]
 
 ## How to read it
 

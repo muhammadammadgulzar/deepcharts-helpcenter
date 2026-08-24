@@ -22,7 +22,7 @@ The streaming tape below is the raw flow this indicator distills — watch the b
 
 The indicator analyzes volume flow over a configurable window (**Number of seconds**, default **10**) and draws the result as colored bars: green/teal bars mark positive-delta periods where buying pressure dominates, red/pink bars mark negative-delta periods where selling pressure dominates, and bar height reflects trading velocity intensity. By default only the most recent readings are shown (**Bars to show**, default **3**), keeping the display anchored to the present.
 
-[SCREENSHOT: Chart with Speed of Tape (Instant) active — the three most recent tape-speed bars visible, tallest bar in the buy color during a fast push up, price candles moving in the background | speed-of-tape-instant-chart-overview.png]
+[SCREENSHOT: Chart with Speed of Tape (Instant) active — the three most recent tape-speed bars visible, tallest bar in the buy color during a fast push up, price candles moving in the background | dc-en-speed-of-tape-instant-01.png]
 
 ## When to use it
 
@@ -39,7 +39,7 @@ The indicator analyzes volume flow over a configurable window (**Number of secon
 4. Leave **Number of seconds** at the default **10** and **Display value** on **Total** — this aggregates all trading activity within each 10-second window.
 5. Keep **Bars to show** at the default **3**; increase it only if you want more recent history in view.
 
-[SCREENSHOT: Speed of Tape (Instant) settings dialog — Plot Settings with Bars to show = 3 and Scale min value = 0, Data Settings and Mode Settings sections visible with Number of seconds = 10 | speed-of-tape-instant-settings.png]
+[SCREENSHOT: Speed of Tape (Instant) settings dialog — Plot Settings with Bars to show = 3 and Scale min value = 0, Data Settings and Mode Settings sections visible with Number of seconds = 10 | dc-en-speed-of-tape-instant-02.png]
 
 ## How to read it
 

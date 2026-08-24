@@ -18,7 +18,7 @@ Where footprint tools show you where volume traded inside the bar, Deep Stats co
 
 Deep Stats is an orderflow statistics indicator that renders a text grid under the price chart. Every completed bar gets a column of values, and cell colors scale with statistical intensity so outliers stand out at a glance. It answers questions like "how much delta did this bar really have?", "was that push absorbed?", and "is volume drying up at these highs?"
 
-[SCREENSHOT: Chart window with Deep Stats applied — price candles on top and the multi-level Deep Stats text table in a panel beneath, with several metric rows (Tot Vol, Delta Vol, Delta %, COT Bar) visible and one strongly colored outlier cell | deep-stats-chart-overview.png]
+[SCREENSHOT: Chart window with Deep Stats applied — price candles on top and the multi-level Deep Stats text table in a panel beneath, with several metric rows (Tot Vol, Delta Vol, Delta %, COT Bar) visible and one strongly colored outlier cell | dc-en-deep-stats-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ Deep Stats is an orderflow statistics indicator that renders a text grid under t
 5. In the **Subgraphs** section, set the **Series style** of every metric you do not need to **Ignore**. A compact starter set: **Tot Vol**, **Delta Vol**, **Delta %**, **Delta Dly**, **COT Bar**.
 6. Click apply/save and confirm the table renders under the chart.
 
-[SCREENSHOT: Deep Stats settings dialog open on the Data Settings section, showing the Input Data dropdown expanded with Volume, Order and Aggregate Trades options, plus the Min Filter and Max Filter fields | deep-stats-settings-data.png]
+[SCREENSHOT: Deep Stats settings dialog open on the Data Settings section, showing the Input Data dropdown expanded with Volume, Order and Aggregate Trades options, plus the Min Filter and Max Filter fields | dc-en-deep-stats-02.png]
 
 ## How to read it
 

@@ -26,21 +26,21 @@ Make sure you have:
 
 1. Get your Rithmic credentials. For a feed bought from the DeepCharts website: log in at my.deepcharts.com, open the **Subscriptions** section, and locate your Rithmic username and password. Keep them at hand — you will need them in every step that follows.
 
-[SCREENSHOT: DeepCharts dashboard at my.deepcharts.com with the Subscriptions section open and the Rithmic subscription row visible, credentials area highlighted (blur the actual username/password) | dashboard-subscriptions-rithmic-credentials.png]
+[SCREENSHOT: DeepCharts dashboard at my.deepcharts.com with the Subscriptions section open and the Rithmic subscription row visible, credentials area highlighted (blur the actual username/password) | dc-en-connect-rithmic-01.png]
 
 2. Sign the Rithmic market data agreement in R Trader Pro. Rithmic requires you to accept its agreements before any third-party platform can connect — with them unsigned, the connection fails even with correct credentials. Download R Trader Pro from https://www.rithmic.com/rtraderpro (click **Download R | Trader Pro**), install it, and open it. Fill in **both** login forms with the same values: your Rithmic username and password, **System** = **Rithmic Paper Trading**, and the **Gateway** nearest to you. Click **Login**, choose your market data status when prompted (retail traders normally select **Non-Professional**), then read and accept each agreement until no prompts remain. The full process is covered in [[sign-market-data-agreement]].
 
-[SCREENSHOT: R Trader Pro login screen showing the two side-by-side login forms, both filled identically, with System set to Rithmic Paper Trading and the Gateway dropdown visible | rtrader-login-paper-trading.png]
+[SCREENSHOT: R Trader Pro login screen showing the two side-by-side login forms, both filled identically, with System set to Rithmic Paper Trading and the Gateway dropdown visible | dc-en-connect-rithmic-02.png]
 
 > **Note:** The agreements are stored on Rithmic's servers, so you do not need to keep R Trader Pro open while using DeepCharts. You only repeat this if your account resets or Rithmic introduces new mandatory agreements.
 
 3. While you are in R Trader Pro (first-time setup only), remove Rithmic's data-receive limit: open **Window → Preferences → Performance** and drag both sliders — **Quotes** and **Order Book** — to the maximum, then click **Apply** and **OK**. With a limit set, charts can lag behind during high-volume market periods. Close R Trader Pro when done.
 
-[SCREENSHOT: R Trader Pro Preferences window on the Performance tab with the Quotes and Order Book sliders both dragged to the maximum position | rtrader-performance-sliders-max.png]
+[SCREENSHOT: R Trader Pro Preferences window on the Performance tab with the Quotes and Order Book sliders both dragged to the maximum position | dc-en-connect-rithmic-03.png]
 
 4. In DeepCharts, click **Select Connection** in the top toolbar, then click **Feed Settings** at the bottom of the dropdown. The Feed Settings window opens.
 
-[SCREENSHOT: DeepCharts main toolbar with the Select Connection dropdown open and the Feed Settings entry at the bottom highlighted | select-connection-feed-settings.png]
+[SCREENSHOT: DeepCharts main toolbar with the Select Connection dropdown open and the Feed Settings entry at the bottom highlighted | dc-en-connect-rithmic-04.png]
 
 5. Click **Add Connection** and fill in the form:
 
@@ -96,7 +96,7 @@ Try the mapping below — click the chain-link icon on a row to cycle which feed
 - Within about 10 seconds of connecting, the connection indicator turns **green**.
 - The chart you opened loads candles and the price updates live.
 
-[SCREENSHOT: DeepCharts main toolbar showing the green connection indicator next to the Rithmic feed name, with a live ES chart updating in the background | rithmic-connected-green-dot.png]
+[SCREENSHOT: DeepCharts main toolbar showing the green connection indicator next to the Rithmic feed name, with a live ES chart updating in the background | dc-en-connect-rithmic-05.png]
 
 ## If something went wrong
 

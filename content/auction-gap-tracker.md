@@ -37,7 +37,7 @@ To see what a zero print looks like inside a bar, hover the bid×ask cells in th
 4. Choose your **Include Mode**: **Intrabar** to ignore highs and lows, or **All** to track every qualifying gap.
 5. Pick distinct buy and sell colors, and enable the triggered-zone display if you want retested gaps kept on the chart.
 
-[SCREENSHOT: A chart with the Auction Gap Tracker active, showing a fully opaque sell-side gap rectangle extending right and a reduced-opacity rectangle where price has already crossed the level | auction-gap-tracker-zones-chart.png]
+[SCREENSHOT: A chart with the Auction Gap Tracker active, showing a fully opaque sell-side gap rectangle extending right and a reduced-opacity rectangle where price has already crossed the level | dc-en-auction-gap-tracker-01.png]
 
 ## How to read it
 
@@ -71,7 +71,7 @@ Opacity is the state indicator: full opacity means the gap is untouched since de
 
 Sound alerts for generated signals, configurable by the user.
 
-[SCREENSHOT: The Auction Gap Tracker settings dialog showing the Unfinished Settings group with Minimum Tick Vol, Threshold-max. unfinished, Include Mode and Min. Num. Of Consecutive Zero | auction-gap-tracker-settings-dialog.png]
+[SCREENSHOT: The Auction Gap Tracker settings dialog showing the Unfinished Settings group with Minimum Tick Vol, Threshold-max. unfinished, Include Mode and Min. Num. Of Consecutive Zero | dc-en-auction-gap-tracker-02.png]
 
 ## Tips and common mistakes
 

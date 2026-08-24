@@ -28,13 +28,13 @@ The setup differs from a regular dxFeed connection in two ways: you select **dxF
 
 1. Sign the market data agreement. Log into your prop firm's dashboard and look for a sign-market-data-agreement button or link. If it is not on the dashboard, check the email the firm sent when your account was issued. If you cannot find it in either place, contact the firm's support — only they can resend the link. Until this agreement is signed, the connection will fail even with correct credentials.
 
-[SCREENSHOT: A prop-firm dashboard (example layout) with the market data agreement signing button highlighted | prop-dashboard-sign-agreement.png]
+[SCREENSHOT: A prop-firm dashboard (example layout) with the market data agreement signing button highlighted | dc-en-connect-dxfeed-prop-firm-01.png]
 
 2. Have your dxFeed username and password ready — from the firm's welcome email or dashboard credentials section, not your dashboard login itself.
 
 3. In DeepCharts, click **Select Connection** in the top toolbar, then click **Feed Settings** at the bottom of the dropdown.
 
-[SCREENSHOT: DeepCharts top toolbar with the Select Connection dropdown open and Feed Settings highlighted | dxfeed-prop-select-connection.png]
+[SCREENSHOT: DeepCharts top toolbar with the Select Connection dropdown open and Feed Settings highlighted | dc-en-connect-dxfeed-prop-firm-02.png]
 
 4. Click **Add Connection** and fill in the form:
 

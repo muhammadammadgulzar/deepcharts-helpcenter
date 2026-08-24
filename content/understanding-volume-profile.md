@@ -66,7 +66,7 @@ The value area is typically computed by starting at the POC and expanding outwar
 
 Suppose yesterday's ES session built its POC at 5,290.00 with a value area of 5,283.00–5,296.00, and today opens at 5,302.00 — above yesterday's VAH (numbers illustrative). In the first half hour, sellers push price back under 5,296.00 and it holds inside the old value area. That open-above-then-reacceptance pattern suggests the overnight markup found no business, and many traders would now look for rotation down through the value area toward the 5,290.00 POC, then watch behavior there: a fast bounce keeps the balanced-day story alive; acceptance below VAL at 5,283.00 opens the door to a downside trend day. Notice how every decision point in that plan is a profile structure, not a guess.
 
-[SCREENSHOT: Intraday ES chart with yesterday's profile overlaid, annotated with the open above VAH, the re-entry into value, and an arrow path toward the POC labelled with the rotation logic | volume-profile-worked-example-va-rotation.png]
+[SCREENSHOT: Intraday ES chart with yesterday's profile overlaid, annotated with the open above VAH, the re-entry into value, and an arrow path toward the POC labelled with the rotation logic | dc-en-understanding-volume-profile-01.png]
 
 ## Common misreadings
 

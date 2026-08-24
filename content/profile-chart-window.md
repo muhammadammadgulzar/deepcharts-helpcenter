@@ -37,11 +37,11 @@ To get a feel for the volume side, try the interactive profile below — drag th
 3. Wait while the window shows **Building chart** (or **Downloading data from connection**). The main bar shows an **LDT:** badge when data is loading from disk, or **DWT:** when it is downloading from the feed server — both are normal loading states.
 4. The chart renders with TPO profiles per session. Enable more profile types from the bottom toggle row as needed.
 
-[SCREENSHOT: Profile Chart window freshly opened on NQ showing the Building chart spinner with progress bar, and the main bar LDT badge visible at the top | profile-chart-building.png]
+[SCREENSHOT: Profile Chart window freshly opened on NQ showing the Building chart spinner with progress bar, and the main bar LDT badge visible at the top | dc-en-profile-chart-window-01.png]
 
 ## Window anatomy
 
-[SCREENSHOT: Fully rendered Profile Chart on NQ in TPO mode showing the header with symbol dropdown, 30D - BT dropdown and ticks-grouping dropdown, the top toolbar icons, the left drawing rail, per-session TPO letter profiles with magenta POC lines and dashed value-area lines, and the bottom profile-type toggle row | profile-chart-overview.png]
+[SCREENSHOT: Fully rendered Profile Chart on NQ in TPO mode showing the header with symbol dropdown, 30D - BT dropdown and ticks-grouping dropdown, the top toolbar icons, the left drawing rail, per-session TPO letter profiles with magenta POC lines and dashed value-area lines, and the bottom profile-type toggle row | dc-en-profile-chart-window-02.png]
 
 - **Header controls** — the symbol dropdown (for example NQ-202609), a history dropdown reading like **30D - BT** (30 days of history loaded; BT stands for Based on Tick, the same label family as on price charts — the full option list of this dropdown on the Profile Chart is [CONFIRM: options offered by the Profile Chart history dropdown]), the ticks-grouping dropdown (**N T** — see below), an open-in-new icon and a green plus icon, then the standard link/minimize/maximize/close controls.
 - **Top toolbar** — the same family as the price chart: hamburger, link-charts, the indicators icon, gear, **$** (trading) and camera.
@@ -53,7 +53,7 @@ To get a feel for the volume side, try the interactive profile below — drag th
 
 The **N T** dropdown sets the ticks grouping, with presets such as **1 T**, **20 T** and **100 T** plus a **Set Ticks Grouping** dialog (numeric field with **Cancel**, **Apply** and **Set** buttons) for custom values. Larger values group more ticks per profile row, which appears to control the row height — exact semantics unconfirmed. Changing the value rebuilds the chart; a **Building chart** spinner in between is normal.
 
-[SCREENSHOT: The ticks-grouping dropdown open showing the 1 T, 20 T and 100 T presets, with the Set Ticks Grouping dialog open showing the numeric field and Cancel, Apply and Set buttons | profile-chart-ticks-grouping.png]
+[SCREENSHOT: The ticks-grouping dropdown open showing the 1 T, 20 T and 100 T presets, with the Set Ticks Grouping dialog open showing the numeric field and Cancel, Apply and Set buttons | dc-en-profile-chart-window-03.png]
 
 ## Profile types: the bottom toggle row
 
@@ -66,7 +66,7 @@ Two placement rules:
 - **Daily types** (TPO and Dly profiles, including ETH/RTH variants) draw per-session inside the main chart area.
 - **Weekly and Composite types** each get their own full-height vertical area at the right edge of the chart, axis-labeled **W-VP**, **W-DP** or **C-VP**, with one histogram each.
 
-[SCREENSHOT: Profile Chart with several toggles enabled at once — TPO letters plus daily volume-profile bars per session in the main area, and three vertical areas labeled W-VP, W-DP and C-VP at the right edge each holding a full-height histogram | profile-chart-multi-overlays.png]
+[SCREENSHOT: Profile Chart with several toggles enabled at once — TPO letters plus daily volume-profile bars per session in the main area, and three vertical areas labeled W-VP, W-DP and C-VP at the right edge each holding a full-height histogram | dc-en-profile-chart-window-04.png]
 
 ## The Indicators panel
 
@@ -74,7 +74,7 @@ The toolbar's indicators icon opens the **Indicators** panel — the real state 
 
 The toggle row and this panel can briefly fall out of step after rapid toggling — when in doubt, trust the Indicators panel; it reflects what is actually drawn. Whether you can add further profile instances beyond the toggle presets via the green button is [CONFIRM: adding extra DT/DP instances through the Indicators button].
 
-[SCREENSHOT: Indicators panel open over the Profile Chart listing Chart Area 1 with Price and several DT and DP: Vol instances, plus Vertical Chart Areas 1-3 each holding one weekly or composite instance, with the trash, eye and gear icons visible per row | profile-chart-indicators-panel.png]
+[SCREENSHOT: Indicators panel open over the Profile Chart listing Chart Area 1 with Price and several DT and DP: Vol instances, plus Vertical Chart Areas 1-3 each holding one weekly or composite instance, with the trash, eye and gear icons visible per row | dc-en-profile-chart-window-05.png]
 
 ## How to read it
 
@@ -94,7 +94,7 @@ The right-click menu is the same family as the price chart — pointer/crosshair
 
 See [[trading-from-chart]] and [[trading-panel-reference]] for the full trading workflow — everything there applies here.
 
-[SCREENSHOT: Profile Chart with the trading panel docked on the right showing the Qty field, MKT/BID-ASK/LMT/STP/STP LMT grid, Breakeven and Cancel and Flat buttons and the OCO block, with the $ toolbar icon green | profile-chart-trading-panel.png]
+[SCREENSHOT: Profile Chart with the trading panel docked on the right showing the Qty field, MKT/BID-ASK/LMT/STP/STP LMT grid, Breakeven and Cancel and Flat buttons and the OCO block, with the $ toolbar icon green | dc-en-profile-chart-window-06.png]
 
 ## Settings reference
 

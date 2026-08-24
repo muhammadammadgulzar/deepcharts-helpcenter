@@ -21,7 +21,7 @@ They are not user-editable. If you want a modified version of one of these layou
 
 The **Templates** button sitting next to the radios is a different feature: it is a shortcut for right-click → **Template → Load** and opens the **Local / Cloud / Shared** file picker for your own saved templates.
 
-[SCREENSHOT: Bottom bar of a price chart showing the Templates button followed by the OF-VP, OF-B/A, D-VP, D-DP, D-VL, W-VP, W-DP and C-VP radio buttons, with the DOM Trading radio and Trading panel toggle at the right end | chart-bottom-bar-quick-templates.png]
+[SCREENSHOT: Bottom bar of a price chart showing the Templates button followed by the OF-VP, OF-B/A, D-VP, D-DP, D-VL, W-VP, W-DP and C-VP radio buttons, with the DOM Trading radio and Trading panel toggle at the right end | dc-en-quick-chart-templates-01.png]
 
 ## When to use it
 
@@ -36,7 +36,7 @@ The **Templates** button sitting next to the radios is a different feature: it i
 2. Look at the chart's bottom bar and click **OF-VP**.
 3. Wait for the chart to redraw: each candle now displays its own volume profile (Deep Print in profile style).
 
-[SCREENSHOT: Price chart immediately after clicking OF-VP, with the OF-VP radio selected in the bottom bar and each candle rendered as a per-bar volume profile | quick-template-of-vp-applied.png]
+[SCREENSHOT: Price chart immediately after clicking OF-VP, with the OF-VP radio selected in the bottom bar and each candle rendered as a per-bar volume profile | dc-en-quick-chart-templates-02.png]
 
 4. Click through the other radios to compare layouts, then settle on the one that matches your workflow.
 

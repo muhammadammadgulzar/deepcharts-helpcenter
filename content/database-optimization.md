@@ -27,22 +27,22 @@ The gains are largest after extended usage and on machines where disk and memory
 
 1. Close your workspace using the workspace dropdown at the top of the main bar (labelled with the current workspace name, for example **Untitled**).
 
-[SCREENSHOT: The workspace dropdown at the top of the DeepCharts main bar expanded, showing the option to close the current workspace | workspace-dropdown-close.png]
+[SCREENSHOT: The workspace dropdown at the top of the DeepCharts main bar expanded, showing the option to close the current workspace | dc-en-database-optimization-01.png]
 
 2. Disconnect all data feeds using the **Feed** dropdown at the top.
 
-[SCREENSHOT: The Feed dropdown at the top of the main bar expanded with the disconnect option visible | feed-dropdown-disconnect.png]
+[SCREENSHOT: The Feed dropdown at the top of the main bar expanded with the disconnect option visible | dc-en-database-optimization-02.png]
 
 3. Go to **Options → Database → Settings**.
 4. Select **Migrate / Compress**.
 
-[SCREENSHOT: The Database Settings dialog with the Migrate / Compress option highlighted | database-settings-migrate-compress.png]
+[SCREENSHOT: The Database Settings dialog with the Migrate / Compress option highlighted | dc-en-database-optimization-03.png]
 
 5. Click **Yes** on the confirmation dialog. The dialog itself warns that the operation may take a while and suggests running it after the session or on a weekend.
 6. Click **OK**.
 7. Wait for the process to complete. Expect several minutes; a database that has grown for months can take longer. Do not close the platform or power off the machine while it runs.
 
-[SCREENSHOT: The Migrate / Compress progress state while the utility is running | migrate-compress-in-progress.png]
+[SCREENSHOT: The Migrate / Compress progress state while the utility is running | dc-en-database-optimization-04.png]
 
 ## Verify it worked
 

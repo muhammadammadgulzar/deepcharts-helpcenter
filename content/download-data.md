@@ -22,19 +22,19 @@ The **Download Data** tool pulls historical data for a symbol into your local da
 
 1. Go to **Options → Download data**.
 
-[SCREENSHOT: The Options menu open on the main DeepCharts bar with the Download data entry highlighted | options-menu-download-data.png]
+[SCREENSHOT: The Options menu open on the main DeepCharts bar with the Download data entry highlighted | dc-en-download-data-01.png]
 
 2. Select the symbol or symbols you want to download.
 3. Set the **start date** — how far back the download should reach. For a corruption repair, start at least as far back as the range you deleted; for replay preparation, cover the full session range you plan to replay.
 4. Set the **Data Type**. **Tick** is the most granular option and is what orderflow tools such as footprints and profiles are built from. [CONFIRM: full list of Data Type options in the Download data window and the default selection]
 5. Decide whether to enable the **Download From VolServer** toggle. [CONFIRM: exact behavior of the Download From VolServer toggle — what source is used when it is on versus off, and the recommended setting for a standard repair]
 
-[SCREENSHOT: The Download data window with a symbol selected, a start date set, Data Type set to Tick, and the Download From VolServer toggle visible | download-data-window-configured.png]
+[SCREENSHOT: The Download data window with a symbol selected, a start date set, Data Type set to Tick, and the Download From VolServer toggle visible | dc-en-download-data-02.png]
 
 6. Start the download and leave the window to work. Large tick-data ranges can take a while, so avoid downloading months of tick history mid-session if you only need a few days. [CONFIRM: exact label of the button that starts the download]
 7. To watch progress, open **Options → Show Logs** and check the **Connection Logs** tab — it shows chart-data download progress as it runs.
 
-[SCREENSHOT: The Show Logs window on the Connection Logs tab showing historical data download progress entries | show-logs-connection-logs-download.png]
+[SCREENSHOT: The Show Logs window on the Connection Logs tab showing historical data download progress entries | dc-en-download-data-03.png]
 
 ### If you are repairing corrupted data
 

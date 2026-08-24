@@ -43,7 +43,7 @@ If the profile levels are the least familiar family, try the interactive volume 
 4. Click the gear icon next to the indicator to open its settings. Start modestly: enable one Volume By Price profile and Zig Zag swings, and leave retracements off until you have a feel for the output.
 5. As you enable more sources, raise **Minimum Number of Confluences** and reduce **Tick Sensitivity** so only the most significant zones survive. A worked configuration from the documentation uses three Volume Profiles, price swings and last-swing retracements with a minimum of 5 confluences and 3-tick sensitivity.
 
-[SCREENSHOT: A futures chart with the Confluence Identifier active — several shaded support/resistance zones of varying color intensity, the strongest zone sitting where a profile POC, a swing low and a retracement level align | confluence-identifier-on-chart.png]
+[SCREENSHOT: A futures chart with the Confluence Identifier active — several shaded support/resistance zones of varying color intensity, the strongest zone sitting where a profile POC, a swing low and a retracement level align | dc-en-confluence-identifier-01.png]
 
 ## How to read it
 
@@ -115,7 +115,7 @@ Up to three separate Volume By Price profiles can be enabled, each with its own 
 |---|---|
 | **Zone colors by confluence count** | Sets zone colors based on how many confluences back the zone, so stronger zones are visually emphasized. |
 
-[SCREENSHOT: The Confluence Identifier settings dialog showing the Confluence Settings group (Tick Sensitivity, Minimum Number of Confluences, Starting Mode) with the three Volume By Price profile blocks collapsed below | confluence-identifier-settings.png]
+[SCREENSHOT: The Confluence Identifier settings dialog showing the Confluence Settings group (Tick Sensitivity, Minimum Number of Confluences, Starting Mode) with the three Volume By Price profile blocks collapsed below | dc-en-confluence-identifier-02.png]
 
 ## Tips and common mistakes
 

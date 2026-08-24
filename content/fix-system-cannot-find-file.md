@@ -17,7 +17,7 @@ When connecting a data feed, the connection fails with:
 
 **Connection Failed: The system cannot find the file specified**
 
-[SCREENSHOT: The connection error dialog showing the full "Connection Failed: The system cannot find the file specified" message | system-cannot-find-file-error.png]
+[SCREENSHOT: The connection error dialog showing the full "Connection Failed: The system cannot find the file specified" message | dc-en-fix-system-cannot-find-file-01.png]
 
 Not to be confused with:
 
@@ -38,7 +38,7 @@ Repair the installation so the installer recreates the missing Bridge:
 2. Locate your original DeepCharts installer (`.exe`). If you no longer have it, download it again from the official source — see [[install-deepcharts]].
 3. Run the installer and choose the **Repair** option.
 
-[SCREENSHOT: The DeepCharts installer window with the Repair option visible and highlighted | deepcharts-installer-repair-option.png]
+[SCREENSHOT: The DeepCharts installer window with the Repair option visible and highlighted | dc-en-fix-system-cannot-find-file-02.png]
 
 4. Let the repair process finish completely.
 5. Reopen DeepCharts and reconnect the data feed.
@@ -56,12 +56,12 @@ McAfee can incorrectly flag `VolumetricaBridge.exe` and move it to quarantine. R
 3. Go to **Menu → Quarantined Items**.
 4. Find `VolumetricaBridge.exe` in the list and select **Restore**.
 
-[SCREENSHOT: McAfee Quarantined Items screen with VolumetricaBridge.exe listed and the Restore action visible | mcafee-quarantine-restore-bridge.png]
+[SCREENSHOT: McAfee Quarantined Items screen with VolumetricaBridge.exe listed and the Restore action visible | dc-en-fix-system-cannot-find-file-03.png]
 
 5. Add the file to the scanning exclusions: go to **Menu → Real-Time Scanning → Add File**.
 6. Browse to and select `VolumetricaBridge.exe`. [CONFIRM: default installation path of the Volumetrica Bridge folder]
 
-[SCREENSHOT: McAfee Real-Time Scanning exclusions screen after VolumetricaBridge.exe has been added | mcafee-exclusion-bridge-added.png]
+[SCREENSHOT: McAfee Real-Time Scanning exclusions screen after VolumetricaBridge.exe has been added | dc-en-fix-system-cannot-find-file-04.png]
 
 7. Close McAfee and relaunch DeepCharts.
 

@@ -38,7 +38,7 @@ You can watch this raw execution stream live below — every print is one record
 3. Open the **Input Data** dropdown and pick a type using the table below.
 4. Apply and compare — different input types can produce visibly different results on the same candles.
 
-[SCREENSHOT: An indicator settings dialog (e.g. Deep Print) open at the Data Settings section with the Input Data dropdown expanded, showing the Volume, Order and Aggregate entries | input-data-dropdown.png]
+[SCREENSHOT: An indicator settings dialog (e.g. Deep Print) open at the Data Settings section with the Input Data dropdown expanded, showing the Volume, Order and Aggregate entries | dc-en-different-types-of-input-01.png]
 
 ## How to read it
 
@@ -48,7 +48,7 @@ You can watch this raw execution stream live below — every print is one record
 
 **Aggregate** is not delivered by any data feed; it is calculated by DeepCharts itself. The platform analyzes the transaction stream and reconstructs hidden large orders by linking executions that share the same aggressor ID across time and price. Because it is computed locally, it works with any data feed and does not require MBO.
 
-[SCREENSHOT: Two identical footprint charts side by side, one with Input Data = Volume and one with Input Data = Aggregate, showing visibly different cell values on the same candles | volume-vs-aggregate-comparison.png]
+[SCREENSHOT: Two identical footprint charts side by side, one with Input Data = Volume and one with Input Data = Aggregate, showing visibly different cell values on the same candles | dc-en-different-types-of-input-02.png]
 
 ## Settings reference
 

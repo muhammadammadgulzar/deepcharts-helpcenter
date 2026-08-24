@@ -20,7 +20,7 @@ The Scanner answers the question "how are all my markets doing right now?" in a 
 
 The Scanner reads from the same live feed as your charts. If the feed disconnects, the table stops updating — see the troubleshooting notes below.
 
-[SCREENSHOT: Scanner window with two rows (ES and NQ) showing the Symbol, Open, High, Low, Close and % columns, with the highlighted percent-change cells visible | scanner-window-overview.png]
+[SCREENSHOT: Scanner window with two rows (ES and NQ) showing the Symbol, Open, High, Low, Close and % columns, with the highlighted percent-change cells visible | dc-en-scanner-window-01.png]
 
 ## When to use it
 
@@ -34,7 +34,7 @@ The Scanner reads from the same live feed as your charts. If the feed disconnect
 1. In the top application bar, choose **New → Scanner**.
 2. The **Select Instrument** window opens — the same instrument picker used for charts, with an exchange sidebar, a type-to-filter box and a table of **Symbol**, **Description** and **Exchange**. Pick your first symbol and press **Select**.
 
-[SCREENSHOT: Select Instrument picker opened from New → Scanner, with the exchange sidebar on the left, the type-to-filter box, and a symbol row highlighted before pressing Select | scanner-select-instrument.png]
+[SCREENSHOT: Select Instrument picker opened from New → Scanner, with the exchange sidebar on the left, the type-to-filter box, and a symbol row highlighted before pressing Select | dc-en-scanner-window-02.png]
 
 3. The Scanner window opens with one row for that symbol. Resize the window freely — the columns stretch with it.
 4. To add more symbols, click the **gear icon** in the title bar and choose **Symbol List**, then press **Add** (see "Manage the symbol list" below).
@@ -56,7 +56,7 @@ The title bar contains, from left to right:
 
 Below the title bar sits the table itself: **Symbol | Open | High | Low | Close | %**.
 
-[SCREENSHOT: Scanner title bar zoomed in with the funnel, gear and link icons visible and labeled | scanner-title-bar-icons.png]
+[SCREENSHOT: Scanner title bar zoomed in with the funnel, gear and link icons visible and labeled | dc-en-scanner-window-03.png]
 
 ## How to read it
 
@@ -78,7 +78,7 @@ The Scanner starts with only the symbol you picked at creation. Everything else 
 3. Press the green **Add** button to open the **Select Instrument** picker and add another symbol. The Scanner table updates immediately — no restart needed.
 4. Select a row and press the red **Remove** button to drop a symbol from the scan.
 
-[SCREENSHOT: Scanner Symbols manager window listing NQ and ES rows with the red Remove and green Add buttons visible | scanner-symbols-manager.png]
+[SCREENSHOT: Scanner Symbols manager window listing NQ and ES rows with the red Remove and green Add buttons visible | dc-en-scanner-window-04.png]
 
 Index and breadth symbols (the $-prefixed instruments in the picker) can be scanned too, as long as their exchange group is subscribed in [[symbol-manage]].
 
@@ -88,7 +88,7 @@ The Scanner supports configurable resolutions, managed from **gear icon → Reso
 
 Clicking a resolution entry opens the **Resolution Settings** dialog. The resolution's name is built from **Param 1** plus **Param Type**: Param 1 = 1 with Param Type = Daily reads "1 Daily"; Param 1 = 5 with Param Type = Minute reads "5 Minute".
 
-[SCREENSHOT: Resolution Settings dialog opened from the Scanner gear menu, showing Days To Load, Param 1, Param 2, Param Type dropdown, Based on minute data toggle, Continuos contract dropdown, Exclude Auction(Tick Data), Filter Bad Ticks and Extended market hour toggles | scanner-resolution-settings.png]
+[SCREENSHOT: Resolution Settings dialog opened from the Scanner gear menu, showing Days To Load, Param 1, Param 2, Param Type dropdown, Based on minute data toggle, Continuos contract dropdown, Exclude Auction(Tick Data), Filter Bad Ticks and Extended market hour toggles | dc-en-scanner-window-05.png]
 
 After you press **OK**, the table clears and reloads with the new resolution — a brief loading spinner is normal, the same way a chart rebuilds after a timeframe change.
 
@@ -105,7 +105,7 @@ Based on their labels, these appear to limit the table to the top-N and worst-N 
 
 Click the funnel icon again to hide the strip.
 
-[SCREENSHOT: Scanner window with the funnel filter strip visible above the table, showing the Rank top and Rank worst checkboxes with their number steppers | scanner-rank-filter-strip.png]
+[SCREENSHOT: Scanner window with the funnel filter strip visible above the table, showing the Rank top and Rank worst checkboxes with their number steppers | dc-en-scanner-window-06.png]
 
 ## Settings reference
 
@@ -121,7 +121,7 @@ All Scanner settings live behind the **gear icon** in the title bar.
 | **Graphics Settings** | Table cosmetics: cell and header colors and text sizes |
 | **Template** ▸ | Save or load a named Scanner configuration, the same template pattern used across DeepCharts windows — see [[templates-workspaces]] |
 
-[SCREENSHOT: Scanner gear menu open showing Resolutions, Always on Top, Symbol List, Graphics Settings and Template entries | scanner-gear-menu.png]
+[SCREENSHOT: Scanner gear menu open showing Resolutions, Always on Top, Symbol List, Graphics Settings and Template entries | dc-en-scanner-window-07.png]
 
 ### Resolution Settings dialog
 
@@ -152,7 +152,7 @@ All Scanner settings live behind the **gear icon** in the title bar.
 
 **Apply** shows changes live; **OK** confirms and closes.
 
-[SCREENSHOT: Scanner Graphics Settings dialog showing all cell and header color swatches and the two text-size fields | scanner-graphics-settings.png]
+[SCREENSHOT: Scanner Graphics Settings dialog showing all cell and header color swatches and the two text-size fields | dc-en-scanner-window-08.png]
 
 ## Tips and common mistakes
 

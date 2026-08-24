@@ -11,7 +11,7 @@ keywords: ["volume swing", "deepdom volume swing", "deepdom", "indicators"]
 ---
 Volume Swing is a comprehensive tool that combines volume analysis with swing and trend analysis, giving you a deeper understanding of market structure and critical turning points. By enhancing Price Action behavior with volumetric data, it is ideal for traders who want detailed visualization and advanced control over market conditions.
 
-[SCREENSHOT: Volume Swing — overview (DeepDOM) | volume-swing-deepdom-01.png]
+[SCREENSHOT: Volume Swing — overview (DeepDOM) | dd-en-volume-swing-deepdom-01.png]
 
 Note: Volume Swing is also available on DeepCharts with additional functionality. For more details, refer to the Volume Swing article on DeepCharts.
 
@@ -23,7 +23,7 @@ Search for the desired indicator and add it to your workspace by clicking the "+
 
 Open the indicator's settings panel, customize the parameters according to your preferences, and confirm the changes by clicking Save.
 
-[SCREENSHOT: Volume Swing — How to Set Up Volume Swing (DeepDOM) | volume-swing-deepdom-02.png]
+[SCREENSHOT: Volume Swing — How to Set Up Volume Swing (DeepDOM) | dd-en-volume-swing-deepdom-02.png]
 
 ## Zig Zag Settings
 
@@ -33,17 +33,17 @@ What is the Zig Zag? The Zig Zag defines the swing structure — the series of p
 
 Absolute Reversal — a swing is defined by a fixed price reversal value. Price must move a sufficient amount in the opposite direction from the current trend to confirm a new swing
 
-[SCREENSHOT: Volume Swing — Zig Zag Settings (DeepDOM) | volume-swing-deepdom-03.png]
+[SCREENSHOT: Volume Swing — Zig Zag Settings (DeepDOM) | dd-en-volume-swing-deepdom-03.png]
 
 Tick Reversal — a swing is defined by a minimum number of ticks moving in the opposite direction
 
-[SCREENSHOT: Volume Swing — Zig Zag Settings (DeepDOM) | volume-swing-deepdom-04.png]
+[SCREENSHOT: Volume Swing — Zig Zag Settings (DeepDOM) | dd-en-volume-swing-deepdom-04.png]
 
 2. Zig Zag Rev. & Absolute Sets the minimum percentage change required for price to define a new swing. This controls how sensitive the indicator is — a higher value means only larger moves will generate a new swing, while a lower value will draw swings more frequently.
 
 3. Zig Zag Tick Rev. When using Reversal Tick mode, this defines the exact number of ticks required to confirm a reversal and draw a new swing.
 
-[SCREENSHOT: Volume Swing — Zig Zag Settings (DeepDOM) | volume-swing-deepdom-05.png]
+[SCREENSHOT: Volume Swing — Zig Zag Settings (DeepDOM) | dd-en-volume-swing-deepdom-05.png]
 
 ## Plot Settings
 
@@ -89,7 +89,7 @@ Delta Fade — fade is driven by delta values, making shifts in buying or sellin
 
 5. Std. Dev. for Coloring Sets the standard deviation threshold used to color the data. A higher value reduces color sensitivity to volumetric changes, while a lower value makes the coloring react more readily to smaller shifts in volume.
 
-[SCREENSHOT: Volume Swing — Plot Settings (DeepDOM) | volume-swing-deepdom-06.png]
+[SCREENSHOT: Volume Swing — Plot Settings (DeepDOM) | dd-en-volume-swing-deepdom-06.png]
 
 ## Color Settings
 
@@ -99,7 +99,7 @@ Bar Positive Color The color used to represent bars with positive values in the 
 
 Volume Line Color The color used for the volume line overlay, allowing you to visually distinguish volume trends associated with each swing movement.
 
-[SCREENSHOT: Volume Swing — Color Settings (DeepDOM) | volume-swing-deepdom-07.png]
+[SCREENSHOT: Volume Swing — Color Settings (DeepDOM) | dd-en-volume-swing-deepdom-07.png]
 
 ## Conclusion
 

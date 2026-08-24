@@ -31,7 +31,7 @@ The Risk Manager lives inside the Portfolio window and works on any connected ac
 
 3. Click the **Settings** button on that card. The money management settings open.
 
-[SCREENSHOT: The Portfolio window with a connection card visible and the Settings button highlighted, about to open the risk management settings | portfolio-risk-settings-button.png]
+[SCREENSHOT: The Portfolio window with a connection card visible and the Settings button highlighted, about to open the risk management settings | dc-en-risk-manager-01.png]
 
 4. Turn on **Enable** — the master switch that activates the money manager for this scope.
 
@@ -41,7 +41,7 @@ The Risk Manager lives inside the Portfolio window and works on any connected ac
 
 6. Under **Daily Profit Limit**, do the same. Optionally turn on **Include Open Position** — with it enabled, open trades are closed the moment the limit is reached, counting unrealized profit toward the limit.
 
-[SCREENSHOT: The risk settings dialog showing Daily Loss Limit and Daily Profit Limit sections, each with Enable toggle, Value field and $/% unit selector, and the Include Open Position option on the profit limit | risk-manager-daily-limits.png]
+[SCREENSHOT: The risk settings dialog showing Daily Loss Limit and Daily Profit Limit sections, each with Enable toggle, Value field and $/% unit selector, and the Include Open Position option on the profit limit | dc-en-risk-manager-02.png]
 
 > **Note:** Why a profit limit? Prop-firm rules often cap daily gains, and many traders give back a green morning in the afternoon. A profit limit banks the day.
 
@@ -70,7 +70,7 @@ The Risk Manager lives inside the Portfolio window and works on any connected ac
 
 13. Turn on **Symbol – Exclude Not Listed** to block every symbol you have not explicitly allowed, then use **Add Symbol** to build the allow-list. Typical use: allow only Micro contracts so a mis-click can never open a Mini position.
 
-[SCREENSHOT: The risk settings dialog scrolled to Limit Trading Hours with Begin/End time fields and the Symbol – Exclude Not Listed toggle with the Add Symbol list below it | risk-manager-hours-symbols.png]
+[SCREENSHOT: The risk settings dialog scrolled to Limit Trading Hours with Begin/End time fields and the Symbol – Exclude Not Listed toggle with the Add Symbol list below it | dc-en-risk-manager-03.png]
 
 ### If you want to protect the rules from yourself
 
@@ -80,7 +80,7 @@ The Risk Manager lives inside the Portfolio window and works on any connected ac
 
 Test on SIM before relying on it live: set a small **Daily Loss Limit** on a SIM account, place a losing trade past the limit, and watch the account card in the Portfolio window switch to **Lockout** with a countdown timer. That status is the observable proof the rule engine is armed and enforcing.
 
-[SCREENSHOT: A Portfolio account card showing Lockout status with the countdown timer after a risk rule triggered | risk-manager-lockout-status.png]
+[SCREENSHOT: A Portfolio account card showing Lockout status with the countdown timer after a risk rule triggered | dc-en-risk-manager-04.png]
 
 ## If something went wrong
 

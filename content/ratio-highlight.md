@@ -24,7 +24,7 @@ The ratios it scores come straight from footprint cells like the ones below — 
 
 [WIDGET: footprint-lab]
 
-[SCREENSHOT: Chart window with Ratio Highlight applied — a swing high where a bearish bar carries an Ask Absorption marker at its top, and a swing low where a bullish bar carries a Bid Absorption marker, both colors clearly distinguishable | ratio-highlight-chart-overview.png]
+[SCREENSHOT: Chart window with Ratio Highlight applied — a swing high where a bearish bar carries an Ask Absorption marker at its top, and a swing low where a bullish bar carries a Bid Absorption marker, both colors clearly distinguishable | dc-en-ratio-highlight-01.png]
 
 ## When to use it
 
@@ -42,7 +42,7 @@ The ratios it scores come straight from footprint cells like the ones below — 
 5. Set **Min Ratio** high enough that ordinary bars stop qualifying; raise it further if your chart shows markers on most bars.
 6. Pick clearly contrasting **Bid Absorption Color** and **Ask Absorption Color** values, then apply.
 
-[SCREENSHOT: Ratio Highlight settings dialog showing the Ratio section with the ratio selection, Min Ratio and Maximum Ratio fields, and the Plot section with Bid Absorption Color, Ask Absorption Color and Opacity | ratio-highlight-settings-dialog.png]
+[SCREENSHOT: Ratio Highlight settings dialog showing the Ratio section with the ratio selection, Min Ratio and Maximum Ratio fields, and the Plot section with Bid Absorption Color, Ask Absorption Color and Opacity | dc-en-ratio-highlight-02.png]
 
 ## How to read it
 

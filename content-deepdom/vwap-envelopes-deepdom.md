@@ -11,7 +11,7 @@ keywords: ["vwap envelopes", "deepdom vwap envelopes", "deepdom", "indicators"]
 ---
 The VWAP (Volume Weighted Average Price) indicator displays the average price of trades weighted by volume over a chosen time period, along with standard deviation bands above and below it.
 
-[SCREENSHOT: VWAP + Envelopes — overview (DeepDOM) | vwap-envelopes-deepdom-01.png]
+[SCREENSHOT: VWAP + Envelopes — overview (DeepDOM) | dd-en-vwap-envelopes-deepdom-01.png]
 
 What is the VWAP? Think of the VWAP as the "true average price" of the market — but smarter than a regular average. Instead of treating every trade equally, it gives more weight to price levels where more volume was traded. This makes it a much more accurate representation of where the market has been doing most of its business. Traders use it as a benchmark for fair value — if price is above the VWAP, it is trading at a premium; if it is below, it is trading at a discount.
 
@@ -37,7 +37,7 @@ Open the settings panel to customize settings -> Save
 
 Once added, click the settings icon on the indicator to open its configuration window.
 
-[SCREENSHOT: VWAP + Envelopes — How to Add the VWAP to Your Chart (DeepDOM) | vwap-envelopes-deepdom-02.png]
+[SCREENSHOT: VWAP + Envelopes — How to Add the VWAP to Your Chart (DeepDOM) | dd-en-vwap-envelopes-deepdom-02.png]
 
 ## General Settings
 
@@ -59,7 +59,7 @@ Standard Deviation — bands are based on statistical deviation from the VWAP, a
 
 Percentage — bands are based on a fixed percentage change from the VWAP price, staying consistent regardless of volatility
 
-[SCREENSHOT: VWAP + Envelopes — General Settings (DeepDOM) | vwap-envelopes-deepdom-03.png]
+[SCREENSHOT: VWAP + Envelopes — General Settings (DeepDOM) | dd-en-vwap-envelopes-deepdom-03.png]
 
 ## Display Settings
 
@@ -71,7 +71,7 @@ Envelope Width Sets the thickness of the standard deviation bands.
 
 Envelope Style Sets the line style of the bands — for example solid, dashed, or dotted.
 
-[SCREENSHOT: VWAP + Envelopes — Display Settings (DeepDOM) | vwap-envelopes-deepdom-04.png]
+[SCREENSHOT: VWAP + Envelopes — Display Settings (DeepDOM) | dd-en-vwap-envelopes-deepdom-04.png]
 
 ## Band Settings — First, Second & Third Band
 
@@ -79,21 +79,21 @@ Each of the three bands can be individually configured:
 
 Enable or disable each band independently
 
-[SCREENSHOT: VWAP + Envelopes — Band Settings — First, Second & Third Band (DeepDOM) | vwap-envelopes-deepdom-05.png]
+[SCREENSHOT: VWAP + Envelopes — Band Settings — First, Second & Third Band (DeepDOM) | dd-en-vwap-envelopes-deepdom-05.png]
 
 Set the standard deviation value for each band
 
-[SCREENSHOT: VWAP + Envelopes — Band Settings — First, Second & Third Band (DeepDOM) | vwap-envelopes-deepdom-06.png]
+[SCREENSHOT: VWAP + Envelopes — Band Settings — First, Second & Third Band (DeepDOM) | dd-en-vwap-envelopes-deepdom-06.png]
 
 Choose a custom color for each band
 
-[SCREENSHOT: VWAP + Envelopes — Band Settings — First, Second & Third Band (DeepDOM) | vwap-envelopes-deepdom-07.png]
+[SCREENSHOT: VWAP + Envelopes — Band Settings — First, Second & Third Band (DeepDOM) | dd-en-vwap-envelopes-deepdom-07.png]
 
 This allows you to show only the bands that are relevant to your trading style — for example, enabling just the first and second bands while leaving the third off. Keeping fewer bands active can make the chart easier to read, especially in fast-moving markets.
 
-[SCREENSHOT: VWAP + Envelopes — Band Settings — First, Second & Third Band (DeepDOM) | vwap-envelopes-deepdom-08.png]
+[SCREENSHOT: VWAP + Envelopes — Band Settings — First, Second & Third Band (DeepDOM) | dd-en-vwap-envelopes-deepdom-08.png]
 
-[SCREENSHOT: VWAP + Envelopes — Band Settings — First, Second & Third Band (DeepDOM) | vwap-envelopes-deepdom-09.png]
+[SCREENSHOT: VWAP + Envelopes — Band Settings — First, Second & Third Band (DeepDOM) | dd-en-vwap-envelopes-deepdom-09.png]
 
 ## Using Multiple VWAPs
 
@@ -101,7 +101,7 @@ You can apply more than one VWAP indicator to the same chart at the same time. A
 
 For example — a daily VWAP in yellow and a 30-minute VWAP in cyan applied to the same chart. The daily VWAP shows you the bigger picture of where fair value is for the whole session, while the 30-minute VWAP shows you where fair value is right now within that session.
 
-[SCREENSHOT: VWAP + Envelopes — Using Multiple VWAPs (DeepDOM) | vwap-envelopes-deepdom-10.png]
+[SCREENSHOT: VWAP + Envelopes — Using Multiple VWAPs (DeepDOM) | dd-en-vwap-envelopes-deepdom-10.png]
 
 ## Conclusion
 

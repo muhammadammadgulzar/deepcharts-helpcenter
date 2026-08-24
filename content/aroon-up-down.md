@@ -39,7 +39,7 @@ A reading near 100 means the corresponding extreme was set very recently; a read
 
 The default **Length** of 14 with the standard levels (75 / 50 / 25) is a solid starting point. Give Aroon Up and Aroon Down strongly contrasting colors — the crossovers are the signal, so they need to be visible at a glance.
 
-[SCREENSHOT: A price chart with the Aroon Up/Down indicator in a lower panel — Aroon Up riding near 100 during an uptrend while Aroon Down sits near 0, with the 75/50/25 level lines visible | aroon-up-down-on-chart.png]
+[SCREENSHOT: A price chart with the Aroon Up/Down indicator in a lower panel — Aroon Up riding near 100 during an uptrend while Aroon Down sits near 0, with the 75/50/25 level lines visible | dc-en-aroon-up-down-01.png]
 
 ## How to read it
 
@@ -79,7 +79,7 @@ Both lines offer identical configuration:
 | **Name Label** / **Value Label** | Optional labels showing the line's name and current value, with configurable background colors. |
 | **Include on Auto Center** | Whether this line is considered when the panel auto-scales. |
 
-[SCREENSHOT: The Aroon Up/Down settings dialog showing Length 14, the Middle/Lower/High Level fields at 50/25/75, and the two subgraph sections for Aroon Up and Aroon Down | aroon-up-down-settings.png]
+[SCREENSHOT: The Aroon Up/Down settings dialog showing Length 14, the Middle/Lower/High Level fields at 50/25/75, and the two subgraph sections for Aroon Up and Aroon Down | dc-en-aroon-up-down-02.png]
 
 ## Tips and common mistakes
 

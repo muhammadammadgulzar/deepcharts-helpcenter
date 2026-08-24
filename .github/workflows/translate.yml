@@ -1,0 +1,75 @@
+# Auto-translate: when English content changes on `test`, regenerate the
+# other languages' versions and push them back to `test` (which then
+# auto-deploys the TEST site via deploy.yml).
+#
+# Inert until (a) at least one language is bootstrapped with
+# `scripts/translate_sync.py --init <lang>` AND (b) the repo secret
+# OPENAI_API_KEY exists — the sync script exits quietly otherwise.
+name: auto-translate
+
+on:
+  push:
+    branches: [test]
+    paths:
+      - "content/**"
+      - "content-deepdom/**"
+      - "manifest.json"
+      - "manifest-deepdom.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: auto-translate
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    # the sync's own commits touch only content-<lang>*/manifest-<lang>* so they
+    # can't re-trigger this workflow; the message guard is a second safety net
+    if: "!startsWith(github.event.head_commit.message, 'Auto-translate:')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install openai pyyaml
+
+      - name: Detect changed English files
+        id: changed
+        run: |
+          BEFORE="${{ github.event.before }}"
+          if [ "$BEFORE" = "0000000000000000000000000000000000000000" ] || ! git cat-file -e "$BEFORE" 2>/dev/null; then
+            BEFORE="${{ github.sha }}~1"
+          fi
+          FILES=$(git diff --name-only "$BEFORE" "${{ github.sha }}" -- \
+                  content/ content-deepdom/ manifest.json manifest-deepdom.json | tr '\n' ' ')
+          echo "files=$FILES" >> "$GITHUB_OUTPUT"
+          echo "changed: $FILES"
+
+      - name: Translate
+        if: steps.changed.outputs.files != ''
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: python3 scripts/translate_sync.py --files ${{ steps.changed.outputs.files }}
+
+      - name: Commit translations
+        if: steps.changed.outputs.files != ''
+        run: |
+          git config user.name  "helpcenter-translator"
+          git config user.email "actions@github.com"
+          git add content-it* content-es* content-fr* content-de* \
+                  manifest-it* manifest-es* manifest-fr* manifest-de* 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "no translation changes"
+          else
+            git commit -m "Auto-translate: sync ${{ steps.changed.outputs.files }}"
+            git pull --rebase origin test
+            git push origin test
+          fi

@@ -33,7 +33,7 @@ You can paste into these folders any template files that you download from your 
 
 ### Load a Template
 
-[SCREENSHOT: User Configuration — Templates, Workspaces, Tool Config — Load a Template (DeepDOM) | user-configuration-templates-workspaces-01.png]
+[SCREENSHOT: User Configuration — Templates, Workspaces, Tool Config — Load a Template (DeepDOM) | dd-en-user-configuration-templates-workspaces-01.png]
 
 To load an existing template on a Heatmap, Time & Sales, or Advanced DOM window:
 
@@ -47,7 +47,7 @@ Click Open to apply it.
 
 ### Save a Template with Name
 
-[SCREENSHOT: User Configuration — Templates, Workspaces, Tool Config — Save a Template with Name (DeepDOM) | user-configuration-templates-workspaces-02.png]
+[SCREENSHOT: User Configuration — Templates, Workspaces, Tool Config — Save a Template with Name (DeepDOM) | dd-en-user-configuration-templates-workspaces-02.png]
 
 After you customize a tool with your preferred indicators and styles, you can save the setup as a new template:
 
@@ -63,7 +63,7 @@ The same procedure applies for Time & Sales, Advanced DOM, Scanner, or Correlati
 
 ## Workspaces (Work Plans)
 
-[SCREENSHOT: User Configuration — Templates, Workspaces, Tool Config — Workspaces (Work Plans) (DeepDOM) | user-configuration-templates-workspaces-03.png]
+[SCREENSHOT: User Configuration — Templates, Workspaces, Tool Config — Workspaces (Work Plans) (DeepDOM) | dd-en-user-configuration-templates-workspaces-03.png]
 
 A Workspace (Work Plan) represents the complete arrangement of DeepDom windows – Heatmaps, DOMs, Time & Sales, and other tools – across one or more monitors. Saving a workspace lets you reopen the same layout with a single click when the platform starts.
 
@@ -89,7 +89,7 @@ DeepDom allows you to store multiple configuration profiles for drawing tools (a
 
 ### Create and Save Annotation Configurations
 
-[SCREENSHOT: User Configuration — Templates, Workspaces, Tool Config — Create and Save Annotation Configurations (DeepDOM) | user-configuration-templates-workspaces-04.png]
+[SCREENSHOT: User Configuration — Templates, Workspaces, Tool Config — Create and Save Annotation Configurations (DeepDOM) | dd-en-user-configuration-templates-workspaces-04.png]
 
 To create a custom configuration:
 

@@ -24,17 +24,17 @@ Every price chart in DeepCharts can double as an order-entry screen. Two separat
 
 1. Enable trading on the chart. Click the **$** icon in the chart's top-left icon row — it turns **green** when trading is armed. Alternatives: right-click the chart and choose **Trading Enabled** (**Ctrl Alt T**).
 
-[SCREENSHOT: Chart top-left icon row with the dollar icon highlighted in its green (armed) state, next to the toolbar, bar-style, indicator, gear and camera icons | chart-dollar-icon-trading-enabled.png]
+[SCREENSHOT: Chart top-left icon row with the dollar icon highlighted in its green (armed) state, next to the toolbar, bar-style, indicator, gear and camera icons | dc-en-trading-from-chart-01.png]
 
 2. Show the trading panel. Toggle **Trading panel** in the chart's bottom bar, or right-click the chart and choose **Show Trading Panel** (**Ctrl Alt P**). The panel opens on the right side of the chart.
 
-[SCREENSHOT: Price chart with the trading panel open on the right side, showing the symbol dropdown, Open Qty / Open P/L / Daily P/L readouts, Qty selector, Broker and Account dropdowns, and the BUY/SELL button grid | chart-trading-panel-open.png]
+[SCREENSHOT: Price chart with the trading panel open on the right side, showing the symbol dropdown, Open Qty / Open P/L / Daily P/L readouts, Qty selector, Broker and Account dropdowns, and the BUY/SELL button grid | dc-en-trading-from-chart-02.png]
 
 > **Note:** The dollar icon and the panel are linked. If your trading panel "disappeared", the most common cause is that **Trading Enabled** was toggled off — re-arm it and the panel comes back.
 
 3. Check the instrument at the top of the panel. A new chart pre-selects the chart's own symbol here, but the panel has its own **Select Instrument** dropdown — after you change either one, chart and panel are independent. This is how you watch the mini contract (for example NQ) while trading the micro (MNQ) from the same chart.
 
-[SCREENSHOT: Trading panel symbol dropdown open showing the Select Instrument dialog with the exchange sidebar and filter box | trading-panel-select-instrument.png]
+[SCREENSHOT: Trading panel symbol dropdown open showing the Select Instrument dialog with the exchange sidebar and filter box | dc-en-trading-from-chart-03.png]
 
 > **Note:** The panel's instrument picker only lists exchanges subscribed in **Options → Symbol Manage** — if it is empty, see [[symbol-manage]].
 
@@ -58,7 +58,7 @@ Try the live panel below — hover any button to see exactly what it places, and
 
 6. Manage working orders directly on the chart: **left-click and drag** a limit or stop order to move it to a new price; **right-click** an order to cancel it.
 
-[SCREENSHOT: A working buy limit order shown on the chart being dragged to a new price level with the cursor visible | chart-drag-working-order.png]
+[SCREENSHOT: A working buy limit order shown on the chart being dragged to a new price level with the cursor visible | dc-en-trading-from-chart-04.png]
 
 7. Exit or clean up with the panel buttons — all of them act only on the symbol currently selected in the panel:
 

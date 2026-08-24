@@ -34,13 +34,13 @@ If you are new to aggressor-side logic (why a trade "at the ask" means an aggres
 2. In the **Select Instrument** window, pick your instrument (for example NQ) and confirm. Only exchanges you subscribed in [[symbol-manage]] appear here — an empty picker means nothing is subscribed yet.
 3. The tape window opens and starts filling with live prints.
 
-[SCREENSHOT: The New menu open in the DeepCharts main bar with Adv. Time And Sales highlighted, and the Select Instrument dialog visible with NQ selected | adv-ts-open-flow.png]
+[SCREENSHOT: The New menu open in the DeepCharts main bar with Adv. Time And Sales highlighted, and the Select Instrument dialog visible with NQ selected | dc-en-adv-time-and-sales-01.png]
 
 > **Note:** A freshly opened tape starts empty and fills only as new trades print. On video-verified behavior, duplicated and new Time And Sales windows showed no historical backfill — in a quiet market the window can stay sparse for a while. This appears to be by design, though exact backfill behavior is [CONFIRM: does a new/duplicated Adv. TS window intentionally load no trade history?].
 
 ## Window anatomy
 
-[SCREENSHOT: Full Adv. Time And Sales window on NQ showing the title bar icons (logo, gear, link, minimize, close), the full-width symbol dropdown, and a mixed tape of green and pink price cells with blue volume numbers | adv-ts-window-overview.png]
+[SCREENSHOT: Full Adv. Time And Sales window on NQ showing the title bar icons (logo, gear, link, minimize, close), the full-width symbol dropdown, and a mixed tape of green and pink price cells with blue volume numbers | dc-en-adv-time-and-sales-02.png]
 
 - **Title bar**, left to right: the DeepCharts logo, the **gear** icon (the settings hub — everything lives here), the square **link** icon, minimize and close. The link icon was not demonstrated in our source material; it is presumably the standard window-link color groups (see [[link-windows]]), but exact behavior may vary.
 - **Symbol dropdown** — full width, directly under the title bar (for example NQ-202609). Changing it switches the tape to another instrument.
@@ -69,13 +69,13 @@ A tape that is suddenly all one color usually is not the market — it is the tr
 
 The gear icon opens the full menu: **All Trades / Ask Trades / Bid Trades** (a three-way filter), **Enable Bid/Ask**, **Enable Delta**, **Chart Settings**, **Enable book imbalance**, **Book imbalance settings**, **Duplicate Adv. TS**, **Always on Top**, **Template** (Load / Save As), **Rebuild TS**, **Rename TS** and **Settings TS**.
 
-[SCREENSHOT: Adv. Time And Sales gear menu fully open showing all items: the All/Ask/Bid Trades filter with checkmark on All Trades, the Enable Bid/Ask, Enable Delta, Chart Settings, Enable book imbalance, Book imbalance settings, Duplicate Adv. TS, Always on Top, Template, Rebuild TS, Rename TS and Settings TS entries | adv-ts-gear-menu.png]
+[SCREENSHOT: Adv. Time And Sales gear menu fully open showing all items: the All/Ask/Bid Trades filter with checkmark on All Trades, the Enable Bid/Ask, Enable Delta, Chart Settings, Enable book imbalance, Book imbalance settings, Duplicate Adv. TS, Always on Top, Template, Rebuild TS, Rename TS and Settings TS entries | dc-en-adv-time-and-sales-03.png]
 
 ### Trade-side filters
 
 **All Trades** (default) shows the mixed tape. **Ask Trades** shows only ask-side executions — every visible row turns green. **Bid Trades** shows only bid-side executions — all pink. The same choice also exists inside **Settings TS** as **TS Mode**; the two stay in step.
 
-[SCREENSHOT: Tape with the Ask Trades filter active — every row green — and the gear menu open showing the checkmark moved to Ask Trades | adv-ts-ask-filter.png]
+[SCREENSHOT: Tape with the Ask Trades filter active — every row green — and the gear menu open showing the checkmark moved to Ask Trades | dc-en-adv-time-and-sales-04.png]
 
 ### Bid/Ask panel
 
@@ -83,7 +83,7 @@ The gear icon opens the full menu: **All Trades / Ask Trades / Bid Trades** (a t
 
 Based on the tape's color convention, the purple box appears to track bid-side traded volume and the green box ask-side volume since the last reset — a reasonable reading, but the exact semantics are [CONFIRM: Bid/Ask panel — do the two counters equal cumulative contracts traded at bid vs at ask since last Reset?].
 
-[SCREENSHOT: Adv. Time And Sales with the Bid/Ask bottom panel enabled — purple box on the left, green box on the right, contract counts under each box and the full-width green Reset button | adv-ts-bid-ask-panel.png]
+[SCREENSHOT: Adv. Time And Sales with the Bid/Ask bottom panel enabled — purple box on the left, green box on the right, contract counts under each box and the full-width green Reset button | dc-en-adv-time-and-sales-05.png]
 
 ### Delta panel
 
@@ -91,7 +91,7 @@ Based on the tape's color convention, the purple box appears to track bid-side t
 
 The **Chart Settings** text fields include separate colors for "Delta Volume" and "Delta Trade", so the two numbers are most likely delta volume (top) and delta trade count (bottom) — exact mapping unconfirmed.
 
-[SCREENSHOT: Delta bottom panel showing a purple negative delta bar with two stacked negative numbers, then the same panel green after delta turned positive | adv-ts-delta-panel.png]
+[SCREENSHOT: Delta bottom panel showing a purple negative delta bar with two stacked negative numbers, then the same panel green after delta turned positive | dc-en-adv-time-and-sales-06.png]
 
 ### Book imbalance panel
 
@@ -99,7 +99,7 @@ The **Chart Settings** text fields include separate colors for "Delta Volume" an
 
 Unlike the other two panels this mode has no **Reset** button — it mirrors the current book rather than accumulating. What exactly the numbers sum (best bid/ask level only, or several book levels) is unconfirmed, as is whether the panel needs Level 2 depth data to populate.
 
-[SCREENSHOT: Book imbalance bottom panel in two states — equal values shown as plain numbers, and a dominant bid side with a green box on the left sized proportionally | adv-ts-book-imbalance.png]
+[SCREENSHOT: Book imbalance bottom panel in two states — equal values shown as plain numbers, and a dominant bid side with a green box on the left sized proportionally | dc-en-adv-time-and-sales-07.png]
 
 ### Window utilities
 
@@ -128,7 +128,7 @@ Unlike the other two panels this mode has no **Reset** button — it mirrors the
 
 **Apply** applies without closing; **OK** closes the dialog.
 
-[SCREENSHOT: Chart Settings dialog open showing the GENERAL section with Period Mode dropdown expanded listing Resettable, Fixed count and Fixed seconds | adv-ts-chart-settings.png]
+[SCREENSHOT: Chart Settings dialog open showing the GENERAL section with Period Mode dropdown expanded listing Resettable, Fixed count and Fixed seconds | dc-en-adv-time-and-sales-08.png]
 
 ### Book imbalance settings
 
@@ -146,9 +146,9 @@ Unlike the other two panels this mode has no **Reset** button — it mirrors the
 | FILTER 2 | The same ten fields with a second, more saturated color set. |
 | ALERT SOUND | **Enable Filter 1**, **Bid Filter 1** and **Ask Filter 1** sound dropdowns with play-preview buttons, **Enable Filter 2**, **Bid/Ask Filter 2**. Presumably plays the chosen sound when a print passes the filter on that side — trigger semantics unconfirmed. |
 
-[SCREENSHOT: TS Settings dialog open on the GENERAL section showing Back/Border/Font color swatches, Font size 12.00, Bold font toggle, Input data dropdown set to Volume, Show milliseconds toggle and TS Mode dropdown | adv-ts-settings-general.png]
+[SCREENSHOT: TS Settings dialog open on the GENERAL section showing Back/Border/Font color swatches, Font size 12.00, Bold font toggle, Input data dropdown set to Volume, Show milliseconds toggle and TS Mode dropdown | dc-en-adv-time-and-sales-09.png]
 
-[SCREENSHOT: TS Settings dialog scrolled to FILTER SETTINGS and the expanded FILTER 1 section showing the Bid, Below Bid, Between Bid/Ask (gray), Ask and Above Ask background and text color fields | adv-ts-settings-filters.png]
+[SCREENSHOT: TS Settings dialog scrolled to FILTER SETTINGS and the expanded FILTER 1 section showing the Bid, Below Bid, Between Bid/Ask (gray), Ask and Above Ask background and text color fields | dc-en-adv-time-and-sales-10.png]
 
 ## Troubleshooting
 

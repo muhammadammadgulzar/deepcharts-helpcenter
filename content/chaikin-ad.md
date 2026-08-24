@@ -18,7 +18,7 @@ Unlike DeepCharts' orderflow delta tools, which classify trades by aggressor at 
 
 The AD line calculates cumulative buying and selling pressure using the price location within the candle and its volume. A close near the high of the bar contributes positively (accumulation); a close near the low contributes negatively (distribution). These contributions are summed over time, so the line's direction matters more than its absolute value: a rising AD line indicates accumulation, a falling AD line indicates distribution.
 
-[SCREENSHOT: Chart window with the Chaikin Accumulation/Distribution indicator in a footer panel — the AD line rising in step with an uptrend, with the optional average line overlaid | chaikin-ad-chart-overview.png]
+[SCREENSHOT: Chart window with the Chaikin Accumulation/Distribution indicator in a footer panel — the AD line rising in step with an uptrend, with the optional average line overlaid | dc-en-chaikin-ad-01.png]
 
 ## When to use it
 
@@ -35,7 +35,7 @@ The AD line calculates cumulative buying and selling pressure using the price lo
 4. Choose an **Average Type** (start with **Exponential** for responsiveness) and set **Avg Length** to a period matching your trading horizon.
 5. Leave the **AD** subgraph on its default **Line** style with **Solid** line style.
 
-[SCREENSHOT: Chaikin Accumulation/Distribution settings dialog showing the Average section (Enable, Average Type, Avg Length) and the AD subgraph configuration below it | chaikin-ad-settings-dialog.png]
+[SCREENSHOT: Chaikin Accumulation/Distribution settings dialog showing the Average section (Enable, Average Type, Avg Length) and the AD subgraph configuration below it | dc-en-chaikin-ad-02.png]
 
 ## How to read it
 

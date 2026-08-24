@@ -32,7 +32,7 @@ ROC answers: how much has price changed, in percentage terms, compared with N ba
 3. Click the gear icon on the indicator's row to open its settings.
 4. Keep the default **Period** of 10 to start, and use **Use Percent** to choose between percentage readings and absolute price change. Percentage is the more common way to read ROC.
 
-[SCREENSHOT: A chart with the Rate of Change indicator in its own area below price, the ROC line crossing above the zero line as price breaks out | roc-on-chart.png]
+[SCREENSHOT: A chart with the Rate of Change indicator in its own area below price, the ROC line crossing above the zero line as price breaks out | dc-en-rate-of-change-01.png]
 
 ## How to read it
 
@@ -63,7 +63,7 @@ Open the dialog from the gear icon on the indicator's row in the **Indicators** 
 | **Line Width** | Thickness of the line. |
 | **Use Secondary Axis** | Plots the indicator against a secondary value axis. |
 
-[SCREENSHOT: The Rate of Change settings dialog showing Period 10, the Use Percent toggle and the Subgraph appearance options | roc-settings-dialog.png]
+[SCREENSHOT: The Rate of Change settings dialog showing Period 10, the Use Percent toggle and the Subgraph appearance options | dc-en-rate-of-change-02.png]
 
 ## Tips and common mistakes
 

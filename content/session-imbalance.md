@@ -33,7 +33,7 @@ At the start of each session the indicator measures the high and low printed dur
 4. Enable the **50%** and **100%** extension levels if you want breakout targets plotted automatically.
 5. Turn on the alert groups you care about — Initial Balance extremes, 50% levels, 100% levels — and pick a sound for each.
 
-[SCREENSHOT: An intraday futures chart with the Session Imbalance indicator plotting Initial Balance High, Low and Mid lines for the first 60 minutes, with 50% and 100% extension levels visible above and below | session-imbalance-initial-balance-chart.png]
+[SCREENSHOT: An intraday futures chart with the Session Imbalance indicator plotting Initial Balance High, Low and Mid lines for the first 60 minutes, with 50% and 100% extension levels visible above and below | dc-en-session-imbalance-01.png]
 
 ## How to read it
 
@@ -75,7 +75,7 @@ Three alert categories, each with popup and sound options and a selectable sound
 - **50% Level Alerts** — fire at the 50% extension thresholds.
 - **100% Level Alerts** — fire at the 100% extension thresholds.
 
-[SCREENSHOT: The Session Imbalance settings dialog showing the General group with Number of Minutes set to 60, Custom Start Time and Number of Days fields | session-imbalance-settings-dialog.png]
+[SCREENSHOT: The Session Imbalance settings dialog showing the General group with Number of Minutes set to 60, Custom Start Time and Number of Days fields | dc-en-session-imbalance-02.png]
 
 ## Tips and common mistakes
 

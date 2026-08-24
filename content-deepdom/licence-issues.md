@@ -13,7 +13,7 @@ If you have problems activating DeepDom with your license code, work through the
 
 ### Step 1 – Check Your Subscription Status
 
-[SCREENSHOT: Licence Issues — Step 1 – Check Your Subscription Status (DeepDOM) | licence-issues-01.png]
+[SCREENSHOT: Licence Issues — Step 1 – Check Your Subscription Status (DeepDOM) | dd-en-licence-issues-01.png]
 
 Confirm that your DeepDom subscription is active in the DeepDom website customer portal. Expired or cancelled subscriptions will prevent new license activations even if you still have the old license email.
 

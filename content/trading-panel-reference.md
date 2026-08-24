@@ -48,7 +48,7 @@ The header block tells you your exposure at a glance:
 
 In the OCO block, watch for the **red (!)** icon next to **Mode**: it means the selected MULTI strategy's total quantity does not match the panel's **Qty** field, and execution is blocked until you match them. Green checkmarks indicate the quantities are aligned.
 
-[SCREENSHOT: Trading panel OCO block in MULTI mode showing the red exclamation icon next to the Mode dropdown, with the panel Qty field visible showing a mismatching value | trading-panel-oco-red-exclamation.png]
+[SCREENSHOT: Trading panel OCO block in MULTI mode showing the red exclamation icon next to the Mode dropdown, with the panel Qty field visible showing a mismatching value | dc-en-trading-panel-reference-01.png]
 
 ## Settings reference
 

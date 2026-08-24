@@ -17,7 +17,7 @@ When connecting a data feed, the connection fails with:
 
 **Connection Failed: Unable to establish connection. Please check your internet connection.**
 
-[SCREENSHOT: The connection error dialog showing the full "Unable to establish connection" message after a failed feed connection attempt | unable-to-establish-connection-error.png]
+[SCREENSHOT: The connection error dialog showing the full "Unable to establish connection" message after a failed feed connection attempt | dc-en-fix-unable-to-establish-connection-01.png]
 
 Not to be confused with:
 
@@ -50,7 +50,7 @@ Download and run the installer that matches your system:
 | X86 (32-bit) | https://aka.ms/vc14/vc_redist.x86.exe | Required on some 64-bit systems |
 | ARM64 | https://aka.ms/vc14/vc_redist.arm64.exe | For ARM-based Windows devices |
 
-[SCREENSHOT: The Microsoft Visual C++ Redistributable installer window on the setup screen, before clicking Install | vc-redist-setup-screen.png]
+[SCREENSHOT: The Microsoft Visual C++ Redistributable installer window on the setup screen, before clicking Install | dc-en-fix-unable-to-establish-connection-02.png]
 
 After installation:
 
@@ -64,11 +64,11 @@ A non-English system language or regional format can cause connection and parsin
 
 1. Open **Windows Settings → Time & Language → Language** and set the Windows display language to **English**.
 
-[SCREENSHOT: Windows Settings Time & Language > Language page with the display language dropdown set to English | windows-language-english.png]
+[SCREENSHOT: Windows Settings Time & Language > Language page with the display language dropdown set to English | dc-en-fix-unable-to-establish-connection-03.png]
 
 2. Open **Windows Settings → Time & Language → Region** and set **Country or region** to **United States** (or another English-supported region).
 
-[SCREENSHOT: Windows Settings Time & Language > Region page with Country or region set to United States | windows-region-united-states.png]
+[SCREENSHOT: Windows Settings Time & Language > Region page with Country or region set to United States | dc-en-fix-unable-to-establish-connection-04.png]
 
 3. Restart your PC, open DeepCharts, connect the data feed, and open a chart.
 

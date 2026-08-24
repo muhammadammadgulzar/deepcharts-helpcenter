@@ -23,21 +23,21 @@ Opening a chart in DeepCharts takes two clicks, but the first time you do it the
 
 1. Check that your feed is connected: the feed selector at the top right of the main bar shows your connection name with a **green dot**. If it reads **Select a connection**, open the dropdown and click your saved connection.
 
-[SCREENSHOT: The main bar feed selector at top right showing a connected feed name with a green status dot, with the dropdown open listing saved connections and the Feed Settings item | main-bar-feed-selector-connected.png]
+[SCREENSHOT: The main bar feed selector at top right showing a connected feed name with a green status dot, with the dropdown open listing saved connections and the Feed Settings item | dc-en-first-chart-01.png]
 
 2. Click **New → Price Chart** in the main bar.
 
-[SCREENSHOT: The New menu open on the main bar with Price Chart highlighted (other items visible: Adv. Time And Sales, Book, Correlation Viewer, Profile Chart, Scanner) | new-menu-price-chart.png]
+[SCREENSHOT: The New menu open on the main bar with Price Chart highlighted (other items visible: Adv. Time And Sales, Book, Correlation Viewer, Profile Chart, Scanner) | dc-en-first-chart-02.png]
 
 3. The **Select Instrument** dialog opens. Pick an exchange in the left sidebar (for example **CME**), or use the **Type to filter** box to search. Click your symbol — for example **NQ** (MINI NASDAQ) — then click **Select**.
 
-[SCREENSHOT: The Select Instrument dialog with the CME exchange selected in the sidebar, the symbol list showing NQ MINI NASDAQ highlighted, and the Type to filter box and Select button visible | select-instrument-cme-nq.png]
+[SCREENSHOT: The Select Instrument dialog with the CME exchange selected in the sidebar, the symbol list showing NQ MINI NASDAQ highlighted, and the Type to filter box and Select button visible | dc-en-first-chart-03.png]
 
 > **Note:** The dialog only lists exchanges that are subscribed in **Options → Symbol Manage**. If the list is empty or your exchange is missing, fix it there — see [[symbol-manage]].
 
 4. Wait while the chart builds. A **Building chart** spinner shows for a few seconds, and a status badge appears in the main bar telling you where the data is coming from: **LDT** means it is loading from your disk, **DWT** means it is downloading from the feed server.
 
-[SCREENSHOT: A new chart window showing the Building chart spinner, with the LDT/DWT status badge visible in the main bar | building-chart-status-badge.png]
+[SCREENSHOT: A new chart window showing the Building chart spinner, with the LDT/DWT status badge visible in the main bar | dc-en-first-chart-04.png]
 
 5. The chart opens. The title bar has three dropdowns that control what you are looking at:
 
@@ -47,13 +47,13 @@ Opening a chart in DeepCharts takes two clicks, but the first time you do it the
 | Data-load range | **10D - BT** | How much history is loaded — "10 Days, Based on Tick" (BM = Based on Minute) |
 | Timeframe | **5 Minute** | The bar type and size the chart draws |
 
-[SCREENSHOT: A finished price chart with the three title-bar dropdowns (symbol, 10D - BT range, 5 Minute timeframe) annotated | chart-title-bar-dropdowns.png]
+[SCREENSHOT: A finished price chart with the three title-bar dropdowns (symbol, 10D - BT range, 5 Minute timeframe) annotated | dc-en-first-chart-05.png]
 
 ### If you want a different timeframe
 
 Click the timeframe dropdown. Every bar type has its own row with quick presets: **Second**, **Minute**, **Time** (daily/weekly/monthly), **Vol Bars**, **Range**, **Volume**, **Trade**, **Renko**, **P/F** and **Delta**. Click a preset to rebuild the chart with it.
 
-[SCREENSHOT: The timeframe dropdown open showing all bar-type rows (Second, Minute, Time, Vol Bars, Range, Volume, Trade, Renko, P/F, Delta) with their quick presets | timeframe-dropdown-bar-types.png]
+[SCREENSHOT: The timeframe dropdown open showing all bar-type rows (Second, Minute, Time, Vol Bars, Range, Volume, Trade, Renko, P/F, Delta) with their quick presets | dc-en-first-chart-06.png]
 
 ### If you want more history on the chart
 

@@ -23,7 +23,7 @@ One compatibility rule matters before you begin: DeepCharts can only connect CQG
 
 1. In the DeepCharts main bar, click **Select Connection** → **Feed Settings**.
 
-[SCREENSHOT: DeepCharts main bar with the Select Connection dropdown open and the Feed Settings entry highlighted | feed-settings-menu-cqg.png]
+[SCREENSHOT: DeepCharts main bar with the Select Connection dropdown open and the Feed Settings entry highlighted | dc-en-connect-cqg-01.png]
 
 2. Click **Add Connection**. A blank connection form appears.
 
@@ -41,11 +41,11 @@ One compatibility rule matters before you begin: DeepCharts can only connect CQG
 
 8. Leave every other field at its default and click **Save**.
 
-[SCREENSHOT: Completed CQG connection form showing Name, Feed Source=CQG, Username filled, Use demo credentials unchecked, Connect on startup visible, with the Save button highlighted | feed-settings-cqg-complete.png]
+[SCREENSHOT: Completed CQG connection form showing Name, Feed Source=CQG, Username filled, Use demo credentials unchecked, Connect on startup visible, with the Save button highlighted | dc-en-connect-cqg-02.png]
 
 9. Back in the main bar, click **Select Connection** and click your new CQG feed. The connection dot should turn green within about 10 seconds.
 
-[SCREENSHOT: Select Connection dropdown showing the new CQG feed with a green status dot | cqg-connected-green-dot.png]
+[SCREENSHOT: Select Connection dropdown showing the new CQG feed with a green status dot | dc-en-connect-cqg-03.png]
 
 10. Open **Options → Symbol Manage** and route the exchanges you trade to this CQG feed. This step is required — without it charts show no data. Try the interactive mock below — click the chain-link icon on a row to change its feed. See [[symbol-manage]] for the full walkthrough.
 

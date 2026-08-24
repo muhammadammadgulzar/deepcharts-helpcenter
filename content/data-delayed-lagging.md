@@ -18,7 +18,7 @@ Your charts are moving, but prices arrive late — a few seconds behind the mark
 - A red delay label appears in the chart's top-left corner showing how many seconds the data is behind.
 - Lag is worst during high-volume periods (the market open, major news).
 
-[SCREENSHOT: A chart with the red delay label visible in the top-left corner showing a delay value in seconds | chart-red-delay-label.png]
+[SCREENSHOT: A chart with the red delay label visible in the top-left corner showing a delay value in seconds | dc-en-data-delayed-lagging-01.png]
 
 Not to be confused with [[feed-connected-chart-not-moving]] — there nothing updates at all. Check the feed connection dot first: if the feed is disconnected, this article does not apply.
 
@@ -48,7 +48,7 @@ What matters is not your general internet speed but the download speed from the 
 3. In the Diagnostic Tools window, confirm to run the network test.
 4. When it finishes, use the copy-to-clipboard button to save the results.
 
-[SCREENSHOT: Diagnostic Tools window after the network test has completed, showing ping and download speed results per region with the copy-to-clipboard button visible | diagnostic-tools-network-test-results.png]
+[SCREENSHOT: Diagnostic Tools window after the network test has completed, showing ping and download speed results per region with the copy-to-clipboard button visible | dc-en-data-delayed-lagging-02.png]
 
 Reading the results: the US values correspond to the Virginia server, the EU values to Frankfurt. As a rule of thumb, if the download speed for the region you connect to is below roughly 10 Mbps, expect delay during high-volume periods. A detected VPN or proxy can also add latency — test without it.
 
@@ -56,7 +56,7 @@ Reading the results: the US values correspond to the Virginia server, the EU val
 
 dxFeed Level-2 data for CME Group exchanges is MBO (market-by-order), much heavier than MBP. dxFeed auto-routes you to its nearest server (Frankfurt or Virginia) — you cannot choose — so if your line cannot keep up, switch the **DOM Type** field in your dxFeed feed settings from **MBO** to **MBP**. MBP usually eliminates the delay on slower lines; the trade-off is losing order-level MBO detail. See [[connect-dxfeed]].
 
-[SCREENSHOT: dxFeed feed settings with the DOM Type field open showing the MBO and MBP options, MBP selected | dxfeed-dom-type-mbp.png]
+[SCREENSHOT: dxFeed feed settings with the DOM Type field open showing the MBO and MBP options, MBP selected | dc-en-data-delayed-lagging-03.png]
 
 ### Cause: Rithmic gateway or throttle settings
 
@@ -66,7 +66,7 @@ Rithmic users can act on three settings:
 2. Verify the feed source is **Rithmic RAPI**, not **Rithmic Beta**.
 3. In R Trader Pro, open **Window → Preferences → Performance** and set both the **Quotes** and **Order Book** sliders to maximum, then **Apply → OK**. A limit here throttles high-volume data and delays charts.
 
-[SCREENSHOT: R Trader Pro Preferences Performance tab with both Quotes and Order Book sliders dragged to maximum | rtrader-performance-sliders-max.png]
+[SCREENSHOT: R Trader Pro Preferences Performance tab with both Quotes and Order Book sliders dragged to maximum | dc-en-data-delayed-lagging-04.png]
 
 See [[connect-rithmic]] and [[rtrader-pro-plugin]].
 

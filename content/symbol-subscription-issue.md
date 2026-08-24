@@ -17,7 +17,7 @@ DeepCharts reports a symbol subscription issue when it cannot match the symbol y
 - DeepCharts shows a symbol subscription issue when you open a chart or workspace.
 - A chart cannot load data for a specific symbol even though your data feed appears to be connected.
 
-[SCREENSHOT: DeepCharts showing the symbol subscription issue message when opening a chart, with the affected symbol visible | symbol-subscription-issue-message.png]
+[SCREENSHOT: DeepCharts showing the symbol subscription issue message when opening a chart, with the affected symbol visible | dc-en-symbol-subscription-issue-01.png]
 
 Not to be confused with:
 
@@ -32,7 +32,7 @@ The market (exchange) is not listed in **Symbol Manage**, or it is assigned to t
 
 1. Check that your data feed is properly connected — look for the green indicator in the DeepCharts feed bar.
 
-[SCREENSHOT: DeepCharts feed bar with the green connection indicator visible next to the active feed name | feed-bar-green-indicator.png]
+[SCREENSHOT: DeepCharts feed bar with the green connection indicator visible next to the active feed name | dc-en-symbol-subscription-issue-02.png]
 
 2. Confirm you actually have a data feed that covers the market you want to analyze. See [[compatibility-guide]] for which feeds cover which markets, and [[buy-data-feed]] if you still need a subscription.
 3. Remove the check mark next to your data feed in the connection list to take it offline while you edit the mapping. [CONFIRM: original article says "Connect the data feed and remove the check mark" — verify whether the feed must be connected or disconnected while remapping symbols]
@@ -44,7 +44,7 @@ The market (exchange) is not listed in **Symbol Manage**, or it is assigned to t
 
 7. If a market shows the wrong connection (or none), right-click the market and choose the correct connection from the dropdown menu.
 
-[SCREENSHOT: Symbol Manage window with the right-click dropdown open on a market row, showing the list of available connections to assign | symbol-manage-reassign-connection.png]
+[SCREENSHOT: Symbol Manage window with the right-click dropdown open on a market row, showing the list of available connections to assign | dc-en-symbol-subscription-issue-03.png]
 
 8. Click **Select** to save the change.
 9. Close the **Symbol Manage** window.

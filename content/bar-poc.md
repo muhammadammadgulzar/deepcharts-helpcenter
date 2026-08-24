@@ -22,7 +22,7 @@ Bar POC applies the same logic as a volume profile, one bar at a time — hover 
 
 [WIDGET: volume-profile-lab]
 
-[SCREENSHOT: Chart window with Bar POC applied — candles with small highlight rectangles on the highest-volume price of each bar, and two or three extended POC lines running to the right edge of the chart, one of them showing a duration label | bar-poc-chart-overview.png]
+[SCREENSHOT: Chart window with Bar POC applied — candles with small highlight rectangles on the highest-volume price of each bar, and two or three extended POC lines running to the right edge of the chart, one of them showing a duration label | dc-en-bar-poc-01.png]
 
 ## When to use it
 
@@ -40,7 +40,7 @@ Bar POC applies the same logic as a volume profile, one bar at a time — hover 
 5. Set **Filter Mode** to **Auto** so the platform's internal algorithm highlights only the most relevant POCs instead of marking every bar.
 6. Under **Extended POC**, turn on **Enable** so unrevisited POCs project to the right as levels, then apply.
 
-[SCREENSHOT: Bar POC settings dialog showing the General section with Days to Load, Input Data, Filter Mode dropdown open on Auto, Auto Std. Dev. and Manual Min. Vol. fields, and the Plot Settings groups (HighLight, Extended POC, Duration on Extension) below | bar-poc-settings-dialog.png]
+[SCREENSHOT: Bar POC settings dialog showing the General section with Days to Load, Input Data, Filter Mode dropdown open on Auto, Auto Std. Dev. and Manual Min. Vol. fields, and the Plot Settings groups (HighLight, Extended POC, Duration on Extension) below | dc-en-bar-poc-02.png]
 
 ## How to read it
 
