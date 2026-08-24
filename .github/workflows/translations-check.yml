@@ -1,0 +1,25 @@
+# Guard: translations are written by the team's AI assistants (Claude Code),
+# not by CI. This check only verifies nothing was pushed with stale/missing
+# translations — it needs no API key and passes trivially until a language
+# is enabled. A red X here means: run
+#   python3 scripts/translate_sync.py --todo
+# have your AI translate the listed files, --finalize them, and push.
+name: translations-check
+
+on:
+  push:
+    branches: [test, main]
+    paths:
+      - "content*/**"
+      - "manifest*.json"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Translations in sync?
+        run: python3 scripts/translate_sync.py --check

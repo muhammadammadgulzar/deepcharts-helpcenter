@@ -85,8 +85,12 @@ exact text they mean.
 - Work on `test` only. **Never push to `main` or `gh-pages`.**
 - Never commit the `site/` folder (it's generated; it's gitignored).
 - Never invent product facts — use `[CONFIRM: question]` flags when unsure.
-- Edit ENGLISH content only (`content/`, `content-deepdom/`) — other languages
-  are auto-translated by the pipeline after you push.
+- English (`content/`, `content-deepdom/`) is the source of truth. When other
+  languages are live, YOUR AI translates your English changes before you push:
+  it runs `python3 scripts/translate_sync.py --todo`, writes the translations,
+  and validates them with `--finalize` (your CLAUDE.md teaches it the whole
+  flow — just tell it "sync the translations"). CI flags pushes with stale
+  translations.
 - Screenshot placeholders: never change an existing ID; new ones follow
   `{kb}-{lang}-{slug}-{NN}.png` (the build enforces this).
 - One commit per finished piece of work, with a descriptive message.
