@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>On Candle Stats — Centro Assistenza DeepCharts</title>
+<meta name="description" content="Stampa statistiche per candela — volume, delta, conteggio delle operazioni e altro — come caselle di testo direttamente sul grafico accanto a ogni barra.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/quick-start-first-trade.html">Guida rapida</a><a href="../article/get-help.html">Assistenza</a><a class="kb-switch" href="../../it/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/on-candle-stats.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primi passi <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Benvenuto in DeepCharts: tour della piattaforma</a></li><li><a href="../article/system-requirements.html">Requisiti di sistema</a></li><li><a href="../article/install-deepcharts.html">Come installare DeepCharts e attivare la tua licenza</a></li><li><a href="../article/free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a></li><li><a href="../article/buy-data-feed.html">Come acquistare un feed dati e ottenere le tue credenziali</a></li><li><a href="../article/first-chart.html">Apri il tuo primo grafico</a></li><li><a href="../article/simulation-accounts.html">Conti di trading e simulazione</a></li><li><a href="../article/quick-start-first-trade.html">Avvio rapido: dall&#x27;installazione alla tua prima operazione</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connessioni e feed dati <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configurazione</li><li><a href="../article/compatibility-guide.html">Broker, prop firm e feed dati supportati</a></li><li><a href="../article/connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li><li><a href="../article/sign-market-data-agreement.html">Firma il contratto sui dati di mercato</a></li><li><a href="../article/connect-dxfeed.html">Come connettere un feed dati dxFeed</a></li><li><a href="../article/connect-rithmic.html">Come collegare un feed dati Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Connettere Rithmic con il plugin RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Collega qualsiasi conto prop firm Rithmic (tabella dei server)</a></li><li><a href="../article/connect-apex.html">Connettere Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connettere un conto dxFeed di una prop firm (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Come connettere CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connettere Interactive Brokers (solo esecuzione)</a></li><li><a href="../article/competition-connect.html">Competizione DeepCharts: iscriviti e connettiti</a></li><li><a href="../article/end-of-day-data.html">Connettere i dati storici (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Gestire e passare da una connessione feed all&#x27;altra</a></li><li class="nav-sub">Risoluzione dei problemi</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Correzione: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Correzione: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Correzione: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Correzione: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Correzione: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Correzione: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Correzione: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Correzione: connessione persa all&#x27;apertura di un grafico</a></li><li><a href="../article/symbol-subscription-issue.html">Correzione: problema di sottoscrizione dei simboli</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: l&#x27;app va in crash salvando le impostazioni del feed</a></li><li><a href="../article/gaps-in-price.html">Correzione: gap di prezzo sui grafici</a></li><li><a href="../article/data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Grafici e workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La finestra del grafico</a></li><li><a href="../article/price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li><li><a href="../article/chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li><li><a href="../article/drawing-tools.html">Strumenti di disegno e annotazioni</a></li><li><a href="../article/templates-workspaces.html">Template e workspace</a></li><li><a href="../article/quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Collegare le finestre con i gruppi colore</a></li><li><a href="../article/replay-data.html">Replay dei dati di mercato</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalizza lingua, tema e suoni di notifica</a></li><li><a href="../article/keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Riferimento delle scorciatoie da tastiera</a></li><li><a href="../article/multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Finestre della piattaforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (il tape)</a></li><li><a href="../article/advanced-dom.html">Finestra Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading e ordini <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading dal grafico</a></li><li><a href="../article/trading-panel-reference.html">Riferimento del pannello di trading: ogni pulsante e campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li><li><a href="../article/depth-of-market.html">Indicatore Depth of Market (DOM)</a></li><li><a href="../article/oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Finestra Ordini</a></li><li><a href="../article/portfolio-wallet.html">Portafoglio (Wallet)</a></li><li><a href="../article/risk-manager.html">Responsabile del rischio</a></li><li><a href="../article/trade-copier.html">Come configurare il Trade Copier</a></li><li><a href="../article/performance-analysis.html">Analisi delle performance (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concetti <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li><li><a href="../article/understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Capire la teoria dell&#x27;asta: squilibrio, aste incompiute, assorbimento</a></li><li><a href="../article/understanding-icebergs-absorption.html">Capire gli iceberg e l&#x27;assorbimento</a></li><li><a href="../article/understanding-vwap.html">Capire il VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Leggere un footprint: esempi svolti</a></li><li><a href="../article/glossary.html">Glossario dei termini di orderflow e della piattaforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicatori e analisi <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fondamenti degli indicatori</li><li><a href="../article/different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li><li><a href="../article/indicator-layout.html">Come cambiare il layout degli indicatori</a></li><li class="nav-sub">Indicatori Deep</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Media mobile</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regressione lineare</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum e oscillatori</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscillatore stocastico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilità e bande</li><li><a href="../article/bollinger-bands.html">Bande di Bollinger</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Deviazione standard</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume e delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html" class="active">On Candle Stats</a></li><li class="nav-sub">Orderflow e asta</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Livelli e pattern</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Livelli importanti</a></li><li><a href="../article/absolute-levels.html">Livelli assoluti</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Overlay del grafico</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Testo sul grafico</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Dati e database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></li><li><a href="../article/delete-market-data.html">Eliminare i dati di mercato (metodo in-app e manuale)</a></li><li><a href="../article/download-data.html">Ri-scaricare i dati storici (strumento Download Data)</a></li><li><a href="../article/database-optimization.html">Ottimizzazione del database</a></li><li><a href="../article/database-problems.html">Correzione: problemi al database</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Risoluzione problemi e supporto <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Risoluzione: problemi di installazione e requisiti di base</a></li><li><a href="../article/installation-setup-failed.html">Risoluzione: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: una policy di controllo delle applicazioni blocca DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Soluzione: lo strumento di disegno Rettangolo non funziona</a></li><li><a href="../article/chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a></li><li><a href="../article/license-issues.html">Risolvere: problemi di licenza e attivazione</a></li><li><a href="../article/diagnostic-report.html">Report diagnostico: prima di contattare il supporto</a></li><li><a href="../article/get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account e fatturazione <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Gestire abbonamenti e fatturazione</a></li><li><a href="../article/move-to-new-computer.html">Spostare DeepCharts su un nuovo computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicatori e analisi</a> › Volume e delta</div>
+<div class="article-head"><h1>On Candle Stats</h1>
+<p class="article-desc">Stampa statistiche per candela — volume, delta, conteggio delle operazioni e altro — come caselle di testo direttamente sul grafico accanto a ogni barra.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 4 min read</span>
+  <a class="btn-pdf" href="../pdf/on-candle-stats.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>On Candle Stats stampa statistiche dettagliate direttamente sulle tue candele come caselle di testo: volume totale, delta, conteggio delle operazioni e altri dati di microstruttura del mercato, barra per barra. Invece di alternare lo sguardo tra il grafico e un pannello separato, i numeri stanno proprio accanto all'azione di prezzo che descrivono.</p>
+<p>È uno dei preferiti dei trader orderflow che vogliono informazioni di livello footprint a colpo d'occhio, senza aprire un grafico footprint completo per ogni strumento.</p>
+<h2 id="che-cos">Che cos'è</h2>
+<p>Per ogni candela, l'indicatore calcola un insieme di serie di dati — ne sono disponibili undici, tra cui Max/Min Delta, volume totale, volume delta, operazioni totali, delta delle operazioni, extension, COT High, COT Low, COT Bar, Bid-Ask/Vol e Ratio — e disegna i valori scelti come una casella di testo compatta posizionata sopra, sotto o sulla candela. Le opzioni di colorazione e opacità legano l'aspetto del testo al segno e all'intensità del delta, così l'annotazione stessa porta una lettura direzionale.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Grafico con On Candle Stats attivo — piccole caselle di testo sopra ogni candela con i valori di volume e delta, le candele a delta positivo etichettate in testo verde e quelle negative in rosso</div><div class="s-file">ID: <b class="s-id">dc-it-on-candle-stats-01</b> · save as <code>dc-it-on-candle-stats-01.png</code></div></div></div>
+<h2 id="quando-usarlo">Quando usarlo</h2>
+<ul>
+<li>Vuoi numeri esatti per barra (volume, delta, operazioni) visibili sul grafico mentre fai trading.</li>
+<li>Rivedi le sessioni barra per barra e ti serve il dettaglio di microstruttura senza passare a <a href="./deep-print.html">Deep Print (Footprint)</a>.</li>
+<li>Confronti l'aggressività tra candele consecutive ai livelli chiave — ad esempio un delta che si riduce mentre il prezzo preme contro una resistenza.</li>
+<li>Annoti i grafici per il journaling o la didattica, dove i valori devono essere leggibili in uno screenshot.</li>
+</ul>
+<h2 id="avvio-rapido">Avvio rapido</h2>
+<ol>
+<li>Apri l'<strong>Indicator List</strong> sul tuo grafico e aggiungi <strong>On Candle Stats</strong>.</li>
+<li>Apri le <strong>Settings</strong> (impostazioni) dell'indicatore.</li>
+<li>Per iniziare mantieni <strong>Input Data</strong> su <strong>Volume</strong>; passa ad <strong>Aggregate Volume</strong> quando vuoi che gli ordini allo stesso prezzo vengano combinati per una vista dell'attività più accurata (vedi <a href="./different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a>).</li>
+<li>Abilita le serie del subgraph di cui hai davvero bisogno — <strong>Tot. Vol</strong> e <strong>Delta Vol</strong> sono una buona coppia minima — e lascia le altre disattivate per mantenere il grafico leggibile.</li>
+<li>Attiva <strong>Color Text Based on Delta</strong>, così le letture positive vengono stampate in un colore (di solito verde) e quelle negative in un altro (di solito rosso).</li>
+<li>Imposta <strong>Price Plot</strong> su <strong>High</strong> e aggiungi un piccolo <strong>Tick Offset</strong> così le caselle di testo restano libere dalle ombre delle candele.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra delle impostazioni di On Candle Stats — Data Settings in alto (Input Data, Filter Min, Filter Max), con le sezioni Text, Coloring e Price sotto, Color Text Based on Delta abilitato</div><div class="s-file">ID: <b class="s-id">dc-it-on-candle-stats-02</b> · save as <code>dc-it-on-candle-stats-02.png</code></div></div></div>
+<h2 id="come-leggerlo">Come leggerlo</h2>
+<ul>
+<li><strong>Volume con contesto di delta</strong> — una candela ad alto volume con delta piccolo significa una battaglia a due lati; alto volume con delta fortemente sbilanciato significa convinzione.</li>
+<li><strong>Delta contro la direzione della candela</strong> — una candela verde che stampa delta negativo (o viceversa) suggerisce assorbimento o forza passiva; merita uno sguardo più attento su un footprint.</li>
+<li><strong>Conteggio delle operazioni vs. volume</strong> — molte operazioni con volume modesto suggeriscono partecipanti piccoli; poche operazioni che portano grande volume suggeriscono che la size è attiva.</li>
+<li><strong>Gradazione dell'opacità</strong> — con <strong>Opacity Based on Ratio</strong> abilitato, le caselle più sbiadite contrassegnano le barre statisticamente ordinarie e quelle più marcate le barre che deviano, permettendoti di scorrere rapidamente una sessione.</li>
+</ul>
+<h2 id="riferimento-delle-impostazioni">Riferimento delle impostazioni</h2>
+<h3 id="data-settings">Data Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Input Data</strong></td>
+<td>Database usato per le statistiche: <strong>Volume</strong> (volume totale a ciascun livello di prezzo — intensità di trading), <strong>Order</strong> (conteggio delle transazioni a ciascun livello di prezzo — frequenza degli ordini), oppure <strong>Aggregate Volume</strong> (combina gli ordini allo stesso livello di prezzo per una vista dell'attività più accurata).</td>
+</tr>
+<tr>
+<td><strong>Filter Min</strong></td>
+<td>Soglia minima — vengono mostrati solo i dati sopra questo valore.</td>
+</tr>
+<tr>
+<td><strong>Filter Max</strong></td>
+<td>Soglia massima — imposta <strong>0</strong> per non applicare alcun filtro massimo.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="text-settings">Text Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Font Size</strong></td>
+<td>Dimensione del testo sulle candele.</td>
+</tr>
+<tr>
+<td><strong>Smaller Font Size</strong></td>
+<td>Dimensione minima del testo mantenuta per la leggibilità a scale del grafico ridotte.</td>
+</tr>
+<tr>
+<td><strong>Auto Text Format</strong></td>
+<td>Quando abilitato, i numeri sopra il migliaio vengono mostrati raggruppati (ad es. &quot;1,234&quot;).</td>
+</tr>
+<tr>
+<td><strong>Absolute Sign</strong></td>
+<td>Quando abilitato, i valori vengono mostrati senza segni +/-.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="coloring-settings">Coloring Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Opacity Based on Ratio</strong></td>
+<td>Regola l'opacità della casella di testo in base al ratio della barra, attenuando le barre ordinarie.</td>
+</tr>
+<tr>
+<td><strong>Max Ratio</strong></td>
+<td>Controlla il rapporto massimo di opacità e la visibilità delle caselle di testo.</td>
+</tr>
+<tr>
+<td><strong>Color Text Based on Delta</strong></td>
+<td>Il delta positivo viene stampato in un colore (di solito verde), quello negativo in un altro (di solito rosso).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="price-settings">Price Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tick Offset</strong></td>
+<td>Distanza in tick tra la casella di testo e la candela, per evitare sovrapposizioni con l'azione di prezzo.</td>
+</tr>
+<tr>
+<td><strong>Price Plot</strong></td>
+<td>Posizionamento del testo: <strong>High</strong>, <strong>Low</strong>, <strong>Center</strong>, <strong>Price Slope</strong> o <strong>Delta Sign</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="subgraphs">Subgraphs</h3>
+<p>Sono disponibili undici serie di dati da visualizzare: <strong>Max/Min Delta</strong>, <strong>Tot. Vol</strong>, <strong>Delta Vol</strong>, <strong>Tot. Trade</strong>, <strong>Delta Trade</strong>, <strong>Extension</strong>, <strong>COT High</strong>, <strong>COT Low</strong>, <strong>COT Bar</strong>, <strong>Bid-Ask/Vol</strong> e <strong>Ratio</strong>. Abilita solo le serie che leggi davvero — ogni serie attiva aggiunge una riga di testo a ogni candela.</p>
+<h2 id="suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</h2>
+<ul>
+<li><strong>Meno è meglio.</strong> Abilitare molte serie del subgraph trasforma ogni candela in un paragrafo. Due o tre valori ben scelti battono undici mai letti.</li>
+<li><strong>Attento al livello di zoom.</strong> Il testo ha bisogno di spazio orizzontale; sui grafici molto ridotti abilita <strong>Smaller Font Size</strong>, altrimenti le caselle si scontreranno.</li>
+<li><strong>Il posizionamento Delta Sign è contestuale.</strong> Impostare <strong>Price Plot</strong> su <strong>Delta Sign</strong> sposta il testo con la direzione del delta, il che rende la lettura a colpo d'occhio più veloce ma sposta la posizione delle caselle da barra a barra — sceglilo con consapevolezza.</li>
+<li><strong>Usa Absolute Sign per gli screenshot da journaling</strong>, dove il colore porta già il segno e i +/- aggiungono solo confusione.</li>
+</ul>
+<h2 id="articoli-correlati">Articoli correlati</h2>
+<ul>
+<li><a href="./deep-print.html">Deep Print (Footprint)</a></li>
+<li><a href="./deep-stats.html">Deep Stats</a></li>
+<li><a href="./delta-bar.html">Delta Bar</a></li>
+<li><a href="./market-statistics.html">Market Statistics</a></li>
+<li><a href="./orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li>
+<li><a href="./different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li>
+<li><a href="./indicator-layout.html">Come cambiare il layout degli indicatori</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./market-statistics.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Market Statistics</div></a><a class="next" href="./market-profile-tpo.html"><div class="pn-lbl">Next →</div><div class="pn-title">Market Profile (TPO)</div></a></div>
+    <div class="footer">Centro Assistenza DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#che-cos">Che cos&#x27;è</a></li><li class="lv2"><a href="#quando-usarlo">Quando usarlo</a></li><li class="lv2"><a href="#avvio-rapido">Avvio rapido</a></li><li class="lv2"><a href="#come-leggerlo">Come leggerlo</a></li><li class="lv2"><a href="#riferimento-delle-impostazioni">Riferimento delle impostazioni</a></li><li class="lv3"><a href="#data-settings">Data Settings</a></li><li class="lv3"><a href="#text-settings">Text Settings</a></li><li class="lv3"><a href="#coloring-settings">Coloring Settings</a></li><li class="lv3"><a href="#price-settings">Price Settings</a></li><li class="lv3"><a href="#subgraphs">Subgraphs</a></li><li class="lv2"><a href="#suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</a></li><li class="lv2"><a href="#articoli-correlati">Articoli correlati</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-it.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

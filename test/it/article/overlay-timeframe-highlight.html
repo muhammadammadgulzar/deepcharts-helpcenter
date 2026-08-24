@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Overlay Timeframe Highlight — Centro Assistenza DeepCharts</title>
+<meta name="description" content="Evidenzia i range delle candele di timeframe superiori su un grafico a timeframe inferiore, con proiezioni opzionali dei target massimo/minimo e riepiloghi dei volumi.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/quick-start-first-trade.html">Guida rapida</a><a href="../article/get-help.html">Assistenza</a><a class="kb-switch" href="../../it/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/overlay-timeframe-highlight.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primi passi <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Benvenuto in DeepCharts: tour della piattaforma</a></li><li><a href="../article/system-requirements.html">Requisiti di sistema</a></li><li><a href="../article/install-deepcharts.html">Come installare DeepCharts e attivare la tua licenza</a></li><li><a href="../article/free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a></li><li><a href="../article/buy-data-feed.html">Come acquistare un feed dati e ottenere le tue credenziali</a></li><li><a href="../article/first-chart.html">Apri il tuo primo grafico</a></li><li><a href="../article/simulation-accounts.html">Conti di trading e simulazione</a></li><li><a href="../article/quick-start-first-trade.html">Avvio rapido: dall&#x27;installazione alla tua prima operazione</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connessioni e feed dati <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configurazione</li><li><a href="../article/compatibility-guide.html">Broker, prop firm e feed dati supportati</a></li><li><a href="../article/connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li><li><a href="../article/sign-market-data-agreement.html">Firma il contratto sui dati di mercato</a></li><li><a href="../article/connect-dxfeed.html">Come connettere un feed dati dxFeed</a></li><li><a href="../article/connect-rithmic.html">Come collegare un feed dati Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Connettere Rithmic con il plugin RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Collega qualsiasi conto prop firm Rithmic (tabella dei server)</a></li><li><a href="../article/connect-apex.html">Connettere Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connettere un conto dxFeed di una prop firm (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Come connettere CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connettere Interactive Brokers (solo esecuzione)</a></li><li><a href="../article/competition-connect.html">Competizione DeepCharts: iscriviti e connettiti</a></li><li><a href="../article/end-of-day-data.html">Connettere i dati storici (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Gestire e passare da una connessione feed all&#x27;altra</a></li><li class="nav-sub">Risoluzione dei problemi</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Correzione: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Correzione: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Correzione: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Correzione: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Correzione: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Correzione: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Correzione: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Correzione: connessione persa all&#x27;apertura di un grafico</a></li><li><a href="../article/symbol-subscription-issue.html">Correzione: problema di sottoscrizione dei simboli</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: l&#x27;app va in crash salvando le impostazioni del feed</a></li><li><a href="../article/gaps-in-price.html">Correzione: gap di prezzo sui grafici</a></li><li><a href="../article/data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Grafici e workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La finestra del grafico</a></li><li><a href="../article/price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li><li><a href="../article/chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li><li><a href="../article/drawing-tools.html">Strumenti di disegno e annotazioni</a></li><li><a href="../article/templates-workspaces.html">Template e workspace</a></li><li><a href="../article/quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Collegare le finestre con i gruppi colore</a></li><li><a href="../article/replay-data.html">Replay dei dati di mercato</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalizza lingua, tema e suoni di notifica</a></li><li><a href="../article/keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Riferimento delle scorciatoie da tastiera</a></li><li><a href="../article/multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Finestre della piattaforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (il tape)</a></li><li><a href="../article/advanced-dom.html">Finestra Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading e ordini <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading dal grafico</a></li><li><a href="../article/trading-panel-reference.html">Riferimento del pannello di trading: ogni pulsante e campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li><li><a href="../article/depth-of-market.html">Indicatore Depth of Market (DOM)</a></li><li><a href="../article/oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Finestra Ordini</a></li><li><a href="../article/portfolio-wallet.html">Portafoglio (Wallet)</a></li><li><a href="../article/risk-manager.html">Responsabile del rischio</a></li><li><a href="../article/trade-copier.html">Come configurare il Trade Copier</a></li><li><a href="../article/performance-analysis.html">Analisi delle performance (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concetti <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li><li><a href="../article/understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Capire la teoria dell&#x27;asta: squilibrio, aste incompiute, assorbimento</a></li><li><a href="../article/understanding-icebergs-absorption.html">Capire gli iceberg e l&#x27;assorbimento</a></li><li><a href="../article/understanding-vwap.html">Capire il VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Leggere un footprint: esempi svolti</a></li><li><a href="../article/glossary.html">Glossario dei termini di orderflow e della piattaforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicatori e analisi <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fondamenti degli indicatori</li><li><a href="../article/different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li><li><a href="../article/indicator-layout.html">Come cambiare il layout degli indicatori</a></li><li class="nav-sub">Indicatori Deep</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Media mobile</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regressione lineare</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum e oscillatori</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscillatore stocastico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilità e bande</li><li><a href="../article/bollinger-bands.html">Bande di Bollinger</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Deviazione standard</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume e delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Orderflow e asta</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Livelli e pattern</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Livelli importanti</a></li><li><a href="../article/absolute-levels.html">Livelli assoluti</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Overlay del grafico</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html" class="active">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Testo sul grafico</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Dati e database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></li><li><a href="../article/delete-market-data.html">Eliminare i dati di mercato (metodo in-app e manuale)</a></li><li><a href="../article/download-data.html">Ri-scaricare i dati storici (strumento Download Data)</a></li><li><a href="../article/database-optimization.html">Ottimizzazione del database</a></li><li><a href="../article/database-problems.html">Correzione: problemi al database</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Risoluzione problemi e supporto <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Risoluzione: problemi di installazione e requisiti di base</a></li><li><a href="../article/installation-setup-failed.html">Risoluzione: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: una policy di controllo delle applicazioni blocca DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Soluzione: lo strumento di disegno Rettangolo non funziona</a></li><li><a href="../article/chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a></li><li><a href="../article/license-issues.html">Risolvere: problemi di licenza e attivazione</a></li><li><a href="../article/diagnostic-report.html">Report diagnostico: prima di contattare il supporto</a></li><li><a href="../article/get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account e fatturazione <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Gestire abbonamenti e fatturazione</a></li><li><a href="../article/move-to-new-computer.html">Spostare DeepCharts su un nuovo computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicatori e analisi</a> › Overlay del grafico</div>
+<div class="article-head"><h1>Overlay Timeframe Highlight</h1>
+<p class="article-desc">Evidenzia i range delle candele di timeframe superiori su un grafico a timeframe inferiore, con proiezioni opzionali dei target massimo/minimo e riepiloghi dei volumi.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 6 min read</span>
+  <a class="btn-pdf" href="../pdf/overlay-timeframe-highlight.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>L'indicatore Overlay Timeframe Highlight evidenzia visivamente le candele di un timeframe superiore su un grafico a timeframe inferiore. Invece di disegnare candele complete come <a href="./overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a>, ombreggia ogni segmento del timeframe superiore, può proiettarne massimo/minimo come linee target e può stampare riepiloghi di volume o di scambi per segmento.</p>
+<h2 id="che-cos">Che cos'è</h2>
+<p>L'indicatore aggrega le barre del timeframe inferiore del tuo grafico in segmenti di timeframe superiore ed evidenzia visivamente ogni segmento. Facoltativamente proietta linee target di massimo/minimo da ogni candela del timeframe superiore e mostra statistiche di riepilogo come il volume totale del range evidenziato.</p>
+<p>Risponde a &quot;a quale candela più grande appartiene questa price action, dove sono gli estremi di quella candela, e quanto lavoro è stato fatto al suo interno?&quot;</p>
+<h2 id="quando-usarlo">Quando usarlo</h2>
+<ul>
+<li>Vuoi la struttura del timeframe superiore visibile senza cambiare grafico.</li>
+<li>Segui i range massimo/minimo delle candele più grandi come livelli di riferimento intraday.</li>
+<li>Vuoi riepiloghi di volume o di scambi per segmento, per vedere quali candele del timeframe superiore hanno avuto partecipazione reale.</li>
+<li>Contrassegni i target del timeframe superiore — massimi e minimi proiettati a cui il mercato potrebbe tornare.</li>
+</ul>
+<h2 id="guida-rapida">Guida rapida</h2>
+<ol>
+<li>Apri il menu degli indicatori sul tuo grafico e aggiungi <strong>Overlay Timeframe Highlight</strong>.</li>
+<li>Apri le impostazioni dell'indicatore.</li>
+<li>Nel gruppo General, imposta <strong>Param type</strong> sul tipo di timeframe (per esempio Minute, Hour o Day) e <strong>Param 1</strong> sul valore — per esempio un'evidenziazione oraria su un grafico a 5 minuti.</li>
+<li>Sotto Chart Area, scegli <strong>Horizontal</strong> per renderizzare le evidenziazioni sul grafico dei prezzi.</li>
+<li>In Plot, verifica che <strong>Enable</strong> sia attivo e imposta <strong>Body opacity</strong> abbastanza bassa da mantenere leggibili le barre dei prezzi.</li>
+<li>Facoltativamente attiva <strong>Target enabled</strong> nel gruppo Range Target per proiettare massimo/minimo di ogni candela come linee, ed <strong>Enable Summary</strong> per stampare i dati di volume per candela.</li>
+<li>Applica le impostazioni.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Un grafico a 5 minuti con Overlay Timeframe Highlight che ombreggia segmenti orari alternati, linee target di massimo/minimo proiettate verso destra dall&#x27;ultima candela oraria completata, e un riepilogo dei volumi stampato sopra ogni segmento</div><div class="s-file">ID: <b class="s-id">dc-it-overlay-timeframe-highlight-01</b> · save as <code>dc-it-overlay-timeframe-highlight-01.png</code></div></div></div>
+<h2 id="come-leggerlo">Come leggerlo</h2>
+<ul>
+<li><strong>Confini dei segmenti</strong> — ogni blocco ombreggiato è una candela del timeframe superiore. Il prezzo che ruota dentro un blocco è equilibrio sul timeframe superiore; blocchi consecutivi che salgono o scendono a gradini sono trend.</li>
+<li><strong>Colore dell'evidenziazione</strong> — la colorazione rialzista/ribassista mostra a colpo d'occhio la direzione della barra del timeframe superiore. Con <strong>Color based on delta</strong> abilitato, il colore riflette invece il delta dell'orderflow dentro il segmento, così un segmento con prezzo in salita ma delta in discesa segnala partecipazione debole (vedi <a href="./orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a>).</li>
+<li><strong>Linee target</strong> — i massimi e i minimi proiettati delle candele del timeframe superiore fungono da livelli di riferimento; il mercato rivisita spesso gli estremi dei timeframe superiori precedenti e vi reagisce.</li>
+<li><strong>Riepiloghi</strong> — confronta il volume tra segmenti: un segmento di breakout su volume scarso merita più sospetto di uno su volume pesante.</li>
+</ul>
+<h2 id="riferimento-delle-impostazioni">Riferimento delle impostazioni</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra di dialogo delle impostazioni di Overlay Timeframe Highlight con tutti i gruppi — Chart Area, General, Color, Plot, Range Target e Summary — con Target enabled ed Enable Summary attivi</div><div class="s-file">ID: <b class="s-id">dc-it-overlay-timeframe-highlight-02</b> · save as <code>dc-it-overlay-timeframe-highlight-02.png</code></div></div></div>
+<h3 id="chart-area">Chart Area</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Horizontal</strong></td>
+<td>Renderizza le evidenziazioni direttamente sul grafico dei prezzi.</td>
+</tr>
+<tr>
+<td><strong>Vertical</strong></td>
+<td>Visualizza l'evidenziazione in verticale, dove supportato.</td>
+</tr>
+<tr>
+<td><strong>Panel selector</strong></td>
+<td>Sceglie quale pannello del grafico visualizza l'overlay.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="general">General</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Param type</strong></td>
+<td>Definisce il tipo di timeframe usato per l'evidenziazione (per esempio Minute, Hour, Day).</td>
+</tr>
+<tr>
+<td><strong>Param 1</strong></td>
+<td>Specifica il valore primario del timeframe (per esempio 5 per un'evidenziazione a 5 minuti).</td>
+</tr>
+<tr>
+<td><strong>Param 2</strong></td>
+<td>Parametro secondario facoltativo, usato a seconda del tipo di timeframe selezionato.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="color">Color</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Color based on delta</strong></td>
+<td>Cambia dinamicamente il colore dell'evidenziazione in base al delta dell'orderflow invece che alla direzione della barra.</td>
+</tr>
+<tr>
+<td><strong>Color mode</strong></td>
+<td>Determina come si applica il colore — sfumato in base all'intensità oppure pieno.</td>
+</tr>
+<tr>
+<td><strong>Std dev for coloring</strong></td>
+<td>Controlla la sensibilità quando il colore si basa sulla deviazione statistica (modalità fade).</td>
+</tr>
+<tr>
+<td><strong>Up bar</strong></td>
+<td>Colore dell'evidenziazione per le candele rialziste del timeframe superiore.</td>
+</tr>
+<tr>
+<td><strong>Down bar</strong></td>
+<td>Colore dell'evidenziazione per le candele ribassiste del timeframe superiore.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="plot">Plot</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Attiva o disattiva l'overlay di evidenziazione.</td>
+</tr>
+<tr>
+<td><strong>Border width</strong></td>
+<td>Controlla lo spessore dell'evidenziazione del bordo della candela.</td>
+</tr>
+<tr>
+<td><strong>Body opacity</strong></td>
+<td>Regola la trasparenza dell'evidenziazione del corpo della candela.</td>
+</tr>
+<tr>
+<td><strong>Shadow opacity</strong></td>
+<td>Regola la trasparenza dell'evidenziazione dell'ombra della candela.</td>
+</tr>
+<tr>
+<td><strong>Show background</strong></td>
+<td>Riempie l'intero sfondo del range della candela del timeframe superiore.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="range-target">Range Target</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Target enabled</strong></td>
+<td>Abilita le linee di proiezione del range massimo/minimo dalla candela del timeframe superiore.</td>
+</tr>
+<tr>
+<td><strong>High color / Low color</strong></td>
+<td>Colori delle linee di massimo e minimo proiettate.</td>
+</tr>
+<tr>
+<td><strong>Line width</strong></td>
+<td>Spessore delle linee target.</td>
+</tr>
+<tr>
+<td><strong>Line style</strong></td>
+<td>Aspetto della linea (continua, tratteggiata e simili).</td>
+</tr>
+<tr>
+<td><strong>Extend line to left</strong></td>
+<td>Estende le linee target all'indietro sulle barre precedenti.</td>
+</tr>
+<tr>
+<td><strong>Show text</strong></td>
+<td>Mostra il testo delle etichette sulle linee target.</td>
+</tr>
+<tr>
+<td><strong>Text color</strong></td>
+<td>Colore del testo delle etichette.</td>
+</tr>
+<tr>
+<td><strong>Text size</strong></td>
+<td>Dimensione del carattere delle etichette.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="summary">Summary</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable Summary</strong></td>
+<td>Mostra sul grafico le informazioni di riepilogo del timeframe superiore.</td>
+</tr>
+<tr>
+<td><strong>Volume Summary</strong></td>
+<td>Mostra il volume totale della candela evidenziata.</td>
+</tr>
+<tr>
+<td><strong>Trade Summary</strong></td>
+<td>Mostra le metriche relative agli scambi, dove disponibili.</td>
+</tr>
+<tr>
+<td><strong>Text Color</strong></td>
+<td>Colore del testo del riepilogo.</td>
+</tr>
+<tr>
+<td><strong>Ask Color / Bid Color</strong></td>
+<td>Colori usati per i valori ask e bid nel riepilogo.</td>
+</tr>
+<tr>
+<td><strong>Summary text size</strong></td>
+<td>Dimensione del carattere dei dati di riepilogo.</td>
+</tr>
+<tr>
+<td><strong>Summary to view</strong></td>
+<td>Quante candele del timeframe superiore sono incluse nella visualizzazione del riepilogo.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</h2>
+<ul>
+<li><strong>Mantieni bassa l'opacità.</strong> Una <strong>Body opacity</strong> alta con <strong>Show background</strong> abilitato può sbiadire le barre dei prezzi; l'evidenziazione deve incorniciare l'azione, non nasconderla.</li>
+<li><strong>Il segmento corrente è ancora in formazione</strong> — colore, range e riepilogo continuano ad aggiornarsi finché la candela del timeframe superiore non si completa.</li>
+<li>Limita <strong>Summary to view</strong> a poche candele; stampare i riepiloghi per ogni segmento a schermo affolla rapidamente il grafico.</li>
+<li>La colorazione basata sul delta dipende dal fatto che il tuo feed fornisca dati classificati bid/ask — vedi <a href="./different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a> se la colorazione non varia mai.</li>
+<li>Usa questo indicatore per range, target e partecipazione; usa <a href="./overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a> quando vuoi le forme reali delle candele del timeframe superiore. Molti trader li usano entrambi.</li>
+</ul>
+<h2 id="articoli-correlati">Articoli correlati</h2>
+<ul>
+<li><a href="./overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li>
+<li><a href="./understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li>
+<li><a href="./orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li>
+<li><a href="./different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li>
+<li><a href="./indicator-layout.html">Come cambiare il layout degli indicatori</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./overlay-timeframe-candlestick.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Overlay Timeframe Candlestick</div></a><a class="next" href="./shift-candle.html"><div class="pn-lbl">Next →</div><div class="pn-title">Shift Candle</div></a></div>
+    <div class="footer">Centro Assistenza DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#che-cos">Che cos&#x27;è</a></li><li class="lv2"><a href="#quando-usarlo">Quando usarlo</a></li><li class="lv2"><a href="#guida-rapida">Guida rapida</a></li><li class="lv2"><a href="#come-leggerlo">Come leggerlo</a></li><li class="lv2"><a href="#riferimento-delle-impostazioni">Riferimento delle impostazioni</a></li><li class="lv3"><a href="#chart-area">Chart Area</a></li><li class="lv3"><a href="#general">General</a></li><li class="lv3"><a href="#color">Color</a></li><li class="lv3"><a href="#plot">Plot</a></li><li class="lv3"><a href="#range-target">Range Target</a></li><li class="lv3"><a href="#summary">Summary</a></li><li class="lv2"><a href="#suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</a></li><li class="lv2"><a href="#articoli-correlati">Articoli correlati</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-it.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

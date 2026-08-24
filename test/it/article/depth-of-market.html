@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Indicatore Depth of Market (DOM) — Centro Assistenza DeepCharts</title>
+<meta name="description" content="Riferimento per il price ladder DOM di DeepCharts: colonne, regole di inserimento ordini, colonne pull/stack e trades, profili e impostazioni della profondità.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/quick-start-first-trade.html">Guida rapida</a><a href="../article/get-help.html">Assistenza</a><a class="kb-switch" href="../../it/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/depth-of-market.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primi passi <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Benvenuto in DeepCharts: tour della piattaforma</a></li><li><a href="../article/system-requirements.html">Requisiti di sistema</a></li><li><a href="../article/install-deepcharts.html">Come installare DeepCharts e attivare la tua licenza</a></li><li><a href="../article/free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a></li><li><a href="../article/buy-data-feed.html">Come acquistare un feed dati e ottenere le tue credenziali</a></li><li><a href="../article/first-chart.html">Apri il tuo primo grafico</a></li><li><a href="../article/simulation-accounts.html">Conti di trading e simulazione</a></li><li><a href="../article/quick-start-first-trade.html">Avvio rapido: dall&#x27;installazione alla tua prima operazione</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connessioni e feed dati <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configurazione</li><li><a href="../article/compatibility-guide.html">Broker, prop firm e feed dati supportati</a></li><li><a href="../article/connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li><li><a href="../article/sign-market-data-agreement.html">Firma il contratto sui dati di mercato</a></li><li><a href="../article/connect-dxfeed.html">Come connettere un feed dati dxFeed</a></li><li><a href="../article/connect-rithmic.html">Come collegare un feed dati Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Connettere Rithmic con il plugin RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Collega qualsiasi conto prop firm Rithmic (tabella dei server)</a></li><li><a href="../article/connect-apex.html">Connettere Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connettere un conto dxFeed di una prop firm (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Come connettere CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connettere Interactive Brokers (solo esecuzione)</a></li><li><a href="../article/competition-connect.html">Competizione DeepCharts: iscriviti e connettiti</a></li><li><a href="../article/end-of-day-data.html">Connettere i dati storici (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Gestire e passare da una connessione feed all&#x27;altra</a></li><li class="nav-sub">Risoluzione dei problemi</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Correzione: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Correzione: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Correzione: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Correzione: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Correzione: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Correzione: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Correzione: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Correzione: connessione persa all&#x27;apertura di un grafico</a></li><li><a href="../article/symbol-subscription-issue.html">Correzione: problema di sottoscrizione dei simboli</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: l&#x27;app va in crash salvando le impostazioni del feed</a></li><li><a href="../article/gaps-in-price.html">Correzione: gap di prezzo sui grafici</a></li><li><a href="../article/data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Grafici e workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La finestra del grafico</a></li><li><a href="../article/price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li><li><a href="../article/chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li><li><a href="../article/drawing-tools.html">Strumenti di disegno e annotazioni</a></li><li><a href="../article/templates-workspaces.html">Template e workspace</a></li><li><a href="../article/quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Collegare le finestre con i gruppi colore</a></li><li><a href="../article/replay-data.html">Replay dei dati di mercato</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalizza lingua, tema e suoni di notifica</a></li><li><a href="../article/keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Riferimento delle scorciatoie da tastiera</a></li><li><a href="../article/multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Finestre della piattaforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (il tape)</a></li><li><a href="../article/advanced-dom.html">Finestra Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading e ordini <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading dal grafico</a></li><li><a href="../article/trading-panel-reference.html">Riferimento del pannello di trading: ogni pulsante e campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li><li><a href="../article/depth-of-market.html" class="active">Indicatore Depth of Market (DOM)</a></li><li><a href="../article/oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Finestra Ordini</a></li><li><a href="../article/portfolio-wallet.html">Portafoglio (Wallet)</a></li><li><a href="../article/risk-manager.html">Responsabile del rischio</a></li><li><a href="../article/trade-copier.html">Come configurare il Trade Copier</a></li><li><a href="../article/performance-analysis.html">Analisi delle performance (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concetti <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li><li><a href="../article/understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Capire la teoria dell&#x27;asta: squilibrio, aste incompiute, assorbimento</a></li><li><a href="../article/understanding-icebergs-absorption.html">Capire gli iceberg e l&#x27;assorbimento</a></li><li><a href="../article/understanding-vwap.html">Capire il VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Leggere un footprint: esempi svolti</a></li><li><a href="../article/glossary.html">Glossario dei termini di orderflow e della piattaforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicatori e analisi <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fondamenti degli indicatori</li><li><a href="../article/different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li><li><a href="../article/indicator-layout.html">Come cambiare il layout degli indicatori</a></li><li class="nav-sub">Indicatori Deep</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Media mobile</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regressione lineare</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum e oscillatori</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscillatore stocastico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilità e bande</li><li><a href="../article/bollinger-bands.html">Bande di Bollinger</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Deviazione standard</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume e delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Orderflow e asta</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Livelli e pattern</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Livelli importanti</a></li><li><a href="../article/absolute-levels.html">Livelli assoluti</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Overlay del grafico</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Testo sul grafico</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Dati e database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></li><li><a href="../article/delete-market-data.html">Eliminare i dati di mercato (metodo in-app e manuale)</a></li><li><a href="../article/download-data.html">Ri-scaricare i dati storici (strumento Download Data)</a></li><li><a href="../article/database-optimization.html">Ottimizzazione del database</a></li><li><a href="../article/database-problems.html">Correzione: problemi al database</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Risoluzione problemi e supporto <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Risoluzione: problemi di installazione e requisiti di base</a></li><li><a href="../article/installation-setup-failed.html">Risoluzione: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: una policy di controllo delle applicazioni blocca DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Soluzione: lo strumento di disegno Rettangolo non funziona</a></li><li><a href="../article/chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a></li><li><a href="../article/license-issues.html">Risolvere: problemi di licenza e attivazione</a></li><li><a href="../article/diagnostic-report.html">Report diagnostico: prima di contattare il supporto</a></li><li><a href="../article/get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account e fatturazione <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Gestire abbonamenti e fatturazione</a></li><li><a href="../article/move-to-new-computer.html">Spostare DeepCharts su un nuovo computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/trading-orders.html">Trading e ordini</a></div>
+<div class="article-head"><h1>Indicatore Depth of Market (DOM)</h1>
+<p class="article-desc">Riferimento per il price ladder DOM di DeepCharts: colonne, regole di inserimento ordini, colonne pull/stack e trades, profili e impostazioni della profondità.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 6 min read</span>
+  <a class="btn-pdf" href="../pdf/depth-of-market.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Il Depth of Market (DOM) è la vista a scala di prezzi (price ladder) del book di negoziazione: una colonna verticale di prezzi con la liquidità in acquisto in attesa (bid) da un lato e la liquidità in vendita in attesa (ask) dall'altro. In DeepCharts il DOM completo è la finestra <strong>Advanced DOM</strong>, e una versione compatta può essere sovrapposta direttamente al grafico.</p>
+<p>Questo articolo è il riferimento per l'interfaccia del DOM — le sue colonne, le regole dei clic e le impostazioni. Per la guida completa della finestra vedi <a href="./advanced-dom.html">Finestra Advanced DOM</a>; per il ladder sul grafico vedi <a href="./dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a>.</p>
+<p><span class="confirm-flag">CONFIRM: whether &quot;Depth of Market&quot; also exists as a standalone chart indicator in the Indicator List, separate from the Advanced DOM window and the on-chart DOM Trading mode — adjust the intro if so</span></p>
+<h2 id="che-cos">Che cos'è</h2>
+<p>Il DOM risponde alla domanda: chi è in attesa di comprare e vendere a ciascun prezzo, e come faccio a operare contro questa liquidità? Ogni riga è un livello di prezzo. Le quantità bid si accumulano sotto il mercato, le quantità ask sopra, e la visualizzazione si aggiorna in tempo reale man mano che gli ordini vengono aggiunti, ritirati ed eseguiti. Poiché gli ordini si inseriscono facendo clic direttamente su una riga di prezzo, il DOM è lo strumento preferito dai trader che tengono al livello esatto di ingresso e alla posizione in coda più che agli ingressi dal grafico.</p>
+<p>Guarda un ladder dal vivo qui sotto — la liquidità in acquisto si accumula in verde sotto il mercato, quella in vendita in viola sopra; passa il mouse su una riga per vedere cosa ti sta dicendo quel livello.</p>
+<div class="widget-mount" data-widget="dom-ladder"></div>
+<h2 id="quando-usarlo">Quando usarlo</h2>
+<ul>
+<li>Scalping o trading di breve termine dove conta il tick esatto di ingresso.</li>
+<li>Osservare come la liquidità in attesa si accumula o scompare attorno a un livello prima di impegnarti.</li>
+<li>Gestire visivamente gli ordini attivi — trascina per spostare, fai clic con il tasto destro del mouse per eliminare.</li>
+<li>Leggere il volume eseguito per livello insieme a un Volume Profile in tempo reale.</li>
+</ul>
+<h2 id="avvio-rapido">Avvio rapido</h2>
+<ol>
+<li>Apri DeepCharts e collega il tuo feed dati — <a href="./connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a>.</li>
+<li>Vai su <strong>New → Book → ADV DOM</strong>.</li>
+<li>Scegli il tuo strumento dall'elenco dei simboli sottoscritti (ad esempio <strong>ES</strong>) e fai clic su <strong>Select</strong>.</li>
+<li>Imposta la quantità dell'ordine nel campo in fondo al DOM.</li>
+<li>Imposta il menu del tipo di ordine (il menu <strong>A</strong>) su <strong>Automatic</strong> — i tipi di ordine vengono così scelti in base a dove fai clic (vedi la tabella qui sotto).</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Menu New aperto con il sottomenu Book e ADV DOM evidenziato, con la finestra Select Instrument visibile dietro</div><div class="s-file">ID: <b class="s-id">dc-it-depth-of-market-01</b> · save as <code>dc-it-depth-of-market-01.png</code></div></div></div>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Il DOM ha bisogno dei dati Level 2 (profondità) dal tuo feed per popolare i ladder bid e ask. Con i dati Level 1 è disponibile solo il miglior bid/ask.</p>
+</blockquote>
+<h2 id="come-leggerlo">Come leggerlo</h2>
+<p>Il layout predefinito mostra, da sinistra a destra:</p>
+<table>
+<thead>
+<tr>
+<th>Colonna</th>
+<th>Significato</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>P&amp;L</strong></td>
+<td>Il tuo profitto o perdita a ogni tick — quanto varrebbe la posizione se il prezzo scambiasse a quel livello</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>Gestione degli ordini di acquisto</td>
+</tr>
+<tr>
+<td><strong>Bid</strong></td>
+<td>Liquidità in acquisto in attesa; fai clic qui per inserire ordini di acquisto</td>
+</tr>
+<tr>
+<td><strong>Price</strong></td>
+<td>La scala centrale dei prezzi</td>
+</tr>
+<tr>
+<td><strong>Ask</strong></td>
+<td>Liquidità in vendita in attesa; fai clic qui per inserire ordini di vendita</td>
+</tr>
+<tr>
+<td><strong>S</strong></td>
+<td>Gestione degli ordini di vendita</td>
+</tr>
+<tr>
+<td><strong>VP</strong></td>
+<td>Volume Profile giornaliero — volume eseguito per livello di prezzo</td>
+</tr>
+</tbody>
+</table>
+<p>L'intestazione mostra lo strumento selezionato, il broker connesso, il conto di trading attivo, la quantità della posizione aperta e il P&amp;L giornaliero. Sotto, la tabella dei fondamentali fornisce il contesto di sessione: variazione percentuale rispetto alla chiusura precedente, variazione rispetto all'apertura di sessione, volume totale scambiato, numero di scambi (azioni) e i prezzi di sospensione superiore e inferiore.</p>
+<p>Con <strong>Automatic</strong> selezionato nel menu <strong>A</strong>, la posizione del clic decide il tipo di ordine:</p>
+<table>
+<thead>
+<tr>
+<th>Clic</th>
+<th>Ordine</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clic sinistro su <strong>Bid</strong> sotto il prezzo corrente</td>
+<td>Buy Limit</td>
+</tr>
+<tr>
+<td>Clic sinistro su <strong>Bid</strong> sopra il prezzo corrente</td>
+<td>Buy Stop</td>
+</tr>
+<tr>
+<td>Clic sinistro su <strong>Ask</strong> sopra il prezzo corrente</td>
+<td>Sell Limit</td>
+</tr>
+<tr>
+<td>Clic sinistro su <strong>Ask</strong> sotto il prezzo corrente</td>
+<td>Sell Stop</td>
+</tr>
+<tr>
+<td>Clic con il tasto destro su <strong>Bid</strong></td>
+<td>Buy Market</td>
+</tr>
+<tr>
+<td>Clic con il tasto destro su <strong>Ask</strong></td>
+<td>Sell Market</td>
+</tr>
+</tbody>
+</table>
+<p>Gli ordini attivi si gestiscono direttamente sul ladder: <strong>clic sinistro e trascina</strong> per spostare un ordine, <strong>clic con il tasto destro del mouse</strong> per eliminarlo, <strong>doppio clic sinistro</strong> per modificarne la quantità.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Ladder del DOM con un ordine buy limit attivo nella colonna B trascinato verso una riga di prezzo inferiore, cursore visibile durante il trascinamento</div><div class="s-file">ID: <b class="s-id">dc-it-depth-of-market-02</b> · save as <code>dc-it-depth-of-market-02.png</code></div></div></div>
+<h3 id="colonne-di-analisi-opzionali">Colonne di analisi opzionali</h3>
+<p>Fai clic con il tasto destro del mouse sulla riga di intestazione delle colonne per abilitare altre colonne (o ridimensionare automaticamente quelle esistenti):</p>
+<ul>
+<li><strong>Pull/Stack</strong> (<strong>B.PS</strong> / <strong>A.PS</strong>) — la variazione della liquidità in attesa per livello. Sul lato bid, il verde indica quantità aggiunta (stacked), il rosso quantità rimossa (pulled); il lato ask inverte la logica dei colori.</li>
+<li><strong>Trades</strong> (<strong>BT</strong> / <strong>AT</strong>) — volume eseguito per livello: BT è il volume venduto a mercato (che colpisce il bid), AT è il volume comprato a mercato (che alza l'ask).</li>
+<li><strong>Offers</strong> — il conteggio dei singoli ordini in attesa a ciascun livello bid e ask.</li>
+</ul>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Menu del tasto destro sull&#x27;intestazione delle colonne aperto sull&#x27;Advanced DOM che mostra l&#x27;elenco delle colonne aggiuntive tra cui Pull/Stack, Trades e Offers con i segni di spunta</div><div class="s-file">ID: <b class="s-id">dc-it-depth-of-market-03</b> · save as <code>dc-it-depth-of-market-03.png</code></div></div></div>
+<h3 id="profili">Profili</h3>
+<p>Il DOM può disegnare profili accanto al ladder usando i dati <strong>Volume</strong>, <strong>Delta</strong> o <strong>Bid/Ask</strong>. Esistono due modalità di registrazione: il <strong>Resettable Profile</strong> inizia a registrare nel momento in cui lo abiliti e si azzera con l'icona della gomma; il <strong>Daily Profile</strong> mostra i dati dall'inizio della sessione di trading. I concetti alla base della lettura dei profili sono trattati in <a href="./understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a>.</p>
+<h2 id="riferimento-delle-impostazioni">Riferimento delle impostazioni</h2>
+<p>Apri le impostazioni del DOM con l'<strong>icona dell'ingranaggio</strong> (in alto a sinistra).</p>
+<table>
+<thead>
+<tr>
+<th>Gruppo di impostazioni</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interruttori di sezione</td>
+<td>Abilita o disabilita intere sezioni del DOM per semplificare il layout</td>
+</tr>
+<tr>
+<td><strong>Order Column Settings</strong></td>
+<td>Riordina le colonne</td>
+</tr>
+<tr>
+<td><strong>Chart DOM Settings</strong></td>
+<td>Personalizza testo, colori e sfondo</td>
+</tr>
+<tr>
+<td>Marcatori</td>
+<td>Abilita i marcatori di livello per i prezzi <strong>High</strong>, <strong>Low</strong>, <strong>Open</strong> e <strong>Suspension</strong></td>
+</tr>
+<tr>
+<td><strong>DOM Settings → Number of Levels Show</strong></td>
+<td>Limita quanti livelli di profondità vengono visualizzati — imposta 20 per mostrare 20 livelli; lascia senza limite per la profondità completa che il tuo provider invia</td>
+</tr>
+<tr>
+<td>Sezione <strong>Model</strong></td>
+<td>Salva il tuo layout personalizzato come template e carica in seguito i template salvati</td>
+</tr>
+</tbody>
+</table>
+<p>In fondo alla finestra si trovano il campo della quantità dell'ordine, i classici pulsanti di trading e l'abilitazione <strong>OCO</strong>; l'icona dell'ingranaggio in basso a destra crea, salva e richiama le strategie OCO da un menu a discesa — lo stesso sistema di bracket descritto in <a href="./oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a>.</p>
+<p>Scala verticale: sulla colonna <strong>Price</strong>, fare clic vicino al prezzo corrente scorre la vista, mentre fare clic vicino alla parte superiore o inferiore espande o comprime la scala dei prezzi (la colonna usa una modalità di riconoscimento automatico, quindi il comportamento esatto dipende da dove la afferri).</p>
+<h2 id="suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</h2>
+<ul>
+<li><strong>Ladder bid/ask vuoti ma la riga del prezzo si aggiorna</strong> — il tuo feed è solo Level 1. Verifica quale profondità include il tuo piano feed (<a href="./compatibility-guide.html">Broker, prop firm e feed dati supportati</a>).</li>
+<li><strong>Tipi di ordine inattesi</strong> — in modalità <strong>Automatic</strong> il tipo deriva dalla posizione del clic rispetto al prezzo corrente. Se vuoi forzare un tipo, passa il menu <strong>A</strong> su <strong>Limit</strong>, <strong>Market</strong> o <strong>Conditional</strong>.</li>
+<li><strong>Troppo sfarfallio sui mercati veloci</strong> — limita <strong>Number of Levels Show</strong> e disabilita le colonne che non leggi; meno profondità significa una visualizzazione più calma e veloce.</li>
+<li><strong>Layout perso dopo averlo ricostruito</strong> — salvalo nella sezione <strong>Model</strong> così puoi ricaricarlo su qualsiasi DOM.</li>
+<li><strong>Osservare la liquidità senza voler operare</strong> — ricorda che ogni clic sinistro su Bid/Ask inserisce un ordine reale quando c'è un conto attivo. Esercitati prima a leggere il ladder su un conto SIM (<a href="./simulation-accounts.html">Conti di trading e simulazione</a>).</li>
+</ul>
+<h2 id="articoli-correlati">Articoli correlati</h2>
+<ul>
+<li><a href="./advanced-dom.html">Finestra Advanced DOM</a></li>
+<li><a href="./dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li>
+<li><a href="./trading-panel-reference.html">Riferimento del pannello di trading: ogni pulsante e campo</a></li>
+<li><a href="./oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li>
+<li><a href="./orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li>
+<li><a href="./understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./dom-trading-chart.html"><div class="pn-lbl">← Previous</div><div class="pn-title">DOM Trading sul grafico (ladder con click-trading)</div></a><a class="next" href="./oco-strategies.html"><div class="pn-lbl">Next →</div><div class="pn-title">Strategie OCO (One-Cancels-the-Other)</div></a></div>
+    <div class="footer">Centro Assistenza DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#che-cos">Che cos&#x27;è</a></li><li class="lv2"><a href="#quando-usarlo">Quando usarlo</a></li><li class="lv2"><a href="#avvio-rapido">Avvio rapido</a></li><li class="lv2"><a href="#come-leggerlo">Come leggerlo</a></li><li class="lv3"><a href="#colonne-di-analisi-opzionali">Colonne di analisi opzionali</a></li><li class="lv3"><a href="#profili">Profili</a></li><li class="lv2"><a href="#riferimento-delle-impostazioni">Riferimento delle impostazioni</a></li><li class="lv2"><a href="#suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</a></li><li class="lv2"><a href="#articoli-correlati">Articoli correlati</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-it.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

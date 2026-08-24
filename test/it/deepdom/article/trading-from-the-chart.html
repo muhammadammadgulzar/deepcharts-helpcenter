@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Trading dal grafico — Centro Assistenza DeepDOM</title>
+<meta name="description" content="Questa guida spiega come abilitare il trading direttamente da un grafico DeepDOM, usare il pannello di trading e il Chart DOM, gestire gli ordini e personalizzare le colonne e i marcatori legati al trading.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/installation-and-first-configuration.html">Primi passi</a><a href="../../../it/article/get-help.html">Assistenza</a><a class="kb-switch" href="../../../it/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/trading-from-the-chart.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemi Comuni <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemi di installazione</a></li><li><a href="../article/licence-issues.html">Problemi di licenza</a></li><li><a href="../article/symbol-subscription-issues.html">Problemi di sottoscrizione dei simboli</a></li><li><a href="../article/cache-issues-deepdom.html">Problemi di cache</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Come Fare <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installazione e prima configurazione</a></li><li><a href="../article/general-settings.html">Impostazioni generali</a></li><li><a href="../article/how-to-add-a-new-connection.html">Come aggiungere una nuova connessione</a></li><li><a href="../article/how-to-add-markets-correctly.html">Come aggiungere i mercati correttamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configurazione utente — Template, Workspace, configurazione degli strumenti</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Come inserire le notifiche sonore</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Come personalizzare lingua e tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Come gestire il rollover dei simboli</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Finestra degli ordini</a></li><li><a href="../article/trading-from-the-chart.html" class="active">Trading dal grafico</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio e Responsabile del rischio</a></li><li><a href="../article/simulation-environment.html">Ambiente di simulazione</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicatori <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html">Volume Profile</a></li><li><a href="../article/stop-run.html">Stop Run</a></li><li><a href="../article/absorption.html">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funzionalità <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay dei dati tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicatori Deep <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Deep Iceberg (Rilevatore di ordini Iceberg)</a></li><li><a href="../article/deep-reload.html">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/trading.html">Trading</a></div>
+<div class="article-head"><h1>Trading dal grafico</h1>
+<p class="article-desc">Questa guida spiega come abilitare il trading direttamente da un grafico DeepDOM, usare il pannello di trading e il Chart DOM, gestire gli ordini e personalizzare le colonne e i marcatori legati al trading.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">How-to</span>
+  <span class="badge">🕒 5 min read</span>
+  <a class="btn-pdf" href="../pdf/trading-from-the-chart.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Questa guida spiega come abilitare il trading direttamente da un grafico DeepDOM, usare il pannello di trading e il Chart DOM, gestire gli ordini e personalizzare le colonne e i marcatori legati al trading.</p>
+<h2 id="abilitare-il-trading-e-mostrare-il-pannello-di-trading">Abilitare il trading e mostrare il pannello di trading</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading dal grafico — Abilitare il trading e mostrare il pannello di trading (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-trading-from-the-chart-01</b> · save as <code>dd-it-trading-from-the-chart-01.png</code></div></div></div>
+<h3 id="abilitare-il-trading-su-un-grafico">Abilitare il trading su un grafico</h3>
+<p>Per consentire l'inserimento di ordini da un grafico:</p>
+<p>Fai clic sull'icona del dollaro nell'angolo in alto a destra del grafico, oppure</p>
+<p>Apri il menu Settings (Impostazioni) del grafico e attiva Trading enabled .</p>
+<h3 id="mostrare-il-pannello-di-trading">Mostrare il pannello di trading</h3>
+<p>Per visualizzare il pannello di trading sotto il grafico:</p>
+<p>Attiva la casella Trading panel nell'angolo in basso a destra del grafico, oppure</p>
+<p>Usa il menu Settings del grafico e attiva Show trading panel .</p>
+<h2 id="pannello-di-trading-e-cross-trading-mini-micro">Pannello di trading e cross trading Mini/Micro</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading dal grafico — Pannello di trading e cross trading Mini/Micro (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-trading-from-the-chart-02</b> · save as <code>dd-it-trading-from-the-chart-02.png</code></div></div></div>
+<p>Nella parte superiore del pannello di trading puoi selezionare lo strumento usato per l'esecuzione degli ordini. DeepDOM consente il cross trading , per esempio visualizzare i dati di un contratto futures Mini eseguendo gli ordini su un contratto Micro, senza aprire grafici aggiuntivi. Per un'analisi volumetrica accurata, basa sempre le tue decisioni sul contratto futures principale.</p>
+<p>Il pannello mostra inoltre:</p>
+<p>Open quantity – numero di contratti o azioni attualmente a mercato.</p>
+<p>Open P/L – profitto o perdita non realizzati sulla posizione aperta.</p>
+<p>Daily P/L – profitto o perdita realizzati sullo strumento nella giornata di trading corrente.</p>
+<h2 id="pulsanti-di-trading-e-azioni-di-base">Pulsanti di trading e azioni di base</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading dal grafico — Pulsanti di trading e azioni di base (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-trading-from-the-chart-03</b> · save as <code>dd-it-trading-from-the-chart-03.png</code></div></div></div>
+<p>Il pannello di trading include pulsanti ad accesso rapido per i diversi tipi di ordine:</p>
+<p>MKT – invia ordini a mercato di acquisto o vendita.</p>
+<p>BID / ASK – inserisce ordini limit al miglior Bid o miglior Ask corrente.</p>
+<p>LMT – inserisce ordini limit manuali (buy limit sotto il prezzo di mercato o sell limit sopra il mercato).</p>
+<p>STP – inserisce ordini stop che diventano ordini a mercato quando vengono attivati (buy stop sopra il mercato, sell stop sotto il mercato).</p>
+<p>STP LMT – inserisce ordini stop-limit, che quando vengono attivati inviano ordini limit invece di ordini a mercato, aiutando a controllare lo slippage a rischio di mancata esecuzione.</p>
+<p>Cancel – annulla tutti gli ordini attivi (pendenti).</p>
+<p>Close – chiude la posizione aperta corrente e annulla tutti gli ordini attivi rimanenti.</p>
+<p>Usa i campi Qty , Broker e Account per scegliere la dimensione dell'operazione, il broker e il conto per ciascuna operazione.</p>
+<p>Se l'opzione Tick diff. è attiva, i pulsanti Bid e Ask inseriranno ordini limit a un numero specificato di tick di distanza dal prezzo di mercato invece che esattamente al miglior Bid/Ask.</p>
+<h2 id="strategia-oco-ed-esecuzioni-storiche">Strategia OCO ed esecuzioni storiche</h2>
+<h3 id="strategia-oco">Strategia OCO</h3>
+<p>La funzione OCO (Order‑Cancels‑Order) ti consente di collegare due ordini di uscita a una posizione principale: un ordine limit di presa di profitto e uno stop di protezione. Quando uno di questi ordini di uscita viene eseguito, l'altro viene annullato automaticamente.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading dal grafico — Strategia OCO (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-trading-from-the-chart-04</b> · save as <code>dd-it-trading-from-the-chart-04.png</code></div></div></div>
+<h3 id="mostrare-le-esecuzioni-storiche">Mostrare le esecuzioni storiche</h3>
+<p>Per visualizzare le esecuzioni storiche sul grafico, apri le impostazioni del grafico e attiva Show historical executions . I marcatori delle operazioni appariranno quindi ai prezzi e agli orari corrispondenti.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading dal grafico — Mostrare le esecuzioni storiche (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-trading-from-the-chart-05</b> · save as <code>dd-it-trading-from-the-chart-05.png</code></div></div></div>
+<h2 id="panoramica-del-chart-dom">Panoramica del Chart DOM</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading dal grafico — Panoramica del Chart DOM (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-trading-from-the-chart-06</b> · save as <code>dd-it-trading-from-the-chart-06.png</code></div></div></div>
+<p>Il Chart DOM fornisce una scala verticale del book di negoziazione accanto al grafico.</p>
+<p>Attivalo selezionando la casella DOM in basso a destra del grafico, oppure</p>
+<p>Apri le impostazioni del grafico e attiva Enable chart DOM .</p>
+<p>Per impostazione predefinita, il Chart DOM mostra queste colonne da sinistra a destra:</p>
+<p>B.PS – Bid Pull Stack; quantità aggiunte o rimosse a ciascun livello Bid.</p>
+<p>B – colonna di gestione degli ordini di acquisto (sposta o annulla).</p>
+<p>Bid – ordini buy limit a ciascun livello di prezzo.</p>
+<p>Ask – ordini sell limit a ciascun livello di prezzo.</p>
+<p>S – colonna di gestione degli ordini di vendita.</p>
+<p>A.PS – Ask Pull Stack; quantità aggiunte o rimosse a ciascun livello Ask.</p>
+<h2 id="inserimento-e-gestione-degli-ordini-sul-dom">Inserimento e gestione degli ordini sul DOM</h2>
+<h3 id="ordini-a-mercato-e-limit-stop">Ordini a mercato e limit/stop</h3>
+<p>Buy Market – fai clic con il tasto destro del mouse in un punto qualsiasi della colonna Bid.</p>
+<p>Sell Market – fai clic con il tasto destro del mouse in un punto qualsiasi della colonna Ask.</p>
+<p>Buy Limit – fai clic con il tasto sinistro nella colonna Bid a un prezzo qualsiasi sotto il prezzo di mercato corrente.</p>
+<p>Buy Stop – fai clic con il tasto sinistro nella colonna Bid a un prezzo qualsiasi sopra il prezzo di mercato corrente.</p>
+<p>Sell Limit – fai clic con il tasto sinistro nella colonna Ask a un prezzo qualsiasi sopra il prezzo di mercato corrente.</p>
+<p>Sell Stop – fai clic con il tasto sinistro nella colonna Ask a un prezzo qualsiasi sotto il prezzo di mercato corrente.</p>
+<h3 id="modificare-e-annullare-gli-ordini">Modificare e annullare gli ordini</h3>
+<p>Per gli ordini limit o condizionati esistenti:</p>
+<p>Usa le colonne di gestione degli ordini ( B e S ) e trascina con il tasto sinistro del mouse per spostare un ordine a un nuovo livello di prezzo.</p>
+<p>Fai clic con il tasto destro del mouse per annullare un ordine.</p>
+<p>Fai doppio clic con il tasto sinistro del mouse per modificare la quantità dell'ordine.</p>
+<h2 id="impostazioni-e-colonne-del-chart-dom">Impostazioni e colonne del Chart DOM</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading dal grafico — Impostazioni e colonne del Chart DOM (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-trading-from-the-chart-07</b> · save as <code>dd-it-trading-from-the-chart-07.png</code></div></div></div>
+<p>Fai clic sull'icona Settings sul Chart DOM per aprire le impostazioni del DOM. Qui puoi regolare Font size, Text format e l'aspetto di varie colonne, tra cui:</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading dal grafico — Impostazioni e colonne del Chart DOM (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-trading-from-the-chart-08</b> · save as <code>dd-it-trading-from-the-chart-08.png</code></div></div></div>
+<p>Bid/Ask Columns – cambia i colori di sfondo e del testo per Bid e Ask.</p>
+<p>Pull Stack Columns – attiva il Pull Stack Bid/Ask, scegli i filtri (media o nessuno) e personalizza i colori.</p>
+<p>Filled filter – applica un filtro alle quantità eseguite in modo da mostrare solo le operazioni significative.</p>
+<p>Bid/Ask Filled – mostra i volumi eseguiti nelle colonne B.T (Bid Trades) e A.T (Ask Trades), formando di fatto una vista footprint. La funzione Auto‑reset può azzerarle in base alle oscillazioni del prezzo, oppure puoi azzerarle manualmente.</p>
+<p>Last Filled – attiva la colonna dell'ultima esecuzione.</p>
+<p>Order View – mostra/nasconde le colonne di gestione degli ordini e ne regola i colori.</p>
+<p>Price Scale – attiva la colonna della scala dei prezzi e personalizzane l'aspetto.</p>
+<p>P/L Column – mostra il profitto e la perdita non realizzati tick per tick quando hai una posizione aperta.</p>
+<p>Markers – attiva i marcatori per ultimo prezzo scambiato, apertura, massimo e minimo.</p>
+<p>Column Order – apre le impostazioni dell'ordine delle colonne per riorganizzare le colonne del DOM come preferisci.</p>
+<h2 id="hai-ancora-problemi">Hai ancora problemi?</h2>
+<p>Il nostro team di supporto è disponibile 24/7 e pronto ad aiutarti con qualsiasi problema tu incontri. Quando ci contatti, includi:</p>
+<p>Uno screenshot del problema.</p>
+<p>Una breve descrizione di ciò che stavi cercando di fare.</p>
+<p>Ticket di supporto (risposta più rapida): visita www.deepcharts.com e crea un ticket di supporto direttamente sul nostro sito.</p>
+<p>Supporto via email: puoi anche scriverci a support@deepcharts.com. Tieni presente che le risposte via email possono richiedere un po' più di tempo rispetto a un ticket di supporto.</p>
+</article>
+<div class="pn"><a class="prev" href="./orders-window-deepdom.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Finestra degli ordini</div></a><a class="next" href="./portfolio-risk-manager.html"><div class="pn-lbl">Next →</div><div class="pn-title">Portfolio e Responsabile del rischio</div></a></div>
+    <div class="footer">Centro Assistenza DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#abilitare-il-trading-e-mostrare-il-pannello-di-trading">Abilitare il trading e mostrare il pannello di trading</a></li><li class="lv3"><a href="#abilitare-il-trading-su-un-grafico">Abilitare il trading su un grafico</a></li><li class="lv3"><a href="#mostrare-il-pannello-di-trading">Mostrare il pannello di trading</a></li><li class="lv2"><a href="#pannello-di-trading-e-cross-trading-mini-micro">Pannello di trading e cross trading Mini/Micro</a></li><li class="lv2"><a href="#pulsanti-di-trading-e-azioni-di-base">Pulsanti di trading e azioni di base</a></li><li class="lv2"><a href="#strategia-oco-ed-esecuzioni-storiche">Strategia OCO ed esecuzioni storiche</a></li><li class="lv3"><a href="#strategia-oco">Strategia OCO</a></li><li class="lv3"><a href="#mostrare-le-esecuzioni-storiche">Mostrare le esecuzioni storiche</a></li><li class="lv2"><a href="#panoramica-del-chart-dom">Panoramica del Chart DOM</a></li><li class="lv2"><a href="#inserimento-e-gestione-degli-ordini-sul-dom">Inserimento e gestione degli ordini sul DOM</a></li><li class="lv3"><a href="#ordini-a-mercato-e-limit-stop">Ordini a mercato e limit/stop</a></li><li class="lv3"><a href="#modificare-e-annullare-gli-ordini">Modificare e annullare gli ordini</a></li><li class="lv2"><a href="#impostazioni-e-colonne-del-chart-dom">Impostazioni e colonne del Chart DOM</a></li><li class="lv2"><a href="#hai-ancora-problemi">Hai ancora problemi?</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-it-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>

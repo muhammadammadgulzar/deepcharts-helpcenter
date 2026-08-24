@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>La finestra del grafico — Centro Assistenza DeepCharts</title>
+<meta name="description" content="Tour completo della finestra del grafico di DeepCharts: controlli della barra del titolo, icone della toolbar, schede, barra inferiore, navigazione e menu del tasto destro.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/quick-start-first-trade.html">Guida rapida</a><a href="../article/get-help.html">Assistenza</a><a class="kb-switch" href="../../it/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/chart-window.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primi passi <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Benvenuto in DeepCharts: tour della piattaforma</a></li><li><a href="../article/system-requirements.html">Requisiti di sistema</a></li><li><a href="../article/install-deepcharts.html">Come installare DeepCharts e attivare la tua licenza</a></li><li><a href="../article/free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a></li><li><a href="../article/buy-data-feed.html">Come acquistare un feed dati e ottenere le tue credenziali</a></li><li><a href="../article/first-chart.html">Apri il tuo primo grafico</a></li><li><a href="../article/simulation-accounts.html">Conti di trading e simulazione</a></li><li><a href="../article/quick-start-first-trade.html">Avvio rapido: dall&#x27;installazione alla tua prima operazione</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connessioni e feed dati <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configurazione</li><li><a href="../article/compatibility-guide.html">Broker, prop firm e feed dati supportati</a></li><li><a href="../article/connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li><li><a href="../article/sign-market-data-agreement.html">Firma il contratto sui dati di mercato</a></li><li><a href="../article/connect-dxfeed.html">Come connettere un feed dati dxFeed</a></li><li><a href="../article/connect-rithmic.html">Come collegare un feed dati Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Connettere Rithmic con il plugin RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Collega qualsiasi conto prop firm Rithmic (tabella dei server)</a></li><li><a href="../article/connect-apex.html">Connettere Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connettere un conto dxFeed di una prop firm (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Come connettere CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connettere Interactive Brokers (solo esecuzione)</a></li><li><a href="../article/competition-connect.html">Competizione DeepCharts: iscriviti e connettiti</a></li><li><a href="../article/end-of-day-data.html">Connettere i dati storici (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Gestire e passare da una connessione feed all&#x27;altra</a></li><li class="nav-sub">Risoluzione dei problemi</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Correzione: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Correzione: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Correzione: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Correzione: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Correzione: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Correzione: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Correzione: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Correzione: connessione persa all&#x27;apertura di un grafico</a></li><li><a href="../article/symbol-subscription-issue.html">Correzione: problema di sottoscrizione dei simboli</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: l&#x27;app va in crash salvando le impostazioni del feed</a></li><li><a href="../article/gaps-in-price.html">Correzione: gap di prezzo sui grafici</a></li><li><a href="../article/data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Grafici e workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html" class="active">La finestra del grafico</a></li><li><a href="../article/price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li><li><a href="../article/chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li><li><a href="../article/drawing-tools.html">Strumenti di disegno e annotazioni</a></li><li><a href="../article/templates-workspaces.html">Template e workspace</a></li><li><a href="../article/quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Collegare le finestre con i gruppi colore</a></li><li><a href="../article/replay-data.html">Replay dei dati di mercato</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalizza lingua, tema e suoni di notifica</a></li><li><a href="../article/keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Riferimento delle scorciatoie da tastiera</a></li><li><a href="../article/multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Finestre della piattaforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (il tape)</a></li><li><a href="../article/advanced-dom.html">Finestra Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading e ordini <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading dal grafico</a></li><li><a href="../article/trading-panel-reference.html">Riferimento del pannello di trading: ogni pulsante e campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li><li><a href="../article/depth-of-market.html">Indicatore Depth of Market (DOM)</a></li><li><a href="../article/oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Finestra Ordini</a></li><li><a href="../article/portfolio-wallet.html">Portafoglio (Wallet)</a></li><li><a href="../article/risk-manager.html">Responsabile del rischio</a></li><li><a href="../article/trade-copier.html">Come configurare il Trade Copier</a></li><li><a href="../article/performance-analysis.html">Analisi delle performance (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concetti <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li><li><a href="../article/understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Capire la teoria dell&#x27;asta: squilibrio, aste incompiute, assorbimento</a></li><li><a href="../article/understanding-icebergs-absorption.html">Capire gli iceberg e l&#x27;assorbimento</a></li><li><a href="../article/understanding-vwap.html">Capire il VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Leggere un footprint: esempi svolti</a></li><li><a href="../article/glossary.html">Glossario dei termini di orderflow e della piattaforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicatori e analisi <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fondamenti degli indicatori</li><li><a href="../article/different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li><li><a href="../article/indicator-layout.html">Come cambiare il layout degli indicatori</a></li><li class="nav-sub">Indicatori Deep</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Media mobile</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regressione lineare</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum e oscillatori</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscillatore stocastico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilità e bande</li><li><a href="../article/bollinger-bands.html">Bande di Bollinger</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Deviazione standard</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume e delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Orderflow e asta</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Livelli e pattern</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Livelli importanti</a></li><li><a href="../article/absolute-levels.html">Livelli assoluti</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Overlay del grafico</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Testo sul grafico</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Dati e database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></li><li><a href="../article/delete-market-data.html">Eliminare i dati di mercato (metodo in-app e manuale)</a></li><li><a href="../article/download-data.html">Ri-scaricare i dati storici (strumento Download Data)</a></li><li><a href="../article/database-optimization.html">Ottimizzazione del database</a></li><li><a href="../article/database-problems.html">Correzione: problemi al database</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Risoluzione problemi e supporto <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Risoluzione: problemi di installazione e requisiti di base</a></li><li><a href="../article/installation-setup-failed.html">Risoluzione: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: una policy di controllo delle applicazioni blocca DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Soluzione: lo strumento di disegno Rettangolo non funziona</a></li><li><a href="../article/chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a></li><li><a href="../article/license-issues.html">Risolvere: problemi di licenza e attivazione</a></li><li><a href="../article/diagnostic-report.html">Report diagnostico: prima di contattare il supporto</a></li><li><a href="../article/get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account e fatturazione <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Gestire abbonamenti e fatturazione</a></li><li><a href="../article/move-to-new-computer.html">Spostare DeepCharts su un nuovo computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/charts-workspace.html">Grafici e workspace</a></div>
+<div class="article-head"><h1>La finestra del grafico</h1>
+<p class="article-desc">Tour completo della finestra del grafico di DeepCharts: controlli della barra del titolo, icone della toolbar, schede, barra inferiore, navigazione e menu del tasto destro.</p>
+<div class="meta-row">
+  <span class="badge b-beginner">Beginner</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 9 min read</span>
+  <a class="btn-pdf" href="../pdf/chart-window.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>La finestra del grafico è dove passerai la maggior parte del tuo tempo in DeepCharts. Ogni grafico dei prezzi si apre al suo interno, e ogni controllo di cui hai bisogno giorno per giorno — simbolo, timeframe, indicatori, disegni, trading — è raggiungibile dalla sua cornice senza aprire un menu separato.</p>
+<p>Questo articolo mappa ogni area della finestra del grafico, così sai cosa fa ogni icona, menu a discesa e pulsante e dove trovare l'impostazione che c'è dietro. Per le impostazioni che controllano come viene costruita la serie dei prezzi stessa, vedi <a href="./price-chart-settings.html">Impostazioni del grafico dei prezzi</a>; per gli stili di barra e gli interruttori di sessione, vedi <a href="./chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a>.</p>
+<h2 id="che-cos">Che cos'è</h2>
+<p>La finestra del grafico è il contenitore di uno o più grafici dei prezzi. Risponde alla domanda &quot;dove cambio X sul mio grafico?&quot; — il simbolo e il timeframe vivono nella barra del titolo, i controlli di visualizzazione e degli indicatori vivono nella fila di icone in alto a sinistra, gli strumenti di disegno vivono nella toolbar a sinistra, e i template rapidi più gli interruttori di trading vivono nella barra inferiore.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Una finestra grafico completa con un grafico a candele caricato (es. NQ, 5 Minute), annotata con richiami per la barra del titolo, la fila di icone in alto a sinistra, il riquadro OHLC, la toolbar di disegno a sinistra e la barra inferiore</div><div class="s-file">ID: <b class="s-id">dc-it-chart-window-01</b> · save as <code>dc-it-chart-window-01.png</code></div></div></div>
+<h2 id="quando-usarla">Quando usarla</h2>
+<ul>
+<li>Vuoi aprire, cambiare o confrontare strumenti su un grafico.</li>
+<li>Devi trovare dove vive un controllo — stile delle barre, indicatori, disegni, screenshot, interruttore di trading.</li>
+<li>Vuoi organizzare più grafici come schede o finestre separate.</li>
+<li>Vuoi collegare più grafici in modo che seguano lo stesso simbolo.</li>
+</ul>
+<h2 id="avvio-rapido">Avvio rapido</h2>
+<ol>
+<li>Nella barra principale, scegli <strong>New → Price Chart</strong>.</li>
+<li>Nella finestra di dialogo <strong>Select Instrument</strong>, scegli un exchange nella barra laterale sinistra, seleziona un simbolo (per esempio <strong>NQ</strong>) e fai clic su <strong>Select</strong>.</li>
+<li>Attendi che la barra di avanzamento <strong>Building chart</strong> finisca — DeepCharts sta caricando o scaricando i dati tick.</li>
+<li>Usa i tre menu a discesa della barra del titolo per regolare il grafico: il simbolo (apre lo stesso selettore di strumenti), l'intervallo dei dati (per esempio <strong>10D - BT</strong>) e il timeframe (per esempio <strong>5 Minute</strong>).</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">La finestra di dialogo Select Instrument con la barra laterale degli exchange a sinistra, CME selezionato, la lista dei simboli con NQ evidenziato e i pulsanti New / Cancel / Select visibili</div><div class="s-file">ID: <b class="s-id">dc-it-chart-window-02</b> · save as <code>dc-it-chart-window-02.png</code></div></div></div>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Il selettore di strumenti elenca solo gli exchange che hai sottoscritto in <strong>Options → Symbol Manage</strong>. Se il selettore appare vuoto, sottoscrivi prima un exchange — vedi <a href="./symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a>.</p>
+</blockquote>
+<h2 id="come-leggerla">Come leggerla</h2>
+<p><strong>Il riquadro in alto a sinistra.</strong> Con <strong>Bar values</strong> attivo (lo è per impostazione predefinita), l'angolo in alto a sinistra mostra <strong>O: H: L: C:</strong> più tre campi di volume per la barra su cui passi il mouse (o l'ultima barra quando il cursore è fuori dal grafico): <strong>%V</strong> è la variazione percentuale dalla chiusura del giorno precedente; <strong>ΣV</strong> e <strong>ΔV</strong> sono i dati di volume della barra <span class="confirm-flag">CONFIRM: exact definitions of ΣV and ΔV — likely bar total volume and bar delta</span>. I campi non mostrano valori mentre il cursore non è sopra una barra — è normale.</p>
+<p><strong>Il badge di stato.</strong> Mentre un grafico si costruisce, la barra principale mostra un badge accanto all'icona di aiuto: <strong>LDT</strong> significa che vengono caricati dati già presenti su disco; <strong>DWT</strong> significa che i dati vengono scaricati dal server del feed. Un grafico bloccato su <strong>DWT</strong> di solito indica un problema di connessione, non di grafico.</p>
+<p><strong>Il banner dei dati ritardati.</strong> Un banner arancione come &quot;Connect dxFeed - 15m to see delayed data&quot; significa che il grafico non ha una connessione in tempo reale e sta usando il feed ritardato — vedi <a href="./free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a>.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Angolo in alto a sinistra di un grafico ingrandito, con il riquadro OHLC con valori reali (O H L C, %V, ΣV, ΔV) mentre si passa il mouse su una candela</div><div class="s-file">ID: <b class="s-id">dc-it-chart-window-03</b> · save as <code>dc-it-chart-window-03.png</code></div></div></div>
+<h2 id="riferimento-impostazioni">Riferimento impostazioni</h2>
+<h3 id="controlli-della-barra-del-titolo">Controlli della barra del titolo</h3>
+<table>
+<thead>
+<tr>
+<th>Controllo</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menu a discesa del simbolo (es. <strong>NQ-202609</strong>)</td>
+<td>Apre <strong>Select Instrument</strong> per cambiare il simbolo del grafico sul posto.</td>
+</tr>
+<tr>
+<td>Menu a discesa dell'intervallo dati (es. <strong>10D - BT</strong>)</td>
+<td>Quanta storia caricare: 5–60 giorni su dati tick, 3 mesi–10 anni su dati a minuti, oppure <strong>Custom</strong>. <strong>BT</strong> = Based on Tick, <strong>BM</strong> = Based on Minute.</td>
+</tr>
+<tr>
+<td>Menu a discesa del timeframe (es. <strong>5 Minute</strong>)</td>
+<td>Il tipo e la dimensione della barra — secondi/minuti/giornaliero fino a Renko, Range, Volume, Trade, Point &amp; Figure e barre Delta. Ogni riga ha un ingranaggio che apre un editor di preset (giorni da caricare, base tick/minuti, parametro della barra). Vedi <a href="./price-chart-settings.html">Impostazioni del grafico dei prezzi</a> per il significato di ogni tipo di barra.</td>
+</tr>
+<tr>
+<td>Icona apri-in-nuova-finestra</td>
+<td>Stacca la scheda del grafico attivo in una finestra autonoma.</td>
+</tr>
+<tr>
+<td><strong>+</strong> verde</td>
+<td>Aggiunge una nuova scheda grafico (apre prima <strong>Select Instrument</strong>).</td>
+</tr>
+<tr>
+<td>Icona link (quadrato, a sinistra di riduci a icona)</td>
+<td>Menu di collegamento dei grafici: <strong>None link</strong>, <strong>Link 1–8</strong> (gruppi di colore) e <strong>$ Link Trading Symbol</strong>. I grafici che condividono un colore seguono i cambi di simbolo l'uno dell'altro — solo il simbolo, non il timeframe. Vedi <a href="./link-windows.html">Collegare le finestre con i gruppi colore</a>.</td>
+</tr>
+</tbody>
+</table>
+<p>Prova i gruppi di collegamento dal vivo qui sotto — imposta entrambi i mini grafici sullo stesso colore, cambia il simbolo su uno e guarda l'altro seguirlo.</p>
+<div class="widget-mount" data-widget="link-groups-demo"></div>
+<h3 id="fila-di-icone-in-alto-a-sinistra">Fila di icone in alto a sinistra</h3>
+<table>
+<thead>
+<tr>
+<th>Icona</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>≡</strong></td>
+<td>Mostra/nasconde la striscia della toolbar di disegno a sinistra.</td>
+</tr>
+<tr>
+<td>Icona a due candele</td>
+<td>Menu a discesa dello stile delle barre: Candlestick / Line / OHLC, modificatori Equi-Volume e Delta-Volume, ETH Session, Auction filter, Bar values, Countdown timer e la voce <strong>Price Settings</strong>. Riferimento completo: <a href="./chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a>.</td>
+</tr>
+<tr>
+<td>Icona a grafico a barre</td>
+<td>Gestore degli indicatori per grafico (vedi sotto).</td>
+</tr>
+<tr>
+<td>Ingranaggio</td>
+<td>Due opzioni: <strong>Duplicate chart</strong> (apre una copia esatta — stesse impostazioni e indicatori — come nuovo grafico) e <strong>Always on top</strong> (la finestra resta sopra ogni altra applicazione finché non viene disattivata).</td>
+</tr>
+<tr>
+<td><strong>$</strong></td>
+<td>Interruttore <strong>Trading Enabled</strong> (Ctrl Alt T). Diventa verde quando è armato. Disattivarlo nasconde anche il pannello di trading. Vedi <a href="./trading-from-chart.html">Trading dal grafico</a>.</td>
+</tr>
+<tr>
+<td>Fotocamera</td>
+<td>Scatta uno screenshot del grafico. Il comportamento segue <strong>Options → Settings → General → Various → Screenshot Mode</strong>: <strong>Auto Save</strong> (salva nella cartella configurata), <strong>Save Dialog</strong> (chiede dove), <strong>Copy</strong> (negli appunti) o <strong>Copy and Auto Save</strong>.</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Le sei icone in alto a sinistra del grafico ingrandite, in ordine: hamburger, due candele, grafico a barre, ingranaggio, simbolo del dollaro (stato verde/armato), fotocamera</div><div class="s-file">ID: <b class="s-id">dc-it-chart-window-04</b> · save as <code>dc-it-chart-window-04.png</code></div></div></div>
+<h3 id="gestire-gli-indicatori">Gestire gli indicatori</h3>
+<p>Fai clic sull'icona a grafico a barre per aprire il pannello <strong>Indicators</strong>. Ogni riga di indicatore attivo ha un'icona a cestino (rimuovi), un'icona a occhio (nascondi/mostra) e un'icona a ingranaggio (impostazioni). Gli indicatori sono raggruppati per <strong>Chart Area</strong> — la banda orizzontale in cui vengono renderizzati; ridimensiona un'area trascinando la linea di divisione tra le aree.</p>
+<p>Fai clic sul pulsante <strong>Indicators</strong> in quel pannello per aprire l'<strong>Indicator List</strong> completa: schede di categoria a sinistra (<strong>All, Volume, Statistics, Oscillator, Overlay, Utility, Third</strong>), una casella di ricerca, <strong>+</strong> per aggiungere e <strong>−</strong> per rimuovere, un ingranaggio per le impostazioni e una maniglia a tre linee per riordinare tramite trascinamento. Vedi <a href="./indicator-layout.html">Come cambiare il layout degli indicatori</a> per disporre gli indicatori tra le aree del grafico.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">La finestra Indicator List con le schede di categoria a sinistra, la casella di ricerca in alto, la lista scorrevole degli indicatori con le icone + e il pannello destro con gli indicatori attivi</div><div class="s-file">ID: <b class="s-id">dc-it-chart-window-05</b> · save as <code>dc-it-chart-window-05.png</code></div></div></div>
+<h3 id="schede-grafico-compact-view-e-group-mode">Schede grafico (Compact View e Group Mode)</h3>
+<p>DeepCharts offre due modi per gestire più grafici, selezionabili in <strong>Options → Settings → General → Chart → Chart tabs compact mode</strong>:</p>
+<ul>
+<li><strong>Compact View</strong> (modalità compatta attiva): i grafici appaiono come schede in cima alla finestra. Fai clic sul <strong>+</strong> verde per aggiungere una scheda; la scheda attiva è evidenziata in verde. Con due o più schede i tre menu a discesa della barra del titolo vengono sostituiti dalla striscia delle schede — fai clic sulla scheda attiva per aprire un popover con i menu a discesa di simbolo, intervallo dati e timeframe più <strong>Detach</strong> e <strong>Close</strong>.</li>
+<li><strong>Group Mode</strong> (modalità compatta disattiva): tutti i grafici aperti sono elencati centralmente in un pannello di gruppo. Fai clic su <strong>Add Chart</strong> per aggiungerne uno, sull'icona a freccia per estrarre un grafico in una finestra dedicata, o sull'icona <strong>X</strong> per rimuoverlo.</li>
+</ul>
+<p>Ogni scheda mantiene il proprio pannello di trading e il proprio stato di DOM Trading. Alla chiusura di una finestra grafico staccata appare la domanda &quot;Are you sure to close the window?&quot; prima della chiusura.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Una finestra grafico in modalità schede compatte con due schede (&quot;NQ 5 m&quot; attiva in verde, seconda scheda inattiva) e il popover della scheda aperto con i tre menu a discesa più i pulsanti Detach e Close</div><div class="s-file">ID: <b class="s-id">dc-it-chart-window-06</b> · save as <code>dc-it-chart-window-06.png</code></div></div></div>
+<h3 id="barra-inferiore">Barra inferiore</h3>
+<table>
+<thead>
+<tr>
+<th>Controllo</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pulsante <strong>Templates</strong></td>
+<td>Scorciatoia per clic con il tasto destro → <strong>Template → Load</strong> — apre il selettore di file Local/Cloud/Shared. Vedi <a href="./templates-workspaces.html">Template e workspace</a>.</td>
+</tr>
+<tr>
+<td>Pulsanti radio dei template rapidi (<strong>OF-VP</strong>, <strong>OF-B/A</strong>, <strong>D-VP</strong>, <strong>D-DP</strong>, <strong>D-VL</strong>, <strong>W-VP</strong>, <strong>W-DP</strong>, <strong>C-VP</strong>)</td>
+<td>Preset di indicatori integrati a un clic (non modificabili dall'utente). Analisi completa: <a href="./quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a>.</td>
+</tr>
+<tr>
+<td>Pulsante radio <strong>DOM Trading</strong></td>
+<td>Passa il grafico alla scala di click-trading sul grafico. Vedi <a href="./dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a>.</td>
+</tr>
+<tr>
+<td>Interruttore <strong>Trading panel</strong></td>
+<td>Mostra/nasconde il pannello di inserimento ordini sul lato destro del grafico.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="navigazione">Navigazione</h3>
+<ul>
+<li><strong>Asse X:</strong> scorri la rotella del mouse, oppure fai clic sinistro sulla timeline e trascina. Fai clic con il tasto destro del mouse sull'asse X per attivare lo scorrimento automatico, in modo che il grafico avanzi con ogni nuova barra. Torna alla barra corrente con un doppio clic o con il pulsante play in basso a destra.</li>
+<li><strong>Asse Y:</strong> fai clic con il tasto destro del mouse sull'asse dei prezzi per le sue opzioni, incluso lo scorrimento automatico (l'asse segue il prezzo quando esce dalla vista) e la modalità di movimento: <strong>Automatic Detection</strong>, <strong>Move Axis Range</strong> (il trascinamento con clic sinistro muove il grafico verticalmente) o <strong>Resize Axis Range</strong> (il trascinamento con clic sinistro riscala i prezzi). La modalità di movimento predefinita si imposta in <strong>Options → Settings → General → Chart</strong>.</li>
+</ul>
+<p>Se lo zoom smette di rispondere, vedi <a href="./chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a>.</p>
+<h3 id="menu-del-tasto-destro">Menu del tasto destro</h3>
+<table>
+<thead>
+<tr>
+<th>Voce (scorciatoia)</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pointer</strong> (Alt P) / <strong>Crosshair</strong> (Alt C) / <strong>Hand</strong> (Alt H)</td>
+<td>Modalità del cursore: selezione, mirino, trascinamento per la panoramica.</td>
+</tr>
+<tr>
+<td><strong>Global Crosshair</strong> (Alt G)</td>
+<td>Mirino sincronizzato tra i grafici dello stesso strumento.</td>
+</tr>
+<tr>
+<td><strong>Zoom Range</strong> (Alt R) / <strong>Zoom Out</strong></td>
+<td>Fai clic sui punti di inizio e fine per ingrandire una sezione; Zoom Out la ripristina.</td>
+</tr>
+<tr>
+<td><strong>Crosshair Window</strong></td>
+<td>Elenca tutto ciò che è attivo sul grafico con il suo chart ID (la serie dei prezzi è sempre chart ID 1), gli ID e i sotto-ID di ogni indicatore, più le statistiche del riquadro. Utile quando un indicatore richiede il chart ID di un altro indicatore.</td>
+</tr>
+<tr>
+<td><strong>Drawing Objects ▸</strong> / <strong>Drawing Utilities ▸</strong> / <strong>Drawing Tool From Other Chart</strong></td>
+<td>Gli strumenti di annotazione — riferimento completo: <a href="./drawing-tools.html">Strumenti di disegno e annotazioni</a>.</td>
+</tr>
+<tr>
+<td><strong>Trading Enabled</strong> (Ctrl Alt T) / <strong>Show Trading Panel</strong> (Ctrl Alt P)</td>
+<td>Gli stessi interruttori dell'icona <strong>$</strong> e dell'interruttore della barra inferiore.</td>
+</tr>
+<tr>
+<td><strong>Show Historical Orders</strong> (Ctrl Alt H)</td>
+<td>Contrassegna sul grafico i tuoi ingressi e uscite passati con delle frecce.</td>
+</tr>
+<tr>
+<td><strong>Clear Historical Account Report</strong></td>
+<td>Rimuove la cronologia di trading del conto selezionato nel pannello di trading.</td>
+</tr>
+<tr>
+<td><strong>Trading Settings</strong></td>
+<td>Opzioni del grafico relative al trading <span class="confirm-flag">CONFIRM: contents of the Trading Settings dialog</span>.</td>
+</tr>
+<tr>
+<td><strong>Autotrading ▸</strong></td>
+<td><strong>Execute Backtest / Reset Backtest / Show Report / Save Report</strong> — il motore di backtest usato con Deep Pattern Builder. Vedi <a href="./deep-pattern-builder.html">Deep Pattern Builder</a>.</td>
+</tr>
+<tr>
+<td><strong>Rebuild Chart</strong> (Ctrl R)</td>
+<td>Aggiorna e ricarica il grafico — un primo passo rapido e innocuo quando la visualizzazione sembra difettosa.</td>
+</tr>
+<tr>
+<td><strong>Template ▸</strong></td>
+<td><strong>Load</strong> / <strong>Save As</strong> del template del grafico. Vedi <a href="./templates-workspaces.html">Template e workspace</a>.</td>
+</tr>
+<tr>
+<td><strong>Indicators</strong> (Ctrl I)</td>
+<td>Apre il gestore degli indicatori.</td>
+</tr>
+<tr>
+<td><strong>Properties</strong> (Ctrl P)</td>
+<td>Finestra di dialogo dell'aspetto per grafico (sotto).</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-warning">
+<p><strong>Attenzione:</strong> <strong>Clear Historical Account Report</strong> elimina in modo permanente la cronologia dello Strategy Report di quel conto. Usalo solo se sei sicuro di non aver più bisogno dei dati.</p>
+</blockquote>
+<h3 id="chart-properties-ctrl-p">Chart Properties (Ctrl P)</h3>
+<p>Impostazioni di aspetto per grafico, raggruppate come nella finestra di dialogo:</p>
+<ul>
+<li><strong>CHART AREA</strong> — <strong>Back Color</strong>, <strong>Border Color</strong>, <strong>Text Size</strong> (predefinito 12), <strong>Text Color</strong>, colore <strong>Crosshair</strong>, <strong>Series Marker Margin (px)</strong> (predefinito 6).</li>
+<li><strong>GRID</strong> — <strong>Enable</strong> (predefinito disattivo), <strong>Line Color</strong>, <strong>Line Style</strong> (predefinito Dot).</li>
+<li><strong>USER ANNOTATIONS</strong> — <strong>Anchor Points - Enable Static Color</strong> e il selettore di colore statico per i punti di ancoraggio dei disegni.</li>
+<li><strong>EXTRA</strong> — <strong>Name</strong>: dà un nome alla finestra del grafico.</li>
+</ul>
+<h2 id="suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</h2>
+<ul>
+<li><strong>Nulla viene salvato automaticamente.</strong> DeepCharts non salva automaticamente i layout dei grafici. Salva un template (un grafico) o un workspace (schermo intero) prima di chiudere, altrimenti il prossimo avvio parte dai valori predefiniti — vedi <a href="./templates-workspaces.html">Template e workspace</a>.</li>
+<li><strong>Duplica invece di ricostruire.</strong> Icona a ingranaggio → <strong>Duplicate chart</strong> ti dà una copia esatta, indicatori inclusi — più veloce che configurare a mano un secondo grafico.</li>
+<li><strong>Selettore di strumenti vuoto?</strong> Nessun exchange è sottoscritto in <strong>Options → Symbol Manage</strong> — il selettore mostra solo gli exchange sottoscritti.</li>
+<li><strong>Il grafico sembra difettoso?</strong> Prima fai clic con il tasto destro del mouse → <strong>Rebuild Chart</strong> (Ctrl R). È rapido e innocuo.</li>
+<li><strong>Grafici fuori sincrono con quelli di un collega?</strong> Controlla l'interruttore di sessione ETH/RTH e il tipo di barra prima di confrontare — vedi <a href="./chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a>.</li>
+<li><strong>Mantieni un grafico visibile sopra le altre app</strong> con icona a ingranaggio → <strong>Always on top</strong> — utile su un singolo monitor. Per i layout multi-monitor vedi <a href="./multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a>.</li>
+</ul>
+<h2 id="articoli-correlati">Articoli correlati</h2>
+<ul>
+<li><a href="./first-chart.html">Apri il tuo primo grafico</a></li>
+<li><a href="./price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li>
+<li><a href="./chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li>
+<li><a href="./drawing-tools.html">Strumenti di disegno e annotazioni</a></li>
+<li><a href="./templates-workspaces.html">Template e workspace</a></li>
+<li><a href="./link-windows.html">Collegare le finestre con i gruppi colore</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./data-delayed-lagging.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Correzione: grafici in ritardo o dati ritardati (checklist)</div></a><a class="next" href="./price-chart-settings.html"><div class="pn-lbl">Next →</div><div class="pn-title">Impostazioni del grafico dei prezzi</div></a></div>
+    <div class="footer">Centro Assistenza DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#che-cos">Che cos&#x27;è</a></li><li class="lv2"><a href="#quando-usarla">Quando usarla</a></li><li class="lv2"><a href="#avvio-rapido">Avvio rapido</a></li><li class="lv2"><a href="#come-leggerla">Come leggerla</a></li><li class="lv2"><a href="#riferimento-impostazioni">Riferimento impostazioni</a></li><li class="lv3"><a href="#controlli-della-barra-del-titolo">Controlli della barra del titolo</a></li><li class="lv3"><a href="#fila-di-icone-in-alto-a-sinistra">Fila di icone in alto a sinistra</a></li><li class="lv3"><a href="#gestire-gli-indicatori">Gestire gli indicatori</a></li><li class="lv3"><a href="#schede-grafico-compact-view-e-group-mode">Schede grafico (Compact View e Group Mode)</a></li><li class="lv3"><a href="#barra-inferiore">Barra inferiore</a></li><li class="lv3"><a href="#navigazione">Navigazione</a></li><li class="lv3"><a href="#menu-del-tasto-destro">Menu del tasto destro</a></li><li class="lv3"><a href="#chart-properties-ctrl-p">Chart Properties (Ctrl P)</a></li><li class="lv2"><a href="#suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</a></li><li class="lv2"><a href="#articoli-correlati">Articoli correlati</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-it.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

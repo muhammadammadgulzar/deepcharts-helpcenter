@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Come gestire il rollover dei simboli — Centro Assistenza DeepDOM</title>
+<meta name="description" content="Questo articolo spiega cos&#x27;è il rollover dei contratti future e come gestire il rollover dei simboli in DeepDOM, così che i tuoi grafici e strumenti facciano sempre riferimento alla scadenza corretta.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/installation-and-first-configuration.html">Primi passi</a><a href="../../../it/article/get-help.html">Assistenza</a><a class="kb-switch" href="../../../it/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/how-to-manage-symbol-rollover.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemi Comuni <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemi di installazione</a></li><li><a href="../article/licence-issues.html">Problemi di licenza</a></li><li><a href="../article/symbol-subscription-issues.html">Problemi di sottoscrizione dei simboli</a></li><li><a href="../article/cache-issues-deepdom.html">Problemi di cache</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Come Fare <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installazione e prima configurazione</a></li><li><a href="../article/general-settings.html">Impostazioni generali</a></li><li><a href="../article/how-to-add-a-new-connection.html">Come aggiungere una nuova connessione</a></li><li><a href="../article/how-to-add-markets-correctly.html">Come aggiungere i mercati correttamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configurazione utente — Template, Workspace, configurazione degli strumenti</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Come inserire le notifiche sonore</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Come personalizzare lingua e tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html" class="active">Come gestire il rollover dei simboli</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Finestra degli ordini</a></li><li><a href="../article/trading-from-the-chart.html">Trading dal grafico</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio e Responsabile del rischio</a></li><li><a href="../article/simulation-environment.html">Ambiente di simulazione</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicatori <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html">Volume Profile</a></li><li><a href="../article/stop-run.html">Stop Run</a></li><li><a href="../article/absorption.html">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funzionalità <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay dei dati tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicatori Deep <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Deep Iceberg (Rilevatore di ordini Iceberg)</a></li><li><a href="../article/deep-reload.html">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/how-to.html">Come Fare</a></div>
+<div class="article-head"><h1>Come gestire il rollover dei simboli</h1>
+<p class="article-desc">Questo articolo spiega cos&#x27;è il rollover dei contratti future e come gestire il rollover dei simboli in DeepDOM, così che i tuoi grafici e strumenti facciano sempre riferimento alla scadenza corretta.</p>
+<div class="meta-row">
+  <span class="badge b-beginner">Beginner</span>
+  <span class="badge">How-to</span>
+  <span class="badge">🕒 2 min read</span>
+  <a class="btn-pdf" href="../pdf/how-to-manage-symbol-rollover.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Questo articolo spiega cos'è il rollover dei contratti future e come gestire il rollover dei simboli in DeepDOM, così che i tuoi grafici e strumenti facciano sempre riferimento alla scadenza corretta.</p>
+<h2 id="che-cos-il-rollover">Che cos'è il rollover?</h2>
+<p>Nei mercati dei futures, il rollover è il processo di trasferimento di una posizione aperta da un contratto in scadenza a un contratto con una data di scadenza successiva. I trader rollano le posizioni in avanti per evitare la liquidazione automatica o la consegna che avviene alla scadenza.</p>
+<h3 id="rollover-tecnico">Rollover tecnico</h3>
+<p>Il rollover tecnico avviene in corrispondenza o in prossimità della data di scadenza ufficiale definita dall'exchange. È legato all'ultimo giorno di negoziazione del contratto.</p>
+<h3 id="rollover-per-volume">Rollover per volume</h3>
+<p>Il rollover per volume avviene prima, quando il volume di scambi sul contratto successivo supera quello sul contratto in scadenza. Molti trader passano al nuovo contratto in questo momento per beneficiare di una migliore liquidità e di spread più stretti.</p>
+<h2 id="procedura-per-eseguire-il-rollover-in-deepdom">Procedura per eseguire il rollover in DeepDOM</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Come gestire il rollover dei simboli — Procedura per eseguire il rollover in DeepDOM (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-how-to-manage-symbol-rollover-01</b> · save as <code>dd-it-how-to-manage-symbol-rollover-01.png</code></div></div></div>
+<p>Vai su Options &gt; Symbol Rollover .</p>
+<p>Esegui il rollover solo per i mercati evidenziati nel Symbol Rollover</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Come gestire il rollover dei simboli — Procedura per eseguire il rollover in DeepDOM (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-how-to-manage-symbol-rollover-02</b> · save as <code>dd-it-how-to-manage-symbol-rollover-02.png</code></div></div></div>
+<p>Esegui il rollover per tutti i mercati correlati, inclusi i contratti minori come MINI e MICRO .</p>
+<p>Se un contratto MICRO non è elencato automaticamente, apri una Heatmap o un'altra finestra di DeepDOM per quello strumento e ricontrolla la finestra Symbol Rollover.</p>
+<p>Dopo questi passaggi, la scadenza del contratto usata da DeepDOM per i simboli selezionati viene aggiornata correttamente.</p>
+<h3 id="ripristinare-una-scadenza-precedente">Ripristinare una scadenza precedente</h3>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Come gestire il rollover dei simboli — Ripristinare una scadenza precedente (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-how-to-manage-symbol-rollover-03</b> · save as <code>dd-it-how-to-manage-symbol-rollover-03.png</code></div></div></div>
+<p>Disconnetti il tuo feed e chiudi il workspace</p>
+<p>Vai su Options &gt; Symbol Management .</p>
+<p>Fai clic su Expert Mode .</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Come gestire il rollover dei simboli — Ripristinare una scadenza precedente (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-how-to-manage-symbol-rollover-04</b> · save as <code>dd-it-how-to-manage-symbol-rollover-04.png</code></div></div></div>
+<p>Nella Symbol List (colonna centrale), individua i mercati con la scadenza errata (MAJOR, MINI, MICRO).</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Come gestire il rollover dei simboli — Ripristinare una scadenza precedente (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-how-to-manage-symbol-rollover-05</b> · save as <code>dd-it-how-to-manage-symbol-rollover-05.png</code></div></div></div>
+<p>Seleziona lo strumento con la scadenza sbagliata e fai clic su Modify .</p>
+<p>Nella sezione Advanced, riporta il mese di scadenza al contratto precedente.</p>
+<p>Chiudi la finestra Symbol Management.</p>
+<p>Riavvia DeepDOM senza connettere alcun flusso di dati.</p>
+<p>Quando riconnetterai i feed dati dopo il riavvio, DeepDOM userà il mese di scadenza ripristinato per quei simboli.</p>
+<h3 id="hai-ancora-problemi">Hai ancora problemi?</h3>
+<p>Il nostro team di supporto è disponibile 24 ore su 24, 7 giorni su 7, pronto ad aiutarti con qualsiasi problema tu possa incontrare. Quando ci contatti, includi:</p>
+<p>Uno screenshot del problema.</p>
+<p>Una breve descrizione di ciò che stavi cercando di fare.</p>
+<p>Ticket di supporto (risposta più rapida): visita www.deepcharts.com e crea un ticket di supporto direttamente sul nostro sito.</p>
+<p>Supporto via email: puoi anche scriverci a support@deepcharts.com. Tieni presente che le risposte via email possono richiedere un po' più di tempo rispetto a un ticket di supporto.</p>
+</article>
+<div class="pn"><a class="prev" href="./how-to-customize-language-and-theme.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Come personalizzare lingua e tema</div></a><a class="next" href="./orders-window-deepdom.html"><div class="pn-lbl">Next →</div><div class="pn-title">Finestra degli ordini</div></a></div>
+    <div class="footer">Centro Assistenza DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#che-cos-il-rollover">Che cos&#x27;è il rollover?</a></li><li class="lv3"><a href="#rollover-tecnico">Rollover tecnico</a></li><li class="lv3"><a href="#rollover-per-volume">Rollover per volume</a></li><li class="lv2"><a href="#procedura-per-eseguire-il-rollover-in-deepdom">Procedura per eseguire il rollover in DeepDOM</a></li><li class="lv3"><a href="#ripristinare-una-scadenza-precedente">Ripristinare una scadenza precedente</a></li><li class="lv3"><a href="#hai-ancora-problemi">Hai ancora problemi?</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-it-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>

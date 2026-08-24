@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Market Scanner — Centro Assistenza DeepCharts</title>
+<meta name="description" content="Osserva più simboli in un&#x27;unica tabella con Open, High, Low, Close e variazione percentuale, gestisci l&#x27;elenco dei simboli scansionati e filtra la tabella per vedere solo i maggiori movimenti.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/quick-start-first-trade.html">Guida rapida</a><a href="../article/get-help.html">Assistenza</a><a class="kb-switch" href="../../it/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/scanner-window.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primi passi <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Benvenuto in DeepCharts: tour della piattaforma</a></li><li><a href="../article/system-requirements.html">Requisiti di sistema</a></li><li><a href="../article/install-deepcharts.html">Come installare DeepCharts e attivare la tua licenza</a></li><li><a href="../article/free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a></li><li><a href="../article/buy-data-feed.html">Come acquistare un feed dati e ottenere le tue credenziali</a></li><li><a href="../article/first-chart.html">Apri il tuo primo grafico</a></li><li><a href="../article/simulation-accounts.html">Conti di trading e simulazione</a></li><li><a href="../article/quick-start-first-trade.html">Avvio rapido: dall&#x27;installazione alla tua prima operazione</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connessioni e feed dati <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configurazione</li><li><a href="../article/compatibility-guide.html">Broker, prop firm e feed dati supportati</a></li><li><a href="../article/connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li><li><a href="../article/sign-market-data-agreement.html">Firma il contratto sui dati di mercato</a></li><li><a href="../article/connect-dxfeed.html">Come connettere un feed dati dxFeed</a></li><li><a href="../article/connect-rithmic.html">Come collegare un feed dati Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Connettere Rithmic con il plugin RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Collega qualsiasi conto prop firm Rithmic (tabella dei server)</a></li><li><a href="../article/connect-apex.html">Connettere Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connettere un conto dxFeed di una prop firm (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Come connettere CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connettere Interactive Brokers (solo esecuzione)</a></li><li><a href="../article/competition-connect.html">Competizione DeepCharts: iscriviti e connettiti</a></li><li><a href="../article/end-of-day-data.html">Connettere i dati storici (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Gestire e passare da una connessione feed all&#x27;altra</a></li><li class="nav-sub">Risoluzione dei problemi</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Correzione: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Correzione: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Correzione: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Correzione: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Correzione: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Correzione: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Correzione: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Correzione: connessione persa all&#x27;apertura di un grafico</a></li><li><a href="../article/symbol-subscription-issue.html">Correzione: problema di sottoscrizione dei simboli</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: l&#x27;app va in crash salvando le impostazioni del feed</a></li><li><a href="../article/gaps-in-price.html">Correzione: gap di prezzo sui grafici</a></li><li><a href="../article/data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Grafici e workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La finestra del grafico</a></li><li><a href="../article/price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li><li><a href="../article/chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li><li><a href="../article/drawing-tools.html">Strumenti di disegno e annotazioni</a></li><li><a href="../article/templates-workspaces.html">Template e workspace</a></li><li><a href="../article/quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Collegare le finestre con i gruppi colore</a></li><li><a href="../article/replay-data.html">Replay dei dati di mercato</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalizza lingua, tema e suoni di notifica</a></li><li><a href="../article/keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Riferimento delle scorciatoie da tastiera</a></li><li><a href="../article/multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Finestre della piattaforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (il tape)</a></li><li><a href="../article/advanced-dom.html">Finestra Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li><li><a href="../article/scanner-window.html" class="active">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading e ordini <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading dal grafico</a></li><li><a href="../article/trading-panel-reference.html">Riferimento del pannello di trading: ogni pulsante e campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li><li><a href="../article/depth-of-market.html">Indicatore Depth of Market (DOM)</a></li><li><a href="../article/oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Finestra Ordini</a></li><li><a href="../article/portfolio-wallet.html">Portafoglio (Wallet)</a></li><li><a href="../article/risk-manager.html">Responsabile del rischio</a></li><li><a href="../article/trade-copier.html">Come configurare il Trade Copier</a></li><li><a href="../article/performance-analysis.html">Analisi delle performance (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concetti <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li><li><a href="../article/understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Capire la teoria dell&#x27;asta: squilibrio, aste incompiute, assorbimento</a></li><li><a href="../article/understanding-icebergs-absorption.html">Capire gli iceberg e l&#x27;assorbimento</a></li><li><a href="../article/understanding-vwap.html">Capire il VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Leggere un footprint: esempi svolti</a></li><li><a href="../article/glossary.html">Glossario dei termini di orderflow e della piattaforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicatori e analisi <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fondamenti degli indicatori</li><li><a href="../article/different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li><li><a href="../article/indicator-layout.html">Come cambiare il layout degli indicatori</a></li><li class="nav-sub">Indicatori Deep</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Media mobile</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regressione lineare</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum e oscillatori</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscillatore stocastico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilità e bande</li><li><a href="../article/bollinger-bands.html">Bande di Bollinger</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Deviazione standard</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume e delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Orderflow e asta</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Livelli e pattern</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Livelli importanti</a></li><li><a href="../article/absolute-levels.html">Livelli assoluti</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Overlay del grafico</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Testo sul grafico</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Dati e database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></li><li><a href="../article/delete-market-data.html">Eliminare i dati di mercato (metodo in-app e manuale)</a></li><li><a href="../article/download-data.html">Ri-scaricare i dati storici (strumento Download Data)</a></li><li><a href="../article/database-optimization.html">Ottimizzazione del database</a></li><li><a href="../article/database-problems.html">Correzione: problemi al database</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Risoluzione problemi e supporto <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Risoluzione: problemi di installazione e requisiti di base</a></li><li><a href="../article/installation-setup-failed.html">Risoluzione: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: una policy di controllo delle applicazioni blocca DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Soluzione: lo strumento di disegno Rettangolo non funziona</a></li><li><a href="../article/chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a></li><li><a href="../article/license-issues.html">Risolvere: problemi di licenza e attivazione</a></li><li><a href="../article/diagnostic-report.html">Report diagnostico: prima di contattare il supporto</a></li><li><a href="../article/get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account e fatturazione <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Gestire abbonamenti e fatturazione</a></li><li><a href="../article/move-to-new-computer.html">Spostare DeepCharts su un nuovo computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/platform-windows.html">Finestre della piattaforma</a></div>
+<div class="article-head"><h1>Market Scanner</h1>
+<p class="article-desc">Osserva più simboli in un&#x27;unica tabella con Open, High, Low, Close e variazione percentuale, gestisci l&#x27;elenco dei simboli scansionati e filtra la tabella per vedere solo i maggiori movimenti.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 8 min read</span>
+  <a class="btn-pdf" href="../pdf/scanner-window.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Il Market Scanner è una tabella di quotazioni compatta: una riga per simbolo, con <strong>Open</strong>, <strong>High</strong>, <strong>Low</strong>, <strong>Close</strong> e una cella di variazione percentuale che si aggiorna dal tuo feed dati in tempo reale. Ti offre una panoramica del mercato senza dover aprire un grafico separato per ogni strumento che segui.</p>
+<p>Questo riferimento copre l'apertura dello Scanner, la gestione del suo elenco di simboli, il lavoro con le risoluzioni, il filtro di ranking e ogni impostazione delle sue finestre di dialogo.</p>
+<h2 id="che-cos">Che cos'è</h2>
+<p>Lo Scanner risponde alla domanda &quot;come stanno andando tutti i miei mercati in questo momento?&quot; in un'unica finestra. Ogni simbolo che aggiungi diventa una riga che mostra <strong>Symbol</strong>, <strong>Open</strong>, <strong>High</strong>, <strong>Low</strong>, <strong>Close</strong> e <strong>%</strong> (variazione percentuale) di quello strumento per la risoluzione configurata. La finestra è liberamente ridimensionabile, quindi funziona bene sia come striscia sottile su un monitor laterale sia come quadro quotazioni a schermo intero.</p>
+<p>Lo Scanner legge dallo stesso feed in tempo reale dei tuoi grafici. Se il feed si disconnette, la tabella smette di aggiornarsi — vedi le note di risoluzione dei problemi qui sotto.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra dello Scanner con due righe (ES e NQ) che mostrano le colonne Symbol, Open, High, Low, Close e %, con le celle di variazione percentuale evidenziate</div><div class="s-file">ID: <b class="s-id">dc-it-scanner-window-01</b> · save as <code>dc-it-scanner-window-01.png</code></div></div></div>
+<h2 id="quando-usarlo">Quando usarlo</h2>
+<ul>
+<li>Fai trading su un solo strumento ma vuoi tenere il resto della tua watchlist visibile a colpo d'occhio.</li>
+<li>Vuoi una panoramica rapida della sessione (OHLC e variazione percentuale) su più mercati senza caricare grafici completi.</li>
+<li>Vuoi individuare i movimenti più forti e più deboli di un elenco usando il filtro di ranking.</li>
+<li>Vuoi una striscia di quotazioni leggera e sempre in primo piano accanto al layout principale dei tuoi grafici.</li>
+</ul>
+<h2 id="avvio-rapido">Avvio rapido</h2>
+<ol>
+<li>Nella barra superiore dell'applicazione, scegli <strong>New → Scanner</strong>.</li>
+<li>Si apre la finestra <strong>Select Instrument</strong> — lo stesso selettore di strumenti usato per i grafici, con una barra laterale degli exchange, una casella di filtro con digitazione e una tabella con <strong>Symbol</strong>, <strong>Description</strong> ed <strong>Exchange</strong>. Scegli il tuo primo simbolo e premi <strong>Select</strong>.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Selettore Select Instrument aperto da New → Scanner, con la barra laterale degli exchange a sinistra, la casella di filtro con digitazione e una riga di simbolo evidenziata prima di premere Select</div><div class="s-file">ID: <b class="s-id">dc-it-scanner-window-02</b> · save as <code>dc-it-scanner-window-02.png</code></div></div></div>
+<ol start="3">
+<li>La finestra dello Scanner si apre con una riga per quel simbolo. Ridimensiona la finestra liberamente — le colonne si adattano di conseguenza.</li>
+<li>Per aggiungere altri simboli, fai clic sull'<strong>icona a ingranaggio</strong> nella barra del titolo e scegli <strong>Symbol List</strong>, poi premi <strong>Add</strong> (vedi &quot;Gestire l'elenco dei simboli&quot; più avanti).</li>
+<li>La risoluzione predefinita è giornaliera (&quot;1 Daily&quot;). Se è quella che vuoi, hai finito — la tabella si aggiorna in tempo reale dal tuo feed.</li>
+</ol>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Il selettore Select Instrument elenca solo gli exchange che hai sottoscritto in Symbol Manage. Se il selettore appare vuoto, configura prima le tue sottoscrizioni degli exchange — vedi <a href="./symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a>.</p>
+</blockquote>
+<h2 id="anatomia-della-finestra">Anatomia della finestra</h2>
+<p>La barra del titolo contiene, da sinistra a destra:</p>
+<table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Logo DeepCharts</td>
+<td>Marchio della finestra</td>
+</tr>
+<tr>
+<td><strong>Icona a imbuto</strong></td>
+<td>Mostra o nasconde la striscia del filtro di ranking sopra la tabella</td>
+</tr>
+<tr>
+<td><strong>Icona a ingranaggio</strong></td>
+<td>Apre il menu delle impostazioni dello Scanner (risoluzioni, elenco simboli, grafica, template)</td>
+</tr>
+<tr>
+<td>Icona di collegamento (quadrato)</td>
+<td>Controllo di collegamento delle finestre, corrispondente al controllo di collegamento delle altre finestre di DeepCharts — vedi <a href="./link-windows.html">Collegare le finestre con i gruppi colore</a> (il comportamento esatto nello Scanner può variare)</td>
+</tr>
+<tr>
+<td>Riduci a icona / ingrandisci / chiudi</td>
+<td>Controlli standard della finestra</td>
+</tr>
+</tbody>
+</table>
+<p>Sotto la barra del titolo si trova la tabella stessa: <strong>Symbol | Open | High | Low | Close | %</strong>.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Barra del titolo dello Scanner ingrandita con le icone a imbuto, a ingranaggio e di collegamento visibili ed etichettate</div><div class="s-file">ID: <b class="s-id">dc-it-scanner-window-03</b> · save as <code>dc-it-scanner-window-03.png</code></div></div></div>
+<h2 id="come-leggerlo">Come leggerlo</h2>
+<p>Ogni riga è un simbolo scansionato sulla risoluzione configurata:</p>
+<ul>
+<li><strong>Open / High / Low / Close</strong> — i valori OHLC della barra corrente della risoluzione configurata (per la risoluzione predefinita &quot;1 Daily&quot;, il giorno corrente).</li>
+<li><strong>%</strong> — la variazione percentuale, mostrata in una cella evidenziata a colori. <span class="confirm-flag">CONFIRM: what the % column is measured against (previous close vs session open) and the exact rule for when the cell shows green vs red</span></li>
+</ul>
+<p>I simboli appena aggiunti compaiono in cima alla tabella.</p>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Lo Scanner è una finestra in tempo reale — dipende da una connessione al feed attiva. Osserva il puntino del badge del feed nella barra superiore dell'applicazione: verde significa connesso, rosso significa disconnesso.</p>
+</blockquote>
+<h2 id="gestire-l-elenco-dei-simboli">Gestire l'elenco dei simboli</h2>
+<p>Lo Scanner parte con il solo simbolo che hai scelto alla creazione. Tutto il resto si gestisce in una finestra dedicata:</p>
+<ol>
+<li>Fai clic sull'<strong>icona a ingranaggio</strong> e scegli <strong>Symbol List</strong>.</li>
+<li>Si apre la finestra <strong>Scanner Symbols</strong> con le colonne <strong>Symbol</strong>, <strong>Description</strong> ed <strong>Exchange</strong>.</li>
+<li>Premi il pulsante verde <strong>Add</strong> per aprire il selettore <strong>Select Instrument</strong> e aggiungere un altro simbolo. La tabella dello Scanner si aggiorna immediatamente — nessun riavvio necessario.</li>
+<li>Seleziona una riga e premi il pulsante rosso <strong>Remove</strong> per rimuovere un simbolo dalla scansione.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra di gestione Scanner Symbols con le righe NQ ed ES e i pulsanti Remove rosso e Add verde visibili</div><div class="s-file">ID: <b class="s-id">dc-it-scanner-window-04</b> · save as <code>dc-it-scanner-window-04.png</code></div></div></div>
+<p>Anche i simboli di indici e ampiezza di mercato (gli strumenti con prefisso $ nel selettore) possono essere scansionati, purché il loro gruppo di exchange sia sottoscritto in <a href="./symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a>.</p>
+<h2 id="risoluzioni">Risoluzioni</h2>
+<p>Lo Scanner supporta risoluzioni configurabili, gestite da <strong>icona a ingranaggio → Resolutions</strong>. Il sottomenu elenca la risoluzione corrente — per esempio <strong>1 Daily</strong> — più una voce <strong>Add Resolution</strong>.</p>
+<p>Facendo clic su una voce di risoluzione si apre la finestra <strong>Resolution Settings</strong>. Il nome della risoluzione si costruisce da <strong>Param 1</strong> più <strong>Param Type</strong>: Param 1 = 1 con Param Type = Daily si legge &quot;1 Daily&quot;; Param 1 = 5 con Param Type = Minute si legge &quot;5 Minute&quot;.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra Resolution Settings aperta dal menu a ingranaggio dello Scanner, con Days To Load, Param 1, Param 2, il menu a discesa Param Type, l&#x27;interruttore Based on minute data, il menu a discesa Continuos contract e gli interruttori Exclude Auction(Tick Data), Filter Bad Ticks ed Extended market hour</div><div class="s-file">ID: <b class="s-id">dc-it-scanner-window-05</b> · save as <code>dc-it-scanner-window-05.png</code></div></div></div>
+<p>Dopo aver premuto <strong>OK</strong>, la tabella si svuota e si ricarica con la nuova risoluzione — un breve indicatore di caricamento è normale, esattamente come un grafico si ricostruisce dopo un cambio di timeframe.</p>
+<p><strong>Add Resolution</strong> crea una risoluzione aggiuntiva per lo Scanner. <span class="confirm-flag">CONFIRM: how the table presents multiple resolutions at once — extra column sets per resolution, or another layout</span></p>
+<h2 id="filtrare-i-maggiori-movimenti-filtro-di-ranking">Filtrare i maggiori movimenti (filtro di ranking)</h2>
+<p>Fai clic sull'<strong>icona a imbuto</strong> nella barra del titolo per mostrare una striscia di filtro sopra la tabella con due controlli:</p>
+<ul>
+<li><strong>Rank top</strong> — casella di spunta più un selettore numerico (predefinito 0)</li>
+<li><strong>Rank worst</strong> — casella di spunta più un selettore numerico (predefinito 0)</li>
+</ul>
+<p>In base alle loro etichette, questi controlli sembrano limitare la tabella ai primi N e agli ultimi N movimenti per variazione percentuale, ma il comportamento esatto del ranking può variare. <span class="confirm-flag">CONFIRM: exact Rank top / Rank worst semantics, and whether 0 means the filter is disabled</span></p>
+<p>Fai di nuovo clic sull'icona a imbuto per nascondere la striscia.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra dello Scanner con la striscia del filtro a imbuto visibile sopra la tabella, con le caselle Rank top e Rank worst e i loro selettori numerici</div><div class="s-file">ID: <b class="s-id">dc-it-scanner-window-06</b> · save as <code>dc-it-scanner-window-06.png</code></div></div></div>
+<h2 id="riferimento-delle-impostazioni">Riferimento delle impostazioni</h2>
+<p>Tutte le impostazioni dello Scanner si trovano dietro l'<strong>icona a ingranaggio</strong> nella barra del titolo.</p>
+<h3 id="menu-a-ingranaggio">Menu a ingranaggio</h3>
+<table>
+<thead>
+<tr>
+<th>Voce</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Resolutions</strong> ▸</td>
+<td>Elenca le risoluzioni configurate e <strong>Add Resolution</strong>; facendo clic su una risoluzione si apre Resolution Settings</td>
+</tr>
+<tr>
+<td><strong>Always on Top</strong></td>
+<td>Mantiene lo Scanner sopra le altre finestre — utile per una striscia di quotazioni compatta</td>
+</tr>
+<tr>
+<td><strong>Symbol List</strong></td>
+<td>Apre la finestra di gestione Scanner Symbols (aggiunta/rimozione dei simboli scansionati)</td>
+</tr>
+<tr>
+<td><strong>Graphics Settings</strong></td>
+<td>Aspetto della tabella: colori di celle e intestazioni e dimensioni del testo</td>
+</tr>
+<tr>
+<td><strong>Template</strong> ▸</td>
+<td>Salva o carica una configurazione dello Scanner con un nome, lo stesso schema di template usato nelle finestre di DeepCharts — vedi <a href="./templates-workspaces.html">Template e workspace</a></td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Menu a ingranaggio dello Scanner aperto con le voci Resolutions, Always on Top, Symbol List, Graphics Settings e Template</div><div class="s-file">ID: <b class="s-id">dc-it-scanner-window-07</b> · save as <code>dc-it-scanner-window-07.png</code></div></div></div>
+<h3 id="finestra-resolution-settings">Finestra Resolution Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Days To Load</strong></td>
+<td>Quanti giorni di storico vengono caricati per questa risoluzione (4 era il valore osservato con 1 Daily; 10 con 5 Minute). Più giorni = ricaricamento più lungo.</td>
+</tr>
+<tr>
+<td><strong>Param 1</strong></td>
+<td>Il valore numerico della risoluzione (1 per &quot;1 Daily&quot;, 5 per &quot;5 Minute&quot;)</td>
+</tr>
+<tr>
+<td><strong>Param 2</strong></td>
+<td>Predefinito 0. <span class="confirm-flag">CONFIRM: what Param 2 controls</span></td>
+</tr>
+<tr>
+<td><strong>Param Type</strong></td>
+<td>L'unità della risoluzione — nel menu a discesa sono stati osservati <strong>Daily</strong> e <strong>Minute</strong></td>
+</tr>
+<tr>
+<td><strong>Based on minute data</strong></td>
+<td>Interruttore, attivo per impostazione predefinita — costruisce la risoluzione dai dati a minuti anziché dai dati tick (lo stesso concetto della base BT/BM sui grafici; vedi <a href="./price-chart-settings.html">Impostazioni del grafico dei prezzi</a>)</td>
+</tr>
+<tr>
+<td><strong>Continuos contract</strong> (così etichettato nell'app)</td>
+<td>Menu a discesa, predefinito <strong>None</strong> — cucitura del contratto continuo tra le scadenze contrattuali, come l'impostazione dati del grafico; vedi <a href="./symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></td>
+</tr>
+<tr>
+<td><strong>Exclude Auction(Tick Data)</strong></td>
+<td>Interruttore, disattivo per impostazione predefinita — filtra le stampe d'asta dai dati basati sui tick (il comportamento esatto del filtro può variare)</td>
+</tr>
+<tr>
+<td><strong>Filter Bad Ticks</strong></td>
+<td>Interruttore, attivo per impostazione predefinita — filtra i tick errati dai dati</td>
+</tr>
+<tr>
+<td><strong>Extended market hour</strong></td>
+<td>Interruttore, disattivo per impostazione predefinita — include gli orari della sessione estesa (ETH) quando abilitato</td>
+</tr>
+</tbody>
+</table>
+<h3 id="finestra-graphics-settings">Finestra Graphics Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Predefinito</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cell back color</strong></td>
+<td>—</td>
+<td>Colore di sfondo delle celle della tabella</td>
+</tr>
+<tr>
+<td><strong>Cell selection back color</strong></td>
+<td>Verde</td>
+<td>Sfondo della cella evidenziata (l'evidenziazione della cella %)</td>
+</tr>
+<tr>
+<td><strong>Cell selection text color</strong></td>
+<td>—</td>
+<td>Colore del testo nella cella evidenziata</td>
+</tr>
+<tr>
+<td><strong>Cell text color</strong></td>
+<td>—</td>
+<td>Colore del testo delle celle normali</td>
+</tr>
+<tr>
+<td><strong>Cell text size</strong></td>
+<td>12.00</td>
+<td>Dimensione del carattere delle celle della tabella</td>
+</tr>
+<tr>
+<td><strong>Header back color</strong></td>
+<td>—</td>
+<td>Sfondo della riga di intestazione delle colonne</td>
+</tr>
+<tr>
+<td><strong>Headers text color</strong></td>
+<td>—</td>
+<td>Colore del testo delle intestazioni delle colonne</td>
+</tr>
+<tr>
+<td><strong>Header text size</strong></td>
+<td>14.00</td>
+<td>Dimensione del carattere delle intestazioni delle colonne</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Apply</strong> mostra le modifiche in tempo reale; <strong>OK</strong> conferma e chiude.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra Graphics Settings dello Scanner con tutti i selettori di colore di celle e intestazioni e i due campi delle dimensioni del testo</div><div class="s-file">ID: <b class="s-id">dc-it-scanner-window-08</b> · save as <code>dc-it-scanner-window-08.png</code></div></div></div>
+<h2 id="suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</h2>
+<ul>
+<li><strong>Lo Scanner parte con un solo simbolo per scelta progettuale.</strong> Scansiona solo ciò che aggiungi — se la tabella appare vuota, apri <strong>icona a ingranaggio → Symbol List</strong> e aggiungi i simboli.</li>
+<li><strong>Un selettore Select Instrument vuoto significa nessuna sottoscrizione degli exchange</strong>, non uno Scanner guasto. Sottoscrivi prima gli exchange in <a href="./symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a>.</li>
+<li><strong>Numeri congelati sono quasi sempre un problema di feed.</strong> Controlla il puntino del badge del feed nella barra superiore; se è rosso, sistema prima la connessione — vedi <a href="./connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a> e <a href="./feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a>.</li>
+<li><strong>Un ricaricamento dopo il cambio di risoluzione è normale.</strong> La tabella si svuota e si ripopola come un grafico che si ricostruisce.</li>
+<li><strong>Usa Always on Top e una finestra stretta</strong> per una striscia di quotazioni permanente accanto ai tuoi grafici.</li>
+<li><strong>Salva la tua configurazione come template</strong> (<strong>icona a ingranaggio → Template</strong>) per ripristinare in seguito lo stesso elenco di simboli e lo stesso stile.</li>
+</ul>
+<h2 id="articoli-correlati">Articoli correlati</h2>
+<ul>
+<li><a href="./correlation-viewer.html">Correlation Viewer</a></li>
+<li><a href="./symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li>
+<li><a href="./connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li>
+<li><a href="./feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li>
+<li><a href="./price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li>
+<li><a href="./templates-workspaces.html">Template e workspace</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./profile-chart-window.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Finestra Profile Chart (profili TPO e Volume)</div></a><a class="next" href="./correlation-viewer.html"><div class="pn-lbl">Next →</div><div class="pn-title">Correlation Viewer</div></a></div>
+    <div class="footer">Centro Assistenza DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#che-cos">Che cos&#x27;è</a></li><li class="lv2"><a href="#quando-usarlo">Quando usarlo</a></li><li class="lv2"><a href="#avvio-rapido">Avvio rapido</a></li><li class="lv2"><a href="#anatomia-della-finestra">Anatomia della finestra</a></li><li class="lv2"><a href="#come-leggerlo">Come leggerlo</a></li><li class="lv2"><a href="#gestire-l-elenco-dei-simboli">Gestire l&#x27;elenco dei simboli</a></li><li class="lv2"><a href="#risoluzioni">Risoluzioni</a></li><li class="lv2"><a href="#filtrare-i-maggiori-movimenti-filtro-di-ranking">Filtrare i maggiori movimenti (filtro di ranking)</a></li><li class="lv2"><a href="#riferimento-delle-impostazioni">Riferimento delle impostazioni</a></li><li class="lv3"><a href="#menu-a-ingranaggio">Menu a ingranaggio</a></li><li class="lv3"><a href="#finestra-resolution-settings">Finestra Resolution Settings</a></li><li class="lv3"><a href="#finestra-graphics-settings">Finestra Graphics Settings</a></li><li class="lv2"><a href="#suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</a></li><li class="lv2"><a href="#articoli-correlati">Articoli correlati</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-it.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

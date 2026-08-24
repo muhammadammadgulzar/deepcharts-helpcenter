@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>VWAP + Envelopes — Centro Assistenza DeepDOM</title>
+<meta name="description" content="L&#x27;indicatore VWAP (Volume Weighted Average Price) mostra il prezzo medio degli scambi ponderato per il volume in un periodo di tempo scelto, insieme a bande di deviazione standard sopra e sotto di esso.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/installation-and-first-configuration.html">Primi passi</a><a href="../../../it/article/get-help.html">Assistenza</a><a class="kb-switch" href="../../../it/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/vwap-envelopes-deepdom.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemi Comuni <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemi di installazione</a></li><li><a href="../article/licence-issues.html">Problemi di licenza</a></li><li><a href="../article/symbol-subscription-issues.html">Problemi di sottoscrizione dei simboli</a></li><li><a href="../article/cache-issues-deepdom.html">Problemi di cache</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Come Fare <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installazione e prima configurazione</a></li><li><a href="../article/general-settings.html">Impostazioni generali</a></li><li><a href="../article/how-to-add-a-new-connection.html">Come aggiungere una nuova connessione</a></li><li><a href="../article/how-to-add-markets-correctly.html">Come aggiungere i mercati correttamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configurazione utente — Template, Workspace, configurazione degli strumenti</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Come inserire le notifiche sonore</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Come personalizzare lingua e tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Come gestire il rollover dei simboli</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Finestra degli ordini</a></li><li><a href="../article/trading-from-the-chart.html">Trading dal grafico</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio e Responsabile del rischio</a></li><li><a href="../article/simulation-environment.html">Ambiente di simulazione</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicatori <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html" class="active">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html">Volume Profile</a></li><li><a href="../article/stop-run.html">Stop Run</a></li><li><a href="../article/absorption.html">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funzionalità <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay dei dati tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicatori Deep <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Deep Iceberg (Rilevatore di ordini Iceberg)</a></li><li><a href="../article/deep-reload.html">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators.html">Indicatori</a></div>
+<div class="article-head"><h1>VWAP + Envelopes</h1>
+<p class="article-desc">L&#x27;indicatore VWAP (Volume Weighted Average Price) mostra il prezzo medio degli scambi ponderato per il volume in un periodo di tempo scelto, insieme a bande di deviazione standard sopra e sotto di esso.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 5 min read</span>
+  <a class="btn-pdf" href="../pdf/vwap-envelopes-deepdom.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>L'indicatore VWAP (Volume Weighted Average Price) mostra il prezzo medio degli scambi ponderato per il volume in un periodo di tempo scelto, insieme a bande di deviazione standard sopra e sotto di esso.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">VWAP + Envelopes — panoramica (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-vwap-envelopes-deepdom-01</b> · save as <code>dd-it-vwap-envelopes-deepdom-01.png</code></div></div></div>
+<p>Che cos'è il VWAP? Pensa al VWAP come al &quot;vero prezzo medio&quot; del mercato — ma più intelligente di una media normale. Invece di trattare ogni scambio allo stesso modo, dà più peso ai livelli di prezzo in cui è stato scambiato più volume. Questo lo rende una rappresentazione molto più accurata di dove il mercato ha svolto la maggior parte della sua attività. I trader lo usano come riferimento per il fair value — se il prezzo è sopra il VWAP, sta scambiando a premio; se è sotto, sta scambiando a sconto.</p>
+<p>Le bande di deviazione standard misurano quanto il prezzo si sta allontanando dalla media. Aiutano i trader a identificare le zone di Premium e Discount — aree in cui il prezzo scambia sopra o sotto il fair value — e possono essere usate per prendere decisioni di ingresso e uscita più informate.</p>
+<p>Ecco cosa rappresenta ciascuna banda:</p>
+<p>Prima deviazione standard (+1 / -1) — l'intervallo di volatilità principale; dove il prezzo trascorre la maggior parte del tempo. È considerata la zona &quot;normale&quot; intorno al fair value</p>
+<p>Seconda deviazione standard (+2 / -2) — segnala maggiore volatilità e potenziali movimenti di prezzo significativi. Il prezzo che arriva qui è meno comune e può indicare un movimento eccessivamente esteso</p>
+<p>Terza deviazione standard (+3 / -3) — rappresenta movimenti di prezzo rari ed estremi. Un prezzo a questo livello è statisticamente insolito e può segnalare un forte potenziale di pullback verso il VWAP</p>
+<h2 id="come-aggiungere-il-vwap-al-tuo-grafico">Come aggiungere il VWAP al tuo grafico</h2>
+<p>Ci sono due modi per aggiungere l'indicatore VWAP:</p>
+<p>Fai clic con il tasto destro del mouse sul grafico -&gt; Indicators</p>
+<p>Cerca l'indicatore VWAP Envelopes e fai clic sul simbolo &quot;+&quot;</p>
+<p>Apri il pannello delle impostazioni per personalizzarle -&gt; Save</p>
+<p>Una volta aggiunto, fai clic sull'icona delle impostazioni dell'indicatore per aprire la sua finestra di configurazione.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">VWAP + Envelopes — Come aggiungere il VWAP al tuo grafico (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-vwap-envelopes-deepdom-02</b> · save as <code>dd-it-vwap-envelopes-deepdom-02.png</code></div></div></div>
+<h2 id="impostazioni-generali">Impostazioni generali</h2>
+<p>Period Mode Definisce il periodo di tempo usato per calcolare il VWAP. Puoi scegliere tra:</p>
+<p>Day — calcola il VWAP dall'inizio della giornata di trading corrente, azzerandosi all'apertura di ogni nuova sessione</p>
+<p>Minutes — calcola il VWAP su un numero definito di minuti, offrendoti una visione di più breve termine del fair value</p>
+<p>Seconds — calcola il VWAP su un numero definito di secondi, utile per analisi di brevissimo termine</p>
+<p>Orders — calcola il VWAP in base a un numero definito di ordini anziché a un periodo di tempo</p>
+<p>Period Value Imposta il valore numerico per il periodo scelto sopra. Ad esempio, se hai selezionato Minutes, qui inserirai 30 per un VWAP a 30 minuti.</p>
+<p>Envelope Mode Definisce come vengono calcolate le bande. Puoi scegliere tra:</p>
+<p>Standard Deviation — le bande si basano sulla deviazione statistica dal VWAP, adattandosi automaticamente alla volatilità del mercato</p>
+<p>Percentage — le bande si basano su una variazione percentuale fissa rispetto al prezzo del VWAP, restando costanti indipendentemente dalla volatilità</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">VWAP + Envelopes — Impostazioni generali (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-vwap-envelopes-deepdom-03</b> · save as <code>dd-it-vwap-envelopes-deepdom-03.png</code></div></div></div>
+<h2 id="impostazioni-di-visualizzazione">Impostazioni di visualizzazione</h2>
+<p>Line Color Imposta il colore della linea del VWAP sul grafico.</p>
+<p>Line Width Imposta lo spessore della linea del VWAP.</p>
+<p>Envelope Width Imposta lo spessore delle bande di deviazione standard.</p>
+<p>Envelope Style Imposta lo stile delle linee delle bande — per esempio continua, tratteggiata o punteggiata.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">VWAP + Envelopes — Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-vwap-envelopes-deepdom-04</b> · save as <code>dd-it-vwap-envelopes-deepdom-04.png</code></div></div></div>
+<h2 id="impostazioni-delle-bande-prima-seconda-e-terza-banda">Impostazioni delle bande — prima, seconda e terza banda</h2>
+<p>Ciascuna delle tre bande può essere configurata individualmente:</p>
+<p>Attiva o disattiva ogni banda in modo indipendente</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">VWAP + Envelopes — Impostazioni delle bande — prima, seconda e terza banda (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-vwap-envelopes-deepdom-05</b> · save as <code>dd-it-vwap-envelopes-deepdom-05.png</code></div></div></div>
+<p>Imposta il valore di deviazione standard per ogni banda</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">VWAP + Envelopes — Impostazioni delle bande — prima, seconda e terza banda (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-vwap-envelopes-deepdom-06</b> · save as <code>dd-it-vwap-envelopes-deepdom-06.png</code></div></div></div>
+<p>Scegli un colore personalizzato per ogni banda</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">VWAP + Envelopes — Impostazioni delle bande — prima, seconda e terza banda (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-vwap-envelopes-deepdom-07</b> · save as <code>dd-it-vwap-envelopes-deepdom-07.png</code></div></div></div>
+<p>Questo ti permette di mostrare solo le bande rilevanti per il tuo stile di trading — per esempio, attivando solo la prima e la seconda banda e lasciando disattivata la terza. Mantenere attive meno bande può rendere il grafico più facile da leggere, soprattutto nei mercati in rapido movimento.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">VWAP + Envelopes — Impostazioni delle bande — prima, seconda e terza banda (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-vwap-envelopes-deepdom-08</b> · save as <code>dd-it-vwap-envelopes-deepdom-08.png</code></div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">VWAP + Envelopes — Impostazioni delle bande — prima, seconda e terza banda (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-vwap-envelopes-deepdom-09</b> · save as <code>dd-it-vwap-envelopes-deepdom-09.png</code></div></div></div>
+<h2 id="usare-pi-vwap">Usare più VWAP</h2>
+<p>Puoi applicare più di un indicatore VWAP allo stesso grafico contemporaneamente. Un esempio comune è combinare un VWAP giornaliero con un VWAP di periodo più breve per ottenere una visione sia macro sia micro del fair value.</p>
+<p>Per esempio — un VWAP giornaliero in giallo e un VWAP a 30 minuti in ciano applicati allo stesso grafico. Il VWAP giornaliero ti mostra il quadro generale di dove si trova il fair value per l'intera sessione, mentre il VWAP a 30 minuti ti mostra dove si trova il fair value in questo momento all'interno di quella sessione.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">VWAP + Envelopes — Usare più VWAP (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-vwap-envelopes-deepdom-10</b> · save as <code>dd-it-vwap-envelopes-deepdom-10.png</code></div></div></div>
+<h2 id="conclusione">Conclusione</h2>
+<p>L'indicatore VWAP è uno degli strumenti più utilizzati nel trading orderflow. Combinando la linea del VWAP con le sue bande di deviazione standard, puoi identificare rapidamente se il prezzo sta scambiando al fair value, a premio o a sconto — ottenendo un quadro strutturato per i tuoi ingressi e le tue uscite.</p>
+<h3 id="hai-ancora-problemi">Hai ancora problemi?</h3>
+<p>Il nostro team di supporto è disponibile 24/7 e pronto ad aiutarti con qualsiasi problema tu possa incontrare.</p>
+<p>Quando ci contatti, includi:</p>
+<p>Uno screenshot del problema</p>
+<p>Una breve descrizione di ciò che stavi cercando di fare</p>
+<p>Support Ticket (risposta più rapida) Visita www.deepcharts.com e crea un ticket di supporto direttamente sul nostro sito.</p>
+<p>Supporto via email Scrivici a support@deepcharts.com — tieni presente che le risposte via email possono richiedere un po' più di tempo rispetto a un ticket di supporto.</p>
+</article>
+<div class="pn"><a class="prev" href="./spread-bid-ask.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Spread Bid/Ask</div></a><a class="next" href="./session-imbalance-deepdom.html"><div class="pn-lbl">Next →</div><div class="pn-title">Session Imbalance</div></a></div>
+    <div class="footer">Centro Assistenza DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#come-aggiungere-il-vwap-al-tuo-grafico">Come aggiungere il VWAP al tuo grafico</a></li><li class="lv2"><a href="#impostazioni-generali">Impostazioni generali</a></li><li class="lv2"><a href="#impostazioni-di-visualizzazione">Impostazioni di visualizzazione</a></li><li class="lv2"><a href="#impostazioni-delle-bande-prima-seconda-e-terza-banda">Impostazioni delle bande — prima, seconda e terza banda</a></li><li class="lv2"><a href="#usare-pi-vwap">Usare più VWAP</a></li><li class="lv2"><a href="#conclusione">Conclusione</a></li><li class="lv3"><a href="#hai-ancora-problemi">Hai ancora problemi?</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-it-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>

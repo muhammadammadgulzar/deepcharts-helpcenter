@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Pivot Points — Centro Assistenza DeepCharts</title>
+<meta name="description" content="Traccia un livello pivot più le linee di resistenza R1/R2 e di supporto S1/S2 calcolate dal massimo, minimo e chiusura del giorno, della settimana o del mese precedente.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/quick-start-first-trade.html">Guida rapida</a><a href="../article/get-help.html">Assistenza</a><a class="kb-switch" href="../../it/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/pivot-points.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primi passi <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Benvenuto in DeepCharts: tour della piattaforma</a></li><li><a href="../article/system-requirements.html">Requisiti di sistema</a></li><li><a href="../article/install-deepcharts.html">Come installare DeepCharts e attivare la tua licenza</a></li><li><a href="../article/free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a></li><li><a href="../article/buy-data-feed.html">Come acquistare un feed dati e ottenere le tue credenziali</a></li><li><a href="../article/first-chart.html">Apri il tuo primo grafico</a></li><li><a href="../article/simulation-accounts.html">Conti di trading e simulazione</a></li><li><a href="../article/quick-start-first-trade.html">Avvio rapido: dall&#x27;installazione alla tua prima operazione</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connessioni e feed dati <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configurazione</li><li><a href="../article/compatibility-guide.html">Broker, prop firm e feed dati supportati</a></li><li><a href="../article/connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li><li><a href="../article/sign-market-data-agreement.html">Firma il contratto sui dati di mercato</a></li><li><a href="../article/connect-dxfeed.html">Come connettere un feed dati dxFeed</a></li><li><a href="../article/connect-rithmic.html">Come collegare un feed dati Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Connettere Rithmic con il plugin RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Collega qualsiasi conto prop firm Rithmic (tabella dei server)</a></li><li><a href="../article/connect-apex.html">Connettere Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connettere un conto dxFeed di una prop firm (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Come connettere CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connettere Interactive Brokers (solo esecuzione)</a></li><li><a href="../article/competition-connect.html">Competizione DeepCharts: iscriviti e connettiti</a></li><li><a href="../article/end-of-day-data.html">Connettere i dati storici (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Gestire e passare da una connessione feed all&#x27;altra</a></li><li class="nav-sub">Risoluzione dei problemi</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Correzione: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Correzione: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Correzione: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Correzione: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Correzione: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Correzione: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Correzione: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Correzione: connessione persa all&#x27;apertura di un grafico</a></li><li><a href="../article/symbol-subscription-issue.html">Correzione: problema di sottoscrizione dei simboli</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: l&#x27;app va in crash salvando le impostazioni del feed</a></li><li><a href="../article/gaps-in-price.html">Correzione: gap di prezzo sui grafici</a></li><li><a href="../article/data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Grafici e workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La finestra del grafico</a></li><li><a href="../article/price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li><li><a href="../article/chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li><li><a href="../article/drawing-tools.html">Strumenti di disegno e annotazioni</a></li><li><a href="../article/templates-workspaces.html">Template e workspace</a></li><li><a href="../article/quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Collegare le finestre con i gruppi colore</a></li><li><a href="../article/replay-data.html">Replay dei dati di mercato</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalizza lingua, tema e suoni di notifica</a></li><li><a href="../article/keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Riferimento delle scorciatoie da tastiera</a></li><li><a href="../article/multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Finestre della piattaforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (il tape)</a></li><li><a href="../article/advanced-dom.html">Finestra Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading e ordini <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading dal grafico</a></li><li><a href="../article/trading-panel-reference.html">Riferimento del pannello di trading: ogni pulsante e campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li><li><a href="../article/depth-of-market.html">Indicatore Depth of Market (DOM)</a></li><li><a href="../article/oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Finestra Ordini</a></li><li><a href="../article/portfolio-wallet.html">Portafoglio (Wallet)</a></li><li><a href="../article/risk-manager.html">Responsabile del rischio</a></li><li><a href="../article/trade-copier.html">Come configurare il Trade Copier</a></li><li><a href="../article/performance-analysis.html">Analisi delle performance (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concetti <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li><li><a href="../article/understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Capire la teoria dell&#x27;asta: squilibrio, aste incompiute, assorbimento</a></li><li><a href="../article/understanding-icebergs-absorption.html">Capire gli iceberg e l&#x27;assorbimento</a></li><li><a href="../article/understanding-vwap.html">Capire il VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Leggere un footprint: esempi svolti</a></li><li><a href="../article/glossary.html">Glossario dei termini di orderflow e della piattaforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicatori e analisi <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fondamenti degli indicatori</li><li><a href="../article/different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li><li><a href="../article/indicator-layout.html">Come cambiare il layout degli indicatori</a></li><li class="nav-sub">Indicatori Deep</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Media mobile</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regressione lineare</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum e oscillatori</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscillatore stocastico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilità e bande</li><li><a href="../article/bollinger-bands.html">Bande di Bollinger</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Deviazione standard</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume e delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Orderflow e asta</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Livelli e pattern</li><li><a href="../article/pivot-points.html" class="active">Pivot Points</a></li><li><a href="../article/important-levels.html">Livelli importanti</a></li><li><a href="../article/absolute-levels.html">Livelli assoluti</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Overlay del grafico</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Testo sul grafico</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Dati e database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></li><li><a href="../article/delete-market-data.html">Eliminare i dati di mercato (metodo in-app e manuale)</a></li><li><a href="../article/download-data.html">Ri-scaricare i dati storici (strumento Download Data)</a></li><li><a href="../article/database-optimization.html">Ottimizzazione del database</a></li><li><a href="../article/database-problems.html">Correzione: problemi al database</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Risoluzione problemi e supporto <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Risoluzione: problemi di installazione e requisiti di base</a></li><li><a href="../article/installation-setup-failed.html">Risoluzione: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: una policy di controllo delle applicazioni blocca DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Soluzione: lo strumento di disegno Rettangolo non funziona</a></li><li><a href="../article/chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a></li><li><a href="../article/license-issues.html">Risolvere: problemi di licenza e attivazione</a></li><li><a href="../article/diagnostic-report.html">Report diagnostico: prima di contattare il supporto</a></li><li><a href="../article/get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account e fatturazione <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Gestire abbonamenti e fatturazione</a></li><li><a href="../article/move-to-new-computer.html">Spostare DeepCharts su un nuovo computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicatori e analisi</a> › Livelli e pattern</div>
+<div class="article-head"><h1>Pivot Points</h1>
+<p class="article-desc">Traccia un livello pivot più le linee di resistenza R1/R2 e di supporto S1/S2 calcolate dal massimo, minimo e chiusura del giorno, della settimana o del mese precedente.</p>
+<div class="meta-row">
+  <span class="badge b-beginner">Beginner</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 5 min read</span>
+  <a class="btn-pdf" href="../pdf/pivot-points.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>L'indicatore Pivot Points traccia potenziali livelli di supporto e resistenza calcolati dai prezzi di massimo, minimo e chiusura dei periodi precedenti — giornalieri, settimanali o mensili. Disegna un livello pivot centrale con i livelli di resistenza (R1, R2) sopra e i livelli di supporto (S1, S2) sotto, offrendoti una mappa già pronta dei prezzi in cui il mercato ha reagito, ancora prima dell'apertura.</p>
+<p>Poiché i livelli derivano da prezzi storici fissi, sono identici per chiunque usi lo stesso calcolo — ed è proprio per questo che così tanti trader li osservano, e che il prezzo reagisce così spesso intorno a essi.</p>
+<h2 id="che-cos">Che cos'è</h2>
+<p>Pivot Points è un classico indicatore di livelli. All'inizio di ogni periodo calcola un pivot e i livelli di supporto/resistenza circostanti a partire da massimo, minimo e chiusura del periodo precedente, poi li disegna come linee orizzontali etichettate lungo il nuovo periodo. Risponde alla domanda &quot;in base agli scambi di ieri (o della settimana scorsa, o del mese scorso), dove sono i probabili prezzi di reazione di oggi?&quot;</p>
+<p><span class="confirm-flag">CONFIRM: which pivot calculation variant DeepCharts uses to derive the pivot, R1/R2 and S1/S2 from the previous period's high, low and close</span></p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Grafico intraday con Pivot Points applicato — la linea pivot centrale con R1 e R2 sopra e S1 e S2 sotto, ciascuna linea etichettata e con un colore distinto, con il prezzo che reagisce vicino a R1</div><div class="s-file">ID: <b class="s-id">dc-it-pivot-points-01</b> · save as <code>dc-it-pivot-points-01.png</code></div></div></div>
+<h2 id="quando-usarlo">Quando usarlo</h2>
+<ul>
+<li>Sei alle prime armi con supporti e resistenze e vuoi livelli oggettivi, tracciati automaticamente, invece di trendline soggettive.</li>
+<li>Fai day trading e vuoi la mappa dei pivot giornalieri sul grafico prima dell'apertura della sessione.</li>
+<li>Ti servono prezzi di riferimento comuni — i pivot sono osservati da moltissimi trader, quindi le reazioni intorno a essi tendono ad autoalimentarsi.</li>
+<li>Fai swing trading e vuoi la griglia di pivot settimanale o mensile, più ampia, per target e gestione del rischio.</li>
+</ul>
+<h2 id="avvio-rapido">Avvio rapido</h2>
+<ol>
+<li>Apri l'<strong>Indicator List</strong> sul tuo grafico.</li>
+<li>Trova <strong>Pivot Points</strong> e fai clic su <strong>+</strong> per aggiungerlo.</li>
+<li>Fai clic sull'icona <strong>Settings</strong> (impostazioni) accanto all'indicatore.</li>
+<li>Mantieni <strong>Period to Show</strong> al valore predefinito di <strong>1</strong>, così viene disegnato solo il set di livelli corrente — un grafico pulito mentre impari a usare lo strumento.</li>
+<li>Assegna alle linee di pivot, resistenza e supporto colori distinti nelle impostazioni dei colori, così distingui a colpo d'occhio i livelli R dai livelli S.</li>
+<li>Regola <strong>Font Size</strong> (predefinito 12.00) e <strong>Line Width</strong> (predefinito 1.00) a piacere, poi applica.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra delle impostazioni di Pivot Points che mostra Plot Settings (Font Size 12.00, Line Width 1.00, Line Style, Label Align, Period to Show 1), la sezione Custom Reference - Timeframe, le impostazioni dei colori per Pivot Point, R1, R2, S1, S2 e la sezione Custom Time - Market Timezone</div><div class="s-file">ID: <b class="s-id">dc-it-pivot-points-02</b> · save as <code>dc-it-pivot-points-02.png</code></div></div></div>
+<h2 id="come-leggerlo">Come leggerlo</h2>
+<ul>
+<li><strong>La linea pivot è il punto di equilibrio della sessione.</strong> Scambiare sopra il pivot viene generalmente letto come un bias rialzista per il periodo; sotto, come ribassista. Attraversamenti ripetuti avanti e indietro segnalano una sessione rotazionale, in range.</li>
+<li><strong>R1 e R2 sono resistenze a scaglioni.</strong> In un movimento al rialzo, R1 è la prima area naturale di reazione e un primo profit target molto comune; R2 segna un movimento esteso per il periodo.</li>
+<li><strong>S1 e S2 sono supporti a scaglioni.</strong> L'immagine speculare sotto il pivot: S1 è la prima area in cui aspettarsi compratori, S2 una discesa più profonda.</li>
+<li><strong>I livelli funzionano come zone di inversione di ruolo.</strong> Un livello di resistenza rotto spesso agisce da supporto al retest (e viceversa). Il primo retest di un livello pivot appena rotto è uno dei setup più comuni costruiti su questo indicatore.</li>
+<li><strong>Abbina il periodo al tuo orizzonte.</strong> I pivot giornalieri si adattano al trading intraday; i pivot settimanali e mensili producono griglie più ampie, rilevanti per ingressi swing e target più grandi.</li>
+</ul>
+<h2 id="riferimento-impostazioni">Riferimento impostazioni</h2>
+<p>Raggruppate come nella finestra delle impostazioni.</p>
+<h3 id="plot-settings">Plot Settings</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Predefinito</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Font Size</strong></td>
+<td>12.00</td>
+<td>Dimensione del testo delle etichette dei livelli.</td>
+</tr>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>1.00</td>
+<td>Spessore delle linee pivot.</td>
+</tr>
+<tr>
+<td><strong>Line Style</strong></td>
+<td>—</td>
+<td>Stile visivo delle linee.</td>
+</tr>
+<tr>
+<td><strong>Label Align</strong></td>
+<td>—</td>
+<td>Posizione/allineamento delle etichette dei livelli.</td>
+</tr>
+<tr>
+<td><strong>Period to Show</strong></td>
+<td>1</td>
+<td>Quanti periodi di livelli visualizzare. Aumentalo per mantenere sul grafico i livelli dei periodi precedenti come contesto.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom-reference-timeframe">Custom Reference — Timeframe</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Attiva il riferimento personalizzato, permettendoti di basare i livelli su un periodo di riferimento diverso da quello standard.</td>
+</tr>
+<tr>
+<td><strong>Param Type</strong></td>
+<td>Seleziona il tipo di riferimento temporale usato.</td>
+</tr>
+<tr>
+<td><strong>Param Value</strong></td>
+<td>Valore per il tipo di parametro scelto.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="impostazioni-dei-colori">Impostazioni dei colori</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pivot Point Color</strong></td>
+<td>Colore della linea pivot centrale.</td>
+</tr>
+<tr>
+<td><strong>R1 Color / R2 Color</strong></td>
+<td>Colori del primo e del secondo livello di resistenza.</td>
+</tr>
+<tr>
+<td><strong>S1 Color / S2 Color</strong></td>
+<td>Colori del primo e del secondo livello di supporto.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom-time-market-timezone">Custom Time — Market Timezone</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Predefinito</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>—</td>
+<td>Attiva o disattiva la finestra temporale personalizzata.</td>
+</tr>
+<tr>
+<td><strong>Ini Time</strong></td>
+<td>00:00:00</td>
+<td>Ora di inizio del periodo usato per il calcolo.</td>
+</tr>
+<tr>
+<td><strong>End Time</strong></td>
+<td>00:00:00</td>
+<td>Ora di fine del periodo usato per il calcolo.</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-tip">
+<p><strong>Suggerimento:</strong> La finestra temporale personalizzata è importante per i futures, dove la giornata dell'exchange e il tuo giorno di calendario locale non coincidono. Definire esplicitamente il periodo assicura che massimo, minimo e chiusura che alimentano i pivot provengano dalla sessione in cui operi davvero.</p>
+</blockquote>
+<h2 id="suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</h2>
+<ul>
+<li><strong>Non trattare i pivot come punti di svolta garantiti.</strong> Sono prezzi di riferimento, non previsioni. Opera sulla reazione che vedi al livello — rifiuto, assorbimento o rottura netta — non sul livello in sé.</li>
+<li><strong>Attenzione alla definizione della sessione.</strong> Se i livelli sembrano &quot;sballati&quot; rispetto ad altre piattaforme, il confine del periodo è il colpevole più comune; usa la sezione <strong>Custom Time — Market Timezone</strong> per allineare la finestra di calcolo alla sessione del tuo mercato.</li>
+<li><strong>Meno periodi, grafico più pulito.</strong> Un <strong>Period to Show</strong> alto seppellisce i livelli correnti sotto quelli vecchi. Tienilo basso in intraday e alzalo solo quando studi come il prezzo ha trattato le griglie passate.</li>
+<li><strong>Combinali con livelli basati sul volume.</strong> I pivot sono livelli da formula sui prezzi; abbinarli a riferimenti derivati dal volume come <a href="./important-levels.html">Livelli importanti</a> (POC, aree di valore, VWAP) ti mostra dove i livelli da formula e l'interesse realmente scambiato concordano — quelle confluenze sono le zone più forti.</li>
+</ul>
+<h2 id="articoli-correlati">Articoli correlati</h2>
+<ul>
+<li><a href="./important-levels.html">Livelli importanti</a></li>
+<li><a href="./absolute-levels.html">Livelli assoluti</a></li>
+<li><a href="./price-movement-levels.html">Price Movement Levels</a></li>
+<li><a href="./understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li>
+<li><a href="./different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li>
+<li><a href="./indicator-layout.html">Come cambiare il layout degli indicatori</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./ratio-highlight.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Ratio Highlight</div></a><a class="next" href="./important-levels.html"><div class="pn-lbl">Next →</div><div class="pn-title">Livelli importanti</div></a></div>
+    <div class="footer">Centro Assistenza DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#che-cos">Che cos&#x27;è</a></li><li class="lv2"><a href="#quando-usarlo">Quando usarlo</a></li><li class="lv2"><a href="#avvio-rapido">Avvio rapido</a></li><li class="lv2"><a href="#come-leggerlo">Come leggerlo</a></li><li class="lv2"><a href="#riferimento-impostazioni">Riferimento impostazioni</a></li><li class="lv3"><a href="#plot-settings">Plot Settings</a></li><li class="lv3"><a href="#custom-reference-timeframe">Custom Reference — Timeframe</a></li><li class="lv3"><a href="#impostazioni-dei-colori">Impostazioni dei colori</a></li><li class="lv3"><a href="#custom-time-market-timezone">Custom Time — Market Timezone</a></li><li class="lv2"><a href="#suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</a></li><li class="lv2"><a href="#articoli-correlati">Articoli correlati</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-it.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

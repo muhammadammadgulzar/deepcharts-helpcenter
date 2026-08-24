@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Riferimento del pannello di trading: ogni pulsante e campo — Centro Assistenza DeepCharts</title>
+<meta name="description" content="Riferimento completo del pannello di trading dal grafico: ogni valore, pulsante di ordine, pulsante di uscita e campo OCO, con i valori predefiniti e quando cambiarli.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/quick-start-first-trade.html">Guida rapida</a><a href="../article/get-help.html">Assistenza</a><a class="kb-switch" href="../../it/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/trading-panel-reference.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primi passi <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Benvenuto in DeepCharts: tour della piattaforma</a></li><li><a href="../article/system-requirements.html">Requisiti di sistema</a></li><li><a href="../article/install-deepcharts.html">Come installare DeepCharts e attivare la tua licenza</a></li><li><a href="../article/free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a></li><li><a href="../article/buy-data-feed.html">Come acquistare un feed dati e ottenere le tue credenziali</a></li><li><a href="../article/first-chart.html">Apri il tuo primo grafico</a></li><li><a href="../article/simulation-accounts.html">Conti di trading e simulazione</a></li><li><a href="../article/quick-start-first-trade.html">Avvio rapido: dall&#x27;installazione alla tua prima operazione</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connessioni e feed dati <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configurazione</li><li><a href="../article/compatibility-guide.html">Broker, prop firm e feed dati supportati</a></li><li><a href="../article/connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li><li><a href="../article/sign-market-data-agreement.html">Firma il contratto sui dati di mercato</a></li><li><a href="../article/connect-dxfeed.html">Come connettere un feed dati dxFeed</a></li><li><a href="../article/connect-rithmic.html">Come collegare un feed dati Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Connettere Rithmic con il plugin RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Collega qualsiasi conto prop firm Rithmic (tabella dei server)</a></li><li><a href="../article/connect-apex.html">Connettere Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connettere un conto dxFeed di una prop firm (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Come connettere CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connettere Interactive Brokers (solo esecuzione)</a></li><li><a href="../article/competition-connect.html">Competizione DeepCharts: iscriviti e connettiti</a></li><li><a href="../article/end-of-day-data.html">Connettere i dati storici (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Gestire e passare da una connessione feed all&#x27;altra</a></li><li class="nav-sub">Risoluzione dei problemi</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Correzione: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Correzione: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Correzione: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Correzione: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Correzione: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Correzione: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Correzione: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Correzione: connessione persa all&#x27;apertura di un grafico</a></li><li><a href="../article/symbol-subscription-issue.html">Correzione: problema di sottoscrizione dei simboli</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: l&#x27;app va in crash salvando le impostazioni del feed</a></li><li><a href="../article/gaps-in-price.html">Correzione: gap di prezzo sui grafici</a></li><li><a href="../article/data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Grafici e workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La finestra del grafico</a></li><li><a href="../article/price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li><li><a href="../article/chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li><li><a href="../article/drawing-tools.html">Strumenti di disegno e annotazioni</a></li><li><a href="../article/templates-workspaces.html">Template e workspace</a></li><li><a href="../article/quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Collegare le finestre con i gruppi colore</a></li><li><a href="../article/replay-data.html">Replay dei dati di mercato</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalizza lingua, tema e suoni di notifica</a></li><li><a href="../article/keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Riferimento delle scorciatoie da tastiera</a></li><li><a href="../article/multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Finestre della piattaforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (il tape)</a></li><li><a href="../article/advanced-dom.html">Finestra Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading e ordini <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading dal grafico</a></li><li><a href="../article/trading-panel-reference.html" class="active">Riferimento del pannello di trading: ogni pulsante e campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li><li><a href="../article/depth-of-market.html">Indicatore Depth of Market (DOM)</a></li><li><a href="../article/oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Finestra Ordini</a></li><li><a href="../article/portfolio-wallet.html">Portafoglio (Wallet)</a></li><li><a href="../article/risk-manager.html">Responsabile del rischio</a></li><li><a href="../article/trade-copier.html">Come configurare il Trade Copier</a></li><li><a href="../article/performance-analysis.html">Analisi delle performance (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concetti <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li><li><a href="../article/understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Capire la teoria dell&#x27;asta: squilibrio, aste incompiute, assorbimento</a></li><li><a href="../article/understanding-icebergs-absorption.html">Capire gli iceberg e l&#x27;assorbimento</a></li><li><a href="../article/understanding-vwap.html">Capire il VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Leggere un footprint: esempi svolti</a></li><li><a href="../article/glossary.html">Glossario dei termini di orderflow e della piattaforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicatori e analisi <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fondamenti degli indicatori</li><li><a href="../article/different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li><li><a href="../article/indicator-layout.html">Come cambiare il layout degli indicatori</a></li><li class="nav-sub">Indicatori Deep</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Media mobile</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regressione lineare</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum e oscillatori</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscillatore stocastico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilità e bande</li><li><a href="../article/bollinger-bands.html">Bande di Bollinger</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Deviazione standard</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume e delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Orderflow e asta</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Livelli e pattern</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Livelli importanti</a></li><li><a href="../article/absolute-levels.html">Livelli assoluti</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Overlay del grafico</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Testo sul grafico</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Dati e database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></li><li><a href="../article/delete-market-data.html">Eliminare i dati di mercato (metodo in-app e manuale)</a></li><li><a href="../article/download-data.html">Ri-scaricare i dati storici (strumento Download Data)</a></li><li><a href="../article/database-optimization.html">Ottimizzazione del database</a></li><li><a href="../article/database-problems.html">Correzione: problemi al database</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Risoluzione problemi e supporto <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Risoluzione: problemi di installazione e requisiti di base</a></li><li><a href="../article/installation-setup-failed.html">Risoluzione: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: una policy di controllo delle applicazioni blocca DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Soluzione: lo strumento di disegno Rettangolo non funziona</a></li><li><a href="../article/chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a></li><li><a href="../article/license-issues.html">Risolvere: problemi di licenza e attivazione</a></li><li><a href="../article/diagnostic-report.html">Report diagnostico: prima di contattare il supporto</a></li><li><a href="../article/get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account e fatturazione <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Gestire abbonamenti e fatturazione</a></li><li><a href="../article/move-to-new-computer.html">Spostare DeepCharts su un nuovo computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/trading-orders.html">Trading e ordini</a></div>
+<div class="article-head"><h1>Riferimento del pannello di trading: ogni pulsante e campo</h1>
+<p class="article-desc">Riferimento completo del pannello di trading dal grafico: ogni valore, pulsante di ordine, pulsante di uscita e campo OCO, con i valori predefiniti e quando cambiarli.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 8 min read</span>
+  <a class="btn-pdf" href="../pdf/trading-panel-reference.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Il pannello di trading è la colonna di inserimento ordini agganciata al lato destro di ogni grafico dei prezzi. Questo articolo documenta ogni valore, pulsante e campo, dall'alto verso il basso, così puoi verificare esattamente cosa fa un controllo prima di affidargli ordini reali.</p>
+<p>Se non hai mai fatto trading da un grafico, comincia dalla guida passo passo in <a href="./trading-from-chart.html">Trading dal grafico</a> — questa pagina è il riferimento a cui tornare.</p>
+<h2 id="che-cos">Che cos'è</h2>
+<p>Il pannello di trading risponde a una sola domanda: come invio, proteggo e chiudo ordini su uno strumento specifico senza lasciare il grafico? Raggruppa in un'unica colonna la selezione dello strumento, i valori della posizione, una griglia di pulsanti per tipo di ordine, pulsanti di uscita a un clic e un blocco di bracket OCO. Compare quando <strong>Trading panel</strong> è attivato nella barra inferiore del grafico (oppure tasto destro → <strong>Show Trading Panel</strong>, <strong>Ctrl Alt P</strong>) e richiede <strong>Trading Enabled</strong> (l'icona <strong>$</strong> verde) — disattivare l'icona $ nasconde automaticamente il pannello.</p>
+<p>Esplora il pannello live qui sotto — passa il mouse su ogni pulsante e valore per vedere cosa fa, e fai clic sulla posizione SIM per osservare il P/L aggiornarsi.</p>
+<div class="widget-mount" data-widget="trading-panel-mock"></div>
+<h2 id="quando-usarlo">Quando usarlo</h2>
+<ul>
+<li>Esegui dai grafici e vuoi inserimento ordini, uscite e bracket in un unico posto.</li>
+<li>Devi fare trading su un contratto diverso da quello nel grafico (grafico del mini, ordini sul micro).</li>
+<li>Vuoi azioni di rischio a un clic: <strong>Cancel</strong>, <strong>Flat</strong>, <strong>Cancel and Flat</strong>, <strong>Breakeven</strong>.</li>
+<li>Vuoi bracket automatici di stop/target (OCO) collegati a ogni ingresso.</li>
+</ul>
+<p>Per il trading a clic in stile ladder sui livelli di prezzo, usa invece il DOM sul grafico — vedi <a href="./dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a>.</p>
+<h2 id="avvio-rapido">Avvio rapido</h2>
+<ol>
+<li>Apri un grafico e fai clic sull'icona <strong>$</strong> finché diventa verde (<a href="./trading-from-chart.html">Trading dal grafico</a> spiega questo passaggio nel dettaglio).</li>
+<li>Attiva <strong>Trading panel</strong> nella barra inferiore del grafico.</li>
+<li>Imposta <strong>Broker</strong> su <strong>SIM</strong> e scegli un conto di simulazione (<a href="./simulation-accounts.html">Conti di trading e simulazione</a>).</li>
+<li>Imposta <strong>Qty</strong> su 1 e inserisci un ordine di prova con <strong>MKT</strong>.</li>
+<li>Chiudilo con <strong>Flat</strong>.</li>
+</ol>
+<h2 id="come-interpretarlo">Come interpretarlo</h2>
+<p>Il blocco di intestazione ti mostra la tua esposizione a colpo d'occhio:</p>
+<ul>
+<li><strong>Open Qty</strong> — quanti contratti (o azioni) detieni attualmente sullo strumento del pannello. 0 significa flat.</li>
+<li><strong>Open P/L</strong> — profitto o perdita non realizzati della posizione aperta, aggiornati in tempo reale.</li>
+<li><strong>Daily P/L</strong> — il profitto o la perdita totale della giornata per questo strumento.</li>
+</ul>
+<p>Nel blocco OCO, fai attenzione all'icona <strong>rossa (!)</strong> accanto a <strong>Mode</strong>: significa che la quantità totale della strategia MULTI selezionata non corrisponde al campo <strong>Qty</strong> del pannello, e l'esecuzione è bloccata finché non le fai corrispondere. I segni di spunta verdi indicano che le quantità sono allineate.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Blocco OCO del pannello di trading in modalità MULTI che mostra l&#x27;icona rossa con punto esclamativo accanto al menu a discesa Mode, con il campo Qty del pannello visibile con un valore non corrispondente</div><div class="s-file">ID: <b class="s-id">dc-it-trading-panel-reference-01</b> · save as <code>dc-it-trading-panel-reference-01.png</code></div></div></div>
+<h2 id="riferimento-delle-impostazioni">Riferimento delle impostazioni</h2>
+<h3 id="intestazione-strumento-e-posizione">Intestazione — strumento e posizione</h3>
+<table>
+<thead>
+<tr>
+<th>Controllo</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Menu a discesa del simbolo</td>
+<td>Apre <strong>Select Instrument</strong> per scegliere il contratto su cui il pannello opera. Un grafico nuovo preseleziona il simbolo del grafico; dopo che modifichi uno dei due, grafico e pannello sono indipendenti (osservi NQ, operi su MNQ). Sono elencati solo gli exchange sottoscritti in <strong>Options → Symbol Manage</strong> — <a href="./symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a>.</td>
+</tr>
+<tr>
+<td><strong>Open Qty</strong></td>
+<td>Dimensione della posizione aperta corrente sullo strumento del pannello.</td>
+</tr>
+<tr>
+<td><strong>Open P/L</strong></td>
+<td>P/L non realizzato di quella posizione.</td>
+</tr>
+<tr>
+<td><strong>Daily P/L</strong></td>
+<td>P/L realizzato più aperto della giornata per lo strumento.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="riga-del-conto">Riga del conto</h3>
+<table>
+<thead>
+<tr>
+<th>Controllo</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Qty</strong></td>
+<td>Dimensione in contratti del prossimo ordine. Il valore precompilato e il passo di incremento derivano da <strong>Options → Settings → Trading Quantity</strong> (per simbolo: <strong>Default Quantity</strong> e <strong>Increment Quantity</strong>). È un valore predefinito di comodo, non un limite — i tetti rigidi vanno nel <a href="./risk-manager.html">Responsabile del rischio</a>.</td>
+</tr>
+<tr>
+<td><strong>Broker</strong></td>
+<td>Quale connessione esegue l'ordine — una connessione feed/broker reale o <strong>SIM</strong> per il trading in simulazione.</td>
+</tr>
+<tr>
+<td><strong>Account</strong></td>
+<td>Il conto sotto quella connessione broker (rilevante per configurazioni multi-conto e prop firm).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ticks-diff">Ticks diff.</h3>
+<table>
+<thead>
+<tr>
+<th>Controllo</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Casella <strong>Ticks diff.</strong> + numero</td>
+<td>Modifica i pulsanti <strong>BID</strong>/<strong>ASK</strong>. Disattivata (predefinito 0): BID acquista limit al miglior bid, ASK vende limit al miglior ask. Con una differenza N attivata: BID piazza il limit di acquisto N tick sotto il miglior bid, ASK piazza il limit di vendita N tick sopra il miglior ask. Usala per appoggiare ordini a una distanza fissa dietro il mercato con un solo clic.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="griglia-dei-pulsanti-di-ordine">Griglia dei pulsanti di ordine</h3>
+<p>Ogni riga ha un pulsante di acquisto (a sinistra) e uno di vendita (a destra).</p>
+<table>
+<thead>
+<tr>
+<th>Pulsante</th>
+<th>Ordine inserito</th>
+<th>Quando usarlo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>MKT</strong></td>
+<td>Ordine a mercato</td>
+<td>Vuoi entrare o uscire subito e accetti il prezzo corrente.</td>
+</tr>
+<tr>
+<td><strong>BID / ASK</strong></td>
+<td>Limit al miglior bid (acquisto) / miglior ask (vendita), con offset <strong>Ticks diff.</strong> se attivo</td>
+<td>Ti unisci passivamente al miglior prezzo invece di attraversare lo spread.</td>
+</tr>
+<tr>
+<td><strong>LMT</strong></td>
+<td>Limit al prezzo che scegli</td>
+<td>Acquista sotto il mercato o vendi sopra. Piazzato sul lato sbagliato viene eseguito immediatamente come ordine a mercato.</td>
+</tr>
+<tr>
+<td><strong>STP</strong></td>
+<td>Stop che attiva un ordine a mercato</td>
+<td>Acquista sopra il mercato o vendi sotto — ingressi in breakout e stop protettivi.</td>
+</tr>
+<tr>
+<td><strong>STP LMT</strong></td>
+<td>Stop-limit</td>
+<td>Evita lo slippage al trigger, con il rischio di non essere eseguito affatto.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pulsanti-di-uscita-e-annullamento">Pulsanti di uscita e annullamento</h3>
+<p>Tutti e quattro agiscono solo sul simbolo attualmente selezionato nel pannello.</p>
+<table>
+<thead>
+<tr>
+<th>Pulsante</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Cancel</strong></td>
+<td>Annulla tutti gli ordini attivi (pendenti) — LMT/STP. Le posizioni aperte non vengono toccate.</td>
+</tr>
+<tr>
+<td><strong>Flat</strong></td>
+<td>Chiude solo la posizione aperta corrente.</td>
+</tr>
+<tr>
+<td><strong>Cancel and Flat</strong></td>
+<td>Chiude la posizione aperta e annulla tutti gli ordini attivi rimanenti.</td>
+</tr>
+<tr>
+<td><strong>Breakeven</strong></td>
+<td>Sposta lo stop al breakeven: prezzo di ingresso più il margine <strong>Breakeven - Ticks</strong> impostato in <strong>Options → Settings → General → Trading</strong>. 0 = esattamente all'ingresso; alzalo per coprire commissioni/slippage.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="blocco-oco-strategy">Blocco OCO Strategy</h3>
+<p>Il motore dei bracket — l'esecuzione di un'uscita annulla l'altra. Guida completa: <a href="./oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Controllo</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interruttore <strong>OCO Strategy</strong></td>
+<td>Arma i bracket automatici per i nuovi ingressi.</td>
+</tr>
+<tr>
+<td><strong>Mode</strong></td>
+<td><strong>SL/TP</strong> = uno stop loss e un target, ciascuno definito in tick o in denaro e attivabile individualmente. <strong>MULTI</strong> = strategie multi-bracket con nome per lo scaling out.</td>
+</tr>
+<tr>
+<td>Campi <strong>SL / TP</strong></td>
+<td>Le distanze di stop loss e take profit (tick o denaro) in modalità SL/TP.</td>
+</tr>
+<tr>
+<td><strong>BE</strong></td>
+<td>Automazione del breakeven in modalità SL/TP (tick o denaro).</td>
+</tr>
+<tr>
+<td><strong>Trail</strong></td>
+<td>Automazione del trailing stop in modalità SL/TP, con i campi di importo di trailing e offset sottostanti.</td>
+</tr>
+<tr>
+<td>Icona a ingranaggio (MULTI)</td>
+<td>Apre l'editor <strong>Oco Strategy</strong>: dai un nome alla strategia, aggiungi bracket <strong>Stop</strong>/<strong>Target</strong> (ognuno con una quantità e un valore <strong>Ticks</strong>/<strong>Money</strong>, aggiunti tramite <strong>Add bracket</strong>), facoltativamente sposta lo stop a breakeven dopo l'esecuzione di un target, poi <strong>Save</strong>. Le strategie salvate diventano selezionabili nel pannello quando la modalità MULTI è attiva.</td>
+</tr>
+<tr>
+<td>Radio <strong>Server / Client</strong></td>
+<td>Dove risiede il bracket. <strong>Server</strong>: gestito sul server del provider del feed dati — sopravvive alla chiusura della piattaforma o alla perdita di connessione. <strong>Client</strong>: gestito dentro DeepCharts — la piattaforma deve restare aperta e connessa altrimenti l'OCO non è effettivo. Client esiste perché alcuni provider di feed non offrono OCO lato server.</td>
+</tr>
+<tr>
+<td><strong>Link pending orders</strong></td>
+<td>Per un take profit e uno stop loss che hai già piazzato senza OCO: apre una finestra per selezionare i due ordini pendenti e collegarli retroattivamente in una coppia OCO.</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-warning">
+<p><strong>Attenzione:</strong> Rithmic non consente gli OCO lato server insieme al copy trading. Se usi il <a href="./trade-copier.html">Come configurare il Trade Copier</a> su Rithmic, devi usare gli OCO lato <strong>Client</strong> — e mantenere la piattaforma aperta e online, altrimenti i tuoi bracket non scatteranno. Un singolo conto Rithmic senza il copier può usare normalmente Server.</p>
+</blockquote>
+<h3 id="impostazioni-correlate-fuori-dal-pannello">Impostazioni correlate fuori dal pannello</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Posizione</th>
+<th>Cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Breakeven - Ticks</strong></td>
+<td><strong>Options → Settings → General → Trading</strong></td>
+<td>Margine aggiunto all'ingresso quando il pulsante <strong>Breakeven</strong> sposta il tuo stop.</td>
+</tr>
+<tr>
+<td><strong>Frequency Limitation</strong></td>
+<td><strong>Options → Settings → General → Trading</strong></td>
+<td>Numero massimo di ordini al secondo più una durata di pausa dopo il superamento — protegge da invii accidentali a raffica.</td>
+</tr>
+<tr>
+<td><strong>Default / Increment Quantity</strong></td>
+<td><strong>Options → Settings → Trading Quantity</strong></td>
+<td>Valore iniziale e passo di incremento per simbolo del campo <strong>Qty</strong>. Cambiare il valore predefinito non modifica gli ordini attivi o le posizioni aperte — solo gli ordini futuri. Non è confermato se si applichi anche all'inserimento ordini con clic su DOM/grafico; verifica su un conto SIM.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</h2>
+<ul>
+<li><strong>Pannello scomparso?</strong> L'icona <strong>$</strong> di Trading Enabled è stata disattivata — nasconde automaticamente il pannello. Riarmala con <strong>Ctrl Alt T</strong>.</li>
+<li><strong>Limit eseguito istantaneamente al prezzo di mercato.</strong> È stato piazzato sul lato sbagliato (limit di acquisto sopra / limit di vendita sotto). Il ladder a clic in <a href="./dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a> sceglie automaticamente tra LMT e STP in base al livello su cui fai clic, eliminando del tutto la decisione.</li>
+<li><strong>&quot;Flat&quot; vs &quot;Cancel and Flat&quot;.</strong> Flat chiude solo la posizione; uno stop o un target dimenticato resta attivo. Cancel and Flat elimina entrambi. A fine sessione, verifica nella <a href="./orders-window.html">finestra Ordini</a> con il filtro <strong>Submitted</strong> che non sia rimasto nulla di attivo.</li>
+<li><strong>La strategia MULTI non viene eseguita.</strong> Controlla il punto esclamativo rosso (!) — la quantità totale della strategia deve essere uguale al <strong>Qty</strong> del pannello. Modifica uno dei due per farli corrispondere.</li>
+<li><strong>I bracket sono spariti dopo la chiusura della piattaforma.</strong> Erano lato Client. Solo gli OCO lato Server sopravvivono con la piattaforma chiusa.</li>
+<li><strong>Testa le modifiche di dimensione prima su SIM.</strong> Alzare la quantità predefinita da 1 a 2 raddoppia la dimensione — e il rischio — di ogni ordine futuro su quel simbolo.</li>
+</ul>
+<h2 id="articoli-correlati">Articoli correlati</h2>
+<ul>
+<li><a href="./trading-from-chart.html">Trading dal grafico</a></li>
+<li><a href="./oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li>
+<li><a href="./dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li>
+<li><a href="./orders-window.html">Finestra Ordini</a></li>
+<li><a href="./risk-manager.html">Responsabile del rischio</a></li>
+<li><a href="./trade-copier.html">Come configurare il Trade Copier</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./trading-from-chart.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Trading dal grafico</div></a><a class="next" href="./dom-trading-chart.html"><div class="pn-lbl">Next →</div><div class="pn-title">DOM Trading sul grafico (ladder con click-trading)</div></a></div>
+    <div class="footer">Centro Assistenza DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#che-cos">Che cos&#x27;è</a></li><li class="lv2"><a href="#quando-usarlo">Quando usarlo</a></li><li class="lv2"><a href="#avvio-rapido">Avvio rapido</a></li><li class="lv2"><a href="#come-interpretarlo">Come interpretarlo</a></li><li class="lv2"><a href="#riferimento-delle-impostazioni">Riferimento delle impostazioni</a></li><li class="lv3"><a href="#intestazione-strumento-e-posizione">Intestazione — strumento e posizione</a></li><li class="lv3"><a href="#riga-del-conto">Riga del conto</a></li><li class="lv3"><a href="#ticks-diff">Ticks diff.</a></li><li class="lv3"><a href="#griglia-dei-pulsanti-di-ordine">Griglia dei pulsanti di ordine</a></li><li class="lv3"><a href="#pulsanti-di-uscita-e-annullamento">Pulsanti di uscita e annullamento</a></li><li class="lv3"><a href="#blocco-oco-strategy">Blocco OCO Strategy</a></li><li class="lv3"><a href="#impostazioni-correlate-fuori-dal-pannello">Impostazioni correlate fuori dal pannello</a></li><li class="lv2"><a href="#suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</a></li><li class="lv2"><a href="#articoli-correlati">Articoli correlati</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-it.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

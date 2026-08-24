@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Aroon Oscillator — Centro Assistenza DeepCharts</title>
+<meta name="description" content="Comprimi Aroon Up e Aroon Down in un&#x27;unica linea attorno allo zero con l&#x27;Aroon Oscillator per leggere forza, direzione ed esaurimento del trend.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/quick-start-first-trade.html">Guida rapida</a><a href="../article/get-help.html">Assistenza</a><a class="kb-switch" href="../../it/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/aroon-oscillator.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primi passi <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Benvenuto in DeepCharts: tour della piattaforma</a></li><li><a href="../article/system-requirements.html">Requisiti di sistema</a></li><li><a href="../article/install-deepcharts.html">Come installare DeepCharts e attivare la tua licenza</a></li><li><a href="../article/free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a></li><li><a href="../article/buy-data-feed.html">Come acquistare un feed dati e ottenere le tue credenziali</a></li><li><a href="../article/first-chart.html">Apri il tuo primo grafico</a></li><li><a href="../article/simulation-accounts.html">Conti di trading e simulazione</a></li><li><a href="../article/quick-start-first-trade.html">Avvio rapido: dall&#x27;installazione alla tua prima operazione</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connessioni e feed dati <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configurazione</li><li><a href="../article/compatibility-guide.html">Broker, prop firm e feed dati supportati</a></li><li><a href="../article/connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li><li><a href="../article/sign-market-data-agreement.html">Firma il contratto sui dati di mercato</a></li><li><a href="../article/connect-dxfeed.html">Come connettere un feed dati dxFeed</a></li><li><a href="../article/connect-rithmic.html">Come collegare un feed dati Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Connettere Rithmic con il plugin RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Collega qualsiasi conto prop firm Rithmic (tabella dei server)</a></li><li><a href="../article/connect-apex.html">Connettere Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connettere un conto dxFeed di una prop firm (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Come connettere CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connettere Interactive Brokers (solo esecuzione)</a></li><li><a href="../article/competition-connect.html">Competizione DeepCharts: iscriviti e connettiti</a></li><li><a href="../article/end-of-day-data.html">Connettere i dati storici (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Gestire e passare da una connessione feed all&#x27;altra</a></li><li class="nav-sub">Risoluzione dei problemi</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Correzione: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Correzione: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Correzione: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Correzione: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Correzione: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Correzione: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Correzione: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Correzione: connessione persa all&#x27;apertura di un grafico</a></li><li><a href="../article/symbol-subscription-issue.html">Correzione: problema di sottoscrizione dei simboli</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: l&#x27;app va in crash salvando le impostazioni del feed</a></li><li><a href="../article/gaps-in-price.html">Correzione: gap di prezzo sui grafici</a></li><li><a href="../article/data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Grafici e workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La finestra del grafico</a></li><li><a href="../article/price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li><li><a href="../article/chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li><li><a href="../article/drawing-tools.html">Strumenti di disegno e annotazioni</a></li><li><a href="../article/templates-workspaces.html">Template e workspace</a></li><li><a href="../article/quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Collegare le finestre con i gruppi colore</a></li><li><a href="../article/replay-data.html">Replay dei dati di mercato</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalizza lingua, tema e suoni di notifica</a></li><li><a href="../article/keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Riferimento delle scorciatoie da tastiera</a></li><li><a href="../article/multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Finestre della piattaforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (il tape)</a></li><li><a href="../article/advanced-dom.html">Finestra Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading e ordini <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading dal grafico</a></li><li><a href="../article/trading-panel-reference.html">Riferimento del pannello di trading: ogni pulsante e campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li><li><a href="../article/depth-of-market.html">Indicatore Depth of Market (DOM)</a></li><li><a href="../article/oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Finestra Ordini</a></li><li><a href="../article/portfolio-wallet.html">Portafoglio (Wallet)</a></li><li><a href="../article/risk-manager.html">Responsabile del rischio</a></li><li><a href="../article/trade-copier.html">Come configurare il Trade Copier</a></li><li><a href="../article/performance-analysis.html">Analisi delle performance (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concetti <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li><li><a href="../article/understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Capire la teoria dell&#x27;asta: squilibrio, aste incompiute, assorbimento</a></li><li><a href="../article/understanding-icebergs-absorption.html">Capire gli iceberg e l&#x27;assorbimento</a></li><li><a href="../article/understanding-vwap.html">Capire il VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Leggere un footprint: esempi svolti</a></li><li><a href="../article/glossary.html">Glossario dei termini di orderflow e della piattaforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicatori e analisi <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fondamenti degli indicatori</li><li><a href="../article/different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li><li><a href="../article/indicator-layout.html">Come cambiare il layout degli indicatori</a></li><li class="nav-sub">Indicatori Deep</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Media mobile</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regressione lineare</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html" class="active">Aroon Oscillator</a></li><li class="nav-sub">Momentum e oscillatori</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscillatore stocastico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilità e bande</li><li><a href="../article/bollinger-bands.html">Bande di Bollinger</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Deviazione standard</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume e delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Orderflow e asta</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Livelli e pattern</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Livelli importanti</a></li><li><a href="../article/absolute-levels.html">Livelli assoluti</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Overlay del grafico</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Testo sul grafico</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Dati e database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></li><li><a href="../article/delete-market-data.html">Eliminare i dati di mercato (metodo in-app e manuale)</a></li><li><a href="../article/download-data.html">Ri-scaricare i dati storici (strumento Download Data)</a></li><li><a href="../article/database-optimization.html">Ottimizzazione del database</a></li><li><a href="../article/database-problems.html">Correzione: problemi al database</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Risoluzione problemi e supporto <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Risoluzione: problemi di installazione e requisiti di base</a></li><li><a href="../article/installation-setup-failed.html">Risoluzione: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: una policy di controllo delle applicazioni blocca DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Soluzione: lo strumento di disegno Rettangolo non funziona</a></li><li><a href="../article/chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a></li><li><a href="../article/license-issues.html">Risolvere: problemi di licenza e attivazione</a></li><li><a href="../article/diagnostic-report.html">Report diagnostico: prima di contattare il supporto</a></li><li><a href="../article/get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account e fatturazione <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Gestire abbonamenti e fatturazione</a></li><li><a href="../article/move-to-new-computer.html">Spostare DeepCharts su un nuovo computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicatori e analisi</a> › Trend</div>
+<div class="article-head"><h1>Aroon Oscillator</h1>
+<p class="article-desc">Comprimi Aroon Up e Aroon Down in un&#x27;unica linea attorno allo zero con l&#x27;Aroon Oscillator per leggere forza, direzione ed esaurimento del trend.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 4 min read</span>
+  <a class="btn-pdf" href="../pdf/aroon-oscillator.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>L'Aroon Oscillator misura la forza e la direzione del trend calcolando la differenza tra Aroon Up e Aroon Down. Dove <a href="./aroon-up-down.html">Aroon Up/Down</a> mostra due linee, l'oscillatore comprime la stessa informazione in un'unica linea che fluttua attorno a una linea zero: positiva quando sono i tori a segnare i nuovi estremi, negativa quando sono gli orsi.</p>
+<p>Se trovi i crossover a due linee visivamente rumorosi, questo è il modo più pulito di leggere Aroon.</p>
+<h2 id="che-cos">Che cos'è</h2>
+<p>L'oscillatore risponde alla domanda &quot;quale lato sta vincendo, e di quanto?&quot; con un unico valore. Poiché Aroon Up e Aroon Down variano ciascuno da 0 a 100, la loro differenza oscilla tra gli estremi ai due lati dello zero: letture fortemente positive indicano che dominano i nuovi massimi recenti, letture fortemente negative indicano che dominano i nuovi minimi recenti, e letture vicine allo zero indicano che nessun lato ha il sopravvento.</p>
+<p>L'indicatore aiuta i trader a identificare trend emergenti, forza del trend, potenziali inversioni e zone di esaurimento in stile ipercomprato/ipervenduto.</p>
+<h2 id="quando-usarlo">Quando usarlo</h2>
+<ul>
+<li>Per leggere direzione e forza del trend da un'unica linea invece di seguirne due.</li>
+<li>Per cogliere le transizioni di trend: l'attraversamento della linea zero è la versione dell'oscillatore del crossover di Aroon Up/Down.</li>
+<li>Per individuare l'esaurimento: letture estreme che si arrestano e tornano verso lo zero avvertono che il lato dominante sta perdendo la presa.</li>
+<li>Per confermare i segnali di strumenti basati sul prezzo come il <a href="./donchian-channel.html">Donchian Channel</a> — un breakout sostenuto da un oscillatore fortemente positivo ha alle spalle il momentum degli estremi freschi.</li>
+</ul>
+<h2 id="avvio-rapido">Avvio rapido</h2>
+<ol>
+<li>Apri un grafico e fai clic sull'icona a barre nell'angolo in alto a sinistra per aprire il pannello <strong>Indicators</strong>.</li>
+<li>Fai clic su <strong>Indicators</strong> per aprire la lista completa <strong>Indicator List</strong>.</li>
+<li>Cerca &quot;Aroon Oscillator&quot; e fai clic su <strong>+</strong> per aggiungerlo — viene tracciato in un pannello dedicato sotto il grafico dei prezzi.</li>
+<li>Fai clic sull'icona a ingranaggio accanto all'indicatore per aprirne le impostazioni.</li>
+</ol>
+<p>Il valore predefinito di <strong>Length</strong> pari a 14 corrisponde alla configurazione Aroon standard. Lo stile predefinito <strong>Subgraph Style</strong> è <strong>Bars</strong> con <strong>Auto Color (+/-)</strong>, quindi le letture positive e negative sono colorate in modo diverso fin da subito — un modo semplice per leggere il regime a colpo d'occhio.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Un grafico dei prezzi con l&#x27;Aroon Oscillator in un pannello inferiore reso come barre, barre positive di un colore durante il trend rialzista e barre negative di un altro colore dopo l&#x27;inversione, con la linea zero visibile al centro</div><div class="s-file">ID: <b class="s-id">dc-it-aroon-oscillator-01</b> · save as <code>dc-it-aroon-oscillator-01.png</code></div></div></div>
+<h2 id="come-leggerlo">Come leggerlo</h2>
+<ul>
+<li><strong>Sopra lo zero</strong>: Aroon Up supera Aroon Down — gli estremi più recenti sono massimi; regime rialzista. <strong>Sotto lo zero</strong> è lo specchio ribassista.</li>
+<li><strong>Distanza dallo zero = convinzione.</strong> Letture spinte verso gli estremi significano che un lato ha segnato estremi di recente mentre l'ultimo estremo dell'altro lato è datato — un trend forte.</li>
+<li><strong>Gli attraversamenti della linea zero</strong> segnalano potenziali cambi di trend. Come per ogni oscillatore, gli attraversamenti durante fasi laterali tranquille generano falsi segnali; quelli accompagnati da un movimento deciso del prezzo sono più affidabili.</li>
+<li><strong>Estremi che sfumano</strong>: quando l'oscillatore raggiunge una zona estrema e poi si contrae verso lo zero mentre il prezzo rallenta, il trend sta invecchiando — stringi il rischio o cerca una struttura di inversione.</li>
+</ul>
+<h2 id="riferimento-delle-impostazioni">Riferimento delle impostazioni</h2>
+<h3 id="parametri">Parametri</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Che cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Length</strong></td>
+<td>Numero di barre usate nel calcolo di Aroon. Predefinito: 14. Valori più bassi producono segnali più reattivi; valori più alti generano risultati più fluidi.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="impostazioni-dei-livelli">Impostazioni dei livelli</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Che cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Middle Level</strong></td>
+<td>La linea di riferimento del trend neutro. Predefinito: 0.</td>
+</tr>
+<tr>
+<td><strong>Lower Level</strong></td>
+<td>Linea di livello che segna una zona estrema. Predefinito: 80.</td>
+</tr>
+<tr>
+<td><strong>High Level</strong></td>
+<td>Linea di livello che segna la zona estrema opposta. Predefinito: -80.</td>
+</tr>
+<tr>
+<td><strong>Middle/Lower/Higher Level Color</strong></td>
+<td>Colore di ciascuna linea di livello.</td>
+</tr>
+<tr>
+<td><strong>Level Width</strong></td>
+<td>Spessore delle linee di livello.</td>
+</tr>
+</tbody>
+</table>
+<p>Questi livelli aiutano a identificare condizioni di trend forte e potenziali zone di esaurimento.</p>
+<p><span class="confirm-flag">CONFIRM: the source article lists Lower Level default as 80 and High Level default as -80 — verify in the app whether these two defaults are intentionally assigned this way or swapped.</span></p>
+<h3 id="subgraphs">Subgraphs</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Che cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Color</strong> / <strong>2° Color</strong></td>
+<td>Colori primario e secondario delle barre dell'oscillatore.</td>
+</tr>
+<tr>
+<td><strong>Subgraph Style</strong></td>
+<td>Formato di visualizzazione. Predefinito: <strong>Bars</strong>.</td>
+</tr>
+<tr>
+<td><strong>Auto Color (+/-)</strong></td>
+<td>Cambia automaticamente il colore in base ai valori positivi o negativi.</td>
+</tr>
+<tr>
+<td><strong>Line Style</strong></td>
+<td>Pattern visivo quando disegnato come linea (Solid e altri stili).</td>
+</tr>
+<tr>
+<td><strong>Line Width</strong></td>
+<td>Spessore della linea/barra.</td>
+</tr>
+<tr>
+<td><strong>Short Name</strong></td>
+<td>Etichetta personalizzata mostrata nella legenda del grafico.</td>
+</tr>
+<tr>
+<td><strong>Name Label</strong> / <strong>Value Label</strong></td>
+<td>Etichette opzionali di nome e valore, con opzioni di colore <strong>Name Background</strong> e <strong>Value Background</strong>.</td>
+</tr>
+<tr>
+<td><strong>Chart color for marker</strong></td>
+<td>Usa il colore del grafico per il marcatore del valore.</td>
+</tr>
+<tr>
+<td><strong>Include on Auto Center</strong></td>
+<td>Se la serie viene considerata quando il pannello si ridimensiona automaticamente.</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">La finestra delle impostazioni dell&#x27;Aroon Oscillator che mostra Length 14, il gruppo delle impostazioni dei livelli con i campi Middle/Lower/High Level e il gruppo Subgraphs con Subgraph Style impostato su Bars e Auto Color (+/-) attivo</div><div class="s-file">ID: <b class="s-id">dc-it-aroon-oscillator-02</b> · save as <code>dc-it-aroon-oscillator-02.png</code></div></div></div>
+<h2 id="suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</h2>
+<ul>
+<li><strong>Gli attraversamenti della linea zero ritardano leggermente rispetto alla vista a due linee</strong> in condizioni instabili e si ripetono spesso nelle fasi laterali. Richiedi una conferma — una spinta verso una zona estrema — prima di trattare un attraversamento come un cambio di trend.</li>
+<li><strong>Una lettura estrema è forza, non un'inversione automatica.</strong> A differenza di un vero oscillatore di ipercomprato/ipervenduto, un Aroon Oscillator incollato all'estremo spesso indica soltanto un trend sano che stampa estremo dopo estremo. Cerca la contrazione verso lo zero, non l'estremo in sé.</li>
+<li><strong>Mantieni Length coerente</strong> con qualsiasi pannello <a href="./aroon-up-down.html">Aroon Up/Down</a> che usi in parallelo, altrimenti i due strumenti saranno in disaccordo e genereranno confusione anziché conferma.</li>
+<li>Lo stile <strong>Bars</strong> con <strong>Auto Color (+/-)</strong> è più facile da leggere a colpo d'occhio rispetto a una linea; mantienilo, a meno che tu non sovrapponga più serie nello stesso pannello (vedi <a href="./indicator-layout.html">Come cambiare il layout degli indicatori</a>).</li>
+</ul>
+<h2 id="articoli-correlati">Articoli correlati</h2>
+<ul>
+<li><a href="./aroon-up-down.html">Aroon Up/Down</a></li>
+<li><a href="./adx.html">Average Directional Index (ADX)</a></li>
+<li><a href="./macd.html">MACD</a></li>
+<li><a href="./different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li>
+<li><a href="./indicator-layout.html">Come cambiare il layout degli indicatori</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./aroon-up-down.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Aroon Up/Down</div></a><a class="next" href="./rsi.html"><div class="pn-lbl">Next →</div><div class="pn-title">Relative Strength Index (RSI)</div></a></div>
+    <div class="footer">Centro Assistenza DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#che-cos">Che cos&#x27;è</a></li><li class="lv2"><a href="#quando-usarlo">Quando usarlo</a></li><li class="lv2"><a href="#avvio-rapido">Avvio rapido</a></li><li class="lv2"><a href="#come-leggerlo">Come leggerlo</a></li><li class="lv2"><a href="#riferimento-delle-impostazioni">Riferimento delle impostazioni</a></li><li class="lv3"><a href="#parametri">Parametri</a></li><li class="lv3"><a href="#impostazioni-dei-livelli">Impostazioni dei livelli</a></li><li class="lv3"><a href="#subgraphs">Subgraphs</a></li><li class="lv2"><a href="#suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</a></li><li class="lv2"><a href="#articoli-correlati">Articoli correlati</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-it.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

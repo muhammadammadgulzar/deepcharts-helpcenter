@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Deep Profile (Volume / Delta Profile) — Centro Assistenza DeepCharts</title>
+<meta name="description" content="Riferimento completo per Deep Profile, l&#x27;indicatore volume-by-price di DeepCharts: tipi di profilo, periodi, divisione per sessioni, POC, picchi e valli, unione e divisione.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepCharts <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/quick-start-first-trade.html">Guida rapida</a><a href="../article/get-help.html">Assistenza</a><a class="kb-switch" href="../../it/deepdom/index.html" title="Switch knowledge base">⇄ DeepDOM KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../article/deep-profile.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🚀&nbsp; Primi passi <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/welcome-to-deepcharts.html">Benvenuto in DeepCharts: tour della piattaforma</a></li><li><a href="../article/system-requirements.html">Requisiti di sistema</a></li><li><a href="../article/install-deepcharts.html">Come installare DeepCharts e attivare la tua licenza</a></li><li><a href="../article/free-delayed-data-feed.html">Usa il feed dati gratuito ritardato di 15 minuti</a></li><li><a href="../article/buy-data-feed.html">Come acquistare un feed dati e ottenere le tue credenziali</a></li><li><a href="../article/first-chart.html">Apri il tuo primo grafico</a></li><li><a href="../article/simulation-accounts.html">Conti di trading e simulazione</a></li><li><a href="../article/quick-start-first-trade.html">Avvio rapido: dall&#x27;installazione alla tua prima operazione</a></li></ul></div><div class="nav-cat"><button>🔌&nbsp; Connessioni e feed dati <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Configurazione</li><li><a href="../article/compatibility-guide.html">Broker, prop firm e feed dati supportati</a></li><li><a href="../article/connect-data-feed.html">Come connettere un feed dati (Feed Settings)</a></li><li><a href="../article/symbol-manage.html">Symbol Manage: sottoscrivi gli exchange e mappa il tuo feed</a></li><li><a href="../article/sign-market-data-agreement.html">Firma il contratto sui dati di mercato</a></li><li><a href="../article/connect-dxfeed.html">Come connettere un feed dati dxFeed</a></li><li><a href="../article/connect-rithmic.html">Come collegare un feed dati Rithmic</a></li><li><a href="../article/rtrader-pro-plugin.html">Connettere Rithmic con il plugin RTrader Pro</a></li><li><a href="../article/connect-rithmic-prop-firm.html">Collega qualsiasi conto prop firm Rithmic (tabella dei server)</a></li><li><a href="../article/connect-apex.html">Connettere Apex Trader Funding</a></li><li><a href="../article/connect-dxfeed-prop-firm.html">Connettere un conto dxFeed di una prop firm (MFF, Aqua, Goat...)</a></li><li><a href="../article/connect-cqg.html">Come connettere CQG (AMP, Optimus, EdgeClear, Ironbeam...)</a></li><li><a href="../article/connect-interactive-brokers.html">Connettere Interactive Brokers (solo esecuzione)</a></li><li><a href="../article/competition-connect.html">Competizione DeepCharts: iscriviti e connettiti</a></li><li><a href="../article/end-of-day-data.html">Connettere i dati storici (End of Day)</a></li><li><a href="../article/manage-feed-connections.html">Gestire e passare da una connessione feed all&#x27;altra</a></li><li class="nav-sub">Risoluzione dei problemi</li><li><a href="../article/feed-connected-chart-not-moving.html">Fix: feed live connesso ma il grafico non si muove</a></li><li><a href="../article/fix-unable-to-establish-connection.html">Correzione: Connection Failed — Unable to Establish Connection</a></li><li><a href="../article/fix-username-password.html">Correzione: Connection Failed — Check Username and Password</a></li><li><a href="../article/fix-bad-server.html">Fix: Connection Failed — Bad Server</a></li><li><a href="../article/fix-log-in-using-rtrader.html">Correzione: Please Log In Using R Trader or R Trader Pro</a></li><li><a href="../article/fix-rithmic-expert-not-attached.html">Correzione: Rithmic — Expert Not Attached</a></li><li><a href="../article/fix-dxfeed-dll.html">Correzione: Unable to Load DLL DXFeed_64.dll</a></li><li><a href="../article/fix-data-access-suspended.html">Fix: dxFeed DATA_ACCESS_SUSPENDED</a></li><li><a href="../article/fix-myfundedfutures-failed.html">Correzione: dxfeed.myfundedfutures.com Failed</a></li><li><a href="../article/fix-system-cannot-find-file.html">Correzione: The System Cannot Find the File Specified</a></li><li><a href="../article/connection-lost-opening-chart.html">Correzione: connessione persa all&#x27;apertura di un grafico</a></li><li><a href="../article/symbol-subscription-issue.html">Correzione: problema di sottoscrizione dei simboli</a></li><li><a href="../article/app-crashes-saving-feed.html">Fix: l&#x27;app va in crash salvando le impostazioni del feed</a></li><li><a href="../article/gaps-in-price.html">Correzione: gap di prezzo sui grafici</a></li><li><a href="../article/data-delayed-lagging.html">Correzione: grafici in ritardo o dati ritardati (checklist)</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Grafici e workspace <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/chart-window.html">La finestra del grafico</a></li><li><a href="../article/price-chart-settings.html">Impostazioni del grafico dei prezzi</a></li><li><a href="../article/chart-display-options.html">Opzioni di visualizzazione del grafico (stili di barra, sessioni, countdown)</a></li><li><a href="../article/drawing-tools.html">Strumenti di disegno e annotazioni</a></li><li><a href="../article/templates-workspaces.html">Template e workspace</a></li><li><a href="../article/quick-chart-templates.html">Template rapidi del grafico (OF-VP, D-VP, W-VP...)</a></li><li><a href="../article/link-windows.html">Collegare le finestre con i gruppi colore</a></li><li><a href="../article/replay-data.html">Replay dei dati di mercato</a></li><li><a href="../article/customize-language-theme-sounds.html">Personalizza lingua, tema e suoni di notifica</a></li><li><a href="../article/keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/keyboard-shortcuts-reference.html">Riferimento delle scorciatoie da tastiera</a></li><li><a href="../article/multi-monitor-windows.html">Disporre le finestre su più monitor (e recuperare le finestre fuori schermo)</a></li></ul></div><div class="nav-cat"><button>🪟&nbsp; Finestre della piattaforma <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/adv-time-and-sales.html">Advanced Time And Sales (il tape)</a></li><li><a href="../article/advanced-dom.html">Finestra Advanced DOM</a></li><li><a href="../article/profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li><li><a href="../article/scanner-window.html">Market Scanner</a></li><li><a href="../article/correlation-viewer.html">Correlation Viewer</a></li></ul></div><div class="nav-cat"><button>💹&nbsp; Trading e ordini <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/trading-from-chart.html">Trading dal grafico</a></li><li><a href="../article/trading-panel-reference.html">Riferimento del pannello di trading: ogni pulsante e campo</a></li><li><a href="../article/dom-trading-chart.html">DOM Trading sul grafico (ladder con click-trading)</a></li><li><a href="../article/depth-of-market.html">Indicatore Depth of Market (DOM)</a></li><li><a href="../article/oco-strategies.html">Strategie OCO (One-Cancels-the-Other)</a></li><li><a href="../article/orders-window.html">Finestra Ordini</a></li><li><a href="../article/portfolio-wallet.html">Portafoglio (Wallet)</a></li><li><a href="../article/risk-manager.html">Responsabile del rischio</a></li><li><a href="../article/trade-copier.html">Come configurare il Trade Copier</a></li><li><a href="../article/performance-analysis.html">Analisi delle performance (Signal Performance)</a></li></ul></div><div class="nav-cat"><button>🎓&nbsp; Concetti <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orderflow-101.html">Orderflow 101: bid, ask, aggressore e delta</a></li><li><a href="../article/understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li><li><a href="../article/understanding-auction-theory.html">Capire la teoria dell&#x27;asta: squilibrio, aste incompiute, assorbimento</a></li><li><a href="../article/understanding-icebergs-absorption.html">Capire gli iceberg e l&#x27;assorbimento</a></li><li><a href="../article/understanding-vwap.html">Capire il VWAP</a></li><li><a href="../article/understanding-market-structure-sessions.html">Capire la struttura del mercato e le sessioni (RTH/ETH, rollover)</a></li><li><a href="../article/reading-a-footprint.html">Leggere un footprint: esempi svolti</a></li><li><a href="../article/glossary.html">Glossario dei termini di orderflow e della piattaforma</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Indicatori e analisi <span class="tw">▶</span></button><ul class="nav-items"><li class="nav-sub">Fondamenti degli indicatori</li><li><a href="../article/different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li><li><a href="../article/indicator-layout.html">Come cambiare il layout degli indicatori</a></li><li class="nav-sub">Indicatori Deep</li><li><a href="../article/deep-print.html">Deep Print (Footprint)</a></li><li><a href="../article/deep-profile.html" class="active">Deep Profile (Volume / Delta Profile)</a></li><li><a href="../article/deep-profile-swing.html">Deep Profile Swing</a></li><li><a href="../article/deep-profile-values.html">Deep Profile Values</a></li><li><a href="../article/deep-delta.html">Deep Delta</a></li><li><a href="../article/deep-stats.html">Deep Stats</a></li><li><a href="../article/deep-trades.html">Deep Trades</a></li><li><a href="../article/deep-wall.html">Deep Wall</a></li><li><a href="../article/deep-v-tracker.html">Deep V-Tracker</a></li><li><a href="../article/deep-m-ivb.html">Deep-M IVB</a></li><li><a href="../article/deep-m-effort.html">Deep-M Effort (NQ)</a></li><li><a href="../article/deep-pattern-builder.html">Deep Pattern Builder</a></li><li class="nav-sub">Trend</li><li><a href="../article/moving-average.html">Media mobile</a></li><li><a href="../article/super-trend.html">Super Trend</a></li><li><a href="../article/super-trend-difference.html">Super Trend Difference</a></li><li><a href="../article/parabolic-sar.html">Parabolic SAR</a></li><li><a href="../article/ichimoku.html">Ichimoku</a></li><li><a href="../article/linear-regression.html">Regressione lineare</a></li><li><a href="../article/regression-channel.html">Regression Channel</a></li><li><a href="../article/tillson-t3.html">Tillson T3</a></li><li><a href="../article/zig-zag.html">Zig Zag</a></li><li><a href="../article/donchian-channel.html">Donchian Channel</a></li><li><a href="../article/adx.html">Average Directional Index (ADX)</a></li><li><a href="../article/aroon-up-down.html">Aroon Up/Down</a></li><li><a href="../article/aroon-oscillator.html">Aroon Oscillator</a></li><li class="nav-sub">Momentum e oscillatori</li><li><a href="../article/rsi.html">Relative Strength Index (RSI)</a></li><li><a href="../article/macd.html">MACD</a></li><li><a href="../article/stochastic-oscillator.html">Oscillatore stocastico</a></li><li><a href="../article/momentum.html">Momentum</a></li><li><a href="../article/rate-of-change.html">Rate of Change (ROC)</a></li><li><a href="../article/cci.html">Commodity Channel Index (CCI)</a></li><li><a href="../article/williams-r.html">Williams %R</a></li><li><a href="../article/awesome-oscillator.html">Awesome Oscillator</a></li><li><a href="../article/inverse-cyber-cycle.html">Inverse Cyber Cycle</a></li><li><a href="../article/know-sure-thing.html">Know Sure Thing (KST)</a></li><li class="nav-sub">Volatilità e bande</li><li><a href="../article/bollinger-bands.html">Bande di Bollinger</a></li><li><a href="../article/keltner-channel.html">Keltner Channel</a></li><li><a href="../article/atr.html">Average True Range (ATR)</a></li><li><a href="../article/standard-deviation.html">Deviazione standard</a></li><li><a href="../article/vwap-envelopes.html">VWAP Envelopes</a></li><li><a href="../article/adr-target.html">Average Daily Range Target (ADR Target)</a></li><li class="nav-sub">Volume e delta</li><li><a href="../article/volume.html">Volume</a></li><li><a href="../article/delta-bar.html">Delta Bar</a></li><li><a href="../article/delta-highlight.html">Delta % Highlight</a></li><li><a href="../article/delta-cumulative-candlestick.html">Delta Cumulative Candlestick</a></li><li><a href="../article/delta-cumulative-histogram.html">Delta Cumulative Histogram</a></li><li><a href="../article/volume-swing.html">Volume Swing</a></li><li><a href="../article/volume-delta-sprint.html">Volume/Delta Sprint</a></li><li><a href="../article/chaikin-ad.html">Chaikin Accumulation/Distribution</a></li><li><a href="../article/big-trades.html">Big Trades</a></li><li><a href="../article/speed-of-tape.html">Speed of Tape</a></li><li><a href="../article/speed-of-tape-instant.html">Speed of Tape (Instant)</a></li><li><a href="../article/market-statistics.html">Market Statistics</a></li><li><a href="../article/on-candle-stats.html">On Candle Stats</a></li><li class="nav-sub">Orderflow e asta</li><li><a href="../article/market-profile-tpo.html">Market Profile (TPO)</a></li><li><a href="../article/imbalance-tracker.html">Imbalance Tracker</a></li><li><a href="../article/imbalance-rejector.html">Imbalance Rejector</a></li><li><a href="../article/session-imbalance.html">Session Imbalance</a></li><li><a href="../article/unfinished-auction.html">Unfinished Auction</a></li><li><a href="../article/auction-gap-tracker.html">Auction Gap Tracker</a></li><li><a href="../article/dynamic-poc.html">Dynamic POC</a></li><li><a href="../article/bar-poc.html">Bar POC</a></li><li><a href="../article/stop-spotter.html">Stop Spotter</a></li><li><a href="../article/ratio-highlight.html">Ratio Highlight</a></li><li class="nav-sub">Livelli e pattern</li><li><a href="../article/pivot-points.html">Pivot Points</a></li><li><a href="../article/important-levels.html">Livelli importanti</a></li><li><a href="../article/absolute-levels.html">Livelli assoluti</a></li><li><a href="../article/price-movement-levels.html">Price Movement Levels</a></li><li><a href="../article/session-marker.html">Session Marker</a></li><li><a href="../article/swing-point.html">Swing Point</a></li><li><a href="../article/gap-detector.html">Gap Detector</a></li><li><a href="../article/fvg-identifier.html">FVG Identifier</a></li><li><a href="../article/divergence-detector.html">Divergence Detector</a></li><li><a href="../article/confluence-identifier.html">Confluence Identifier</a></li><li class="nav-sub">Overlay del grafico</li><li><a href="../article/candlestick-bar.html">Candlestick Bar</a></li><li><a href="../article/overlay-chart.html">Overlay Chart</a></li><li><a href="../article/overlay-symbol.html">Overlay Symbol</a></li><li><a href="../article/overlay-timeframe-candlestick.html">Overlay Timeframe Candlestick</a></li><li><a href="../article/overlay-timeframe-highlight.html">Overlay Timeframe Highlight</a></li><li><a href="../article/shift-candle.html">Shift Candle</a></li><li><a href="../article/text-on-chart.html">Testo sul grafico</a></li><li><a href="../article/annotations-overlay.html">Annotations Overlay</a></li></ul></div><div class="nav-cat"><button>🗄️&nbsp; Dati e database <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/symbol-rollover.html">Rollover dei simboli (cambio del mese di contratto)</a></li><li><a href="../article/delete-market-data.html">Eliminare i dati di mercato (metodo in-app e manuale)</a></li><li><a href="../article/download-data.html">Ri-scaricare i dati storici (strumento Download Data)</a></li><li><a href="../article/database-optimization.html">Ottimizzazione del database</a></li><li><a href="../article/database-problems.html">Correzione: problemi al database</a></li><li><a href="../article/fix-could-not-find-path.html">Fix: Could Not Find a Part of the Path</a></li></ul></div><div class="nav-cat"><button>🛟&nbsp; Risoluzione problemi e supporto <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-problems.html">Risoluzione: problemi di installazione e requisiti di base</a></li><li><a href="../article/installation-setup-failed.html">Risoluzione: Installation Setup Failed</a></li><li><a href="../article/application-control-policy.html">Fix: una policy di controllo delle applicazioni blocca DeepCharts</a></li><li><a href="../article/rectangle-drawing-tool.html">Soluzione: lo strumento di disegno Rettangolo non funziona</a></li><li><a href="../article/chart-zoom.html">Soluzione: lo zoom del grafico non funziona</a></li><li><a href="../article/license-issues.html">Risolvere: problemi di licenza e attivazione</a></li><li><a href="../article/diagnostic-report.html">Report diagnostico: prima di contattare il supporto</a></li><li><a href="../article/get-help.html">Come ottenere aiuto (chat, report diagnostico, supporto)</a></li></ul></div><div class="nav-cat"><button>👤&nbsp; Account e fatturazione <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/manage-subscriptions.html">Gestire abbonamenti e fatturazione</a></li><li><a href="../article/move-to-new-computer.html">Spostare DeepCharts su un nuovo computer</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators-analysis.html">Indicatori e analisi</a> › Indicatori Deep</div>
+<div class="article-head"><h1>Deep Profile (Volume / Delta Profile)</h1>
+<p class="article-desc">Riferimento completo per Deep Profile, l&#x27;indicatore volume-by-price di DeepCharts: tipi di profilo, periodi, divisione per sessioni, POC, picchi e valli, unione e divisione.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 7 min read</span>
+  <a class="btn-pdf" href="../pdf/deep-profile.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Deep Profile è l'indicatore volume-by-price di DeepCharts: traccia l'attività di trading per prezzo anziché per tempo, disegnando un istogramma di quanto volume (o delta) è stato scambiato a ogni livello di prezzo. I vari pulsanti di profilo sul grafico abilitano tutti questo stesso indicatore — ogni pulsante è una diversa configurazione predefinita di Deep Profile.</p>
+<p>Dove un grafico a candele risponde a &quot;che cosa è successo e quando&quot;, un profilo risponde a &quot;dove sono stati fatti gli affari&quot; — quali prezzi il mercato ha accettato e quali ha rifiutato.</p>
+<h2 id="che-cos">Che cos'è</h2>
+<p>Deep Profile costruisce istogrammi del volume eseguito per livello di prezzo su un periodo a tua scelta — l'ultima sessione, un profilo al giorno, un unico composite su tutti i dati caricati, esattamente ciò che è visibile sullo schermo, o qualsiasi area personalizzata che selezioni. L'istogramma può mostrare il volume totale, la suddivisione ask/bid, il delta, o delta e volume insieme.</p>
+<h2 id="quando-usarlo">Quando usarlo</h2>
+<ul>
+<li>Vuoi localizzare i prezzi dove è stata fatta la maggior parte degli affari — supporti/resistenze fondati sul volume effettivamente scambiato, non su linee tracciate a occhio.</li>
+<li>Fai trading sui livelli di sessione: POC del giorno precedente, nodi ad alto volume e vuoti a basso volume.</li>
+<li>Vuoi confrontare la pressione in acquisto e in vendita per prezzo (profili Ask/Bid o Delta).</li>
+<li>Hai bisogno del profilo di un'area specifica — una congestione, uno swing, un picco da news — tramite i periodi Visible o Custom.</li>
+</ul>
+<h2 id="avvio-rapido">Avvio rapido</h2>
+<ol>
+<li>Apri un grafico e aggiungi <strong>Deep Profile</strong> dal pulsante <strong>Indicators</strong> del grafico (oppure fai clic su uno dei pulsanti di profilo — sono preset di questo indicatore).</li>
+<li>Apri le impostazioni e imposta <strong>VBP Type</strong> su <strong>Volume Profile</strong>.</li>
+<li>Imposta <strong>VBP Period</strong> su <strong>Multiple</strong> con <strong>Length Type</strong> = Days e un <strong>Length Value</strong> di 1 per un profilo al giorno.</li>
+<li>Applica — ogni giorno mostra ora il proprio istogramma di volume. Prova il profilo dal vivo qui sotto: passa il mouse sulle righe e trascina la Value Area % per vedere come rispondono il POC e i confini VAH/VAL.</li>
+</ol>
+<div class="widget-mount" data-widget="volume-profile-lab"></div>
+<h3 id="configurazione-iniziale-consigliata">Configurazione iniziale consigliata</h3>
+<p>Suggerimenti, non valori predefiniti:</p>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Punto di partenza suggerito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VBP Type</strong></td>
+<td>Prima <strong>Volume Profile</strong>; aggiungi in seguito un <strong>Delta Profile</strong> per vedere la pressione direzionale</td>
+</tr>
+<tr>
+<td><strong>VBP Period</strong></td>
+<td><strong>Multiple</strong>, Length Type = Days, Length Value = 1</td>
+</tr>
+<tr>
+<td><strong>Input Data</strong></td>
+<td><strong>Volume</strong>; prova <strong>Aggregate</strong> quando ti interessano i grandi ordini ricostruiti (vedi <a href="./different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a>)</td>
+</tr>
+<tr>
+<td><strong>Raggruppamento dei tick</strong></td>
+<td><strong>Automatic</strong>; passa a Manual con Manual Tick = 1 se i tuoi livelli si spostano quando zoomi</td>
+</tr>
+<tr>
+<td><strong>POC</strong></td>
+<td>Abilitato, con <strong>Show Line</strong> attivo così il livello si estende visibilmente</td>
+</tr>
+<tr>
+<td><strong>Peak and Valley</strong></td>
+<td>Abilitali quando ti senti a tuo agio — inizia con sensibilità più alta per nodi meno numerosi e più significativi</td>
+</tr>
+</tbody>
+</table>
+<h2 id="come-leggerlo">Come leggerlo</h2>
+<ul>
+<li><strong>L'istogramma</strong>: le barre più lunghe marcano i prezzi dove è stato scambiato più volume — aree di accettazione dove il mercato ha passato tempo a fare affari. Le barre corte marcano il rifiuto — prezzi che il mercato ha attraversato velocemente.</li>
+<li><strong>POC (Point of Control)</strong>: il livello dove si è verificato il volume di scambi più alto all'interno del profilo. Agisce da centro gravitazionale del periodo ed è un riferimento molto osservato.</li>
+<li><strong>Developing POC</strong>: con Line Type impostato su <strong>Developing</strong>, vedi la traccia storica della migrazione del POC durante la costruzione della sessione — utile per giudicare se il valore si stava spostando in su o in giù.</li>
+<li><strong>Picchi e valli</strong>: i picchi sono nodi ad alto volume (tipicamente mostrati in rosso) dove il prezzo tende a rallentare; le valli sono zone a basso volume (tipicamente verdi) che il prezzo tende ad attraversare rapidamente.</li>
+<li><strong>Profili delta</strong>: un delta positivo a un livello significa che lì i compratori aggressivi hanno superato i venditori aggressivi; un delta negativo prolungato dentro un'area a basso volume può segnalare vendite di iniziativa.</li>
+</ul>
+<p>Per i concetti di base — area di valore, HVN/LVN, e come i profili inquadrano una giornata di trading — vedi <a href="./understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a>. Se vuoi solo i livelli chiave (POC, area di valore, VWAP) senza l'istogramma, usa <a href="./deep-profile-values.html">Deep Profile Values</a>.</p>
+<h2 id="riferimento-delle-impostazioni">Riferimento delle impostazioni</h2>
+<p>Raggruppate come nella finestra di dialogo dell'indicatore.</p>
+<h3 id="general-settings">General settings</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Che cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VBP Type</strong></td>
+<td>Varietà di profilo: <strong>Volume Profile</strong> (volume totale scambiato a ogni livello di prezzo), <strong>Ask/Bid Volume Profile</strong> (pressione in acquisto e in vendita separate), <strong>Delta Profile</strong> (differenza tra compratori e venditori aggressivi per livello), <strong>Delta and Total Volume</strong> (delta a sinistra, volume a destra)</td>
+</tr>
+<tr>
+<td><strong>VBP Period</strong></td>
+<td>Ambito dei dati: <strong>Latest</strong> (solo il profilo più recente), <strong>Multiple</strong> (profili separati per periodo di tempo selezionato), <strong>Composite</strong> (un unico profilo su tutti i dati caricati), <strong>Visible</strong> (profilo di esattamente i dati sullo schermo — si ricalcola mentre scorri e zoomi), <strong>Custom</strong> (profilo su qualsiasi area del grafico selezionata a mano, con scorciatoie sulla toolbar sinistra)</td>
+</tr>
+<tr>
+<td><strong>Length Type / Length Value</strong></td>
+<td>Frequenza dei profili — es. Length Type = Days con Length Value = 2 crea un nuovo profilo ogni due giorni. Sono supportate unità a minuti, giornaliere, settimanali e mensili</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-settings">Data settings</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Che cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Input Data</strong></td>
+<td>Base di calcolo: <strong>Volume</strong>, <strong>Order</strong>, <strong>Aggregate</strong>, o <strong>Number of Trades</strong> (conteggi delle singole transazioni invece del volume totale). Tipi di input diversi producono forme di profilo visibilmente diverse — vedi <a href="./different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></td>
+</tr>
+<tr>
+<td><strong>Min and Max Filter</strong></td>
+<td>Soglie dimensionali — es. un filtro minimo di 20 esclude gli ordini più piccoli di 20</td>
+</tr>
+<tr>
+<td><strong>Tick Grouping</strong></td>
+<td>Altezza delle barre: <strong>Automatic</strong> (calcolata da DeepCharts) o <strong>Manual</strong> (es. Manual Tick = 5 raggruppa cinque tick per barra)</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-note">
+<p><strong>Nota:</strong> Con il raggruppamento automatico dei tick, le altezze delle barre — e quindi i prezzi esatti di POC/livelli — possono spostarsi quando zoomi la scala dei prezzi. Per bloccare i livelli, imposta il raggruppamento su Manual con Manual Tick = 1.</p>
+</blockquote>
+<h3 id="filter-split-time">Filter / Split Time</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Che cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Filter Mode: Splitted</strong></td>
+<td>Disegna più profili all'interno della stessa giornata di trading — ad esempio profili di sessione ETH e RTH separati</td>
+</tr>
+<tr>
+<td><strong>Filter Mode: Triple + Custom Time</strong></td>
+<td>Tre profili separati al giorno su intervalli di tempo personalizzati</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-warning">
+<p><strong>Attenzione:</strong> Gli orari dei filtri personalizzati usano il fuso orario dell'exchange dello strumento su cui fai trading — sempre, indipendentemente dal tuo orologio locale. Inserire qui orari locali costruisce silenziosamente profili sulle ore sbagliate.</p>
+</blockquote>
+<h3 id="poc-of-profile">POC of Profile</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Che cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enable</strong></td>
+<td>Attiva o disattiva la visualizzazione del POC — il livello con il volume scambiato più alto</td>
+</tr>
+<tr>
+<td><strong>Highlight Enable / Color</strong></td>
+<td>Evidenzia la barra del POC con un colore personalizzato</td>
+</tr>
+<tr>
+<td><strong>Show Line / Line Type</strong></td>
+<td>Disegna una linea orizzontale del POC; <strong>Developing</strong> mostra le posizioni storiche del POC durante la sua migrazione</td>
+</tr>
+<tr>
+<td><strong>Extended Line Till End Window</strong></td>
+<td>Estende la linea del POC su tutto il grafico visibile</td>
+</tr>
+<tr>
+<td><strong>Line Color / Width</strong></td>
+<td>Stile della linea del POC</td>
+</tr>
+</tbody>
+</table>
+<h3 id="peak-and-valley">Peak and Valley</h3>
+<table>
+<thead>
+<tr>
+<th>Impostazione</th>
+<th>Che cosa fa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Peaks / Valleys</strong></td>
+<td>Evidenzia i nodi ad alto volume (peaks) e le zone a basso volume (valleys)</td>
+</tr>
+<tr>
+<td><strong>Sensitivity</strong></td>
+<td>Una sensibilità più alta filtra il rumore — rilevamenti meno numerosi ma più significativi</td>
+</tr>
+</tbody>
+</table>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Finestra delle impostazioni di Deep Profile aperta sulla sezione General settings con i menu a discesa VBP Type e VBP Period</div><div class="s-file">ID: <b class="s-id">dc-it-deep-profile-01</b> · save as <code>dc-it-deep-profile-01.png</code></div></div></div>
+<h3 id="unire-e-dividere-i-profili">Unire e dividere i profili</h3>
+<p>Fai clic con il tasto destro del mouse su qualsiasi profilo sul grafico per combinare o dividere i periodi: unisci con il profilo precedente o successivo, dividi di nuovo un profilo unito, o reimposta per annullare tutte le unioni. Usalo per combinare ieri e oggi in un'unica distribuzione, o per isolare una singola sessione da un composite.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Menu contestuale del tasto destro su un profilo con le opzioni di unione, divisione e reimpostazione</div><div class="s-file">ID: <b class="s-id">dc-it-deep-profile-02</b> · save as <code>dc-it-deep-profile-02.png</code></div></div></div>
+<h2 id="suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</h2>
+<ul>
+<li><strong>&quot;Vedo solo un unico grande profilo / ne voglio uno al giorno.&quot;</strong> VBP Period = Composite costruisce un unico profilo su tutto. Passa a <strong>Multiple</strong> con Length Type = Days, Length Value = 1. Nota anche che l'impostazione dei giorni da caricare del grafico limita quanto indietro possono esistere i profili — aumenta i giorni caricati se mancano profili più vecchi.</li>
+<li><strong>&quot;Il profilo cambia quando zoomo.&quot;</strong> O VBP Period è <strong>Visible</strong> (ricalcolare sulla vista è il suo scopo), o il raggruppamento automatico dei tick sta ridimensionando le barre — imposta Manual Tick = 1 per bloccare i livelli.</li>
+<li><strong>&quot;La forma del mio profilo differisce da un'altra piattaforma.&quot;</strong> Confronta il tipo di Input Data, i filtri Min/Max, il raggruppamento dei tick e la divisione delle sessioni ETH/RTH prima di presumere dati errati — ciascuno cambia legittimamente la forma.</li>
+<li><strong>Profilo di una sola congestione:</strong> VBP Period = <strong>Custom</strong> e seleziona l'area, oppure <strong>Visible</strong> e inquadra l'area sullo schermo.</li>
+<li><strong>Profili separati per overnight e RTH:</strong> Filter Mode = <strong>Splitted</strong> con l'opzione RTH (due profili al giorno), oppure <strong>Triple</strong> con intervalli di tempo personalizzati.</li>
+</ul>
+<h2 id="articoli-correlati">Articoli correlati</h2>
+<ul>
+<li><a href="./understanding-volume-profile.html">Capire il Volume Profile: POC, area di valore, HVN/LVN</a></li>
+<li><a href="./deep-profile-values.html">Deep Profile Values</a></li>
+<li><a href="./deep-profile-swing.html">Deep Profile Swing</a></li>
+<li><a href="./profile-chart-window.html">Finestra Profile Chart (profili TPO e Volume)</a></li>
+<li><a href="./different-types-of-input.html">Diversi tipi di dati di input per gli indicatori</a></li>
+<li><a href="./indicator-layout.html">Come cambiare il layout degli indicatori</a></li>
+</ul>
+</article>
+<div class="pn"><a class="prev" href="./deep-print.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Deep Print (Footprint)</div></a><a class="next" href="./deep-profile-swing.html"><div class="pn-lbl">Next →</div><div class="pn-title">Deep Profile Swing</div></a></div>
+    <div class="footer">Centro Assistenza DeepCharts · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#che-cos">Che cos&#x27;è</a></li><li class="lv2"><a href="#quando-usarlo">Quando usarlo</a></li><li class="lv2"><a href="#avvio-rapido">Avvio rapido</a></li><li class="lv3"><a href="#configurazione-iniziale-consigliata">Configurazione iniziale consigliata</a></li><li class="lv2"><a href="#come-leggerlo">Come leggerlo</a></li><li class="lv2"><a href="#riferimento-delle-impostazioni">Riferimento delle impostazioni</a></li><li class="lv3"><a href="#general-settings">General settings</a></li><li class="lv3"><a href="#data-settings">Data settings</a></li><li class="lv3"><a href="#filter-split-time">Filter / Split Time</a></li><li class="lv3"><a href="#poc-of-profile">POC of Profile</a></li><li class="lv3"><a href="#peak-and-valley">Peak and Valley</a></li><li class="lv3"><a href="#unire-e-dividere-i-profili">Unire e dividere i profili</a></li><li class="lv2"><a href="#suggerimenti-ed-errori-comuni">Suggerimenti ed errori comuni</a></li><li class="lv2"><a href="#articoli-correlati">Articoli correlati</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-it.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

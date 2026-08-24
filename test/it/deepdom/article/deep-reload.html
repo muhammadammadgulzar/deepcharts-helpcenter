@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Deep Reload — Centro Assistenza DeepDOM</title>
+<meta name="description" content="Deep Reload (rilevatore di liquidità fresca) scansiona il book di negoziazione in tempo reale per trovare i momenti in cui nuova liquidità in attesa appare improvvisamente vicino al prezzo corrente.">
+<link rel="stylesheet" href="../../../assets/style.css">
+<link rel="stylesheet" href="../../../assets/review.css">
+<script>window.HC_ROOT="../../../";window.KB_ROOT="../";window.HC_KB="deepdom";window.HC_LANG="it";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Cerca nella knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">Tutti gli articoli</a><a href="../article/installation-and-first-configuration.html">Primi passi</a><a href="../../../it/article/get-help.html">Assistenza</a><a class="kb-switch" href="../../../it/index.html" title="Switch knowledge base">⇄ DeepCharts KB</a><div class="lang-dd"><button class="lang-btn" aria-haspopup="true">🌐 IT ▾</button><div class="lang-menu"><a class="lang-item" href="../../../deepdom/article/deep-reload.html">English</a><span class="lang-item cur">Italiano <em class="beta">BETA</em></span><span class="lang-item soon">Español <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Français <em class="beta">BETA</em> <em class="soonlbl">soon</em></span><span class="lang-item soon">Deutsch <em class="beta">BETA</em> <em class="soonlbl">soon</em></span></div></div></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Problemi Comuni <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Problemi di installazione</a></li><li><a href="../article/licence-issues.html">Problemi di licenza</a></li><li><a href="../article/symbol-subscription-issues.html">Problemi di sottoscrizione dei simboli</a></li><li><a href="../article/cache-issues-deepdom.html">Problemi di cache</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; Come Fare <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installazione e prima configurazione</a></li><li><a href="../article/general-settings.html">Impostazioni generali</a></li><li><a href="../article/how-to-add-a-new-connection.html">Come aggiungere una nuova connessione</a></li><li><a href="../article/how-to-add-markets-correctly.html">Come aggiungere i mercati correttamente</a></li><li><a href="../article/user-configuration-templates-workspaces.html">Configurazione utente — Template, Workspace, configurazione degli strumenti</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">Come configurare le scorciatoie da tastiera</a></li><li><a href="../article/how-to-insert-sound-notifications.html">Come inserire le notifiche sonore</a></li><li><a href="../article/how-to-customize-language-and-theme.html">Come personalizzare lingua e tema</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">Come gestire il rollover dei simboli</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Finestra degli ordini</a></li><li><a href="../article/trading-from-the-chart.html">Trading dal grafico</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio e Responsabile del rischio</a></li><li><a href="../article/simulation-environment.html">Ambiente di simulazione</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicatori <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html">Volume Profile</a></li><li><a href="../article/stop-run.html">Stop Run</a></li><li><a href="../article/absorption.html">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Funzionalità <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay dei dati tick</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Indicatori Deep <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Deep Iceberg (Rilevatore di ordini Iceberg)</a></li><li><a href="../article/deep-reload.html" class="active">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/deepindicators.html">Indicatori Deep</a></div>
+<div class="article-head"><h1>Deep Reload</h1>
+<p class="article-desc">Deep Reload (rilevatore di liquidità fresca) scansiona il book di negoziazione in tempo reale per trovare i momenti in cui nuova liquidità in attesa appare improvvisamente vicino al prezzo corrente.</p>
+<div class="meta-row">
+  <span class="badge b-advanced">Advanced</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 6 min read</span>
+  <a class="btn-pdf" href="../pdf/deep-reload.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Deep Reload (rilevatore di liquidità fresca) scansiona il book di negoziazione in tempo reale per trovare i momenti in cui <em>nuova liquidità in attesa</em> appare improvvisamente vicino al prezzo corrente. Invece di osservare ogni aggiornamento del Level 2, ottieni fasce orizzontali chiare che mostrano dove nuove dimensioni sono appena state aggiunte sul bid (potenziale supporto) o sull'ask (potenziale tetto), aiutandoti a vedere quando i partecipanti più grandi intervengono per difendere un livello o assistere un breakout.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Reload — panoramica (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-reload-01</b> · save as <code>dd-it-deep-reload-01.png</code></div></div></div>
+<h2 id="come-configurare-deep-reload">Come configurare Deep Reload</h2>
+<p>Segui questi passaggi per aggiungere l'indicatore al tuo grafico:</p>
+<p>Fai clic con il tasto destro del mouse sul grafico -&gt; Indicators</p>
+<p>Trova Deep Reload nell'elenco e fai clic su + per aggiungerlo.</p>
+<p>Fai clic sull'icona delle impostazioni sull'indicatore per aprire la sua finestra di configurazione.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Reload — Come configurare Deep Reload (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-reload-02</b> · save as <code>dd-it-deep-reload-02.png</code></div></div></div>
+<h2 id="1-concetto-liquidit-fresca-in-attesa">1. Concetto: liquidità fresca in attesa</h2>
+<p>La liquidità in attesa è il volume visibile presente nel book di negoziazione a ciascun livello di prezzo. Quando un grande trader o un algoritmo decide di entrare in gioco, spesso <em>aggiunge dimensioni vicino al prezzo corrente</em> invece di inseguire il movimento. Deep Reload si concentra su queste aggiunte: rileva quando una quantità significativa di nuovo volume appare improvvisamente in una fascia stretta di prezzi intorno all'inside market.</p>
+<p>Questa liquidità fresca può agire come cuscinetto (bid che si impilano sotto il prezzo per sostenerlo) o come tetto (ask che si impilano sopra il prezzo per rallentare o invertire un rally). In molti casi il comportamento è legato a ordini iceberg o suddivisi, dove solo una parte della dimensione reale viene mostrata alla volta ma il trader continua a riaggiungere liquidità nella stessa area.</p>
+<p>L'obiettivo di Deep Reload non è mostrare tutti i cambiamenti del book, ma evidenziare <em>solo le ricariche che superano le tue soglie di dimensione</em>, così le aree importanti restano visibili anche quando il grafico è rimpicciolito.</p>
+<h2 id="2-impostazioni-generali">2. Impostazioni generali</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Reload — 2. Impostazioni generali (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-reload-03</b> · save as <code>dd-it-deep-reload-03.png</code></div></div></div>
+<h3 id="2-1-value-type">2.1 Value Type</h3>
+<p>Value type controlla come Deep Reload sceglie le soglie di dimensione che definiscono un segnale:</p>
+<p>Automatic – le soglie derivano dalle condizioni correnti del book di negoziazione, adattandosi alla profondità e volatilità tipiche di ciascuno strumento.</p>
+<p>Manual – ti consente di specificare tu stesso i valori numerici per <em>Total value</em> e <em>Pull value</em>.</p>
+<h3 id="2-2-total-value">2.2 Total Value</h3>
+<p>Total value definisce quanto <em>nuovo</em> volume deve apparire in un'area di prezzo prima che una fascia Deep Reload venga disegnata. L'indicatore somma tutte le aggiunte qualificanti in quell'area in un breve periodo; solo quando il totale supera questa soglia la zona viene tracciata.</p>
+<p>Usa valori più alti su mercati molto liquidi (ES, NQ) e valori più bassi su prodotti più sottili, così i segnali rappresentano liquidità fresca davvero significativa per quello strumento.</p>
+<h3 id="2-3-pull-value">2.3 Pull Value</h3>
+<p>Pull value è la dimensione minima che deve essere <em>rimossa o modificata</em> dal book in un singolo evento perché Deep Reload tratti la sequenza come una ricarica intenzionale anziché come rumore casuale. Le piccole micro-cancellazioni sotto questo valore vengono ignorate.</p>
+<p>In pratica, molti pattern di ricarica prevedono una combinazione di volume ritirato e poi rapidamente riaggiunto agli stessi livelli o a quelli vicini. Pull value aiuta l'algoritmo a distinguere queste sequenze dalle normali fluttuazioni del book.</p>
+<h3 id="2-4-number-of-levels">2.4 Number of Levels</h3>
+<p>Number of levels dice a Deep Reload quanto ampia deve essere la fascia intorno al prezzo da monitorare. Ad esempio, con un valore di 10 l'indicatore traccia la liquidità fresca sui primi 10 bid e sui primi 10 ask e aggrega gli eventi qualificanti in un'unica zona quando avvengono all'interno di quella finestra.</p>
+<p>Valori più piccoli concentrano il rilevatore molto vicino all'inside market; valori più grandi catturano liquidità più profonda che può comunque essere rilevante quando fai trading con stop più ampi</p>
+<h2 id="3-impostazioni-di-visualizzazione">3. Impostazioni di visualizzazione</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Reload — 3. Impostazioni di visualizzazione (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-reload-04</b> · save as <code>dd-it-deep-reload-04.png</code></div></div></div>
+<p>La sezione Plot Settings definisce come le zone di liquidità fresca appaiono visivamente sul grafico.</p>
+<h3 id="3-1-ask-bid-color">3.1 Ask / Bid Color</h3>
+<p>Scegli colori separati per le zone di ricarica su Ask e Bid. Per impostazione predefinita, DeepDom usa il viola per la liquidità fresca sul lato ask (potenziale resistenza) e il verde per la liquidità fresca sul lato bid (potenziale supporto).</p>
+<h3 id="3-2-opacity">3.2 Opacity</h3>
+<p>Opacity imposta la trasparenza delle fasce orizzontali. Un'opacità più bassa le rende discrete quando hai già molti overlay; un'opacità più alta enfatizza le ricariche come livelli decisionali primari.</p>
+<h3 id="3-3-plot-min-bar-width">3.3 Plot Min Bar Width</h3>
+<p>Plot min bar width impone una larghezza orizzontale minima, così che ogni fascia resti visibile anche quando riduci lo zoom</p>
+<h3 id="3-4-plot-max-ticks">3.4 Plot Max Ticks</h3>
+<p>Plot max ticks limita l'altezza verticale di ogni zona in tick di prezzo. Quando la liquidità fresca viene rilevata su più livelli adiacenti, Deep Reload li raggruppa in un'unica fascia fino a questo intervallo massimo, così puoi vedere l'intera area difesa a colpo d'occhio.</p>
+<h2 id="4-filtro-di-trend">4. Filtro di trend</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Reload — 4. Filtro di trend (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-reload-05</b> · save as <code>dd-it-deep-reload-05.png</code></div></div></div>
+<p>Il filtro opzionale Trend Filter limita i segnali a quelli allineati con un trend di breve termine su un periodo di lookback configurabile.</p>
+<p>Enable trend filter – attiva o disattiva questo comportamento.</p>
+<p>Trend filter lookback (minutes) – imposta quanti minuti di price action recente vengono usati per stimare la direzione del trend (ad es. tramite una media mobile o un confronto con il VWAP).</p>
+<p>Con il filtro attivato, puoi scegliere di concentrarti solo sulla liquidità fresca che <em>supporta</em> il bias corrente (ad es. ricariche sul bid in un movimento rialzista, ricariche sull'ask in un movimento ribassista) e ignorare le fasce controtrend.</p>
+<h2 id="5-avvisi">5. Avvisi</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Deep Reload — 5. Avvisi (DeepDOM)</div><div class="s-file">ID: <b class="s-id">dd-it-deep-reload-06</b> · save as <code>dd-it-deep-reload-06.png</code></div></div></div>
+<p>Hai anche la possibilità di impostare un avviso per i segnali dell'indicatore</p>
+<h2 id="6-usi-pratici-nel-trading">6. Usi pratici nel trading</h2>
+<h3 id="6-1-individuare-i-livelli-difesi">6.1 Individuare i livelli difesi</h3>
+<p>Quando Deep Reload disegna ripetute fasce verdi appena sotto il prezzo, suggerisce che i compratori stanno intervenendo con nuova liquidità in attesa per difendere quell'area. Molti trader usano queste zone come livelli di riferimento per ingressi long con un rischio contenuto appena oltre la fascia.</p>
+<h3 id="6-2-rilevare-l-assorbimento-vicino-a-massimi-o-minimi">6.2 Rilevare l'assorbimento vicino a massimi o minimi</h3>
+<p>Fasce viola che si formano intorno ai massimi recenti indicano liquidità fresca sull'ask che sta assorbendo i compratori aggressivi. Se il prezzo fatica ad attraversare nonostante un forte flusso in acquisto, può segnalare un potenziale esaurimento e una possibile inversione.</p>
+<h3 id="6-3-supportare-i-breakout">6.3 Supportare i breakout</h3>
+<p>Nei breakout, le fasce che si formano <em>dietro</em> il movimento — bid che si ricaricano appena sotto una rottura rialzista o ask che si ricaricano appena sopra una rottura ribassista — mostrano che i player più grandi stanno aiutando a mantenere il nuovo range invece di andargli contro. Queste zone diventano spesso utili ingressi sui pullback.</p>
+<h2 id="7-buone-pratiche">7. Buone pratiche</h2>
+<p>Calibra per strumento: inizia con il value type Automatic, osserva la frequenza tipica delle fasce, poi passa alle soglie manuali se hai bisogno di più o meno segnali.</p>
+<p>Combina con gli altri strumenti di DeepDom: allinea le zone Deep Reload con il CVD e con Deep Trades per costruire un quadro completo della partecipazione passiva rispetto a quella aggressiva.</p>
+<p>Evita di affidarti troppo a singole fasce: tratta le zone di liquidità fresca come contesto e conferma, non come trigger di trade a sé stanti.</p>
+<h3 id="hai-ancora-problemi">Hai ancora problemi?</h3>
+<p>Il nostro team di supporto è disponibile 24 ore su 24, 7 giorni su 7, pronto ad aiutarti con qualsiasi problema tu possa incontrare.</p>
+<p>Quando ci contatti, includi:</p>
+<p>Uno screenshot del problema</p>
+<p>Una breve descrizione di ciò che stavi cercando di fare</p>
+<p>Ticket di supporto (risposta più rapida) Visita www.deepcharts.com e crea un ticket di supporto direttamente sul nostro sito.</p>
+<p>Supporto via email Scrivici a support@deepcharts.com — tieni presente che le risposte via email possono richiedere un po' più di tempo rispetto a un ticket di supporto.</p>
+</article>
+<div class="pn"><a class="prev" href="./deep-iceberg.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Deep Iceberg (Rilevatore di ordini Iceberg)</div></a><a class="next" href="./deep-liquidity-scan.html"><div class="pn-lbl">Next →</div><div class="pn-title">Deep Liquidity Scan</div></a></div>
+    <div class="footer">Centro Assistenza DeepDOM · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#come-configurare-deep-reload">Come configurare Deep Reload</a></li><li class="lv2"><a href="#1-concetto-liquidit-fresca-in-attesa">1. Concetto: liquidità fresca in attesa</a></li><li class="lv2"><a href="#2-impostazioni-generali">2. Impostazioni generali</a></li><li class="lv3"><a href="#2-1-value-type">2.1 Value Type</a></li><li class="lv3"><a href="#2-2-total-value">2.2 Total Value</a></li><li class="lv3"><a href="#2-3-pull-value">2.3 Pull Value</a></li><li class="lv3"><a href="#2-4-number-of-levels">2.4 Number of Levels</a></li><li class="lv2"><a href="#3-impostazioni-di-visualizzazione">3. Impostazioni di visualizzazione</a></li><li class="lv3"><a href="#3-1-ask-bid-color">3.1 Ask / Bid Color</a></li><li class="lv3"><a href="#3-2-opacity">3.2 Opacity</a></li><li class="lv3"><a href="#3-3-plot-min-bar-width">3.3 Plot Min Bar Width</a></li><li class="lv3"><a href="#3-4-plot-max-ticks">3.4 Plot Max Ticks</a></li><li class="lv2"><a href="#4-filtro-di-trend">4. Filtro di trend</a></li><li class="lv2"><a href="#5-avvisi">5. Avvisi</a></li><li class="lv2"><a href="#6-usi-pratici-nel-trading">6. Usi pratici nel trading</a></li><li class="lv3"><a href="#6-1-individuare-i-livelli-difesi">6.1 Individuare i livelli difesi</a></li><li class="lv3"><a href="#6-2-rilevare-l-assorbimento-vicino-a-massimi-o-minimi">6.2 Rilevare l&#x27;assorbimento vicino a massimi o minimi</a></li><li class="lv3"><a href="#6-3-supportare-i-breakout">6.3 Supportare i breakout</a></li><li class="lv2"><a href="#7-buone-pratiche">7. Buone pratiche</a></li><li class="lv3"><a href="#hai-ancora-problemi">Hai ancora problemi?</a></li></ul></aside>
+</div>
+<script src="../../../assets/kb-map.js"></script>
+<script src="../../../assets/search-index-it-deepdom.js"></script>
+<script src="../../../assets/app.js"></script>
+<script src="../../../assets/widgets.js"></script>
+<script src="../../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../../assets/review.js"></script>
+</body></html>
