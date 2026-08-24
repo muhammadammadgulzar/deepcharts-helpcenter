@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>User Configuration — Templates, Workspaces, Tool Config — DeepDOM Help Center</title>
+<meta name="description" content="User Configuration – Templates, Workspaces, Tool Config (DeepDom)">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="deepdom";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/installation-and-first-configuration.html">Get started</a><a href="../../article/get-help.html">Get help</a><a class="kb-switch" href="../../index.html" title="Switch knowledge base">⇄ DeepCharts KB</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Common Issues <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Installation Issues</a></li><li><a href="../article/licence-issues.html">Licence Issues</a></li><li><a href="../article/symbol-subscription-issues.html">Symbol Subscription Issues</a></li><li><a href="../article/cache-issues-deepdom.html">Cache Issues</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; How To <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installation and First Configuration</a></li><li><a href="../article/general-settings.html">General Settings</a></li><li><a href="../article/how-to-add-a-new-connection.html">How to Add a New Connection</a></li><li><a href="../article/how-to-add-markets-correctly.html">How to Add Markets Correctly</a></li><li><a href="../article/user-configuration-templates-workspaces.html" class="active">User Configuration — Templates, Workspaces, Tool Config</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">How to Set Up Keyboard Shortcuts</a></li><li><a href="../article/how-to-insert-sound-notifications.html">How to Insert Sound Notifications</a></li><li><a href="../article/how-to-customize-language-and-theme.html">How to Customize Language and Theme</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">How to Manage Symbol Rollover</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Orders Window</a></li><li><a href="../article/trading-from-the-chart.html">Trading from the Chart</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio-Risk Manager</a></li><li><a href="../article/simulation-environment.html">Simulation Environment</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicators <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html">Volume Profile</a></li><li><a href="../article/stop-run.html">Stop Run</a></li><li><a href="../article/absorption.html">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Features <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay Tick Data</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Deep Indicators <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Deep Iceberg (Iceberg Detector)</a></li><li><a href="../article/deep-reload.html">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/how-to.html">How To</a></div>
+<div class="article-head"><h1>User Configuration — Templates, Workspaces, Tool Config</h1>
+<p class="article-desc">User Configuration – Templates, Workspaces, Tool Config (DeepDom)</p>
+<div class="meta-row">
+  <span class="badge b-beginner">Beginner</span>
+  <span class="badge">How-to</span>
+  <span class="badge">🕒 3 min read</span>
+  <a class="btn-pdf" href="../pdf/user-configuration-templates-workspaces.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>Updated:</p>
+<p>User Configuration – Templates, Workspaces, Tool Config (DeepDom)</p>
+<p>DeepDom is highly customizable. You can create Templates for your preferred indicator layouts, Workspaces (Work Plans) to save entire window arrangements, and Tool Configurations to reuse custom annotation styles. This guide explains how to manage each of these elements.</p>
+<h2 id="templates">Templates</h2>
+<p>A Template represents the full set of indicators and visual settings applied to a single tool such as a Heatmap, Advanced DOM, or Time &amp; Sales window. Once saved, a template can be loaded on multiple similar windows to instantly replicate the same layout.</p>
+<h3 id="where-templates-are-saved">Where Templates Are Saved</h3>
+<p>By default, DeepDom stores template files in your Documents folder under dedicated sub‑directories, for example:</p>
+<p>Heatmap: Documents/DeepDom/Template</p>
+<p>Time &amp; Sales: Documents/DeepDom/Time and Sales Template</p>
+<p>Advanced DOM: Documents/DeepDom/Adv Dom Template</p>
+<p>You can paste into these folders any template files that you download from your personal area on the Volumetric Trading website and then load them directly in DeepDom.</p>
+<h3 id="load-a-template">Load a Template</h3>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">User Configuration — Templates, Workspaces, Tool Config — Load a Template (DeepDOM)</div><div class="s-file">user-configuration-templates-workspaces-01.png</div></div></div>
+<p>To load an existing template on a Heatmap, Time &amp; Sales, or Advanced DOM window:</p>
+<p>Click the Settings (gear) icon in the top‑right corner of the tool window.</p>
+<p>Choose load .</p>
+<p>Select the desired template file from the dialog.</p>
+<p>Click Open to apply it.</p>
+<h3 id="save-a-template-with-name">Save a Template with Name</h3>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">User Configuration — Templates, Workspaces, Tool Config — Save a Template with Name (DeepDOM)</div><div class="s-file">user-configuration-templates-workspaces-02.png</div></div></div>
+<p>After you customize a tool with your preferred indicators and styles, you can save the setup as a new template:</p>
+<p>On the Heatmap or other tool, click the Settings (gear) icon.</p>
+<p>Select Template &gt; Save As .</p>
+<p>Enter a descriptive file name (for example, <em>Template Volume Profile 30 Min</em>).</p>
+<p>Click Save .</p>
+<p>The same procedure applies for Time &amp; Sales, Advanced DOM, Scanner, or Correlations windows.</p>
+<h2 id="workspaces-work-plans">Workspaces (Work Plans)</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">User Configuration — Templates, Workspaces, Tool Config — Workspaces (Work Plans) (DeepDOM)</div><div class="s-file">user-configuration-templates-workspaces-03.png</div></div></div>
+<p>A Workspace (Work Plan) represents the complete arrangement of DeepDom windows – Heatmaps, DOMs, Time &amp; Sales, and other tools – across one or more monitors. Saving a workspace lets you reopen the same layout with a single click when the platform starts.</p>
+<h3 id="managing-work-plans">Managing Work Plans</h3>
+<p>In the Work Plan Management window you can:</p>
+<p>View the list of open work plans.</p>
+<p>Save the current configuration of the active work plan.</p>
+<p>Save the layout under a new work‑plan name.</p>
+<p>Close an existing work plan.</p>
+<h3 id="important-notes">Important Notes</h3>
+<p>The default work plan is named Untitled and should be saved with a specific name the first time you configure it. When you want to close a work plan, use the dedicated Work Plan Management section and click the X next to its name. Do not close each window individually and then save the plan, otherwise you may accidentally save an empty workspace and lose your open charts.</p>
+<h2 id="tool-config-custom-annotations">Tool Config (Custom Annotations)</h2>
+<p>DeepDom allows you to store multiple configuration profiles for drawing tools (annotations) and choose a default configuration for each annotation type.</p>
+<h3 id="create-and-save-annotation-configurations">Create and Save Annotation Configurations</h3>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">User Configuration — Templates, Workspaces, Tool Config — Create and Save Annotation Configurations (DeepDOM)</div><div class="s-file">user-configuration-templates-workspaces-04.png</div></div></div>
+<p>To create a custom configuration:</p>
+<p>Draw an annotation on the chart.</p>
+<p>Select the drawing and right‑click on the highlighted handle or dot.</p>
+<p>Edit line style, color, extension, text, and other properties as desired, then apply the changes.</p>
+<p>Click Configurations to view existing presets.</p>
+<p>Click Manage , then Add Configuration to save the current style as a new preset.</p>
+<p>Reorder saved configurations so that the first one in the list becomes the Default configuration automatically used for new annotations of that type.</p>
+<h3 id="still-having-trouble">Still Having Trouble?</h3>
+<p>Our support team is available 24/7 and ready to help you with any issue you encounter. When you reach out, please include:</p>
+<p>A screenshot of the issue.</p>
+<p>A brief description of what you were trying to do.</p>
+<p>Support Ticket (fastest response): visit www.deepcharts.com and create a support ticket directly on our website.</p>
+<p>Email Support: you can also reach us at support@deepcharts.com. Please note that email responses may take a little longer than a support ticket.</p>
+</article>
+<div class="pn"><a class="prev" href="./how-to-add-markets-correctly.html"><div class="pn-lbl">← Previous</div><div class="pn-title">How to Add Markets Correctly</div></a><a class="next" href="./how-to-set-up-keyboard-shortcuts.html"><div class="pn-lbl">Next →</div><div class="pn-title">How to Set Up Keyboard Shortcuts</div></a></div>
+    <div class="footer">DeepDOM Help Center · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#templates">Templates</a></li><li class="lv3"><a href="#where-templates-are-saved">Where Templates Are Saved</a></li><li class="lv3"><a href="#load-a-template">Load a Template</a></li><li class="lv3"><a href="#save-a-template-with-name">Save a Template with Name</a></li><li class="lv2"><a href="#workspaces-work-plans">Workspaces (Work Plans)</a></li><li class="lv3"><a href="#managing-work-plans">Managing Work Plans</a></li><li class="lv3"><a href="#important-notes">Important Notes</a></li><li class="lv2"><a href="#tool-config-custom-annotations">Tool Config (Custom Annotations)</a></li><li class="lv3"><a href="#create-and-save-annotation-configurations">Create and Save Annotation Configurations</a></li><li class="lv3"><a href="#still-having-trouble">Still Having Trouble?</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-deepdom.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

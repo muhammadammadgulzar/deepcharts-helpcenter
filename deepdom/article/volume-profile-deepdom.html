@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Volume Profile — DeepDOM Help Center</title>
+<meta name="description" content="The Deep Profile displays the volume traded at each price level over a specific period. It gives you a clear visual map of where most market activity has taken place, helping you identify key structural levels including:">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="deepdom";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/installation-and-first-configuration.html">Get started</a><a href="../../article/get-help.html">Get help</a><a class="kb-switch" href="../../index.html" title="Switch knowledge base">⇄ DeepCharts KB</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Common Issues <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Installation Issues</a></li><li><a href="../article/licence-issues.html">Licence Issues</a></li><li><a href="../article/symbol-subscription-issues.html">Symbol Subscription Issues</a></li><li><a href="../article/cache-issues-deepdom.html">Cache Issues</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; How To <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installation and First Configuration</a></li><li><a href="../article/general-settings.html">General Settings</a></li><li><a href="../article/how-to-add-a-new-connection.html">How to Add a New Connection</a></li><li><a href="../article/how-to-add-markets-correctly.html">How to Add Markets Correctly</a></li><li><a href="../article/user-configuration-templates-workspaces.html">User Configuration — Templates, Workspaces, Tool Config</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">How to Set Up Keyboard Shortcuts</a></li><li><a href="../article/how-to-insert-sound-notifications.html">How to Insert Sound Notifications</a></li><li><a href="../article/how-to-customize-language-and-theme.html">How to Customize Language and Theme</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">How to Manage Symbol Rollover</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Orders Window</a></li><li><a href="../article/trading-from-the-chart.html">Trading from the Chart</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio-Risk Manager</a></li><li><a href="../article/simulation-environment.html">Simulation Environment</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicators <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html" class="active">Volume Profile</a></li><li><a href="../article/stop-run.html">Stop Run</a></li><li><a href="../article/absorption.html">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Features <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay Tick Data</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Deep Indicators <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Deep Iceberg (Iceberg Detector)</a></li><li><a href="../article/deep-reload.html">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators.html">Indicators</a></div>
+<div class="article-head"><h1>Volume Profile</h1>
+<p class="article-desc">The Deep Profile displays the volume traded at each price level over a specific period. It gives you a clear visual map of where most market activity has taken place, helping you identify key structural levels including:</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 7 min read</span>
+  <a class="btn-pdf" href="../pdf/volume-profile-deepdom.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>The Deep Profile displays the volume traded at each price level over a specific period. It gives you a clear visual map of where most market activity has taken place, helping you identify key structural levels including:</p>
+<p>POC (Point of Control) — the price level with the highest traded volume</p>
+<p>Value Area — the price range where a defined percentage of total volume occurred</p>
+<p>High Volume Nodes (HVN) — price levels with heavy activity, often acting as support or resistance</p>
+<p>Low Volume Nodes (LVN) — price levels with little activity, often allowing fast price movement through them</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Volume Profile — overview (DeepDOM)</div><div class="s-file">volume-profile-deepdom-01.png</div></div></div>
+<h3 id="how-to-add-the-volume-profile-to-your-chart">How to Add the Volume Profile to Your Chart</h3>
+<p>Right-click on the chart and select Indicators.</p>
+<p>Search for the desired indicator and add it to your workspace by clicking the &quot;+&quot; button.</p>
+<p>Open the indicator's settings panel, customize the parameters according to your preferences, and confirm the changes by clicking Save.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Volume Profile — How to Add the Volume Profile to Your Chart (DeepDOM)</div><div class="s-file">volume-profile-deepdom-02.png</div></div></div>
+<h2 id="general-settings">General Settings</h2>
+<p>Vbp Type Select what data the profile displays:</p>
+<p>Volume — shows total volume traded at each price level, highlighting the most active areas</p>
+<p>Ask/Bid Volume — splits the volume into Ask (sell) and Bid (buy) separately, showing the balance between buyers and sellers</p>
+<p>Delta — shows the difference between buy and sell volume at each level, useful for identifying market pressure</p>
+<p>Total Delta and Volume — combines both delta and total volume for a complete view of activity at each price level</p>
+<p>Grouping Defines how price levels are grouped together in the profile:</p>
+<p>Automatic — DeepDom automatically groups ticks based on market characteristics and chart resolution</p>
+<p>Manual — lets you specify a custom number of ticks for grouping</p>
+<p>Auto Group Factor When using Automatic grouping, this defines how aggressively ticks are aggregated. A higher value means greater aggregation and a broader profile.</p>
+<p>Manual Ticks When using Manual grouping, this sets the exact number of ticks to group together, giving you precise control over the granularity of the profile.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Volume Profile — General Settings (DeepDOM)</div><div class="s-file">volume-profile-deepdom-03.png</div></div></div>
+<h2 id="plot-settings">Plot Settings</h2>
+<p>Method Color — Defines how the profile bars are colored:</p>
+<p>None — no color applied, plain data display</p>
+<p>Fixed — a single uniform color applied to all price levels</p>
+<p>Fading — color intensity varies with volume; higher volume levels appear more intense, lower volume levels appear lighter</p>
+<p>More Colors — uses a range of colors to represent different volume levels, fully customizable by the user</p>
+<p>Color Calculation — Defines what the color represents:</p>
+<p>Volume — colors based on total volume</p>
+<p>Delta — colors based on the difference between buy and sell orders</p>
+<p>Imbalance — colors based on order imbalance</p>
+<p>Color Lets you set fixed colors for Volume, Bid, Ask, and the profile line.</p>
+<p>Range Defines the range used for color scaling:</p>
+<p>Automatic — uses platform default ranges</p>
+<p>User — lets you define custom value ranges</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Volume Profile — Plot Settings (DeepDOM)</div><div class="s-file">volume-profile-deepdom-04.png</div></div></div>
+<p>Show Text When enabled, displays the total volume traded at each tick or price level directly on the profile bars.</p>
+<p>Text Settings Lets you customize the color of the Bid, Ask, and Total Volume labels, as well as the font size.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Volume Profile — Plot Settings (DeepDOM)</div><div class="s-file">volume-profile-deepdom-05.png</div></div></div>
+<h2 id="poc-point-of-control">POC (Point of Control)</h2>
+<p>The POC is the price level with the highest traded volume in the profile. It is one of the most important reference levels in volume analysis.</p>
+<p>Enable — show or hide the POC on the chart</p>
+<p>Highlight — visually emphasize the POC bar within the profile to make it stand out</p>
+<p>Highlight Color — set the color used for the POC highlight</p>
+<p>Show Line — draw a horizontal line extending from the POC across the chart</p>
+<p>Line Color — set the color of the POC line</p>
+<p>Line Width — set the thickness of the POC line</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Volume Profile — POC (Point of Control) (DeepDOM)</div><div class="s-file">volume-profile-deepdom-06.png</div></div></div>
+<h2 id="value-area">Value Area</h2>
+<p>The Value Area is the price range within which a defined percentage of total volume occurred. It represents the zone of greatest market acceptance.</p>
+<p>Enable — show or hide the Value Area on the chart</p>
+<p>% Value Area — set the percentage of total volume used to define the Value Area. The default is typically 70%, meaning the range within which 70% of all volume occurred</p>
+<p>Highlight — visually highlight the Value Area on the candles</p>
+<p>Outside Color — set the color applied to the area outside the Value Area, helping to distinguish it clearly</p>
+<p>Show Line — draw lines marking the Value Area High (VAH) and Value Area Low (VAL)</p>
+<p>Line Color — set the color of the Value Area boundary lines</p>
+<p>Line Width — set the thickness of the Value Area boundary lines</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Volume Profile — Value Area (DeepDOM)</div><div class="s-file">volume-profile-deepdom-07.png</div></div></div>
+<h2 id="peaks-and-valleys">Peaks and Valleys</h2>
+<p>Peaks and Valleys highlight areas of high and low volume concentration within the profile:</p>
+<p>Peaks — price levels where volume is heavily concentrated, often indicating strong market interest and potential support or resistance</p>
+<p>Valleys — price levels where volume is very thin, often acting as void zones where price can move quickly</p>
+<p>Sensitivity Controls how strictly peaks and valleys are identified. A higher value means fewer but more significant peaks and valleys. A lower value shows more levels with a looser filter.</p>
+<p>Peak Settings</p>
+<p>Highlight — visually mark peak levels on the profile</p>
+<p>Minimum Volume — set a minimum volume threshold; peaks below this value will not be shown</p>
+<p>Highlight Color — set the color for peak highlights</p>
+<p>Show Line — draw a horizontal line at each peak level</p>
+<p>Line Width — set the thickness of the peak line</p>
+<p>Line Color — set the color of the peak line</p>
+<p>Valley Settings</p>
+<p>Highlight — visually mark valley levels on the profile</p>
+<p>Minimum Volume — set a minimum volume threshold; valleys below this value will not be shown</p>
+<p>Highlight Color — set the color for valley highlights</p>
+<p>Show Line — draw a horizontal line at each valley level</p>
+<p>Line Width — set the thickness of the valley line</p>
+<p>Line Color — set the color of the valley line</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Volume Profile — Peaks and Valleys (DeepDOM)</div><div class="s-file">volume-profile-deepdom-08.png</div></div></div>
+<h2 id="summary">Summary</h2>
+<p>The Summary displays a detailed data panel for each volume profile on the chart, including total volume, delta, number of trades, number of ticks, and other statistics. This makes it easy to compare activity across different sessions or time periods at a glance.</p>
+<p>Enable Summary — show or hide the summary panel for each profile</p>
+<p>Text Color — set the color of the summary text</p>
+<p>Ask Color — set the color representing Ask volume in the summary</p>
+<p>Bid Color — set the color representing Bid volume in the summary</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Volume Profile — Summary (DeepDOM)</div><div class="s-file">volume-profile-deepdom-09.png</div></div></div>
+<h2 id="labels-on-line">Labels on Line</h2>
+<p>Text Color — edit the color of the lines</p>
+<p>Text on Line — enables labels on lines derived from the Volume Profile, such as the VPOC and Value Area High/Low labels</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Volume Profile — Labels on Line (DeepDOM)</div><div class="s-file">volume-profile-deepdom-10.png</div></div></div>
+<h2 id="conclusion">Conclusion</h2>
+<p>The Deep Profile indicator is one of the most comprehensive tools available in DeepDom for understanding market structure. By identifying where volume has concentrated and where it is absent, you gain a significant edge in locating meaningful support and resistance levels, planning entries, and understanding the overall context of price action.</p>
+<h3 id="still-having-trouble">Still Having Trouble?</h3>
+<p>Our support team is available 24/7 and ready to help you with any issue you encounter.</p>
+<p>When reaching out, please include:</p>
+<p>A screenshot of the issue</p>
+<p>A brief description of what you were trying to do</p>
+<p>Support Ticket (Fastest Response) Visit www.deepcharts.com and create a support ticket directly on our website.</p>
+<p>Email Support Reach us at support@deepcharts.com — please note that email responses may take a little longer than a support ticket.</p>
+</article>
+<div class="pn"><a class="prev" href="./book-speed.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Book Speed</div></a><a class="next" href="./stop-run.html"><div class="pn-lbl">Next →</div><div class="pn-title">Stop Run</div></a></div>
+    <div class="footer">DeepDOM Help Center · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv3"><a href="#how-to-add-the-volume-profile-to-your-chart">How to Add the Volume Profile to Your Chart</a></li><li class="lv2"><a href="#general-settings">General Settings</a></li><li class="lv2"><a href="#plot-settings">Plot Settings</a></li><li class="lv2"><a href="#poc-point-of-control">POC (Point of Control)</a></li><li class="lv2"><a href="#value-area">Value Area</a></li><li class="lv2"><a href="#peaks-and-valleys">Peaks and Valleys</a></li><li class="lv2"><a href="#summary">Summary</a></li><li class="lv2"><a href="#labels-on-line">Labels on Line</a></li><li class="lv2"><a href="#conclusion">Conclusion</a></li><li class="lv3"><a href="#still-having-trouble">Still Having Trouble?</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-deepdom.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Heatmap — DeepDOM Help Center</title>
+<meta name="description" content="The Heatmap is the core of DeepDom and the reason the platform exists in the first place. Every other tool — the DOM, Bubbles, CVD, VWAP — adds context and confirmation.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="deepdom";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/installation-and-first-configuration.html">Get started</a><a href="../../article/get-help.html">Get help</a><a class="kb-switch" href="../../index.html" title="Switch knowledge base">⇄ DeepCharts KB</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Common Issues <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Installation Issues</a></li><li><a href="../article/licence-issues.html">Licence Issues</a></li><li><a href="../article/symbol-subscription-issues.html">Symbol Subscription Issues</a></li><li><a href="../article/cache-issues-deepdom.html">Cache Issues</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; How To <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installation and First Configuration</a></li><li><a href="../article/general-settings.html">General Settings</a></li><li><a href="../article/how-to-add-a-new-connection.html">How to Add a New Connection</a></li><li><a href="../article/how-to-add-markets-correctly.html">How to Add Markets Correctly</a></li><li><a href="../article/user-configuration-templates-workspaces.html">User Configuration — Templates, Workspaces, Tool Config</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">How to Set Up Keyboard Shortcuts</a></li><li><a href="../article/how-to-insert-sound-notifications.html">How to Insert Sound Notifications</a></li><li><a href="../article/how-to-customize-language-and-theme.html">How to Customize Language and Theme</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">How to Manage Symbol Rollover</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Orders Window</a></li><li><a href="../article/trading-from-the-chart.html">Trading from the Chart</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio-Risk Manager</a></li><li><a href="../article/simulation-environment.html">Simulation Environment</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicators <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html">Volume Profile</a></li><li><a href="../article/stop-run.html">Stop Run</a></li><li><a href="../article/absorption.html">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Features <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html" class="active">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay Tick Data</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Deep Indicators <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Deep Iceberg (Iceberg Detector)</a></li><li><a href="../article/deep-reload.html">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/features.html">Features</a></div>
+<div class="article-head"><h1>Heatmap</h1>
+<p class="article-desc">The Heatmap is the core of DeepDom and the reason the platform exists in the first place. Every other tool — the DOM, Bubbles, CVD, VWAP — adds context and confirmation.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 10 min read</span>
+  <a class="btn-pdf" href="../pdf/heatmap.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>The Heatmap is the core of DeepDom and the reason the platform exists in the first place. Every other tool — the DOM, Bubbles, CVD, VWAP — adds context and confirmation. But the Heatmap is where you see the full picture of market intent laid out visually across both price and time simultaneously .</p>
+<p>Most traders look at a price chart and see what already happened. The Heatmap lets you see what the market is planning before it happens — every horizontal band of color is a concentration of limit orders sitting in the order book at that price level. Real money. Real positions. Real intentions. The thicker and more intense the color, the more committed the liquidity is at that zone.</p>
+<p>What makes it uniquely powerful is that it combines two completely different data streams into one view — executed market order data from Time and Sales, and live limit order data from the DOM. This means you are not just seeing where price has been or where orders are waiting. You are seeing both at the same time, which allows you to understand how price is interacting with liquidity as it happens .</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Heatmap — overview (DeepDOM)</div><div class="s-file">heatmap-01.png</div></div></div>
+<p>The color intensity is a direct measure of order concentration. Red means the heaviest liquidity, orange the second highest, and as colors move toward yellow, white, blue, and black, the liquidity becomes progressively thinner. When a thick red or orange band forms at a level, price will almost always react when it gets there. The Heatmap lets you see these zones forming in advance — often minutes before price even gets close.</p>
+<p>Because DeepDom saves and records this data over time , you can also see exactly how a zone developed. Liquidity building gradually over 30 or 40 minutes tells a very different story from a large order that appeared suddenly just as price approached. The first is a deliberate, pre-planned position . The second is a reactive one. Understanding how the liquidity formed — not just where it is — is what separates a trader who reads the Heatmap at a surface level from one who truly understands order flow.</p>
+<h2 id="opening-a-heatmap">Opening a Heatmap</h2>
+<p>After connecting your data feed, follow these steps to open a new chart:</p>
+<p>Connect the datafeed first, make sure its green (connect), If the connection - Yellow (Still Looking for the connections), and Red (Connection is disconnected)</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Heatmap — Opening a Heatmap (DeepDOM)</div><div class="s-file">heatmap-02.png</div></div></div>
+<p>Click New in DeepDom</p>
+<p>Select the financial instrument you want to display from your list of subscribed symbols (Make sure you have setup your Symbol Manager setting correctly)</p>
+<p>Click Select at the bottom right to confirm</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Heatmap — Opening a Heatmap (DeepDOM)</div><div class="s-file">heatmap-03.png</div></div></div>
+<h2 id="configuring-mbo-mbp-data-source">Configuring MBO / MBP Data Source</h2>
+<p>Source Settings allows you to configure the data source for each individual chart. This is where you define whether the chart uses MBP or MBO data — which directly affects which DeepDom features are available to you.</p>
+<p>To access Source Settings, right-click anywhere on the chart and select Source Settings from the menu.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Heatmap — Configuring MBO / MBP Data Source (DeepDOM)</div><div class="s-file">heatmap-04.png</div></div></div>
+<h4>What is MBP and MBO?</h4>
+<p>MBP (Market By Price) MBP shows you the total volume available at each price level in the order book — combining all individual orders at that price into a single number. This is the standard market depth view that most traders are familiar with. It shows you what is at each price level but does not tell you anything about the individual orders behind that number.</p>
+<p>MBO (Market By Order) MBO goes one level deeper. Instead of showing combined totals at each price level, MBO shows you the data for each individual order in the book — including its size, status, and how it changes over time. This is what makes it possible for DeepDom to identify Iceberg orders, Stop orders, and other advanced order flow features.</p>
+<p>In simple terms — MBP tells you how much is at a price level. MBO tells you who is at that price level and how they are behaving.</p>
+<h3 id="which-data-feeds-support-mbo">Which Data Feeds Support MBO?</h3>
+<p>MBO data is only available on specific data feeds. Currently in DeepDom:</p>
+<p>dxFeed Market Depth — supports MBO</p>
+<p>Rithmic Market Depth — supports MBO</p>
+<p>If your data feed supports MBO, switching to it will unlock the full power of DeepDom's advanced order flow tools.</p>
+<h4>General</h4>
+<p>Source Type Defines the data source type used for the chart. You can choose between:</p>
+<p>MBP — uses Market By Price data. Standard market depth showing combined volume at each price level</p>
+<p>MBO — uses Market By Order data. Granular order-level data that enables advanced features like Iceberg order detection</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Heatmap — General (DeepDOM)</div><div class="s-file">heatmap-05.png</div></div></div>
+<p>Switch to MBO if your data feed supports it and you want to use DeepDom's full suite of order flow tools.</p>
+<p>Notes - If you select MBO but your data feed does not support it: Some information may not be available or may not display correctly on the chart. Indicators that rely on MBO data, so it may not show the data or behave unexpectedly. If this happens, switch the Source Type back to MBP or contact your data provider to confirm whether MBO is included in your subscription.</p>
+<h4>MBO Filters</h4>
+<p>These filters apply when the chart is set to MBO mode and allow you to control which individual orders are included in the analysis:</p>
+<p>Min. Volume Sets the minimum volume an individual order must have to be included in the MBO analysis. Setting this above zero filters out very small orders — keeping the focus on orders that are large enough to be meaningful. For example, setting this to 10 means only individual orders of 10 contracts or more will be tracked by the indicator.</p>
+<p>Exclude Market Maker When enabled, orders identified as coming from market makers are excluded from the MBO analysis. Market makers constantly place and cancel orders as part of their normal activity — this can create a lot of noise in the data. Excluding them helps you focus on genuine institutional and trader activity rather than routine market making.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Heatmap — MBO Filters (DeepDOM)</div><div class="s-file">heatmap-06.png</div></div></div>
+<p>Notes - If you are unsure which to use: Start with MBP — it works with all data feeds and covers the majority of trading scenarios. Switch to MBO only when you specifically want to use the advanced order flow features that require it, and only if your data feed supports it.</p>
+<h2 id="understanding-liquidity">Understanding Liquidity</h2>
+<p>Most traders only see what has already happened on a price chart. The Heatmap shows you something far more valuable — where the money is waiting before price even gets there. By default, the chart loads with one hour of liquidity history, meaning you are not just seeing where orders are sitting right now — you can see how that liquidity has been building, shifting, and disappearing over time. This gives you a forward-looking view that no standard price chart can offer.</p>
+<p>Limit orders from the DOM are displayed directly on the chart:</p>
+<p>Sell Limit orders - Purple</p>
+<p>Buy Limit orders - Green</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Heatmap — Understanding Liquidity (DeepDOM)</div><div class="s-file">heatmap-07.png</div></div></div>
+<p>The Heatmap doesn't just show current limit orders — it saves and plots this information over time, so you can see how liquidity has built up, increased, decreased, or been cleared at any price level. This matters because a limit order that has been sitting at a level for a long time is far more significant than one that just appeared — it tells you that someone is genuinely committed to that price.</p>
+<p>How to read the Heatmap intensity:</p>
+<p>DeepDom uses a visual intensity scale to show the concentration of limit orders at each price level:</p>
+<p>The lighter and clearer the area appears, the higher the concentration of limit orders on the book.</p>
+<p>The darker or less visible the area appears, the lower the concentration of limit orders on the book.</p>
+<p>This intensity adjusts automatically to current market conditions. If a new large limit order appears, the entire scale shifts to reflect the new context. This instantly tells your eye where the heaviest orders are sitting without having to read a single number — and price almost always reacts when it reaches those zones.</p>
+<h4>How to read Buy and Sell limits:</h4>
+<p>The separation of green (Buy Limit) and violet (Sell Limit) orders is equally important. Green bands below price tell you where buyers have placed their limit orders and are waiting. Violet bands above price tell you where sellers are positioned. When price moves into a thick green band, you are watching it enter a zone of heavy passive buying interest — the buyers there will either defend that level and cause a bounce, or get overwhelmed, causing price to accelerate through.</p>
+<p>Either outcome is tradeable information.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Heatmap — How to read Buy and Sell limits: (DeepDOM)</div><div class="s-file">heatmap-08.png</div></div></div>
+<h4>How to read Fresh vs. Persistent Liquidity:</h4>
+<p>Not all limit orders in the book carry the same weight — and this is one of the most important distinctions you can make when reading the Heatmap.</p>
+<p>Fresh liquidity refers to limit orders that have just appeared in the book. These are newly placed orders — traders who have just decided to position themselves at a specific price. Fresh liquidity tells you about new intent entering the market right now . However, because these orders just appeared, they are also more likely to be cancelled or moved if price does not reach them quickly. A sudden appearance of fresh liquidity at a key level as price approaches can signal a reactive, defensive order — placed in response to what price is doing rather than as a pre-planned position.</p>
+<p>Persistent liquidity refers to limit orders that have been sitting in the book for a significant amount of time without being cancelled or filled. These are resting, committed orders — traders who placed their order at a specific price and have held it there through multiple price movements and market conditions. Persistent liquidity is far more significant because it tells you that someone genuinely believes that price level is worth defending . They have had multiple opportunities to cancel or move their order and have chosen not to. When price finally reaches a zone of persistent liquidity, the reaction is far more likely to be strong and sustained.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Heatmap — How to read Fresh vs. Persistent Liquidity: (DeepDOM)</div><div class="s-file">heatmap-09.png</div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Heatmap — How to read Fresh vs. Persistent Liquidity: (DeepDOM)</div><div class="s-file">heatmap-10.png</div></div></div>
+<h4>How to use both together:</h4>
+<p>When you see persistent liquidity at a level , that is a zone worth marking and watching. The longer it has been sitting there, the more committed the participant behind it.</p>
+<p>When you see fresh liquidity appearing suddenly at a level as price approaches, be more cautious — it may be a reactive order that gets pulled before price even reaches it.</p>
+<p>The most powerful setup is when persistent liquidity and fresh liquidity are both building at the same level — it means both committed, patient participants and new aggressive participants are positioning at that price simultaneously, significantly increasing the probability of a strong reaction.</p>
+<h4>How to read the history:</h4>
+<p>Because DeepDom saves and plots this data over time rather than just showing a current snapshot, you can look back and see exactly how a level developed. A thick band of liquidity that has been sitting at a level for a long time tells you that someone is committed and waiting . A large order that appeared suddenly just as price approached tells a very different story. Reading the history of how liquidity forms — not just where it is right now — is what gives you the full picture.</p>
+<p>Note: To access Market Depth data, you need Level 2 from your data feed. DeepDom supports analysis of over 1,000 book levels.</p>
+</article>
+<div class="pn"><a class="prev" href="./volume-bubbles.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Volume Bubbles</div></a><a class="next" href="./replay-tick-data.html"><div class="pn-lbl">Next →</div><div class="pn-title">Replay Tick Data</div></a></div>
+    <div class="footer">DeepDOM Help Center · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#opening-a-heatmap">Opening a Heatmap</a></li><li class="lv2"><a href="#configuring-mbo-mbp-data-source">Configuring MBO / MBP Data Source</a></li><li class="lv3"><a href="#which-data-feeds-support-mbo">Which Data Feeds Support MBO?</a></li><li class="lv2"><a href="#understanding-liquidity">Understanding Liquidity</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-deepdom.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

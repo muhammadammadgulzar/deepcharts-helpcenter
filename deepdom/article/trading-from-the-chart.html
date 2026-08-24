@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Trading from the Chart — DeepDOM Help Center</title>
+<meta name="description" content="This guide explains how to enable trading directly from a DeepDom chart, use the trading panel and Chart DOM, manage orders, and customize trading‑related columns and markers.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="deepdom";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/installation-and-first-configuration.html">Get started</a><a href="../../article/get-help.html">Get help</a><a class="kb-switch" href="../../index.html" title="Switch knowledge base">⇄ DeepCharts KB</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Common Issues <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Installation Issues</a></li><li><a href="../article/licence-issues.html">Licence Issues</a></li><li><a href="../article/symbol-subscription-issues.html">Symbol Subscription Issues</a></li><li><a href="../article/cache-issues-deepdom.html">Cache Issues</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; How To <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installation and First Configuration</a></li><li><a href="../article/general-settings.html">General Settings</a></li><li><a href="../article/how-to-add-a-new-connection.html">How to Add a New Connection</a></li><li><a href="../article/how-to-add-markets-correctly.html">How to Add Markets Correctly</a></li><li><a href="../article/user-configuration-templates-workspaces.html">User Configuration — Templates, Workspaces, Tool Config</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">How to Set Up Keyboard Shortcuts</a></li><li><a href="../article/how-to-insert-sound-notifications.html">How to Insert Sound Notifications</a></li><li><a href="../article/how-to-customize-language-and-theme.html">How to Customize Language and Theme</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">How to Manage Symbol Rollover</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Orders Window</a></li><li><a href="../article/trading-from-the-chart.html" class="active">Trading from the Chart</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio-Risk Manager</a></li><li><a href="../article/simulation-environment.html">Simulation Environment</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicators <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html">Volume Profile</a></li><li><a href="../article/stop-run.html">Stop Run</a></li><li><a href="../article/absorption.html">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Features <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay Tick Data</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Deep Indicators <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Deep Iceberg (Iceberg Detector)</a></li><li><a href="../article/deep-reload.html">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/trading.html">Trading</a></div>
+<div class="article-head"><h1>Trading from the Chart</h1>
+<p class="article-desc">This guide explains how to enable trading directly from a DeepDom chart, use the trading panel and Chart DOM, manage orders, and customize trading‑related columns and markers.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">How-to</span>
+  <span class="badge">🕒 5 min read</span>
+  <a class="btn-pdf" href="../pdf/trading-from-the-chart.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>This guide explains how to enable trading directly from a DeepDom chart, use the trading panel and Chart DOM, manage orders, and customize trading‑related columns and markers.</p>
+<h2 id="enable-trading-and-show-the-trading-panel">Enable Trading and Show the Trading Panel</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading from the Chart — Enable Trading and Show the Trading Panel (DeepDOM)</div><div class="s-file">trading-from-the-chart-01.png</div></div></div>
+<h3 id="enable-trading-on-a-chart">Enable trading on a chart</h3>
+<p>To allow order entry from a chart:</p>
+<p>Click the dollar icon in the upper‑right corner of the chart, or</p>
+<p>Open the chart Settings menu and enable Trading enabled .</p>
+<h3 id="show-the-trading-panel">Show the trading panel</h3>
+<p>To display the trading panel below the chart:</p>
+<p>Enable the Trading panel checkbox in the lower‑right corner of the chart, or</p>
+<p>Use the chart Settings menu and enable Show trading panel .</p>
+<h2 id="trading-panel-and-cross-trading-mini-micro">Trading Panel and Cross Trading Mini/Micro</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading from the Chart — Trading Panel and Cross Trading Mini/Micro (DeepDOM)</div><div class="s-file">trading-from-the-chart-02.png</div></div></div>
+<p>At the top of the trading panel you can select the instrument used for order execution. DeepDom allows cross trading , for example viewing data from a Mini futures contract while executing orders on a Micro contract, without opening additional charts. For accurate volumetric analysis, always base your decisions on the main futures contract.</p>
+<p>The panel also shows:</p>
+<p>Open quantity – number of contracts or shares currently in the market.</p>
+<p>Open P/L – unrealized profit or loss on the open position.</p>
+<p>Daily P/L – profit or loss realized on the instrument for the current trading day.</p>
+<h2 id="trading-buttons-and-basic-actions">Trading Buttons and Basic Actions</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading from the Chart — Trading Buttons and Basic Actions (DeepDOM)</div><div class="s-file">trading-from-the-chart-03.png</div></div></div>
+<p>The trading panel includes quick‑access buttons for different order types:</p>
+<p>MKT – send buy or sell market orders.</p>
+<p>BID / ASK – place limit orders at the current best Bid or best Ask.</p>
+<p>LMT – place manual limit orders (buy limit below market price or sell limit above market).</p>
+<p>STP – place stop orders that become market orders when triggered (buy stop above market, sell stop below market).</p>
+<p>STP LMT – place stop‑limit orders, which send limit orders instead of market orders when triggered, helping to control slippage at the risk of missing execution.</p>
+<p>Cancel – cancel all working (pending) orders.</p>
+<p>Close – close the current open position and cancel all remaining working orders.</p>
+<p>Use the Qty , Broker , and Account fields to choose the trade size, broker, and account for each operation.</p>
+<p>If the Tick diff. option is enabled, Bid and Ask buttons will place limit orders a specified number of ticks away from the market price instead of exactly at the best Bid/Ask.</p>
+<h2 id="oco-strategy-and-historical-fills">OCO Strategy and Historical Fills</h2>
+<h3 id="oco-strategy">OCO Strategy</h3>
+<p>The OCO (Order‑Cancels‑Order) feature lets you attach two exit orders to a primary position: a profit‑taking limit order and a protective stop. When one of these exit orders is executed, the other is automatically cancelled.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading from the Chart — OCO Strategy (DeepDOM)</div><div class="s-file">trading-from-the-chart-04.png</div></div></div>
+<h3 id="show-historical-executions">Show historical executions</h3>
+<p>To display historical fills on the chart, open the chart settings and enable Show historical executions . Trade markers will then appear at the corresponding prices and times.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading from the Chart — Show historical executions (DeepDOM)</div><div class="s-file">trading-from-the-chart-05.png</div></div></div>
+<h2 id="chart-dom-overview">Chart DOM Overview</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading from the Chart — Chart DOM Overview (DeepDOM)</div><div class="s-file">trading-from-the-chart-06.png</div></div></div>
+<p>The Chart DOM provides a vertical order book ladder next to your chart.</p>
+<p>Enable it by selecting the DOM checkbox at the bottom‑right of the chart, or</p>
+<p>Open chart settings and enable Enable chart DOM .</p>
+<p>By default, the Chart DOM shows these columns from left to right:</p>
+<p>B.PS – Bid Pull Stack; quantities added or removed at each Bid level.</p>
+<p>B – order‑management column for buy orders (move or cancel).</p>
+<p>Bid – buy‑limit orders at each price level.</p>
+<p>Ask – sell‑limit orders at each price level.</p>
+<p>S – order‑management column for sell orders.</p>
+<p>A.PS – Ask Pull Stack; quantities added or removed at each Ask level.</p>
+<h2 id="order-entry-and-management-on-the-dom">Order Entry and Management on the DOM</h2>
+<h3 id="market-and-limit-stop-orders">Market and limit/stop orders</h3>
+<p>Buy Market – right‑click anywhere in the Bid column.</p>
+<p>Sell Market – right‑click anywhere in the Ask column.</p>
+<p>Buy Limit – left‑click in the Bid column at any price below the current market price.</p>
+<p>Buy Stop – left‑click in the Bid column at any price above the current market price.</p>
+<p>Sell Limit – left‑click in the Ask column at any price above the current market price.</p>
+<p>Sell Stop – left‑click in the Ask column at any price below the current market price.</p>
+<h3 id="modify-and-cancel-orders">Modify and cancel orders</h3>
+<p>For existing limit or conditional orders:</p>
+<p>Use the order‑management columns ( B and S ) and drag with the left mouse button to move an order to a new price level.</p>
+<p>Right‑click to cancel an order.</p>
+<p>Double‑click with the left mouse button to edit the order quantity.</p>
+<h2 id="chart-dom-settings-and-columns">Chart DOM Settings and Columns</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading from the Chart — Chart DOM Settings and Columns (DeepDOM)</div><div class="s-file">trading-from-the-chart-07.png</div></div></div>
+<p>Click the Settings icon on the Chart DOM to open DOM settings. Here you can adjust Font size, Text format and the appearance of various columns, including:</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Trading from the Chart — Chart DOM Settings and Columns (DeepDOM)</div><div class="s-file">trading-from-the-chart-08.png</div></div></div>
+<p>Bid/Ask Columns – change background and text colors for Bid and Ask.</p>
+<p>Pull Stack Columns – enable Bid/Ask Pull Stack, choose filters (average or none), and customize colors.</p>
+<p>Filled filter – apply a filter to executed quantities so only significant trades are shown.</p>
+<p>Bid/Ask Filled – show executed volumes in B.T (Bid Trades) and A.T (Ask Trades) columns, effectively forming a footprint view. Auto‑reset can clear these based on price swings, or you can reset manually.</p>
+<p>Last Filled – enable the last‑trade column.</p>
+<p>Order View – show/hide order‑management columns and adjust their colors.</p>
+<p>Price Scale – enable the price ladder column and customize its appearance.</p>
+<p>P/L Column – display tick‑by‑tick unrealized profit and loss when you have an open position.</p>
+<p>Markers – enable markers for last traded price, open, high, and low.</p>
+<p>Column Order – open the column‑order settings to rearrange the DOM columns as needed.</p>
+<h2 id="still-having-trouble">Still Having Trouble?</h2>
+<p>Our support team is available 24/7 and ready to help you with any issue you encounter. When you reach out, please include:</p>
+<p>A screenshot of the issue.</p>
+<p>A brief description of what you were trying to do.</p>
+<p>Support Ticket (fastest response): visit www.deepcharts.com and create a support ticket directly on our website.</p>
+<p>Email Support: you can also reach us at support@deepcharts.com. Please note that email responses may take a little longer than a support ticket.</p>
+</article>
+<div class="pn"><a class="prev" href="./orders-window-deepdom.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Orders Window</div></a><a class="next" href="./portfolio-risk-manager.html"><div class="pn-lbl">Next →</div><div class="pn-title">Portfolio-Risk Manager</div></a></div>
+    <div class="footer">DeepDOM Help Center · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#enable-trading-and-show-the-trading-panel">Enable Trading and Show the Trading Panel</a></li><li class="lv3"><a href="#enable-trading-on-a-chart">Enable trading on a chart</a></li><li class="lv3"><a href="#show-the-trading-panel">Show the trading panel</a></li><li class="lv2"><a href="#trading-panel-and-cross-trading-mini-micro">Trading Panel and Cross Trading Mini/Micro</a></li><li class="lv2"><a href="#trading-buttons-and-basic-actions">Trading Buttons and Basic Actions</a></li><li class="lv2"><a href="#oco-strategy-and-historical-fills">OCO Strategy and Historical Fills</a></li><li class="lv3"><a href="#oco-strategy">OCO Strategy</a></li><li class="lv3"><a href="#show-historical-executions">Show historical executions</a></li><li class="lv2"><a href="#chart-dom-overview">Chart DOM Overview</a></li><li class="lv2"><a href="#order-entry-and-management-on-the-dom">Order Entry and Management on the DOM</a></li><li class="lv3"><a href="#market-and-limit-stop-orders">Market and limit/stop orders</a></li><li class="lv3"><a href="#modify-and-cancel-orders">Modify and cancel orders</a></li><li class="lv2"><a href="#chart-dom-settings-and-columns">Chart DOM Settings and Columns</a></li><li class="lv2"><a href="#still-having-trouble">Still Having Trouble?</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-deepdom.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

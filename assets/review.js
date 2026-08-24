@@ -58,17 +58,22 @@ const state = {
 
 function detectSlug() {
   const p = location.pathname;
+  const kb = window.HC_KB === "deepdom" ? "deepdom--" : "";
   let m = p.match(/\/article\/([^\/]+)\.html?$/);
-  if (m) return decodeURIComponent(m[1]);
+  if (m) return decodeURIComponent(m[1]);           // article slugs are globally unique
   m = p.match(/\/category\/([^\/]+)\.html?$/);
-  if (m) return "category--" + decodeURIComponent(m[1]);
-  return "home";
+  if (m) return "category--" + kb + decodeURIComponent(m[1]);
+  return kb ? "deepdom-home" : "home";
 }
 
 function slugToHref(slug) {
   const root = window.HC_ROOT || "";
   if (slug === "home") return root + "index.html";
+  if (slug === "deepdom-home") return root + "deepdom/index.html";
+  if (slug.startsWith("category--deepdom--")) return root + "deepdom/category/" + slug.slice(19) + ".html";
   if (slug.startsWith("category--")) return root + "category/" + slug.slice(10) + ".html";
+  const dd = window.DEEPDOM_SLUGS || [];
+  if (dd.indexOf(slug) !== -1) return root + "deepdom/article/" + slug + ".html";
   return root + "article/" + slug + ".html";
 }
 

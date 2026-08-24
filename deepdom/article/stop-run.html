@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Stop Run — DeepDOM Help Center</title>
+<meta name="description" content="The Stop Run indicator shows you on the chart when a large numbe r of stop orders have been triggered in the market .">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="deepdom";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/installation-and-first-configuration.html">Get started</a><a href="../../article/get-help.html">Get help</a><a class="kb-switch" href="../../index.html" title="Switch knowledge base">⇄ DeepCharts KB</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Common Issues <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Installation Issues</a></li><li><a href="../article/licence-issues.html">Licence Issues</a></li><li><a href="../article/symbol-subscription-issues.html">Symbol Subscription Issues</a></li><li><a href="../article/cache-issues-deepdom.html">Cache Issues</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; How To <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installation and First Configuration</a></li><li><a href="../article/general-settings.html">General Settings</a></li><li><a href="../article/how-to-add-a-new-connection.html">How to Add a New Connection</a></li><li><a href="../article/how-to-add-markets-correctly.html">How to Add Markets Correctly</a></li><li><a href="../article/user-configuration-templates-workspaces.html">User Configuration — Templates, Workspaces, Tool Config</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">How to Set Up Keyboard Shortcuts</a></li><li><a href="../article/how-to-insert-sound-notifications.html">How to Insert Sound Notifications</a></li><li><a href="../article/how-to-customize-language-and-theme.html">How to Customize Language and Theme</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">How to Manage Symbol Rollover</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Orders Window</a></li><li><a href="../article/trading-from-the-chart.html">Trading from the Chart</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio-Risk Manager</a></li><li><a href="../article/simulation-environment.html">Simulation Environment</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicators <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html">Volume Profile</a></li><li><a href="../article/stop-run.html" class="active">Stop Run</a></li><li><a href="../article/absorption.html">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Features <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay Tick Data</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Deep Indicators <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Deep Iceberg (Iceberg Detector)</a></li><li><a href="../article/deep-reload.html">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators.html">Indicators</a></div>
+<div class="article-head"><h1>Stop Run</h1>
+<p class="article-desc">The Stop Run indicator shows you on the chart when a large numbe r of stop orders have been triggered in the market .</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 9 min read</span>
+  <a class="btn-pdf" href="../pdf/stop-run.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>The Stop Run indicator shows you on the chart when a large numbe r of stop orders have been triggered in the market . This helps you understand why price suddenly moved fast — and whether that move was real buying or selling, or just a wave of stop orders getting swept out all at once.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — overview (DeepDOM)</div><div class="s-file">stop-run-01.png</div></div></div>
+<h3 id="what-is-a-stop-run">What is a Stop Run?</h3>
+<p>First, let's understand what a stop order is.</p>
+<p>When a trader buys or sells in the market, they usually set a price level where their trade will automatically close if things go wrong. This is called a stop order. For example, a trader buys NQ at 26,800 and sets a stop at 26,750 — meaning if price drops to 26,750, the trade closes automatically to avoid a bigger loss.</p>
+<p>Now here is the important part. Most traders place their stop orders at the same obvious price levels — just below a support level or just above a resistance level. This means hundreds or thousands of stop orders are all sitting at the same price at the same time.</p>
+<p>Large players in the market — like big banks and institutions — know exactly where these stop orders are sitting. They push price into those areas on purpose. The moment price hits that level, all those stop orders trigger at the same time — creating a huge rush of orders that pushes price even further in that direction. That is a Stop Run.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — What is a Stop Run? (DeepDOM)</div><div class="s-file">stop-run-02.png</div></div></div>
+<p>After the Stop Run is done and all the stops are triggered, price very often reverses back in the opposite direction — because the move was not driven by real buyers or sellers, it was just stop orders getting triggered.</p>
+<h3 id="when-does-a-stop-run-occur">When Does a Stop Run Occur?</h3>
+<p>Stop Runs happen most often at price levels that are very obvious on the chart — like the previous day's high or low, or a level where price has bounced multiple times before. These are the spots where most traders place their stops, which makes them the perfect target for large players.</p>
+<p>For example — if NQ has been holding support at 26,700 for several days, most traders who are long will have their stop orders placed just below 26,700. A large player pushing price just below that level will trigger all of those stops at once, creating a fast move lower — before price often recovers back above the level shortly after.</p>
+<p>Stop Runs also happen a lot during big news events like CPI reports or Federal Reserve announcements. During these moments there are fewer orders in the market, which makes it easier to push price through stop clusters quickly.</p>
+<h3 id="what-to-look-for-during-a-stop-run">What to Look For During a Stop Run</h3>
+<p>Sudden volume spike — when a lot of stop orders trigger at the same time, you will see a big jump in volume on the chart. If volume suddenly spikes much higher than normal with no obvious news reason, a Stop Run is likely what happened</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — What to Look For During a Stop Run (DeepDOM)</div><div class="s-file">stop-run-03.png</div></div></div>
+<p>Fast price movement — price moves through a level very quickly during a Stop Run — much faster than a normal move. A trader watching the chart will notice it almost looks like price jumped rather than moved</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — What to Look For During a Stop Run (DeepDOM)</div><div class="s-file">stop-run-04.png</div></div></div>
+<p>Quick reversal after the move — after a Stop Run, price very often snaps back in the opposite direction almost immediately. A trader who saw the fast move and entered in that direction will suddenly find themselves on the wrong side of the market</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — What to Look For During a Stop Run (DeepDOM)</div><div class="s-file">stop-run-05.png</div></div></div>
+<p>Order book and Footprint signals — a trader watching the DOM will notice certain price levels suddenly emptying out as the stop orders get hit. In the Footprint chart, very large aggressive orders appearing all at once in a short time are another confirmation that a Stop Run just happened</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — What to Look For During a Stop Run (DeepDOM)</div><div class="s-file">stop-run-06.png</div></div></div>
+<h3 id="why-it-matters">Why It Matters</h3>
+<p>Understanding Stop Runs gives you two important advantages as a trader.</p>
+<p>The first is opportunity. Imagine a trader sees price break below support at 26,700, the Stop Run indicator shows 1,500 contracts triggered, volume spikes sharply, and then price immediately starts recovering back above 26,700. That is a strong sign the break was a Stop Run — not a real breakdown. The trader can now look to buy as price recovers, with a clear and logical level to place their stop loss below.</p>
+<p>The second is protection. Without knowing about Stop Runs, a trader who sees a fast aggressive break of support might sell, expecting price to keep going lower — only to get stopped out seconds later when price reverses sharply back up. Recognizing a Stop Run tells you to wait and not react to the move. In trading, avoiding bad trades is just as valuable as finding good ones.</p>
+<h3 id="how-to-set-up-the-stop-run-indicator">How to Set Up the Stop Run Indicator</h3>
+<p>Click the Indicators icon on the chart</p>
+<p>Find Stop Run in the list and click + to add it</p>
+<p>Click the settings icon on the indicator to open its configuration window</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — How to Set Up the Stop Run Indicator (DeepDOM)</div><div class="s-file">stop-run-07.png</div></div></div>
+<h2 id="general-settings">General Settings</h2>
+<p>Minimum Tick A tick is the smallest price movement possible in a market. This setting tells the indicator the minimum number of ticks price must move — as a result of stop orders triggering — before it marks the event as a Stop Run.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — General Settings (DeepDOM)</div><div class="s-file">stop-run-08.png</div></div></div>
+<p>If you set this too low, the indicator will flag every small price move as a Stop Run, making the chart very noisy and hard to read. Setting it at the right level means only moves that are big enough to actually matter get flagged — keeping your chart clean and useful. Examples - Min Tick - 3</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — General Settings (DeepDOM)</div><div class="s-file">stop-run-09.png</div></div></div>
+<p>Min Tick - 10 As you can see, in this case every order have been filtered out when we added a filter of Min Tick - 10</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — General Settings (DeepDOM)</div><div class="s-file">stop-run-10.png</div></div></div>
+<p>Maximum Ord Num This limits the maximum number of orders the indicator looks at during a Stop Run. During extremely busy market moments — like right after a major news release — there can be so many orders flying around that almost everything looks like a Stop Run. This setting stops the indicator from over-reacting during those unusual moments and keeps it focused on normal, realistic market conditions.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — General Settings (DeepDOM)</div><div class="s-file">stop-run-11.png</div></div></div>
+<p>Max MS MS stands for milliseconds. One millisecond is one thousandth of a second. This setting defines how fast the stop orders need to trigger to count as one Stop Run event.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — General Settings (DeepDOM)</div><div class="s-file">stop-run-12.png</div></div></div>
+<p>Examples - Max MS - 50</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — General Settings (DeepDOM)</div><div class="s-file">stop-run-13.png</div></div></div>
+<p>Max MS - 5 As you can see, some of the orders have been filtered out when we added a filter of Max MS - 5</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — General Settings (DeepDOM)</div><div class="s-file">stop-run-14.png</div></div></div>
+<p>A real Stop Run happens almost instantly — all those stop orders fire within a tiny fraction of a second. If orders come in slowly over a longer period, that is just normal market activity. This setting makes sure the indicator only flags events where everything happened fast enough to be a genuine Stop Run.</p>
+<p>Min. Stop Run Vol This sets the minimum volume needed for something to qualify as a Stop Run. A small number of stops triggering is not going to move the market in any significant way. This setting filters out those small, unimportant events and only shows you the ones that are large enough to actually impact price — the ones worth paying attention to.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — General Settings (DeepDOM)</div><div class="s-file">stop-run-15.png</div></div></div>
+<p>Examples - Min. Stop Run Vol. - 20</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — General Settings (DeepDOM)</div><div class="s-file">stop-run-16.png</div></div></div>
+<p>Min. Stop Run Vol. - 80 As you can see, some of the orders have been filtered out when we added a filter of Min. Stop Run Vol. - 80</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — General Settings (DeepDOM)</div><div class="s-file">stop-run-17.png</div></div></div>
+<h2 id="plot-settings">Plot Settings</h2>
+<p>Display Mode This controls how the Stop Run marker looks on your chart. You have three options:</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — Plot Settings (DeepDOM)</div><div class="s-file">stop-run-18.png</div></div></div>
+<p>Text — displays a colored box showing the number of stop orders triggered</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — Plot Settings (DeepDOM)</div><div class="s-file">stop-run-19.png</div></div></div>
+<p>Diamond — marks the Stop Run with a diamond-shaped icon, with the number of contracts shown above or below it</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — Plot Settings (DeepDOM)</div><div class="s-file">stop-run-20.png</div></div></div>
+<p>Square — marks the Stop Run with a square-shaped icon, with the number of contracts shown above or below it</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — Plot Settings (DeepDOM)</div><div class="s-file">stop-run-21.png</div></div></div>
+<p>Ask Color / Bid Color Sets the color used to display Stop Runs on the Ask/ Bid side of the market.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — Plot Settings (DeepDOM)</div><div class="s-file">stop-run-22.png</div></div></div>
+<p>Marker Width Sets the thickness of the line used to mark the Stop Run on the chart.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — Plot Settings (DeepDOM)</div><div class="s-file">stop-run-23.png</div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — Plot Settings (DeepDOM)</div><div class="s-file">stop-run-24.png</div></div></div>
+<h2 id="text-settings">Text Settings</h2>
+<p>Enable Text Toggles the text labels on or off on the chart.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — Text Settings (DeepDOM)</div><div class="s-file">stop-run-25.png</div></div></div>
+<p>Text Color Sets the color of the text displayed in the labels.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — Text Settings (DeepDOM)</div><div class="s-file">stop-run-26.png</div></div></div>
+<p>Text Size Sets the size of the text displayed in the labels.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — Text Settings (DeepDOM)</div><div class="s-file">stop-run-27.png</div></div></div>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — Text Settings (DeepDOM)</div><div class="s-file">stop-run-28.png</div></div></div>
+<h2 id="alerts">Alerts</h2>
+<p>There is also a section dedicated to sound alerts for the signals generated by the indicator</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Stop Run — Alerts (DeepDOM)</div><div class="s-file">stop-run-29.png</div></div></div>
+<h2 id="conclusion">Conclusion</h2>
+<p>The Stop Run indicator helps you understand one of the most common things that happens in the market every single day. Large players trigger stop orders to create fast moves and capture liquidity — and price very often reverses right after. By learning to spot these events and combining them with volume, DOM, and other tools in DeepDom, you get a much clearer picture of what is really driving price and where the market is likely to go next.</p>
+<h3 id="still-having-trouble">Still Having Trouble?</h3>
+<p>Our support team is available 24/7 and ready to help you with any issue you encounter.</p>
+<p>When reaching out, please include:</p>
+<p>A screenshot of the issue</p>
+<p>A brief description of what you were trying to do</p>
+<p>Support Ticket (Fastest Response) Visit www.deepcharts.com and create a support ticket directly on our website.</p>
+<p>Email Support Reach us at support@deepcharts.com — please note that email responses may take a little longer than a support ticket.</p>
+</article>
+<div class="pn"><a class="prev" href="./volume-profile-deepdom.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Volume Profile</div></a><a class="next" href="./absorption.html"><div class="pn-lbl">Next →</div><div class="pn-title">Absorption</div></a></div>
+    <div class="footer">DeepDOM Help Center · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv3"><a href="#what-is-a-stop-run">What is a Stop Run?</a></li><li class="lv3"><a href="#when-does-a-stop-run-occur">When Does a Stop Run Occur?</a></li><li class="lv3"><a href="#what-to-look-for-during-a-stop-run">What to Look For During a Stop Run</a></li><li class="lv3"><a href="#why-it-matters">Why It Matters</a></li><li class="lv3"><a href="#how-to-set-up-the-stop-run-indicator">How to Set Up the Stop Run Indicator</a></li><li class="lv2"><a href="#general-settings">General Settings</a></li><li class="lv2"><a href="#plot-settings">Plot Settings</a></li><li class="lv2"><a href="#text-settings">Text Settings</a></li><li class="lv2"><a href="#alerts">Alerts</a></li><li class="lv2"><a href="#conclusion">Conclusion</a></li><li class="lv3"><a href="#still-having-trouble">Still Having Trouble?</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-deepdom.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>

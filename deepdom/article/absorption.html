@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+
+<title>Absorption — DeepDOM Help Center</title>
+<meta name="description" content="The Absorption indicator identifies price areas where the market shows a strong ability to absorb buy or sell orders. This suggests the presence of significant liquidity that is slowing or temporarily halting price movement.">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/review.css">
+<script>window.HC_ROOT="../../";window.KB_ROOT="../";window.HC_KB="deepdom";</script>
+</head><body>
+<header class="site-header">
+  <div class="logo"><a href="../index.html">DeepDOM <span class="hc">Help Center</span></a></div>
+  <div class="searchbox" data-search><span class="mag">🔎</span>
+    <input type="text" placeholder="Search the knowledge base...  ( / )" autocomplete="off">
+    <div class="search-results"></div></div>
+  <nav class="header-links"><a href="../index.html">All articles</a><a href="../article/installation-and-first-configuration.html">Get started</a><a href="../../article/get-help.html">Get help</a><a class="kb-switch" href="../../index.html" title="Switch knowledge base">⇄ DeepCharts KB</a></nav>
+</header>
+<div class="layout">
+  <nav class="sidebar"><div class="nav-cat"><button>🛠️&nbsp; Common Issues <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-issues.html">Installation Issues</a></li><li><a href="../article/licence-issues.html">Licence Issues</a></li><li><a href="../article/symbol-subscription-issues.html">Symbol Subscription Issues</a></li><li><a href="../article/cache-issues-deepdom.html">Cache Issues</a></li></ul></div><div class="nav-cat"><button>📘&nbsp; How To <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/installation-and-first-configuration.html">Installation and First Configuration</a></li><li><a href="../article/general-settings.html">General Settings</a></li><li><a href="../article/how-to-add-a-new-connection.html">How to Add a New Connection</a></li><li><a href="../article/how-to-add-markets-correctly.html">How to Add Markets Correctly</a></li><li><a href="../article/user-configuration-templates-workspaces.html">User Configuration — Templates, Workspaces, Tool Config</a></li><li><a href="../article/how-to-set-up-keyboard-shortcuts.html">How to Set Up Keyboard Shortcuts</a></li><li><a href="../article/how-to-insert-sound-notifications.html">How to Insert Sound Notifications</a></li><li><a href="../article/how-to-customize-language-and-theme.html">How to Customize Language and Theme</a></li><li><a href="../article/how-to-manage-symbol-rollover.html">How to Manage Symbol Rollover</a></li></ul></div><div class="nav-cat"><button>📈&nbsp; Trading <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/orders-window-deepdom.html">Orders Window</a></li><li><a href="../article/trading-from-the-chart.html">Trading from the Chart</a></li><li><a href="../article/portfolio-risk-manager.html">Portfolio-Risk Manager</a></li><li><a href="../article/simulation-environment.html">Simulation Environment</a></li></ul></div><div class="nav-cat"><button>📊&nbsp; Indicators <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/spread-bid-ask.html">Spread Bid/Ask</a></li><li><a href="../article/vwap-envelopes-deepdom.html">VWAP + Envelopes</a></li><li><a href="../article/session-imbalance-deepdom.html">Session Imbalance</a></li><li><a href="../article/book-speed.html">Book Speed</a></li><li><a href="../article/volume-profile-deepdom.html">Volume Profile</a></li><li><a href="../article/stop-run.html">Stop Run</a></li><li><a href="../article/absorption.html" class="active">Absorption</a></li><li><a href="../article/cumulative-iceberg-stop.html">Cumulative Iceberg/Stop</a></li><li><a href="../article/volume-swing-deepdom.html">Volume Swing</a></li><li><a href="../article/poc-dynamic.html">POC Dynamic</a></li><li><a href="../article/volume-deepdom.html">Volume</a></li><li><a href="../article/delta-bar-deepdom.html">Delta Bar</a></li><li><a href="../article/cumulative-volume-delta.html">Cumulative Volume Delta</a></li><li><a href="../article/big-trades-deepdom.html">Big Trades</a></li><li><a href="../article/important-levels-deepdom.html">Important Levels</a></li></ul></div><div class="nav-cat"><button>✨&nbsp; Features <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/volume-bubbles.html">Volume Bubbles</a></li><li><a href="../article/heatmap.html">Heatmap</a></li><li><a href="../article/replay-tick-data.html">Replay Tick Data</a></li></ul></div><div class="nav-cat"><button>🧠&nbsp; Deep Indicators <span class="tw">▶</span></button><ul class="nav-items"><li><a href="../article/deep-iceberg.html">Deep Iceberg (Iceberg Detector)</a></li><li><a href="../article/deep-reload.html">Deep Reload</a></li><li><a href="../article/deep-liquidity-scan.html">Deep Liquidity Scan</a></li><li><a href="../article/deep-delta-deepdom.html">Deep Delta</a></li></ul></div></nav>
+  <main class="content"><div class="breadcrumb"><a href="../index.html">Help Center</a> › <a href="../category/indicators.html">Indicators</a></div>
+<div class="article-head"><h1>Absorption</h1>
+<p class="article-desc">The Absorption indicator identifies price areas where the market shows a strong ability to absorb buy or sell orders. This suggests the presence of significant liquidity that is slowing or temporarily halting price movement.</p>
+<div class="meta-row">
+  <span class="badge b-intermediate">Intermediate</span>
+  <span class="badge">Reference</span>
+  <span class="badge">🕒 6 min read</span>
+  <a class="btn-pdf" href="../pdf/absorption.pdf" download>⬇ Download PDF</a>
+</div></div>
+<article class="article-body"><p>The Absorption indicator identifies price areas where the market shows a strong ability to absorb buy or sell orders. This suggests the presence of significant liquidity that is slowing or temporarily halting price movement. While absorption does not always lead to a reversal, it provides valuable information about where liquidity is concentrated and how the market may react at those levels.</p>
+<h2 id="what-is-absorption">What is Absorption?</h2>
+<p>Imagine that at a given price level there are numerous sell orders. If several large buy orders are executed and the price still remains unchanged at that level, this could indicate absorption — sellers are absorbing the buying pressure without allowing price to rise.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — What is Absorption? (DeepDOM)</div><div class="s-file">absorption-01.png</div></div></div>
+<p>Think of it like a sponge. The sell side is soaking up all the buying pressure coming in, preventing price from moving higher. The more buying that gets absorbed without price moving, the stronger the presence of sellers at that level.</p>
+<p>It is important to note that absorption does not always lock price in place. In some cases, after initial absorption, price may continue in its original direction. By combining the Absorption indicator with DOM and Time &amp; Sales analysis, you can better understand the participation of traders and their potential influence on price at those levels.</p>
+<p>DeepDom's Absorption indicator highlights these situations directly on the chart, making them easy to spot in real time.</p>
+<h3 id="how-to-set-up-the-absorption-indicator">How to Set Up the Absorption Indicator</h3>
+<p>Right-click on the chart and select Indicators.</p>
+<p>Search for the desired indicator and add it to your workspace by clicking the &quot;+&quot; button.</p>
+<p>Open the indicator's settings panel, customize the parameters according to your preferences, and confirm the changes by clicking Save.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — How to Set Up the Absorption Indicator (DeepDOM)</div><div class="s-file">absorption-02.png</div></div></div>
+<h2 id="general-settings">General Settings</h2>
+<ol>
+<li>Max Tick Sets the maximum number of ticks for which an absorption area is considered valid. If price moves beyond this number of ticks, the area will no longer be treated as an active absorption zone.</li>
+</ol>
+<p>In simple terms — if price moves too far away from where the absorption was detected, the event is no longer considered relevant and the indicator stops marking it.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — General Settings (DeepDOM)</div><div class="s-file">absorption-03.png</div></div></div>
+<p>Examples - Max Tick - 1</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — General Settings (DeepDOM)</div><div class="s-file">absorption-04.png</div></div></div>
+<p>Max Tick - 15</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — General Settings (DeepDOM)</div><div class="s-file">absorption-05.png</div></div></div>
+<ol start="2">
+<li>Max Orders Number Sets the maximum number of orders used in the absorption calculation. This determines the weight of the trader or traders involved in the market response at that level.</li>
+</ol>
+<p>This helps you focus on absorption events that involve a realistic number of orders — filtering out situations where an abnormally high number of small orders might trigger a false reading.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — General Settings (DeepDOM)</div><div class="s-file">absorption-06.png</div></div></div>
+<ol start="3">
+<li>Max MS Sets the maximum duration in milliseconds for an absorption event to be detected. The faster the absorption occurs in the market, the more likely it represents a significant response at that price level.</li>
+</ol>
+<p>In simple terms — if the absorption happens very quickly, it is more likely to be a deliberate, meaningful action by a large participant rather than random market noise.</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — General Settings (DeepDOM)</div><div class="s-file">absorption-07.png</div></div></div>
+<p>Examples - Max MS - 2050</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — General Settings (DeepDOM)</div><div class="s-file">absorption-08.png</div></div></div>
+<p>Max MS - 10 As you can see, some of the orders have been filtered out when we added a filter of Max MS - 10</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — General Settings (DeepDOM)</div><div class="s-file">absorption-09.png</div></div></div>
+<ol start="4">
+<li>Min. Absorption Vol. Sets the minimum volume required for an area to qualify as absorbed. This filters out minor absorptions and focuses only on those that meet a meaningful volume threshold. Setting a lower value can also be useful for high-frequency scalpers looking for small absorption signals based on just a few ticks of response.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — General Settings (DeepDOM)</div><div class="s-file">absorption-10.png</div></div></div>
+<p>Examples - Min. Absorption Vol. - 20</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — General Settings (DeepDOM)</div><div class="s-file">absorption-11.png</div></div></div>
+<p>Min. Absorption Vol. - 50 As you can see, some of the orders have been filtered out when we added a filter of Min. Absorption Vol. - 50</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — General Settings (DeepDOM)</div><div class="s-file">absorption-12.png</div></div></div>
+<h2 id="plot-settings">Plot Settings</h2>
+<ol>
+<li>Display Mode Defines how absorption is represented on the chart. You can choose between Square, Diamond and Text</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — Plot Settings (DeepDOM)</div><div class="s-file">absorption-13.png</div></div></div>
+<p>Text — displays absorption as a text label at the relevant price level</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — Plot Settings (DeepDOM)</div><div class="s-file">absorption-14.png</div></div></div>
+<p>Diamond — displays absorption as a diamond shape marker</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — Plot Settings (DeepDOM)</div><div class="s-file">absorption-15.png</div></div></div>
+<p>Square — displays absorption as a square shape marker</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — Plot Settings (DeepDOM)</div><div class="s-file">absorption-16.png</div></div></div>
+<ol start="2">
+<li>Ask Color Sets the color used to highlight absorption on the Ask side — where buying pressure is being absorbed by sellers.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — Plot Settings (DeepDOM)</div><div class="s-file">absorption-17.png</div></div></div>
+<ol start="3">
+<li>Bid Color Sets the color used to highlight absorption on the Bid side — where selling pressure is being absorbed by buyers.</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — Plot Settings (DeepDOM)</div><div class="s-file">absorption-18.png</div></div></div>
+<ol start="4">
+<li>Marker Width increases the size of the marker which displays the absorption, it works only when the Display Mode is set to Square or Diamond</li>
+</ol>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — Plot Settings (DeepDOM)</div><div class="s-file">absorption-19.png</div></div></div>
+<p>Examples - Marker Width - 3</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — Plot Settings (DeepDOM)</div><div class="s-file">absorption-20.png</div></div></div>
+<p>Marker Width - 10 As you can see, when the value of Marker Width is set to 10, the size of the square is increased</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — Plot Settings (DeepDOM)</div><div class="s-file">absorption-21.png</div></div></div>
+<h2 id="text-settings">Text Settings</h2>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — Text Settings (DeepDOM)</div><div class="s-file">absorption-22.png</div></div></div>
+<ol>
+<li>
+<p>Enable Text Enables or disables the text label associated with each absorption event on the chart.</p>
+</li>
+<li>
+<p>Text Color Sets the color of the displayed text.</p>
+</li>
+<li>
+<p>Text Size Adjusts the size of the text label for readability.</p>
+</li>
+</ol>
+<h3 id="plot-settings-2">Plot Settings</h3>
+<p>You have also the possibility to set alerts for Absorption signals</p>
+<div class="shot"><div class="cam">📷</div><div><div class="s-label">Screenshot placeholder</div><div class="s-desc">Absorption — Plot Settings (DeepDOM)</div><div class="s-file">absorption-23.png</div></div></div>
+<h2 id="conclusion">Conclusion</h2>
+<p>The Absorption indicator is a powerful tool for identifying where significant liquidity is present in the market. Used alongside DOM and Time &amp; Sales, it gives you a more complete picture of market participation at key price levels — helping you make more informed decisions about potential entries, exits, and areas of interest.</p>
+<h3 id="still-having-trouble">Still Having Trouble?</h3>
+<p>Our support team is available 24/7 and ready to help you with any issue you encounter.</p>
+<p>When reaching out, please include:</p>
+<p>A screenshot of the issue</p>
+<p>A brief description of what you were trying to do</p>
+<p>Support Ticket (Fastest Response) Visit www.deepcharts.com and create a support ticket directly on our website.</p>
+<p>Email Support Reach us at support@deepcharts.com — please note that email responses may take a little longer than a support ticket.</p>
+</article>
+<div class="pn"><a class="prev" href="./stop-run.html"><div class="pn-lbl">← Previous</div><div class="pn-title">Stop Run</div></a><a class="next" href="./cumulative-iceberg-stop.html"><div class="pn-lbl">Next →</div><div class="pn-title">Cumulative Iceberg/Stop</div></a></div>
+    <div class="footer">DeepDOM Help Center · rebuilt August 24, 2026 · screenshots pending capture (see placeholders)</div>
+  </main>
+  <aside class="toc"><div class="toc-head">On this page</div><ul><li class="lv2"><a href="#what-is-absorption">What is Absorption?</a></li><li class="lv3"><a href="#how-to-set-up-the-absorption-indicator">How to Set Up the Absorption Indicator</a></li><li class="lv2"><a href="#general-settings">General Settings</a></li><li class="lv2"><a href="#plot-settings">Plot Settings</a></li><li class="lv2"><a href="#text-settings">Text Settings</a></li><li class="lv3"><a href="#plot-settings-2">Plot Settings</a></li><li class="lv2"><a href="#conclusion">Conclusion</a></li><li class="lv3"><a href="#still-having-trouble">Still Having Trouble?</a></li></ul></aside>
+</div>
+<script src="../../assets/kb-map.js"></script>
+<script src="../../assets/search-index-deepdom.js"></script>
+<script src="../../assets/app.js"></script>
+<script src="../../assets/widgets.js"></script>
+<script src="../../assets/deep-print-studio.js"></script>
+<script type="module" src="../../assets/review.js"></script>
+</body></html>
